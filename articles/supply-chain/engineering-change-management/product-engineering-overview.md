@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b494e15488bed148119aed0e9d62ab1740f38add
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: a01dfd72428c75d1bb24f32c73c9c799a6c5017e
+ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334864"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "9682505"
 ---
 # <a name="engineering-change-management-overview"></a>Überblick über die Verwaltung für technische Änderungen
 
@@ -73,6 +73,9 @@ Als nächstes schalten Sie die Konfigurationstasten ein, indem Sie diese Schritt
 1. Die Datenbank muss synchronisiert werden, um sicherzustellen, dass die Konfigurationsschlüssel richtig aktualisiert wurden, um Ihre Änderungen widerzuspiegeln. Führen Sie je nach Art der Umgebung, in der Sie arbeiten, einen der folgenden Schritte aus:
     - **Für Umgebungen der Ebene 1 (Entwicklung)** : Öffnen Sie Ihr Projekt in Microsoft Visual Studio und wählen Sie **Dynamics 365 \> Datenbank synchronisieren \> Synchronisieren** aus.
     - **Für Umgebungen der Stufe 2 (und höher)** : Die Datenbank wird automatisch synchronisiert, nachdem Sie die Umgebung in den Wartungsmodus versetzt und wieder verlassen haben, sodass Sie diesen Schritt überspringen können.
+
+> [!NOTE]
+> Um den Änderungsdienst verwenden zu können, müssen sowohl der Stücklisten-Nummernkreis als auch der Formel-Nummernkreis (wenn Sie Formeln verwenden) auf *Automatisch* auf der **Zahlenfolgen** Seite eingestellt sein.
 
 ### <a name="turn-on-additional-engineering-change-management-features"></a>Einschalten der zusätzlichen Verwaltungfunktionen für technische Änderungen
 

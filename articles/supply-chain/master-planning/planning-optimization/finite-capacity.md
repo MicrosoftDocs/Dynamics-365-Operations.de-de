@@ -11,16 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-09-19
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: c5eebe9ef6258b43daa7c7007ee28b0278fe5b09
-ms.sourcegitcommit: 1a7729a6ce4f3fcf68bdc4cfdad746a5553da3c5
+ms.openlocfilehash: 3d116b5f7f456630415378e6cc069907e339068b
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2022
-ms.locfileid: "9573135"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689692"
 ---
 # <a name="finite-capacity-planning-and-scheduling"></a>Planung und Terminierung begrenzter Kapazität
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
+<!--KFM: Preview until 10.0.31 GA -->
 
 Die begrenzte Kapazität ist ein Ansatz, der Ihnen hilft zu verstehen, wie viel Arbeit in einem bestimmten Zeitraum produziert werden kann, wenn die Beschränkungen der verschiedenen Ressourcen berücksichtigt werden. Der Zweck der begrenzten Kapazitätsplanung besteht darin, sicherzustellen, dass die Arbeit im gesamten Werk gleichmäßig und effizient abläuft.
 
@@ -121,8 +123,8 @@ Der Masterplan hat die folgenden relevanten Einstellungen, die die Planung begre
 
 Die Option **Begrenzte Kapazität** ist für die beiden relevanten Ressourcen ebenfalls auf *Ja* festgelegt, um die Planung begrenzter Kapazität für diese Ressourcen zu ermöglichen:
 
-- Linie Schweißen
-- Montagelinie
+- Linie zum Schweißen
+- Zeile für die Montage
 
 Sie fügen nun einen neuen Verkaufsauftrag für *8 Stk* von *Produkt1* hinzu und führen die Planung aus. Infolgedessen lädt das System die Schweißlinie von *Heute + 1 um 8:00* bis *Heute + 1 um 12:00*. Nachdem die Vorgänge auf der Schweißlinie abgeschlossen sind, lädt das System die Montagelinie von *Heute + 1 um 12:00* bis *Heute + 1 um 14:00*. Das System berücksichtigt die begrenzte Kapazität nur für einen Tag.
 

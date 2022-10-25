@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a0fa081b0110682af1fcda50b0c912dc5d03fa73
-ms.sourcegitcommit: 29af4c9d9968bbfa4c19fee9de34fed309f6d38b
+ms.openlocfilehash: 645590bbf00f49bb0f3511e7fa02c8f6add661fc
+ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "9388447"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "9682613"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Neuerungen oder Änderungen in der mobilen Warehouse Management-App
 
 [!include [banner](../includes/banner.md)]
 
 Dieser Artikel listet neue Funktionen, Korrekturen, Verbesserungen und bekannte Probleme für jede freigegebene Version der Warehouse Management Mobile-App für Microsoft Dynamics 365 Supply Chain Management auf.
+
+## <a name="version-20340"></a>Version 2.0.34.0
+
+Diese Version führt die folgenden neuen Funktionen, Korrekturen und Verbesserungen ein:
+- Verbesserte Stabilität.
+- Verbesserte Leistung.
+- Das Bildschirmlayout wurde verbessert, um mehr Platz für die Detailkarte zu schaffen.
+- Eine Suchfunktion wurde zur Seite **Arbeitsliste** hinzugefügt. Mitarbeiter können jetzt scannen oder tippen, um in allen Feldern und Titeln auf der Seite zu suchen.
+- Die Liste der verfügbaren Verbindungen ist jetzt alphabetisch sortiert.
+- Es wurde ein Problem behoben, bei dem doppelte Karten für Artikel angezeigt wurden, die mehrere Inventarstatus am selben Ort haben.
+- Es wurde ein Problem behoben, bei dem die Seite **Große Auswahlliste** nicht gescrollt wurde, um das vorausgewählte Element anzuzeigen.
+- Die Farben der Suchleiste auf der Seite **Große Auswahlliste** wurden korrigiert.
+- Es wurde ein Problem behoben, bei dem die im XML definierte Standardschaltfläche nicht als Sendeschaltfläche verwendet wurde.
+- Es wurde ein Problem behoben, bei dem die Schaltflächen in den Multi-Scan- und Schnellvalidierungsabläufen nicht aktualisiert wurden, wenn neue IDs gescannt wurden.
+- Unterstützung für weitere Sprachen hinzugefügt.
 
 ## <a name="version-20320"></a>Version 2.0.32.0
 

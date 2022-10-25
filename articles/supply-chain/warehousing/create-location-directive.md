@@ -2,7 +2,7 @@
 title: Arbeiten mit Lagerplatzrichtlinien
 description: In diesem Artikel wird beschrieben, wie Sie mit Lagerplatzrichtlinien arbeiten. Lagerplatzrichtlinien sind benutzerdefinierte Regeln, die dabei helfen, Entnahme- und Einlagerungslagerorte für die Lagerortumlagerung zu identifizieren.
 author: Mirzaab
-ms.date: 11/13/2020
+ms.date: 09/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7705ea132521353cd6af7245df90aafaf23af885
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4ef8ec0732cd3bd50bca8d334c43d0354e9e3316
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903694"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689665"
 ---
 # <a name="work-with-location-directives"></a>Arbeiten mit Lagerplatzrichtlinien
 
@@ -47,6 +47,20 @@ Bevor Sie eine Standortanweisung erstellen können, müssen Sie diese Schritte a
 1. Erstellen Sie Lagerplätze, Lagerplatztypen, Lagerplatzprofile und Lagerplatzformate. Weitere Informationen finden Sie unter [Konfigurieren von Standorten in einem WMS-aktivierten Lagerort](./tasks/configure-locations-wms-enabled-warehouse.md).
 1. Erstellen Sie Standorte, Zonen und Zonengruppen. Weitere Informationen finden Sie unter [Einrichten eines Lagerorts](../../commerce/channels-setup-warehouse.md) und [Konfigurieren von Standorten an einem WMS-aktivierten Lagerort](./tasks/configure-locations-wms-enabled-warehouse.md).
 
+## <a name="turn-the-location-directive-scopes-feature-on-or-off"></a><a name="scopes-feature"></a>Statusfunktion für die Geltungsbereiche der Lagerplatzrichtlinie aktivieren oder deaktivieren
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.31 GA -->
+
+Die Funktion *Geltungsbereiche der Lagerplatzrichtlinie* gibt Ihnen mehr Freiheit beim Entwerfen von Standortrichtlinien und hilft, redundante Konfigurationen zu reduzieren. Es fügt eine **Bereiche** Option hinzu, die die vorherige Option **Mehrere SKU** ersetzt. Während die **Mehrere SKU** Option nur auf *Ja* oder *Nein* eingestellt werden kann, bietet die Option **Bereiche** nicht nur diese beiden Einstellungen (über die Werte *Einzelartikel* und *Mehrere Artikel*), sondern auch zwei weitere (durch die Werte *Einzelstück oder Bestellung* und *Alle*). Weitere Informationen zu diesen Einstellungen finden Sie unter [Standortanweisungen Inforegister](#location-directives-tab).
+
+Wenn es aktiviert ist, ersetzt die Option **Bereich** die Option **Mehrere SKU** und ist zu 100 Prozent kompatibel mit bestehenden Konfigurationen.
+
+Um diese Funktion nutzen zu können, müssen Sie sie in Ihrem System aktivieren. Admins können die Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktion zu prüfen und sie ein- oder auszuschalten. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+
+- **Module:** *Lagerortverwaltung*
+- **Funktionsname:** *Geltungsbereiche der Lagerplatzrichtlinie*
+
 ## <a name="work-order-types-for-location-directives"></a>Arbeitsauftragstypen für Lagerplatzrichtlinien
 
 Viele der Felder, die für Lagerplatzrichtlinien festgelegt werden können, sind für alle Arbeitsauftragstypen gleich. Andere Felder sind jedoch spezifisch für bestimmte Arbeitsauftragstypen.
@@ -66,10 +80,10 @@ Die folgende Tabelle listet die Felder auf, die allen Arbeitsauftragstypen gemei
 |---|---|
 | Lagerplatzrichtlinien | Arbeitstyp |
 | Lagerplatzrichtlinien | Standort |
-| Lagerplatzrichtlinien | Lagerort |
+| Lagerplatzrichtlinien | Lager |
 | Lagerplatzrichtlinien | Richtliniencode |
-| Lagerplatzrichtlinien | Mehrfach-SKU |
-| Positionen | Laufende Nummer |
+| Lagerplatzrichtlinien | Bereich *oder* Mehrere SKU |
+| Positionen | Nummernkreis |
 | Positionen | Von Menge |
 | Positionen | Bis Menge |
 | Positionen | Einheit |
@@ -117,7 +131,9 @@ Der Aktivitätsbereich auf der Seite **Lagerplatzrichtlinien** enthält Schaltfl
 
 - **Nach oben verschieben** - Verschiebt die ausgewählte Lagerplatzrichtlinie in der Sequenz nach oben. Zum Beispiel können Sie sie von Sequenznummer 4 nach Sequenznummer 3 verschieben.
 - **Nach unten verschieben** - Verschiebt die ausgewählte Lagerplatzrichtlinie in der Sequenz nach unten. Sie können sie z. B. von Sequenznummer 4 nach Sequenznummer 5 verschieben.
+- **Kopieren** – Öffnen Sie ein Dialogfenster, in dem Sie eine exakte Kopie der aktuellen Standortrichtlinie erstellen können.
 - **Abfrage bearbeiten** - Öffnet ein Dialogfeld, in dem Sie die Bedingungen definieren können, unter denen die ausgewählte Lagerplatzrichtlinie verarbeitet werden soll. Sie können zum Beispiel festlegen, dass sie nur für ein bestimmtes Lagerort gelten soll.
+- **Akzeptanztests** – Öffnen Sie eine Seite, auf der Sie automatisierte Tests einrichten können, um festzustellen, wie sich Ihre Standortanweisungen unter verschiedenen Startbedingungen verhalten. Auf diese Weise können Sie Ihre Anweisungen schnell validieren, während Sie sie erstellen und pflegen. Weitere Informationen zu Vorlagen erhalten Sie unter [Lagerplatzanweisungen mit Akzeptanztests testen](location-directive-acceptance-tests.md).
 
 ## <a name="location-directives-header"></a>Kopfzeile der Lagerplatzrichtlinien
 
@@ -126,7 +142,7 @@ Der Kopf der Lagerplatzrichtlinie enthält die folgenden Felder für die Sequenz
 - **Sequenznummer** - Dieses Feld gibt die Sequenz an, in der das System versucht, jede Lagerplatzrichtlinie für den ausgewählten Arbeitsauftragstyp anzuwenden. Niedrige Nummern werden zuerst angewendet. Sie können die Sequenz mit den Schaltflächen **Aufwärts bewegen** und **Abwärts bewegen** im Aktivitätsbereich ändern.
 - **Name** - Geben Sie einen beschreibenden Namen für die Lagerplatzrichtlinie ein. Dieser Name sollte helfen, den allgemeinen Zweck der Richtlinie zu identifizieren. Geben Sie z.B. *Verkaufsauftrag entnehmen in Lagerort 24* ein.
 
-## <a name="location-directives-fasttab"></a>Lagerplatzrichtlinien Inforegister
+## <a name="location-directives-fasttab"></a><a name="location-directives-tab"></a>Lagerplatzrichtlinien Inforegister
 
 Die Felder auf dem Inforegister **Lagerplatzrichtlinien** sind spezifisch für den Arbeitsauftragstyp, der im Feld **Arbeitsauftragstyp** im Listenbereich ausgewählt ist.
 
@@ -145,7 +161,29 @@ Die Felder auf dem Inforegister **Lagerplatzrichtlinien** sind spezifisch für d
     > [!TIP]
     > Wenn ein Richtlinien-Code festgelegt ist, sucht das System die Lagerplatzrichtlinien nicht nach der Sequenznummer, wenn Arbeit generiert werden muss. Stattdessen wird es nach dem Code der Richtlinie suchen. Auf diese Weise können Sie die Lagerplatzrichtlinie, die für einen bestimmten Schritt in einer Arbeitsvorlage verwendet wird, genauer bestimmen, z. B. den Schritt zum Bereitstellen der Materialien.
 
-- **Mehrere SKU** - Legen Sie diese Option auf *Ja* fest, damit mehrere stockkeeping units (SKUs) auf einem Lagerplatz verwendet werden können. Zum Beispiel müssen mehrere SKUs für den Lagerplatz „Hallentor“ aktiviert werden. Wenn Sie mehrere SKUs aktivieren, wird Ihr eingelagerter Lagerplatz wie erwartet in Arbeit angegeben. Der Lagerplatz kann jedoch nur ein Einlagern mehrerer Elemente verarbeiten (wenn die Arbeit verschiedene SKUs enthält, die entnommen und eingelagert werden müssen). Ein Einlagern einer einzelnen SKU ist nicht möglich. Wenn Sie diese Option auf *Nein* festlegen, wird Ihr Lagerplatz nur angegeben, wenn Ihr Auftrag nur eine Art von SKU enthält.
+- **Bereich** – Verwenden Sie diese Option, um die Szenarien anzugeben, auf die die Standortrichtlinie angewendet wird. Diese Option ersetzt die Option **Mehrere SKU** und ist nur verfügbar, wenn die Funktion *Geltungsbereiche der Lagerplatzrichtlinie* in Ihrem System aktiviert ist. (Weitere Informationen finden Sie unter [Aktivieren oder deaktivieren Sie die Funktion Standortdirektivenbereiche](#scopes-feature) .)
+
+    | Bereichseinstellung | Einzelbestellung mit einem Artikel | Mehrere Bestellungen mit dem gleichen Artikel | Einzelbestellung mit mehreren Artikeln | Mehrere Bestellungen mit mehreren Artikeln |
+    |---|---|---|---|---|
+    | Einzelner Artikel | Ja | Ja | Nein | Nein |
+    | Mehrere Artikel | Nein | Nein | Ja | Ja |
+    | Einzelner Artikel oder Auftrag | Ja | Ja | Ja | Nein |
+    | Alle | Ja | Ja | Ja | Ja |
+
+    In der folgenden Tabelle wird beschrieben, wann die Bereiche verfügbar sind und ob sie die Funktion **Abfrage bearbeiten** zulassen.
+
+    | Umfang | Unterstützte Arbeitstypen | Unterstützte Arbeitsauftragstypen | Abfrage bearbeiten zulassen |
+    |---|---|---|---|
+    | Einzelner Artikel | Alle | Alle | Ja |
+    | Mehrere Artikel | Alle | Alle | Nein |
+    | Einzelner Artikel oder Auftrag | Einlagerungen | Einlagerung von Kuppel- und Nebenprodukten, Einlagerung von Fertigerzeugnissen, Kanban-Einlagerung, Bestellungen, Qualitätsaufträge, Nachschub, Rücklieferungen, Verkaufsaufträge, Umlagerungsausgabe und Umlagerungsbeleg | Ja |
+    | Alle | Einlagerungen | Alle | Nein |
+
+    > [!NOTE]
+    > - Um Einlagerungen sowohl für mehrere Artikel als auch für einzelne Artikel durchzuführen, müssen Sie sicherstellen, dass Lagerplatzrichtlinien vorhanden sind, die beide Szenarien abdecken. Beispielsweise können Sie eine oder mehrere *Einzelstück oder Bestellung* Standortanweisungen einirichten, um Szenarien abzudecken, die eine Feinabstimmung erfordern (z. B. durch Bearbeitung der Abfrage), und dann eine oder mehrere *Alle* Standortanweisungen, um die verbleibenden Szenarien abzudecken.
+    > - Obwohl *Einzelartikel* und *Mehrere Artikel* Bereiche für Einlagerungen verwendet werden können, führt dieser Ansatz typischerweise zu redundanten Konfigurationen. Erwägen Sie die Verwendung von *Einzelstück oder Bestellung* und *Alle* Bereiche statt, da dieser Ansatz zu einem saubereren Setup führt.
+
+- **Mehrere SKU** – Verwenden Sie diese Option, um das Szenario anzugeben, auf die die Standortrichtlinie angewendet wird. Diese Einstellung wird durch die Einstellung **Bereich** ersetzt, wenn die Funktion *Geltungsbereiche der Lagerplatzrichtlinie* in Ihrem System aktiviert ist. (Weitere Informationen finden Sie unter [Aktivieren oder deaktivieren Sie die Funktion Standortdirektivenbereiche](#scopes-feature).) Setzen Sie diese Option auf *Ja*, um die Verwendung mehrerer Stockkeeping Units (SKUs) an einem Standort zu ermöglichen. Zum Beispiel müssen mehrere SKUs für den Lagerplatz „Hallentor“ aktiviert werden. Wenn Sie mehrere SKUs aktivieren, wird Ihr eingelagerter Lagerplatz wie erwartet in Arbeit angegeben. Der Lagerplatz kann jedoch nur ein Einlagern mehrerer Elemente verarbeiten (wenn die Arbeit verschiedene SKUs enthält, die entnommen und eingelagert werden müssen). Ein Einlagern einer einzelnen SKU ist nicht möglich. Wenn Sie diese Option auf *Nein* festlegen, wird Ihr Lagerplatz nur angegeben, wenn Ihr Auftrag nur eine Art von SKU enthält.
 
     > [!IMPORTANT]
     > Um sowohl Multi-Element-Puts als auch Single-SKU-Puts durchführen zu können, müssen Sie zwei Zeilen angeben, die die gleiche Struktur und Einrichtung haben, aber Sie müssen die Option **Mehrere SKU** auf *Ja* für eine Zeile und *Nein* für die andere festlegen. Daher müssen Sie für Einlagerungsvorgänge zwei identische Lagerplatzrichtlinien haben, auch wenn Sie nicht zwischen einzelnen SKUs und mehreren SKUs auf einer Arbeits-ID unterscheiden müssen. Wenn Sie nicht beide Lagerplatzrichtlinien festlegen, werden oft unerwartete Lagerplätze im Geschäftsprozess durch die angewandte Lagerplatzrichtlinie erzeugt. Sie müssen eine ähnliche Einrichtung für Lagerplatzrichtlinien verwenden, die einen **Arbeitstyp** von *Pick* haben, wenn Sie Aufträge verarbeiten müssen, die mehrere SKUs enthalten.
@@ -255,6 +293,5 @@ Wenn Sie Lagerplatzrichtlinien erstellt haben, können Sie jeden Richtliniencode
 
 - Video: [Tiefe Einblicke in die Konfiguration der Lagerortverwaltung](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Hilfeartikel: [Steuern Sie die Lagerarbeit mit Hilfe von Arbeitsvorlagen und Lagerplatzrichtlinien](control-warehouse-location-directives.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

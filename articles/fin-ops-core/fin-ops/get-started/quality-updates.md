@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 25306a8ccebb5cd01debc90cf497d4a942840ef4
-ms.sourcegitcommit: 43a0fb019bc67c00c39c2778343ba89924c3322c
+ms.openlocfilehash: 60f9d84b240016671ff726fc3cca2e02cfd811ca
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9671424"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689223"
 ---
 # <a name="proactive-quality-updates"></a>Proaktive Qualitätsupdates
 
@@ -56,7 +56,9 @@ Vor der Aktivierung der proaktiven Bereitstellung von Qualitätsupdates wird ein
 
 - **Schema**: Tools stellen sicher, dass hochwertige Update-Builds nur Schemaänderungen enthalten, die angewendet werden können, während der Dienst online ist. Dieser Ansatz trägt dazu bei, die Möglichkeit zu bewahren, das Update nahezu ohne Ausfallzeit anzuwenden.
 - **Verstärkte Änderungsprüfung**: Derzeit gibt es bereits einen zusätzlichen Prozessschritt, um Änderungen für die Aufnahme in ein Qualitätsupdate zu genehmigen. Die Prüfung im zusätzlichen Schritt wird verstärkt, um das Potenzial für Regressionen zu verringern. Breaking Changes sind in Qualitätsupdates nicht zulässig, und die verstärkte Änderungsprüfung wird dazu beitragen, dass wir dieses Ziel erreichen.
-- **Sichtbarkeit**: Wir senden Benachrichtigungen für bevorstehende proaktive Qualitätsupdates per E-Mail und Lifecycle Services (LCS). Darüber hinaus haben Supportteams und Vorfallleiter Einblick darin, wo Qualitätsupdates proaktiv bereitgestellt wurden.
+- **Sichtbarkeit**: Wir senden Benachrichtigungen für bevorstehende proaktive Qualitätsupdates über das Admin Center, Lifecycle Services (LCS) und andere verfügbare Kanäle. Darüber hinaus haben Supportteams und Vorfallleiter Einblick darin, wo Qualitätsupdates proaktiv bereitgestellt wurden.
+ > [!NOTE]
+ > Das Microsoft Communications-Team untersucht eine anhaltende Verschlechterung der E-Mail-Tools, die die Zustellung von E-Mail-Benachrichtigungen verhindert. Bitte beobachten Sie die weiter Microsoft 365 Message Center für Onboarding- und Benachrichtigungsnachrichten.
 - **Fail Safe via Flighting** - Flighting wird verwendet, um Codeänderungen zu schützen, wo immer dies in einem Qualitätsupdate-Fehlerbehebung möglich ist, oder die bestehende Funktion Flighting zu verwenden, die für die Korrektur relevant ist. Wenn nach einer proaktiven Bereitstellung ein Fallback oder das Ausschalten einer Änderung erforderlich ist, kann dies über das Flighting-System erfolgen, um weitere Fehler zu vermeiden.
 - **Sandbox-Synchronisierungsbezeichnung**: Weniger als 20 Prozent der Kunden haben heute mehrere Sandboxes und halten eine Sandbox bereit, in der die Version mit der Produktion übereinstimmt, um bei der Fehlerbehebung zu helfen. Wenn ein Kunde eine Sandbox verwendet, um eine neuere Version als seine Produktion zu testen, erhält diese Sandbox Qualitätsupdates für die neuere Version.
 
@@ -80,10 +82,10 @@ Informationen zu den nutzungsschwachen Zeiten für jede Region finden Sie unter 
 
 | Station | Regionen | Abgeschlossener Zeitplan| Kommender Sandbox-Zeitplan
 |---|---|---|---|
-| Station 1 | Kanada, Mitte, Kanada, Osten, Frankreich, Mitte, Indien, Mitte, Norwegen, Osten, Schweiz, Westen | 15. September bis 18. September 2022 und 19. September bis 22. September 2022 | 7. Oktober bis 10. Oktober 2022 |
-| Station 2 | Frankreich, Süden, Indien, Süden, Norwegen, Westen, Schweiz, Norden, Südafrika, Norden, Australien Osten, Vereinigtes Königreich, Süden, VAE, Norden, Japan, Osten, Australien, Südosten, Südostasien | 25. September bis 28. September 2022 | 7. Oktober bis 10. Oktober 2022 |
-| Station 3 | Ostasien, Vereinigtes Königreich, Westen, Japan, Westen, Brasilien, Süden, Westeuropa, USA, Osten, VAE, Mitte | 26. September bis 29. September 2022 | 7. Oktober bis 10. Oktober 2022 |
-| Station 4 | Nordeuropa, USA, Mitte, USA, Westen | 28. September bis 1. Oktober 2022 | 7. Oktober bis 10. Oktober 2022 |
+| Station 1 | Kanada, Mitte, Kanada, Osten, Frankreich, Mitte, Indien, Mitte, Norwegen, Osten, Schweiz, Westen | 15. September bis 18. September 2022, 19. September bis 22. September 2022 und 7. Oktober bis 10. Oktober 2022 | 25. Oktober bis 28. Oktober 2022 |
+| Station 2 | Frankreich, Süden, Indien, Süden, Norwegen, Westen, Schweiz, Norden, Südafrika, Norden, Australien Osten, Vereinigtes Königreich, Süden, VAE, Norden, Japan, Osten, Australien, Südosten, Südostasien | 25. September bis 28. September 2022 und 7. Oktober bis 10. Oktober 2022 | 25. Oktober bis 28. Oktober 2022 |
+| Station 3 | Ostasien, Vereinigtes Königreich, Westen, Japan, Westen, Brasilien, Süden, Westeuropa, USA, Osten, VAE, Mitte | 26. September bis 29. September 2022 und 7. Oktober bis 10. Oktober 2022 | 25. Oktober bis 28. Oktober 2022 |
+| Station 4 | Nordeuropa, USA, Mitte, USA, Westen | 28. September bis 1. Oktober 2022 und 7. Oktober bis 10. Oktober 2022 | 25. Oktober bis 28. Oktober 2022 |
 | Station 5 | DoD, Community-Cloud der Regierung, China | Nicht geplant | Nicht geplant |
 
 ### <a name="proactive-quality-update-release-10029"></a><a name="schedule"></a> Version des proaktiven Qualitätsupdates: 10.0.29

@@ -4,23 +4,25 @@ description: In diesem Artikel wird beschrieben, wie Umleitungen für Menüeleme
 author: Mirzaab
 ms.date: 09/01/2022
 ms.topic: article
-ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
+ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour, WHSMobileAppFlowStepDetourSelectFields, WHSMobileAppFlowStepSelectPromotedFields
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: d8d3d434077fdb145291e2298055f692b78db3d6
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 2e387dd4e6499912f2d53dddc17ccc053f1ca699
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428062"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689309"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Umleitungen für Schritte in den Menüpunkten des Mobilgeräts konfigurieren
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 10.0.31 GA -->
 
 > [!IMPORTANT]
 > Die Funktionen, die in diesem Artikel beschrieben werden, gelten nur für die neue Warehouse Management Mobile-App. Sie betreffen nicht die alte Lager-App, die jetzt außer Betrieb genommen ist.
@@ -38,6 +40,7 @@ Bevor Sie Umleitungen für Schritte in Menüpunkten mobiler Geräte konfiguriere
 1. Aktivieren Sie die folgenden Features, die die in diesem Artikel beschriebene Funktionalität bereitstellen:
     - *Umleitung für Warehouse Management-App*<br>(Ab Supply Chain Management Version 10.0.29 ist diese Funktion standardmäßig aktiviert.)
     - *Umleitungen auf mehreren Ebenen für die mobile Warehouse Management-App*
+    - *Umleitungsschritte für die mobile Warehouse Management-App automatisch übermitteln*
 1. Wie die Funktion *Umleitung für Warehouse Management-App* und/oder *Umleitungen auf mehreren Ebenen für die mobile Warehouse Management-App* nicht bereits aktiviert ist, aktualisieren Sie die Feldnamen in der mobilen App für Warehouse Management, indem Sie zu **Lagerverwaltung \> Einstellungen \> Mobiles Gerät \> Feldnamen der Warehouse-App** und wählen **Standard-Setup erstellen**. Weitere Informationen finden Sie unter [Felder für die Warehouse Management Mobile App konfigurieren](configure-app-field-names-priorities-warehouse.md).
 1. Wiederholen Sie den vorherigen Schritt für jede juristische Person (Firma), in der Sie die mobile App Warehouse Management verwenden.
 
@@ -49,7 +52,7 @@ Gehen Sie wie folgt vor, um eine Umleitung von einer menüspezifischen Außerkra
 1. Suchen Sie die Kombination der Werte **Schritt-ID** und **Name des Elements**, die Sie bearbeiten wollen, und wählen Sie dann den Wert in der Spalte **Schritt-ID**.
 1. Auf der angezeigten Seite, im Inforegister **Verfügbare Umleitungen (Menüpunkte)** können Sie den Menüpunkt angeben, der als Umleitung fungieren soll. Außerdem können Sie auswählen, welche Feldwerte aus der Hauptaufgabe automatisch in und aus der Umleitung kopiert werden sollten. Beispiele für die Verwendung dieser Einstellungen finden Sie in den Szenarien weiter unten in diesem Artikel.
 
-## <a name="sample-scenario-1-sales-picking-where-a-location-inquiry-acts-as-a-detour"></a>Beispielszenario 1: Verkaufskommissionierung, bei der eine Standortanfrage als Umweg dient
+## <a name="sample-scenario-1-sales-picking-where-a-location-inquiry-acts-as-a-detour"></a><a name="scenario-1"></a>Beispielszenario 1: Verkaufskommissionierung, bei der eine Standortanfrage als Umweg dient
 
 Dieses Szenario zeigt, wie Sie eine Standortanfrage als Umweg in einem mitarbeitergesteuerten Verkaufskommissionierungs-Aufgabenablauf konfigurieren. Dieser Umweg ermöglicht es den Arbeitern, alle Nummernschilder an dem Ort, an dem sie kommissionieren, nachzuschlagen und das Nummernschild auszuwählen, das sie verwenden möchten, um die Kommissionierung abzuschließen. Dieser Umweg kann sinnvoll sein, wenn der Strichcode beschädigt und daher vom Scanner nicht lesbar ist. Alternativ kann es nützlich sein, wenn ein Mitarbeiter lernen muss, was tatsächlich im System vorhanden ist. Beachten Sie, dass dieses Szenario nur funktioniert, wenn Sie von kennzeichenkontrollierten Standorten auswählen.
 
@@ -74,11 +77,13 @@ In diesem Verfahren konfigurieren Sie eine Umleitung für den Menüpunkt **Verka
 
     - **Kopie aus der Verkaufskommissionierung:** *Standort*
     - **Standortanfrage einfügen:** *Standort*
+    - **Automatisch einreichen:** *Ausgewählt* (Die Seite wird mit dem eingefügten Wert *Ort* aktualisiert)
 
 1. Da die Umleitung in diesem Szenario im Nummernschildschritt konfiguriert wird, ist es sinnvoll, wenn Mitarbeiter das Nummernschild aus der Abfrage zurück in den Hauptfluss bringen können. Wählen Sie daher im Abschnitt **Aus Standortabfrage zurückbringen** **Hinzufügen** auf der Symbolleiste, um dem Raster eine Zeile hinzuzufügen. Legen Sie für die neue Zeile die folgenden Werte fest:
 
     - **Kopie aus Standortanfrage:** *Nummernschild*
     - **In Verkaufskommissionierung einfügen:** *Nummernschild*
+    - **Automatisch einreichen:** *Gelöscht* (Bei der Rückkehr von der Umleitung mit einem Wert *Nummernschild* erfolgt kein automatisches Update)
 
 1. Wählen Sie **OK** aus.
 
@@ -131,6 +136,7 @@ In diesem Verfahren konfigurieren Sie eine Umleitung für den Menüpunkt **Verka
 
     - **Aus Standortanfrage kopieren:** *Standort*
     - **In Bewegung einfügen:** *Loc / LP*
+    - **Automatisch einreichen:** *Gelöscht* (es erfolgt kein automatisches Update)
 
     Auf diesem Umweg erwarten Sie nicht, dass Informationen zurückkopiert werden, da der Hauptfluss eine Anfrage war, bei der keine zusätzlichen Schritte erforderlich sind.
 
@@ -153,3 +159,5 @@ In diesem Verfahren führen Sie eine Standortanfrage mit der mobilen Warehouse M
 
 > [!NOTE]
 > Mit der Funktion *Umleitungen auf mehreren Ebenen für die mobile Warehouse Management-App* können Sie mehrstufige Umleitungen (Umleitungen innerhalb von Umleitungen) definieren, die es den Mitarbeitern ermöglichen, von einer bestehenden Umleitung zwei zu einer zweiten und dann wieder zurück zu springen. Die Funktion unterstützt standardmäßig zwei Umleitungsebenen, und bei Bedarf können Sie Ihr System so anpassen, dass es drei oder mehr Umleitungsebenen unterstützt, indem Sie Codeerweiterungen in der Tabelle `WHSWorkUserSessionState` erstellen.
+>
+> Die Funktion *Automatische Übermittlung von Umleitungsschritten für die mobile Warehouse Management-App* kann es Arbeitern schneller und einfacher machen, Umleitungsflüsse in der mobilen Warehouse Management-App abzuschließen. Es ermöglicht, dass einige Ablaufschritte übersprungen werden, indem die App Umleitungsdaten im Backend ausfüllt und dann automatisch zum nächsten Schritt übergeht, indem die Seite automatisch gesendet wird, wie in gezeigt [*Beispielszenario 1: Verkaufskommissionierung, bei der eine Standortanfrage als Umweg dient*](#scenario-1).

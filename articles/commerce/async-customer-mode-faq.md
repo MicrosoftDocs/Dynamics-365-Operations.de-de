@@ -2,19 +2,19 @@
 title: Häufig gestellte Fragen zum asynchronen Debitorenerstellungsmodus
 description: Dieser Artikel enthält Antworten auf häufig gestellte Fragen zum asynchronen Debitorenerstellungsmodus in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 08/04/2022
+ms.date: 10/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-12-17
-ms.openlocfilehash: bd5741aeb3278f1d40d63bb02ca57571a907dc21
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: 64c895fb9f3e55f7680759fa72626be6660aa67c
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9474068"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690201"
 ---
 # <a name="asynchronous-customer-creation-mode-faq"></a>Häufig gestellte Fragen zum asynchronen Debitorenerstellungsmodus
 
@@ -44,5 +44,10 @@ Daten, die in der Commerce Scale Unit (CSU) zwischengespeichert werden, werden m
 
 Stellen Sie sicher, dass die folgenden Aktionen in der hier aufgeführten Reihenfolge durchgeführt wurden.
 
-1. Führen Sie den CDX P-Auftrag in Commerce headquarters aus, um sicherzustellen, dass asynchrone Debitorendaten, die in den Tabellen **RETAILASYNCCUSTOMERV2**, **RETAILASYNCADDRESSV2**, **RETAILASYNCCUSTOMERCONTACT**, **RETAILASYNCCUSTOMERAFFILIATION** und **RETAILASYNCCUSTOMERATTRIBUTEV2** gespeichert sind, in Commerce headquarters verfügbar sind.
+1. Führen Sie den CDX P-Auftrag in Commerce headquarters aus, um sicherzustellen, dass asynchrone Debitorendaten in den Tabellen **RETAILASYNCCUSTOMERV2**, **RETAILASYNCADDRESSV2**, **RETAILASYNCCUSTOMERCONTACT**, **RETAILASYNCCUSTOMERAFFILIATION** und **RETAILASYNCCUSTOMERATTRIBUTEV2** gespeichert sind.
 1. Führen Sie **Debitoren- und Kanalanforderungen synchronisieren** Stapelverarbeitungsaufträge in Commerce headquarters aus. Nach erfolgreicher Ausführung des Stapelverarbeitungsauftrags haben alle Datensätze, die aus den zuvor genannten Tabellen erfolgreich verarbeitet wurden, im Feld **OnlineOperationCompleted** den Wert **1**.
+
+### <a name="how-do-i-know-which-customer-management-in-asynchronous-mode-operation-has-failed-and-how-do-i-make-changes-if-they-are-required"></a>Woher weiß ich, welche Kundenverwaltung im asynchronen Modus fehlgeschlagen ist, und wie nehme ich Änderungen vor, wenn sie erforderlich sind?
+
+Um alle Vorgänge im asynchronen Modus und ihren Synchronisierungsstatus anzuzeigen, gehen Sie in der Commerce Headquarters zu **Handel und Einzelhandel \> Kunden \> Kundensynchronisierungsstatus**. Um Änderungen vorzunehmen, bearbeiten Sie einen bestimmten Vorgang, aktualisieren Sie die Felder, wählen Sie **Speichern**, und wählen Sie dann **Synchronisieren** aus, um die Änderungen zu synchronisieren.
+

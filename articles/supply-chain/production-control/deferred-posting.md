@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-08-02
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 7a8327552d9e6c38721fdac9ee1795e61f90f329
-ms.sourcegitcommit: 8d072505f66f507aafbaae65bedf3b530eb6cb7b
+ms.openlocfilehash: ee767a5d7c3dca2681861802ae42d7a07217c54d
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9266484"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689339"
 ---
 # <a name="make-finished-goods-physically-available-before-posting-to-journals"></a>Markieren Sie fertige Waren vor der Buchung in Erfassungen als physisch verfügbar
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Wenn eine Arbeitskraft einen produzierten Artikel als fertig gemeldet hat, registriert das System ihn als für die weitere physische Bearbeitung verfügbar (z. B. Versand oder Einlagerung). Während dieses Prozesses werden auch ein oder mehrere Erfassungen gebucht (z. B. als fertige Erfassung, Kommissionierlistenerfassung und Arbeitsplanlistenerfassung). Wenn Sie Ihre Exemplare physisch verfügbar machen möchten, bevor alle Buchungen verarbeitet wurden, können Sie das System so einrichten, dass die Erfassungsbuchungen zurückgestellt werden. Zurückgestellte Buchungen werden dann von einem Stapelverarbeitungsauftrag verwaltet, der die Buchungen so verarbeitet, wie es die Systemressourcen zulassen.
 

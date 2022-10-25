@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.form: LedgerTransVoucher, LedgerJournalTable
-ms.openlocfilehash: 7e3a22f43bcc312fe60b77db2fc3bc94d15950c5
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 8912409ec0d2016ea4af12843319febda98663c5
+ms.sourcegitcommit: e700528679a821237e644b3e21058c36ae1323c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9284850"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "9680383"
 ---
 # <a name="reverse-journal-posting"></a>Buchungserfassung stornieren
 
@@ -37,7 +37,7 @@ Bevor Sie eine der beschriebenen Funktionen verwenden können, müssen Sie sie i
 Sie können Erfassungspositionen einzeln stornieren. Mit Rückerfassungsbuchung können Sie eine gesamte Finanzerfassung auch stornieren. So stornieren Sie eine Erfassung 
 
 - Filtern Sie nach den gebuchten Erfassungen und öffnen Sie die Ansicht **Zeilen** in der Erfassung.
-- Wählen Sie das Menü **Stornieren** oben auf der Seite.
+- Wählen Sie das Menü **Gesamte Erfassung stornieren** oben auf der Seite.
 - Sie sehen die Gesamtanzahl von Belegen und Belegpositionen sowie den Gesamtbetrag der Positionen, die storniert werden.
 - Wählen Sie die Option **Ja** aus, um ein vorhandenes Buchungsdatum zu verwenden, oder **Nein**, um ein neues zu verwenden. In einigen Fällen wird die Periode der ursprünglichen Buchung unter Umständen abgeschlossen und Sie müssen ein neues Buchungsdatum für die Stornierung eingeben.
 - Wenn Sie **Nein** ausgewählt haben, geben Sie das Buchungsdatum für die Stornierung ein. 

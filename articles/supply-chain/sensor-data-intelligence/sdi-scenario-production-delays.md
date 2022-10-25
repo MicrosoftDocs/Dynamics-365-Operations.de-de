@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 073762581d84646ba12b570e57327b7cab8efd3b
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 25ccbda1628544f14dc32d9bea3f2162ad47d79e
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428353"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690020"
 ---
 # <a name="the-production-delays-scenario"></a>Das Szenario Produktionsverzögerungen
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Das Szenario *Produktionsverzögerungen* generiert eine Benachrichtigung, wenn der Produktionsdurchsatz einen spezifischen Schwellenwert unterschreitet. In diesem Szenario wird ein *part-out*-Signal für jeden produzierten Artikel an Microsoft Azure IoT-Hub gesendet. In Dynamics 365 Supply Chain Management wird die Auftragsverzögerung basierend auf der geplanten Ausführungszeit des Produktionsauftrags, der Anzahl der zu produzierenden Artikel, der Ausführungszeit des Auftrags und der Anzahl der empfangenen *part-out*-Signale berechnet. Eine Verzögerungsbenachrichtigung wird generiert, wenn die Zahl der *part-out*-Signale für den Einzelvorgang den Schwellenwert unterschreitet.
 

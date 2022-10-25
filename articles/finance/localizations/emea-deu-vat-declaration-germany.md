@@ -9,12 +9,12 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: atrukawk
 ms.search.validFrom: ''
-ms.openlocfilehash: 8ee288a1ec7ae950bdff9da7d373e29daef74d3c
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 04c625b554d96f8ed28ceffef9647fe9cbf7fe2f
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9269403"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689459"
 ---
 # <a name="vat-declaration-germany"></a>Umsatzsteuererklärung (Deutschland)
 
@@ -198,7 +198,8 @@ Führen Sie diese Schritte aus, um zu definieren, welche Mehrwertsteuercodes wel
 
    Dieses Format wird gedruckt, wenn Sie den **Mehrwertsteuer für Abrechnungszeitraum melden**-Bericht ausführen. Es wird auch gedruckt, wenn Sie **Drucken** auf der **Umsatzsteuerzahlungen**-Seite auswählen.
 
-4. Auf der Seite **Steuerbehörden** wählen Sie die Steuerbehörde aus, und wählen Sie dann im **Berichtslayout**-Feld **Standard**.
+4. Wenn Sie die Korrekturen melden müssen, legen Sie im Abschnitt **Sonderbericht** die Option **Korrekturen einbeziehen** auf **Ja** fest.
+5. Auf der Seite **Steuerbehörden** wählen Sie die Steuerbehörde aus, und wählen Sie im **Berichtslayout**-Feld **Standard**.
 
 Wenn Sie die Mehrwertsteuererklärung in einer juristischen Person konfigurieren, die über [mehrere Umsatzsteuerregistrierungen](emea-reporting-for-multiple-vat-registrations.md) verfügt, folgen Sie diesen Schritten:
 

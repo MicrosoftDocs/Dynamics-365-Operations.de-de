@@ -2,7 +2,7 @@
 title: Erste Schritte bei der Steuerberechnung
 description: In diesem Artikel wird erläutert, wie Steuerberechnungen eingerichtet werden.
 author: EricWangChen
-ms.date: 03/25/2022
+ms.date: 10/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ms.custom: intro-internal
 ms.search.form: TaxIntegrationTaxServiceParameters
-ms.openlocfilehash: 2b9af7a8bef9d479c4f2ec59ef533403a74251b1
-ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
+ms.openlocfilehash: 42898823ffc366351c6f58f1fe9b924678ab4b49
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2022
-ms.locfileid: "9573304"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690382"
 ---
 # <a name="get-started-with-tax-calculation"></a>Erste Schritte bei der Steuerberechnung
 
@@ -124,6 +124,10 @@ Die Schritte in diesem Abschnitt beziehen sich nicht auf eine bestimmte juristis
 7. Gehen Sie zu **Steuerdatenmodell**, erweitern Sie den Dateibaum und wählen Sie dann **Steuerkonfiguration** aus.
 8. Wählen Sie die richtige [Steuerkonfigurationsversion](global-tax-calcuation-service-overview.md#versions), basierend auf Ihrer Finance-Version, und wählen Sie dann **Importieren**.
 9. Wählen Sie im Arbeitsbereich **Globalisierungsfunktionen** die Funktion **Funktionen**, wählen Sie die Kachel **Steuerberechnung** und wählen Sie dann **Hinzufügen**.
+
+    > [!NOTE]
+    > In Version 10.0.26 und höher können Sie eine Demofunktion für die Demo der juristischen Person **DEMF** importieren. Weitere Informationen finden Sie unter [Funktionsdemodaten importieren](tax-calculation-import-export-feature.md).
+
 10. Wählen Sie eine der folgenden Funktionstypen aus:
 
     - **Neue Funktion** – Erstellen Sie eine Funktionseinrichtung mit leerem Inhalt.
@@ -154,8 +158,8 @@ Die Schritte in diesem Abschnitt beziehen sich nicht auf eine bestimmte juristis
     - **Anwendbarkeit der Steuerregistrierungsnummer des Kreditors** - Wenn Sie mehrere Steuerregistrierungsnummern für einen Kreditor haben, kann die Steuerberechnung automatisch die richtige Steuerregistrierungsnummer ermitteln. Definieren Sie in der Matrix auf dieser Registerkarte die Regeln, nach denen die Bestimmung erfolgen soll. Andernfalls verwenden Finance und Supply Chain Management weiterhin die Standardsteuerregistrierungsnummer für steuerpflichtige Dokumente für Kauftransaktionen.
     - **Listencode-Anwendbarkeit** - Bestimmen Sie automatisch den Wert des Feldes **Listencode** durch flexiblere und konfigurierbare Regeln. Definieren Sie in der Matrix auf dieser Registerkarte die Regeln, nach denen die Bestimmung erfolgen soll. Andernfalls verwenden Finance und Supply Chain Management weiterhin den Standardcode für steuerpflichtige Dokumente.
 
-14. Wählen Sie auf der **Steuercode**-Registerkarte **Hinzufügen** aus, und geben Sie den Steuercode und eine Beschreibung ein.
-15. Wählen Sie **Steuerkomponente** aus. Die Steuerkomponente ist eine Gruppe von Methoden, die in der vorherigen Version der ausgewählten Steuerkonfiguration definiert wurden. Folgende Steuerkomponenten sind verfügbar:
+15. Wählen Sie auf der **Steuercode**-Registerkarte **Hinzufügen** aus, und geben Sie den Steuercode und eine Beschreibung ein.
+16. Wählen Sie **Steuerkomponente** aus. Die Steuerkomponente ist eine Gruppe von Methoden, die in der vorherigen Version der ausgewählten Steuerkonfiguration definiert wurden. Folgende Steuerkomponenten sind verfügbar:
 
     - Nach Nettobetrag
     - Nach Bruttobetrag
@@ -163,8 +167,8 @@ Die Schritte in diesem Abschnitt beziehen sich nicht auf eine bestimmte juristis
     - Nach Marge
     - Steuer auf Steuern
 
-16. Wählen Sie **Speichern** aus. Je nach ausgewählter Steuerkomponente werden weitere Felder verfügbar.
-17. Verwenden Sie die folgenden Optionen, um die Art des Steuercodes zu identifizieren:
+17. Wählen Sie **Speichern** aus. Je nach ausgewählter Steuerkomponente werden weitere Felder verfügbar.
+18. Verwenden Sie die folgenden Optionen, um die Art des Steuercodes zu identifizieren:
 
     - Ist befreit
     - Ist Gebrauchsteuer
@@ -179,8 +183,8 @@ Die Schritte in diesem Abschnitt beziehen sich nicht auf eine bestimmte juristis
 
     Verwalten Sie die Steuersätze und die Steuerbetragsgrenzen für diesen Steuercode.
 
-18. Wiederholen Sie Schritt 14 bis 17, um alle anderen Steuercodes, die Sie benötigen, hinzuzufügen.
-19. Wählen Sie auf der Registerkarte **Steuerklasse** die Spalte **Steuerklasse** aus, fügen Sie sie als Eingabebedingung in die Matrix ein und fügen Sie dann Zeilen hinzu, um die Stammdaten der Steuerklasse zu pflegen.
+19. Wiederholen Sie Schritt 15 bis 18, um alle anderen Steuercodes, die Sie benötigen, hinzuzufügen.
+20. Wählen Sie auf der Registerkarte **Steuerklasse** die Spalte **Steuerklasse** aus, fügen Sie sie als Eingabebedingung in die Matrix ein und fügen Sie dann Zeilen hinzu, um die Stammdaten der Steuerklasse zu pflegen.
 
     Hier ist ein Beispiel.
 
@@ -191,7 +195,7 @@ Die Schritte in diesem Abschnitt beziehen sich nicht auf eine bestimmte juristis
     | BEL_Dom | BEL_VAT21; BEL_VAT6 |
     | BEL_EU       | BEL_Exempt          |
 
-20. Wählen Sie auf der Registerkarte **Postensteuerkennzeichen** die Spalte **Postensteuerkennzeichen**, fügen Sie sie der Matrix als Eingabebedingung hinzu und fügen Sie dann Zeilen hinzu, um die Postensteuerkennzeichen-Stammdaten zu pflegen.
+21. Wählen Sie auf der Registerkarte **Postensteuerkennzeichen** die Spalte **Postensteuerkennzeichen**, fügen Sie sie der Matrix als Eingabebedingung hinzu und fügen Sie dann Zeilen hinzu, um die Postensteuerkennzeichen-Stammdaten zu pflegen.
 
     Hier ist ein Beispiel.
 
@@ -200,7 +204,7 @@ Die Schritte in diesem Abschnitt beziehen sich nicht auf eine bestimmte juristis
     | Vollständig           | DEU_VAT19; BEL_VAT21; DEU_Exempt; BEL_Exempt |
     | Reduziert        | DEU_VAT7; BEL_VAT6; DEU_Exempt; BEL_Exempt   |
 
-21. Wählen Sie auf der Registerkarte **Steuerkennzeichen** die Spalten aus, die zur Bestimmung des richtigen Steuerkennzeichens erforderlich sind, und wählen Sie dann **Hinzufügen**. Geben Sie Werte für jede Spalte ein oder wählen Sie sie aus. Das Feld **Steuerkennzeichen** wird die Ausgabe dieser Matrix sein. Wenn diese Registerkarte nicht konfiguriert ist, wird die Mehrwertsteuergruppe in der Zeile der Transaktion verwendet.
+22. Wählen Sie auf der Registerkarte **Steuerkennzeichen** die Spalten aus, die zur Bestimmung des richtigen Steuerkennzeichens erforderlich sind, und wählen Sie dann **Hinzufügen**. Geben Sie Werte für jede Spalte ein oder wählen Sie sie aus. Das Feld **Steuerkennzeichen** wird die Ausgabe dieser Matrix sein. Wenn diese Registerkarte nicht konfiguriert ist, wird die Mehrwertsteuergruppe in der Zeile der Transaktion verwendet.
 
     Hier ist ein Beispiel.
 
@@ -214,7 +218,7 @@ Die Schritte in diesem Abschnitt beziehen sich nicht auf eine bestimmte juristis
     > [!NOTE]
     > Wenn die Standard-Mehrwertsteuergruppe in Ihren steuerpflichtigen Belegzeilen korrekt ist, lassen Sie diese Matrix leer. Weitere Informationen finden Sie im Abschnitt [Design zur Laufzeit](#runtime) in diesem Artikel.
 
-22. Wählen Sie auf der Registerkarte **Anwendbarkeit des Steuerkennzeichens** die Spalten aus, die zur Bestimmung des richtigen Steuerkennzeichens erforderlich sind, und wählen Sie dann **Hinzufügen**. Geben Sie Werte für jede Spalte ein oder wählen Sie sie aus. Das Feld **Element Steuerkennzeichen** wird die Ausgabe dieser Matrix sein. Wenn diese Registerkarte nicht konfiguriert ist, wird die Mehrwertsteuergruppe des Elements in der Zeile der Transaktion verwendet.
+23. Wählen Sie auf der Registerkarte **Anwendbarkeit des Steuerkennzeichens** die Spalten aus, die zur Bestimmung des richtigen Steuerkennzeichens erforderlich sind, und wählen Sie dann **Hinzufügen**. Geben Sie Werte für jede Spalte ein oder wählen Sie sie aus. Das Feld **Element Steuerkennzeichen** wird die Ausgabe dieser Matrix sein. Wenn diese Registerkarte nicht konfiguriert ist, wird die Mehrwertsteuergruppe des Elements in der Zeile der Transaktion verwendet.
 
     Hier ist ein Beispiel.
 
@@ -228,10 +232,10 @@ Die Schritte in diesem Abschnitt beziehen sich nicht auf eine bestimmte juristis
 
     Weitere Informationen darüber, wie Steuerkennzeichen in der Steuerberechnung ermittelt werden, finden Sie unter [Ermittlungslogik für Mehrwertsteuergruppen und Artikelsteuerkennzeichen](global-sales-tax-group-determination.md).
 
-23. Legen Sie die Anwendbarkeit von Debitor-Steuerregistrierungsnummern, Kreditor-Steuerregistrierungsnummern und Listencodes basierend auf den Geschäftsanforderungen fest.
-24. Klicken Sie auf **Speichern** und schließen Sie die Seite.
-25. Wählen Sie **Status ändern** \> **Abgeschlossen**. Nachdem der Status in **Abgeschlossen** geändert wurde, kann die Version nicht mehr bearbeitet werden.
-26. Wählen Sie **Status ändern** \> **Veröffentlichen** aus. Diese Version der Steuerfunktionseinrichtung wird in das globale Repository übertragen und ist für jede juristische Person in Finance sichtbar.
+24. Legen Sie die Anwendbarkeit von Debitor-Steuerregistrierungsnummern, Kreditor-Steuerregistrierungsnummern und Listencodes basierend auf den Geschäftsanforderungen fest.
+25. Klicken Sie auf **Speichern** und schließen Sie die Seite.
+26. Wählen Sie **Status ändern** \> **Abgeschlossen**. Nachdem der Status in **Abgeschlossen** geändert wurde, kann die Version nicht mehr bearbeitet werden.
+27. Wählen Sie **Status ändern** \> **Veröffentlichen** aus. Diese Version der Steuerfunktionseinrichtung wird in das globale Repository übertragen und ist für jede juristische Person in Finance sichtbar.
 
 ## <a name="set-up-tax-calculation-in-dynamics-365"></a>Einrichten der Steuerberechnung in Dynamics 365
 

@@ -2,19 +2,19 @@
 title: Asynchroner Debitorerstellungsmodus
 description: Dieser Artikel beschreibt den asynchronen Debitorerstellungsmodus in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 08/04/2022
+ms.date: 10/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-12-17
-ms.openlocfilehash: 95102936871e15f8e525abca736fa75927569b34
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: b2926339021991f87dd3eadef94da3b500c954cf
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473705"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690288"
 ---
 # <a name="asynchronous-customer-creation-mode"></a>Asynchroner Debitorerstellungsmodus
 
@@ -46,6 +46,7 @@ Um Organisationen bei der Verwendung des asynchronen Debitorenerstellungsmodus z
 | Aktivieren Sie die Parität zwischen der Erstellung synchroner und asynchroner Debitoren. | 10.0.24 und höher | <p>Funktionsschalter: **Erweiterte asynchrone Debitorenerstellung aktivieren**</p><p>Funktionsdetails: Möglichkeit, zusätzliche Informationen zu erfassen, z. B. den Titel, Zugehörigkeiten des Standarddebitors und sekundäre Kontaktinformationen (Telefonnummer und E-Mail-Adresse), während Sie Debitoren asynchron erstellen</p> |
 | Benutzerfreundliche Fehlermeldungen | 10.0.28 und höher | Diese Verbesserungen helfen, benutzerfreundliche Fehlermeldungen zu verbessern, wenn ein Benutzer Informationen nicht sofort bearbeiten kann, während die Synchronisierung läuft. Sie aktivieren diese Verbesserungen mit der Einstellung **Zulassen, dass bestimmte Benutzeroberflächenelemente von einem asynchronen Debitor nicht geändert werden können** im Commerce-Seitengenerator **Seiteneinstellungen \> Erweiterungen**. |
 | Möglichkeit, Debitorinformationen asynchron zu bearbeiten | 10.0.29 und höher | <p>Funktionsschalter: **Bearbeitung von Debitoren im asynchronen Modus ermöglichen**</p><p>Funktionsdetails: Möglichkeit, Debitorendaten asynchron zu bearbeiten</p><p>Antworten auf häufig gestellte Fragen zu Problemen im Zusammenhang mit der asynchronen Bearbeitung von Debitoreninformationen finden Sie unter [Häufig gestellte Fragen zum asynchronen Debitorenerstellungsmodus](async-customer-mode-faq.md).</p> |
+| Möglichkeit, die Synchronisierung von Kundenverwaltungsvorgängen zu prüfen | 10.0.31 und höher | Diese Verbesserung ermöglicht es Benutzern, die Synchronisierung von Kundenverwaltungsvorgängen in der Commerce Headquarters zu prüfen. Außerdem können Benutzer bei Bedarf Änderungen vornehmen und die Daten synchronisieren. |
 
 ### <a name="feature-switch-hierarchy"></a>Funktionsschalterhierarchie
 

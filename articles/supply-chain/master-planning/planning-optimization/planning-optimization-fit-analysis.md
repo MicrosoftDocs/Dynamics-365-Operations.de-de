@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: c160a6477dd41fac0f15f57bb0f46def500f4589
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: 15ec53c1f13b3017fb6e829bd1c8e99fbb938ce3
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9643733"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689993"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Passanalyse zu Planungsoptimierung
 
@@ -62,7 +62,7 @@ Die folgende Tabelle zeigt die verschiedenen Ergebnisse, die nach einer Anpassun
 | --- | --- | --- | --- |
 | Aktionen | Dispositionssteuerungsgruppen mit aktivierter Aktionsberechnung: *\#* | Diese Funktion wird jetzt unterstützt. | Unterstützt |
 | Basiskalender | Kalender, die den Basiskalender verwenden: *\#* | Diese Funktion wird jetzt unterstützt. | Unterstützt | 
-| Chargendispositionscodes | Nicht kompensierbare Chargendispositionsmaster: *\#* | Diese Funktion steht noch aus. Derzeit werden Chargendispositionscodes ignoriert, wenn die Planungsoptimierung aktiviert ist. | Veröffentlichungszyklus 2, 2022 <!-- KFM: Now available? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> |
+| Chargendispositionscodes | Nicht kompensierbare Chargendispositionsmaster: *\#* | Diese Funktion wird jetzt unterstützt. Weitere Informationen finden Sie unter [Chargendispositionscodes verwenden, um Chargen als verfügbar oder nicht verfügbar zu markieren](../../inventory/batch-disposition-codes.md) | Unterstützt |
 | Verfügbarkeitszusage (CTP) | Standardauftragseinstellungen mit Lieferdatumskontrolle, die auf CTP eingestellt ist: *\#* | In Supply Chain Management 10.0.28 und neuer stellt ein Prozess namens *CTP für Planungsoptimierung* bestätigte Versand- und Empfangsdaten zur Verfügung, nachdem der dynamische Plan ausgeführt wurde. Bei älteren Versionen von Supply Chain Management wird die veraltete CTP-Einstellung ignoriert, wenn die Planungsoptimierung aktiviert ist. | Unterstützt |
 | Statischen in dynamischen Plan kopieren | "Statischen in dynamischen Plan kopieren" ist in den Produktprogrammplanungsparametern aktiviert. | Die Planungsoptimierung kopiert den statischen Plan unabhängig von dieser Einstellung nicht in den dynamischen Plan. Im Allgemeinen ist dieses Konzept aufgrund der Geschwindigkeit und vollständigen Regeneration, die die Planungsoptimierung bietet, weniger relevant. Wenn zwei oder mehr Pläne verwendet werden, sollte für jeden Plan eine Masterplanung ausgelöst werden. | Nicht zutreffend |
 | Umwandeln | Dispositionssteuerungsgruppen mit automatisch umgewandeltem Umwandlungszeitraum: *\#* | In Version 10.0.7 und höher wird das Umwandeln nach Abschluss der Masterplanung als separater Umwandlungs-Batch-Job unterstützt (vorausgesetzt, die Funktion *Automatische Umwandlung zur Planungsoptimierung* wurde in der [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktiviert). Beachten Sie, dass die automatische Umwandlung für die Planungsoptimierung auf dem Bestelldatum (Startdatum) und nicht auf dem Anforderungsdatum (Enddatum) basiert. Dieses Verhalten stellt sicher, dass die Umwandlung von Planaufträgen rechtzeitig erfolgt, ohne dass die Vorlaufzeit in den Umwandlungszeitraum einbezogen werden muss. | Unterstützt |
@@ -104,7 +104,7 @@ Die folgende Tabelle zeigt die verschiedenen Ergebnisse, die nach einer Anpassun
 | Sicherheitszuschläge | Produktprogrammpläne mit Sicherheitszuschlag: *\#* | Diese Funktion wird jetzt unterstützt. Weitere Informationen finden Sie unter [Sicherheitszuschläge](safety-margins.md) |  Unterstützt |
 | Sicherheitslagerbestandserfüllung | Artikelabdeckungsaufzeichnungen mit Einstellung „Mindestbestand auffüllen“, die sich von „Heutiges Datum + Beschaffungszeit“ unterscheiden: *\#* | Planungsoptimierung verwendet immer *Heutiges Datum + Beschaffungszeit*. Diese Änderung wird vorgenommen, um sich auf eine vereinfachte Planungskonfiguration in der Zukunft vorzubereiten und ein umsetzbares Ergebnis zu erzielen. Wenn die Beschaffungszeit für den Sicherheitsbestand nicht enthalten ist, werden Planaufträge, die für den aktuell niedrigen Lagerbestand erstellt werden, aufgrund der Vorlaufzeit immer verzögert. Dieses Verhalten kann zu erheblichen Störungen und unerwünschten Planaufträgen führen. Die beste Vorgehensweise besteht darin, die Einstellung so zu ändern, dass *Heutiges Datum + Beschaffungszeit* verwendet wird. Aktualisieren Sie die Stammdaten, um Warnungen zu vermeiden. | N/V |
 | Verkaufsangebote | Produktprogrammpläne mit aktivierten Verkaufsangeboten: *\#* | Diese Funktion steht noch aus. Derzeit werden Angebote ignoriert, wenn die Planungsoptimierung aktiviert ist. Sie werden unabhängig von dieser Einstellung ignoriert. | Veröffentlichungszyklus 2, 2022 oder später |
-| Haltbarkeitsdatum | Produktprogrammpläne mit aktiviertem Haltbarkeitsdatum: *\#* | Diese Funktion wird jetzt unterstützt. | Unterstützt |
+| Haltbarkeitsdatum | Produktprogrammpläne mit aktiviertem Haltbarkeitsdatum: *\#* | Diese Funktion steht noch aus. | Veröffentlichungszyklus 2, 2022 |
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

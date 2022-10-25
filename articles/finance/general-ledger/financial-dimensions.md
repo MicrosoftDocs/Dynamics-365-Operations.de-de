@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 3ad92e006351adbf2494a1b32325d2d4a83b76a4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9b07831ab789b570963ff5f425f149ba5a564a38
+ms.sourcegitcommit: e700528679a821237e644b3e21058c36ae1323c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849988"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "9680357"
 ---
 # <a name="financial-dimensions"></a>Finanzdimensionen
 
@@ -84,7 +84,7 @@ Zur Unterstützung bei der Wahrung der referenziellen Integrität der Daten kön
 Wenn irgendwelche dieser Kriterien erfüllt sind, kann die Finanzdimension nicht gelöscht erfüllt.
 
 > [!NOTE]
-> Ab Finance-Version 10.0.27 werden Finanzdimensionen nicht mehr automatisch für die Finanzberichterstellungseinrichtung ausgewählt, wenn sie erstellt werden. 
+> Ab Finance-Version 10.0.27 werden Finanzdimensionen nicht mehr automatisch für die Finanzberichterstellungseinrichtung ausgewählt, wenn sie erstellt werden.
 
 ## <a name="default-dimension-values"></a>Standarddimensionswerte
 

@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: d894b83afe822e013c0c4375e5cfe5e7e8ac8d1d
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: 31b45fdb92cf8a590ff77104f0c8015fb4d329d5
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186687"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689487"
 ---
 # <a name="demand-driven-material-requirements-planning-ddmrp-overview"></a>Überblick über die bedarfsgesteuerte Disposition (DDMRP)
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Seit Jahren verwenden Unternehmen die Materialbedarfsplanung (MRP) als ein System zur Berechnung der Materialien und Komponenten, die zur Herstellung eines Produkts benötigt werden. Allerdings haben sich die Vorräte inzwischen verändert. Teile haben längere Vorlaufzeiten, weil sie zunehmend aus Übersee bezogen werden. Viele Unternehmen haben daher von Fehl- oder Überbeständen berichtet, weil sie nicht wissen, wie viel Bestand sie vorrätig halten sollen. Es gibt auch mehr Marktschwankungen (manchmal ungenaue Planungen), und die Debitor verlangen Produkte mit kurzer Vorlaufzeit. Daher gibt es überall auf der Welt Engpässe in der Vorratskette. Darüber hinaus geben MRP Tools den Planern oft Tausende von Aktionen vor. Daher ist es schwer zu wissen, worauf man sich konzentrieren soll. Häufig besteht die Lösung für viele dieser Probleme darin, zur bedarfsgesteuerten Materialbedarfsplanung (DDMRP) zu wechseln.
 

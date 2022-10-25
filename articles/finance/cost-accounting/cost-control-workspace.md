@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f53d5d4daea076cc63308a83292f8f8c1ee1d022
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8d5ded4b08d562fff9ec5fd9a3de591f944e3ee0
+ms.sourcegitcommit: dca54dd3afc7c94795d89c63050b105df2c48e3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853495"
+ms.lasthandoff: 10/15/2022
+ms.locfileid: "9682897"
 ---
 # <a name="cost-control-workspace"></a>Kostensteuerungs-Arbeitsbereich 
 
@@ -53,7 +53,7 @@ Auf dem Inforegister **Datenenfilterung** können Sie die Datenengrundlage für 
 |-------------------------------------------------------------------|-------------|
 | Kostenrechnungssachkonto                                            | Das **Kostenrechnungssachkonto**, auf dem der Bericht basiert. Der Wert wird aus dem Feld **Kostenkontrolleinheit** abgeleitet. |
 | Kostensteuerungseinheit                                                 | Der Wert, den Sie auswählen, bestimmt das Kostenrechnungs-Sachkonto und die Kostenobjekte, auf denen dieser Bericht basiert. |
-| Statistische Dimensionshierarchie, Kostenelementdimensionshierarchie | Ein Konfigurationssatz des **Kostensteuerung**-Arbeitsbereichs kann entweder nicht-monetäre oder monetäre Werte melden, aber nicht im gleichen Layout. Wählen Sie einen Wert im Feld **Kostenelement-Dimensionshierarchie** aus, um monetäre Werte zu melden. Wählen Sie einen Wert im Feld **Statistische Dimensionshierarchie** aus, um nicht monetäre Werte zu melden. Der Dimensionshierarchiedatensatz, den Sie auswählen, bestimmt die Struktur die Ebenen der Berichtserstellung und Aggregation.<blockquote>[!NOTE]<br>Um nicht monetäre und monetäre Werte nebeneinander anzuzeigen, können Sie die Daten nach Microsoft Excel für das Microsoft Power BI-Inhaltspaket exportieren.</blockquote> |
+| Statistische Dimensionshierarchie, Kostenelementdimensionshierarchie | Ein Konfigurationssatz des **Kostensteuerung**-Arbeitsbereichs kann entweder nicht-monetäre oder monetäre Werte melden, aber nicht im gleichen Layout. Wählen Sie einen Wert im Feld **Kostenelement-Dimensionshierarchie** aus, um monetäre Werte zu melden. Wählen Sie einen Wert im Feld **Statistische Dimensionshierarchie** aus, um nicht monetäre Werte zu melden. Der Dimensionshierarchiedatensatz, den Sie auswählen, bestimmt die Struktur die Ebenen der Berichtserstellung und Aggregation.<blockquote>**HINWEIS:**<br>Um nicht monetäre und monetäre Werte nebeneinander anzuzeigen, können Sie die Daten nach Microsoft Excel für das Microsoft Power BI-Inhaltspaket exportieren.</blockquote> |
 | Kostenobjekt-Dimensionshierarchie      | Wählen Sie die Dimensionshierarchie der Kostenelementdimension aus, die dem Zweck der Berichterstellung, die Sie definieren, entspricht. |
 | Ursprüngliche Budgetversion                                           | Wählen Sie die Budgetversion-ID aus, die als ursprüngliches Budget im Rahmen dieses Berichts dient. |
 | Überarbeitete Budgetversion                                            | Wählen Sie die Budgetversion-ID aus, die als überarbeitetes Budget im Rahmen dieses Berichts dient. |
@@ -64,7 +64,7 @@ Die Gemeinkostenberechnung führt mehrere Berechnungsschritte mit den Quelldaten
 
 | Feld                  | Beschreibung |
 |------------------------|-------------|
-| Steuerkalenderperiode | Wählen Sie die Steuerkalenderperiode aus, der eine Gemeinkostenberechnungskennung zugewiesen werden soll.<blockquote>[!NOTE]<br>Die Finanzzeiträume, die im Feld aufgeführt sind, stammen aus dem Steuerkalender, der dem Kostenrechnungs-Sachkonto zugeordnet ist.</blockquote> |
+| Steuerkalenderperiode | Wählen Sie die Steuerkalenderperiode aus, der eine Gemeinkostenberechnungskennung zugewiesen werden soll.<blockquote>**HINWEIS:**<br>Die Finanzzeiträume, die im Feld aufgeführt sind, stammen aus dem Steuerkalender, der dem Kostenrechnungs-Sachkonto zugeordnet ist.</blockquote> |
 | Tatsächliche Version         | Wählen Sie die entsprechende Gemeinkostenberechnungskennnung. |
 | Budgetversion         | Wählen Sie die entsprechende Gemeinkostenberechnungskennnung. |
 | Überarbeitete Budgetversion | Wählen Sie die entsprechende Gemeinkostenberechnungskennnung. |
@@ -77,10 +77,10 @@ Die Werte in den ausgewählten Spalten werden mit den ausgewählten Werten im In
 
 | Feld                | Beschreibung |
 |----------------------|-------------|
-| Aktuelle Periode       | Der Saldo des aktuellen Finanzzeitraums wird angezeigt.<blockquote>[!NOTE]<br>Standardmäßig wird die aktuelle Periode vom Sitzungsdatum bestimmt. Im Arbeitsbereich **Kostensteuerung** kann ein bestimmter Finanzzeitraum ausgewählt werden. Der ausgewählte Wert stellt dann die aktuelle Periode dar.</blockquote> |
-| Vorherige Periode      | Der Saldo des vorherigen Finanzzeitraums wird angezeigt. Verwendete Formel:<br>Laufender Finanzzeitraum – 1<blockquote>[!NOTE]<br>Standardmäßig wird die vorherige Periode vom Sitzungsdatum abgeleitet. Im Arbeitsbereich **Kostensteuerung** kann ein bestimmter Finanzzeitraum als aktueller Zeitraum ausgewählt werden. **Vorheriger Zeitraum** wird anschließend entsprechend neu berechnet.</blockquote> |
-| Seit Jahresbeginn         | Der Wert seit Jahresbeginn wird angezeigt. Verwendete Formel:<br>YearToDate (Laufender Finanzzeitraum)<blockquote>[!NOTE]<br>Standardmäßig wird die aktuelle Periode vom Sitzungsdatum bestimmt. Im Arbeitsbereich **Kostensteuerung** kann ein bestimmter Finanzzeitraum ausgewählt werden. Der ausgewählte Wert stellt dann den aktuelle Zeitraum dar, und der Wert **Seit Jahresbeginn** wird entsprechend aktualisiert.</blockquote> |
-| Durchschnitt seit Jahresbeginn | Der Durchschnitt seit Jahresbeginn wird angezeigt. Verwendete Formel:<br>(YearToDate [Laufender Finanzzeitraum]) ÷ (Anzahl [Laufender Finanzzeitraum])<p><strong>Beispiel</strong></p><ul><li>**Statistisches Dimensionsmitglied:** Vollzeitmitarbeiter</li><li>**Aktuelles Datum:** 3-21-2017</li><li>**Zeitraum:** Finanzzeitraum 1, Finanzzeitraum 2, Finanzzeitraum 3</li><li>**Größe:** 10, 10, 12</li></ul>In diesem Fall **Durchschnitt seit Jahresbeginn** = (10 + 10 + 12) = 3 ÷ 10,67<p>Der Wert **Durchschnitt seit Jahresbeginn** kann für Kostenelementdimensionsmitglieder und statistische Dimensionsmitglieder berechnet werden.</p><blockquote>[!NOTE]<br>Standardmäßig wird die aktuelle Periode vom Sitzungsdatum bestimmt. Im Arbeitsbereich **Kostensteuerung** kann ein bestimmter Finanzzeitraum ausgewählt werden. Der ausgewählte Wert stellt dann den aktuellen Zeitraum dar, und die Werte **Seit Jahresbeginn** und **Durchschnitt seit Jahresbeginn** werden entsprechend aktualisiert.</blockquote> |
+| Aktuelle Periode       | Der Saldo des aktuellen Finanzzeitraums wird angezeigt.<blockquote>**HINWEIS:**<br>Standardmäßig wird die aktuelle Periode vom Sitzungsdatum bestimmt. Im Arbeitsbereich **Kostensteuerung** kann ein bestimmter Finanzzeitraum ausgewählt werden. Der ausgewählte Wert stellt dann die aktuelle Periode dar.</blockquote> |
+| Vorherige Periode      | Der Saldo des vorherigen Finanzzeitraums wird angezeigt. Verwendete Formel:<br>Laufender Finanzzeitraum – 1<blockquote>**HINWEIS:**<br>Standardmäßig wird die vorherige Periode vom Sitzungsdatum abgeleitet. Im Arbeitsbereich **Kostensteuerung** kann ein bestimmter Finanzzeitraum als aktueller Zeitraum ausgewählt werden. **Vorheriger Zeitraum** wird anschließend entsprechend neu berechnet.</blockquote> |
+| Seit Jahresbeginn         | Der Wert seit Jahresbeginn wird angezeigt. Verwendete Formel:<br>YearToDate (Laufender Finanzzeitraum)<blockquote>**HINWEIS:**<br>Standardmäßig wird die aktuelle Periode vom Sitzungsdatum bestimmt. Im Arbeitsbereich **Kostensteuerung** kann ein bestimmter Finanzzeitraum ausgewählt werden. Der ausgewählte Wert stellt dann den aktuelle Zeitraum dar, und der Wert **Seit Jahresbeginn** wird entsprechend aktualisiert.</blockquote> |
+| Durchschnitt seit Jahresbeginn | Der Durchschnitt seit Jahresbeginn wird angezeigt. Verwendete Formel:<br>(YearToDate [Laufender Finanzzeitraum]) ÷ (Anzahl [Laufender Finanzzeitraum])<p><strong>Beispiel</strong></p><ul><li>**Statistisches Dimensionsmitglied:** Vollzeitmitarbeiter</li><li>**Aktuelles Datum:** 3-21-2017</li><li>**Zeitraum:** Finanzzeitraum 1, Finanzzeitraum 2, Finanzzeitraum 3</li><li>**Größe:** 10, 10, 12</li></ul>In diesem Fall **Durchschnitt seit Jahresbeginn** = (10 + 10 + 12) = 3 ÷ 10,67<p>Der Wert **Durchschnitt seit Jahresbeginn** kann für Kostenelementdimensionsmitglieder und statistische Dimensionsmitglieder berechnet werden.</p><blockquote>**HINWEIS:**<br>Standardmäßig wird die aktuelle Periode vom Sitzungsdatum bestimmt. Im Arbeitsbereich **Kostensteuerung** kann ein bestimmter Finanzzeitraum ausgewählt werden. Der ausgewählte Wert stellt dann den aktuellen Zeitraum dar, und die Werte **Seit Jahresbeginn** und **Durchschnitt seit Jahresbeginn** werden entsprechend aktualisiert.</blockquote> |
 
 ### <a name="columns-to-display-for-costs"></a>Anzuzeigende Spalten für Kosten
 
@@ -88,11 +88,11 @@ Im Inforegister **Anzuzeigende Spalten für Kosten** entscheidet der Kostenbuchh
 
 | Feld                 | Beschreibung |
 |-----------------------|-------------|
-| Fixkosten            | Dieser Spaltentyp zeigt die Fixkosten auf Grundlage der ausgewählten Gemeinkostenberechnungskennnung.<blockquote>[!NOTE]<br>Dieser Spaltentyp zeigt nur dann einen Saldo, wenn Gemeinkostenberechnungskennnung für den Finanzzeitraum ausgewählt ist.</blockquote> |
-| Variable Kosten         | Dieser Spaltentyp zeigt die variblen Kosten auf Grundlage der ausgewählten Gemeinkostenberechnungskennnung.<blockquote>[!NOTE]<br>Dieser Spaltentyp zeigt nur dann einen Saldo, wenn Gemeinkostenberechnungskennnung für den Finanzzeitraum ausgewählt ist.</blockquote> |
-| Fixkosten und variable Kosten | Dieser Spaltentyp zeigt die Fixkosten auf Grundlage der ausgewählten Gemeinkostenberechnungskennnung.<blockquote>[!NOTE]<br>Dieser Spaltentyp zeigt nur dann einen Saldo, wenn Gemeinkostenberechnungskennnung für den Finanzzeitraum ausgewählt ist.</blockquote> |
-| Gesamtkosten            | Dieser Spaltentyp zeigt die Gesamtkosten (nicht klassifizierte Kosten, Fixkosten und variable Kosten).<blockquote>[!NOTE]<br>Der Spaltentyp zeigt jederzeit den Saldo.</blockquote> |
-| Nicht klassifizierte Kosten     | Dieser Spaltentyp zeigt die nicht klassifizierten Kosten.<blockquote>[!NOTE]<br>Diese Spalte kann verwendet werden, um zu überprüfen, ob alle Kosten von der Gemeinkostenberechnung richtig klassifiziert wurden, oder ob die Kostenverhaltensregeln angepasst werden müssen.</blockquote> |
+| Fixkosten            | Dieser Spaltentyp zeigt die Fixkosten auf Grundlage der ausgewählten Gemeinkostenberechnungskennnung.<blockquote>**HINWEIS:**<br>Dieser Spaltentyp zeigt nur dann einen Saldo, wenn Gemeinkostenberechnungskennnung für den Finanzzeitraum ausgewählt ist.</blockquote> |
+| Variable Kosten         | Dieser Spaltentyp zeigt die variblen Kosten auf Grundlage der ausgewählten Gemeinkostenberechnungskennnung.<blockquote>**HINWEIS:**<br>Dieser Spaltentyp zeigt nur dann einen Saldo, wenn Gemeinkostenberechnungskennnung für den Finanzzeitraum ausgewählt ist.</blockquote> |
+| Fixkosten und variable Kosten | Dieser Spaltentyp zeigt die Fixkosten auf Grundlage der ausgewählten Gemeinkostenberechnungskennnung.<blockquote>**HINWEIS:**<br>Dieser Spaltentyp zeigt nur dann einen Saldo, wenn Gemeinkostenberechnungskennnung für den Finanzzeitraum ausgewählt ist.</blockquote> |
+| Gesamtkosten            | Dieser Spaltentyp zeigt die Gesamtkosten (nicht klassifizierte Kosten, Fixkosten und variable Kosten).<blockquote>**HINWEIS:**<br>Der Spaltentyp zeigt jederzeit den Saldo.</blockquote> |
+| Nicht klassifizierte Kosten     | Dieser Spaltentyp zeigt die nicht klassifizierten Kosten.<blockquote>**HINWEIS:**<br>Diese Spalte kann verwendet werden, um zu überprüfen, ob alle Kosten von der Gemeinkostenberechnung richtig klassifiziert wurden, oder ob die Kostenverhaltensregeln angepasst werden müssen.</blockquote> |
 
 ### <a name="columns-to-display-for-budgeted-costs"></a>Anzuzeigende Spalten für budgetierte Kosten
 
@@ -103,12 +103,12 @@ Im Inforegister **Anzuzeigende Spalten für budgetierte Kosten** entscheidet der
 
 | Feld                     | Beschreibung |
 |---------------------------|-------------|
-| Budget                    | Budgetsalden werden entsprechend der ausgewählten Spalten angezeigt.<blockquote>[!NOTE]<br>Die Salden basieren auf den Budgetversionen, die auf dem Inforegister **Datenenfilterung** ausgewählt werden.</blockquote> |
+| Budget                    | Budgetsalden werden entsprechend der ausgewählten Spalten angezeigt.<blockquote>**HINWEIS:**<br>Die Salden basieren auf den Budgetversionen, die auf dem Inforegister **Datenenfilterung** ausgewählt werden.</blockquote> |
 | Budgetabweichung           | Berechnen Sie die Differenz zwischen Budget und Istkosten und zeigen Sie sie an. Verwendete Formel:<br>Budgetsaldo – Tatsächliches Saldo |
 | Budgetabweichung in %      | Berechnen Sie die Differenz zwischen Budget und Istkosten in Prozent und zeigen Sie sie an. Verwendete Formel:<br>(Budgetsaldo – tatsächliches Saldo) ÷ Budgetsaldo |
-| Abweichungsperiodenschwellenwert | Legen Sie einen Schwellenwert für die Abweichung des Geldbetrags für den aktuellen Zeitraum fest. Wenn der Schwellenwert überschritten wird, wird die entsprechende Position rot im Arbeitsbereich **Kostensteuerung** hervorgehoben.<blockquote>[!NOTE]<br>Dieses Feld gilt nur für die Kostenelemente, die Aufwendungen darstellen.</blockquote> |
+| Abweichungsperiodenschwellenwert | Legen Sie einen Schwellenwert für die Abweichung des Geldbetrags für den aktuellen Zeitraum fest. Wenn der Schwellenwert überschritten wird, wird die entsprechende Position rot im Arbeitsbereich **Kostensteuerung** hervorgehoben.<blockquote>**HINWEIS:**<br>Dieses Feld gilt nur für die Kostenelemente, die Aufwendungen darstellen.</blockquote> |
 | Abweichungsjahresschwellenwert   | Legen Sie einen Schwellenwert für die Abweichung des Geldbetrags für das Jahr fest. Wenn der Schwellenwert überschritten wird, wird die entsprechende Position rot im Arbeitsbereich **Kostensteuerung** hervorgehoben. |
-| Abweichungsschwellenwert %      | Legen Sie einen Schwellenwert für die Abweichung in Prozent fest. Wenn der Schwellenwert überschritten wird, wird die entsprechende Position rot im Arbeitsbereich **Kostensteuerung** hervorgehoben.<blockquote>[!NOTE]<br>Der gleiche Prozentsatzschwellenwert gilt für den aktuellen Zeitraum und das Jahr.</blockquote> |
+| Abweichungsschwellenwert %      | Legen Sie einen Schwellenwert für die Abweichung in Prozent fest. Wenn der Schwellenwert überschritten wird, wird die entsprechende Position rot im Arbeitsbereich **Kostensteuerung** hervorgehoben.<blockquote>**HINWEIS:**<br>Der gleiche Prozentsatzschwellenwert gilt für den aktuellen Zeitraum und das Jahr.</blockquote> |
 
 ## <a name="cost-control-workspace"></a>Kostensteuerungs-Arbeitsbereich
 
