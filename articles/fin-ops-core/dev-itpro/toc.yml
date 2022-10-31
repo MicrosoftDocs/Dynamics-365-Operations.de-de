@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-30.md
                 - name: "Plattformupdates für Version 10.0.29 (Oktober\_2022)"
                   href: get-started/whats-new-platform-updates-10-0-29.md
-                - name: Plattformupdates für Version 10.0.28 (August 2022)
-                  href: get-started/whats-new-platform-updates-10-0-28.md
             - name: Entfernte oder veraltete Funktionen
               items:
                 - name: Entfernte oder veraltete Funktionen auf der Startseite
@@ -1576,7 +1574,7 @@
                   href: lcs-solutions/apply-country-context.md
                 - name: Gesetzliche Zertifizierungsinformationen in den Funktionstiteln
                   href: lcs-solutions/regulatory-certifications.md
-                - name: Neues zu Auflagen
+                - name: Neue rechtliche Bestimmungen
                   href: lcs-solutions/regulatory-watch-communication.md
                 - name: Separate Lokalisierungsmodelle
                   href: lcs-solutions/separate-localization-models.md
@@ -1605,10 +1603,14 @@
             - name: Bericht zu Lizenzcodes und Konfigurationsschlüsseln
               href: sysadmin/license-codes-configuration-keys-report.md
             - name: Unternehmensübergreifende Datenfreigabe
-              href: sysadmin/cross-company-data-sharing.md
+              href: sysadmin/srs-overview.md
+            - name: 'Tabellen, die die Datenfreigabe unterstützen'
+              href: sysadmin/drs-srs-tables.md
+            - name: Datenfreigabe für Entwickler
+              href: sysadmin/drs-srs-dev.md
             - name: Wartungsmodus
               href: sysadmin/maintenance-mode.md
-            - name: Vorkonfigurierten Systemkonten
+            - name: Vorkonfigurierte Systemkonten
               href: sysadmin/pre-configured-system-accounts.md
             - name: B2B-Benutzer in Azure AD exportieren
               href: sysadmin/implement-b2b.md

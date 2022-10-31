@@ -12,7 +12,7 @@
               items:
                 - name: Neuerungen oder Änderungen der Supply Chain Management-Startseite
                   href: get-started/whats-new-home-page.md
-                - name: "Supply Chain Management\_10.0.31 (Februar 2022)"
+                - name: "Supply Chain Management\_10.0.31 (Februar 2023)"
                   href: get-started/whats-new-scm-10-0-31.md
                 - name: Supply Chain Management 10.0.30 (November 2022)
                   href: get-started/whats-new-scm-10-0-30.md
@@ -20,7 +20,7 @@
                   href: get-started/whats-new-scm-10-0-29.md
             - name: Entfernte oder veraltete Funktionen
               items:
-                - name: Entfernte oder veraltete Startseitenfunktionen
+                - name: Entfernte oder veraltete Funktionen auf der Startseite
                   href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?context=/dynamics365/context/supply-chain
                 - name: Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management
                   href: get-started/removed-deprecated-features-scm-updates.md
@@ -368,7 +368,7 @@
                       href: ../finance/localizations/emea-multiple-vat-registration-numbers.md?context=/dynamics365/context/supply-chain
                     - name: Umgebung zur Masterdatensuche einrichten
                       href: ../finance/localizations/tax-service-set-up-environment-master-data-lookup.md?context=/dynamics365/context/supply-chain
-            - name: Neues zu Auflagen
+            - name: Neue rechtliche Bestimmungen
               href: ../finance/localizations/regulatory-updates.md?context=/dynamics365/context/supply-chain
             - name: Indien
               items:
@@ -3243,6 +3243,8 @@
               href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
             - name: USMCA-Ursprungszertifizierung
               href: transportation/usmca-certification-of-origin.md
+            - name: Kommerzielle Rechnungen
+              href: transportation/commercial-invoice.md
             - name: Frachtbrief erstellen
               href: transportation/create-bill-of-lading.md
             - name: Frachttransportrouten planen
@@ -3433,8 +3435,14 @@
                       href: warehousing/pack-materials-packing-material-fees.md
                     - name: Packen von Containern zur Lieferung
                       href: warehousing/packing-containers.md
+                    - name: Containerbeschriftungen drucken
+                      href: warehousing/print-container-labels.md
                     - name: Packarbeiten zum Packen von ausgehenden Containern und Verarbeiten von Lieferungen
                       href: warehousing/packing-work.md
+                    - name: Container mit der mobilen Warehouse Management-App packen
+                      href: warehousing/warehouse-app-packing-containers.md
+                    - name: Beispielszenario – Container mit der mobilen Warehouse Management-App packen
+                      href: warehousing/warehouse-app-pack-containers-scenario.md
                     - name: Artikelneuzuordnung für Entnahme mit unzureichender Menge einrichten
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
                     - name: Systemgeleitete Arbeitsabfolgen
@@ -3691,7 +3699,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
                     - name: Systemgruppierung in einer offenen Arbeitsliste
                       href: warehousing/system-group-on-open-work-list.md
-                    - name: Dokumentweiterleitungs-Layout für Kennzeichenbeschriftungen
+                    - name: Dokumentenlayouts für Weiterleitungsetiketten
                       href: warehousing/document-routing-layout-for-license-plates.md
                     - name: GS1-Barcodes und QR-Codes
                       href: warehousing/gs1-barcodes.md
@@ -3701,7 +3709,13 @@
                   items:
                     - name: Lagerortverwaltungsprozesse von Microsoft Dynamics AX 2012 auf Finanzen und Betrieb aktualisieren
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
-        - name: Entwicklung von Supply Chain Management
+            - name: Lagertelemetrie
+              items:
+                - name: Lagertelemetrie mit Application Insights aktivieren
+                  href: warehousing/application-insights-warehousing.md
+                - name: Verbrauch und Leistung mobiler Geräte überwachen
+                  href: warehousing/application-insights-wma.md
+        - name: Weiterentwicklung von Supply Chain Management
           items:
             - name: Anleitung zur Entwicklung von Gantt-Steuerelementen
               href: ../fin-ops-core/dev-itpro/user-interface/gantt-development-guide.md?context=/dynamics365/context/supply-chain
