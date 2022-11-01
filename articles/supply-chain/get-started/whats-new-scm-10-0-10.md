@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 62f771f6eda949f13536e700ef13a118881886ef
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: c377a910cca8bbf1fd640b6c9a99810be1a8d40f
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9123529"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708693"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10010-may-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.10 (Mai 2020)
 
@@ -39,7 +39,7 @@ Die folgenden Funktionen sind in diesem Release enthalten. Die Funktionen-Titel 
 
 - [Verbesserungen der Verwaltung von eingehenden Ladungen für Lagermanagement](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - Weitere Informationen finden Sie unter [Lagerinterne Abwicklung eingehender Ladungen für Bestellungen](../warehousing/inbound-load-handling.md).
 
-- [Verbesserungen beim Etikettendruck für die Lagerverwaltung](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management)<br> - Weitere Informationen finden Sie unter [Dokumentenroutinglayout für Kennzeichenbeschriftungen](../warehousing/document-routing-layout-for-license-plates.md).
+- [Verbesserungen beim Etikettendruck für die Lagerverwaltung](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management)<br> - Weitere Informationen finden Sie unter [Layouts für Dokumenten-Routing Labels](../warehousing/document-routing-layout-for-license-plates.md).
 
 - [Die Masterplanung umfasst Artikel mit verfügbarem Inventar, wenn Vorverarbeitungsfilter aktiviert sind](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled)
 

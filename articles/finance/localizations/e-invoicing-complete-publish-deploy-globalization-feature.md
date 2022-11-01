@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: 11378991a24e1a5f5e213d64f0f414db2e5c2573
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 9d4a408f2169b220fefd9ab7e9f3b37217fb3cfe
+ms.sourcegitcommit: 1ecfc1d8afb2201ab895ae6f93304ba2b120f14b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9279899"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "9710834"
 ---
 # <a name="complete-publish-and-deploy-a-globalization-feature"></a>Vervollständigen, veröffentlichen und bereitstellen einer Globalisierungsfunktion
 
@@ -59,8 +59,8 @@ In RCS verwenden Sie den Befehl **Bereitstellen**, um eine Version der Funktion 
 2. Wählen Sie auf der Registerkarte **Versionen** auf der rechten Seite die Version der Funktion für die elektronische Rechnungsstellung aus, die Sie in der Umgebung des Dienstes oder der verbundenen Anwendung bereitstellen möchten. Die ausgewählte Version muss einen Status von **Fertig** oder **Veröffentlicht** haben.
 3. Wählen Sie **Bereitstellen**, und wählen Sie dann eine oder beide der folgenden Optionen, um das Ziel der Bereitstellung zu definieren:
 
-    - **Verbundene Anwendung** - Die Konfiguration, die von der Einrichtung der Anwendung bereitgestellt wird, wird in die Instanz von Microsoft Dynamics 365 Finance oder Dynamics 365 Supply Chain Management geschrieben, die zuvor mit ihr verbunden war.
-    - **Serviceumgebung** - Die Version der Funktion für die Elektronische Rechnungsstellung wird in der Umgebung des Services bereitgestellt. Die Elektronische Rechnungsstellung ist nun bereit, elektronische Belege, die von Finance oder Supply Chain Management gesendet werden, zu empfangen und zu verarbeiten.
+    - **Verbundene Anwendung** - Dies ist optional, muss aber verwendet werden, wenn Sie möchten, dass die Konfiguration, die von der Einrichtung der Anwendung bereitgestellt wird, in die Instanz von Microsoft Dynamics 365 Finance oder Dynamics 365 Supply Chain Management geschrieben wird, die zuvor mit ihr verbunden war. Wenn Sie diese Art der Bereitstellung überspringen, müssen Sie die in der Anwendungseinrichtung von Finance oder Supply Chain Management definierten Parameter manuell konfigurieren.
+    - **Serviceumgebung** - Damit wird die Funktion für die Elektronische Rechnungsstellung in der Umgebung der Servicerechnung bereitgestellt. Die Elektronische Rechnungsstellung ist nun bereit, elektronische Belege, die von Finance oder Supply Chain Management gesendet werden, zu empfangen und zu verarbeiten.
 
 > [!NOTE]
 > Normalerweise ändern Sie die Parameter der Funktion Elektronisches Reporting (ER), die in der Umgebung des Dienstes bereitgestellt werden muss. Änderungen an der angeschlossenen Anwendung werden selten sein. Sie sollten neue Versionen für die verbundene Anwendung nur bereitstellen, wenn Sie die entsprechenden Parameter Ihrer Anwendung ändern.

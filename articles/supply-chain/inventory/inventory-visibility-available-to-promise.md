@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-04
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 4a0edeedfe42b43ef36c8ca091b01eef815f3632
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f831c5d5719bbbd72c7cff37b8b35826f48ce6e4
+ms.sourcegitcommit: ce58bb883cd1b54026cbb9928f86cb2fee89f43d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856192"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9719290"
 ---
 # <a name="inventory-visibility-on-hand-change-schedules-and-available-to-promise"></a>Inventory Visibility hat Lagerbestandsänderungen geplant und kann diese versprechen
 
@@ -205,6 +205,7 @@ Sie können die folgenden URLs der Anwendungsprogrammierschnittstelle (API) verw
 | `/api/environment/{environmentId}/onhand/bulk` | `POST` | Erzeugen Sie mehrere Ereignisse. |
 | `/api/environment/{environmentId}/onhand/indexquery` | `POST` | Abfrage mit Hilfe der `POST`-Methode. |
 | `/api/environment/{environmentId}/onhand` | `GET` | Abfrage mit Hilfe der `GET`-Methode. |
+| `/api/environment/{environmentId}/onhand/exactquery` | `POST` | Genaue Abfrage mit Hilfe der `POST`-Methode. |
 
 Weitere Informationen finden Sie unter [Inventory Visibility öffentliche APIs](inventory-visibility-api.md).
 
@@ -394,6 +395,8 @@ Legen Sie in Ihrer Anfrage `QueryATP` auf *wahr* fest, wenn Sie geplante Lagerbe
 > [!NOTE]
 > Unabhängig davon, ob der Parameter `returnNegative` im Abfragetext auf *wahr* oder *falsch* festgelegt ist, enthält das Ergebnis negative Werte, wenn Sie geplante Lagerbestandsänderungen und ATP-Ergebnisse abfragen. Diese negativen Werte werden berücksichtigt, denn wenn nur Bedarfsbestellungen eingeplant werden oder wenn die Vorratsmengen geringer sind als die Bedarfsmengen, werden die eingeplanten Lagerbestandsänderungen negativ sein. Wenn negative Werte nicht berücksichtigt würden, wären die Ergebnisse verwirrend. Weitere Informationen über diese Option und wie sie bei anderen Abfragetypen funktioniert, finden Sie unter [Inventory Visibility public APIs](inventory-visibility-api.md#query-with-post-method).
 
+### <a name="query-by-using-the-post-method"></a>Abfrage mit der POST-Methode
+
 ```txt
 Path:
     /api/environment/{environmentId}/onhand/indexquery
@@ -419,14 +422,14 @@ Body:
     }
 ```
 
-Das folgende Beispiel zeigt, wie Sie einen Anfragekörper erstellen, der mit der Methode `POST` an Inventory Visibility gesendet werden kann.
+Das folgende Beispiel zeigt, wie Sie eine Indexabfrage erstellen, die mit der Methode `POST` an Inventory Visibility gesendet werden kann.
 
 ```json
 {
     "filters": {
         "organizationId": ["usmf"],
         "productId": ["Bike"],
-        "siteId": ["1"],
+        "SiteId": ["1"],
         "LocationId": ["11"]
     },
     "groupByValues": ["ColorId", "SizeId"],
@@ -435,7 +438,7 @@ Das folgende Beispiel zeigt, wie Sie einen Anfragekörper erstellen, der mit der
 }
 ```
 
-### <a name="get-method-example"></a>Beispiel für eine GET-Methode
+### <a name="query-by-using-the-get-method"></a>Abfrage mit der GET-Methode
 
 ```txt
 Path:
@@ -453,7 +456,7 @@ Query(Url Parameters):
     [Filters]
 ```
 
-Das folgende Beispiel zeigt, wie Sie eine Anfrage-URL als `GET`-Anfrage erstellen.
+Das folgende Beispiel zeigt, wie Sie eine Indexabfrage-URL als `GET`-Anfrage erstellen können.
 
 ```txt
 https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&LocationId=11&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true
@@ -461,9 +464,53 @@ https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.c
 
 Das Ergebnis dieser `GET`-Anfrage ist genau dasselbe wie das Ergebnis der `POST`-Anfrage im vorherigen Beispiel.
 
+### <a name="exact-query-by-using-the-post-method"></a>Genaue Abfrage mit der POST-Methode
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/exactquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            dimensions: string[],
+            values: string[][],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
+
+Das folgende Beispiel zeigt, wie Sie einen exakten Abfragekörper erstellen, der mit der `POST`-Methode an Inventory Visibility gesendet werden kann.
+
+```json
+{
+    "filters": {
+        "organizationId": ["usmf"],
+        "productId": ["Bike"],
+        "dimensions": ["SiteId", "LocationId"],
+        "values": [
+            ["1", "11"]
+        ]
+    },
+    "groupByValues": ["ColorId", "SizeId"],
+    "returnNegative": true,
+    "QueryATP":true
+}
+```
+
 ### <a name="query-result-example"></a>Beispiel für ein Abfrageergebnis
 
-Die beiden vorherigen Abfragebeispiele könnten die folgende Antwort ergeben. Für dieses Beispiel ist das System mit den folgenden Einstellungen festgelegt:
+Jedes der vorherigen Abfragebeispiele könnte die folgende Antwort ergeben. Für dieses Beispiel ist das System mit den folgenden Einstellungen festgelegt:
 
 - **ATP berechnete Messung:** *iv.onhand = pos.inbound – pos.outbound*
 - **Planungszeitraum:** *7*

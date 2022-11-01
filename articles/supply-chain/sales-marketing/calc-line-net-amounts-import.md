@@ -1,6 +1,6 @@
 ---
-title: Die Positionsnettobeträge beim Importieren von Aufträgen, Angebote und Rückgaben neu berechnen
-description: Dieser Artikel beschreibt, ob und wie das System Positionsnettobeträge neu berechnet, wenn Aufträge, Angebote und Rückgaben importiert werden. Außerdem wird erläutert, wie Sie das Verhalten in verschiedenen Versionen von Microsoft Dynamics 365 Supply Chain Management steuern können.
+title: Neuberechnung von Zeilen-Nettobeträgen beim Import von Verkaufsaufträgen und Angeboten
+description: Dieser Artikel beschreibt, ob und wie das System Zeilen-Nettobeträge neu berechnet, wenn Verkaufsaufträge und Angebote importiert werden. Außerdem wird erläutert, wie Sie das Verhalten in verschiedenen Versionen von Microsoft Dynamics 365 Supply Chain Management steuern können.
 author: Henrikan
 ms.date: 08/05/2022
 ms.topic: article
@@ -11,25 +11,25 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2022-06-08
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 08b30044a93e46c9c83848b60d69c595bc774570
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: edda0c016130e2a273adf8f3d3e00e2d3ae9d5c6
+ms.sourcegitcommit: ce58bb883cd1b54026cbb9928f86cb2fee89f43d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335554"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9719333"
 ---
-# <a name="recalculate-line-net-amounts-when-importing-sales-orders-quotations-and-returns"></a>Die Positionsnettobeträge beim Importieren von Aufträgen, Angebote und Rückgaben neu berechnen
+# <a name="recalculate-line-net-amounts-when-importing-sales-orders-and-quotations"></a>Neuberechnung von Zeilen-Nettobeträgen beim Import von Verkaufsaufträgen und Angeboten
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel beschreibt, ob und wie das System Positionsnettobeträge neu berechnet, wenn Aufträge, Angebote und Rückgaben importiert werden. Außerdem wird erläutert, wie Sie das Verhalten in verschiedenen Versionen von Microsoft Dynamics 365 Supply Chain Management steuern können.
+Dieser Artikel beschreibt, ob und wie das System Zeilen-Nettobeträge neu berechnet, wenn Verkaufsaufträge und Angebote importiert werden. Außerdem wird erläutert, wie Sie das Verhalten in verschiedenen Versionen von Microsoft Dynamics 365 Supply Chain Management steuern können.
 
 ## <a name="how-updates-to-net-line-amounts-are-calculated-on-import"></a>Wie Aktualisierungen der Positionsnettobeträge beim Import berechnet werden
 
-Supply Chain Management Version 10.0.23 hat den [Bugfix 604418](https://fix.lcs.dynamics.com/issue/results/?q=604418) eingeführt. Dieser Bugfix hat die Bedingungen geändert, unter denen das Feld **Nettobetrag** in einer Position aktualisiert oder neu berechnet werden kann, wenn Aktualisierungen zu bestehenden Aufträgen, Rückgaben und Angeboten importiert werden. In Version 10.0.29 können Sie diesen Bugfix ersetzen, indem Sie die Funktion *Positionsnettobetrag beim Importieren berechnen* einschalten. Diese Funktion hat einen ähnlichen Effekt, bietet jedoch eine globale Einstellung, mit der Sie bei Bedarf zum alten Verhalten zurückkehren können. Obwohl das neue Verhalten das System intuitiver arbeiten lässt, kann es in bestimmten Szenarien, in denen alle der folgenden Bedingungen erfüllt sind, zu unerwarteten Ergebnissen führen:
+Supply Chain Management Version 10.0.23 hat den [Bugfix 604418](https://fix.lcs.dynamics.com/issue/results/?q=604418) eingeführt. Mit diesem Bugfix wurden die Bedingungen geändert, unter denen das Feld **Nettobetrag** einer Zeile aktualisiert oder neu berechnet werden kann, wenn Aktualisierungen von bestehenden Verkaufsaufträgen und Angeboten importiert werden. In Version 10.0.29 können Sie diesen Bugfix ersetzen, indem Sie die Funktion *Positionsnettobetrag beim Importieren berechnen* einschalten. Diese Funktion hat einen ähnlichen Effekt, bietet jedoch eine globale Einstellung, mit der Sie bei Bedarf zum alten Verhalten zurückkehren können. Obwohl das neue Verhalten das System intuitiver arbeiten lässt, kann es in bestimmten Szenarien, in denen alle der folgenden Bedingungen erfüllt sind, zu unerwarteten Ergebnissen führen:
 
 - Daten, die vorhandene Datensätze aktualisieren, werden über die Entität *Auftragspositionen V2*, *Verkaufsangebotspositionen V2* oder *Rücklieferungspositionen* mithilfe von Open Data Protocol (OData) importiert, einschließlich Situationen, in denen Sie duales Schreiben, Importieren/Exportieren über Excel und einige Integrationen von Drittanbietern verwenden.
-- Geltende [Bewertungsrichtlinien für Handelsabkommen](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper) legen eine Änderungsrichtlinie fest, die Aktualisierungen im Feld **Nettobetrag** in Auftragspositionen, Verkaufsangebotspositionen und/oder Rücklieferungspositionen einschränkt.
+- Geltende [Bewertungsrichtlinien für Handelsabkommen](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper) legen eine Änderungsrichtlinie fest, die Aktualisierungen im Feld **Nettobetrag** in Auftragspositionen, Verkaufsangebotspositionen und/oder Rücklieferungspositionen einschränkt. Beachten Sie, dass bei Zeilen für Rücklieferungen das Feld **Nettobetrag** immer berechnet wird und nicht manuell festgelegt werden kann.
 - Die importierten Daten enthalten Änderungen im Feld **Nettobetrag** in Positionen oder Änderungen (wie Stückpreis, Menge oder Rabatt), die dafür sorgen, dass der Wert des Felds **Nettobetrag** in Positionen für einen oder mehrere bestehende Positionsdatensätze neu berechnet wird.
 
 In diesen spezifischen Szenarien hat die Bewertungsrichtlinie für Handelsabkommen die Folge, dass Aktualisierungen des Felds **Nettobetrag** auf der Position mit Einschränkungen belegt werden. Diese Einschränkung wird als *Änderungsrichtlinie* bezeichnet. Wenn Sie das Feld über die Benutzeroberfläche bearbeiten oder neu berechnen, werden Sie aufgrund dieser Richtlinie vom System aufgefordert, zu bestätigen, ob Sie die Änderung vornehmen möchten. Wenn Sie jedoch einen Datensatz importieren, muss das System die Auswahl für Sie treffen. Vor Version 10.0.23 hat das System den Nettobetrag der Position immer unverändert gelassen, es sei denn, der Nettobetrag der eingehenden Position war 0 (null). In neueren Versionen aktualisiert oder berechnet das System den Nettobetrag jedoch immer nach Bedarf, es sei denn, es wird ausdrücklich angewiesen, dies nicht zu tun. Obwohl das neue Verhalten logischer ist, kann es Ihnen Probleme bereiten, wenn Sie bereits Prozesse oder Integrationen ausführen, die das ältere Verhalten zeigen. Dieser Artikel beschreibt, wie Sie bei Bedarf zum alten Verhalten zurückkehren können.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 0f42ad593f59f716fb6cb535d73654d3549ba00e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c3024ca2e3b7eb24ac9a171def4a72cde7493a7a
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860724"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708616"
 ---
 # <a name="configure-job-card-for-devices"></a>Einzelvorgangsliste für Geräte konfigurieren
 
@@ -73,7 +73,7 @@ Mit dem Inforegister **Allgemein** können Sie die verschiedenen Optionen konfig
 - **Ressourcengruppe** – Wählen Sie eine Ressourcengruppe aus, die als Standardfilterkriterium für die Liste der Vorgänge angewendet werden soll, die jedem Mitarbeiter angezeigt werden. Das Gerät zeigt zunächst nur Vorgänge an, die für Ressourcen geplant sind, die unter der ausgewählten Ressourcengruppe gruppiert sind. Wenn die Option **Ermöglichen Sie den Mitarbeitern, persönliche Filter festzulegen** aktiviert ist, können Arbeitskräfte diesen Wert bearbeiten. Andernfalls wird dieser Filter immer angewendet, wenn diese Gerätekonfiguration aktiv ist.
 - **Ressource** – Wählen Sie eine Ressourcengruppe aus, die als Standardfilterkriterium für die Liste der Vorgänge angewendet werden soll, die jedem Mitarbeiter angezeigt werden. Das Gerät zeigt zunächst nur Vorgänge an, die für Ressourcen geplant sind, die unter der ausgewählten Ressourcengruppe gruppiert sind. Wenn die Option **Ermöglichen Sie den Mitarbeitern, persönliche Filter festzulegen** aktiviert ist, können Arbeitskräfte diesen Wert bearbeiten. Andernfalls wird dieser Filter immer angewendet, wenn diese Gerätekonfiguration aktiv ist.
 - **Kennzeichen erstellen** – Setzen Sie diese Option auf **Ja**, um jedes Mal eine neue Kennzeichnung zu erstellen,wenn ein Mitarbeiter das Einzelvorgangsgerät verwendet, um den Vorgang als beendet zu melden. Das Kennzeichen wird aus einer Nummernfolge generiert, die auf der Seite **Lagerverwaltungsparameter** erstellt wird. Bei Einstellung auf **Nein** muss die Arbeitskraft eine bestehende Kennzeichnung definieren, wenn er er den Vorgang als beendet meldet.
-- **Etikett drucken** – Setzen Sie diese Option auf **Ja**, um ein Kennzeichenetikett zu drucken, wenn eine Arbeitskraft das Einzelvorgangskartengerät verwendet, um den Vorgang als beendet zu melden. Die Konfiguration des Etiketts wird im Dokumentrouting eingerichtet, wie beschrieben in [Dokumenten-Routing-Layout für Kennzeichenetiketten](../warehousing/document-routing-layout-for-license-plates.md).
+- **Etikett drucken** – Setzen Sie diese Option auf **Ja**, um ein Kennzeichenetikett zu drucken, wenn eine Arbeitskraft das Einzelvorgangskartengerät verwendet, um den Vorgang als beendet zu melden. Die Konfiguration des Labels wird im Document Routing festgelegt, wie in [Document Routing Etikettenlayouts](../warehousing/document-routing-layout-for-license-plates.md) beschrieben.
 
 <a name="assigned-users"></a>
 

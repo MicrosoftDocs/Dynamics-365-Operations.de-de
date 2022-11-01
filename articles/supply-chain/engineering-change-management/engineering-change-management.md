@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 71b5ec792013ae80be643b9581e388c291d608dd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6c578609a64c21a33f10b64a1d77f006b45bac41
+ms.sourcegitcommit: 229ea085cf35579a2631ea1e5fc2c602fa47e3f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849589"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "9714735"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Änderungen an Verwaltung für technische Änderung verwalten
 
@@ -141,6 +141,8 @@ Während Sie die Produktionsbenachrichtigungen auf der Seite **Technische Benach
 ### <a name="create-a-change-order-from-a-change-request"></a>Erzeugen eines Änderungsauftrags aus einer Änderungsanforderung
 
 Ein Ingenieur, der eine Änderungsanforderung prüft, kann einen Änderungsauftrag direkt von der Seite **Änderungsanforderungen** aus erstellen. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Änderungsanfrage** in der Gruppe **Änderungsauftrag** die Option **Verbindung und Produkte kopieren**.
+
+Achten Sie darauf, dass Sie die richtige Firma für den neuen technischen Änderungsauftrag auswählen. Wenn der Änderungsauftrag dazu führt, dass das technische Produkt selbst geändert wird (neue Version, neues Produkt oder neue Variante), dann muss der Änderungsauftrag der Engineering-Firma zugewiesen werden. Wenn nur eine lokale Änderung erforderlich ist (**Auswirkung** ist auf *Keine* festgelegt), kann der Änderungsauftrag einer lokalen Firma zugewiesen werden und die Änderungen gelten für das aktuelle Produkt.
 
 ## <a name="engineering-change-orders"></a>Technische Änderungsaufträge
 

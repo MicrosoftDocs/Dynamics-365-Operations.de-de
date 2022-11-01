@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 171b9f1dcb1d4ece63bc0beeb71f45b9f8ae7bba
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 118b1c79d23cd1b5044ede9aa9c469409cd22166
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220561"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708782"
 ---
 # <a name="pack-containers-for-shipment"></a>Container zur Lieferung packen
 
@@ -34,7 +34,9 @@ Mehrere verwandte Ausgangslagerfunktionen können mit Containern verwendet werde
 - [Bestätigen und übertragen](confirm-and-transfer.md)
 - [Festlegen verschiedener Dimensionen für Verpackung und Lagerung](packing-vs-storage-dimensions.md)
 - [Packarbeiten zum Packen von ausgehenden Containern und Verarbeiten von Sendungen](packing-work.md)
-<!-- KFM: Add link to upcoming topic when available (10.0.31): [Manual packing on the Warehouse management mobile app](manual-packing-on-the-warehouse-management-mobile-app.md) -->
+- [Packen von Containern mit der Mobile-App von Warehouse Management](warehouse-app-packing-containers.md)
+- [Beispielszenario - Packen von Containern mit der Mobile-App von Warehouse Management](warehouse-app-pack-containers-scenario.md)
+- [Drucken von Etiketten für Container](print-container-labels.md)
 
 ## <a name="set-up-your-warehouse-to-use-manual-packing-operations"></a>Richten Sie Ihr Lager für manuelle Verpackungsvorgänge ein
 

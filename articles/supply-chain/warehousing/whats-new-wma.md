@@ -10,18 +10,23 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 645590bbf00f49bb0f3511e7fa02c8f6add661fc
-ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
+ms.openlocfilehash: da7e8a47496092a00ecc05c17933cc0e0cdb0fd0
+ms.sourcegitcommit: 27ce4fc706100b626b81c3a1023238acd872e76c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "9682613"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9702194"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Neuerungen oder Änderungen in der mobilen Warehouse Management-App
 
 [!include [banner](../includes/banner.md)]
 
 Dieser Artikel listet neue Funktionen, Korrekturen, Verbesserungen und bekannte Probleme für jede freigegebene Version der Warehouse Management Mobile-App für Microsoft Dynamics 365 Supply Chain Management auf.
+
+## <a name="version-20350"></a>Version 2.0.35.0
+
+Diese Version führt die folgenden neuen Funktionen, Korrekturen und Verbesserungen ein:
+- Es wurde ein Problem auf Android behoben, bei dem die Anwendung abstürzte, wenn die Seite **Arbeitsliste** geöffnet wurde und keine Karten angezeigt werden sollten.
 
 ## <a name="version-20340"></a>Version 2.0.34.0
 

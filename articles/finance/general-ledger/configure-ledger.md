@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-09
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d15980b05cfac68f2e2441c86b4506c13b38b4d5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14d6ba013a93756f86e959756dd3073851881095
+ms.sourcegitcommit: c6c2486be2359bd30106f7f52bda788239147d8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864338"
+ms.lasthandoff: 10/22/2022
+ms.locfileid: "9713888"
 ---
 # <a name="configure-ledgers"></a>Sachkonten konfigurieren
 
@@ -42,7 +42,7 @@ Jede juristische Person in Dynamics 365 Finance kann so konfiguriert werden, das
 
 Beachten Sie, dass Sie bei mehreren Kontostrukturen nur Kontostrukturen auswählen können, die keine überlappenden Kombinationen aus Hauptkonten und Finanzdimensionen aufweisen. Beispielsweise ist eine Ihrer Kontostrukturen so konfiguriert, dass zwischen 1000 und 1999 ein Geschäftsbereich für Hauptkonten hinzugefügt wird. In einer anderen Kontostruktur haben Sie eine Abteilungsfinanzdimension für Hauptkonten hinzugefügt, die mit 1 beginnen. In diesem Fall kann nur eine der Kontostrukturen in derselben juristischen Person hinzugefügt werden.
 
-Um Kontostrukturen für Ihr Sachkonto zu konfigurieren, klicken Sie auf der **Sachkonto**-Seite, auf das **Kontostrukturen**-Inforegister, wählen Sie **Hinzufügen**, eine Kontostruktur in der Liste und dann **Auswählen** aus. Es kann einige Minuten dauern, bis die Kontostrukturen hinzugefügt und gespeichert werden. Beachten Sie, dass die von Ihnen ausgewählten Kontostrukturen aktiv sein müssen. Andernfalls werden die Details der Kontostrukturen in den juristischen Personen, mit denen sie verknüpft sind, nicht wirksam.
+Um Kontostrukturen für Ihr Sachkonto zu konfigurieren, klicken Sie auf der **Sachkonto**-Seite, auf das **Kontostrukturen**-Inforegister, wählen Sie **Hinzufügen**, eine Kontostruktur in der Liste und dann **Auswählen** aus. Es dauert ein paar Minuten, bis die Kontostrukturen hinzugefügt und gespeichert sind. Sobald die geänderte Kontostruktur im Sachkonto gespeichert ist, beginnt der Prozess zur Synchronisierung aller noch nicht gebuchten Transaktionen. Sie müssen warten, bis die Änderung für das aktuelle Sachkonto in der juristischen Entität, in der die Änderung vorgenommen wird, abgeschlossen ist, bevor Sie eine Änderung der Kontenstruktur für ein Sachkonto in einer anderen juristischen Entität vornehmen können. Beachten Sie, dass die von Ihnen ausgewählten Kontostrukturen aktiv sein müssen. Andernfalls werden die Details der Kontostrukturen in den juristischen Personen, mit denen sie verknüpft sind, nicht wirksam.
 
 Um eine Kontostruktur zu entfernen, klicken Sie auf die **Sachkonto**-Seite, wählen Sie im **Kontostrukturen**-Inforregister **Entfernen** aus. Beachten Sie, dass Sie beim Entfernen einer Kontostruktur aus Ihrem Sachkonto keine Transaktionen entfernen, die mithilfe der Konfiguration dieser Kontostruktur gebucht wurden.
 
@@ -70,7 +70,7 @@ Weitere Informationen zum Ausgleichen von Einträgen finden Sie unter [Ausgeglic
 
 Die **Sachkonto**-Seite wird auch verwendet, um die Währungen zu steuern und zu definieren, die verwendet werden, wenn Transaktionen in das Sachkonto gebucht werden. Sie müssen die Buchhaltungswährung angeben. Dies ist die Währung, die in der **-Buchhaltungswährung** -Spalte im Hauptbuch auf allen Belegen verwendet wird. Außerdem können Sie in der Spalte **Berichtswährung** optional eine zweite Währung auswählen. Wenn Sie eine Berichtswährung auswählen, werden alle Transaktionen in dieser Währung in der **Berichtswährung**-Spalte im Hauptbuch auf allen Belegen erfasst.
 
-Wenn Transaktionen in einer anderen Währung gebucht werden, rechnet das System den Transaktionsbetrag automatisch von der Transaktionswährung in die Buchungswährung und die Berichtswährung auf dem Beleg um. Wählen Sie auf der **Sachkonto**-Seite, im Feld **Wechselkurstyp der Buchhaltungswährung** den Wechselkurstyp aus, der für die Wechselkurse konfiguriert ist, die zum Umrechnen von Werten von der Transaktionswährung in die Buchhaltungswährung auf einem Beleg verwendet werden sollen. Wenn Sie eine Berichtswährung ausgewählt haben, müssen Sie auch das Feld **Wechselkurstyp der Berichtswährung** festlegen, um den Wechselkurs anzugeben, der zum Umrechnen von Werten von der Transaktionswährung in die Berichtswährung auf einem Beleg verwendet werden soll.
+Wenn Transaktionen in einer anderen Währung gebucht werden, rechnet das System den Transaktionsbetrag automatisch von der Transaktionswährung in die Buchhaltungswährung und die Berichtswährung auf dem Beleg um. Wählen Sie auf der **Sachkonto**-Seite, im Feld **Wechselkurstyp der Buchhaltungswährung** den Wechselkurstyp aus, der für die Wechselkurse konfiguriert ist, die zum Umrechnen von Werten von der Transaktionswährung in die Buchhaltungswährung auf einem Beleg verwendet werden sollen. Wenn Sie eine Berichtswährung ausgewählt haben, müssen Sie auch das Feld **Wechselkurstyp der Berichtswährung** festlegen, um den Wechselkurs anzugeben, der zum Umrechnen von Werten von der Transaktionswährung in die Berichtswährung auf einem Beleg verwendet werden soll.
 
 Wenn Sie die Budgetierungsfunktion verwenden, können Sie auch das Feld **Budget -Wechselkurstyp** festlegen, um den Wechselkurs anzugeben, der zum Umrechnen von Budgettransaktionen von einer Währung in eine andere verwendet werden soll.
 

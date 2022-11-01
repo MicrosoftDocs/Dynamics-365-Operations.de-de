@@ -6,18 +6,19 @@ ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
+ms.search.form: WHSShipPlanningListPage, WHSShipmentDetails
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-10-23
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: edf235351fc7cbffc6bf80c7e05c53159c1e8a7f
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: c67fd12c31b475b323bc4c7feee4cc5267da7793
+ms.sourcegitcommit: 229ea085cf35579a2631ea1e5fc2c602fa47e3f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336544"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "9714698"
 ---
 # <a name="usmca-certification-of-origin"></a>USMCA-Ursprungszertifizierung
 
@@ -57,7 +58,7 @@ Weitere Informationen zu jedem dieser Elemente und wie ihre Werte ermittelt werd
 Um eine USMCA-Ursprungszertifizierung für eine Sendung zu drucken, gehen Sie wie folgt vor:
 
 1. Führen Sie einen der folgenden Schritte aus:
-    - Gehen Sie zu **Transportverwaltung>Sendungen > Alle Sendungen** und wählen Sie die Sendung aus, für die Sie das Dokument drucken möchten.
+    - Gehen Sie zu **Transportverwaltung \> Planung \> Sendungen \> Alle Sendungen** und wählen Sie die Sendung aus, für die Sie das Dokument drucken möchten.
     - Öffnen Sie die Seite **Sendungsdetails** für die Sendung, für die Sie das Dokument drucken möchten (es gibt mehrere Möglichkeiten, hierher zu gelangen, u. a. über die Seite **Alle Sendungen**).
 1. Öffnen Sie im Aktivitätsbereich die Registerkarte **Sendungen** und wählen Sie in der Gruppe **Drucken** die Option **USMCA-Ursprungszertifizierung**.
 1. Die Dialogbox **Ursprungszertifizierung** wird geöffnet. Nehmen Sie die in den folgenden Unterkapiteln beschriebenen Einstellungen vor und wählen Sie dann **OK**, um das Dokument zu erzeugen.

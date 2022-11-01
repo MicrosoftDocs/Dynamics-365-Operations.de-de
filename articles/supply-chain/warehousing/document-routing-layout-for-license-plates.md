@@ -1,5 +1,5 @@
 ---
-title: Dokumentweiterleitungs-Layout für Kennzeichenbeschriftungen
+title: Etiketten-Layouts für die Dokumentenlenkung
 description: In diesem Artikel wird beschrieben, wie Formatierungsmethoden zum Drucken von Werten auf Etiketten verwendet werden.
 author: perlynne
 ms.date: 04/01/2020
@@ -13,23 +13,24 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 10e63353cda93d666d7f23f59508b73e5492c3cc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a4e0c16b71c257cae832870ca58679884047ea16
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847874"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708644"
 ---
-# <a name="document-routing-layout-for-license-plate-labels"></a>Dokumenten-Routing-Layout für Kennzeichenetiketten
+# <a name="document-routing-label-layout"></a>Dokument-Routing-Etiketten-Layout
 
 [!include [banner](../includes/banner.md)]
 
+Dieser Artikel beschreibt, wie Sie Layouts für Kennzeichen-, Container- und Wellenetiketten erstellen können. Er enthält außerdem Richtlinien für die Verwendung der Zebra Programming Language (ZPL), mit der die Layouts erstellt werden.
 
-Das Layout des Dokumentroutings definiert das Layout der Kennzeichenetiketten und die darauf gedruckten Daten. Sie konfigurieren die Druckauslöserpunkte, wenn Sie Menüelemente und Arbeitsvorlagen für mobile Geräte einrichten.
+Die Layouts für Document Routing-Etiketten definieren die Art und Weise, wie die Etiketten gestaltet werden und welche Daten auf sie gedruckt werden. Sie konfigurieren die Druckauslöserpunkte, wenn Sie Menüelemente und Arbeitsvorlagen für mobile Geräte einrichten.
 
-In einem typischen Szenario drucken Lagerempfänger unmittelbar nach der Aufzeichnung des Inhalts von Paletten, die im Empfangsbereich eintreffen, Kennzeichenetiketten. Die physischen Etiketten werden auf die Paletten aufgebracht. Sie können dann zur Validierung als Teil des folgenden Einlagerungsprozesses und zukünftiger ausgehender Kommissioniervorgänge verwendet werden.
+Die Informationen in diesem Artikel gelten für alle Dokument-Routing-Etiketten-Layouts, einschließlich der Layouts für [Kennzeichen-Etiketten](tasks/license-plate-label-printing.md), [Container-Etiketten](print-container-labels.md) und [Wellen-Etiketten](configure-wave-label-printing.md).
 
-Sie können hochkomplexe Etiketten drucken, vorausgesetzt, das Druckgerät kann den an das Gerät gesendeten Text interpretieren. Beispielsweise kann ein ZPL-Layout (Zebra Programming Language), das einen Barcode enthält, dem folgenden Beispiel ähneln.
+Sie können hochkomplexe Etiketten drucken, vorausgesetzt, das Druckgerät kann den an das Gerät gesendeten Text interpretieren. Ein ZPL-Layout, das einen Strichcode enthält, könnte zum Beispiel wie folgt aussehen.
 
 ```dos
 ^XA~TA000~JSN^LT0^MNW^MTD^PON^PMN^LH0,0^JMA^PR2,2~SD15^JUS^LRN^CI0^XZ
@@ -45,11 +46,9 @@ Sie können hochkomplexe Etiketten drucken, vorausgesetzt, das Druckgerät kann 
 ^PQ1,,,Y^XZ
 ```
 
-Im Rahmen des Etikettendruckprozesses wird der Text `$LicensePlateId$` in diesem Beispiel durch einen Datenwert ersetzt.
+Im Rahmen des Etikettendruckprozesses wird der Text `$LicensePlateId$` in diesem Beispiel durch einen Datenwert ersetzt. Mithilfe verschiedener weit verbreiteter Tools zur Etikettengenerierung können Sie den Text für das Etikettenlayout formatieren. Viele dieser Tools unterstützen das `$FieldName$` Format. Darüber hinaus verwendet Microsoft Dynamics 365 Supply Chain Management eine spezielle Formatierungslogik als Teil der Feldzuordnung für das Dokumentrouting-Layout.
 
 Um die Werte anzuzeigen, die gedruckt werden sollen, gehen Sie zu **Lagerverwaltung \> Anfragen und Berichte \> Kennzeichenetiketten**.
-
-Mithilfe verschiedener weit verbreiteter Tools zur Etikettengenerierung können Sie den Text für das Etikettenlayout formatieren. Viele dieser Tools unterstützen das `$FieldName$` Format. Darüber hinaus verwendet Microsoft Dynamics 365 Supply Chain Management eine spezielle Formatierungslogik als Teil der Feldzuordnung für das Dokumentrouting-Layout.
 
 ## <a name="turn-on-this-feature-for-your-system"></a>Schalten Sie diese Funktion für Ihr System ein
 
@@ -137,7 +136,10 @@ $DisplayListOfItemsNumbers()[1]$
 
 ## <a name="more-information-about-how-to-print-labels"></a>Weitere Informationen zum Drucken von Beschriftungen
 
-Weitere Informationen zum Einrichten und Drucken von Etiketten finden Sie unter [Aktivieren Sie das Drucken von Kennzeichnungsetiketten](tasks/license-plate-label-printing.md).
+Weitere Informationen über das Festlegen und Drucken von Etiketten finden Sie in den folgenden Artikeln:
 
+- [Drucken von Etiketten für Ladungsträger](tasks/license-plate-label-printing.md)
+- [Drucken von Etiketten für Container](print-container-labels.md)
+- [Wellenbeschriftungsdruck](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

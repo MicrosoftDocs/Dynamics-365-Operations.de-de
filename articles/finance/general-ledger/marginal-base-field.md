@@ -2,7 +2,7 @@
 title: Mehrwertsteuersteuersätze auf Grundlage der Felder Berechnungsgrundlage und Berechnungsmethode
 description: In diesem Artikel wird beschrieben, wie die Werte in den Feldern „Berechnungsgrundlage und Berechnungsmethode“ den Steuersatz in Verkaufs- und Einkaufsbuchungstransaktionen bestimmen.
 author: kailiang
-ms.date: 10/26/2017
+ms.date: 10/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00cdc470397cedfd951e4c3a05a32f048775a4b9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2920d81d486f247b2d0cadfad6c54c543e497e8a
+ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903130"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9715347"
 ---
 # <a name="sales-tax-rates-based-on-the-marginal-base-and-calculation-methods"></a>Mehrwertsteuersteuersätze auf Grundlage der Felder Berechnungsgrundlage und Berechnungsmethode
 

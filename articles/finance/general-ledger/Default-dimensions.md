@@ -1,8 +1,8 @@
 ---
-title: Finanzdimensionen und Buchungen
-description: Wenn Sie Ihren Kontenplan und die Planung einrichten, müssen Sie entscheiden, wie die verschiedenen Komponenten zusammenarbeiten, wenn Sie ein Dokument oder eine Erfassung buchen. Diese Komponenten schließen Kontostrukturen, erweiterte Regeln und Ausgleichen und feste Dimensionen ein. In diesem Artikel wird erläutert, was jede Komponente ist und wie die Komponenten zusammenarbeiten.
+title: Finanzdimensionen und Veröffentlichungen
+description: Dieser Artikel erklärt die Komponenten, aus denen der Kontenplan besteht, und wie die Komponenten zusammenarbeiten.
 author: aprilolson
-ms.date: 08/04/2017
+ms.date: 10/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a165c4084a9f2075a54c99a7e4913a4e3c3dfe55
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 89696f08755a7ff2b01ec7e0cf8550a3b5914bc0
+ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910112"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9715469"
 ---
-# <a name="financial-dimensions-and-posting"></a>Finanzdimensionen und Buchungen 
+# <a name="financial-dimensions-and-posting"></a>Finanzdimensionen und Veröffentlichungen 
 
 [!include [banner](../includes/banner.md)]
 
