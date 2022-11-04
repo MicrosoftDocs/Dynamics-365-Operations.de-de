@@ -256,8 +256,6 @@
                   href: dev-itpro/retail-modern-pos-architecture.md
                 - name: Modernisierung des Commerce-In-Store-Technologie-Stacks (Whitepaper)
                   href: 'https://www.microsoft.com/download/details.aspx?id=103896'
-                - name: Commerce-Offlineimplementierung und Problembehandlung
-                  href: dev-itpro/implementation-considerations-offline.md
                 - name: Onlineshopkatalog veröffentlichen
                   href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Inhalt von Retail Channel Performance Power BI
@@ -396,12 +394,16 @@
                   items:
                     - name: Store Commerce-App
                       href: dev-itpro/store-commerce.md
+                    - name: Leistungsspektrum der Store Commerce-App
+                      href: store-commerce-capabilities.md
                     - name: Store Commerce-App für mobile Plattformen
                       href: dev-itpro/store-commerce-mobile.md
                     - name: Modern POS zu Store Commerce migrieren
                       href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
                     - name: Implementierungsleitfaden für die Geräteverwaltung
                       href: implementation-considerations-devices.md
+                    - name: Offline-Implementierung von Commerce und Problembehandlung
+                      href: dev-itpro/implementation-considerations-offline.md
                     - name: Zwischen Store Commerce und Cloud POS auswählen
                       href: MPOS-or-CPOS.md
                     - name: Online- und Offline-POS-Vorgänge

@@ -690,22 +690,16 @@
               href: cash-bank-management/reconcile-bank-account.md
             - name: Erweiterte Bankabstimmung
               items:
-                - name: Einrichtungsprozess der erweiterten Bankabstimmung
+                - name: Einrichtung der erweiterten Bankabstimmung
                   href: cash-bank-management/configure-advanced-bank-reconciliation.md
-                - name: Vorgang für erweiterten Bankabstimmungsimport einrichten
-                  href: cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
-                - name: Vorgang für erweiterten Bankabstimmungsimport mittels elektronischer Berichterstellung einrichten
+                - name: Erweiterten Bankabstimmungsimport mittels elektronischer Berichterstellung einrichten
                   href: accounts-payable/import-bai2-er.md
                 - name: Abgleichsregeln für Bankabstimmung einrichten
                   href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
                 - name: Bankauszüge mithilfe der erweiterten Bankabstimmung abstimmen
                   href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
-                - name: Erweiterte Bankabstimmung MT940 Import – Zusammengesetztes Datenentitätsupgrade
-                  href: cash-bank-management/advanced-bank-reconciliation-mt940-data-entity-upgrade-steps.md
                 - name: Überblick über die erweiterte Bankabstimmung
                   href: cash-bank-management/advanced-bank-reconciliation-overview.md
-                - name: Problembehandlung beim Import der Bankauszugsdatei
-                  href: cash-bank-management/import-bank-statement-file-failed-incorrect-results.md
                 - name: Die zusammengefasste Entität der Bankerfassung aktualisieren
                   href: cash-bank-management/upgrade-bank-journal-composite-entity.md
         - name: Kostenrechnung

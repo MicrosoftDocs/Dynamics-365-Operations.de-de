@@ -2237,11 +2237,21 @@
                   href: procurement/purchase-policies.md
                 - name: Einkaufsrichtlinien erstellen
                   href: procurement/tasks/create-purchasing-policies.md
-                - name: Richtlinien für Beschaffungskategoriehierarchien einrichten
+                - name: Richtlinien für Beschaffungskategoriehierarchien festlegen
                   href: procurement/tasks/set-up-policies-procurement-category-hierarchies.md
+            - name: Bewertung des Beschaffungsrisikos
+              items:
+                - name: Überblick über die Bewertung des Beschaffungsrisikos
+                  href: procurement/supply-risk-assessment-overview.md
+                - name: Bewertung des Beschaffungsrisikos konfigurieren
+                  href: procurement/supply-risk-assessment-configuration.md
+                - name: Arbeitsbereich zur Erkennung und zum praktischen Umgang mit Lieferantenrisiken
+                  href: procurement/supply-risk-assessment-workspace.md
+                - name: Power BI-Berichte für Risikoanalyse und Leistungsbewertung
+                  href: procurement/supply-risk-assessment-reports.md
             - name: Produktzugänge und Rechnungsstellung
               items:
-                - name: Produkteingang für Bestellungen
+                - name: Produktzugang für Bestellungen
                   href: procurement/product-receipt-against-purchase-orders.md
                 - name: Überblick über Kreditorenrechnungen
                   href: ../finance/accounts-payable/vendor-invoices-overview.md?context=/dynamics365/context/supply-chain

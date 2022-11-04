@@ -328,19 +328,23 @@
                   href: deployment/cloud-deployment-overview.md
                 - name: Self-Service-Bereitstellung
                   items:
-                    - name: Self-Service-Bereitstellung – Übersicht
+                    - name: Übersicht über die Self-Service-Bereitstellung
                       href: deployment/infrastructure-stack.md
                     - name: Eine neue Umgebung bereitstellen
                       href: deployment/deployenvironment-newinfrastructure.md
-                    - name: Bereitstellung – Häufig gestellte Fragen
+                    - name: Häufig gestellte Fragen zur Bereitstellung
                       href: deployment/deploymentFAQ.md
+                    - name: Eine Umgebung migrieren
+                      href: deployment/geo-to-geo-migrations.md
                     - name: Bekannte Probleme bei der Self-Service-Bereitstellung
                       href: deployment/known-issues-new-deployment-experience.md
                     - name: Wartungsarbeitsgänge für Bereitstellungen
                       href: deployment/maintenanceoperationsguide-newinfrastructure.md
                     - name: Eine Umgebung aktualisieren
                       href: deployment/updateenvironment-newinfrastructure.md
-                    - name: 'Probleme in Umgebungen behandeln, die durch Self-Service-Bereitstellung bereitgestellt wurden'
+                    - name: Eine Umgebung migrieren
+                      href: deployment/geo-to-geo-migrations.md
+                    - name: Probleme in durch Self-Service-Bereitstellung bereitgestellten Umgebungen behandeln
                       href: deployment/troubleshoot-newinfrastructure.md
                     - name: Häufig gestellte Fragen zu geplanten Wartungsarbeiten in Self-Service-Umgebungen
                       href: deployment/plannedmaintenance-selfservice.md
@@ -968,10 +972,12 @@
                       href: lifecycle-services/api/v1/reference-download-rsat-certificate.md
                 - name: Neuerungen oder Änderungen in Lifecycle Services
                   href: lifecycle-services/whats-new-lcs.md
-            - name: Lifecycle Services-Benutzerhandbuch
+            - name: "Benutzerhandbuch zu Lifecycle\_Services"
               href: lifecycle-services/lcs-user-guide.md
-            - name: Onboarding eines Projekts
+            - name: Onboarding von Projekten
               href: lifecycle-services/project-onboarding.md
+            - name: Projektmigrationsmanager
+              href: lifecycle-services/project-migration-manager.md
             - name: Abonnementkalkulator
               href: lifecycle-services/subscription-estimator.md
             - name: Sicherheit konfigurieren
