@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4cc556c47f7027f2f5d5b24c235b11ced63b3e4e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ab5729cd441246a6c04ac060d5a69f949bfe47c5
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905891"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725476"
 ---
 # <a name="manage-folios"></a>Paletten verwalten
 
@@ -48,9 +48,9 @@ Die folgende Tabelle beschreibt die Schaltflächen, die auf der Registerkarte **
 
 | Schaltfläche | Beschreibung |
 |---|---|
-| Zugangsliste buchen | Eine Eingangsliste für alle Zeilen der Einkaufsbestellung in der Palette buchen. Wenn Sendungen mit mehreren Firmen verwendet werden, wird für jede Firma ein neues Dialogfenster zum Buchen einer Bonliste geöffnet. |
-| Produktzugang buchen | Buchen Sie einen Wareneingang für alle Zeilen der Einkaufsbestellung in der Palette. Wenn Fahrten mit mehreren Firmen verwendet werden, wird für jede Firma ein neues Dialogfenster zum Buchen eines Produkteingangs geöffnet. |
-| Rechnung buchen | Buchen Sie eine Rechnung für alle Zeilen der Einkaufsbestellung in der Palette. Wenn Fahrten mit mehreren Firmen verwendet werden, wird für jede Firma eine neue Dialogbox für die Rechnungsbuchung geöffnet. |
+| Zugangsliste buchen | Eine Eingangsliste für alle Zeilen der Einkaufsbestellung in der Palette buchen.  |
+| Produktzugang buchen | Buchen Sie einen Wareneingang für alle Zeilen der Einkaufsbestellung in der Palette. |
+| Rechnung buchen | Buchen Sie eine Rechnung für alle Zeilen der Einkaufsbestellung in der Palette.  |
 | Umlagerungsauftrag versenden | Buchen Sie einen Umlagerungsauftrag für alle Transportauftragszeilen, die sich auf die aktuelle Palette in der zugehörigen Sendung beziehen. |
 | Umlagerungsauftrag empfangen | Buchen Sie einen Umlagerungsauftrags-Eingang für alle Transportauftragszeilen, die sich auf die aktuelle Palette in der zugehörigen Sendung beziehen. |
 | Waren in Zustellung empfangen | Empfangen Sie alle Auftragszeilen, die sich in Zustellung in der Palette befinden. |
@@ -65,7 +65,7 @@ Die folgende Tabelle beschreibt die Schaltflächen, die auf der Registerkarte **
 
 | Schaltfläche | Beschreibung |
 |---|---|
-| Zugangsliste | Eine Eingangsliste für alle Zeilen der Einkaufsbestellung in der Palette buchen. Wenn Fahrten mit mehreren Firmen verwendet werden, wird für jede Firma ein neues Dialogfeld für die Buchung der Eingangsliste geöffnet. |
+| Zugangsliste | Eine Eingangsliste für alle Zeilen der Einkaufsbestellung in der Palette buchen.  |
 | Produktzugang | Zeigen Sie den Wareneingangsdatensatz an, wenn er verwendet wird. |
 | Wareneingang | Zeigen Sie die Wareneingangserfassung an, wenn sie verwendet wird. |
 | Kostenabfrage | Öffnen Sie die Seite für die Abfrage der Kosten, um alle Kalkulationen einer Fahrt anzuzeigen, einschließlich Transportcontainer, Palette und Einkaufsbestellung. Sie können die genaue Ansicht der Seite mit der Aktion Ansicht anpassen. Auf der Seite für die Abfrage der Kosten können Sie alle Bereiche sowie den Code des Artikels und der Kalkulation anzeigen. Indem Sie diese Artikel entfernen, können Sie die Seite anpassen, indem Sie die Kalkulationen gruppieren. Diese Funktionalität kann nützlich sein, wenn Sie Größen und Farben verwenden. Sie können die Dimensionen, die auf der Seite angezeigt werden, ändern. Die Seite **Kosten** zeigt nur Kostenartencodes an, bei denen der Eintrag **Dr** auf der Registerkarte **Buchung** auf *Artikel* festgelegt ist. |

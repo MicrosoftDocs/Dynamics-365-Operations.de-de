@@ -2,19 +2,19 @@
 title: Fehlerreferenzcodes für das Kassenmodul
 description: Dieser Artikel beschreibt die Fehlerreferenzcodes des Kassenmoduls, die in benutzerseitigen Fehlermeldungen in Microsoft Dynamics 365 Commerce angezeigt werden.
 author: BrianShook
-ms.date: 10/20/2022
+ms.date: 10/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2022-09-20
-ms.openlocfilehash: cd8269a71e56f23dbe3782ec3ffc69ec3ea6b151
-ms.sourcegitcommit: 6bd8822f7aa781d596b70956bead834117cf302c
+ms.openlocfilehash: 952cb932522b4e0bb91be985e4f8974cb6cd8bc0
+ms.sourcegitcommit: 435e69160dbd7f9c61b37ac4440285a5df144622
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "9709668"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "9728244"
 ---
 # <a name="checkout-module-error-reference-codes"></a>Fehlerreferenzcodes für das Kassenmodul
 
@@ -31,9 +31,13 @@ Je nachdem, welcher Fehler auftritt, enthält die Tabelle in diesem Artikel die 
 - Informationen, die in der Umgebung oder bei der Konfiguration des Zahlungskonnektors zu berücksichtigen sind
 - Informationen, auf die in einem Support-Fall verwiesen werden kann, wenn zusätzliche Hilfe benötigt wird
 
+## <a name="prerequisites"></a>Voraussetzungen
+
+Um die unten aufgeführten Fehlerreferenzcodes für das Kassenmodul zu aktivieren, gehen Sie im Websitegenerator für Ihre Website auf **Websiteeinstellungen \> Erweiterungen** und im Abschnitt **Warenkorb und Kasse** auf **Erweiterte Online-Kanal-Fehleranzeigemeldung aktivieren**. 
+
 ## <a name="checkout-module-error-reference-codes"></a>Fehlerreferenzcodes für das Kassenmodul
 
-Verwenden Sie die folgende Tabelle, um weitere Details zu den Fehlercode-Referenzen zu erhalten, die von Kunden zur Verfügung gestellt werden oder im Online Store auftreten.
+Verwenden Sie die folgende Tabelle, um weitere Details zu den Fehlercode-Referenzen zu erhalten, die von Kunden zur Verfügung gestellt werden oder im Online Store auftreten. Scrollen Sie nach rechts, um die Spalte **Fehlerbeschreibung** anzuzeigen.
 
 | Fehlercode | Dynamics-bezogener Fehlercode | Fehlerbeschreibung |
 | ---------- | ------------------------------ | ----------------- |

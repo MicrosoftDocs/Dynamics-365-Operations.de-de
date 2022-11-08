@@ -2,7 +2,7 @@
 title: Übersicht über Vorlagen und Layouts
 description: In diesem Artikel werden Vorlagen und Layouts in Microsoft Dynamics 365 Commerce behandelt.
 author: phinneyridge
-ms.date: 12/12/2019
+ms.date: 10/26/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.search.industry: ''
 ms.search.form: ''
-ms.openlocfilehash: e0bf7e942339775b2e9ee15060d555be07c1cdc5
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0664dd1ae06d09557cf8b8ec58baf6d27c1198bd
+ms.sourcegitcommit: 023ae5557e1351a8329a59a41a551e8901db99a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277932"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9733383"
 ---
 # <a name="templates-and-layouts-overview"></a>Übersicht über Vorlagen und Layouts
 
@@ -66,7 +66,13 @@ Die Vorlage in diesem Beispiel definiert eine einfache Struktur und eine Reihe v
 
 Ein wichtiger erster Schritt für Site- und Markenadministratoren besteht darin, das richtige Gleichgewicht zwischen Einschränkungen und Flexibilität für untergeordnete Layout- und Seitenautoren zu ermitteln. Wenn Vorlagen verwendet werden, ist dieses Gleichgewicht vollständig konfigurierbar. Dies wirkt sich darauf aus, ob Seitenelemente zentral aktualisiert (in der Vorlage gesperrt) oder auf einzelne untergeordnete Ebenen, die in der Seitenhierarchie niedriger sind, übertragen werden.
 
-Um mit der Verwendung von Vorlagen zu starten, lesen Sie [Mit Vorlagen arbeiten](work-with-templates.md).
+### <a name="relationship-between-template-defaults-and-page-content"></a>Beziehung zwischen Vorlagenvorgaben und Seiteninhalt
+
+Die Hauptfunktion einer Vorlage besteht darin, die das Erstellen von Modulen zu optimieren, wenn eine Seite erstellt wird. Selbst wenn in einer Vorlage Modulvorgaben festgelegt oder sogar gesperrt sind, besteht keine weitere Datenverbindung von den Modulkonfigurationen einer Seite zu den Vorlagenvorgaben, außer wenn die Seite bearbeitet wird. Vorlagen steuern die Erfahrung bei der Dokumentenerstellung für die Seitenstruktur. Nachdem eine Seite erstellt wurde, sind die Vorlagenvorgaben nicht mehr mit den lokalisierbaren Inhalten auf dieser Seite verknüpft. Mit anderen Worten, die in einer Vorlage festgelegten Modulvorgaben steuern die Erfahrung bei der Dokumentenerstellung für untergeordnete Seiten. Sie kontrollieren den Inhalt dieser Seiten, nachdem die Seiten erstellt und bearbeitet wurden, nicht.
+
+Die einzige Ausnahme zu dem zuvor beschriebenen Verhalten tritt auf, wenn einer Vorlage ein [Fragment](work-with-fragments.md) hinzugefügt wird. Fragmente können verwendet werden, um lokalisierbaren Inhalt jederzeit auf allen untergeordneten Seiten einer Vorlage oder eines Layouts dynamisch hinzuzufügen oder zu bearbeiten, selbst nachdem viele Seiten aus einer bestimmten Vorlage erstellt wurden. Es hat sich bewährt, Fragmente in Vorlagen und Layouts zu verwenden, wenn lokalisierbare Inhalte auf allen untergeordneten Seiten dynamisch hinzugefügt, entfernt oder bearbeitet werden sollen. Beispielsweise sollten Fragmente für Kopf- und Fußzeilen, allgemeine Metadaten/Skripts oder andere Inhalte verwendet werden, die zentral bearbeitbar und auf allen untergeordneten Seiten gleich sein müssen. Fragmente bieten eine Möglichkeit, Vorlagen und Layouts zu verwenden, um Inhalte auf allen untergeordneten Seiten zu steuern.
+
+Um mit der Verwendung von Vorlagen zu beginnen, lesen Sie [Mit Vorlagen arbeiten](work-with-templates.md).
 
 ## <a name="layouts"></a>Layouts
 
@@ -96,7 +102,7 @@ Layouts auf Ihrer Site können entweder *vordefiniert* oder *benutzerdefiniert* 
 
 Vordefinierte und benutzerdefinierte Layouts werden in verschiedenen Teilen des Authoring-Toolset bearbeitet. Da benutzerdefinierte Layouts keine Abhängigkeiten zu anderen Seiten aufweisen, werden sie direkt im Seiteneditor bearbeitet. In diesem Fall ist das Vorhandensein eines Layouts für den Benutzer größtenteils transparent und wird nur in den Eigenschaften auf Seitenebene und über die Aktionen für Layoutoptionen angezeigt. Da sich Änderungen an vordefinierten Layouts auf viele untergeordnete Seiten auswirken können, müssen sie im Layout-Editor bearbeitet werden. Bei Veröffentlichungsaktionen werden die vollständigen Auswirkungen auf untergeordnete Seiten berücksichtigt.
 
-Die folgenden Abbildungen zeigen Szenarien für vordefinierte und benutzerdefinierte Layouts.
+Die folgende Abbildung zeigt Szenarien für vordefinierte und benutzerdefinierte Layouts.
 
 ![Vordefinierte und benutzerdefinierte Layoutszenarien.](../commerce/media/template-figure1.png)
 

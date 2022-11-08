@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 43f28a7e30dbbe15bb02d26483289f25515fcfca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4499eeb9cdd4efd9c4b630106c6e052378191f2a
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905862"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725480"
 ---
 # <a name="manage-voyages"></a>Fahrten verwalten
 
@@ -29,7 +29,8 @@ Eine Fahrt stellt normalerweise ein Schiff dar. Abhängig von Ihren Praktiken un
 Die Seite **Alle Fahrten** enthält Details zur Fahrt, Informationen zur Lieferung und Kalkulation sowie Informationen zu Artikeln, Einkaufsbestellungen und Umlagerungsaufträgen. Um die Seite **Alle Fahrten** zu öffnen, gehen Sie auf **Gesamttransportkosten \> Fahrten \> Alle Fahrten**. Diese Seite zeigt eine Liste aller aktuellen Fahrten an. Sie können die Schaltflächen im Aktivitätsbereich verwenden, um Fahrten zu erstellen, zu löschen und mit ihnen zu arbeiten. Wählen Sie eine beliebige Fahrt in der Liste aus, um ihre Details anzuzeigen.
 
 > [!NOTE]
-> Transportcontainer und Paletten sind mit einer Fahrt verknüpft. Kaufzeilen sind mit einem Transportcontainer verknüpft. Wenn Transportcontainer und Paletten ausgeschaltet sind, können sie auch direkt mit einer Fahrt verknüpft werden. Außerdem werden Kosten, die hier eingegeben werden, auf alle angehängten Kauf-Zeilen umgelegt.
+> Transportcontainer und Paletten sind mit einer Fahrt verknüpft. Kaufzeilen sind mit einem Transportcontainer verknüpft. Außerdem werden Kosten, die hier eingegeben werden, auf alle angehängten Kauf-Zeilen umgelegt.
+> Projektbestellung wird in „Gesamttransportkosten“ nicht unterstützt.
 
 ## <a name="action-pane"></a>Aktivitätsbereich
 

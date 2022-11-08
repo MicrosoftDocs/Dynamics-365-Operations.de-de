@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 22f2512125679f160cb658923893d5f5aa739a2d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b409017407ce1c027184bdc2292197840c61e04a
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906152"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725440"
 ---
 # <a name="manage-shipping-containers"></a>Verwalten von Transportcontainern
 
@@ -40,9 +40,9 @@ Die folgende Tabelle beschreibt die Schaltflächen, die auf der Registerkarte **
 
 | Schaltfläche | Beschreibungen |
 |---|---|
-| Zugangsliste buchen | Buchen Sie eine Bonliste, oder zeigen Sie die Wareneingangslisten für alle Zeilen der Einkaufsbestellung im Transportcontainer an. Wenn Sendungen mit mehreren Firmen verwendet werden, wird für jede Firma ein neues Dialogfenster zum Buchen einer Bonliste geöffnet. |
+| Zugangsliste buchen | Buchen Sie eine Bonliste, oder zeigen Sie die Wareneingangslisten für alle Zeilen der Einkaufsbestellung im Transportcontainer an.  |
 | Produktzugang buchen | Buchen Sie einen Wareneingang für alle Zeilen der Einkaufsbestellung im Transportcontainer. |
-| Rechnung buchen | Buchen Sie eine Rechnung für alle Zeilen der Einkaufsbestellung im Transportcontainer. Bei Sendungen mit mehreren Firmen wird für jede Firma ein neues Dialogfeld für die Rechnungsbuchung geöffnet. |
+| Rechnung buchen | Buchen Sie eine Rechnung für alle Zeilen der Einkaufsbestellung im Transportcontainer.  |
 | Umlagerungsauftrag versenden | Buchen Sie einen Umlagerungsauftragsversand für alle Umlagerungsauftragszeilen im Transportcontainer. Nur die Zeilen im Transportcontainer, die eine Art von Umlagerungsauftrag sind, erscheinen in dem Dialogfenster. |
 | Umlagerungsauftrag empfangen | Buchen Sie einen Transportauftragseingang für alle Transportauftragszeilen im Transportcontainer. Das Empfangsdialogfeld ist die einfachste Möglichkeit, Waren in einem Transportcontainer oder auf einer Fahrt zu empfangen, und ist eine von drei verfügbaren Optionen. Sie können auch über Wareneingangserfassungen oder die Verarbeitung mit mobilen Geräten empfangen. |
 | Eingangserfassung erstellen | Sie können eine Wareneingangserfassung für Organisationen generieren, indem Sie erweiterte Funktionen für Lagerorte verwenden. Die Optionen sind _Menge initialisieren_ (empfohlen), und entweder _Erstellen aus Waren in Zustellung_ oder _Erstellen aus Einkaufsbestellungen_. Die letzten beiden Optionen hängen davon ab, ob die Verarbeitung von Waren in Zustellung verwendet wird. |
@@ -56,7 +56,7 @@ Die folgende Tabelle beschreibt die Schaltflächen, die auf der Registerkarte **
 
 | Schaltfläche | Beschreibungen |
 |---|---|
-| Zugangsliste | Buchen Sie eine Eingangsliste für alle Zeilen der Einkaufsbestellung im Transportcontainer. Wenn Fahrten mit mehreren Firmen verwendet werden, wird für jede Firma ein neues Dialogfeld für die Buchung der Eingangsliste geöffnet. |
+| Zugangsliste | Buchen Sie eine Eingangsliste für alle Zeilen der Einkaufsbestellung im Transportcontainer.  |
 | Produktzugang | Zeigen Sie den Wareneingangsdatensatz an, wenn er verwendet wird. Der Wareneingangsprozess wird nur verwendet, wenn die Waren nicht die Waren in Zustellung-Funktionalität verwenden. |
 | Wareneingang | Zeigen Sie die Wareneingangserfassung für den Transportcontainer an, wenn dieses Journal verwendet wird. |
 | Teilstrecken | Abschnitte werden verwendet, um separate Teile einer Route zu identifizieren. Vorlaufzeiten können mit jedem Abschnitt verknüpft werden, um die Sendungsverfolgung zu erleichtern. Weitere Informationen finden Sie unter [Einrichten von Routen mit mehreren Abschnitten](multi-leg-journey-setup.md). |

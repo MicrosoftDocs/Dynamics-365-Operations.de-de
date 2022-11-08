@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 60f9d84b240016671ff726fc3cca2e02cfd811ca
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: da5881a901d3ba4d01e6d4510a53ca079efd7e75
+ms.sourcegitcommit: c8b97eea28f07b6b179825f3b134c8c8704ff8fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689223"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "9731609"
 ---
 # <a name="proactive-quality-updates"></a>Proaktive Qualitätsupdates
 
@@ -40,13 +40,13 @@ Es wurden bereits mehrere Fortschritte umgesetzt, die eine proaktive Bereitstell
 
 - **Aktualisierung nahezu ohne Downtime**: Um häufigere Umgebungen zu fördern, ist es wichtig, dass die Auswirkungen auf die Verfügbarkeit der Umgebung reduziert werden, um Vereinbarungen zum Servicelevel (SLAs) für Dynamics 365 aufrechtzuerhalten. Die Aktualisierung nahezu ohne Downtime wurde ursprünglich eingeführt, um das monatliche Betriebssystem-Patching zu verbessern, indem ein Cluster-Failover verwendet wird, um das aktualisierte Image mit minimaler Unterbrechung zu aktivieren. Der Mechanismus zum Anwenden von Updates wird verbessert, sodass er noch weniger störend ist, und er deckt dann sowohl das Betriebssystem-Patching als auch die Bereitstellung hochwertiger Updates ab.
 
-    Bei interaktiven Benutzern wird eine aktive Sitzung möglicherweise unterbrochen, und die Wiederholung erfolgt in der jetzt aktualisierten Umgebung. Mit der Einführung von [prioritätsbasierten Stapelplanung](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md), das jetzt auf Opt-in-Basis verfügbar ist, wird die Stapelplanung und -verarbeitung sofort nach dem Update wiederhergestellt und fortgesetzt. Für Kunden wird eine prioritätsbasierte Stapelplanung eingerichtet, bevor sie an der proaktiven Verteilung von Qualitätsupdates für ihre Produktionsumgebungen teilnehmen.
+Bei interaktiven Benutzern wird eine aktive Sitzung möglicherweise unterbrochen, und die Wiederholung erfolgt in der jetzt aktualisierten Umgebung. Mit der Einführung von [prioritätsbasierten Stapelplanung](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md), wird die Stapelplanung und -verarbeitung sofort nach dem Update wiederhergestellt und fortgesetzt. Für Kunden wird eine prioritätsbasierte Stapelplanung eingerichtet, bevor sie an der proaktiven Verteilung von Qualitätsupdates für ihre Produktionsumgebungen teilnehmen.
 
 - **Nutzungsschwache Zeiten**: Nutzungsschwache Zeiten sind für jede Azure-Region festgelegt und während der Dark Hour-Periode werden Aktualisierungen nahezu ohne Downtime werden in diesem Zeitraum durchgeführt.
 
 ## <a name="the-proactive-update-process"></a>Der proaktive Updateprozess
 
-Die Bereitstellung proaktiver Qualitätsupdates folgt einem sicheren Bereitstellungsprozess (SDP). Die Besonderheiten des SDP werden sich weiterentwickeln, aber Qualitätsupdates werden zunächst in Sandbox-Umgebungen bereitgestellt. Der Prozess beginnt mit Umgebungen, die sich für eine frühe Bereitstellung entscheiden. Wenn der Prozentsatz der erfolgreich bereitgestellten Sandboxes zunimmt, beginnt die Bereitstellung in Produktionsumgebungen. Noch einmal: Der Prozess beginnt mit Umgebungen, die sich bewusst für eine frühe Bereitstellung entscheiden. Überwachungssysteme überwachen Systemtelemetrie- und Live-Website-Vorfälle und stoppen die Einführung einer bestimmten Version, wenn eine Regression erkannt wird. Kunden können die Qualitätsupdates weiterhin vor der proaktiven Bereitstellung abrufen, wenn sie dies wünschen.
+Die Bereitstellung proaktiver Qualitätsupdates folgt einem sicheren Bereitstellungsprozess (SDP). Die Besonderheiten des SDP werden sich weiterentwickeln, aber Qualitätsupdates werden zunächst in Sandbox-Umgebungen bereitgestellt. Wenn der Prozentsatz der erfolgreich bereitgestellten Sandboxes zunimmt, beginnt die Bereitstellung in Produktionsumgebungen. Überwachungssysteme überwachen Systemtelemetrie- und Live-Website-Vorfälle und stoppen die Einführung einer bestimmten Version, wenn eine Regression erkannt wird. Kunden können die Qualitätsupdates weiterhin vor der proaktiven Bereitstellung abrufen, wenn sie dies wünschen.
 
 Aktuelle Versionsverwaltungsdaten zeigen, dass weniger als 3 Prozent der Regressionen in Qualitätsupdates eingeführt werden. Mit einem verstärkten Fokus auf die Eliminierung von Regressionen und einem verbesserten SDP werden die potenziellen Auswirkungen von Regressionen erheblich geringer sein als die Gewinne bei der Qualität, die durch eine schnellere Bereitstellung von Fixes für Kunden auf breiter Basis erzielt werden.
 
@@ -92,13 +92,13 @@ Informationen zu den nutzungsschwachen Zeiten für jede Region finden Sie unter 
 **App-Version: 10.0.1326.70**
 **Entsprechender aktueller KB-Artikel: 748926**
 
-| Station | Regionen | Kommender Sandbox-Zeitplan
-|---|---|---|
-| Station 1 | Kanada, Mitte, Kanada, Osten, Frankreich, Mitte, Indien, Mitte, Norwegen, Osten, Schweiz, Westen | 14. Oktober bis 17. Oktober 2022 |
-| Station 2 | Frankreich, Süden, Indien, Süden, Norwegen, Westen, Schweiz, Norden, Südafrika, Norden, Australien Osten, Vereinigtes Königreich, Süden, VAE, Norden, Japan, Osten, Australien, Südosten, Südostasien | 15. Oktober bis 18. Oktober 2022 |
-| Station 3 | Ostasien, Vereinigtes Königreich, Westen, Japan, Westen, Brasilien, Süden, Westeuropa, USA, Osten, VAE, Mitte | 16. Oktober bis 19. Oktober 2022 |
-| Station 4 | Nordeuropa, USA, Mitte, USA, Westen | 17. Oktober bis 20. Oktober 2022 |
-| Station 5 | DoD, Community-Cloud der Regierung, China | Nicht geplant |
+| Station | Regionen | Abgeschlossener Zeitplan | Kommender Sandbox-Zeitplan|
+|---|---|---|---|
+| Station 1 | Kanada, Mitte, Kanada, Osten, Frankreich, Mitte, Indien, Mitte, Norwegen, Osten, Schweiz, Westen | 14. Oktober bis 17. Oktober 2022 | 2. bis 5. November 2022 |
+| Station 2 | Frankreich, Süden, Indien, Süden, Norwegen, Westen, Schweiz, Norden, Südafrika, Norden, Australien Osten, Vereinigtes Königreich, Süden, VAE, Norden, Japan, Osten, Australien, Südosten, Südostasien | 15. Oktober bis 18. Oktober 2022 | 2. bis 5. November 2022 |
+| Station 3 | Ostasien, Vereinigtes Königreich, Westen, Japan, Westen, Brasilien, Süden, Westeuropa, USA, Osten, VAE, Mitte | 16. Oktober bis 19. Oktober 2022 | 2. bis 5. November 2022 |
+| Station 4 | Nordeuropa, USA, Mitte, USA, Westen | 17. Oktober bis 20. Oktober 2022 | 2. bis 5. November 2022 |
+| Station 5 | DoD, Community-Cloud der Regierung, China | Nicht geplant | Nicht geplant |
 
 > [!IMPORTANT] 
 > Fünf Tage im Voraus aktualisiert Microsoft den vorhergehenden Zeitplan und sendet E-Mail-Benachrichtigungen an die Gruppe von Umgebungen, die diese Qualitätsupdates erhalten sollen. Der vorstehende Zeitplan gilt nur für Umgebungen, die über ein bevorstehendes Update benachrichtigt wurden. Informationen zu den nutzungsschwachen Zeiten für jede Region finden Sie unter [Welche Wartungsfenster sind nach Region geplant?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).

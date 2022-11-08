@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 99dbe17d4e83c2c75d52ca3fd22a1772d8045355
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 609403b251338b7e792f3ab624fb37a1833c919b
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871977"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725520"
 ---
 # <a name="landed-cost-parameters-setup"></a>Einrichten der Gesamttransportkosten-Parameter
 
@@ -125,14 +125,11 @@ Die Einstellungen auf dieser Registerkarte legen die Standarddimensionen für je
 
 Die Registerkarte **Nummernfolgen** der Seite **Gesamttransportkosten-Parameter** listet alle Arten von Nummernkreisen auf, die für die Gesamttransportkosten erforderlich sind, die aber nicht für alle juristischen Entitäten gelten. Wählen Sie für jede Referenz in der Liste einen Code für die Nummernkreis-Sequenz.
 
-> [!NOTE]
-> In einer Konfiguration mit mehreren Firmen müssen für jede Firma (juristische Entität) unterschiedliche Sequenzen erstellt werden.
 
 ## <a name="shared-number-sequences-tab"></a>Registerkarte Gemeinsam genutzte Nummernkreise
 
 Die Registerkarte **Gemeinsame Nummernkreise** der Seite **Gesamttransportkosten-Parameter** listet alle Arten von Referenznummernkreisen auf, die von juristischen Entitäten für Gesamttransportkosten gemeinsam genutzt werden. Derzeit gibt es nur eine Nummernkreis-Sequenz in der Liste. Diese Nummernkreis-Sequenz wird für die Fahrt-ID verwendet.
 
-Auf der Seite **Alle Fahrten** können Benutzer alle Fahrten über alle juristischen Entitäten hinweg einsehen. Um eine Fahrt zu bearbeiten, müssen sich die Benutzer jedoch in der juristischen Entität des ausgewählten Datensatzes befinden.
 
 ## <a name="feature-visibility-tab"></a>Registerkarte Sichtbarkeit der Funktionen
 

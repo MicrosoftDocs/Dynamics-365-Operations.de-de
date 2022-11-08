@@ -2,7 +2,7 @@
 title: Online- und Offlineverkaufsstellen-(POS)-Vorgänge
 description: Dieser Artikel enthält Informationen zu den Verkaufsstelle (POS)-Arbeitsgängen in Dynamics 365 Commerce. Es gibt an, an welcher Position in der Anwendung die Arbeitsgänge aufgerufen werden können, und ob sie im Offline-Modus verfügbar sind.
 author: josaw1
-ms.date: 05/27/2022
+ms.date: 10/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: 39f827d759f37daf056ff2df6284dda3db113c7f
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 42010bbc0cfb9714fc2be360c817bad07e184eb3
+ms.sourcegitcommit: 435e69160dbd7f9c61b37ac4440285a5df144622
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9272848"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "9728275"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online- und Offlineverkaufsstellen-(POS)-Vorgänge
 
@@ -101,7 +101,7 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 | 212  | Informationen zur Flottenkarte                                   | Der Vorgang wird nicht unterstützt.                                                                                                                                                                                | Nicht zutreffend | Nicht zutreffend     | Nicht zutreffend | Nicht zutreffend    | Nicht zutreffend  |
 | 213  | Zahlung - Gutschrift                                   | Dient zum Akzeptieren einer vom Shop ausgestellten Gutschrift (Beleg).                                                                                                                                                          | Ja            | Ja                | Nein             | Nein                | Nein              |
 | 214  | Zahlung - Geschenkkarte                                     | Annehmen einer Geschenkkarte, die der Shop ausgestellt hat.                                                                                                                                                                      | Ja            | Ja                | Nein             | Nein                | Nein              |
-| 215  | Barauszahlung der Geschenkkarte                                | Der Vorgang wird nicht unterstützt.                                                                                                                                                                                | Ja            | Ja                | Nein             | Nein                | Nein              |
+| 215  | Barauszahlung der Geschenkkarte                                | Guthabenbuchungen mit dem vollen Restguthaben der Geschenkkarte, wenn innerhalb des konfigurierten Auszahlungslimits.                                                                                                                                                                              | Ja            | Ja                | Nein             | Nein                | Nein              |
 | 216  | Zahlung – Karte (exakt)                                    | Der Vorgang wird nicht unterstützt.                                                                                                                                                                                | Nicht zutreffend | Nicht zutreffend     | Nicht zutreffend | Nicht zutreffend    | Nicht zutreffend  |
 | 217  | Zahlung – Scheck (exakt)                                   | Der Vorgang wird nicht unterstützt.                                                                                                                                                                                | Nicht zutreffend | Nicht zutreffend     | Nicht zutreffend | Nicht zutreffend    | Nicht zutreffend  |
 | 218  | Zahlung – Debitorenkonto (exakt)                        | Der Vorgang wird nicht unterstützt.                                                                                                                                                                                | Nicht zutreffend | Nicht zutreffend     | Nicht zutreffend | Nicht zutreffend    | Nicht zutreffend  |
