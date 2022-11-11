@@ -541,7 +541,11 @@
                     - name: Kandidaten für eine Stelle anwerben
                       href: hr-personnel-recruit.md
         - name: Aufgabenverwaltung
-          href: hr-task-mgmt.md
+          items:
+            - name: Übersicht
+              href: hr-task-mgmt.md
+            - name: Upgrade der Aufgabenverwaltung
+              href: hr-task-update.md
         - name: Beurlaubung und Abwesenheit
           items:
             - name: Übersicht
@@ -832,6 +836,10 @@
           href: hr-developer-entities.md
         - name: Benutzerdefinierte Felder
           href: hr-developer-custom-fields.md
+        - name: Entwickeln und anpassen
+          items:
+            - name: Geschlechtsbasierte Enumeration
+              href: enum-exten.md
         - name: Datenintegration einrichten
           items:
             - name: Eine Datenintegrationstechnologie auswählen

@@ -450,7 +450,9 @@
                       href: accounts-receivable/sb-billing-schedules.md
                     - name: Einen Abrechnungszeitplan kopieren
                       href: accounts-receivable/sb-copy-schedules-items.md
-                    - name: Funktionen von Fakturierungszeitplänen
+                    - name: Debitorenteilung mit Abrechnungszeitplan
+                      href: accounts-receivable/sb-customer-split.md
+                    - name: Funktionen von Abrechnungszeitplänen
                       href: accounts-receivable/sb-schedule-billing-features.md
                     - name: Abrechnung nach Meilenstein
                       href: accounts-receivable/sb-milestonebilling.md
@@ -1172,6 +1174,8 @@
                   href: general-ledger/close-general-ledger-at-period-end.md
                 - name: Finanzperiodenabschluss-Arbeitsbereich
                   href: general-ledger/financial-period-close-workspace.md
+                - name: Jahresendabschluss optimieren
+                  href: general-ledger/optimize-year-end-close.md
                 - name: Jahresendabschluss
                   href: general-ledger/year-end-close.md
                 - name: Geschäftsjahr abschließen
