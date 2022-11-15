@@ -1,6 +1,6 @@
 ---
-title: Bedarfsverläufe und Bedarfsverursacherinformationen mit Planungsoptimierung
-description: Dieser Artikel enthält Informationen zu berechneten Bedarfsverläufen und Bedarfsverursacherinformationen in der Planungsoptimierung.
+title: Nettobedarf und Informationen zum Bedarfsverursacher
+description: Dieser Artikel enthält Informationen zu berechneten Bedarfsverläufen und Bedarfsverursacherinformationen.
 author: t-benebo
 ms.date: 7/28/2021
 ms.topic: article
@@ -11,20 +11,20 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 259e5793a8dfac67793034d98ccb627fe1947bab
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a31ff5490b08d92f0d966388b65de02bca25b050
+ms.sourcegitcommit: 613be2f35e600ae1a1fa7ea2ae30e78984ca398a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888527"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748437"
 ---
-# <a name="net-requirements-and-pegging-information-with-planning-optimization"></a>Bedarfsverläufe und Bedarfsverursacherinformationen mit Planungsoptimierung
+# <a name="net-requirements-and-pegging-information"></a>Nettobedarf und Informationen zum Bedarfsverursacher
 
 [!include [banner](../../includes/banner.md)]
 
-Wenn Sie die Produktprogrammplanung in der Planungsoptimierung ausführen, ist es wichtig, dass Sie die Ergebnisse verstehen, wie die vorhandenen Lieferungen den Bedarf deckt und warum eine bestimmte Lieferung generiert wurde. Sie können die Seite **Bedarfsverlauf** verwenden, um die berechneten Bedarfe, die die Produktprogrammplanung erzeugt, besser zu verstehen.
+Wenn Sie die Produktprogrammplanung in der integrierten Produktprogrammplanung ausführen, ist es wichtig, dass Sie die Ergebnisse verstehen, wie die vorhandenen Lieferungen den Bedarf deckt und warum eine bestimmte Lieferung generiert wurde. Sie können die Seite **Bedarfsverlauf** verwenden, um die berechneten Bedarfe, die die Produktprogrammplanung erzeugt, besser zu verstehen.
 
-Die Seite **Bedarfsverlauf** zeigt den Bedarfsverlauf an, den die Planungsoptimierung für das Produkt berechnet hat. Er zeigt auch die Deckungseinstellungen an, die während der Ausführung der Produktprogrammplanung angewendet wurden, eine Aufschlüsselung der Bedarfssummen nach Transaktionstyp und Bedarfsverursacherinformationen.
+Die Seite **Bedarfsverlauf** zeigt den Bedarfsverlauf an, den die Produktprogrammplanung für das Produkt berechnet hat. Er zeigt auch die Deckungseinstellungen an, die während der Ausführung der Produktprogrammplanung angewendet wurden, eine Aufschlüsselung der Bedarfssummen nach Transaktionstyp und Bedarfsverursacherinformationen.
 
 ## <a name="open-the-net-requirements-page"></a>Die Bedarfsverlaufsseite öffnen
 
@@ -64,8 +64,8 @@ Der untere Abschnitt der Seite enthält die folgenden Registerkarten:
 Die folgenden Aktivitäten sind im Aktivitätsbereich verfügbar:
 
 - **Aktualisieren \> Produktprogammplanung**: Führen Sie die Produktprogrammplanung direkt von der Seite **Bedarfsverlauf** aus.
-- **Aktualisieren \> Absatzplanung**: Führen Sie die Absatzplanung direkt von der Seite **Bedarfsverlauf** aus. Die Planungsoptimierung unterstützt diesen Vorgang noch nicht.
-- **Aktualisieren \> Anschlussplanung**: Führen Sie die Anschlussplanung direkt aus der Seite **Bedarfsverlauf** aus. Die Planungsoptimierung unterstützt diesen Vorgang noch nicht.
+- **Aktualisieren \> Absatzplanung**: Führen Sie die Absatzplanung direkt von der Seite **Bedarfsverlauf** aus. Die Planungsoptimierung unterstützt diesen Vorgang nicht.
+- **Aktualisieren \> Anschlussplanung**: Führen Sie die Anschlussplanung direkt aus der Seite **Bedarfsverlauf** aus. Die Planungsoptimierung unterstützt diesen Vorgang nicht.
 
 ## <a name="example-scenario"></a>Beispielszenario
 
@@ -133,8 +133,6 @@ Als Nächstes öffnen Sie die Seite **Bedarfsverlauf** für das Produkt *1000*, 
     ![Bedarfsverursacherinformation für den Auftrag](media/pegging-planned-purchase-order.png "Bedarfsverursacherinformation für den Auftrag")
 
 > [!NOTE]
-> Da die Planungsoptimierung einige Funktionen noch nicht unterstützt, sind die Bedarfstypen *Sicherheitslagerbestand* und *Abgelaufene Charge* nicht auf der Seite **Bedarfsverlauf** enthalten. Weitere Informationen finden Sie unter [Planungsoptimierung Fit-Analyse](planning-optimization-fit-analysis.md).
->
-> Wenn Sie das integrierte Produktprogrammplanungsmodul verwenden, werden chargengesteuerte Produkte unterstützt. Bei chargengesteuerten Produkten wird der abgelaufene verfügbare Lagerbestand auf der Seite **Bedarfsverlauf** angezeigt, aber er ist nicht mit Bedarfsanforderungen verknüpft. Abgelaufene verfügbare Positionen dieses Typs werden als Bedarfspositionen *Abgelaufene Charge* auf der Seite **Bedarfsverlauf** angezeigt.
+> Die Anforderung *Sicherheitslagerbestand* ist nicht auf der Seite **Nettobedarf** enthalten.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
