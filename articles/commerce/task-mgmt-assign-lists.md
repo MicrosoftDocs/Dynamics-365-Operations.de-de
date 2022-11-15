@@ -2,23 +2,23 @@
 title: Filialen oder Mitarbeitern Aufgabenlisten zuweisen
 description: In diesem Artikel wird beschrieben, wie Sie den Filialen oder Mitarbeitern in Microsoft Dynamics 365 Commerce Aufgabenlisten zuweisen.
 author: gvrmohanreddy
-ms.date: 02/10/2020
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ms.search.industry: ''
-ms.openlocfilehash: 8aa1d61e235244ee9400419e51da638c059892e5
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: faff772051738f624b86fd23fb6bf29173e909ea
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9284656"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746193"
 ---
 # <a name="assign-task-lists-to-stores-or-employees"></a>Filialen oder Mitarbeitern Aufgabenlisten zuweisen
 
@@ -30,7 +30,7 @@ Mit der Aufgabenverwaltung in Dynamics 365 Commerce können Sie eine Aufgabenlis
 
 ## <a name="start-the-task-list-assignment-process"></a>Starten Sie den Prozess der Aufgabenlistenzuweisung
 
-Um den Prozess der Zuweisung eines Aufgabenplans zu beginnen, führen Sie die folgenden Schritte aus.
+Bevor Sie mit dem Zuweisen von Aufgaben beginnen, vergewissern Sie sich, dass Sie eine Aufgabenliste erstellt haben, indem Sie den Schritten in Artikel [Erstellen Sie Aufgabenlisten und fügen Sie Aufgaben hinzu](task-mgmt-create-lists.md) folgen. Um den Prozess der Zuweisung eines Aufgabenplans zu beginnen, führen Sie die folgenden Schritte aus.
 
 1. Gehen Sie zu **Retail and Commerce \> Aufgabenverwaltung \> Aufgabenverwaltung Verwaltung**.
 1. Wählen Sie die Aufgabenliste, die Sie zuweisen möchten.

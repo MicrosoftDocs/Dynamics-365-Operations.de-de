@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 421f17402a2f3b37a9ccce9d747e2c0ec865ee39
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5d7035a7034d084a9bec453557694ce7f29ad347
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854470"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740370"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1009-april-2020"></a>Neuigkeiten oder Änderungen in Dynamics 365 Supply Chain Management 10.0.9 (April, 2020)
 
@@ -73,7 +73,7 @@ Die folgenden Funktionen sind in diesem Release enthalten. Die Funktionen-Titel 
 
 - [Parallelisierte Festigung von Planaufträgen](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/parallelized-firming-planned-orders)<br> - Weitere Informationen finden Sie unter [Geplante Aufträge umwandeln](../master-planning/planning-optimization/planned-order-firming.md) und im Video [MRP-Leistung und Verbesserungen der Benutzerfreundlichkeit](https://www.microsoft.com/videoplayer/embed/RE4myrJ).
 
-- [Planungsoptimierung für den Vertrieb](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planning-optimization-distribution)<br> - Weitere Informationen finden Sie unter [Übersicht zur Planungsoptimierung](../master-planning/planning-optimization/planning-optimization-overview.md).
+- [Planungsoptimierung für den Vertrieb](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planning-optimization-distribution)<br> - Weitere Informationen unter [Masterplan-Homepage](../master-planning/master-planning-home-page.md).
 
 - [Verbesserungen des Kaufvertrags](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements)<br> - Weitere Informationen finden Sie unter [Kaufverträge](../procurement/purchase-agreements.md).
 

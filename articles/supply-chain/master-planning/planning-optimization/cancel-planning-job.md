@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 0474c50157295d9ecd2341b700c07f4fbf1ed51f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f5f1f2c8e3e43e36d837ebf989422b0dca7819d6
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900940"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741175"
 ---
 # <a name="cancel-a-planning-job"></a>Abbrechen eines Planungsvorgangs
 
@@ -29,8 +29,7 @@ ms.locfileid: "8900940"
 
 In Microsoft Dynamics 365 Supply Chain Management können Sie einen aktiven Planungsauftrag, der die Planungsoptimierungsfunktionalität verwendet, abbrechen. Wenn Sie im Dialogfenster **Abbrechen** wählen, wenn ein Planungsoptimierungsjob direkt von der Benutzeroberfläche aus (nicht im Hintergrund) ausgelöst wird, wird der Planungsoptimierungsjob nicht abgebrochen. Selbst wenn Sie eine Warnung wie „Vorgang abgebrochen“ erhalten, müssen Sie die folgenden Schritte durchführen, um einen Planungsjob mit Planungsoptimierung abzubrechen.
 
-
-Um einen aktiven Planungseinzelvorgang zu stornieren, führen Sie die folgenden Schritte aus. 
+Um einen aktiven Planungseinzelvorgang zu stornieren, führen Sie die folgenden Schritte aus.
 
 > [!NOTE]
 > Es können nur aktive Aufträge abgebrochen werden.
@@ -45,18 +44,6 @@ Der Status des Einzelvorgangs lautet **Wird storniert**, bis der Planungsoptimie
 
 > [!NOTE]
 > Um Statusänderungen anzuzeigen, müssen Sie die Seite aktualisieren, indem Sie die Schaltfläche **Aktualisieren** auswählen.
-
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
-
-[Übersicht zur Planungsoptimierung](planning-optimization-overview.md)
-
-[Erste Schritte mit der Planungsoptimierung](get-started.md)
-
-[Planungsoptimierung Fit-Analyse](planning-optimization-fit-analysis.md)
-
-[Planhistorie und Planungsprotokolle anzeigen](plan-history-logs.md)
-
-[Filter auf einen Plan anwenden](plan-filters.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Planhistorie und Planungsprotokolle einsehen
-description: In diesem Artikel wird erläutert, wie Sie die Historie von Planungsjobs anzeigen, die durch die Funktionalität der Planungsoptimierung ausgelöst werden.
+description: In diesem Artikel wird erläutert, wie Sie den Verlauf von Planungsaufträgen anzeigen.
 author: t-benebo
 ms.date: 06/01/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b2c9257fc67a06b57418b2f5b035b2b540131405
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ab469686a009364bf53cb963506fd2107075a283
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863939"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740930"
 ---
 # <a name="view-plan-history-and-planning-logs"></a>Planhistorie und Planungsprotokolle einsehen
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Artikel wird erläutert, wie Sie die Historie von Planungsjobs anzeigen, die durch die Funktionalität der Planungsoptimierung in Microsoft Dynamics 365 Supply Chain Management ausgelöst werden.
+In diesem Artikel wird erläutert, wie Sie den Verlauf von Planungsaufträgen in Microsoft Dynamics 365 Supply Chain Management anzeigen.
 
 Um die Historie für einen Plan anzuzeigen, öffnen Sie den Plan, indem Sie zu **Masterplanung** \> **Einrichtung** \> **Pläne** \> **Masterpläne** gehen und **Historie** auswählen. Die Historie listet alle Aufträge für den ausgewählten Plan auf. Die Liste enthält erledigte und aktive Aufträge.
 
@@ -47,14 +47,6 @@ Führen Sie die folgenden Schritte aus, um Fehler bei der automatischen Fixierun
     - Wenn Sie das alte Formular verwenden: Wählen Sie im Aktivitätsbereich **Batch-Job** **Protokoll** aus.
 
 1. **Nachrichtendetails** auswählen, um den **Nachrichtendetails** Bereich zu öffnen, in dem Sie alle Warnungen und Fehler anzeigen können, die während der Verarbeitung erfasst wurden.
-
-## <a name="related-resources"></a>Zugehörige Ressourcen
-
-- [Übersicht zur Planungsoptimierung](planning-optimization-overview.md)
-- [Erste Schritte mit der Planungsoptimierung](get-started.md)
-- [Planungsoptimierung Fit-Analyse](planning-optimization-fit-analysis.md)
-- [Filter auf einen Plan anwenden](plan-filters.md)
-- [Abbrechen eines Planungsauftrags](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

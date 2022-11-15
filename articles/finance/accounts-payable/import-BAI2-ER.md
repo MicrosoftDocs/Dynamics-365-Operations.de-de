@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 46a50f4b00125656fc185ad569b94eeef00dc3c3
-ms.sourcegitcommit: 649f1db26da8f20602f11180fc565b7c59eaf545
+ms.openlocfilehash: d24e117b21e291dba1e41d9fa15187b84ff795cf
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337566"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752719"
 ---
 # <a name="set-up-advanced-bank-reconciliation-import-by-using-electronic-reporting"></a>Erweiterten Bankabstimmungsimport mithilfe der elektronischen Berichterstellung einrichten
 
@@ -34,7 +34,7 @@ Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszü
 2. Auf der Kachel für den Konfigurationsanbieter **Microsoft** wählen Sie **Repositorys** aus.
 3. Wählen Sie **Global** und dann **Öffnen** aus.
 4. Wenn eine Verbindung zum Repository hergestellt werden muss, wählen Sie den blauen Link im Dialogfeld aus.
-5. Suchen Sie in der Konfigurationsliste nach **Kontoauszugsmodell \> Kontoauszugsmodell von BAI2**.
+5. Suchen Sie in der Konfigurationsliste nach **Auszugsmodell für erweiterte Bankabstimmung \> ABR BAI2-Format**.
 6. Wählen Sie das **BAI2**-Format aus.
 7. Wählen Sie im Inforegister **Versionen** die neueste Version, und wählen Sie dann **Importieren** aus.
 

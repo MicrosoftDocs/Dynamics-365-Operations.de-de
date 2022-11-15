@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-09-19
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 3d116b5f7f456630415378e6cc069907e339068b
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 5f02ec58c88cfd0d663a97de4e3e4dff1cdd5e90
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689692"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740085"
 ---
 # <a name="finite-capacity-planning-and-scheduling"></a>Planung und Terminierung begrenzter Kapazität
 
@@ -28,9 +28,8 @@ Die begrenzte Kapazität ist ein Ansatz, der Ihnen hilft zu verstehen, wie viel 
 
 Die Planung begrenzter Kapazität erstellt einen realistischeren Zeitplan für die Produktionsprozesse, als dies bei der unendlichen Ladung der Fall ist. Wenn die Kapazität der Ressourcen nicht ausreicht, wird der Liefertermin verschoben, und der Auftrag wird eingeplant, wenn genügend Kapazität vorhanden ist.
 
-## <a name="planning-optimization-support-for-finite-capacity-planning"></a>Planungsoptimierung Unterstützung für die Planung begrenzter Kapazität
-
-Die Planung begrenzter Kapazität und die Terminierung funktionieren fast auf die gleiche Weise, unabhängig davon, ob Sie die Planungsoptimierung oder die integrierte Planungsengine verwenden. Die Planungsoptimierung verwendet jedoch nicht den Parameter **Bottleneck-Zeit**. Wenn Sie die Planungsoptimierung verwenden, werden Ressourcen mit Engpässen immer unter Verwendung des gleichen Zeitraums eingeplant wie Ressourcen ohne Engpässe (wie durch den Zeitrahmen für begrenzte Kapazität angezeigt).
+> [!NOTE]
+> Die Planung begrenzter Kapazität und die Terminierung funktionieren fast auf die gleiche Weise, unabhängig davon, ob Sie die Planungsoptimierung oder die veraltete Masterplanungsengine verwenden. Die Planungsoptimierung verwendet jedoch nicht den Parameter **Bottleneck-Zeit**. Wenn Sie die Planungsoptimierung verwenden, werden Ressourcen mit Engpässen immer unter Verwendung des gleichen Zeitraums eingeplant wie Ressourcen ohne Engpässe (wie durch den Zeitrahmen für begrenzte Kapazität angezeigt).
 
 ## <a name="set-up-finite-capacity-functionality"></a>Funktionalität der begrenzten Kapazität festlegen
 

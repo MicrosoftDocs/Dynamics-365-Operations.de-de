@@ -1,6 +1,6 @@
 ---
 title: Methoden der Wiederbeschaffung und Mengenänderung
-description: Dieser Artikel enthält Informationen zu Wiederbeschaffungsmethoden in der Planungsoptimierung. Außerdem wird erklärt, wie die Mehrfachbestellmenge für ein Produkt das Ergebnis beeinflusst.
+description: Dieser Artikel enthält Informationen zu Wiederbeschaffungsmethoden. Außerdem wird erklärt, wie die Mehrfachbestellmenge für ein Produkt das Ergebnis beeinflusst.
 author: t-benebo
 ms.date: 6/1/2021
 ms.topic: article
@@ -11,26 +11,26 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3e8ef3d38f1b9bacd89304aaf3f0350050232bd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d1e0fe6c1f49bc0f6887f1b29118c1fee7a6222f
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873694"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739755"
 ---
 # <a name="replenishment-methods-and-quantity-modification"></a>Methoden der Wiederbeschaffung und Mengenänderung
 
 [!include [banner](../../includes/banner.md)]
 
-Dieser Artikel enthält Informationen zu Wiederbeschaffungsmethoden in der Planungsoptimierung. Außerdem wird erklärt, wie die Mehrfachbestellmenge für ein Produkt das Ergebnis beeinflusst.
+Dieser Artikel enthält Informationen zu Wiederbeschaffungsmethoden. Außerdem wird erklärt, wie die Mehrfachbestellmenge für ein Produkt das Ergebnis beeinflusst.
 
 Wiederbeschaffungsmethoden werden auch als Deckungsmethoden und Losgrößenmethoden bezeichnet.
 
 ## <a name="coverage-codes"></a>Abdeckungscodes
 
-Die Planungsoptimierung kann für die Verwendung verschiedener Wiederbeschaffungsmethoden konfiguriert werden. Die Wiederbeschaffungsmethoden sind die Techniken, die das System verwendet, um den Bedarf für ein Produkt zu berechnen. Wiederbeschaffungsmethoden werden durch Abdeckungscodes definiert, die Sie entweder auf der Abdeckungsgruppe oder auf dem Produkt festlegen können.
+Die Masterplanung kann so konfiguriert werden, dass verschiedene Wiederbeschaffungsmethoden verwendet werden. Die Wiederbeschaffungsmethoden sind die Techniken, die das System verwendet, um den Bedarf für ein Produkt zu berechnen. Wiederbeschaffungsmethoden werden durch Abdeckungscodes definiert, die Sie entweder auf der Abdeckungsgruppe oder auf dem Produkt festlegen können.
 
-Die folgenden Reichweitencodes können in der Planungsoptimierung verwendet werden:
+Folgende Abdeckungscodes stehen zur Verfügung:
 
 - **Periode** – Die Wiederbeschaffungsmethode fasst den gesamten Bedarf für eine Periode in einem Auftrag für das Produkt zusammen. Der Auftrag wird für den ersten Tag der Periode geplant, und seine Menge erfüllt den Nettobedarf während des festgelegten Zeitraums. Die Periode beginnt mit dem ersten Bedarf des Produkts und umfasst die festgelegte Zeitspanne. Die nächste Periode beginnt mit dem nächsten Bedarf des Produkts. Der *Perioden*-Deckungscode wird häufig für nicht vorhersagbare Bestandsziehung, saisonabhängige Produkte oder Produkte mit hohen Kosten verwendet. Die folgende Abbildung zeigt ein Beispiel.
 
@@ -64,13 +64,13 @@ Auf der Seite **Standardauftragseinstellungen** für ein freigegebenes Produkt k
 
 ## <a name="examples-of-replenishment-that-use-the-minmax-coverage-code"></a>Beispiele für die Wiederbeschaffung, die den Min./Max. Abdeckungscode
 
-Wenn Sie auf der Seite **Standardauftragseinstellung** keinen Wert im Feld **Mehrfach** für ein Produkt festlegen und die *Min./Max.* Wiederbeschaffung verwenden, füllt die Planungsoptimierung den Bestand bis zu einer bestimmten Menge wieder auf, wenn der vorhergesagte Lagerbestand unter einem bestimmten Schwellenwert liegt.
+Wenn Sie auf der Seite **Standardauftragseinstellung** keinen Wert im Feld **Mehrfach** für ein Produkt festlegen und die *Min./Max.* Wiederbeschaffung verwenden, füllt die Masterplanung den Bestand bis zu einer bestimmten Menge wieder auf, wenn der vorhergesagte Lagerbestand unter einem bestimmten Schwellenwert liegt.
 
 Wenn Sie eine Mehrfachmenge für ein Produkt definieren, ändert die *Min./Max.* Wiederbeschaffung ihr Verhalten und berücksichtigt den **Mehrfachen** Wert.
 
-Mit anderen Worten: Die Planungsoptimierung wird den Bestand auch dann bis zum definierten Maximalbestand wiederbeschaffen, wenn der vorhergesagte Lagerbestand kleiner als der definierte Minimalbestand ist. Die Wiederbeschaffung muss jedoch ein Vielfaches des **Vielfachen**-Wertes sein.
+Mit anderen Worten: Die Masterplanung wird den Bestand auch dann bis zum definierten Maximalbestand wiederbeschaffen, wenn der vorhergesagte Lagerbestand kleiner als der definierte Minimalbestand ist. Die Wiederbeschaffung muss jedoch ein Vielfaches des **Vielfachen**-Wertes sein.
 
-Wenn die Wiederbeschaffungsmenge (die Differenz zwischen dem Maximalbestand und dem vorhergesagten Lagerbestand) kein Vielfaches des definierten Vielfachen ist, verwendet die Planungsoptimierung den ersten möglichen Wert, der zusammen mit dem vorhergesagten Lagerbestand unter dem Maximalbestand liegt. Wenn die Summe kleiner als der Mindestbestand ist, verwendet die Planungsoptimierung den ersten Wert, der zusammen mit dem vorhergesagten Lagerbestand über dem Maximalbestand liegt.
+Wenn die Wiederbeschaffungsmenge (die Differenz zwischen dem Maximalbestand und dem vorhergesagten Lagerbestand) kein Vielfaches des definierten Vielfachen ist, verwendet die Masterplanung den ersten möglichen Wert, der zusammen mit dem vorhergesagten Lagerbestand unter dem Maximalbestand liegt. Wenn die Summe kleiner als der Mindestbestand ist, verwendet die Masterplanung den ersten Wert, der zusammen mit dem vorhergesagten Lagerbestand über dem Maximalbestand liegt.
 
 In den folgenden Unterabschnitten finden Sie einige Beispiele, die zeigen, wie sich die Mehrfachbestellmenge für ein Produkt auf das Ergebnis der *Min./Max.* Wiederbeschaffung auswirkt.
 

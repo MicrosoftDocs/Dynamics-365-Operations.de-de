@@ -2,7 +2,7 @@
 title: Proaktive Qualitätsupdates
 description: Dieser Artikel enthält Informationen zur proaktiven Bereitstellung von Qualitätsupdates.
 author: rashmansur
-ms.date: 09/12/2022
+ms.date: 11/07/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: da5881a901d3ba4d01e6d4510a53ca079efd7e75
-ms.sourcegitcommit: c8b97eea28f07b6b179825f3b134c8c8704ff8fc
+ms.openlocfilehash: ff2232c9e1010ad1e2524df0c7ed4d771b489ed1
+ms.sourcegitcommit: 05069f7e5eb7a9335c0a62031d7663f88e4821df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2022
-ms.locfileid: "9731609"
+ms.lasthandoff: 11/09/2022
+ms.locfileid: "9752297"
 ---
 # <a name="proactive-quality-updates"></a>Proaktive Qualitätsupdates
 
@@ -25,6 +25,19 @@ ms.locfileid: "9731609"
 In den letzten Jahren hat Microsoft kontinuierliche Fortschritte bei dem gemacht, was wir als [One Version](../../dev-itpro/lifecycle-services/oneversion-overview.md) bezeichnen. Die Prämisse von One Version ist einfach: Je näher wir dem Ziel kommen, dass alle Kunden die gleiche Softwareversion zu haben, desto höher ist die Qualität, die wir liefern können. Wir finden und beheben Probleme einmal und geben diese Lösungen schneller an mehr Kunden weiter.
 
 Die Ergebnisse bestätigen diese Prämisse: geringere Vorfallzahlen bei unseren Produkten. Wenn Kunden nicht dieselbe Version verwenden, stellen wir regelmäßig fest, dass sie Problemen haben, für die bereits eine Lösung vorliegt. Wir haben bereits große Fortschritte mit Dynamics 365 Finance, Dynamics 365 Supply Chain, Dynamics 365 Project Operations und Dynamics 365 Commerce gemacht und dank der jüngsten technischen Fortschritte ist es jetzt möglich, den nächsten Schritt zu tun. Die folgenden Informationen beschreiben, was wir tun werden, was wir bereits getan haben, um die Voraussetzungen zu schaffen, und wie und wann wir die neuen Funktionen störungsfrei einführen werden.
+
+## <a name="what-you-need-to-know"></a>Was Sie wissen müssen
+
+- Proaktive Qualitätsupdates werden monatlich angewendet.
+- Microsoft wendet proaktive Qualitätsupdates auf alle Sandbox-Umgebungen an, in denen ein Dienstupdate ausgeführt wird, das [im Dienst](./public-preview-releases.md#targeted-release-schedule-dates-subject-to-change) war, als die proaktiven Qualitätsupdates erstellt wurden.
+- Ausnahmen für proaktive Qualitätsaktualisierungen werden für Kunden zugelassen, die von der US-amerikanischen Food and Drug Administration (FDA) reguliert werden.
+- Microsoft legt fest, wie proaktive Qualitätsupdates für regulierte Umgebungen und für staatliche und staatliche Cloud-Kunden verwaltet werden.
+- Benachrichtigungen, die sich auf proaktive Qualitätsaktualisierungen beziehen, werden im [Microsoft 365 Nachrichtencenter](https://admin.microsoft.com/AdminPortal/) und auf einem Banner im Microsoft Dynamics Lifecycle Services-Projekt des Kunden veröffentlicht.
+- Fünf Tage bevor ein proaktives Qualitätsupdate auf eine Umgebung angewendet wird, werden Kunden benachrichtigt, dass das Update durchgeführt wird.
+- Kunden können proaktive Qualitätsupdates nicht stornieren oder verschieben.
+- Proaktive Qualitätsupdates werden während dem regionsspezifischen [geplanten Wartungsfenster](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows) installiert.
+- Qualitätsupdates sind so konzipiert, dass sie ein geringes Risiko von Problemen oder Regressionen aufweisen, und dies wird von Microsoft-Daten unterstützt.
+- Microsoft empfiehlt gezielte Tests für bestimmte Probleme oder bestimmte Hotfixes, die mit einem proaktiven Qualitätsupdate zusammenhängen.
 
 ## <a name="focus-on-quality-updates"></a>Schwerpunkt Qualitätsupdates
 
@@ -40,7 +53,7 @@ Es wurden bereits mehrere Fortschritte umgesetzt, die eine proaktive Bereitstell
 
 - **Aktualisierung nahezu ohne Downtime**: Um häufigere Umgebungen zu fördern, ist es wichtig, dass die Auswirkungen auf die Verfügbarkeit der Umgebung reduziert werden, um Vereinbarungen zum Servicelevel (SLAs) für Dynamics 365 aufrechtzuerhalten. Die Aktualisierung nahezu ohne Downtime wurde ursprünglich eingeführt, um das monatliche Betriebssystem-Patching zu verbessern, indem ein Cluster-Failover verwendet wird, um das aktualisierte Image mit minimaler Unterbrechung zu aktivieren. Der Mechanismus zum Anwenden von Updates wird verbessert, sodass er noch weniger störend ist, und er deckt dann sowohl das Betriebssystem-Patching als auch die Bereitstellung hochwertiger Updates ab.
 
-Bei interaktiven Benutzern wird eine aktive Sitzung möglicherweise unterbrochen, und die Wiederholung erfolgt in der jetzt aktualisierten Umgebung. Mit der Einführung von [prioritätsbasierten Stapelplanung](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md), wird die Stapelplanung und -verarbeitung sofort nach dem Update wiederhergestellt und fortgesetzt. Für Kunden wird eine prioritätsbasierte Stapelplanung eingerichtet, bevor sie an der proaktiven Verteilung von Qualitätsupdates für ihre Produktionsumgebungen teilnehmen.
+    Bei interaktiven Benutzern wird eine aktive Sitzung möglicherweise unterbrochen, und die Wiederholung erfolgt in der jetzt aktualisierten Umgebung. Mit der Einführung von [prioritätsbasierten Stapelplanung](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md), wird die Stapelplanung und -verarbeitung sofort nach dem Update wiederhergestellt und fortgesetzt. Für Kunden wird eine prioritätsbasierte Stapelplanung eingerichtet, bevor sie an der proaktiven Verteilung von Qualitätsupdates für ihre Produktionsumgebungen teilnehmen.
 
 - **Nutzungsschwache Zeiten**: Nutzungsschwache Zeiten sind für jede Azure-Region festgelegt und während der Dark Hour-Periode werden Aktualisierungen nahezu ohne Downtime werden in diesem Zeitraum durchgeführt.
 
@@ -56,9 +69,11 @@ Vor der Aktivierung der proaktiven Bereitstellung von Qualitätsupdates wird ein
 
 - **Schema**: Tools stellen sicher, dass hochwertige Update-Builds nur Schemaänderungen enthalten, die angewendet werden können, während der Dienst online ist. Dieser Ansatz trägt dazu bei, die Möglichkeit zu bewahren, das Update nahezu ohne Ausfallzeit anzuwenden.
 - **Verstärkte Änderungsprüfung**: Derzeit gibt es bereits einen zusätzlichen Prozessschritt, um Änderungen für die Aufnahme in ein Qualitätsupdate zu genehmigen. Die Prüfung im zusätzlichen Schritt wird verstärkt, um das Potenzial für Regressionen zu verringern. Breaking Changes sind in Qualitätsupdates nicht zulässig, und die verstärkte Änderungsprüfung wird dazu beitragen, dass wir dieses Ziel erreichen.
-- **Sichtbarkeit**: Wir senden Benachrichtigungen für bevorstehende proaktive Qualitätsupdates über das Admin Center, Lifecycle Services (LCS) und andere verfügbare Kanäle. Darüber hinaus haben Supportteams und Vorfallleiter Einblick darin, wo Qualitätsupdates proaktiv bereitgestellt wurden.
- > [!NOTE]
- > Das Microsoft Communications-Team untersucht eine anhaltende Verschlechterung der E-Mail-Tools, die die Zustellung von E-Mail-Benachrichtigungen verhindert. Bitte beobachten Sie die weiter Microsoft 365 Message Center für Onboarding- und Benachrichtigungsnachrichten.
+- **Sichtbarkeit**: Benachrichtigungen für bevorstehende proaktive Qualitätsupdates werden über das Admin Center, Lifecycle Services (LCS) und andere verfügbare Kanäle gesendet. Darüber hinaus haben Supportteams und Vorfallleiter Einblick darin, wo Qualitätsupdates proaktiv bereitgestellt wurden.
+
+    > [!NOTE]
+    > Das Microsoft Communications-Team untersucht eine anhaltende Verschlechterung der E-Mail-Tools, die die Zustellung von E-Mail-Benachrichtigungen verhindert. Bitte beobachten Sie die weiter Microsoft 365 Message Center für Onboarding- und Benachrichtigungsnachrichten.
+
 - **Fail Safe via Flighting** - Flighting wird verwendet, um Codeänderungen zu schützen, wo immer dies in einem Qualitätsupdate-Fehlerbehebung möglich ist, oder die bestehende Funktion Flighting zu verwenden, die für die Korrektur relevant ist. Wenn nach einer proaktiven Bereitstellung ein Fallback oder das Ausschalten einer Änderung erforderlich ist, kann dies über das Flighting-System erfolgen, um weitere Fehler zu vermeiden.
 - **Sandbox-Synchronisierungsbezeichnung**: Weniger als 20 Prozent der Kunden haben heute mehrere Sandboxes und halten eine Sandbox bereit, in der die Version mit der Produktion übereinstimmt, um bei der Fehlerbehebung zu helfen. Wenn ein Kunde eine Sandbox verwendet, um eine neuere Version als seine Produktion zu testen, erhält diese Sandbox Qualitätsupdates für die neuere Version.
 
@@ -77,7 +92,7 @@ Derzeit zielen Qualitätsupdates nur auf Sandboxes ab. Wir werden diesen Bereich
 Informationen zu den nutzungsschwachen Zeiten für jede Region finden Sie unter [Welche Wartungsfenster sind nach Region geplant?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 
 ### <a name="proactive-quality-update-release-10028"></a>Version des proaktiven Qualitätsupdates: 10.0.28
-**App-Version: 10.0.1265.89**
+**Anwendungsversion: 10.0.1265.89**  
 **Entsprechender aktueller KB-Artikel: 745340**
 
 | Station | Regionen | Abgeschlossener Zeitplan| Kommender Sandbox-Zeitplan
@@ -89,19 +104,31 @@ Informationen zu den nutzungsschwachen Zeiten für jede Region finden Sie unter 
 | Station 5 | DoD, Community-Cloud der Regierung, China | Nicht geplant | Nicht geplant |
 
 ### <a name="proactive-quality-update-release-10029"></a><a name="schedule"></a> Version des proaktiven Qualitätsupdates: 10.0.29
-**App-Version: 10.0.1326.70**
+**Anwendungsversion: 10.0.1326.70**  
 **Entsprechender aktueller KB-Artikel: 748926**
 
 | Station | Regionen | Abgeschlossener Zeitplan | Kommender Sandbox-Zeitplan|
 |---|---|---|---|
-| Station 1 | Kanada, Mitte, Kanada, Osten, Frankreich, Mitte, Indien, Mitte, Norwegen, Osten, Schweiz, Westen | 14. Oktober bis 17. Oktober 2022 | 2. bis 5. November 2022 |
-| Station 2 | Frankreich, Süden, Indien, Süden, Norwegen, Westen, Schweiz, Norden, Südafrika, Norden, Australien Osten, Vereinigtes Königreich, Süden, VAE, Norden, Japan, Osten, Australien, Südosten, Südostasien | 15. Oktober bis 18. Oktober 2022 | 2. bis 5. November 2022 |
-| Station 3 | Ostasien, Vereinigtes Königreich, Westen, Japan, Westen, Brasilien, Süden, Westeuropa, USA, Osten, VAE, Mitte | 16. Oktober bis 19. Oktober 2022 | 2. bis 5. November 2022 |
-| Station 4 | Nordeuropa, USA, Mitte, USA, Westen | 17. Oktober bis 20. Oktober 2022 | 2. bis 5. November 2022 |
+| Station 1 | Kanada, Mitte, Kanada, Osten, Frankreich, Mitte, Indien, Mitte, Norwegen, Osten, Schweiz, Westen | 14. Oktober bis 17. Oktober 2022 und 2. November bis 5. November 2022 | 13. bis 16. November 2022 |
+| Station 2 | Frankreich, Süden, Indien, Süden, Norwegen, Westen, Schweiz, Norden, Südafrika, Norden, Australien Osten, Vereinigtes Königreich, Süden, VAE, Norden, Japan, Osten, Australien, Südosten, Südostasien | 15. Oktober bis 18. Oktober 2022 und 2. November bis 5. November 2022 | 13. bis 16. November 2022 |
+| Station 3 | Ostasien, Vereinigtes Königreich, Westen, Japan, Westen, Brasilien, Süden, Westeuropa, USA, Osten, VAE, Mitte | 16. Oktober bis 19. Oktober 2022 und 2. November bis 5. November 2022 | 13. bis 16. November 2022 |
+| Station 4 | Nordeuropa, USA, Mitte, USA, Westen | 17. Oktober bis 20. Oktober 2022 und 2. November bis 5. November 2022 | 13. bis 16. November 2022 |
 | Station 5 | DoD, Community-Cloud der Regierung, China | Nicht geplant | Nicht geplant |
 
+### <a name="proactive-quality-update-release-10030"></a><a name="schedule"></a> Version des proaktiven Qualitätsupdates: 10.0.30
+**App-Version: TBD**
+**Entsprechender aktueller KB-Artikel: TBD**
+
+| Station | Regionen | Kommender Sandbox-Zeitplan |
+|---|---|---|
+| Station 1 | Kanada, Mitte, Kanada, Osten, Frankreich, Mitte, Indien, Mitte, Norwegen, Osten, Schweiz, Westen | 1. Dezember bis 4. Dezember 2022 |
+| Station 2 | Frankreich, Süden, Indien, Süden, Norwegen, Westen, Schweiz, Norden, Südafrika, Norden, Australien Osten, Vereinigtes Königreich, Süden, VAE, Norden, Japan, Osten, Australien, Südosten, Südostasien | 2. Dezember bis 5. Dezember 2022 |
+| Station 3 | Ostasien, Vereinigtes Königreich, Westen, Japan, Westen, Brasilien, Süden, Nordeuropa, USA, Osten, VAE, Mitte | 3. Dezember bis 6. Dezember 2022 |
+| Station 4 | Westeuropa, USA, Mitte, USA, Westen | 4. Dezember bis 7. Dezember 2022 |
+| Station 5 | DoD, Community-Cloud der Regierung, China | Nicht geplant |
+
 > [!IMPORTANT] 
-> Fünf Tage im Voraus aktualisiert Microsoft den vorhergehenden Zeitplan und sendet E-Mail-Benachrichtigungen an die Gruppe von Umgebungen, die diese Qualitätsupdates erhalten sollen. Der vorstehende Zeitplan gilt nur für Umgebungen, die über ein bevorstehendes Update benachrichtigt wurden. Informationen zu den nutzungsschwachen Zeiten für jede Region finden Sie unter [Welche Wartungsfenster sind nach Region geplant?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
+> Fünf Tage im Voraus aktualisiert Microsoft den vorhergehenden Zeitplan und sendet eine Benachrichtigung für die Gruppe von Umgebungen, die diese Qualitätsupdates erhalten sollen. Der vorstehende Zeitplan gilt nur für Umgebungen, die über ein bevorstehendes Update benachrichtigt wurden. Informationen zu den nutzungsschwachen Zeiten für jede Region finden Sie unter [Welche Wartungsfenster sind nach Region geplant?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 >
 > Für jede Regionsgruppe bzw. *Station*, wo derzeit ein Qualitätsupdate bereitgestellt werden soll, zeigt der Zeitplan eine Spanne von vier Tagen. Qualitätsupdates beginnen nur mit Sandbox-Umgebungen. Wenn der Prozentsatz der erfolgreich bereitgestellten Sandboxes zunimmt, beginnt die Bereitstellung in Produktionsumgebungen mit einer vorherigen Benachrichtigung an Kunden.
 > 
@@ -124,13 +151,13 @@ Die folgenden Schritte sind eine vorübergehende Lösung, da wir weiterhin daran
 
 Verwenden Sie KB 745340 für die Kette der 10.0.28 Qualitätsupdates und die zugehörige App-Version 10.0.1265.89.
 
-1. Melden Sie sich in LCS an und öffnen Sie die Seite **Umgebungsdetails** für Ihre Sandbox. 
+1. Melden Sie sich in Lifecycle Services an und öffnen Sie die Seite **Umgebungsdetails** für Ihre Sandbox. 
 2. Wählen Sie im Abschnitt **Verfügbare Updates** die Option **Updates ansehen** für das neueste Qualitätsupdate-Build. 
 3. Exportieren Sie den Build in eine CSV- oder Microsoft Excel-Datei.
 4. Sortieren Sie in der exportierten Datei die Informationen nach Zeit (älteste zuerst) und suchen Sie dann in der Spalte **Update-ID** nach der KB-Nummer 745340. Sie sollten jetzt in der Lage sein, die KB-Deltaliste anzuzeigen.
  
- > [!NOTE]
- > Der Export in eine CSV- oder Excel-Datei muss erfolgen, bevor die Umgebung aktualisiert wird. Andernfalls können Sie eine Umgebung mit einer ähnlichen Konfiguration verwenden, in der das Update nicht installiert ist, und die obigen Schritte ausführen.
+> [!NOTE]
+> Der Export in eine CSV- oder Excel-Datei muss erfolgen, bevor die Umgebung aktualisiert wird. Andernfalls können Sie eine Umgebung mit einer ähnlichen Konfiguration verwenden, in der das Update nicht installiert ist, und die obigen Schritte ausführen.
 
 [![Beispiel einer Umgebung mit Qualitätsupdate.](./media/how-to-get-kb-list-pqu.png)](./media/how-to-get-kb-list-pqu.png)
 
@@ -139,8 +166,8 @@ Ein kritisches Problem oder eine Regression sind ein oder mehrere Ereignisse, di
 
 Wenn eine einzelne Kundenumgebung betroffen ist, wenden Sie sich an den Microsoft-Support, um ein Ticket zu eröffnen. Basierend auf der Begründung werden wir die Einführung des Qualitätsupdates in allen anderen Umgebungen in diesem Projekt stoppen, bis das Problem behoben ist.
 
-## <a name="can-customers-still-manually-apply-hotfix-updates-from-lcs"></a>Können Kunden weiterhin manuell Hotfix-Updates von LCS anwenden?
-Ja. Um sicherzustellen, dass Hotfixes dauerhaft gleich funktionieren, können Hotfix-Updates weiterhin auf Kundenumgebungen in LCS angewendet werden. Es ist jedoch wichtig zu beachten, dass Hotfixes, die als Teil eines Qualitätsupdates bereitgestellt werden, den Standard-SDP durchlaufen, bevor das Update bereitgestellt wird. Dadurch wird das Risiko von Regressionen aufgrund höherer Qualität reduziert. Wir empfehlen, dass Sie sich für eine Qualitätsaktualisierung entscheiden, anstatt Hotfixes manuell anzuwenden, um die Zuverlässigkeit zu erhöhen.
+## <a name="can-customers-still-manually-apply-hotfix-updates-from-lifecycle-services"></a>Können Kunden weiterhin manuell Hotfix-Updates von Lifecycle Services anwenden?
+Ja. Um sicherzustellen, dass Hotfixes dauerhaft gleich funktionieren, können Hotfix-Updates weiterhin auf Kundenumgebungen in Lifecycle Services angewendet werden. Es ist jedoch wichtig zu beachten, dass Hotfixes, die als Teil eines Qualitätsupdates bereitgestellt werden, den Standard-SDP durchlaufen, bevor das Update bereitgestellt wird. Dadurch wird das Risiko von Regressionen aufgrund höherer Qualität reduziert. Wir empfehlen, dass Sie sich für eine Qualitätsaktualisierung entscheiden, anstatt Hotfixes manuell anzuwenden, um die Zuverlässigkeit zu erhöhen.
 
 ## <a name="can-customers-proactively-install-a-quality-update-build-ahead-of-the-schedule"></a>Können Kunden ein Qualitätsupdate vor dem Zeitplan proaktiv selbst installieren?
 Ja. Sie können ein Qualitätsupdate proaktiv installieren. Microsoft überspringt das Update, wenn die aktuelle Build-Version der Umgebung gleich oder höher als das betreffende Qualitätsupdate ist.
@@ -149,7 +176,7 @@ Ja. Sie können ein Qualitätsupdate proaktiv installieren. Microsoft übersprin
 - Qualitätsupdates werden nicht auf Produktionsumgebungen angewendet, wenn ein bevorstehendes Dienstupdate innerhalb einer Woche nach dem geplanten Zeitpunkt des Qualitätsupdates geplant ist.
 - Wenn eine Sandbox-Umgebung dieselbe oder eine höhere Build-Version als das bevorstehende Qualitätsupdate hat, wird sie übersprungen.
 - Wenn eine Produktionsumgebung dieselbe oder eine höhere Build-Version als das bevorstehende Qualitätsupdate hat, wird sie übersprungen.
-- Wenn eine Sandbox aufgrund eines Qualitätsupdates oder eines manuellen Updates für die Produktion die gleiche oder eine höhere Build-Version hat, erhält die Produktion dennoch die geplante Version des monatlichen Dienstupdates. Wenn Sie nicht möchten, dass die geplante Produktionsumgebung auf die Dienstaktualisierungsversion aktualisiert wird, können Sie die Dienstaktualisierung von LCS aus anhalten. 
+- Wenn eine Sandbox aufgrund eines Qualitätsupdates oder eines manuellen Updates für die Produktion die gleiche oder eine höhere Build-Version hat, erhält die Produktion dennoch die geplante Version des monatlichen Dienstupdates. Wenn Sie nicht möchten, dass die geplante Produktionsumgebung auf die Dienstaktualisierungsversion aktualisiert wird, können Sie die Dienstaktualisierung von Lifecycle Services aus anhalten. 
 - Wir empfehlen, dass Sie den neuesten Qualitätsupdate-Build verwenden, um Ihre Änderungen für ein bevorstehendes Service-Update für bessere Stabilität und Ergebnisse zu testen.
 
 ## <a name="if-an-environment-has-an-upcoming-scheduled-action-and-a-scheduled-quality-update-in-the-same-maintenance-window-will-it-still-receive-the-quality-update"></a>Wenn eine Umgebung eine bevorstehende geplante Aktion und ein geplantes Qualitätsupdate im selben Wartungsfenster hat, erhält sie dann trotzdem das Qualitätsupdate?
@@ -164,11 +191,11 @@ Der Plan für Kunden, die der FDA-Validierung und -Regulierung unterliegen, befi
 ## <a name="what-versions-of-service-updates-are-supported-for-these-quality-updates"></a>Welche Versionen von Dienstupdates werden für diese Qualitätsupdates unterstützt?
 Kunden mit allen unterstützten Versionen des Dienstupdates sind für diese Qualitätsupdates qualifiziert. 
 
-## <a name="finance-and-operations-apps-deployments-with-retail-components-typically-require-additional-work-in-addition-to-having-to-redeploy-mpos-how-will-these-quality-updates-impact-the-retailsdk"></a>Die Bereitstellung von Finanz- und Betriebs-Apps mit Retail-Komponenten erfordert neben der erneuten Bereitstellung von MPOS in der Regel zusätzliche Arbeit. Wie wirken sich diese Qualitätsupdates auf das RetailSDK aus? 
+## <a name="finance-and-operations-apps-deployments-with-retail-components-typically-require-additional-work-in-addition-to-having-to-redeploy-mpos-how-will-these-quality-updates-impact-the-retail-sdk"></a>Die Bereitstellung von Finanz- und Betriebs-Apps mit Retail-Komponenten erfordert neben der erneuten Bereitstellung von MPOS in der Regel zusätzliche Arbeit. Wie wirken sich diese Qualitätsupdates auf das Retail SDK aus? 
 Da sich die Art der Hotfixes selbst in der Nutzlast der Qualitätsupdates nicht ändert, erwarten wir derzeit keine zusätzlichen Auswirkungen, die sich zu diesem Zeitpunkt speziell auf Retail-Komponenten beziehen.
 
 ## <a name="is-there-any-impact-to-cloud-hosted-environments-che"></a>Gibt es Auswirkungen auf Cloud Hosted Environments (CHE)? 
-CHE-Umgebungen sind nicht für Qualitätsupdates geeignet, da sie außerhalb des Zuständigkeitsbereichs von Microsoft liegen
+CHE-Umgebungen sind nicht für Qualitätsupdates geeignet, da sie außerhalb des Zuständigkeitsbereichs von Microsoft liegen.
 
 ## <a name="are-there-any-integration-issues-with-microsoft-dataverse"></a>Gibt es Integrationsprobleme mit Microsoft Dataverse? 
 Es sind keine Integrationsprobleme für Qualitätsupdates mit Dataverse bekannt.

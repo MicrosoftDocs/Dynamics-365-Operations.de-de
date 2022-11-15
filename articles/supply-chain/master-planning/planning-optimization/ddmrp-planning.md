@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: f1e2cfca47d507c8de7f9323bb8e4262a0e90949
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 8ba9a6d24923b66259bc8b6cc688ec667cb000de
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689158"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740301"
 ---
 # <a name="demand-driven-planning"></a>Bedarfsgesteuerte Planung
 
@@ -55,4 +55,4 @@ Wenn Sie jetzt die Produktprogrammplanung ausführen, wird ein geplanter Auftrag
 In diesem Beispiel wird ein geplanter Auftrag für eine Menge von 130 produziert, was dem maximalen Bestand abzüglich des Netto Flows entspricht. Der geplanter Auftrag hat die Priorität 53,07, basierend auf seinem Anteil an der maximalen Menge. Da diese Werte am 20. Juni gefunden wurden, erstellt das System einen geplanter Auftrag, der auf den 20. Juni plus die entkoppelte Vorlaufzeit für den Artikel (in diesem Beispiel fünf Geschäftstage) datiert ist. Da fünf Geschäftstage eine Woche ab heute sind, ist der geplante Auftrag auf den 27. Juni datiert.
 
 > [!NOTE]
-> Die Planungsoptimierung berechnet nur entkoppelte Artikel unter Verwendung von DDMRP. Alle anderen Artikel werden mit Hilfe der Standard-Materialbedarfsplanung (MRP) berechnet.
+> Die Masterplanung berechnet nur entkoppelte Artikel unter Verwendung von DDMRP. Alle anderen Artikel werden mit Hilfe der Standard-Materialbedarfsplanung (MRP) berechnet.

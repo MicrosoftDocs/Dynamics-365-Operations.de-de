@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 0d857ef31e0fed2a0d7550197209fac9251d8812
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 876ee36c75a31ca89a9351d0ee1484e66076b6aa
+ms.sourcegitcommit: 4abf9b375fed6885ea11a425c524958fea29c3b9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069785"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748712"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte
 
@@ -146,9 +146,6 @@ Wenn ein Chargenauftrag aus einer Formelversion erstellt wird, in der die Option
 In diesem Fall kann die Arbeitskraft das Kuppelprodukt und die zu meldende Menge angeben, indem sie **Kuppelproduktvarianten** im Dialogfeld Berichtsfortschritt auswählt. Die Arbeitskraft kann dann aus allen freigegebenen Produkten auswählen, die als Kuppelprodukte definiert sind.
 
 ### <a name="reporting-catch-weight-items"></a>Bericht Artikelgewicht
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
 
 Arbeitskräfte können die Produktionsausführungsoberfläche verwenden, um über den Fortschritt von Batch-Aufträgen zu berichten, die für Artikel mit Catch-Gewicht erstellt wurden. Batch-Aufträge werden aus Formeln erstellt, die so definiert werden können, dass Artikelgewichte als Formelpositionen, Kuppelprodukte und Nebenprodukte enthalten sind. Eine Formel kann auch so definiert werden, dass sie Formelzeilen für Zutaten enthält, die für das Artikelgewicht definiert sind. Artikel mit Artikelgewicht verwenden zwei Maßeinheiten, um den Bestand zu verfolgen: die Menge des Artikelgewichts und die Menge des Bestands. In der Lebensmittelbranche kann z.B. verpacktes Fleisch als Element mit Artikelgewicht definiert werden, wobei die Menge des Artikelgewichts zur Erfassung der Anzahl der Kartons und die Bestandsmenge zur Erfassung des Gewichts der Kartons verwendet wird.
 

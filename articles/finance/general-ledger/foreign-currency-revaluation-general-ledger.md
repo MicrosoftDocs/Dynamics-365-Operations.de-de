@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e90780ca2a33725130b261fcaf4cb08d30f3270
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3e0f4184237537464998b2bc1a6ab02561d9d291
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8904527"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752802"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Neubewertung der Fremdwährung für das Sachkonto
 
@@ -64,7 +64,9 @@ Die Neubewertung kann für eine oder mehrere juristischen Personen ausgeführt w
 
 Die Neubewertung kann für eine oder mehrere Fremdwährung ausgeführt werden. Die Suche enthält alle Währungen, die innerhalb des festgelegten Datumsbereichs gebucht wurden, die für den Typ des Hauptkontos relevant ist (Bilanz oder Gewinn und Verlust), die für die juristischen Personen, die aktiviert werden, um den neu zu bewerten. Die Buchhaltungswährung ist in der Liste enthalten, jedoch kein Artikel wird neu bewertet, wenn die Buchhaltungswährung ausgewählt wird. 
 
-Setzen Sie **Vorschau vor der Buchung** auf **Ja** wenn Sie das Ergebnis der Hauptbuchneubewertung prüfen möchten. Die Vorschau im Hauptbuch unterscheidet sich von der Simulation in der Debitoren- Kreditoren-Neubewertung der Fremdwährung. Die Simulation in "Debitoren" und " Kreditor ist ein Bericht, doch das Hauptbuch ist eine Vorschau, die gebucht werden können, und die Mitarbeiter müssen, der Neubewertungsprozess erneut auszuführen. Die Ergebnisse der Vorschau können nach Microsoft Excel exportiert werden, um den Verlauf über die Berechnung der Beträge aufzubewahren. Sie können die Stapelverarbeitung nicht verwenden, wenn Sie die Ergebnisse der Neubewertung in der Vorschau anzeigen möchten. In der Vorschau hat der Benutzer die Option, die Ergebnisse aller juristischen Personen mithilfe der Schaltfläche **Buchen** zu buchen. Liegt ein Problem mit den Ergebnissen für eine juristische Person vor, hat der Benutzer die Option, eine Teilmenge der juristischen Personen mithilfe der Schaltfläche **Juristische Personen zum Buchen auswählen** zu verwenden. 
+Setzen Sie **Vorschau vor der Buchung** auf **Ja** wenn Sie das Ergebnis der Hauptbuchneubewertung prüfen möchten. Die Vorschau im Hauptbuch unterscheidet sich von der Simulation in der Debitoren- Kreditoren-Neubewertung der Fremdwährung. Die Simulation in "Debitoren" und " Kreditor ist ein Bericht, doch das Hauptbuch ist eine Vorschau, die gebucht werden können, und die Mitarbeiter müssen, der Neubewertungsprozess erneut auszuführen. Die Ergebnisse der Vorschau können nach Microsoft Excel exportiert werden, um den Verlauf über die Berechnung der Beträge aufzubewahren. Sie können die Stapelverarbeitung nicht verwenden, wenn Sie die Ergebnisse der Neubewertung in der Vorschau anzeigen möchten. In der Vorschau hat der Benutzer die Option, die Ergebnisse aller juristischen Personen mithilfe der Schaltfläche **Buchen** zu buchen. Liegt ein Problem mit den Ergebnissen für eine juristische Person vor, hat der Benutzer die Option, eine Teilmenge der juristischen Personen mithilfe der Schaltfläche **Juristische Personen zum Buchen auswählen** zu verwenden.
+
+Wenn Sie Anpassungen ausschließen möchten, die mit **Berichtsjournal für Währungsanpassungen** aus dem Neubewertungsprozess gebucht wurden, stellen Sie **Berichtswährungsanpassungen ausschließen** auf **Ja** ein. Standardmäßig werden Berichtswährungsanpassungen in die Neubewertung einbezogen. 
 
 Nachdem der Neubewertung der Fremdwährung abgeschlossen ist, wird der Datensatz erstellt, um den Serviceverlauf ausgeführtem von jedem zu verfolgen.  Ein separater Datensatz wird für jede juristische Person erstellt und Buchungsebene.
 

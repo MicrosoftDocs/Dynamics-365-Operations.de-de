@@ -1,6 +1,6 @@
 ---
 title: Sicherheitszuschläge
-description: In diesem Artikel wird beschrieben, wie Sicherheitsmargen mit dem Planning Optimization Add-In für Microsoft Dynamics 365 Supply Chain Management verwendet werden können.
+description: Dieser Artikel beschreibt, wie Sicherheitsmargen während der Hauptplanung funktionieren.
 author: t-benebo
 ms.date: 08/09/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 247b48afab68651cff0ce84c8268a1df35a15c02
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 87b38276a2723374969a67c5413dde15537d04ec
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335194"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740440"
 ---
 # <a name="safety-margins"></a>Sicherheitszuschläge
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Artikel wird beschrieben, wie Sicherheitsmargen mit dem Planning Optimization Add-In für Microsoft Dynamics 365 Supply Chain Management verwendet werden können.
+Dieser Artikel beschreibt, wie Sicherheitsmargen während der Hauptplanung funktionieren.
 
 ## <a name="safety-margins-overview"></a>Übersicht über die Sicherheitszuschläge
 
@@ -165,12 +165,5 @@ Alle drei Arten von Sicherheitszuschlägen werden berücksichtigt, wenn das Syst
 Beispielsweise hat ein Artikel eine Vorlaufzeit von einem Tag und einen Sicherheitszuschlag für den Warenzugang von drei Tagen. Ein Auftrag für diesen Artikel wird heute wie erforderlich festgelegt. In diesem Fall wird die Verzögerung als *Vorlaufzeit* + *Sicherheitszuschlag für den Warenzugang* = vier Tage berechnet. Wenn also heute der 14. August ist, führen die vier Tage Verzögerung zu einer Lieferung am 18. August. Die folgende Abbildung zeigt dieses Beispiel.
 
 ![Beispiel der Verzögerungsberechnung.](media/safety-margins-delays.png)
-
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
-
-[Erste Schritte mit der Planungsoptimierung](get-started.md)
-
-[Passanalyse zu Planungsoptimierung](planning-optimization-fit-analysis.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

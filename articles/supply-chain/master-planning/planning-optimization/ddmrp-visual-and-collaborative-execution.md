@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 92e38c6ea19b60ae0a61e55f240ff52698e06933
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: ce32a4449da8e85f958f212f2c2dfd2841ca6887
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689775"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740822"
 ---
 # <a name="visual-and-collaborative-execution"></a>Visuelle und kollaborative Ausführung
 
@@ -34,7 +34,7 @@ In Microsoft Dynamics 365 Supply Chain Management können Sie visuell verfolgen,
 1. Wählen Sie einen zugelassenen Artikel, der als Entkopplungspunkt festgelegt ist. (Weitere Informationen finden Sie unter [Positionierung von Beständen](ddmrp-inventory-positioning.md)).
 1. Wählen Sie im Aktionsbereich auf der Registerkarte **Plan** die Option **Artikelabdeckung**.
 1. Wählen Sie auf der Seite **Artikelabdeckung** einen Datensatz zur Artikelabdeckung aus, der einen Entkopplungspunkt erstellt. (In diesem Datensatz wird der Name einer Abdeckungsgruppe angezeigt, die zum Erstellen von Entkopplungspunkten festgelegt ist.)
-1. Wählen Sie die Registerkarte **Lagerbestand**. Diese Registerkarte enthält ein Diagramm, das zeigt, wie sich die Lagerbestände im Laufe der Zeit verändert haben, zusammen mit dem Wert des Lagerbestands, der für einen bestimmten Zeitraum jedes Mal, wenn die Planungsoptimierung ausgeführt wird, aufgezeichnet wurde. Die Registerkarte enthält auch eine Tabelle, die zeigt, in welche der folgenden Kategorien jeder erfasste Lagerbestand fällt:
+1. Wählen Sie die Registerkarte **Lagerbestand**. Diese Registerkarte enthält ein Diagramm, das zeigt, wie sich die Lagerbestände im Laufe der Zeit verändert haben, zusammen mit dem Wert des Lagerbestands, der für einen bestimmten Zeitraum jedes Mal, wenn die Masterplanung ausgeführt wird, aufgezeichnet wurde. Die Registerkarte enthält auch eine Tabelle, die zeigt, in welche der folgenden Kategorien jeder erfasste Lagerbestand fällt:
 
     - **Kritisch niedrig** – Weniger als die Hälfte des Minimums für den Zeitraum.
     - **Niedrig** – Zwischen der Hälfte des Minimums und dem Minimum.

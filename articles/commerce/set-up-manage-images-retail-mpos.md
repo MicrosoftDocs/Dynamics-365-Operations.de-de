@@ -16,12 +16,12 @@ ms.custom: 52851
 ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
 ms.search.industry: Retail
 ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
-ms.openlocfilehash: f282c163ef5a74283231492e499201c6d4619115
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: d334701b2865a4f19365a2773641e324326b02e3
+ms.sourcegitcommit: 78cbb125f20a33df38bda0546203b8f837cbcd93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287510"
+ms.lasthandoff: 11/09/2022
+ms.locfileid: "9751939"
 ---
 # <a name="set-up-and-manage-images-for-modern-pos-mpos"></a>Einrichten und Verwalten von Modern POS (MPOS)
 
@@ -160,7 +160,7 @@ Für alle Entitäten außer für Produkte können Sie die Bild URL für einen an
     [![Katalogbilder-Katalogseite.](./media/preview-4.png)](./media/preview-4.png)
 
 > [!NOTE]
-> Zurzeit werden in der Bildübersicht die Bildvorschauen für Medienvorlagenbild URLs nicht angezeigt. Wenn der Benutzer für Katalog-, Arbeitskraft-, Kunden- und Kategorieentitäten explizit eine URL über diese Seite bereitstellt, empfehlen wir, dass Sie angeben, welches das Standardbild ist, weil Commerce Scale Unit Clients nur ein Bild pro Katalog, Kunde, Arbeitskraft und Kategorie anzeigen. Wenn der Benutzer kein Standardbild angibt, bestimmt das System das standardmäßige Bild und sendet es an den Commerce Service-Aufrufer (MPOS oder E-Commerce).
+> Nur öffentlich und anonym zugängliche Bilder werden am POS gerendert. POS unterstützt das Rendern von Bildern, die extern gehostet werden, mit der Anforderung, dass die Bilder als Inline-Oktettstrom ohne Header an GET-Anforderungen zurückgegeben werden. Mit anonymer Zugriffsrichtlinie, speziell für SharePoint-gehostete Bilder, die erfordern, dass Anforderungsheader sowohl Host- als auch User-Agent-Header enthalten, wird eine „Forbidden“-Antwort zurückgegeben. Daher Bildverwaltung mit SharePoint da der Host derzeit nicht standardmäßig unterstützt wird. Die **Katalogbilder** Gallerieseite zeigt keine Bildvorschauen für Medienvorlagenbild URLs an. Da Commerce Scale Unit (CSU) Client nur ein Bild pro Katalog, Kunde, Arbeitskraft, und Kategorieentität anzeigen, wenn Sie explizit eine URL durch diese Seite für Katalog-, Arbeitskraft-, Kunden- und Kategorieentitäten explizit eine URL über diese Seite bereitstellt, empfehlen wir, dass Sie angeben, welches das Standardbild ist. Wenn Sie kein Standardbild angeben, bestimmt das System das standardmäßige Bild und sendet es an den Commerce Service-Aufrufer (MPOS oder E-Commerce).
 
 ### <a name="overwrite-the-image-url-for-catalog-product-images-from-the-preview-page"></a>Die Bild URL für Katalogproduktbilder aus der Vorschauseite überschreiben
 

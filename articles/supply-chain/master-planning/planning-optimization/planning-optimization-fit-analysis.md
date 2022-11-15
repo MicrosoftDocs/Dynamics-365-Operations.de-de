@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 15ec53c1f13b3017fb6e829bd1c8e99fbb938ce3
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 4459a5d72fafe2596b7fc0cedf060b8f23bb43d2
+ms.sourcegitcommit: 2b654e60e2553a5835ab5790db4ccfa58828fae7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689993"
+ms.lasthandoff: 11/08/2022
+ms.locfileid: "9750706"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Passanalyse zu Planungsoptimierung
 
 [!include [banner](../../includes/banner.md)]
 
-Sie sollten das Ergebnis der Passanalyse der Planungsoptimierung als Teil des Migrationsprozesses analysieren. Beachten Sie, dass der Umfang der Planungsoptimierung nicht der aktuellen integrierten Produktprogrammplanungsfunktion entspricht. Wir empfehlen Ihnen, mit Ihrem Partner zusammenzuarbeiten und die Dokumentation zu lesen, um sich auf die Migration vorzubereiten. 
+Sie sollten das Ergebnis der Passanalyse der Planungsoptimierung als Teil des Migrationsprozesses analysieren. Beachten Sie, dass der Umfang der Planungsoptimierung nicht der veralteten Produktprogrammplanungsmodulfunktion entspricht. Wir empfehlen Ihnen, mit Ihrem Partner zusammenzuarbeiten und die Dokumentation zu lesen, um sich auf die Migration vorzubereiten.
 
-Mithilfe der Passanalyse für die Planungsoptimierung können Sie feststellen, wo sich das Ergebnis zwischen der integrierten Produktprogrammplanung-Engine und der Planungsoptimierung unterscheiden kann. Diese Analyse basiert auf Ihrem aktuellen Setup und Ihren Daten. 
+Mithilfe der Passanalyse für die Planungsoptimierung können Sie feststellen, wo sich das Ergebnis zwischen der veralteten Produktprogrammplanung-Engine und der Planungsoptimierung unterscheiden kann. Diese Analyse basiert auf Ihrem aktuellen Setup und Ihren Daten. 
 
 Um das Ergebnis der Planungsoptimierungs-Passanalyse anzuzeigen, gehen Sie zu **Produktprogrammplanung** \> **Einstellungen** \> **Planungsoptimierungs-Passanalyse** und wählen dann **Analyse ausführen** aus. Wenn die Analyse Inkonsistenzen feststellt, werden diese auf der gleichen Seite aufgelistet. (Die Analyse kann einige Minuten dauern.)
 
@@ -64,7 +64,6 @@ Die folgende Tabelle zeigt die verschiedenen Ergebnisse, die nach einer Anpassun
 | Basiskalender | Kalender, die den Basiskalender verwenden: *\#* | Diese Funktion wird jetzt unterstützt. | Unterstützt | 
 | Chargendispositionscodes | Nicht kompensierbare Chargendispositionsmaster: *\#* | Diese Funktion wird jetzt unterstützt. Weitere Informationen finden Sie unter [Chargendispositionscodes verwenden, um Chargen als verfügbar oder nicht verfügbar zu markieren](../../inventory/batch-disposition-codes.md) | Unterstützt |
 | Verfügbarkeitszusage (CTP) | Standardauftragseinstellungen mit Lieferdatumskontrolle, die auf CTP eingestellt ist: *\#* | In Supply Chain Management 10.0.28 und neuer stellt ein Prozess namens *CTP für Planungsoptimierung* bestätigte Versand- und Empfangsdaten zur Verfügung, nachdem der dynamische Plan ausgeführt wurde. Bei älteren Versionen von Supply Chain Management wird die veraltete CTP-Einstellung ignoriert, wenn die Planungsoptimierung aktiviert ist. | Unterstützt |
-| Statischen in dynamischen Plan kopieren | "Statischen in dynamischen Plan kopieren" ist in den Produktprogrammplanungsparametern aktiviert. | Die Planungsoptimierung kopiert den statischen Plan unabhängig von dieser Einstellung nicht in den dynamischen Plan. Im Allgemeinen ist dieses Konzept aufgrund der Geschwindigkeit und vollständigen Regeneration, die die Planungsoptimierung bietet, weniger relevant. Wenn zwei oder mehr Pläne verwendet werden, sollte für jeden Plan eine Masterplanung ausgelöst werden. | Nicht zutreffend |
 | Umwandeln | Dispositionssteuerungsgruppen mit automatisch umgewandeltem Umwandlungszeitraum: *\#* | In Version 10.0.7 und höher wird das Umwandeln nach Abschluss der Masterplanung als separater Umwandlungs-Batch-Job unterstützt (vorausgesetzt, die Funktion *Automatische Umwandlung zur Planungsoptimierung* wurde in der [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktiviert). Beachten Sie, dass die automatische Umwandlung für die Planungsoptimierung auf dem Bestelldatum (Startdatum) und nicht auf dem Anforderungsdatum (Enddatum) basiert. Dieses Verhalten stellt sicher, dass die Umwandlung von Planaufträgen rechtzeitig erfolgt, ohne dass die Vorlaufzeit in den Umwandlungszeitraum einbezogen werden muss. | Unterstützt |
 | Umwandeln | Artikeldeckungsdatensätze mit automatisch festgelegter Umwandlung: *\#* | In Version 10.0.7 und höher wird das automatische Umwandeln nach Abschluss der Masterplanung als separater Umwandlungs-Batch-Job unterstützt (vorausgesetzt, die Funktion *Automatische Umwandlung zur Planungsoptimierung* wurde in der [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktiviert). Beachten Sie, dass die automatische Umwandlung für die Planungsoptimierung auf dem Bestelldatum (Startdatum) und nicht auf dem Anforderungsdatum (Enddatum) basiert. Dieses Verhalten stellt sicher, dass die Umwandlung von Planaufträgen rechtzeitig erfolgt, ohne dass die Vorlaufzeit in den Umwandlungszeitraum einbezogen werden muss. | Unterstützt |
 | Umwandeln | Produktprogrammpläne mit automatisch festgelegter Umwandlung: *\#* | In Version 10.0.7 und höher wird das automatische Umwandeln nach Abschluss der Masterplanung als separater Umwandlungs-Batch-Job unterstützt (vorausgesetzt, die Funktion *Automatische Umwandlung zur Planungsoptimierung* wurde in der [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktiviert). Beachten Sie, dass die automatische Umwandlung für die Planungsoptimierung auf dem Bestelldatum (Startdatum) und nicht auf dem Anforderungsdatum (Enddatum) basiert. Dieses Verhalten stellt sicher, dass die Umwandlung von Planaufträgen rechtzeitig erfolgt, ohne dass die Vorlaufzeit in den Umwandlungszeitraum einbezogen werden muss. | Unterstützt |
@@ -93,34 +92,27 @@ Die folgende Tabelle zeigt die verschiedenen Ergebnisse, die nach einer Anpassun
 | Produktion | Formelversionen mit Kuppel-/Nebenprodukten: *\#* | Diese Funktion steht noch aus. Derzeit werden Kuppel-/Nebenprodukten, die der Formelversion zugeordnet sind, ignoriert, wenn die Planungsoptimierung aktiviert ist. | Veröffentlichungszyklus 2, 2022 |
 | Produktion | Formelversionen mit Ertrag: *\#* | Diese Funktion steht noch aus. Derzeit wird Ertrag, der der Formelversion zugeordnet ist, ignoriert, wenn die Planungsoptimierung aktiviert ist. | Veröffentlichungszyklus 2, 2022 |
 | Produktion | Pläne einschließlich Abfolge: *\#* | Diese Funktion steht noch aus. Derzeit werden Abfolgen ignoriert, wenn die Planungsoptimierung unabhängig von dieser Einstellung aktiviert ist. | Veröffentlichungszyklus 2, 2022 |
-| Produktion | Freigegebene, noch nicht gestartete Produktionsaufträge, deren Beginn vor heute geplant ist: *\#* | Diese Funktion steht noch aus. Wenn sich ein Produktionsauftrag verzögert, wird die Masterplanung derzeit davon ausgehen, dass er heute abgeschlossen wird. Dies ist für freigegebene Produktionsaufträge relevant, bei denen ein Liefertermin in der Vergangenheit liegt, dieser jedoch noch nicht abgeschlossen wurde. | Zukünftiger Zyklus |
+| Produktion | Freigegebene, noch nicht gestartete Produktionsaufträge, deren Beginn vor heute geplant ist: *\#* | Diese Funktion steht noch aus. Wenn sich ein Produktionsauftrag verzögert, wird die Masterplanung derzeit davon ausgehen, dass er heute abgeschlossen wird. Dies ist für freigegebene Produktionsaufträge relevant, bei denen ein Liefertermin in der Vergangenheit liegt, dieser jedoch noch nicht abgeschlossen wurde. | Veröffentlichungszyklus 2, 2022 |
 | Produktion | Mit begrenzter Kapazität eingeplante Ressourcen: *\#* | Diese Funktion wird jetzt unterstützt.| Unterstützt |
 | Produktion | In Planung verwendete Arbeitspläne: *\#* | Diese Funktion wird unterstützt. | Unterstützt |
-| Produktion | Verkaufspositionsreservierung mit Stücklistenauflösung: *\#* | Verkaufspositionsreservierung, die Auflösung verwendet, wird nicht unterstützt, wenn die Planungsoptimierung aktiviert ist. | Zukünftiger Zyklus |
-| Produktion | Planung mit Auflösung von Produktionsaufträgen: *\#* | Terminplanung, die Auflösung von Produktionsaufträgen verwendet, wird nicht unterstützt, wenn die Planungsoptimierung aktiviert ist. Produktionsaufträge können individuell geplant werden. | Zukünftiger Zyklus |
+| Produktion | Verkaufspositionsreservierung mit Stücklistenauflösung: *\#* | Verkaufspositionsreservierung, die Auflösung verwendet, wird nicht unterstützt, wenn die Planungsoptimierung aktiviert ist. | Veröffentlichungszyklus 2, 2022 |
+| Produktion | Planung mit Auflösung von Produktionsaufträgen: *\#* | Terminplanung, die Auflösung von Produktionsaufträgen verwendet, wird nicht unterstützt, wenn die Planungsoptimierung aktiviert ist. Produktionsaufträge können individuell geplant werden. | Veröffentlichungszyklus 2, 2022 |
 | Angebotsanforderungen | Produktprogrammpläne mit aktivierten Angebotsanforderungen: *\#* | Diese Funktion steht noch aus. Derzeit werden Angebotsanforderungen (RFQs) nicht als Bedarf betrachtet, wenn die Planungsoptimierung aktiviert ist. Sie werden unabhängig von dieser Einstellung ignoriert. | Veröffentlichungszyklus 2, 2022 |
 | Anforderungen | Produktprogrammpläne mit aktivierten Anforderungen: *\#* | Diese Funktion wird jetzt unterstützt. Weitere Informationen finden Sie unter [Bestellanforderungen](purchase-requisitions.md) | Unterstützt |
 | Sicherheitszuschläge | Dispositionssteuerungsgruppen mit Sicherheitszuschlag: *\#* | Diese Funktion wird jetzt unterstützt. Weitere Informationen finden Sie unter [Sicherheitszuschläge](safety-margins.md) | Unterstützt |
 | Sicherheitszuschläge | Produktprogrammpläne mit Sicherheitszuschlag: *\#* | Diese Funktion wird jetzt unterstützt. Weitere Informationen finden Sie unter [Sicherheitszuschläge](safety-margins.md) |  Unterstützt |
-| Sicherheitslagerbestandserfüllung | Artikelabdeckungsaufzeichnungen mit Einstellung „Mindestbestand auffüllen“, die sich von „Heutiges Datum + Beschaffungszeit“ unterscheiden: *\#* | Planungsoptimierung verwendet immer *Heutiges Datum + Beschaffungszeit*. Diese Änderung wird vorgenommen, um sich auf eine vereinfachte Planungskonfiguration in der Zukunft vorzubereiten und ein umsetzbares Ergebnis zu erzielen. Wenn die Beschaffungszeit für den Sicherheitsbestand nicht enthalten ist, werden Planaufträge, die für den aktuell niedrigen Lagerbestand erstellt werden, aufgrund der Vorlaufzeit immer verzögert. Dieses Verhalten kann zu erheblichen Störungen und unerwünschten Planaufträgen führen. Die beste Vorgehensweise besteht darin, die Einstellung so zu ändern, dass *Heutiges Datum + Beschaffungszeit* verwendet wird. Aktualisieren Sie die Stammdaten, um Warnungen zu vermeiden. | N/V |
-| Verkaufsangebote | Produktprogrammpläne mit aktivierten Verkaufsangeboten: *\#* | Diese Funktion steht noch aus. Derzeit werden Angebote ignoriert, wenn die Planungsoptimierung aktiviert ist. Sie werden unabhängig von dieser Einstellung ignoriert. | Veröffentlichungszyklus 2, 2022 oder später |
-| Haltbarkeitsdatum | Produktprogrammpläne mit aktiviertem Haltbarkeitsdatum: *\#* | Diese Funktion steht noch aus. | Veröffentlichungszyklus 2, 2022 |
+| Verkaufsangebote | Produktprogrammpläne mit aktivierten Verkaufsangeboten: *\#* | Diese Funktion steht noch aus. Derzeit werden Angebote ignoriert, wenn die Planungsoptimierung aktiviert ist. Sie werden unabhängig von dieser Einstellung ignoriert. | Veröffentlichungszyklus 2, 2022 |
+| Haltbarkeitsdatum | Produktprogrammpläne mit aktiviertem Haltbarkeitsdatum: *\#* | Diese Funktion wird jetzt unterstützt. | Unterstützt |
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Übersicht zur Planungsoptimierung](planning-optimization-overview.md)
-
-[Erste Schritte mit der Planungsoptimierung](get-started.md)
-
-[Unterschiede zwischen der klassischen Masterplanplanung und der Planungsoptimierung](planning-optimization-differences-with-built-in.md)
-
-[In der Planungsoptimierung nicht verwendete Parameter](not-used-parameters.md)
-
-[Planhistorie und Planungsprotokolle einsehen](plan-history-logs.md)
-
-[Filter auf einen Plan anwenden](plan-filters.md)
-
-[Abbrechen eines Planungsauftrags](cancel-planning-job.md)
+- [Systemarchitektur der Produktprogrammplanung](../master-planning-architecture.md)
+- [Erste Schritte mit der Produktprogrammplanung](get-started.md)
+- [Unterschiede zwischen der klassischen Masterplanplanung und der Planungsoptimierung](planning-optimization-differences-with-built-in.md)
+- [In der Planungsoptimierung nicht verwendete Parameter](not-used-parameters.md)
+- [Planhistorie und Planungsprotokolle einsehen](plan-history-logs.md)
+- [Planung für eine Untergruppe von Artikeln durchführen](plan-filters.md)
+- [Abbrechen eines Planungsauftrags](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

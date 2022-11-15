@@ -2,22 +2,19 @@
 title: CPOS für die Verwendung einer benutzerdefinierten Azure AD App konfigurieren
 description: In diesem Artikel wird erläutert, wie Sie Cloud POS (CPOS) für die Verwendung einer benutzerdefinierten Azure Active Directory (Azure AD) App konfigurieren.
 author: boycez
-ms.date: 08/02/2022
+ms.date: 11/04/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: boycez
-ms.search.validFrom: ''
-ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: baa0c3da25308345037b5dd1b4c5907d6213e7f7
-ms.sourcegitcommit: bd3b55e1af28e592c97b540de1e87cd8ba9c35a8
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: 5e4ff797410e1e94869cc37684e7622ec0d97842
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "9222968"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746259"
 ---
 # <a name="configure-cpos-to-use-a-custom-azure-ad-app"></a>CPOS für die Verwendung einer benutzerdefinierten Azure AD App konfigurieren
 
@@ -52,6 +49,9 @@ Mit den folgenden Schritten erstellen und konfigurieren Sie eine benutzerdefinie
 
 ## <a name="set-up-a-custom-cpos-app-in-azure-ad"></a>Eine benutzerdefinierte COPS-App in Azure AD einrichten
 
+> [!IMPORTANT]
+> Wenn Sie eine vorhandene benutzerdefinierte CPOS Azure AD App aktualisieren, die vor Commerce-Version 10.0.21 erstellt wurde, folgen Sie den Schritten in [Aktualisieren Sie ein vorhandene benutzerdefinierte CPOS Azure AD App, die vor der Commerce-Version 10.0.21 erstellt wurde](#upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10021).
+
 Mit den folgenden Schritten erstellen und konfigurieren Sie eine benutzerdefinierte COPS-App in Azure AD.
 
 1. Melden Sie sich im [Azure Active Directory Admin Center](https://aad.portal.azure.com) über ein Azure AD Benutzerkonto an. Das Benutzerkonto muss nicht zwingend Administratorrechte haben.
@@ -68,12 +68,25 @@ Mit den folgenden Schritten erstellen und konfigurieren Sie eine benutzerdefinie
 1. Legen Sie im Bereich **Manifest** die Parameter **oauth2AllowIdTokenImplicitFlow** und **oauth2AllowImplicitFlow** auf **wahr** fest und wählen Sie dann **Speichern** aus.
 1. Fügen Sie im Bereich **Token-Konfiguration** folgendermaßen zwei Ansprüche hinzu:
 
-    - Wählen Sie **Zusätzlichen Anspruch hinzufügen** aus. Legen Sie das Feld **Token-Typ** auf **ID** fest und wählen Sie dann den Anspruch **sid** aus. Wählen Sie **Hinzufügen** aus.
-    - Wählen Sie **Zusätzlichen Anspruch hinzufügen** aus. Legen Sie das Feld **Token-Typ** auf **Zugriff** fest und wählen Sie dann den Anspruch **sid** aus. Wählen Sie **Hinzufügen** aus.
+    1. Wählen Sie **Zusätzlichen Anspruch hinzufügen** aus. Legen Sie das Feld **Token-Typ** auf **ID** fest und wählen Sie dann den Anspruch **sid** aus. Wählen Sie **Hinzufügen** aus.
+    1. Wählen Sie **Zusätzlichen Anspruch hinzufügen** aus. Legen Sie das Feld **Token-Typ** auf **Zugriff** fest und wählen Sie dann den Anspruch **sid** aus. Wählen Sie **Hinzufügen** aus.
 
 1. Wählen Sie im Bereich **API-Berechtigungen** **Eine Berechtigung hinzufügen**.
 1. Suchen Sie auf der Registerkarte **Von meiner Organisation verwendete APIs** nach der Retail-Server-App, die Sie im Bereich [Eine benutzerdefinierte Retail-Server-App in Azure AD einrichten](#set-up-a-custom-retail-server-app-in-azure-ad). Wählen Sie dann **Berechtigungen hinzufügen**.
 1. Notieren Sie aus dem Bereich **Überblick** den Wert des Felds **Anwendungs-(Client-)ID**.
+
+### <a name="upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10021"></a>Aktualisieren Sie eine vorhandene benutzerdefinierte CPOS Azure AD App, die vor Commerce-Version 10.0.21 erstellt wurde
+
+Um eine vorhandene benutzerdefinierte CPOS Azure AD App zu aktualisieren, die vor Commerce-Version 10.0.21 erstellt wurde, befolgen Sie diese Schritte. 
+
+1. Öffnen Sie Ihre benutzerdefinierte CPOS Azure AD App im Azure-Portal.
+1. Wählen Sie die Registerkarte **Authentifizierung** aus.
+1. Kopieren und speichern Sie den ursprünglichen Umleitungs-URI aus dem **Netz** Typ zur späteren Verwendung ein und löschen Sie sie dann.
+1. Wählen Sie **Fügen Sie eine Plattform hinzu**, und wählen Sie dann **Einzelseitenanwendung (SPA)** aus.
+1. Fügen Sie den oben kopierten ursprünglichen Web-Umleitungs-URI zur SPA-Plattform hinzu.
+1. Fügen Sie im Bereich **Token-Konfiguration** folgendermaßen zwei Ansprüche hinzu:
+    1. Wählen Sie **Zusätzlichen Anspruch hinzufügen** aus. Legen Sie das Feld **Token-Typ** auf **ID** fest und wählen Sie dann den Anspruch **sid** aus. Wählen Sie **Hinzufügen** aus.
+    1. Wählen Sie **Zusätzlichen Anspruch hinzufügen** aus. Legen Sie das Feld **Token-Typ** auf **Zugriff** fest und wählen Sie dann den Anspruch **sid** aus. Wählen Sie **Hinzufügen** aus.
 
 ## <a name="update-the-cpos-configuration-file"></a>Die CPOS-Konfigurationsdatei aktualisieren
 

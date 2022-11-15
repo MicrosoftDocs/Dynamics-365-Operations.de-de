@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 7c8d5b7992c7955b9c5b1c7e773fdd467ccba6f9
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: c2e4294cb54e9ba41467f505e361d5ee45f1f27d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335344"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740521"
 ---
 # <a name="firm-planned-orders"></a>Fest geplante Aufträge
 
@@ -33,7 +33,7 @@ Dieser Artikel beschreibt jede Methode im Detail.
 
 ## <a name="enable-the-features-that-are-described-in-this-article"></a><a name="enable-features"></a>Aktivieren Sie die Funktionen, die in diesem Artikel beschrieben werden
 
-Die meisten Funktionen für geplante Aufträge sind in allen Standardinstallationen von Microsoft Dynamics 365 Supply Chain Management verfügbar, die die Planungsoptimierung verwenden. Einige der Funktionen, die in diesem Artikel beschrieben werden, müssen jedoch in der Funktionsverwaltung eingeschaltet werden, bevor Sie sie verwenden können.
+Die meisten Funktionen für geplante Aufträge sind in allen Standardinstallationen von Microsoft Dynamics 365 Supply Chain Management verfügbar. Einige der Funktionen, die in diesem Artikel beschrieben werden, müssen jedoch in der Funktionsverwaltung eingeschaltet werden, bevor Sie sie verwenden können.
 
 ### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Parallelisierte Umwandlung geplanter Aufträge an- oder ausschalten
 
@@ -91,7 +91,7 @@ Um geplanter Aufträge manuell zu fixieren, suchen Sie die geplanter Aufträge, 
 
 ## <a name="auto-firm-planned-orders"></a>Automatische Umwandlung geplanter Aufträge
 
-Mit der automatischen Fixierung können Sie geplanter Aufträge als Teil der Produktprogrammplanung fixieren. Sie können einen Zeitrahmen für die Umwandlung von Deckungsgruppen, einzelnen Elementen und Kombinationen von Elementen und Produktprogrammplanungen definieren. Dann werden bei der Produktprogrammplanung die geplanten Aufträge automatisch fixiert, wenn das Auftragsdatum innerhalb des angegebenen Zeitfensters für die Fixierung liegt. Geplante Aufträge, die von der Planungsoptimierung und dem integrierten Vorgang der Produktprogrammplanung erzeugt werden, behandeln das Auftragsdatum (d. h. den Starttermin) unterschiedlich.
+Mit der automatischen Fixierung können Sie geplanter Aufträge als Teil der Produktprogrammplanung fixieren. Sie können einen Zeitrahmen für die Umwandlung von Deckungsgruppen, einzelnen Elementen und Kombinationen von Elementen und Produktprogrammplanungen definieren. Dann werden bei der Produktprogrammplanung die geplanten Aufträge automatisch fixiert, wenn das Auftragsdatum innerhalb des angegebenen Zeitfensters für die Fixierung liegt. Geplante Aufträge, die von der Planungsoptimierung und dem veralteten Produktprogrammplanungsmodul erzeugt werden, behandeln das Auftragsdatum (d. h. den Starttermin) unterschiedlich.
 
 > [!NOTE]
 > Die automatische Umwandlung von geplanten Aufträgen kann nur für Elemente erfolgen, die mit einem Lieferanten verbunden sind.
@@ -99,13 +99,13 @@ Mit der automatischen Fixierung können Sie geplanter Aufträge als Teil der Pro
 > Abgeleitete Aufträge (d.h. Einkaufsbestellungen von Unterlieferanten), die umgewandelt werden, haben den Status *In-Prüfung*, wenn die Änderungsverfolgung eingeschaltet ist.
 
 > [!IMPORTANT]
-> Bevor die in diesem Abschnitt beschriebene Funktion mit der Planungsoptimierung verwendet werden kann, muss die [Funktion *Automatische Umwandlung für die Planungsoptimierung*](#enable-features) für Ihr System aktiviert sein, wie am Anfang dieses Artikels beschrieben. Die automatische Umwandlung kann immer mit der integrierten Produktprogrammplanung verwendet werden.
+> Bevor die in diesem Abschnitt beschriebene Funktion mit der Planungsoptimierung verwendet werden kann, muss die [Funktion *Automatische Umwandlung für die Planungsoptimierung*](#enable-features) für Ihr System aktiviert sein, wie am Anfang dieses Artikels beschrieben. Die automatische Umwandlung kann immer mit der veralteten Produktprogrammplanung verwendet werden.
 
-### <a name="auto-firming-with-planning-optimization-vs-the-built-in-planning-engine"></a>Automatische Umwandlung mit Planungsoptimierung vs. die integrierte Planungs-Engine
+### <a name="auto-firming-with-planning-optimization-vs-the-deprecated-master-planning-engine"></a>Automatische Umwandlung mit Planungsoptimierung vs. das veraltete Produktprogrammplanungsmodul
 
-Sowohl die Planungsoptimierung als auch die integrierte Planungs-Engine können zur automatischen Umwandlung geplanter Aufträge verwendet werden. Jedoch gibt es mehrere wichtige Unterschiede. Die Planungsoptimierung verwendet z. B. das Auftragsdatum (d. h. das Startdatum), um zu bestimmen, welche geplanter Aufträge fixiert werden sollen, während die integrierte Planungs-Engine das Bedarfsdatum (d. h. das Enddatum) verwendet. In der folgenden Tabelle sind die Unterschiede zusammengefasst.
+Sowohl die Planungsoptimierung als auch die veraltete Produktprogrammplanungs-Engine können zur automatischen Umwandlung geplanter Aufträge verwendet werden. Jedoch gibt es mehrere wichtige Unterschiede. Die Planungsoptimierung verwendet z. B. das Auftragsdatum (d. h. das Startdatum), um zu bestimmen, welche geplanter Aufträge fixiert werden sollen, während die veraltete Produktprogrammplanungs-Engine das Bedarfsdatum (d. h. das Enddatum) verwendet. In der folgenden Tabelle sind die Unterschiede zusammengefasst.
 
-| Funktion | Planungsoptimierung | Integrierte Planungs-Engine |
+| Funktion | Planungsoptimierung | Veraltetes Produktprogrammplanungsmodul |
 |---|---|---|
 | **Datumsbasis** | Die automatische Bestätigung basiert auf dem Bestelldatum (Startdatum). | Die automatische Bestätigung basiert auf dem Bedarfstermin (Enddatum). |
 | **Vorlaufzeit** | Da das Auftragsdatum (Startdatum) die Fixierung auslöst, müssen Sie die Durchlaufzeit nicht als Teil des Fixierungszeitfensters betrachten. | Um zu gewährleisten, dass Aufträge rechtzeitig umgewandelt werden, muss der Zeitrahmen für die Umwandlung länger sein als die Vorlaufzeit. |

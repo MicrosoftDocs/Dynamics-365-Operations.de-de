@@ -1,6 +1,6 @@
 ---
 title: Planungszeiträume
-description: In diesem Artikel wird beschrieben, wie Sie Planungszeiträume einrichten, wenn Sie die Planungsoptimierung verwenden. Ein Planungszeitraum gibt Ihren Planungshorizont und Ihr Limit an.
+description: In diesem Artikel wird beschrieben, wie Planungszeiträume eingerichtet werden. Ein Planungszeitraum gibt Ihren Planungshorizont und Ihr Limit an.
 author: t-benebo
 ms.date: 01/18/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2021-01-18
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ebd59e05d2ae227f24e7dae6fae3634aab026c5a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 987dea4c1b693fc1bb687f97d51288d5e51e7d4c
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847932"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740112"
 ---
 # <a name="coverage-time-fences"></a>Planungszeiträume
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Artikel wird beschrieben, wie Sie *Planungszeiträume* einrichten, wenn Sie die Planungsoptimierung verwenden. Planer können den Planungshorizont (den Planungszeitraum in Tagen) definieren und Angebot und Nachfrage ausschließen, die über diesen Horizont hinausgehen. Daher helfen Planungszeiträume dabei, „Rauschen“ zu vermeiden, das durch Liefervorschläge verursacht wird, auf die Sie monatelang nicht reagieren müssen. Beispiele hierfür sind Prognosen für das nächste Jahr und Kundenaufträge, die weit über die normale Vorlaufzeit hinausgehen.
+In diesem Artikel wird beschrieben, wie *Planungszeiträume* eingerichtet werden. Planer können den Planungshorizont (den Planungszeitraum in Tagen) definieren und Angebot und Nachfrage ausschließen, die über diesen Horizont hinausgehen. Daher helfen Planungszeiträume dabei, „Rauschen“ zu vermeiden, das durch Liefervorschläge verursacht wird, auf die Sie monatelang nicht reagieren müssen. Beispiele hierfür sind Prognosen für das nächste Jahr und Kundenaufträge, die weit über die normale Vorlaufzeit hinausgehen.
 
 Ein Planungszeitraum ist die Anzahl der Tage nach dem heutigen Datum (oder genauer gesagt dem Datum, an dem Sie den Planungslauf durchführen), für die Angebot und Nachfrage ausgeschlossen sind. Um Verzögerungen zu vermeiden, müssen Sie sicherstellen, dass der Planungszeitraum länger als die Gesamtvorlaufzeit ist. Der Standardsystemwert sind 100 Tage.
 
@@ -82,9 +82,9 @@ Berücksichtigen Sie beim Einrichten von Planungszeiträumen die folgenden Punkt
 - Anforderungstransaktionen werden nicht für Angebot und Nachfrage generiert, die außerhalb des Planungszeitraums liegen.
 - Wenn ein genehmigtes Angebot und eine genehmigte Nachfrage außerhalb des Planungszeitraums liegen, wird es nicht in das Modul geladen. Daher wird keine Wiederbeschaffung ausgelöst, und Verzögerungen werden nicht berechnet. Trotzdem sollten Angebot und Nachfrage nicht aus dem System gelöscht werden.
 - Abweichungen in den Sicherheitsbestandsmengen (von den Mindestbestandsfaktoren) werden ignoriert, wenn sie außerhalb des Planungszeitraums liegen.
-- Der Intercompany-Bedarf wird ignoriert, wenn das angeforderte Lieferdatum, das berechnet wird, nicht innerhalb des Planungszeitraums liegt. Beachten Sie, dass bei der integrierten Produktprogrammplanung der Intercompany-Bedarf nicht durch den Planungszeitraum begrenzt ist.
-- Bedarfsplanungen werden ignoriert, wenn das Budgetdatum nicht innerhalb des Planungszeitraums liegt. Beachten Sie, dass bei der integrierten Produktprogrammplanung Bedarfsplanungen nicht durch den Planungszeitraum begrenzt sind.
-- Die Planungsoptimierung ist zeitzonenabhängig. Dabei werden die Zeitzone an den Angebots- und Nachfragestellen sowie der Zeitpunkt des Planungslaufs berücksichtigt. Beispielsweise wird die Produktprogrammplanung am 15. Oktober um 11:00 Uhr von einem Standort in Dänemark (Zeitzone GMT + 1) aus ausgelöst, und es wird ein Planungszeitraum von zehn Tagen verwendet. In diesem Fall werden Angebot und Nachfrage von einem Standort in Seattle (GMT-8-Zeitzone) bis 2 Uhr morgens am 25. Oktober berücksichtigt (= zehn 24-Stunden-Tage nach Auslösung der Produktprogrammplanung abzüglich der Zeitzonendifferenz von neun Stunden). Beachten Sie, dass die integrierte Produktprogrammplanung nur das Datum des Zeitrahmens berücksichtigt. Daher kann das Ergebnis abweichen.
+- Der Intercompany-Bedarf wird ignoriert, wenn das angeforderte Lieferdatum, das berechnet wird, nicht innerhalb des Planungszeitraums liegt. Beachten Sie, dass bei dem veralteten Produktprogrammplanungsmodul der Intercompany-Bedarf nicht durch den Planungszeitraum begrenzt ist.
+- Bedarfsplanungen werden ignoriert, wenn das Budgetdatum nicht innerhalb des Planungszeitraums liegt. Beachten Sie, dass bei dem veralteten Produktprogrammplanungsmodul der Bedarfsvorhersagen nicht durch den Planungszeitraum begrenzt ist.
+- Die Planungsoptimierung ist zeitzonenabhängig. Dabei werden die Zeitzone an den Angebots- und Nachfragestellen sowie der Zeitpunkt des Planungslaufs berücksichtigt. Beispielsweise wird die Produktprogrammplanung am 15. Oktober um 11:00 Uhr von einem Standort in Dänemark (Zeitzone GMT + 1) aus ausgelöst, und es wird ein Planungszeitraum von zehn Tagen verwendet. In diesem Fall werden Angebot und Nachfrage von einem Standort in Seattle (GMT-8-Zeitzone) bis 2 Uhr morgens am 25. Oktober berücksichtigt (= zehn 24-Stunden-Tage nach Auslösung der Produktprogrammplanung abzüglich der Zeitzonendifferenz von neun Stunden). Beachten Sie, dass die veraltete Produktprogrammplanung nur das Datum des Zeitrahmens berücksichtigt. Daher kann das Ergebnis abweichen.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

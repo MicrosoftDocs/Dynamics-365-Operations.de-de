@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: 42010bbc0cfb9714fc2be360c817bad07e184eb3
-ms.sourcegitcommit: 435e69160dbd7f9c61b37ac4440285a5df144622
+ms.openlocfilehash: eb21dc5ca474a87fcabe2dda2a06dda7aa42ebc2
+ms.sourcegitcommit: 719600437fc0895efac374f954a895e4c951da6e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "9728275"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9736880"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online- und Offlineverkaufsstellen-(POS)-Vorgänge
 
@@ -42,6 +42,7 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 
 > [!NOTE]
 > Die Arbeitsgänge unten gelten für die neueste Version von Commerce. Einige Vorgänge haben sich möglicherweise geändert oder sind möglicherweise in früheren Versionen nicht verfügbar.
+> Weitere Einzelheiten zu Offline-Funktionen und -Konfiguration finden Sie unter [Commerce Offline-Implementierung und Fehlerbehebung](dev-itpro/implementation-considerations-offline.md) Artikel.
 
 | Kennung   | Vorgang                                         | Description                                                                                                                                                                                                    | Vorgänge für den Benutzer    | Transaktionsbildschirm | Willkommensbildschirm | Offline verfügbar? | Gebietsschemaspezifisch |
 | ---- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------ | -------------- | ----------------- | --------------- |

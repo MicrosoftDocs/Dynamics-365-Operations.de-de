@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 5c8169a8d2c3e45304142fb6b4d504e620c545a4
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 43da249637c44b3f56e8b5e210a0e44d9ac6cb9d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335254"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740548"
 ---
 # <a name="production-planning"></a>Produktionsplanung
 
 [!include [banner](../../includes/banner.md)]
-
-Die Planungsoptimierung unterstützt mehrere Produktionsszenarien. Wenn Sie vom bestehenden integrierten Masterplanungsmodul migrieren, ist es wichtig, dass Sie einige geänderte Verhaltensweisen beachten.
 
 Das folgende Video gibt eine kurze Einführung in einige der in diesem Artikel besprochenen Konzepte: [Dynamics 365 Supply Chain Management: Erweiterungen der Planungsoptimierung](https://youtu.be/u1pcmZuZBTw).
 
@@ -46,10 +44,6 @@ Geplante Produktionsaufträge enthalten die Routenkennung, die zur Produktionspl
 
 - **Geplanter Produktionsauftrag** – Die Vorlaufzeit basiert auf der statischen Vorlaufzeit des freigegebenen Produkts.
 - **Umgewandelter Produktionsauftrag** – Die Vorlaufzeit basiert auf einer Zeitplanung, die Routeninformationen und zugehörige Ressourcenbeschränkungen verwendet.
-
-Weitere Informationen zur erwarteten Verfügbarkeit von Funktionen finden Sie unter [Passanalyse zu Planungsoptimierung](planning-optimization-fit-analysis.md).
-
-Wenn Sie auf Produktionsfunktionen angewiesen sind, die zur Planungsoptimierung noch nicht verfügbar sind, können Sie weiterhin das integrierte Masterplanungsmodul verwenden. Eine Ausnahme ist nicht erforderlich.
 
 ## <a name="delays"></a>Verzögerungen
 
@@ -76,15 +70,15 @@ Sie können die Seite **Auflösung** verwenden, um den erforderlichen Bedarf fü
 
 ## <a name="filters"></a><a name="filters"></a>Filter
 
-Um sicherzustellen, dass die Planungsoptimierung über die erforderlichen Informationen zur Berechnung des korrekten Ergebnisses verfügt, müssen Sie alle Produkte berücksichtigen, die in irgendeiner Beziehung zu Produkten in der gesamten Stücklistenstruktur des geplanten Auftrags stehen. Für Planungsszenarien inklusive Produktion empfehlen wir deshalb, gefilterte Masterplanungsläufe zu vermeiden.
+Um sicherzustellen, dass die Masterplanung über die erforderlichen Informationen zur Berechnung des korrekten Ergebnisses verfügt, müssen Sie alle Produkte berücksichtigen, die in irgendeiner Beziehung zu Produkten in der gesamten Stücklistenstruktur des geplanten Auftrags stehen. Für Planungsszenarien inklusive Produktion empfehlen wir deshalb, gefilterte Masterplanungsläufe zu vermeiden.
 
-Obwohl abhängige untergeordnete Artikel automatisch erkannt und in Masterplanungsläufe einbezogen werden, wenn das integrierte Masterplanungsmodul verwendet wird, führt die Planungsoptimierung diese Aktion aktuell nicht aus.
+Obwohl abhängige untergeordnete Artikel automatisch erkannt und in Masterplanungsläufe einbezogen werden, wenn das veraltete Masterplanungsmodul verwendet wird, führt die Planungsoptimierung diese Aktion aktuell nicht aus.
 
 Wenn beispielsweise eine einzelne Schraube aus der Stücklistenstruktur von Produkt A auch zur Herstellung von Produkt B verwendet wird, müssen alle Produkte in der Stücklistenstruktur der Produkte A und B in den Filter aufgenommen werden. Da es komplex sein kann, sicherzustellen, dass alle Produkte Teil des Filters sind, empfehlen wir, gefilterte Masterplanungsläufe zu vermeiden, wenn Produktionsaufträge betroffen sind. Andernfalls führt die Masterplanung zu unerwünschten Ergebnissen.
 
 ### <a name="reasons-to-avoid-filtered-master-planning-runs"></a>Gründe, gefilterte Masterplanungsläufe zu vermeiden
 
-Wenn Sie eine gefilterte Gesamtplanung für ein Produkt ausführen, erkennt die Planungsoptimierung (im Gegensatz zur integrierten Masterplanungs-Engine) nicht alle Unterprodukte und Rohstoffe in der Stücklistenstruktur dieses Produkts und nimmt sie daher nicht in den Master auf Planungslauf. Obwohl die Planungsoptimierung die erste Ebene in der Stücklistenstruktur des Produkts identifiziert, werden keine Produkteinstellungen (wie die Standardauftragsart oder die Artikelabdeckung) aus der Datenbank geladen.
+Wenn Sie eine gefilterte Gesamtplanung für ein Produkt ausführen, erkennt die Planungsoptimierung (im Gegensatz zur veralteten Masterplanungs-Engine) nicht alle Unterprodukte und Rohstoffe in der Stücklistenstruktur dieses Produkts und nimmt sie daher nicht in den Master auf Planungslauf. Obwohl die Planungsoptimierung die erste Ebene in der Stücklistenstruktur des Produkts identifiziert, werden keine Produkteinstellungen (wie die Standardauftragsart oder die Artikelabdeckung) aus der Datenbank geladen.
 
 In der Planungsoptimierung werden die Daten für den Lauf zuvor geladen und wenden die Filter an. Dies bedeutet, dass, wenn ein Unterprodukt oder ein Rohmaterial, das in einem bestimmten Produkt enthalten ist, nicht Teil des Filters ist, keine Informationen darüber für den Lauf erfasst werden. Wenn das Unterprodukt oder der Rohstoff auch in einem anderen Produkt enthalten ist, würde ein gefilterter Lauf, der nur das Originalprodukt und seine Komponenten enthält, den bestehenden Planbedarf entfernen, der für dieses andere Produkt erstellt wurde.
 

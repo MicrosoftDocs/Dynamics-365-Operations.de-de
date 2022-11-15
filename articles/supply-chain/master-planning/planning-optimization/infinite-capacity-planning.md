@@ -1,6 +1,6 @@
 ---
 title: Planung mit unendlicher Kapazität
-description: Dieser Artikel enthält Informationen zur Planung mit unbegrenzter Kapazität für die Planungsoptimierung. Außerdem werden aktuelle Funktionseinschränkungen beschrieben.
+description: Dieser Artikel enthält Informationen über unbegrenzte Kapazitätsplanung. Außerdem werden aktuelle Funktionseinschränkungen beschrieben.
 author: t-benebo
 ms.date: 08/09/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: c6e0190899abb544b559bb5f26ba974155989c3a
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 7249734e5d2644145a36276dbc818a40b5962805
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335314"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740004"
 ---
 # <a name="scheduling-with-infinite-capacity"></a>Planung mit unendlicher Kapazität
 
 [!include [banner](../../includes/banner.md)]
 
-Die Funktion *Unendliche Kapazitätsplanung für die Planungsoptimierung* führt eine Planung auf Basis von Arbeitsplaninformationen ein. Sie können Aufträge basierend auf einer Vielzahl von Arbeitsplankonfigurationen planen. Die Planung für die Planungsoptimierung umfasst häufig verwendete Arbeitsplaneinstellungen, einschließlich der Arbeitsplan-Arbeitsgangsequenz oder Anforderungen an Arbeitsplan-Arbeitsgangressourcen.
+Die Funktion *Unendliche Kapazitätsplanung für die Planungsoptimierung* führt eine Planung auf Basis von Arbeitsplaninformationen ein. Sie können Aufträge basierend auf einer Vielzahl von Arbeitsplankonfigurationen planen. Die Planung umfasst häufig verwendete Arbeitsplaneinstellungen, einschließlich der Arbeitsplan-Arbeitsgangsequenz oder Anforderungen an Arbeitsplan-Arbeitsgangressourcen.
 
 ## <a name="turn-the-infinite-capacity-scheduling-feature-on-or-off"></a>Die Planungsfunktion für unbegrenzte Kapazitäten aktivieren oder deaktivieren
 
@@ -32,7 +32,7 @@ Weitere Informationen zu dieser Funktion finden Sie unter [Planung mit Ressource
 
 ## <a name="added-functionality"></a>Hinzugefügte Funktionalität
 
-Die Funktion *Unendliche Kapazitätsplanung für die Planungsoptimierung* ermöglicht die Auftragsplanung auf Basis von Arbeitsplaninformationen. Daher können Arbeitsplaneinstellungen verwendet werden, um Produktionsprozesse zu planen. Obwohl diese Funktion einige Einschränkungen aufweist, die die integrierte Produktprogrammplanung nicht hat, unterstützt sie die gängigsten Funktionen, die für Fertigungsszenarien erforderlich sind.
+Die Funktion *Unendliche Kapazitätsplanung für die Planungsoptimierung* ermöglicht die Auftragsplanung auf Basis von Arbeitsplaninformationen. Daher können Arbeitsplaneinstellungen verwendet werden, um Produktionsprozesse zu planen. Obwohl diese Funktion einige Einschränkungen aufweist, die das veraltete Produktprogrammplanungsmodul nicht hat, unterstützt sie die gängigsten Funktionen, die für Fertigungsszenarien erforderlich sind.
 
 Die Funktion berücksichtigt sowohl *einfache Arbeitspläne* als auch *Arbeitsplan-Netzwerke*. Durch die Verwendung des Felds **Weiter** für einen Arbeitsplan-Arbeitsgang können Sie komplexe Arbeitspläne mit mehreren Ausgangspunkten und mehreren parallel laufenden Arbeitsgängen einrichten. Das System berücksichtigt bei der Planung komplexe Arbeitsplanstrukturen dieser Art.
 
@@ -52,15 +52,13 @@ Bei des Planungsprozesses berücksichtigt das System auch die *Ressourcenanforde
 
 Die Funktion unterstützt auch die **Rüstzeit** und die **Runtime** betriebliche Eigenschaften. Wenn Sie diese Eigenschaften für einen Arbeitsplan-Arbeitsgang festlegen, erstellt der Planungsprozess die entsprechenden Einrichtungs- und Verarbeitungsvorgänge.
 
-Zusammenfassend lässt sich sagen, dass die Planung für die Planungsoptimierung die am häufigsten verwendeten Szenarien unterstützt. Sie können die Arbeitsgänge erstellen, primäre und sekundäre Vorgänge hinzufügen, die nächsten Vorgänge definieren, Ressourcenanforderungen hinzufügen und Rüstzeit und Runtime hinzufügen. Das System berücksichtigt diese Informationen dann bei der Planung.
+Zusammenfassend lässt sich sagen, dass die Planung die am häufigsten verwendeten Szenarien unterstützt. Sie können die Arbeitsgänge erstellen, primäre und sekundäre Vorgänge hinzufügen, die nächsten Vorgänge definieren, Ressourcenanforderungen hinzufügen und Rüstzeit und Runtime hinzufügen. Das System berücksichtigt diese Informationen dann bei der Planung.
 
 ## <a name="limitations"></a>Einschränkungen
 
-Die folgenden Einschränkungen gelten, wenn Sie die Planung für die Planungsoptimierung verwenden:
+Die folgenden Einschränkungen gelten, wenn Sie die Funktion *Unbegrenzte Kapazitäsplanung für die Planungsoptimierung* verwenden:
 
 - Die Funktion unterstützt nur unendliche Kapazität.
 - Die Funktion unterstützt keine Funktionalität der Ressourcenauslastung.
 - Die Funktion berücksichtigt keinen Arbeitsplanausschuss.
 - Die Funktion unterstützt *Dauer* nur als primäre Ressourcenauswahl.
-
-Bitte beachten Sie, dass die Funktion *Unendliche Kapazitätsplanung für die Planungsoptimierung* ständig verbessert wird. Microsoft geht davon aus, dass in zukünftigen Versionen die Unterstützung für zusätzliche Planungseinstellungen eingeführt wird.

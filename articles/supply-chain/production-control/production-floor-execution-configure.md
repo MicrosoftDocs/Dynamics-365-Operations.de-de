@@ -2,7 +2,7 @@
 title: Produktionsausführungsschnittstelle konfigurieren
 description: In diesem Artikel wird beschrieben, wie Sie eine oder mehrere Konfigurationen für die Produktionsoberflächen-Ausführungsschnittstelle erstellen. Wenn Sie die Produktionsausführungsoberfläche öffnen, wird automatisch eine ausgewählte Konfiguration und ein Auftragsfilter geladen, die für den Browser und das Gerät spezifisch sind. In der Konfiguration legen Sie die Richtlinien fest, die für eine bestimmte Verwendung gelten müssen.
 author: johanhoffmann
-ms.date: 08/05/2022
+ms.date: 11/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7196306b34a72e4c53113dd644f666346f170ed7
-ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
+ms.openlocfilehash: 641b293617df608bc07b97c077dbcd05664f8e2a
+ms.sourcegitcommit: 4abf9b375fed6885ea11a425c524958fea29c3b9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "9708724"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748685"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Produktionsausführungsschnittstelle konfigurieren
 
@@ -85,17 +85,19 @@ Diese Funktion bietet eine verbesserte Erfahrung beim Anzeigen von Listen von Se
 
 Um diese Funktion nutzen zu können, muss sie für Ihr System aktiviert werden. Ab Supply Chain Management Version 10.0.25 ist die Funktion standardmäßig aktiviert. Ab Supply Chain Management Version 10.0.29 ist die Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.29 verwenden, können Administratoren diese Funktion ein- oder ausschalten, indem sie im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) nach der Funktion *Vollständige Serien-, Batch- und Kennzeichennummern in der Produktionsausführungsoberfläche anzeigen* suchen.
 
-
 Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert. Admins können diese Funktion ein- oder ausschalten, indem sie im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) nach der Funktion *Vollständige Serien-, Batch- und Ladungsträger-Nummern in der Produktionsausführungsoberfläche anzeigen* suchen.
 
 ### <a name="register-material-consumption"></a>Materialverbrauch registrieren
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
 
 Diese Funktion ermöglicht es Arbeitern, die Produktionsausführungsoberfläche zu verwenden, um Materialverbrauch, Chargennummern und Seriennummern zu registrieren. Einige Hersteller, insbesondere in der Prozessindustrie, müssen explizit die Materialmenge registrieren, die für jede Batch oder jeden Produktionsauftrag verbraucht wird. Arbeitskräfte könnten zum Beispiel eine Waage verwenden, um die Menge des Materials zu wiegen, das sie bei ihrer Arbeit verbrauchen. Um eine vollständige Rückverfolgbarkeit der Materialien zu gewährleisten, müssen diese Organisationen auch die Batch-Nummern registrieren, die zur Herstellung der einzelnen Produkte verbraucht wurden.
 
 Es gibt zwei Versionen dieser Funktion. Man unterstützt Artikel, die *nicht* für die Verwendung von Lagerverwaltungsprozessen (WMS) aktiviert sind. Die anderen unterstützen Elemente, die *für die Verwendung von WMS aktiviert sind*. Um diese Funktionalität zu nutzen, aktivieren Sie eine oder beide der folgenden Funktionen in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in dieser Reihenfolge), je nachdem, ob Sie Artikel haben, die für WMS aktiviert sind:
 
 - *Materialverbrauch in der Produktionsausführungsoberfläche (nicht WMS) registrieren*
-- *Materialverbrauch in der Produktionsausführungsoberfläche registrieren (WMS-fähig)*
+- *(Vorschauversion) Materialverbrauch in der Produktionsausführungsoberfläche registrieren (WMS-fähig)*
 
 > [!IMPORTANT]
 > Sie können die Nicht-WMS-Funktion allein verwenden. Wenn Sie jedoch WMS verwenden, müssen Sie beide Funktionen aktivieren.
@@ -138,6 +140,25 @@ Um diese Funktion zu nutzen, schalten Sie die folgende Funktion in [Funktionsver
 
 - *Zusätzliche Konfiguration auf der Produktionsausführungsoberfläche*
 
+### <a name="enable-the-my-jobs-tab"></a>Aktivieren Sie die Registerkarte Meine Jobs
+
+Auf der Registerkarte **Meine Aufträge** können Arbeitskräfte ganz einfach alle nicht gestarteten und nicht beendeten Aufträge einsehen, die ihnen speziell zugewiesen sind. Es ist nützlich in Unternehmen, in denen Aufträge manchmal oder immer bestimmten Arbeitskräften (Human Resources) statt anderen Arten von Ressourcen (z.B. Maschinen) zugewiesen werden.
+
+Um diese Funktion zu nutzen, schalten Sie die folgende Funktion in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ein:
+
+- *Registerkarte Meine Einzelvorgänge auf der Produktionsausführungsoberfläche*
+
+### <a name="enable-use-of-a-numpad-on-the-sign-in-page"></a>Verwendung eines Ziffernblocks auf der Anmeldeseite aktivieren
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.31 GA -->
+
+Über diese Funktion können Administratoren ein Ziffernblock-Steuerelement zut Anmeldeseite für die Produktionsausführungsoberfläche hinzufügen. Die Mitarbeiter können sich dann anmelden, indem sie über den Ziffernblock ihre Ausweis-ID oder persönliche Nummer eingeben.
+
+Um diese Funktion zu nutzen, schalten Sie die folgende Funktion in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ein:
+
+- *Verwendung eines Ziffernblocks auf der Anmeldeseite aktivieren*
+
 ## <a name="work-with-production-floor-execution-configurations"></a>Arbeiten mit Produktionsausführungsoberflächen-Konfigurationen
 
 Um Produktionsausführungskonfigurationen zu erstellen und zu verwalten, gehen Sie zu **Produktionskontrolle \> Einrichtung \> Fertigungsausführung \> Produktionsausführung konfigurieren**. Die Seite **Konfigurieren Sie die Ausführung der Produktionsfläche** zeigt eine Liste der vorhandenen Konfigurationen. Auf dieser Seite können folgende Aktivitäten ausgeführt werden:
@@ -161,6 +182,7 @@ Die folgenden Einstellungen sind auf dem Inforegister **Allgemein** verfügbar:
 - **Mitarbeiter sperren** – Wenn diese Option auf *Nein* eingestellt ist, werden die Arbeitnehmer sofort nach der Registrierung abgemeldet (z. B. bei einem neuen Einzelvorgang). Die Schnittstelle kehrt dann zur Anmeldeseite zurück. Wenn diese Option auf *Ja* festgelegt ist, bleibt jeder Mitarbeiter in der Produktionsausführungsschnittstelle angemeldet. Ein Mitarbeiter kann sich jedoch manuell abmelden, damit sich ein anderer Mitarbeiter anmelden kann, während die Produktionsausführungsschnittstelle weiterhin unter demselben Systembenutzerkonto ausgeführt wird. Weitere Informationen zu diesen Arten von Konten finden Sie unter [Zugewiesene Benutzer](config-job-card-device.md#assigned-users).
 - **Verwenden Sie den tatsächlichen Zeitpunkt der Registrierung** – Stellen Sie diese Option auf *Ja* ein, um die Zeit für jede neue Registrierung so festzulegen, dass sie genau der Zeit entspricht, zu der die Registrierung von einem Arbeitnehmer eingereicht wurde. Wenn diese Option auf *Nein* eingestellt wird, wird stattdessen die Anmeldezeit verwendet. Normalerweise möchten Sie diese auf *Ja* einstellen, wenn Sie die Optionen **Mitarbeiter sperren** und/oder **Einzelner Arbeiter** auf *Ja* festgelegt haben, falls Mitarbeiter häufig länger angemeldet bleiben.
 - **Einzelne Arbeitskraft** – Setzen Sie diese Option auf *Ja*, wenn nur ein Mitarbeiter jedes Produktionsausführungsschnittstelle verwendet, auf dem diese Konfiguration aktiv ist. Wenn diese Option auf *Ja* festgelegt ist, wird die Option **Mitarbeiter sperren** automatisch auf *Ja* festgelegt. Darüber hinaus entfällt mit dieser Einstellung die Anforderung (und Fähigkeit), dass sich der Mitarbeiter mit einer Ausweis-ID (oder ähnlichem) anmelden muss. Stattdessen meldet sich der Mitarbeiter bei Microsoft Dynamics 365 Supply Chain Management mit einem Systembenutzerkonto an, das mit einer *Zeit registrierten Arbeitskraft* (von der *Arbeitskräfte* Tabelle) verknüpft ist und gleichzeitig als diese Arbeitskraft in der Produktionsausführungsschnittstelle angemeldet wird.
+- **Nummernblock aktivieren** – Stellen Sie diese Option auf *Ja* ein um dem Anmeldebildschirm einen Nummernblock hinzuzufügen, der es den Mitarbeitern ermöglicht, ihre Ausweis-ID oder persönliche Nummer über einen Touchscreen-Nummernblock einzugeben. Legen Sie diese Option auf *Nein* fest, um den Ziffernblock zu entfernen.
 - **Erlauben Sie das Sperren des Touchscreens** – Setzen Sie diese Option auf *Ja*, damit Mitarbeiter den Touchscreen der Produktionsausführungsschnittstelle sperren können, damit sie ihn bereinigen können. Wenn diese Option auf *Ja* eingestellt ist, wird eine Schaltfläche **Sperrbildschirm zum Desinfizieren** der Anmeldeseite hinzugefügt. Wenn ein Mitarbeiter diese Schaltfläche auswählt, wird der Touchscreen vorübergehend gesperrt, um unbeabsichtigte Eingaben zu verhindern. Ein Countdown-Timer wird ebenfalls angezeigt. Die Arbeitskraft kann dann das Gerät und den Bildschirm sicher reinigen. Nach Abschluss des Countdowns wird der Touchscreen automatisch wieder entsperrt.
 - **Dauer der Bildschirmsperre** – Wenn die Option **Sperren des Touchscreens zulassen** auf *Ja* festgelegt ist, verwenden Sie diese Option, um anzugeben, wieviele Sekunden der Touchscreen für die Bereinigung gesperrt werden soll. Die Dauer muss eine Zahl zwischen 5 und 120 Sekunden sein.
 - **Kennzeichen erstellen** – Setzen Sie diese Option auf *Ja*, um jedes Mal eine neue Kennzeichnung zu erstellen, wenn ein Mitarbeiter die Produktionsausführungsschnittstelle verwendet, um den Vorgang als beendet zu melden. Das Kennzeichen wird aus einer Nummernfolge generiert, die auf der Seite **Lagerverwaltungsparameter** erstellt wird. Wenn diese Option auf *Nein* festgelegt ist, muss die Arbeitskraft eine bestehende Kennzeichnung definieren, wenn er den Vorgang als beendet meldet.
