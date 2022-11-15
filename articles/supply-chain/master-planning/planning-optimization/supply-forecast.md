@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-09-21
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: dc83d10851958ec67166cb7e40cfd84dceae6651
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 2bac9355bb1ac00f697ec459f494a64553e0eacc
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9690083"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740140"
 ---
 # <a name="master-planning-with-supply-forecasts"></a>Produktprogrammplanung mit Beschaffungsplanungen
 
@@ -168,13 +168,13 @@ Wenn Sie einen Hauptplan ausführen, der für die Verwendung von *Keiner* als Re
 
 Sie bearbeiten nun die geplante Einkaufsbestellung, die nach dem letzten Planungslauf angelegt wurde, und ändern die Menge auf *15 Stück*. Genehmigen Sie dann die Bestellung. Wenn Sie das nächste Mal einen Hauptplan ausführen, wird eine geplante Einkaufsbestellung für den Lieferanten *US-101*, Site *1*, Lagerort *11*, eine Menge von *10 Stück*, und das Datum *10.10.22* erstellt. Diesmal wird die Menge reduziert, um die Menge des vorhandenen genehmigten Auftrags aus dem vorherigen Planungslauf widerzuspiegeln.
 
-## <a name="differences-between-planning-optimization-and-the-built-in-planning-engine"></a>Unterschiede zwischen Planungsoptimierung und der integrierten Planungs-Engine
+## <a name="differences-between-planning-optimization-and-the-deprecated-master-planning-engine"></a>Unterschiede zwischen Planungsoptimierung und veraltetem Produktprogrammplanungsmodul
 
-Beschaffungsplanungen funktionieren jedoch ein wenig anders, je nachdem, welches Produktprogrammplanungsmodul sie verwenden (Planungsoptimierung oder integrierte Masterplanung). In diesem Abschnitt werden die Unterschiede beschrieben.
+Beschaffungsplanungen funktionieren jedoch ein wenig anders, je nachdem, welches Produktprogrammplanungsmodul sie verwenden (Planungsoptimierung oder das veraltete Masterplanungsmodul). In diesem Abschnitt werden die Unterschiede beschrieben.
 
 ### <a name="vendor-groups"></a>Kreditorengruppen
 
-Wenn Sie eine prognostizierte Position hinzufügen, können Sie einen Lieferanten und eine Lieferantengruppe angeben. In der integrierten Planungs-Engine werden erstellte Auftragsvorschläge nach der Kombination der Lieferanten- und Lieferantengruppenwerte gruppiert. In der Planungsoptimierung werden Auftragsvorschläge nach Lieferanten gruppiert.
+Wenn Sie eine prognostizierte Position hinzufügen, können Sie einen Lieferanten und eine Lieferantengruppe angeben. In der veralteten Masterplanungs-Engine werden erstellte Auftragsvorschläge nach der Kombination der Lieferanten- und Lieferantengruppenwerte gruppiert. In der Planungsoptimierung werden Auftragsvorschläge nach Lieferanten gruppiert.
 
 Die folgende Tabelle enthält einige Beispiele für Beschaffungsplanungspositionen für einen Artikel.
 
@@ -186,7 +186,7 @@ Die folgende Tabelle enthält einige Beispiele für Beschaffungsplanungsposition
 
 Lieferant *VendorA* ist der Standardlieferant für die Kreditorengruppe *VendorGroupA*. Dies ist auch der Standardlieferant für den Artikel.
 
-Die integrierte Planungs-Engine erstellt die folgenden Aufträge:
+Die veraltete Masterplanungs-Engine erstellt die folgenden Aufträge:
 
 - Eine geplante Bestellung für den Lieferanten *VendorA*, Anbietergruppe *VendorGroupA*, und eine Menge von *11*
 - Eine geplante Einkaufsbestellung für den Lieferanten *VendorA* und eine Menge von *7*
@@ -197,7 +197,7 @@ Die Planungsoptimierung erstellt nur einen Auftrag:
 
 ### <a name="reduction-of-general-forecasts-by-more-specific-forecasts"></a>Reduktion allgemeiner Prognosen durch spezifischere Prognosen
 
-In der integrierten Hauptplanungs-Engine ist das Ergebnis unvorhersehbar, wenn einige Prognosen einen Anbieter haben, andere jedoch nicht.
+In der veralteten Hauptplanungs-Engine ist das Ergebnis unvorhersehbar, wenn einige Prognosen einen Anbieter haben, andere jedoch nicht.
 
 In der Planungsoptimierung werden allgemeine Prognosen immer durch spezifischere Prognosen reduziert, wie das folgende Beispiel zeigt.
 
@@ -218,15 +218,15 @@ Die allgemeine Prognose (für 15,00 Stück) wird durch die spezifischeren Progno
 
 ### <a name="respect-for-default-order-settings-when-planned-orders-are-generated"></a>Beachten Sie die Standardauftragseinstellungen, wenn Auftragsvorschläge generiert werden
 
-Jeder Artikel kann Standardbestelleinstellungen haben, wie z. B. eine Mindestbestellmenge. Die integrierte Planungs-Engine ignoriert diese Einstellungen und übersetzt daher Prognosen in Auftragsvorschläge mit derselben Menge. Die Planungsoptimierung berücksichtigt diese Einstellungen, wenn Planaufträge aus Lieferprognosen generiert werden. 
+Jeder Artikel kann Standardbestelleinstellungen haben, wie z. B. eine Mindestbestellmenge. Die veraltete Masterplanungs-Engine ignoriert diese Einstellungen und übersetzt daher Prognosen in Auftragsvorschläge mit derselben Menge. Die Planungsoptimierung berücksichtigt diese Einstellungen, wenn Planaufträge aus Lieferprognosen generiert werden. 
 
 ### <a name="aggregation-of-planned-orders-as-a-result-of-reduction-by-approved-orders"></a>Aggregation von Planaufträgen durch Reduzierung um genehmigte Aufträge
 
-Die eingebaute Hauptplanungs-Engine geht davon aus, dass nur eine Bestellung die bestehende Beschaffungsplanung reduziert. Wenn also mehrere Bestellungen mit einer Beschaffungsplanungsposition übereinstimmen, wird sie nur durch die erste Bestellung reduziert. In der Planungsoptimierung wird sie durch alle Aufträge, die mit der Beschaffungsplanungsposition übereinstimmen, reduziert.
+Die veraltete Hauptplanungs-Engine geht davon aus, dass nur eine Bestellung die bestehende Beschaffungsplanung reduziert. Wenn also mehrere Bestellungen mit einer Beschaffungsplanungsposition übereinstimmen, wird sie nur durch die erste Bestellung reduziert. In der Planungsoptimierung wird sie durch alle Aufträge, die mit der Beschaffungsplanungsposition übereinstimmen, reduziert.
 
 ### <a name="reduction-of-forecasts-by-matching-vendors-only"></a>Reduzierung der Prognose nur durch passende Anbieter
 
-Wenn das integrierte Masterplanungs-Engine eine Prognose um vorhandene freigegebene Bestellungen reduziert, stellt es nicht sicher, dass der Lieferant auf der Bestellung mit dem Lieferanten aus der Prognose übereinstimmt. Die Planungsoptimierung reduziert Prognosen nur um Bestellungen, die einen übereinstimmenden Wert im Lieferantenfeld aufweisen.
+Wenn das veraltete Masterplanungs-Engine eine Prognose um vorhandene freigegebene Bestellungen reduziert, stellt es nicht sicher, dass der Lieferant auf der Bestellung mit dem Lieferanten aus der Prognose übereinstimmt. Die Planungsoptimierung reduziert Prognosen nur um Bestellungen, die einen übereinstimmenden Wert im Lieferantenfeld aufweisen.
 
 Bei Umlagerungs- und Produktionsaufträgen wird das Lieferantenfeld immer ignoriert, da es für diese Auftragsarten nicht relevant ist.
 
@@ -234,4 +234,4 @@ Bei Umlagerungs- und Produktionsaufträgen wird das Lieferantenfeld immer ignori
 
 Wenn die Standardbestellart für einen Artikel *Umlagerung* ist, können Prognosen nur durch vorhandene geplante Umlagerungsaufträge reduziert werden. Bei Fertigungsaufträgen und Bestellungen reduzieren jedoch nur freigegebene Aufträge die Beschaffungsplanung.
 
-Das integrierte Planungs-Engine reduziert für alle Umlagerungsauftragsstatus, während die Planungsoptimierung Prognosen nur um Umlagerungsaufträge reduziert, die sich im Status *Veröffentlicht* befinden.
+Das veraltete Masterplanungs-Engine reduziert für alle Umlagerungsauftragsstatus, während die Planungsoptimierung Prognosen nur um Umlagerungsaufträge reduziert, die sich im Status *Veröffentlicht* befinden.

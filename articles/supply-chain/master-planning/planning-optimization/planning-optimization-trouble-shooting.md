@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: f078fda02a11eb2073738d59b45f81698b707653
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 37c38ab9cec8ae3c9d4decf8043b43ea2251083e
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889518"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739728"
 ---
 # <a name="troubleshoot-planning-optimization"></a>Fehlerbehebung in Planungsoptimierung 
 
@@ -37,13 +37,13 @@ Die Voraussetzung für die Planungsoptimierung ist eine LCS-fähige (Lifecycle S
 
 ## <a name="planning-of-batch-jobs-fails-when-planning-optimization-is-enabled"></a>Die Planung von Stapeljobs schlägt fehl, wenn die Planungsoptimierung aktiviert ist
 
-Wenn Sie die Planungsoptimierung aktivieren, wird das integrierte Masterplanungsmodul automatisch deaktiviert. Planungs-Batchjobs, die für das eingebaute Supply Chain Management-Planungsmodul erstellt wurden, werden fehlschlagen, wenn sie ausgelöst werden, während die Planungsoptimierung aktiviert ist. Möglicherweise erhalten Sie eine Fehlermeldung wie *Dieser Vorgang löste eine Masterplanung aus, die nicht unterstützt wird, wenn die Planungsoptimierung aktiviert ist*.
+Wenn Sie die Planungsoptimierung aktivieren, wird das veraltete Masterplanungsmodul automatisch deaktiviert. Planungs-Batchjobs, die für das veraltete Produktprogrammplanungsmodul erstellt wurden, werden fehlschlagen, wenn sie ausgelöst werden, während die Planungsoptimierung aktiviert ist. Möglicherweise erhalten Sie eine Fehlermeldung wie *Dieser Vorgang löste eine Masterplanung aus, die nicht unterstützt wird, wenn die Planungsoptimierung aktiviert ist*.
 
-**Beheben**: Brechen Sie alle Masterplanungs-Batchjobs ab, die für das integrierte Supply Chain Management-Planungsmodul erstellt wurden.
+**Beheben**: Brechen Sie alle Masterplanungs-Batchjobs ab, die für das veraltete Produktprogrammplanungsmodul erstellt wurden.
 
 ## <a name="planning-optimization-results-are-different-from-earlier-results"></a>Die Ergebnisse der Planungsoptimierung unterscheiden sich von früheren Ergebnissen
 
-Die Planungsoptimierung unterscheidet sich in einigen Bereichen vom integrierten Masterplanungsdesign. Dies kann auch durch ausstehende Funktionen verursacht werden.
+Die Planungsoptimierung unterscheidet sich in einigen Bereichen vom veralteten Masterplanungsmoduldesign. Dies kann auch durch ausstehende Funktionen verursacht werden.
 
 **Beheben**: Führen Sie die Anpassungsanalyse für die Planungsoptimierung durch, und analysieren Sie dann die Ergebnisse, während Sie die zugehörige Dokumentation lesen, um die Auswirkungen zu verstehen. Weitere Informationen finden Sie unter [Planungsoptimierung Fit-Analyse](planning-optimization-fit-analysis.md).
 
@@ -63,9 +63,8 @@ Dies hängt mit einer ausstehenden Funktion zusammen, die im Rahmen der Unterst�
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Erste Schritte mit der Planungsoptimierung](get-started.md)
-
-[Passanalyse zu Planungsoptimierung](planning-optimization-fit-analysis.md)
+- [Erste Schritte mit der Produktprogrammplanung](get-started.md)
+- [Passanalyse zur Planungsoptimierung](planning-optimization-fit-analysis.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

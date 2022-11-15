@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 119b77b695ff065c8e45693e1cf7cf15360d441e
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 1ef8a04ce4ab2180f39a6d2bcdab976eb146d610
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468635"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741229"
 ---
 # <a name="explosion-of-a-bom-version"></a>Auflösung einer Stücklistenversion
 
@@ -38,9 +38,8 @@ In der folgenden Illustration ist der Ablauf der Bedarfsauflösung für die Prod
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Die Stücklistenversion bestimmen](master-plan-bom-version-determined.md)
-
-[Übersicht über Produktprogrammpläne und Funktionen für mehrere Standorte](master-plan-multisite-functionality.md)
+- [Die Stücklistenversion bestimmen](master-plan-bom-version-determined.md)
+- [Übersicht über Produktprogrammpläne und Funktionen für mehrere Standorte](master-plan-multisite-functionality.md)
 
 
 
