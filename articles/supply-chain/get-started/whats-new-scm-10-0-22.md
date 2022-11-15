@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 310809799a81c6709041764f7038de2a70b7f203
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: b95f131a45c11748cfd4c66c47e5a51c765ed486
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124789"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740409"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.22. (November 2021)
 
@@ -53,7 +53,7 @@ Wir haben die folgenden Hilfeartikel kürzlich hinzugefügt oder erheblich aktua
 |---|---|
 | Verwaltung für technische Änderung | [Überblick über das Änderungsmanagement](../engineering-change-management/product-engineering-overview.md) listet jetzt alle zugehörigen, optionalen Funktionen auf, die in der Funktionsverwaltung verfügbar sind |
 | Produktprogrammplanung | [Einrichtung der Bedarfsplanung](../master-planning/demand-forecasting-setup.md) |
-| Produktprogrammplanung | [Nettobedarf und Informationen zum Bedarfsverursacher in der Planungsoptimierung](../master-planning/planning-optimization/net-requirements.md) |
+| Produktprogrammplanung | [Nettobedarf und Informationen zum Bedarfsverursacher](../master-planning/planning-optimization/net-requirements.md) |
 | Lagerortverwaltung | [Freigabe ins Lager](../warehousing/release-to-warehouse-process.md) bietet einen detaillierten Überblick über den vollständigen Freigabeprozess im Lager |
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen

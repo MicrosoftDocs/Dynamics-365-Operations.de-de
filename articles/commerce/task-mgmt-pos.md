@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ms.search.industry: ''
-ms.openlocfilehash: 22a71fe66042a9ad189fd6a83a2666dfa64d35d0
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 595a51eba1d0cd432d4f4de9405bf9f30a1ae00c
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9281995"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746034"
 ---
 # <a name="task-management-in-pos"></a>Aufgabenverwaltung in POS
 
@@ -36,6 +36,7 @@ Filialleiter können die folgenden Aufgaben in der POS-Anwendung mit Hilfe der S
 - **Aufgabenstatus** - Den Status ausgewählter Aufgaben ändern.
 - **Filter** - Standardmäßig werden nur aktive Aufgaben angezeigt. Durch Anwendung von Filtern können Manager jedoch alle Aufgaben anzeigen, auch solche, die abgeschlossen oder abgebrochen wurden.
 - **Neue Aufgabe** - Erstellen Sie eine Aufgabe unter einer bestehenden Aufgabenliste oder erstellen Sie eine Einzweck-Aufgabe.
+- **Aufgabe bearbeiten** – Bearbeiten Sie die Details einer Aufgabe.
 
 Die Mitarbeiter der Filiale können die folgenden Aufgabenvorgänge in der POS-Anwendung mit Hilfe der Schaltflächen in der Befehlsleiste ausführen:
 
