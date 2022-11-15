@@ -2,23 +2,23 @@
 title: Aufgabenverwaltung konfigurieren
 description: In diesem Artikel wird beschrieben, wie Aufgabenverwaltungsfunktionen in Microsoft Dynamics 365 Commerce konfiguriert werden.
 author: gvrmohanreddy
-ms.date: 02/10/2020
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ms.search.industry: ''
-ms.openlocfilehash: ff97abab330174b41af76d22c202e8338d6d37fd
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: cc2d75f52b183559de344982c8e4208000af786e
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9282760"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746061"
 ---
 # <a name="configure-task-management"></a>Aufgabenverwaltung konfigurieren
 
@@ -80,7 +80,11 @@ Die folgende Abbildung zeigt die Operation **Aufgabenverwaltung** auf der Seite 
 
 ![Vorgang der Aufgabenverwaltung auf der Seite POS-Operationen.](media/HQ-POS-Tasks-Notifications.png)
 
-Weitere Informationen über die Konfiguration von POS-Benachrichtigungen finden Sie unter [Bestellbenachrichtigungen in der Verkaufsstelle (POS)](notifications-pos.md) anzeigen.
+Weitere Informationen über die Konfiguration von POS-Benachrichtigungen finden Sie im Artikel [Bestellbenachrichtigungen in der Verkaufsstelle (POS)](notifications-pos.md) anzeigen.
+
+> [!NOTE]
+> Wenn Sie Ihre Änderungen speichern, wird die folgende Warnmeldung angezeigt: **Der Vorgangsparameter wird im Schaltflächenraster-Designer nicht für eine Vorgangs-ID aktiviert, die gleich oder geringer als 4000 ist. Wenn Sie einen benutzerdefinierten Vorgang erstellen und Parameter vom Schaltflächenraster-Designer übergeben möchten, dann verwenden Sie eine Vorgangs-ID, die höher als 4000 ist.** Klicken Sie auf **Schließen**, um das Dialogfeld zu schließen.
+
 
 ## <a name="configure-the-tasks-tile-on-a-pos-application-home-page"></a>Konfigurieren Sie die Tasks-Kachel auf der Homepage einer POS-Anwendung
 

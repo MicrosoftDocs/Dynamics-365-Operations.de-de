@@ -10,14 +10,15 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: fa4d2d1506546cacf5f9a7ec936f17601c5727d2
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 78ba4236705f1a200d9fe796eb80d0241b0fa537
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335374"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740467"
 ---
 # <a name="delay-tolerance-negative-days"></a>Verzögerungstoleranz (negative Tage)
+<!-- KFM: Split topic into PO and classic -->
 
 [!include [banner](../../includes/banner.md)]
 
@@ -47,7 +48,7 @@ Das System verknüpft die Berechnung der Verzögerungstoleranz mit dem *frühest
 Diese Formel stellt sicher, dass die Produktprogrammplanung keine neuen Vorratsaufträge erstellt, wenn während der Vorlaufzeit des Produkts genügend Vorrat vorhanden ist.
 
 > [!NOTE]
-> Die Berechnung der Verzugstoleranz in der Planungsoptimierung verwendet immer die dynamische Berechnung der negativen Tage aus der integrierten Produktprogrammplanung. Die Einstellung **Dynamische negative Tage verwenden** auf der Seite **Parameter der Produktprogrammplanung** hat keinen Einfluss auf dieses Verhalten.
+> Die Berechnung der Verzugstoleranz in der Planungsoptimierung verwendet immer die dynamische Berechnung der negativen Tage aus dem veralteten Produktprogrammplanungsmodul. Die Einstellung **Dynamische negative Tage verwenden** auf der Seite **Parameter der Produktprogrammplanung** hat keinen Einfluss auf dieses Verhalten.
 
 Wenn der vorhandene Vorrat eine Verzögerung des Bedarfs impliziert, die kleiner oder gleich der berechneten Verzögerungstoleranz ist, koppelt die Planungsoptimierung den vorhandenen Vorrat an den Bedarf. In einigen Fällen ist es besser, den Bedarf zu verzögern, als mit einem Überangebot zu enden.
 

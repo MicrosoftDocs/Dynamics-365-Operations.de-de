@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 807834bf5cd062ed24e5e3f3512d8389717a2d39
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2ef78c73a1c7033735f9586229ff7ba21daaa5ef
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885898"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740903"
 ---
 # <a name="date-and-time-parameters-used-by-planning-optimization"></a>In der Planungsoptimierung verwendete Datums- und Zeitparameter
 
@@ -23,7 +23,7 @@ ms.locfileid: "8885898"
 
 Dieser Artikel enthält Informationen zu den Datums- und Uhrzeitparametern, die Planning Optimization während des Betriebs verwendet.
 
-Während die integrierte Masterplanungs-Engine in allen Berechnungen Transaktionsdaten verwendet, arbeitet die Planungsoptimierung mit Datums- und Uhrzeitwerten, die in Datumsangaben umgewandelt werden. Dieses unterschiedliche Verhalten kann zu Situationen führen, in denen beispielsweise Prognosetransaktionen, die am Tag der Ausführung der Masterplanung um Mitternacht erstellt werden, nicht berücksichtigt werden, da die Planungsoptimierung davon ausgeht, dass sie vor dem aktuellen Datum erstellt wurden.
+Während die veraltete Masterplanungs-Engine in allen Berechnungen Transaktionsdaten verwendet, arbeitet die Planungsoptimierung mit Datums- und Uhrzeitwerten, die in Datumsangaben umgewandelt werden. Dieses unterschiedliche Verhalten kann zu Situationen führen, in denen beispielsweise Prognosetransaktionen, die am Tag der Ausführung der Masterplanung um Mitternacht erstellt werden, nicht berücksichtigt werden, da die Planungsoptimierung davon ausgeht, dass sie vor dem aktuellen Datum erstellt wurden.
 
 ## <a name="parameters-for-issue-and-demand-transactions"></a>Parameter für Ausgabe- und Bedarfstransaktionen
 

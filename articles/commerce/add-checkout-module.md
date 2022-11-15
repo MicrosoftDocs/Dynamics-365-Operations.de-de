@@ -2,7 +2,7 @@
 title: Checkoutmoduls
 description: In diesem Artikel wird beschrieben, wie Sie ein Auscheckenmodul einer Seite hinzufügen und die erforderlichen Eigenschaften festlegen.
 author: anupamar-ms
-ms.date: 05/18/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.custom: ''
 ms.assetid: ''
-ms.openlocfilehash: b6f3aef08f723eff8b172db2ca5c355121e93bdc
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 295b99c7012e35a40af34d454ff7082d4100c74a
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280473"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746224"
 ---
 # <a name="checkout-module"></a>Checkoutmoduls
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 In diesem Artikel wird beschrieben, wie Sie ein Auscheckenmodul einer Seite hinzufügen und die erforderlichen Eigenschaften festlegen.
 
@@ -105,9 +106,11 @@ Um ein Auschecken-Modul einer neuen Seite hinzuzufügen und die erforderlichen E
 1. Hier können Sie eine Vorlage erstellen, die das neue Auschecken-Fragment verwendet.
 1. Hier können Sie eine Auscheckensseite erstellen, die die neue Vorlage verwendet.
 
+> [HINWEIS] Bei Verwendung einer Einzelzahlungsautorisierung wie in [Verbesserte Zahlungen an der Kasse im Geschäft](./dev-itpro/enhanced-sca.md), in dem **Checkout-Informationen** Abschnitt der Checkout-Seite beschrieben, vergewissern Sie sich, dass der Checkout-Abschnittscontainer zuletzt positioniert ist. Dadurch wird sichergestellt, dass alle erforderlichen Informationen von der Kassenseite gesammelt werden, bevor die endgültige Zahlung zur Kasse geht und die Bestellung abgeschlossen wird. 
+
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Einkaufswagenmodul](add-cart-module.md)
+[Einkaufskorbmodul](add-cart-module.md)
 
 [Modul für Einkaufswagensymbol](cart-icon-module.md)
 

@@ -1,6 +1,6 @@
 ---
 title: Intercompany-Planung
-description: Dieser Artikel beschreibt die Intercompany-Planung und erklärt, wie Sie die Intercompany-Planung mit der Planungsoptimierung in Microsoft Dynamics 365 Supply Chain Management konfigurieren.
+description: Dieser Artikel beschreibt die Intercompany-Planung und erklärt, wie Sie die Intercompany-Planung in Microsoft Dynamics 365 Supply Chain Management konfigurieren.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6ef551e1c2c4d90510f967855a5aa61646dc8eab
-ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
+ms.openlocfilehash: 3d1c82aa3810b37b06b9d9157e73588fc1727348
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "9538564"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740031"
 ---
 # <a name="intercompany-planning"></a>Intercompany-Planung
 
@@ -29,7 +29,7 @@ ms.locfileid: "9538564"
 
 Für einige Organisationen hängen logistische Operationen von anderen juristischen Entitäten (Firmen) in der Organisation ab. Diese Vorgänge werden über Intercompany-Verkäufe und -Einkäufe abgewickelt, da jede juristische Entität einen eigenen Kontenplan hat.
 
-Dieser Artikel beschreibt die Intercompany-Planung und erklärt, wie Sie die Intercompany-Planung mit der Planungsoptimierung in Microsoft Dynamics 365 Supply Chain Management konfigurieren.
+Dieser Artikel beschreibt die Intercompany-Planung und erklärt, wie Sie die Intercompany-Planung in Microsoft Dynamics 365 Supply Chain Management konfigurieren.
 
 In diesem Artikel werden die folgenden wichtigen Intercompany-Begriffe verwendet:
 
