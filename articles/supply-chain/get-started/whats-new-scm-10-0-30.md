@@ -2,7 +2,7 @@
 title: Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.30. (November 2022)
 description: Dieser Artikel beschreibt Funktionen, die in Microsoft Dynamics 365 Supply Chain Management 10.0.30 neu oder geändert wurden.
 author: kamaybac
-ms.date: 09/08/2022
+ms.date: 11/07/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-09-08
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 2983c113487934fd0751efcef9129e1f28d8dce8
-ms.sourcegitcommit: 86c0562ce1ecdf7937125c0f5a6771f178b459e7
+ms.openlocfilehash: 20674ebd9d49b077371998f53d2b22c74f888fc6
+ms.sourcegitcommit: 613be2f35e600ae1a1fa7ea2ae30e78984ca398a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "9714797"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748463"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10030-november-2022"></a>Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.30. (November 2022)
 
@@ -31,8 +31,9 @@ In diesem Artikel werden die Funktionen aufgeführt, die in Microsoft Dynamics 3
 
 Die folgende Tabelle listet die Funktionen auf, die in dieser Version enthalten sind. Möglicherweise aktualisieren wir dieses Artikels, um Funktionen einzubeziehen, die zum Build hinzugefügt wurden, nachdem dieser Artikel ursprünglich veröffentlicht wurde.
 
-| Funktionsbereich | Funktion | Mehr erfahren | Aktiviert von   |
+| Funktionsbereich | Funktion | Mehr erfahren | Aktiviert von |
 |---|---|---|---|
+| Bestand und Logistik | [Verfolgen Sie weich reservierte Mengen innerhalb von Allokationen](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/track-soft-reserved-quantities-within-allocations) | [Inventory Visibility Bestandszuweisung](../inventory/inventory-visibility-allocation.md) |  Aktiviert durch [Servicekonfiguration](../inventory/inventory-visibility-configuration.md) |
 | Fertigung | [Überwachen Sie Geräte mit Sensor Data Intelligence](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/monitor-equipment-sensor-data-intelligence) | [Sensor Data Intelligence-Startseite](../sensor-data-intelligence/sdi-home-page.md) | Funktionsverwaltung:<br>*(Vorschau) Sensor Data Intelligence* |
 | Lagerortverwaltung | [Umleitungen auf mehreren Ebenen für die mobile Warehouse Management-App](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/multi-level-detours-warehouse-management-mobile-app) | [Umleitungen für Schritte in den Menüpunkten des Mobilgeräts konfigurieren](../warehousing/warehouse-app-detours.md) | Funktionsverwaltung:<br>*Umleitungen auf mehreren Ebenen für die mobile Warehouse Management-App* |
 

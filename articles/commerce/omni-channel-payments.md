@@ -2,7 +2,7 @@
 title: Übersicht über Omnichannel-Zahlungen
 description: Dieser Artikel bietet einen Überblick über die Omni-Kanalzahlungen in Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 09/17/2020
+ms.date: 11/04/2020
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: d850e532a764d22bc926f5649f4ad2907b49d1a0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a5cc0725b383ca6657bd19b9dd25b0c60b364467
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881708"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746124"
 ---
 # <a name="omni-channel-payments-overview"></a>Übersicht über Omnichannel-Zahlungen
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Dieser Artikel bietet einen Überblick über die Omni-Kanalzahlungen in Dynamics 365 Commerce. Er umfasst eine umfangreiche Liste von unterstützten Szenarien, Informationen über Funktionalität und Problembehandlung und Beschreibungen einige typischer Probleme.
 
@@ -169,9 +170,9 @@ Um das Szenario auszuführen, führen Sie folgende Schritte aus:
 6. In der Suchenleiste geben Sie **Seattle** ein und wählen anschließend den Shop **Seattle** für die Abholung aus. 
 7. Wählen Sie **OK**, um das aktuelle Datum als Datum der Abholung zu akzeptieren.
 9. Wählen Sie **Mit Karte bezahlen** aus, um die Zahlung auszulösen.
-10. Zahlungsmittel Kartenzahlung für den Betrag, der für die Anzahlung fällig ist. 
+10. Zahlungsmittel Kartenzahlung für den Betrag, der für die Anzahlung fällig ist.
 11. Beenden Sie die Einzahlung am Zahlungsterminal. 
-12. Nachdem die Summe bezahlt ist, wählen Sie die Option, die selbe Karte für Erfüllung nutzen und warten Sie, bis der Auftrag abgeschlossen ist. 
+12. Nachdem die Summe bezahlt ist, wählen Sie die Option, die selbe Karte für Erfüllung nutzen und warten Sie, bis der Auftrag abgeschlossen ist. Wenn 100 % der Kaution bezahlt wurden (ab Schritt 10 oben), wird das Geld sofort gegen die Karte verbucht und bei der Rechnungsstellung ist kein Autorisierungs-Token verfügbar, da das Geld bereits verbucht und als bezahlt nachverfolgt wurde.
 13. Starten Sie den POS für den Seattle-Shop.
 14. Im POS auf der Willkommensseite wählen Sie den Vorgang **Aufträge zur Abholung** aus, um die Aufträge zur Abholung im Shop anzuzeigen. 
 15. Wählen Sie eine oder mehrere Zeilen aus dem Auftrag auf, der im Bezugsschaufenster erstellt wurde, und wählen Sie dann **Abholen**.
@@ -198,7 +199,7 @@ Um das Szenario auszuführen, führen Sie folgende Schritte aus:
 8. Wählen Sie **Mit Karte bezahlen** aus, um die Zahlung auszulösen.
 9. Zahlungsmittel Kartenzahlung für den Betrag, der für die Anzahlung fällig ist. 
 10. Beenden Sie die Einzahlung am Zahlungsterminal. 
-11. Nachdem die Summe bezahlt ist, wählen Sie die Option, die selbe Karte für Erfüllung nutzen und warten Sie, bis der Auftrag abgeschlossen ist.
+11. Nachdem die Summe bezahlt ist, wählen Sie die Option, die selbe Karte für Erfüllung nutzen und warten Sie, bis der Auftrag abgeschlossen ist. Wenn 100 % der Kaution bezahlt wurden (ab Schritt 9 oben), wird das Geld sofort gegen die Karte verbucht und bei der Rechnungsstellung ist kein Autorisierungs-Token verfügbar, da das Geld bereits verbucht und als bezahlt nachverfolgt wurde.
 
 Wenn der Auftrag im Back Office entnommen, verpackt und fakturiert wurde, werden die Zahlungsdetails, die am POS bereitgestellt werden verwendet, um die Ressourcen für die Waren zu erfassen, die an den Debitor gesendet werden. 
 

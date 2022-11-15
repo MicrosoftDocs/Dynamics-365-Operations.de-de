@@ -1,6 +1,6 @@
 ---
 title: Mit negativen Vorgabemengen planen
-description: In diesem Artikel wird erläutert, wie mit dem Negativ-Bestand umgegangen wird, wenn Sie die Planungsoptimierung einsetzen.
+description: In diesem Artikel wird erläutert, wie mit negativen Lagerbeständen umgegangen wird.
 author: t-benebo
 ms.date: 07/22/2021
 ms.topic: article
@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 04006bb12142be69c84bc8085dd82fc99280e90b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b4fc8b37fd800e3b4652513f150f9806bf1d5d67
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856134"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741121"
 ---
-# <a name="planning-with-negative-on-hand-quantities"></a>Planung mit negativen Vorgabemengen
+# <a name="planning-with-negative-on-hand-quantities"></a>Mit negativen Vorgabemengen planen
 
 [!include [banner](../../includes/banner.md)]
 
 Wenn das System eine negative aggregierte Bestandsmenge anzeigt, behandelt die Planungsmaschine die Menge als 0 (Null), um ein Überangebot zu vermeiden. Im Folgenden wird erläutert, wie diese Funktionalität funktioniert:
 
-1. Die Planungsoptimierung aggregiert die Bestandsmengen auf der untersten Ebene der Deckungsdimensionen. (Wenn z.B. *Lagerplatz* keine Deckungsdimension ist, aggregiert die Planungsoptimierung die verfügbaren Mengen auf der Ebene *Lager*).
+1. Die Masterplanung aggregiert die Bestandsmengen auf der untersten Ebene der Deckungsdimensionen. (Wenn z.B. *Lagerplatz* keine Deckungsdimension ist, aggregiert die Masterplanung die verfügbaren Mengen auf der Ebene *Lager*).
 1. Wenn die aggregierte Bestandsmenge auf der untersten Ebene der Deckungsdimensionen negativ ist, geht das System davon aus, dass die Bestandsmenge tatsächlich 0 (Null) ist.
 
 > [!IMPORTANT]
@@ -88,14 +88,6 @@ Das System ist wie folgt konfiguriert:
 - Ein Auftrag für eine Menge von *10* Stk. des Produkts *FG* liegt vor.
 - Die Auftragsmenge wird physisch für den vorhandenen Lagerbestand reserviert.
 
-Sie passen dann die Menge des Produkts *FG* an, sodass der verfügbare Bestand 5 wird. Da der verfügbare Produktbestand 5 beträgt, wird die Auftragsmenge jetzt für eine Menge reserviert, die nicht verfügbar ist (es wäre ähnlich, wenn der verfügbare Bestand 0 wäre, in diesem Fall würde der Auftrag gegen negativen Bestand reserviert werden). Wenn Sie jetzt die Produktprogrammplanung ausführen, wird ein Auftragsvorschlag der Menge 5 für *FG* zur Erledigung des Auftrags erstellt, da die Planungsoptimierung immer vorhandenen Vorrat verwendet oder einen neuen Auftragsvorschlag zur Erledigung der physischen Reservierung erstellt.
-
-## <a name="related-resources"></a>Zugehörige Ressourcen
-
-- [Übersicht zur Planungsoptimierung](planning-optimization-overview.md)
-- [Erste Schritte mit der Planungsoptimierung](get-started.md)
-- [Planungsoptimierung Fit-Analyse](planning-optimization-fit-analysis.md)
-- [Planhistorie und Planungsprotokolle anzeigen](plan-history-logs.md)
-- [Abbrechen eines Planungsauftrags](cancel-planning-job.md)
+Sie passen dann die Menge des Produkts *FG* an, sodass der verfügbare Bestand 5 wird. Da der verfügbare Produktbestand 5 beträgt, wird die Auftragsmenge jetzt für eine Menge reserviert, die nicht verfügbar ist (es wäre ähnlich, wenn der verfügbare Bestand 0 wäre, in diesem Fall würde der Auftrag gegen negativen Bestand reserviert werden). Wenn Sie jetzt die Produktprogrammplanung ausführen, wird ein Auftragsvorschlag der Menge 5 für *FG* zur Erledigung des Auftrags erstellt, da die Masterplanung immer vorhandenen Vorrat verwendet oder einen neuen Auftragsvorschlag zur Erledigung der physischen Reservierung erstellt.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

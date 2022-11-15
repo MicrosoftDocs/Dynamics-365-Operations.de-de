@@ -1,6 +1,6 @@
 ---
 title: Produktprogrammplanung mit Bedarfsprognosen
-description: In diesem Artikel wird erklärt, wie Sie Bedarfsplanungen bei der Produktprogrammplanung mit der Planungsoptimierung einbeziehen können.
+description: In diesem Artikel wird erklärt, wie Sie Bedarfsplanungen bei der Produktprogrammplanung einbeziehen können.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 63221b5270416cad9cdfb586c697d7700f3b561b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 79a25d6fc5c809947b5b92a32cc00c9a3cc73202
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878989"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739782"
 ---
-# <a name="master-planning-with-demand-forecasts"></a>Produktprogrammplanung mit Bedarfsprognosen
+# <a name="master-planning-with-demand-forecasts"></a>Produktprogrammplanung mit Bedarfsplanungen
 
 [!include [banner](../../includes/banner.md)]
 
-Sie können eine Bedarfsplanung zusammen mit der Planungsoptimierung verwenden, um den erwarteten Bedarf in Ihrer Produktprogrammplanung zu berücksichtigen. Sie können eine Bedarfsprognose manuell erstellen, importieren oder mit Hilfe der Bedarfsprognosefunktion in Microsoft Dynamics 365 Supply Chain Management generieren. Weitere Informationen zur Bedarfsplanung finden Sie unter [Übersicht zur Bedarfsprognose](../introduction-demand-forecasting.md).
+Sie können eine Bedarfsplanung verwenden, um den erwarteten Bedarf in Ihrer Produktprogrammplanung zu berücksichtigen. Sie können eine Bedarfsprognose manuell erstellen, importieren oder mit Hilfe der Bedarfsprognosefunktion in Microsoft Dynamics 365 Supply Chain Management generieren. Weitere Informationen zur Bedarfsplanung finden Sie unter [Übersicht zur Bedarfsprognose](../introduction-demand-forecasting.md).
 
 > [!NOTE]
 > Eine separate Prognoseplanung wird bei der Planungsoptimierung nicht unterstützt. Daher hat die Einstellung **Aktueller Prognoseplan** auf der Seite **Masterplanungsparameter** keine Wirkung, wenn Sie die Planungsoptimierung verwenden.
@@ -50,7 +50,7 @@ Um einen Masterplan so zu konfigurieren, dass er eine Bedarfsplanung enthält, g
     - **Prognosezeitraum** - Wenn Sie die Option **Prognoseplan** auf *Ja* festlegen, geben Sie die Anzahl der Tage (ab dem heutigen Datum) an, für die die Bedarfsplanung gelten soll.
 
     > [!IMPORTANT]
-    > Die Einstellung **Prognoseplan** wird bei der Planungsoptimierung noch nicht unterstützt.
+    > Die Einstellung **Prognoseplan** wird bei der Planungsoptimierung nicht unterstützt.
 
 ## <a name="set-up-a-coverage-group-to-include-a-demand-forecast"></a>Festlegen einer Abdeckungsgruppe zur Einbeziehung einer Bedarfsplanung
 
