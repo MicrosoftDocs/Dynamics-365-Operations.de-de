@@ -1,6 +1,6 @@
 ---
-title: Erste Schritte mit der Planungsoptimierung
-description: In diesem Artikel wird erläutert, wie Sie mit der Verwendung der Funktionalität der Planungsoptimierung beginnen.
+title: Erste Schritte mit der Produktprogrammplanung
+description: In diesem Artikel wird erläutert, wie Sie mit der Verwendung der Funktionalität der Produktprogrammplanung in Dynamics 365 Supply Chain Management beginnen.
 author: t-benebo
 ms.date: 05/20/2021
 ms.topic: article
@@ -16,27 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 629a84135434ad79f8397649ee9a4a62e49751d9
-ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
+ms.openlocfilehash: 958de3f9ae6ead6cb6914bd3b7a4560e768013ab
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2022
-ms.locfileid: "9295927"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740328"
 ---
-# <a name="get-started-with-planning-optimization"></a>Erste Schritte mit der Planungsoptimierung
+# <a name="get-started-with-master-planning"></a>Erste Schritte mit der Produktprogrammplanung
 
 [!include [banner](../../includes/banner.md)]
 
-Wie [zuvor angekündigt](../../get-started/removed-deprecated-features-scm-updates.md#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios), soll die Planungsoptimierung die vorhandene integrierte Produktprogrammplanungs-Engine ersetzen.
-
-Wenn Sie derzeit die integrierte Produktprogrammplanungs-Engine verwenden, sollten Sie jetzt mit der Planung Ihrer Migration zur Planungsoptimierung beginnen. Es ist wichtig, sofort anzufangen, da Ihr Betrieb ansonsten beeinträchtigt werden könnte, wenn die Einstellung veraltet ist (obwohl die Erzwingung derzeit nicht geplant ist). Wir empfehlen Ihnen dringend, die Migration abzuschließen, sobald die Planungsoptimierung die von Ihnen benötigten Funktionen unterstützt, damit Sie die Vorteile der vielen Leistungsverbesserungen und anderen neuen Funktionen nutzen können, die der neue Dienst bietet.
-
-Die Funktionalität der Planungsoptimierung unterstützt derzeit nicht alle Funktionen, die in der Planungs-Engine verfügbar sind, die im Supply Chain Management integriert ist. Daher ist es wichtig, dass Sie prüfen, ob der derzeit in der Planungsoptimierung verfügbare Funktionsumfang Ihren Anforderungen entspricht. Die Planungsoptimierungsfunktion ist derzeit in Dynamics Lifecycle Services (LCS) nicht standardmäßig aktiviert, sodass Sie die Möglichkeit haben, Ihre Auswertung durchzuführen, bevor die Funktion aktiviert wird.
-
-> [!NOTE]
-> Sie müssen eine Ausnahme von der Migration zur Planungsoptimierung anfordern, wenn Ihr Produktprogrammplanungsprozesses keine Produktion enthält (Produktprogrammplanung hat geplante Produktionsaufträge generiert) und Sie die integrierte Produktprogrammplanungs-Engine über Version 10.0.15 hinaus benötigen. Ab Version 10.0.16 wird in Umgebungen ein Fehler angezeigt, wenn die integrierte Produktprogrammplanung ausgeführt wird, ohne dass geplante Produktionsaufträge generiert werden. Die Planungsoptimierung sollte für alle neuen Bereitstellungen verwendet werden, die während der Produktprogrammplanung keine geplanten Produktionsaufträge generieren. Besitzer vorhandener Umgebungen, in denen die integrierte Produktprogrammplanungs-Engine ohne Generierung geplanter Produktionsaufträge ausgeführt wird, erhalten eine E-Mail mit Details zum Ausnahmevorgang. Wir empfehlen, dass Sie mit einem Partner zusammenarbeiten, um die Migration zur Planungsoptimierung zu bewerten und zu planen.
-
-Bevor Sie die Planungsoptimierung einschalten, empfehlen wir Ihnen dringend, die Ergebnisse der Anpassungsanalyse der Planungsoptimierung auszuwerten. Weitere Informationen finden Sie unter [Planungsoptimierung Fit-Analyse](planning-optimization-fit-analysis.md).
+Die Hauptplanung in Supply Chain Management wird von einem externen Dienst namens Planning Optimization Add-In für Dynamics 365 Supply Chain Management bereitgestellt wird. In diesem Thema wird erklärt, wie Sie diesen Service erhalten und einrichten.
 
 ## <a name="availability"></a>Verfügbarkeit
 
@@ -108,31 +99,15 @@ Der Verbindungsstatus zeigt den aktuellen Status der Verbindung zwischen Supply 
 Die Einstellung der Option **Verwendungsplanoptimierung** bestimmt, welche Planungs-Engine für die Masterplanung verwendet wird:
 
 - **Ja** - Die Planungsoptimierung wird für die Masterplanung verwendet.
-- **Nein** - Die eingebaute Supply Chain Management Planning Engine wird für die Masterplanung verwendet.
+- **Nein** - Das veraltete Produktplanungsmodul wird für die Masterplanung verwendet.
 
-Diese Einstellung gilt für alle juristischen Entitäten (Firmen). Es ist nicht möglich, die Planungsoptimierung in einigen juristischen Entitäten und die integrierte Masterplanung in anderen juristischen Entitäten zu verwenden.
+Diese Einstellung gilt für alle juristischen Entitäten (Firmen). Es ist nicht möglich, die Planungsoptimierung in einigen juristischen Entitäten und das veraltete Masterplanungsmodul in anderen juristischen Entitäten zu verwenden.
 
 > [!NOTE]
-> Wenn bestehende Planungs-Batchjobs, die für die eingebaute Supply Chain Management Planungs-Engine erstellt wurden, ausgelöst werden, während die Option **Verwendungsplanoptimierung** auf **Ja** gesetzt ist, werden diese Jobs fehlschlagen.
+> Wenn bestehende Planungs-Batchjobs, die für die veraltete Masterplanungs-Engine erstellt wurden, ausgelöst werden, während die Option **Verwendungsplanoptimierung** auf **Ja** gesetzt ist, werden diese Jobs fehlschlagen.
 
 ### <a name="integration-with-the-setup"></a>Integration mit dem Setup
 
 Wenn die Planungsoptimierung eingeschaltet ist, wird die Produktprogrammplanung mit dem Planungsoptimierungs-Add-In durchgeführt. In diesem Fall sind die Ergebnisse und Merkmale der Masterplanung betroffen.
 
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
-
-[Allgemeine Geschäftsbedingungen für die Vorschau](https://go.microsoft.com/fwlink/?linkid=2015274)
-
-[Übersicht zur Planungsoptimierung](planning-optimization-overview.md)
-
-[Planungsoptimierung Fit-Analyse](planning-optimization-fit-analysis.md)
-
-[Planhistorie und Planungsprotokolle anzeigen](plan-history-logs.md)
-
-[Filter auf einen Plan anwenden](plan-filters.md)
-
-[Abbrechen eines Planungsauftrags](cancel-planning-job.md)
-
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-07-27
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 9044acb472548a797ed387b08ca6892459785793
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d376c2f4d8514a4e6122e2e94455d57a39d2babf
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220552"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740193"
 ---
 # <a name="make-to-order-supply-automation"></a>Automatisierung der Lieferungen zur Auftragsfertigung
 
@@ -32,12 +32,6 @@ Die Funktion *Auftragsautomatisierung der Lieferung* fügt Microsoft Dynamics 36
 - Erweitern Sie den Intercompany-Informationenfluss. Bestellungen werden aktualisiert, sodass sie Felder für Lieferart, Lieferbedingungen und externe Artikelnummer enthalten. Diese Änderung stellt sicher, dass detaillierte Bedarfsinformationen an das liefernde Unternehmen fließen können.
 
 In diesem Artikel wird beschrieben, wie die einzelnen Erweiterungen eingerichtet und verwendet werden.
-
-> [!NOTE]
-> Alle in diesem Artikel beschriebenen Erweiterungen gelten für Systeme, die die integrierte Produktprogrammplanung verwenden. Die folgenden zwei Erweiterungen werden auch vom Planungsoptimierungs-Add-In für Microsoft Dynamics 365 Supply Chain Management unterstützt:
->
-> - Verzögerungstoleranz bei Masterplänen
-> - Kontrolle der Bedarfsverursachersequenz, die während der Hauptplanung verwendet wird
 
 ## <a name="turn-on-the-make-to-order-supply-automation-feature"></a>Aktivieren Sie die Funktion zur Auftragsautomatisierung
 
@@ -73,7 +67,7 @@ Zum Öffnen Seite **Kapazitätsauslastung** gehen Sie wie folgt vor, um die verf
 
 Diese Optionen sind auch im Feld **Kennzeichnung aktualisieren** auf der **Standard-Update** Registerkarte der Seite **Masterplanungsparameter** verfügbar, auf der Sie die Standardauswahl für das Dialogfeld **Umwandeln** definieren.
 
-Weitere Informationen finden Sie unter [Bestandsmarkierung mit Planungsoptimierung](planning-optimization/marking.md).
+Weitere Informationen finden Sie unter [Bestandsmarkierung](planning-optimization/marking.md).
 
 ## <a name="set-delay-tolerance-negative-days-at-the-master-plan-level"></a>Legen Sie die Verzögerungstoleranz (negative Tage) auf Hauptplanebene fest
 

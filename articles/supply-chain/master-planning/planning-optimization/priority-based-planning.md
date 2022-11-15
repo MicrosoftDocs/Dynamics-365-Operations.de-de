@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e17e45f1d4e9f7c62317eac6f3ea1be84017b562
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 1a952fe5734f01325842a8a130b9322eadc67951
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335284"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740591"
 ---
 # <a name="priority-based-planning"></a>Prioritätsbasierte Planung
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Artikel wird die prioritätsbasierte Planungsfunktion von Microsoft Dynamics 365 Supply Chain Management beschrieben. Die Funktion fügt Unterstützung für bedarfsgesteuerte Planung hinzu, die eine Stufe von [Demand Driven Material Requirements Planning (DDMRP)](ddmrp-overview.md) ist. Die prioritätsbasierte Planung ermöglicht es der Planungsoptimierung, Bestellvorschläge zu generieren, die von Planungsprioritäten anstelle von Bedarfsterminen gesteuert werden.
+In diesem Artikel wird die prioritätsbasierte Planungsfunktion von Microsoft Dynamics 365 Supply Chain Management beschrieben. Die Funktion fügt Unterstützung für bedarfsgesteuerte Planung hinzu, die eine Stufe von [Demand Driven Material Requirements Planning (DDMRP)](ddmrp-overview.md) ist. Die prioritätsbasierte Planung ermöglicht es dem System, Bestellvorschläge zu generieren, die von Planungsprioritäten anstelle von Bedarfsterminen gesteuert werden.
 
 Mit der prioritätsbasierten Planung können Sie Wiederbeschaffungsaufträge priorisieren, um sicherzustellen, dass dringender Bedarf gegenüber weniger wichtigem Bedarf priorisiert wird. Zum Beispiel wird ein Wiederbeschaffungsauftrag für Fehlbestände gegenüber einem Wiederbeschaffungsauftrag für Standardnachschub priorisiert. Das System kann größere Aufträge automatisch in separate kleinere Aufträge aufteilen, wobei Auftragspositionen nach Priorität gruppiert sind. Es kann dann alle Aufträge mit hoher Priorität zuerst bearbeiten.
 
@@ -37,11 +37,11 @@ Bevor Sie diese Funktion nutzen können, muss sie für Ihr System aktiviert werd
 
 ## <a name="where-and-how-planning-priorities-are-assigned"></a>Wo und wie Planungsprioritäten vergeben werden
 
-*Planungspriorität*-Informationen über Angebot und Nachfrage sind das Rückgrat der prioritätsbasierten Planung. Die Planungspriorität definiert die Bedeutung einer Bedarfs- oder Angebotslinie. Die Planungsoptimierung verwendet sie, wenn das Feld **Dispositionsverfahren** auf *Priorität* gesetzt ist.
+*Planungspriorität*-Informationen über Angebot und Nachfrage sind das Rückgrat der prioritätsbasierten Planung. Die Planungspriorität definiert die Bedeutung einer Bedarfs- oder Angebotslinie. Die Produktprogrammplanung verwendet sie, wenn das Feld **Dispositionsverfahren** auf *Priorität* gesetzt ist.
 
 Die Planungspriorität ist in der Regel eine Zahl zwischen 0 (null) und 100, wobei 0 die höchste Bedeutung darstellt. Es wird gezeigt und eingestellt im Feld **Planungspriorität**. Dieses Feld finden Sie auf den folgenden Seiten: **Bedarfsplanungspositionen**, **Auftragsdetails**, **Bestellungsdetails**, **Umlagerungsauftragsdetails** und **Details zum Bestellvorschlag**.
 
-Wenn das Feld **Dispositionsverfahren** für die entsprechende Position oder Dispositionssteuerungsgruppe auf *Priorität* gesetzt ist, gleicht die Planungsoptimierung Angebot und Nachfrage durch einen bedarfsorientierten Ansatz aus, indem sie die Planungspriorität berechnet und für jedes freigegebene Produkt die Werte berücksichtigt, die für die Felder **Minimum**, **Neubestellungspunkt** und **Maximum** auf der Seite **Artikeldeckung** festgelegt sind.
+Wenn das Feld **Dispositionsverfahren** für die entsprechende Position oder Dispositionssteuerungsgruppe auf *Priorität* gesetzt ist, gleicht die Masterplanung Angebot und Nachfrage durch einen bedarfsorientierten Ansatz aus, indem sie die Planungspriorität berechnet und für jedes freigegebene Produkt die Werte berücksichtigt, die für die Felder **Minimum**, **Neubestellungspunkt** und **Maximum** auf der Seite **Artikeldeckung** festgelegt sind.
 
 > [!NOTE]
 > Der *Priorität*-Wert ist für das **Dispositionsverfahren**-Feld nur verfügbar, wenn die Planungsoptimierung aktiviert ist.

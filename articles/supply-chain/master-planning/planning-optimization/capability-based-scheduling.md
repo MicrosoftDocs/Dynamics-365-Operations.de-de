@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 4a3c8236183b81ad015b43d7dbf869c177eafd44
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 176f40ad8cd1aa1831bbe50c0ebd91ec0cc3bc89
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335404"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739897"
 ---
 # <a name="scheduling-with-resource-selection-based-on-capability"></a>Planung mit Ressourcenauswahl basierend auf Fähigkeiten
 
@@ -43,7 +43,7 @@ Um einer Betriebsressource Fähigkeiten zuzuweisen, verwenden Sie das Inforegist
 - **Wirksam** – Geben Sie das erste Datum an, an dem die Ressourcen- oder Fähigkeitszuordnung wirksam wird. Während der Planung verwendet das System keine Ressource oder Fähigkeit mit einer abgelaufenen Fähigkeitszuweisung, selbst wenn diese Ressource ansonsten die Anforderungen erfüllt.
 - **Ablauf** – Geben Sie das letzte Datum an, an dem die Ressourcen- oder Fähigkeitszuordnung gültig ist. Während der Planung verwendet das System keine Ressource oder Fähigkeit mit einer abgelaufenen Fähigkeitszuweisung, selbst wenn diese Ressource ansonsten die Anforderungen erfüllt.
 - **Niveau** – Geben Sie den Kenntnisstand an, den die Ressource für die Fähigkeit haben muss. Wenn Sie dann den Wert **Mindestanforderung** für die Ressourcen- oder Fähigkeitenanforderung angeben, berücksichtigt das Planungsmodel den Kenntnisstand bei der Ressourcenauswahl. Das System wählt nur Ressourcen aus, die die erforderliche Fähigkeit auf einer Ebene haben, die der Ebene entsprechen oder die minimale Ebene überschreitet, die für die Ressourcenanforderung angegeben ist.
-- **Priorität** – Dieses Feld wird von der Planungsoptimierung noch nicht unterstützt. Wenn Sie jedoch das integrierte Planungsmodul verwenden, können Sie das Feld **Priorität** in der Ressourcen- oder Fähigkeitszuweisung nutzen, um die Ressourcenpriorität zu definieren. Wenn *Priorität* dann im Feld **Primäre Ressourcen-Auswahl** auf der Seite **Planungsparameter** aktiviert ist, wählt das System zunächst die Ressource aus, die die höchste Priorität (d. h. der niedrigste numerischen Wert im Feld **Priorität**) bei der Planung hat.
+- **Priorität** – Dieses Feld wird von der Planungsoptimierung noch nicht unterstützt. Wenn Sie jedoch das veraltete Masterplanungsmodul verwenden, können Sie das Feld **Priorität** in der Ressourcen- oder Fähigkeitszuweisung nutzen, um die Ressourcenpriorität zu definieren. Wenn *Priorität* dann im Feld **Primäre Ressourcen-Auswahl** auf der Seite **Planungsparameter** aktiviert ist, wählt das System zunächst die Ressource aus, die die höchste Priorität (d. h. der niedrigste numerischen Wert im Feld **Priorität**) bei der Planung hat.
 
 ## <a name="example"></a>Beispiel
 

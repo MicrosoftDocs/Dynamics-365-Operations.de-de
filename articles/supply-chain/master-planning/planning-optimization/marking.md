@@ -1,6 +1,6 @@
 ---
-title: Bestandsmarkierung mit Planungsoptimierung
-description: Dieser Artikel enthält Informationen über die Optionen, die für die Markierung von Beständen in umgewandelten Aufträgen zur Verfügung stehen, wenn Sie die Planungsoptimierung verwenden.
+title: Lagermarkierung
+description: Dieser Artikel enthält Informationen über die Optionen, die für die Markierung von Beständen in umgewandelten Aufträgen zur Verfügung stehen.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 55c83cdbc144f194fe80e8281a35ec7ff43d551e
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: c86db6a670d7d0f7bfe74b7466b9bce766e4a08d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219936"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740575"
 ---
-# <a name="inventory-marking-with-planning-optimization"></a>Bestandsmarkierung mit Planungsoptimierung
+# <a name="inventory-marking"></a>Lagermarkierung
 
 [!include [banner](../../includes/banner.md)]
 
-Dieser Artikel enthält Informationen über die Optionen, die für die Markierung von Beständen in umgewandelten Aufträgen zur Verfügung stehen, wenn Sie die Planungsoptimierung verwenden.
+Dieser Artikel enthält Informationen über die Optionen, die für die Markierung von Beständen in umgewandelten Aufträgen zur Verfügung stehen.
 
 *Markierung* wird verwendet, um Angebot und Nachfrage zu verknüpfen. Sie ähnelt dem *Bedarfsverursacher*, der angibt, wie die Produktprogrammplanung die Nachfrage zu decken gedenkt. Aus Sicht der Planung besteht der Hauptunterschied darin, dass die Markierung dauerhafter ist als der Bedarfsverursacher.
 

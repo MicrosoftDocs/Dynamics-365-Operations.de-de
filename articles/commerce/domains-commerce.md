@@ -2,19 +2,19 @@
 title: Domänen in Dynamics 365 Commerce
 description: In diesem Artikel wird beschrieben, wie Domänen in Microsoft Dynamics 365 Commerce behandelt werden.
 author: BrianShook
-ms.date: 09/09/2022
+ms.date: 11/08/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: BrShoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 132aec92d2b3d2765dd6bd261fb4182f8aae679a
-ms.sourcegitcommit: dbb997f252377b8884674edd95e66caf8d817816
+ms.openlocfilehash: f1a2de7984aad7d291b8a4dc68f5690d57ebe6cc
+ms.sourcegitcommit: 2b654e60e2553a5835ab5790db4ccfa58828fae7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "9465192"
+ms.lasthandoff: 11/08/2022
+ms.locfileid: "9750679"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domänen in Dynamics 365 Commerce
 
@@ -95,6 +95,12 @@ Beispielsweise wurde die Umgebung „xyz“ bereitgestellt, und im Site Builder 
 
 Wenn in einer Umgebung mit mehreren bereitgestellten Domänen keine Domänenabfragezeichenfolge angegeben wird, verwendet Commerce die erste von Ihnen bereitgestellte Domäne. Wenn beispielsweise der Pfad „fabrikam“ beim Einrichten der Website zuerst angegeben wurde, könnte die URL `https://xyz.dynamics365commerce.ms` verwendet werden, um auf die veröffentlichte Website-Inhaltsseite für `www.fabrikam.com` zuzugreifen.
 
+Sie können auch benutzerdefinierte Domänen hinzufügen. Gehen Sie dazu auf der Umgebungs-Commerce-Verwaltungsseite für das Projekt unter der Unterüberschrift **E-Commerce** und wählen Sie **+ benutzerdefinierte Domäne hinzufügen**. Der Schieberegler zeigt die vorhandenen benutzerdefinierten Domänen an und bietet die Option, eine neue benutzerdefinierte Domäne hinzuzufügen.
+
+## <a name="update-which-commerce-scale-unit-is-used"></a>Aktualisieren Sie, welche Commerce Scale Unit verwendet wird
+
+Die von Commerce verwendete Commerce Scale Unit (CSU) wird normalerweise ausgewählt, wenn eine Umgebung anfänglich erstellt wird. Mit Commerce können Sie ändern, welche CSU-Instanz Ihre Umgebung verwendet, wodurch Sie Ihre Architektur durch Self-Service-Funktionalität besser warten können und die Notwendigkeit, sich an den Support zu wenden, reduziert wird. Um Ihre CSU-Instanz zu aktualisieren, gehen Sie zur Commerce-Verwaltungsseite Ihrer Umgebung für das Projekt und wählen Sie dann **Skalierungseinheit aktualisieren** aus. Verwenden Sie den Schieberegler **Neue Commerce Scale Unit**, um eine neue CSU-Instanz aus der Liste der für Ihre Umgebung verfügbaren CSUs auszuwählen.
+
 ## <a name="traffic-forwarding-in-production"></a>Datenverkehrsweiterleitung in der Produktion
 
 Sie können mehrere Domänen mithilfe von Domänenabfragezeichenfolgenparametern auf dem Endpunkt commerce.dynamics.com selbst simulieren. Wenn Sie jedoch in der Produktion live gehen möchten, müssen Sie den Datenverkehr für Ihre benutzerdefinierte Domäne an den `<e-commerce tenant name>.dynamics365commerce.ms`-Endpunkt weiterleiten.
@@ -103,9 +109,9 @@ Der `<e-commerce tenant name>.dynamics365commerce.ms`-Endpunkt unterstützt kein
 
 Um benutzerdefinierte Domänen mithilfe eines Front-Door-Dienstes oder eines CDN einzurichten, haben Sie zwei Möglichkeiten:
 
-- Richten Sie einen Front-Door-Dienst wie Azure Front Door ein, um den Front-End-Verkehr zu verarbeiten und eine Verbindung mit Ihrer Commerce-Umgebung herzustellen. Dies bietet eine bessere Kontrolle über die Domänen- und Zertifikatverwaltung sowie detailliertere Sicherheitsrichtlinien.
+- Richten Sie einen Front-Door-Dienst wie Azure Front Door ein, um den Front-End-Datenverkehr zu verarbeiten und eine Verbindung zu Ihrer Commerce-Umgebung herzustellen, was eine bessere Kontrolle über die Domänen- und Zertifikatsverwaltung und detailliertere Sicherheitsrichtlinien bietet.
 
-- Verwenden Sie die von Commerce bereitgestellte Azure Front Door-Instanz. Dies erfordert eine Abstimmung mit dem Dynamics 365 Commerce-Team für die Domänenüberprüfung und den Erhalt von SSL-Zertifikaten für Ihre Produktionsdomäne.
+- Verwenden Sie die von Commerce bereitgestellte Azure Front Door-Instanz, die eine Abstimmung mit dem Dynamics 365 Commerce-Team für die Domänenüberprüfung und den Erhalt von SSL-Zertifikaten für Ihre Produktionsdomäne erfordert.
 
 > [!NOTE]
 > Wenn Sie einen externen CDN- oder Front-Door-Dienst verwenden, stellen Sie sicher, dass die Anforderung mit dem von Commerce bereitgestellten Hostnamen, aber mit dem Header X-Forwarded-Host (XFH) \<custom-domain\> auf der Commerce-Plattform landet. Wenn Ihr Commerce-Endpunkt beispielsweise `xyz.dynamics365commerce.ms` und die benutzerdefinierte Domäne `www.fabrikam.com` lautet, sollte der Hostheader der weitergeleiteten Anforderung `xyz.dynamics365commerce.ms` lauten und der XFH-Header sollte `www.fabrikam.com` sein.
@@ -115,7 +121,7 @@ Informationen zum direkten Einrichten eines CDN-Dienstes finden Sie unter [Unter
 Um die von Commerce bereitgestellte Azure Front Door-Instanz zu verwenden, müssen Sie eine Serviceanforderung für die Unterstützung bei der CDN-Einrichtung durch das Commerce-Onboarding-Team erstellen. 
 
 - Sie müssen Ihren Firmennamen, die Produktionsdomäne, die Umgebungs-ID und den Namen des Produktions-E-Commerce-Mandanten angeben. 
-- Sie müssen bestätigen, ob es sich um eine vorhandene Domäne (die für eine derzeit aktive Website verwendet wird) oder eine neue Domäne handelt. 
+- Sie müssen bestätigen, ob diese Serviceanforderung für eine vorhandene Domäne (die für eine derzeit aktive Website verwendet wird) oder eine neue Domäne gedacht ist. 
 - Für eine neue Domäne können die Domänenüberprüfung und das SSL-Zertifikat in einem einzigen Schritt durchgeführt werden. 
 - Für eine Domäne, die eine vorhandene Website bedient, ist ein mehrstufiger Prozess erforderlich, um die Domänenüberprüfung und das SSL-Zertifikat einzurichten. Für diesen Prozess gilt eine 7-Tage-Service-Level-Agreement (SLA) für die Inbetriebnahme einer Domäne, da mehrere aufeinanderfolgende Schritte enthalten sind.
 

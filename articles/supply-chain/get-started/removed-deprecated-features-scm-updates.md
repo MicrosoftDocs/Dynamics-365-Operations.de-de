@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: f70d05f5663d8249b2435ad353421c278692a9ac
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 722b34e89a54715db39259549c11a78d69d2b4d3
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218801"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739869"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management
 
@@ -89,7 +89,7 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 | **Ersetzt durch eine andere Funktion?**   | Ja, die Planungsoptimierung wird das bestehende integrierte Supply Chain Management-Masterplanungsmodul ersetzen. |
 | **Betroffene Produktbereiche**         | Supply Chain Management – Masterplanung |
 | **Bereitstellungsoption**              | Nur Cloud. Planungsoptimierung wird bei lokalen Bereitstellungen nicht unterstützt. |
-| **Status**                         | Veraltet. Ab dem 1. April 2022 werden Fertigungsszenarien nicht mehr für die integrierte Produktprogrammplanungsmodul von Supply Chain Management unterstützt. Ab diesem Datum wird Microsoft die gesamte aktive Entwicklung von Fertigungsszenarien für das integrierte Planungsmodul einstellen, keine neuen Funktionen veröffentlichen und nur kritische Fehlerbehebungen veröffentlichen. Nach diesem Datum müssen alle Unternehmen, die Unterstützung für Fertigungsszenarien benötigen, die Planungsoptimierung für ihre Hauptplanungsberechnungen verwenden. Die Planungsoptimierung wird Fertigungsszenarien voraussichtlich bis Oktober 2022 vollständig unterstützen. Weitere Informationen finden Sie in der [Planungsoptimierungsdokumentation](../master-planning/planning-optimization/planning-optimization-overview.md).<br><br>Unternehmen, die Supply Chain Management lokal bereitstellen, können nach April 2022 weiterhin das integrierte Produktprogrammplanungsmodul für Fertigungsszenarien verwenden. Es werden jedoch keine weiteren Funktionserweiterungen bereitgestellt. |
+| **Status**                         | Veraltet. Ab dem 1. April 2022 werden Fertigungsszenarien nicht mehr für die integrierte Produktprogrammplanungsmodul von Supply Chain Management unterstützt. Ab diesem Datum wird Microsoft die gesamte aktive Entwicklung von Fertigungsszenarien für das integrierte Planungsmodul einstellen, keine neuen Funktionen veröffentlichen und nur kritische Fehlerbehebungen veröffentlichen. Nach diesem Datum müssen alle Unternehmen, die Unterstützung für Fertigungsszenarien benötigen, die Planungsoptimierung für ihre Hauptplanungsberechnungen verwenden. Die Planungsoptimierung wird Fertigungsszenarien voraussichtlich bis Oktober 2022 vollständig unterstützen. (Weitere Informationen finden Sie unter [Übersicht über veraltete Masterplanung](../master-planning/deprecated-master-planning-overview.md) .)<br><br>Unternehmen, die Supply Chain Management lokal bereitstellen, können nach April 2022 weiterhin das integrierte Produktprogrammplanungsmodul für Fertigungsszenarien verwenden. Es werden jedoch keine weiteren Funktionserweiterungen bereitgestellt. |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10011-release"></a>Entfernte oder veraltete Funktionen in Supply Chain Management 10.0.11
 
@@ -101,7 +101,7 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 | **Ersetzt durch eine andere Funktion?**   | Ja, die Planungsoptimierung wird das bestehende integrierte Supply Chain Management-Masterplanungsmodul ersetzen. |
 | **Betroffene Produktbereiche**         | Supply Chain Management – Masterplanung |
 | **Bereitstellungsoption**              | Nur Cloud. Planungsoptimierung wird bei lokalen Bereitstellungen nicht unterstützt. |
-| **Status**                         | Veraltet. Ab dem 1. April 2021 werden Vertriebsszenarien nicht mehr mit der eingebauten Dynamics 365 Supply Chain Management-Masterprogrammplanung unterstützt. Für Verteilungsszenarien müssen Kunden die Planungsoptimierung für Masterplanungsberechnungen verwenden. Weitere Informationen finden Sie unter [Planungsoptimierungsdokumentation](../master-planning/planning-optimization/planning-optimization-overview.md). Kunden mit lokalen Bereitstellungen von Dynamics 365 Supply Chain Management verwenden möglicherweise weiterhin das Supply Chain Management-Masterplanungsmodul für Verteilungsszenarien nach April 2021. Es werden jedoch keine weiteren Funktionserweiterungen bereitgestellt. |
+| **Status**                         | Veraltet. Ab dem 1. April 2021 werden Vertriebsszenarien nicht mehr mit der eingebauten Dynamics 365 Supply Chain Management-Masterprogrammplanung unterstützt. Für Verteilungsszenarien müssen Kunden die Planungsoptimierung für Masterplanungsberechnungen verwenden. (Weitere Informationen finden Sie unter [Übersicht über veraltete Masterplanung](../master-planning/deprecated-master-planning-overview.md) .) Kunden mit lokalen Bereitstellungen von Dynamics 365 Supply Chain Management verwenden möglicherweise weiterhin das Supply Chain Management-Masterplanungsmodul für Verteilungsszenarien nach April 2021. Es werden jedoch keine weiteren Funktionserweiterungen bereitgestellt. |
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Frühere Ankündigungen über entfernte oder veraltete Funktionen
 

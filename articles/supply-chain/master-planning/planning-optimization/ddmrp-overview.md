@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 31b45fdb92cf8a590ff77104f0c8015fb4d329d5
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: cf5ca3996a882111b840e3acb5e2a4f3f26ec4b7
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689487"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740849"
 ---
 # <a name="demand-driven-material-requirements-planning-ddmrp-overview"></a>Überblick über die bedarfsgesteuerte Disposition (DDMRP)
 
@@ -44,6 +44,6 @@ DDMRP wird in der Regel von Herstellern verwendet, die über eine mehrstufige St
 
 ## <a name="ddmrp-in-dynamics-365-supply-chain-management"></a>DDMRP in Dynamics 365 Supply Chain Management
 
-DDMRP ist im Lieferumfang von Microsoft Dynamics 365 Supply Chain Management enthalten und erfordert keine zusätzlichen Lizenzgebühren. Im Supply Chain Management wurde die DDMRP-Funktionalität dem bestehenden Modul **Masterplan** hinzugefügt. Es erfordert jedoch, dass Sie das Add-In Planungsoptimierung verwenden. 
+DDMRP ist im Lieferumfang von Microsoft Dynamics 365 Supply Chain Management enthalten und erfordert keine zusätzlichen Lizenzgebühren. Im Supply Chain Management wurde die DDMRP-Funktionalität dem bestehenden Modul **Masterplan** hinzugefügt. Es erfordert jedoch, dass Sie das Add-In Planungsoptimierung verwenden.
 
 DDMRP ist in die bestehenden Einrichtungen für die Planung im Supply Chain Management integriert und wird zusammen mit diesen Einrichtungen verwendet, um die richtige Planungskonfiguration für Ihr Unternehmen zu finden. Er wird durch einen neuen Coverage Code gesteuert, der sich von Periode, Min/Max, Anforderung usw. völlig unterscheidet. Es handelt sich nicht um ein neues Modul, und es ersetzt auch nicht die bestehenden Planungsfunktionen. Es bietet Ihnen jedoch mehr Funktionalität.

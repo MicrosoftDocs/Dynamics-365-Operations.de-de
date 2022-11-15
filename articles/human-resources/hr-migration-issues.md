@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 28c2c10a9293d00e26dfcc80ab08b89a122a6135
-ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
+ms.openlocfilehash: 5f5981801317ad9647f57a0f68f9b67b592256ab
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "9733455"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752689"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-known-issues"></a>Bekannte Probleme bei der Zusammenführung der Dynamics 365 Human Resources Infrastruktur
 
@@ -44,10 +44,3 @@ Die folgenden Umgebungstypen sind erforderlich, bevor Sie die Migration durchfü
 
 Die bestehende Human Resources-App in Teams wird derzeit auf eine Microsoft Power Platform Lösung umgestellt. Weitere Informationen finden Sie unter [Human Resources App in Teams](hr-admin-teams-leave-app.md).
 
-## <a name="licensing"></a>Lizenzierung
-
-Es gibt in den folgenden Bereichen keine Änderungen an der Lizenzierung für Dynamics 365 Human Resources: 
-
-- **Anforderungen an die Mindestanzahl der gekauften Lizenzen**
-- **Lizenzen für eine Produktions- und eine Sandbox-Umgebung**: Wenn Sie bereits über eigenständige Human Resources-Lizenzen verfügen, die eine Produktionsumgebung und eine Sandbox-Umgebung umfassen, steht die gleiche Anzahl von Lizenzen ohne zusätzliche Kosten für die Finanz- und Betriebsinfrastruktur zur Verfügung.
-- **Zusätzliche Sandbox-Lizenzen**: Wenn Sie zusätzliche Sandbox-Lizenzen für die eigenständige Human Resources-Anwendung erworben haben, steht die gleiche Anzahl von Lizenzen für Sandbox-Umgebungen in der Finanz- und Betriebsinfrastruktur zur Verfügung. 
