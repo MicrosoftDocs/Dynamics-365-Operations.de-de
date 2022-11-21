@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2a75d1e3e68837a437b2369ba369b0063e015b12
-ms.sourcegitcommit: 78cbb125f20a33df38bda0546203b8f837cbcd93
+ms.openlocfilehash: a25f20c320b905a2cdd3091e76e3c5e73f1a845a
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2022
-ms.locfileid: "9751930"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752747"
 ---
 # <a name="year-end-activities-faq"></a>Häufig gestellte Fragen zu Aktivitäten am Jahresende 
 
@@ -94,6 +94,23 @@ Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert wer
  
 - Modul: Hauptbuch
 - Funktionsname: Leistungsverbesserungen bei der Neuerstellung von Finanzdimensionssätzen
+
+## <a name="accounts-payable-what-changes-have-been-made-to-support-1099-year-end-reporting-for-2022"></a>Kreditorenkonten: Welche Änderungen wurden zugunsten der Jahresendsteuererklärung (US 1099) für das Jahr 2022 vorgenommen?
+
+#### <a name="update-to-all-1099-forms"></a>Alle Steuerformulare (US 1099) aktualisieren
+Folgende Änderungen wurden an allen Steuerformularen (US 1099) für das Steuerjahr 2022 vorgenommen:
+
+  - 2021 wurde das Jahr in den 1099-Formularen fixiert. Ab 2022 wird das Jahr aus dem Bericht übernommen. 
+
+#### <a name="1099-misc"></a>1099-MISC
+Folgende Aktualisierungen wurden an dem Formular 1099-MISC für das Steuerjahr 2022 vorgenommen:
+
+ - Feld 13: Zeigt jetzt die Anforderung zur Foreign Account Tax Compliance Act (FATCA)-Einreichung an. 
+ - Feld 14: Wird jetzt für die Meldung von übermäßigen Golden-Parachute-Zahlungen verwendet. 
+ - Feld 15: Wird jetzt zur Meldung der Zahlung im Rahmen von Plänen zur nicht qualifizierten Kompensation (NQDC) verwendet. 
+ - Feld 16: Wird jetzt zur Meldung von Quellensteuern verwendet.
+ - Feld 17: Wird jetzt zur Meldung der Bundeslandnummer des Zahlers verwendet.
+ - Feld 18: Wird jetzt zur Meldung der Einkommenssteuer verwendet. 
 
 ## <a name="accounts-payable-what-changes-have-been-made-to-support-1099-year-end-reporting-for-2021"></a>Kreditorenkonten: Welche Änderungen wurden zugunsten der Jahresendsteuererklärung (US 1099) für das Jahr 2021 vorgenommen?
 

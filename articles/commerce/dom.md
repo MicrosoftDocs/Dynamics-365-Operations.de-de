@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 26817321753c8e39d61957b4ea2004f20daf1b2f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a18441c44869e0e95cf79e35045dd7eacca7e43d
+ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878511"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9764178"
 ---
 # <a name="distributed-order-management-dom"></a>Verteilte Auftragsverwaltung (DOM)
 
@@ -68,9 +68,9 @@ Die folgende Abbildung zeigt den Lebenszyklus eines Auftrags in einem System fü
         > [!NOTE]
         > Der Vereinfachte Solver wird bereitgestellt, damit Einzelhändler die DOM-Funktion ausprobieren können, ohne eine spezielle Lizenz bereitzustellen. Organisationen können den vereinfachten Solver nicht in Produktionsumgebungen verwenden.
         >
-        > Der Produktions-Solver verbessert die Leistung (beispielsweise die Anzahl an Aufträgen und Auftragspositionen, die bei einer Ausführung verarbeitet werden können) und die Ergebniskonvergenz (weil eine Auftragscharge in manchen Fällen nicht die besten Ergebnisse liefert). Einige Regeln wie die Regel für **partielle Aufträge** und die Regel für die **maximale Standortanzahl** erfordern den Produktions-Solver.
+        > Der Produktions-Solver verbessert die Leistung (beispielsweise die Anzahl an Aufträgen und Auftragspositionen, die bei einer Ausführung verarbeitet werden können) und die Ergebniskonvergenz (weil eine Auftragscharge in manchen Fällen nicht die besten Ergebnisse liefert). Für die Regel **partielle Aufträge** ist der Produktions-Solver erforderlich.
 
-6. Gehen Sie zurück zu **Retail und Commerce \> Verteilte Auftragsverwaltung \> Einrichten \> DOM-Parameter**.
+6. Gehen Sie zurück zu **Einzelhandel und Handel \> Verteilte Auftragsverwaltung \> Einrichten \> DOM-Parameter**.
 7. Weisen Sie auf der Registerkarte **Nummernkreise** anschließend den verschiedenen DOM-Entitäten die erforderlichen Nummernkreise zu.
 
     > [!NOTE]

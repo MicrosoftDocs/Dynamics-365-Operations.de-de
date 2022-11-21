@@ -1188,9 +1188,11 @@
                   href: general-ledger/ledger-settlements.md
                 - name: Unterschied zwischen Sachkontoausgleich und Jahresendabschluss
                   href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+                - name: Automatischer Sachkontoausgleich
+                  href: general-ledger/auto-settle.md
                 - name: Neubewertung der Fremdwährung für Hauptbuch
                   href: general-ledger/foreign-currency-revaluation-general-ledger.md
-                - name: Kontosalden für Sachkonto
+                - name: Kontosalden für Hauptbuch
                   href: general-ledger/general-ledger-account-balances.md
                 - name: Sachkonto-Zuordnungserfassung verarbeiten
                   href: general-ledger/tasks/process-ledger-allocation-journal.md
