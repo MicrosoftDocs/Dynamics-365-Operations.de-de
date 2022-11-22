@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a5bf22228749a725baa66ee3094f670c60f0f39a
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 384ce8611a7dbf6adf7b8ae6ad9569e2a41c22d1
+ms.sourcegitcommit: e02bd317e96faf6182e70fb50b126868a94d9d06
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405436"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9757166"
 ---
 # <a name="keyboard-shortcuts"></a>Tastenkombinationen
 
@@ -50,7 +50,7 @@ Benutzer können zur Zeit verfügbaren Tastenkombinationen direkt über die Benu
 | Schließen einer Registerkarte im Aktivitätsbereich oder einem Menü        | ESC                              |
 | Simulieren eines Klicks mit der rechten Maustaste                          | UMSCHALT+F10                        |
 | Kontextmenü öffnen    | STRG+F10                         |
-| Ausführen der Standardschaltfläche in einem Formular/in einem Dialogfeld | ALT+EINGABETASTE                        |
+| Ausführen der Standardschaltfläche in einer Seite/in einem Dialogfeld | ALT+EINGABETASTE                        |
 | Auf eine Schaltfläche oder Kachel klicken                          | EINGABETASTE oder LEERTASTE                   |
 | Aktualisierungsinformationen für eine Anzahlkachel anzeigen       | ALT+NACH-OBEN-TASTE                     |
 | Zurzeit verfügbare Tastenkombinationen anzeigen              | ALT+UMSCHALT+ K                      |
@@ -85,36 +85,36 @@ Benutzer können zur Zeit verfügbaren Tastenkombinationen direkt über die Benu
 |---------------------------------------------------------------------------------------------------------------------|--------------------------|
 | Öffnen der Rasterfilterung für die aktuelle Spalte                                                                          | STRG+G                   |
 | Schließen der Rasterfilterung für die aktuelle Spalte                                                                         | ESC                      |
-| Öffnen des Bereichs "Filter" (oder Wechseln des Fokus zwischen dem Bereich "Filter" und dem Hauptformular, wenn der Bereich "Filter" bereits offen ist) | ALT+M,F oder STRG+F3       |
+| Öffnen des Bereichs Filter (oder Wechseln des Fokus zwischen dem Bereich Filter und der Hauptseite, wenn der Bereich Filter bereits offen ist) | ALT+M,F oder STRG+F3       |
 | Schließen des Bereichs "Filter" (mit Fokus im Bereich "Filter")                                                               | ESC                      |
 | Erweiterte Filterung/Sortierung öffnen                                                                                        | STRG+UMSCHALT+F3            |
 | Wenden Sie den Schnellfilter an (wenn der Fokus auf dem Schnellfilter liegt)                                                              | Eingang                    |
 | Wenden Sie den Rasterfilter an (wenn sich der Fokus im Filterfeld der Spaltenüberschrift befindet)                                             | Eingang                    |
 
-## <a name="form-shortcuts"></a>Formularverknüpfungen
+## <a name="page-shortcuts"></a>Seitenverknüpfungen
 
-| Ergebnis                                    | Drücken Sie folgende Taste: .             |
+| Aktion                                    | Drücken Sie folgende Taste: .             |
 |-----------------------------------------------|-------------------|
 | Neuen Datensatz erstellen                           | ALT+N             |
 | Löschen eines Datensatzes                               | ALT+DEL oder ALT+F9 |
 | Datensatz speichern                                   | ALT+S oder STRG+S   |
 | Wiederherstellen                              | STRG+UMSCHALT+F5     |
 | Datenaktualisierung                                  | UMSCHALT+F5          |
-| Zum sichtbaren ersten Feld im Formular wechseln   | ALT+SHIFT+F       |
+| Zum sichtbaren ersten Feld in der Seite wechseln   | ALT+SHIFT+F       |
 | Bearbeitungsmodus ein-/ausschalten                              | F2                |
-| Anfügen eines Dokuments                             | STRG+UMSCHALT+A      |
+| Dokument anfügen                             | STRG+UMSCHALT+A      |
 | Nach Excel exportieren                               | STRG+UMSCHALT+E      |
 | Zum vorherigen Datensatz wechseln (außerhalb eines Rasters)  | STRG+NACH-OBEN-TASTE     |
 | Zum nächsten Datensatz wechseln (außerhalb eines Rasters)      | STRG+NACH-UNTEN-TASTE   |
 | Zum ersten Datensatz wechseln (außerhalb eines Rasters)     | STRG+POS1         |
 | Zum letzten Datensatz wechseln (außerhalb eines Rasters)      | STRG+ENDE          |
-| Das Formular schließen ("Zurück" klicken)                   | ESC               |
-| Das Formular mit explizitem Speichern schließen             | UMSCHALT+ESC         |
-| Das Formular schließen und dabei alle nicht gespeicherten Änderungen verwerfen | ALT+UMSCHALT+Q       |
+| Schließen Sie die Seite (wählen Sie die Schaltfläche Zurück)<br><br>**Notiz:** Wenn ein Popup-Fenster (Tooltip, Datumsauswahl, Dropdown usw.) geöffnet ist, wird das Popup bei der ersten Verwendung von Esc geschlossen.       | ESC               |
+| Die Seite mit explizitem Speichern schließen             | UMSCHALT+ESC         |
+| Die Seite schließen und alle nicht gespeicherten Änderungen verwerfen | ALT+UMSCHALT+Q       |
 
-## <a name="form-navigation-shortcuts"></a>Formularnavigationsverknüpfungen
+## <a name="page-navigation-shortcuts"></a>Seitennavigationsverknüpfungen
 
-| Aktion                                          | Taste(n)                                        |
+| Aktion                                          | Drücken Sie folgende Taste: .                                        |
 |-----------------------------------------------------|----------------------------------------------|
 | Zum nächsten/vorherigen Feld wechseln                     | Registerkarte / UMSCHALT+TAB                              |
 | Zur nächsten/vorherigen Registerkarte wechseln                       | ALT+UMSCHALT+NACH-RECHTS-TASTE / ALT+UMSCHALT+NACH-LINKS-TASTE |
@@ -192,13 +192,13 @@ Benutzer können zur Zeit verfügbaren Tastenkombinationen direkt über die Benu
 | Hilfefenster öffnen                                                            | STRG +?                     |
 | Ablaufverfolgungs-Parser öffnen                                                         | ALT+SHIFT+T                |
 | Zum Navigationsbereich wechseln                                                   | ALT+F1                     |
-| Formular als Favorit hinzufügen/entfernen (mit Fokus auf einem Formular im Navigationsbereich)   | UMSCHALT+F                    |
+| Seite als Favorit hinzufügen/entfernen (mit Fokus auf einer Seite im Navigationsbereich)   | UMSCHALT+F                    |
 | Zum Standardaktivitätsbereich wechseln                                              | ALT+M,A oder STRG+F6         |
 | Zum Bereich „Filter” wechseln (was möglicherweise einschließt, ihn zu öffnen)                        | ALT+M,F oder STRG+F3         |
 | Fokus zum Seiteninhalt verschieben (mit Fokus auf den Filterbereich)                | ALT+M,M oder STRG+F3         |
-| Zur Navigationsliste auf dem Formular „Details” wechseln (was möglicherweise einschließt, sie zu öffnen)    | ALT+M,S oder STRG+F8         |
+| Zur Navigationsliste wechseln (was möglicherweise einschließt, ihn zu öffnen)    | ALT+M,S oder STRG+F8         |
 | Fokus zum Seiteninhalt verschieben (mit Fokus auf der Navigationsliste)            | ALT+M,M oder STRG+F8         |
-| Schließen der Navigationsliste auf dem Formular "Details" (mit Fokus in der Navigationsliste) | ESC                        |
+| Schließen der Navigationsliste (mit Fokus in der Navigationsliste) | ESC                        |
 | Zum Hauptseiteninhalt wechseln (mit Fokus auf einem anderen Bereich)                    | ALT+M,M                    |
 | Zum Bereich „Infobox” wechseln (was möglicherweise einschließt, ihn zu öffnen)                       | ALT+M,B oder STRG+F2         |
 | Zur nächsten Funktionslegende wechseln                                              | Alt+M,C                    |

@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: a53b7834271355aaf11c13c3f1886257a97b1da8
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 7ef93b81ce37128f7ff400eb4034ffea01756038
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068989"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779852"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>Untergeordnetes Sachkonto an das Hauptbuch übertragen
 
@@ -35,7 +35,7 @@ Die folgenden Optionen stehen zum Übertragen von Chargen des untergeordneten Sa
 - **Asynchron** – Mit dieser Option wird die Übertragung der untergeordneten Sachkontoeinträge in das Hauptbuch sofort geplant. Der Hauptbuchbeleg wird erfasst, sobald die Ressourcen für die Verarbeitung dieser Anforderung auf dem Server verfügbar sind.
 - **Geplante Charge** – Die zu übertragenden Nebenbucheinträge werden in die Verarbeitungswarteschlange im Hauptbuch aufgenommen. Die Einträge in der Warteschlange werden in der Reihenfolge ihres Eingangs bearbeitet. Jeder Hauptbuchbeleg wird zur geplanten Zeit aktualisiert, sobald die Ressourcen für die Verarbeitung dieses Batchauftrags auf dem Server frei sind.
 
-In Version 10.0.8 wurden Verbesserungen vorgenommen, um die Leistung der **asynchronen** Option zu verbessern. Diese Funktion wird unter dem Funktionsnamen **Übertragung des untergeordneten Sachkontos zur Leistungsoptimierung im Hauptbuch** aktiviert.
+Verbesserungen wurden vorgenommen, um die Leistung der **asynchronen** Option zu verbessern. Diese Funktion wird unter dem Funktionsnamen **Übertragung des untergeordneten Sachkontos zur Leistungsoptimierung im Hauptbuch** aktiviert.
 
 Die Funktionalität zur asynchronen Übernahme von Nebenbuchchargen hilft, die Datenübernahme vom Nebenbuch in das Hauptbuch zu verbessern. Durch das Gruppieren von Sätzen kleinerer Transaktionen und das Übertragen der Transaktionen in Gruppen verarbeitet die Funktionalität Transaktionen effizienter. Wenn Transaktionen gruppiert werden, werden die Ressourcen des Batch-Servers effizienter genutzt.
 

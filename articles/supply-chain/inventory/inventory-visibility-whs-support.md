@@ -2,7 +2,7 @@
 title: Inventory Visibility-Unterstützung für WMS-Artikel
 description: Dieser Artikel beschreibt die Unterstützung der Inventory Visibility für Artikel, die für Lagerverwaltungsprozesse aktiviert sind (WMS-Artikel).
 author: yufeihuang
-ms.date: 03/10/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-10
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 54ce637d2d7b590988f7590eae5248276bcc4b96
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: bed402ecf20c19e81b2687efd90dba600460971a
+ms.sourcegitcommit: 49f8973f0e121eac563876d50bfff00c55344360
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9066609"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9762738"
 ---
 # <a name="inventory-visibility-support-for-wms-items"></a>Inventory Visibility-Unterstützung für WMS-Artikel
 
@@ -45,17 +45,17 @@ Wenn Sie die erweiterte WMS-Funktion für Inventory Visibility verwenden, sind a
 
 ## <a name="when-to-use-the-feature"></a>Wann Sie die Funktion verwenden sollten
 
-Wir empfehlen, dass Sie die erweiterte WMS-Funktion für Inventory Visibility in Szenarien verwenden, in denen alle folgenden Bedingungen erfüllt sind:
+Wir empfehlen, dass Sie die WMS-Funktion für Inventory Visibility in Szenarien verwenden, in denen alle folgenden Bedingungen erfüllt sind:
 
 - Sie synchronisieren Supply Chain Management-Daten mit Inventory Visibility.
 - Sie verwenden WMS in Supply Chain Management.
-- Benutzer nehmen Reservierungen für WMS-Artikel auf anderen Ebenen als der Lagerebene vor (z. B. weil Sie Lagerarbeit verwenden).
+- Benutzer nehmen Reservierungen für WMS-Artikel auf anderen Ebenen unterhalb der Lagerebene vor (z. B. auf Ladungsträgerebene, weil Sie Lagerarbeit verarbeiten).
 
 In anderen Szenarien sind die verfügbaren Abfrageergebnisse gleich, unabhängig davon, ob die erweiterte WMS-Funktion für Inventory Visibility aktiviert ist. Darüber hinaus ist die Leistung besser, wenn Sie die Funktion in diesen Szenarios nicht aktivieren, da weniger Berechnungen und weniger Overhead anfallen.
 
-## <a name="enable-the-advanced-wms-feature-for-inventory-visibility"></a>Die erweiterte WMS-Funktion für Inventory Visibility aktivieren
+## <a name="enable-the-wms-feature-for-inventory-visibility"></a>Die WMS-Funktion für Bestandsanzeige aktivieren
 
-Gehen Sie folgendermaßen vor, um die erweiterte WMS-Funktion für Inventory Visibility zu aktivieren.
+Gehen Sie folgendermaßen vor, um die WMS-Funktion für Inventory Visibility zu aktivieren.
 
 1. Melden Sie sich bei Supply Chain Management als Administrator an.
 1. Öffnen Sie den Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und aktivieren Sie die folgenden Funktionen in dieser Reihenfolge:
@@ -65,7 +65,7 @@ Gehen Sie folgendermaßen vor, um die erweiterte WMS-Funktion für Inventory Vis
 
 1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Bestandssichtbarkeit-Integrationsparameter**.
 1. Auf der Registerkarte **WMS-Artikel aktivieren** legen Sie die Option **WMS-Artikel aktivieren** auf *Ja* fest.
-1. Melden Sie sich bei Power Apps an.
+1. Melden Sie sich in Ihrer Power Apps-Umgebung an und öffnen Sie **Inventory Visibility**.
 1. Öffnen Sie die Seite **Konfiguration**, und aktivieren Sie dann auf der Registerkarte **Funktionsverwaltung** die Funktion *AdvancedWHS*.
 1. Gehen Sie in Supply Chain Management zu **Lagerverwaltung \> Periodische Aufgaben \> Integration der Bestandssichtbarkeit**.
 1. Wählen Sie im Aktivitätsbereich **Deaktivieren** aus, um Inventory Visibility vorübergehend zu deaktivieren.
@@ -82,21 +82,24 @@ Die Ergebnisse von Abfragen für WMS-Artikel sind im Wesentlichen die gleichen w
 - `ReservOrdered`
 - `ReservPhysical`
 
-Alle anderen physikalischen Maße werden genau so berechnet, wie sie sind, wenn die erweiterte WMS-Funktion für Inventory Visibility deaktiviert ist.
+Alle anderen physikalischen Maße werden genau so berechnet, wie sie sind, wenn die WMS-Funktion für Inventory Visibility deaktiviert ist.
 
 Ausführliche Informationen zur Funktionsweise von Lagerbestandsberechnungen für WMS-Artikel finden Sie im Whitepaper zu [Reservierungen in Warehouse Management](https://www.microsoft.com/download/details.aspx?id=43284).
 
-Die Datenentitäten, die in Dataverse exportiert werden, können die Mengen für WMS-Artikel noch nicht aktualisieren. Die in den Datenentitäten angezeigten Mengen sind sowohl für Nicht-WMS-Artikel als auch für Mengen, die nicht von der WMS-Logik betroffen sind (d. h. Maßnahmen außer `AvailPhysical`, `AvailOrdered`, `ReservPhysical` und`ReservOrdered` in der `fno`-Datenquelle), korrekt.
+## <a name="on-hand-list-view-and-data-entity-for-wms-items"></a>Verfügbare Listenansicht und Datenentität für WMS-Artikel
 
-Änderungen an WMS-Artikelmengen, die in der Supply Chain Management-Datenquelle gespeichert sind, sind verboten. Wie bei anderen Funktionen von Inventory Visibility wird diese Einschränkung erzwungen, um Konflikte zu vermeiden.
+Die Seite **Zusammenfassung der Inventory Visibility vorladen** bietet eine Ansicht für die Entität *Ergebnisse der vorgeladenen Indexabfrage*. Im Gegensatz zur Entität *Bestandsübersicht* bietet die Entität *Bestandsindexabfrage Ergebnisse vorladen* eine Bestandsliste für Produkte zusammen mit ausgewählten Dimensionen. Inventory Visibility synchronisiert die vorgeladenen Zusammenfassungsdaten alle 15 Minuten.
 
-## <a name="soft-reservations-on-wms-items-in-inventory-visibility"></a>Unverbindliche Reservierung für WMS-Artikel in Inventory Visibility
+Wenn Sie die Bestandsanzeige mit WMS-Artikeln verwenden und die verfügbare Liste für WMS-Artikel anzeigen möchten, empfehlen wir Ihnen, die *Laden Sie die Zusammenfassung der Inventarsichtbarkeit vorab* Funktion (siehe auch [Laden Sie eine optimierte verfügbare Abfrage vorab](inventory-visibility-power-platform.md#preload-streamlined-onhand-query)) zu aktivieren. Eine entsprechende Datenentität in Dataverse speichert das Ergebnis Ihres Abfragevorabladens, das alle 15 Minuten aktualisiert wird. Der Name der Datenentität lautet `Onhand Index Query Preload Result`.
 
-Im Allgemeinen werden [unverbindliche Reservierungen](inventory-visibility-reservations.md) für WMS-Artikel unterstützt. Sie können WMS-bezogene physische Maße in unverbindlichen Reservierungsberechnungen einbeziehen. 
+> [!IMPORTANT]
+> Die Dataverse Entität ist schreibgeschützt. Sie können die Daten in den Inventarsichtbarkeitseinheiten anzeigen und exportieren, aber **ändern Sie es nicht**.
 
-Bei einer bekannten Einschränkung wird die Berechnung *zur Reservierung verfügbar* derzeit für WMS-Artikel nicht unterstützt. Wenn daher eine Reservierung über den aktuellen Dimensionen besteht, bei der eine unverbindliche Reservierung auftritt, ist die Berechnung *zur Reservierung verfügbar* falsch. Unverbindliche Reservierungen sind nicht davon betroffen, wenn die Option **ifCheckAvailForReserv** in der [unverbindlichen Reservierungs-API](inventory-visibility-api.md#create-one-reservation-event) deaktiviert ist.
+Änderungen an WMS-Artikelmengen, die in der Supply Chain Management-Datenquelle (`fno`) gespeichert sind, sind verboten. Dieses Verhalten entspricht dem Verhalten anderer Funktionen von der Bestandsanzeige. Diese Einschränkung wird erzwungen, um Konflikte zu vermeiden.
 
-Diese Einschränkung gilt auch für Funktionen und Anpassungen, die auf unverbindlichen Reservierungen (z. B. Zuteilung) basieren.
+## <a name="wms-item-compatibility-for-other-functions-in-inventory-visibility"></a>WMS-Artikelkompatibilität für andere Funktionen in der Bestandsanzeige
+
+[Soft-Reservierungen](inventory-visibility-reservations.md) und [Bestandszuordnung](inventory-visibility-allocation.md) von WMS-Artikeln werden unterstützt. Sie können WMS-bezogene physische Maße in unverbindlichen Reservierungs- und Zuteilungsberechnungen einbeziehen.
 
 ## <a name="calculate-available-to-promise-quantities"></a>Für Zusage verfügbare Mengen berechnen
 

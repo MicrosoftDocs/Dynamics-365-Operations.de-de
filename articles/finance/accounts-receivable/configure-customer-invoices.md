@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04c26eec8be61d60908bef67c75958287e7e1a01
-ms.sourcegitcommit: 85141b21ac90f3db1b378c21f9c7f3d8f74e182f
+ms.openlocfilehash: a0d1221e07f6dc4a5a99aa205c4a7f6fb367f000
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "9129511"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780506"
 ---
 # <a name="create-a-customer-invoice"></a>Erstellen einer Debitorenrechnung
 
@@ -31,11 +31,10 @@ Bei einer **Debitorenrechnung für einen Auftrag** handelt es sich um eine Rechn
 Eine **Freitextrechnung** ist nicht mit einem Auftrag verknüpft. Sie enthalten Auftragspositionen mit Sachkonten, Freitextbeschreibungen und benutzerdefinierten Verkaufsbeträgen. Bei dieser Art von Rechnung kann keine Artikelnummer eingegeben werden. Geben Sie die geeigneten Mehrwertsteuerinformationen ein. Für jede Rechnungsposition wird ein Hauptkonto für den Verkauf angegeben, das auf mehrere Sachkonten verteilt werden kann, indem Sie auf **Beträge verteilen** auf der Seite **Freitextrechnung** klicken. Der Debitorensaldo wird außerdem auf das Summenkonto aus dem Buchungsprofil gebucht, das für die Freitextrechnung verwendet wird.
 
 Weitere Informationen finden Sie hier:
-
-[Freitextrechnungen erstellen](../accounts-receivable/create-free-text-invoice-new.md)
-[Vorlage für Freitextrechnungen erstellen](../accounts-receivable/create-free-text-invoice-template-new.md)
-[Einem Debitor eine Freitextrechnungsvorlage zuweisen](tasks/assign-free-text-invoice-template-customer.md)
-[Freitextserienrechnungen generieren und buchen](tasks/post-recurring-free-text-invoices.md)
+ - [Freitextrechnungen erstellen](../accounts-receivable/create-free-text-invoice-new.md)
+ - [Vorlage für Freitextrechnungen erstellen](../accounts-receivable/create-free-text-invoice-template-new.md)
+ - [Einem Debitor eine Freitextrechnungsvorlage zuweisen](tasks/assign-free-text-invoice-template-customer.md)
+ - [Freitextserienrechnungen generieren und buchen](tasks/post-recurring-free-text-invoices.md)
 
 
 Bei einer **Proforma-Rechnung** handelt es sich um eine Rechnung, die vor dem Buchen der Rechnung als Vorkalkulation der tatsächlichen Rechnungsbeträge vorbereitet wird. **Proforma-Rechnungen** können sowohl für eine Debitorenrechnung für einen Auftrag als auch für eine Freitextrechnung gedruckt werden. 
@@ -89,7 +88,13 @@ Sie können die Aufteilung von Kundenrechnungen für Aufträge nach Standort ode
  - Aktivieren Sie die Option **Aufteilung basierend auf Lieferinformationen der Rechnung**, um beim Buchen eine Rechnung pro Auftragsposition-Lieferadresse zu erstellen. 
 
 ## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price-and-no-cost"></a>Auf das Umsatzkonto für Auftragspositionen ohne Preise und ohne Kosten buchen
-Sie haben die Möglichkeit, das **Umsatzerlös**-Konto im **Hauptbuch** für Auftragspositionen ohne Preis und Kosten zu aktualisieren. Um diese Informationen einzurichten oder anzuzeigen, gehen Sie zum Parameter **Auf das Umsatzkonto für Auftragsrechnungen mit Nullpreisen und Nullkosten buchen** auf der **Hauptbuch und Umsatzsteuer**-Registerkarte der **Debitorenparameter**-Seite. (**Debitoren > Einrichtung > Debitorenparameter**). Wählen Sie **Ja**, um das **Umsatzerlös**-Konto für Auftragsrechnungspositionen, die keinen Preis und keine Kosten haben, zu aktualisieren. Wenn diese Option ausgewählt ist, enthält der Beleg 0,00 Einträge für die Buchungstypen **Debitorensaldo** und **Umsatzerlös**. Auf der Parameterseite **Bestandsbuchung** wird ein Umsatzerlöskonto definiert (auf der Kontodefinition-Registerkarte **Auftrag**). Wenn diese Option nicht ausgewählt ist, werden Positionen, die keine Preis- oder Kosteninformationen enthalten, nicht an das **Umsatzerlös**-Konto gebucht. Stattdessen enthält der Beleg einen Eintrag von 0,00 für den Buchungstyp **Debitorensaldo**.
+Sie haben die Möglichkeit, das **Umsatzerlös**-Konto im **Hauptbuch** für Auftragspositionen ohne Preis und Kosten zu aktualisieren. 
+
+Um diese Informationen einzurichten oder anzuzeigen:
+1. Gehen Sie zum Parameter **Auf das Umsatzkonto für Auftragsrechnungen mit Nullpreisen und Nullkosten buchen** auf der **Hauptbuch und Umsatzsteuer**-Registerkarte der **Debitorenparameter**-Seite. (**Debitoren > Einrichtung > Debitorenparameter**). 
+2. Wählen Sie **Ja**, um das **Umsatzerlös**-Konto für Auftragsrechnungspositionen, die keinen Preis und keine Kosten haben, zu aktualisieren. 
+ - Wenn diese Option ausgewählt ist, enthält der Beleg 0,00 Einträge für die Buchungstypen **Debitorensaldo** und **Umsatzerlös**. Ein Ertragskonto auf der **Bestandsbuchung** Parameterseite, auf der **Verkaufsauftrag** Registerkarte Kontodefinition definiert. 
+ - Wenn diese Option nicht ausgewählt ist, werden Positionen, die keine Preis- oder Kosteninformationen enthalten, nicht an das **Einnahmen** Konto gebucht. Stattdessen enthält der Beleg einen Eintrag von 0,00 für den Buchungstyp **Debitorensaldo**.
 
 ## <a name="line-creation-sequence-number-information"></a>Informationen zur Sequenznummer der Zeilenerstellung
 Wenn Sie Debitor-Rechnungszeilen buchen, haben Sie die Möglichkeit, Sequenznummern für die Erstellung der Zeilen zu erstellen. Die Sequenznummern für die Erstellung von Zeilen werden während des Buchungsvorgangs zugewiesen. Indem Sie eine nicht fortlaufende Nummerierung zulassen, können Sie die Leistung bei der Buchung von Debitor-Rechnungen verbessern. Die Sequenznummern für die Zeilenerstellung können von Drittanbieter-Integrationen verwendet werden, die eine sequenzielle Reihenfolge erwarten. Wenden Sie sich an Ihre IT-Abteilung, wenn es um Erweiterungen geht, die mit Sequenznummern für die Zeilenerstellung integriert werden können.

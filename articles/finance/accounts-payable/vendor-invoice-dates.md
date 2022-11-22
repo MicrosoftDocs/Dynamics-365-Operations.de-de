@@ -1,6 +1,6 @@
 ---
 title: Kreditorenrechnungstermine
-description: In diesem Artikel werden die Daten beschrieben, die auf Kreditorenrechnungen erscheinen. Außerdem wird erläutert, wie Sie das System so einrichten, dass es das Buchungsdatum automatisch anpasst.
+description: In diesem Artikel werden die Daten beschrieben, die auf Kreditorenrechnungen erscheinen. Außerdem wird erläutert, wie Sie das Buchungsdatum automatisch anpassen.
 author: sunfzam
 ms.date: 2/09/2022
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 943a84407d022c2c05bc534a35a2b5d44a94653e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 022fd0ce07fbb4c54afcf7334c1c9411e01dcf26
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876411"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775267"
 ---
 # <a name="vendor-invoice-dates"></a>Kreditorenrechnungstermine
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Artikel werden die Daten beschrieben, die auf Kreditorenrechnungen erscheinen. Außerdem wird erläutert, wie Sie das System so einrichten, dass es das Buchungsdatum automatisch anpasst.
+In diesem Artikel werden die Daten beschrieben, die auf Kreditorenrechnungen erscheinen. Außerdem wird erläutert, wie Sie das Buchungsdatum automatisch anpassen.
 
-Auf der Seite **Ausstehende Lieferantenrechnung detailliert** zeigt der Rechnungskopf vier Daten an: das Eingangsdatum der Rechnung, das Rechnungsdatum, das Buchungsdatum und das Fälligkeitsdatum. Beim Erstellen einer Kreditorenrechnung werden standardmäßig die folgenden Daten eingegeben:
+Auf der Seite **Ausstehende Lieferantenrechnung** detailliert zeigt der Rechnungskopf vier Daten an: das **Eingangsdatum der Rechnung**, **das Rechnungsdatum**, **das Buchungsdatum** und das **Fälligkeitsdatum**. Beim Erstellen einer Kreditorenrechnung werden standardmäßig die folgenden Daten eingegeben:
 
 - **Rechnungseingangsdatum** – Dieses Feld wird auf das aktuelle Systemdatum gesetzt.
 - **Buchungsdatum** – Dieses Feld wird auf das aktuelle Systemdatum gesetzt. 
@@ -37,19 +37,19 @@ Auf der Seite **Ausstehende Lieferantenrechnung detailliert** zeigt der Rechnung
 
 Manchmal kann sich eine Kreditorenrechnung noch lange nach Ablauf des Zeitraums im Status „Ausstehend“ befinden. Bei der Buchungsreife wird weiterhin das alte Buchungsdatum der vergangenen Buchungsperiode verwendet. Dieser Zeitraum ist nun jedoch abgelaufen. Daher muss ein Kreditorenbuchhalter alle Buchungsdaten für alle zuvor erstellten ausstehenden Rechnungen manuell in die neue Buchungsperiode ändern.
 
-Mit der in diesem Artikel beschriebenen Funktion können Sie das System so einrichten, dass es das Buchungsdatum automatisch an die Geschäftsanforderungen anpasst.
+Mit der in diesem Artikel beschriebenen Funktion können Sie das Buchungsdatum automatisch an die Geschäftsanforderungen anpassen.
 
 ## <a name="parameter-for-automatically-adjusting-the-vendor-invoice-posting-date"></a>Parameter zur automatischen Anpassung des Buchungsdatums der Kreditorenrechnung
 
-Führen Sie diese Schritte aus, damit das System das Buchungsdatum für Kreditorenrechnungen automatisch anpassen kann.
+Führen Sie diese Schritte aus, um das Buchungsdatum für Kreditorenrechnungen automatisch anzupassen.
 
 1.  Wechseln Sie zu **Kreditoren \> Einstellung \> Kreditorenparameter**.
 2.  Wählen Suie auf der Registerkarte **Hauptbuch und Umsatzsteuer** im Feld **Veröffentlichungsdatum automatisch anpassen** einen der folgenden Werte aus:
 
     - **Keine Änderung** – Das System ändert das Buchungsdatum beim Buchen nicht automatisch. Dieser Wert ist standardmäßig ausgewählt.
-    - **Buchungsdatum immer auf Systemdatum ändern** – Das System ändert das Buchungsdatum beim Buchen automatisch auf das Systemdatum.
-    - **Buchungsdatum in Systemdatum ändern, wenn Buchungsdatumsperiode geschlossen oder gesperrt ist** – Das System ändert beim Buchen das Buchungsdatum auf das Systemdatum, jedoch nur, wenn die entsprechende Periode des Buchungsdatums den Status **Abgeschlossen** oder **Gesperrt** hat.
-    - **Buchungsdatum in den ersten Tag der neuen Periode ändern, wenn Buchungsdatumsperiode geschlossen oder gesperrt ist** – Das System ändert das Buchungsdatum auf den ersten Tag der neuen offenen Periode, jedoch nur, wenn die entsprechende Periode des Buchungsdatums den Status **Abgeschlossen** oder **Gesperrt** hat.
+    - **Buchungsdatum immer auf Systemdatum ändern** – Das Buchungsdatum wird beim Buchen automatisch auf das Systemdatum angepasst.
+    - **Buchungsdatum in Systemdatum ändern, wenn Buchungsdatumsperiode geschlossen oder gesperrt ist** – Das Buchungsdatum wird automatish an das Systemdatum geändert, jedoch nur, wenn die entsprechende Periode des Buchungsdatums den Status **Abgeschlossen** oder **Gesperrt** hat.
+    - **Buchungsdatum in den ersten Tag der neuen Periode ändern, wenn Buchungsdatumsperiode geschlossen oder gesperrt ist** – Das Buchungsdatum wird auf den ersten Tag der neuen offenen Periode geändert, jedoch nur, wenn die entsprechende Periode des Buchungsdatums den Status **Abgeschlossen** oder **Gesperrt** hat.
 
 > [!NOTE]
 > Liegt das automatisch angepasste neue Buchungsdatum in einem neuen Geschäftsjahr, wird das Buchungsdatum der Rechnung nicht fortgeschrieben. Der Benutzer erhält eine Fehlermeldung „Das Geschäftsjahr hat sich geändert. Bitte überprüfen Sie das Buchungsdatum und geben Sie es erneut ein.“ Das Rechnungsbuchungsdatum muss zum Buchen auf das neue Geschäftsjahrsdatum aktualisiert werden.
@@ -70,12 +70,12 @@ Wenn das Buchungsdatum einer offenen Kreditorenrechnung geändert wird, hat die 
 
 - **Wechselkurs** – Das Wechselkursdatum wird durch die Einstellung der Option **Kreditorenbuchhaltung anhand des Rechnungsdatums aktualisieren** auf der Registerkarte **Rechnung** der Seite **Kreditorenparameter** (**Kreditoren \> Einrichtung \> Kreditorenparameter**) bestimmt.
 
-    - Wenn diese Option auf **Ja** eingestellt ist, wird das Rechnungsdatum verwendet und die Änderung des Buchungsdatums wirkt sich nicht auf den Wechselkurs aus.
+    - Wenn diese Option auf **Ja** eingestellt ist, wird das **Rechnungsdatum** verwendet und die Änderung des **Buchungsdatums** wirkt sich nicht auf den Wechselkurs aus.
     - Wenn diese Option auf **Nein** eingestellt ist, wird das Buchungsdatum zur Berechnung des Umrechnungskurses verwendet. Wenn das Buchungsdatum aktualisiert wird, werden Buchhaltungs- und Berichtsbeträge neu berechnet. Daher muss die Übereinstimmungsvalidierung erneut durchgeführt werden.
 
 ## <a name="validation"></a>Prüfung
 
 Zwei weitere Felder auf der Registerkarte **Rechnung** der Seite **Kreditorenparameter** (**Kreditoren \> Einrichtung \> Kreditorenparameter**) beeinflussen die Rechnungsbearbeitung:
 
-- Wenn das Feld **Überprüfen Sie die verwendete Rechnungsnummer** auf **Dubletten innerhalb des Geschäftsjahres ablehnen** gesetzt ist, verwendet das System das Buchungsdatum, um bei der Rechnungsbuchung auf doppelte Rechnungen zu prüfen.
-- Wenn das Feld **Dokumentdatum auf Kreditorenrechnung verlangen** auf **Fehleroption** gesetzt ist, ist das **Rechnungsdatum im ausstehenden Rechnungskopf** erforderlich. Wenn das Rechnungsdatum nach dem Buchungsdatum liegt, zeigt das System eine Fehlermeldung an.
+- Wenn das Feld **Überprüfen Sie die verwendete Rechnungsnummer** auf **Dubletten innerhalb des Geschäftsjahres ablehnen** gesetzt ist, wird das Buchungsdatum verwendet, um bei der Rechnungsbuchung auf doppelte Rechnungen zu prüfen.
+- Wenn das Feld **Dokumentdatum auf Kreditorenrechnung verlangen** auf **Fehleroption** gesetzt ist, ist das **Rechnungsdatum im ausstehenden Rechnungskopf** erforderlich. Wenn das Rechnungsdatum nach dem Buchungsdatum liegt, wird eine Fehlermeldung angezeigt.

@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustParameters, CustPosting, DefaultDashboard, CustCollectionsPoolsListPage, CustWriteOff, LedgerJournalTable, LedgerJournalTransDaily, CustCollections, CustOpenInvoicesListPage, CustTable
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7da01759fe4aaa7beb1719ede51ac0abfc3b404c
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 21aaeda413e767fed1815423b0262127c6692bb6
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713670"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775298"
 ---
 # <a name="create-a-write-off-journal-for-a-customer"></a>Eine Abschreibungserfassung für einen Debitor erstellen
 
@@ -48,9 +48,9 @@ In diesem Aufgabenhandbuch wird dargestellt, wie Sie die Parameter für Abschrei
 7. Gehen Sie zu **Navigationsbereich > Module > Hauptbuch > Journaleinträge > Allgemeine Erfassungen**.
 8. Wählen Sie die Nummer der Stapelverarbeitungserfassung für die Erfassung aus, die die Abschreibung enthält. Eine Position wird erstellt, um den Debitorensaldo umzukehren. Eine oder mehrere Positionen werden erstellt, um die Abschreibung auf dem Abschreibungskonto zu buchen.  
 9. Schließen Sie die Seite.
-10. Schließen Sie die Seite.
 
-## <a name="write-off-transactions-from-the-collections-form"></a>Transaktionen aus dem Inkassoformular abschreiben.
+
+## <a name="write-off-transactions-from-the-collections-page"></a>Transaktionen aus der Inkassoseite abschreiben
 1. Wechseln Sie zu **Kredit und Inkasso > Inkassi > Saldenrückblick**.
 2. Wählen Sie den Namen des Debitors aus, der die Transaktionen beinhaltet, die Sie abschreiben möchten. Wählen Sie beispielsweise Cave Wholesales (US-004).
 3. Zeile für erste Transaktion markieren.
@@ -63,7 +63,7 @@ In diesem Aufgabenhandbuch wird dargestellt, wie Sie die Parameter für Abschrei
 10. Wechseln Sie zu **Hauptbuch > Journaleinträge > Allgemeine Erfassungen**.
 11. Wählen Sie die Nummer der Stapelverarbeitungserfassung für die Erfassung aus, die die Abschreibung enthält. Eine Position wird erstellt, um den Debitorensaldo umzukehren. Eine oder mehrere Positionen werden erstellt, um die Abschreibung auf dem Abschreibungskonto zu buchen.  
 12. Schließen Sie die Seite.
-13. Schließen Sie die Seite.
+
 
 ## <a name="write-off-an-invoice-from-the-open-customers-invoices-page"></a>Rechnung auf der Seite der offenen Debitorenrechnungsseite abschreiben
 1. Wechseln Sie zu **Navigationsbereich > Module > Debitoren > Rechnungen > Offene Debitorenrechnungen**.

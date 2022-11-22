@@ -16,12 +16,12 @@ ms.search.region: Austria, Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f93bd6b9090fed9ce2e275911b9f749db0fc715b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 3bbbca9c70f427517eca5f321fc233590fa63939
+ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984365"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9764164"
 ---
 # <a name="german-audit-file-gdpdugobd-overview"></a>Deutsche Protokolldatei (GDPdU/GoBD) – Übersicht
 
@@ -39,8 +39,6 @@ Unternehmen in Deutschland und in einigen anderen Ländern/Regionen sind gesetzl
 -   Debitorenbuchungen
 -   Kreditorenmasterdaten
 -   Kreditorenbuchungen
--   Artikelmasterdaten
--   Artikelbuchungen
 -   Anlagenmasterdaten
 -   Anlagenbuchungen
 

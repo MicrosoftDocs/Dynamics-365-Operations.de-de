@@ -2,7 +2,7 @@
 title: Neubewertung der Währung in einem Konsolidierungsunternehmen
 description: In diesem Artikel wird beschrieben, wie Währungen in einem Konsolidierungsunternehmen neu bewertet werden.
 author: aprilolson
-ms.date: 10/02/2018
+ms.date: 10/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8fbbc1d0a7ae5b7e288710c99a6af362b3db3d36
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c05ef0d4d05d5113d3b858dafe49ee9c1c7211d9
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889003"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779661"
 ---
 # <a name="currency-revaluation-in-a-consolidation-company"></a>Neubewertung der Währung in einem Konsolidierungsunternehmen
 
@@ -39,20 +39,20 @@ Wenn Sie Daten aus einer Buchhaltungswährung zu anderen konsolidieren, müssen 
 ## <a name="original-transactions"></a>Originalbuchungen
 ### <a name="cash-receipt-transactions-in-usmf"></a>Barbelegbuchungen in USMF
 
-| Datum       | Sachkonto               | Währung | Betrag |
+| Datum       | Sachkonto               | Währung | Dauer |
 |------------|------------------------------|----------|--------|
-| 11.10.2015 | 110110 – Bargeld                | USD      | 500    |
-| 11.10.2015 | 130100 – Debitoren | USD      | ‑500   |
+| 11.10.2020 | 110110 – Bargeld                | USD      | 500    |
+| 11.10.2020 | 130100 – Debitoren | USD      | ‑500   |
 
 ## <a name="exchange-rates"></a>Wechselkurse
 
-| Ausgangswährung | Zielwährung | Startdatum | Kurs |
+| Ausgangswährung | Zielwährung | Startdatum | Wechselkurs |
 |---------------|-------------|------------|---------------|
-| EUR           | USD         | 01.10.2015  | 200           |
-| EUR           | USD         | 01.11.2015  | 150           |
-| EUR           | USD         | 01.12.2012  | 100           |
+| EUR           | USD         | 01.10.2020  | 200           |
+| EUR           | USD         | 01.11.2020  | 150           |
+| EUR           | USD         | 01.12.2017  | 100           |
 
-## <a name="perform-the-consolidation-for-october-2015"></a>Die Konsolidierung für Oktober 2015 ausführen
+## <a name="perform-the-consolidation-for-october-2020"></a>Die Konsolidierung für Oktober 2020 ausführen
 ### <a name="balances-in-the-consolidation-company"></a>Salden im Konsolidierungsunternehmen
 
 | Sachkonto | Währung | Betrag | Herstellkostenkalkulation    |
@@ -60,7 +60,7 @@ Wenn Sie Daten aus einer Buchhaltungswährung zu anderen konsolidieren, müssen 
 | 110110         | EUR      | 250    | 500 USD × 50 %  |
 | 130100         | EUR      | ‑250   | ‑500 USD × 50 % |
 
-## <a name="perform-currency-revaluation-for-the-accounts-from-october-1-2015-through-november-30-2015"></a>Ausführen einer Neubewertung der Währung für die Konten ab dem 1. Oktober 2015 bis zum 30. November 2015
+## <a name="perform-currency-revaluation-for-the-accounts-from-october-1-2020-through-november-30-2020"></a>Ausführen einer Neubewertung der Währung für die Konten ab dem 1. Oktober 2020 bis zum 30. November 2020
 ### <a name="balances-in-the-consolidation-company"></a>Salden im Konsolidierungsunternehmen
 
 | Sachkonto | Währung | Betrag  | Herstellkostenkalkulation                        |
@@ -72,7 +72,7 @@ Wenn Sie Daten aus einer Buchhaltungswährung zu anderen konsolidieren, müssen 
 
 Sie finden zusätzliche Buchungen für die Berichtswährungsbeträge.
 
-## <a name="perform-currency-revaluation-for-the-accounts-from-october-1-2015-through-december-31-2015"></a>Ausführen einer Neubewertung der Währung für die Konten ab dem 1. Oktober 2015 bis zum 31. Dezember 2015
+## <a name="perform-currency-revaluation-for-the-accounts-from-october-1-2020-through-december-31-2020"></a>Ausführen einer Neubewertung der Währung für die Konten ab dem 1. Oktober 2020 bis zum 31. Dezember 2020
 ### <a name="balances-in-the-consolidation-company"></a>Salden im Konsolidierungsunternehmen
 
 | Sachkonto | Währung | Betrag  | Herstellkostenkalkulation                                          |

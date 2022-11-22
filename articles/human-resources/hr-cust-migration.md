@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 63b08a8493702cf319aa078ef6aa787e2094be87
-ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
+ms.openlocfilehash: 4df9a68ea0128378224bf77bd66423fd2e13fa55
+ms.sourcegitcommit: e5b290bac7e8f468167caa1a5607aac6eac9aaea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "9733445"
+ms.lasthandoff: 11/11/2022
+ms.locfileid: "9760361"
 ---
 # <a name="dynamics-365-human-resources-customer-migration"></a>Dynamics 365 Human Resources Kundenmigration
 
@@ -38,13 +38,12 @@ Die Kundenmigration ist eine Migration per Lift & Shift (verschieben) einer Kun
 
 ### <a name="dataverse-environment-backup-sandbox"></a>Dataverse-Umgebungsbackup (Sandbox)
 
-1. Optional, aber empfohlen: Aktualisieren Sie die vorhandene Human Resources-Sandbox-Umgebung mithilfe einer Kopie der Human Resources-Produktionsumgebung.
-2. [Erstellen Sie eine Dataverse-Umgebung](/power-platform/admin/create-environment#create-an-environment-with-a-database) mithilfe des Power Platform Admin Centers.
+ - Optional, aber empfohlen: Aktualisieren Sie die vorhandene Human Resources-Sandbox-Umgebung mithilfe einer Kopie der Human Resources-Produktionsumgebung.
+ - Erstellen Sie eine neue Dataverse Umgebung mit dem Power Platform Admin Center.
+ - Kopieren Sie die vorhandene Dataverse-Umgebung, die mit der eigenständigen Human Resources-App verknüpft ist, in die Umgebung, die Sie im vorherigen Schritt erstellt haben.
 
-    > [!NOTE]
-    > Stellen Sie beim Hinzufügen einer Datenbank sicher, dass die Option **Dynamics 365-Apps aktivieren** auf **Ja** gestellt ist.
-
-3. [Kopieren Sie die vorhandene Dataverse-Umgebung](/power-platform/admin/copy-environment), die mit der eigenständigen Human Resources-App verknüpft ist, in die Umgebung, die Sie im vorherigen Schritt erstellt haben.
+> [!NOTE]
+> Stellen Sie beim Hinzufügen einer Datenbank sicher, dass die Option **Dynamics 365-Apps aktivieren** auf **Ja** gestellt ist. Ausführliche Informationen finden Sie unter [Vorbereiten einer Power Platform Umgebung](hr-cust-migration.md#prepare-a-power-platform-environment)
 
 ### <a name="dataverse-capacity"></a>Dataverse-Kapazität
 
@@ -89,9 +88,9 @@ Nachdem Sie ein neues Lifecycle Services-Projekt erstellt und den Projekt-Onboar
 #### <a name="prepare-a-power-platform-environment"></a>Eine Power Platform-Umgebung vorbereiten
 
 > [!NOTE]
-> Dieser Schritt gilt nur für die Migration von Sandbox-Umgebungen. Wenn Sie die Produktionsumgebung migrieren, wird die vorhandene Power Platform Admin-Center-Umgebung, die an die Produktionsumgebung angefügt ist, übernommen.
+> Dieser Schritt gilt nur für die Migration von Sandbox-Umgebungen. Wenn Sie die Produktionsumgebung migrieren, wird die vorhandene Power Platform Admin-Center-Umgebung, die an die Produktionsumgebung angefügt ist, übernommen. Stellen Sie beim Hinzufügen einer Datenbank sicher, dass die Schaltfläche **Dynamics 365-Apps aktivieren** auf **Ja** gestellt ist. 
 
-- Im Power Platform Admin Center [erstellen Sie eine Power Plattform-Umgebung](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center), die Sie für die Sandbox-Migration verwenden möchten, oder wählen Sie eine vorhandene Umgebung aus.
+- Im Power Platform Admin Center [Erstellen einer Umgebung mit einer Datenbank](/power-platform/admin/create-environment#create-an-environment-with-a-database), die Sie für die Sandbox-Migration verwenden möchten, oder wählen Sie eine vorhandene Umgebung aus.
 - [Kopieren Sie eine Umgebung](/power-platform/admin/copy-environment) um die Power Platform-Umgebung, die für das Mapping verwendet wird, zu aktualisieren.
 
 #### <a name="migrate-the-sandbox-environment"></a>Die Sandbox-Umgebung migrieren

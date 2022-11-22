@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 27a6ec8fdba495535227d9d893d59edac5588985
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: cd74c6677f80a9075449908411350f1c81b95b02
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715693"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778356"
 ---
 # <a name="take-more-than-the-calculated-discount-for-a-vendor-payment"></a>Für eine Kreditorenzahlung mehr als den berechneten Rabatt nehmen
 
@@ -32,13 +32,13 @@ Kreditor 3051 gibt Fabrikam ein Skonto von 4 Prozent, wenn eine Rechnung in sieb
 
 | Markieren     | Skonto verwenden | Beleg   | Konto | Datum      | Fälligkeitsdatum  | Rechnung | Betrag in Buchungswährung | Währung | Auszugleichender Betrag |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Ausgewählt | Normal            | Inv-10040 | 3051    | 6/29/2015 | 7/29/2015 | 10040   | 1.000,00                       | USD      | 940,00           |
+| Ausgewählt | Normal            | Inv-10040 | 3051    | 29.06.2020 | 29.07.2020 | 10040   | 1,000.00                       | USD      | 940,00           |
 
 Rabattinformationen werden am unteren Rand der Seite **Buchungen ausgleichen** angezeigt.
 
 | Feld                        | Wert     |
 |------------------------------|-----------|
-| Skontodatum           | 7/12/2015 |
+| Skontodatum           | 12.07.2020 |
 | Skontobetrag         | 60.00     |
 | Skonto verwenden            | Normal    |
 | Verwendetes Skonto          | 0,00      |

@@ -2,25 +2,25 @@
 title: Finanzperiodenabschluss-Arbeitsbereich
 description: Dieser Artikel enthält eine Übersicht über den Arbeitsbereich „Finanzperiodenabschluss“ und der zugehörigen Konfiguration.
 author: kweekley
-ms.date: 11/29/2017
+ms.date: 11/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 13791
 ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 531909bb8de892b012ffff347e58f23f997705ef
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 657bdd04c8b6dd36341e0bf771a978f68f13362d
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865711"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780041"
 ---
 # <a name="financial-period-close-workspace"></a>Finanzperiodenabschluss-Arbeitsbereich
 
@@ -28,7 +28,7 @@ ms.locfileid: "8865711"
 
 Dieser Artikel enthält eine Übersicht über den Arbeitsbereich **Finanzperiodenabschluss** und der zugehörigen Konfiguration.
 
-Finanzperiodenabschluss-Arbeitsbereich
+## <a name="financial-period-close-workspace"></a>Finanzperiodenabschluss-Arbeitsbereich
 
 Mit dem Arbeitsbereich **Abschluss Finanzperiode** können Sie Ihre Finanzabschlussprozessein Unternehmen, Bereichen und Personen erfassen. Abhängig von Ihrer Ansicht auf den Arbeitsbereich **Abschluss Finanzperiode** sehen Sie entweder alle Aufgaben und Status für eine Abschlussplanung oder nur die Aufgaben, die Ihnen zugewiesen sind. 
 
@@ -101,7 +101,7 @@ Weisen Sie den Kalender für den Abschlusszeitplan zu, um die Arbeitstage anzuge
 
 Sie müssen die Unternehmen auch festlegen, die der Planung zugeordnet werden. Wenn Vorlagen mehreren Unternehmen zugewiesen sind, werden separate Aufgaben für jedes Unternehmen erstellt, das im abschließenden Zeitplan ist und der Vorlagenaufgabe zugewiesen ist. 
 
-Nachdem ein Abschlusskonto-Zeitplan abgeschlossen ist, wählen Sie die Option für **abgeschlossen**. Der Aufgabenverlauf ist auf der Listenseite **Alle Finanzperioden abschließen**  verfügbarm aber der Abschlusszeitplan wird vom Arbeitsbereich entfernt. Nachdem ein Abschlusszeitplan als  **Geschlossen** markiert wurde, sind Sie nicht mehr in der Lage, Aufgaben hinzuzufügen, zu bearbeiten oder zu entfernen.
+Nachdem ein Abschlusskonto-Zeitplan abgeschlossen ist, wählen Sie die Option **abgeschlossen**. Der Aufgabenverlauf ist auf der Listenseite **Alle Finanzperioden abschließen**  verfügbarm aber der Abschlusszeitplan wird vom Arbeitsbereich entfernt. Nachdem ein Abschlusszeitplan als  **Geschlossen** markiert wurde, sind Sie nicht mehr in der Lage, Aufgaben hinzuzufügen, zu bearbeiten oder zu entfernen.
 
 
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 958de3f9ae6ead6cb6914bd3b7a4560e768013ab
-ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
+ms.openlocfilehash: 4b986461e90b356580da8a136c1da95e7dc64696
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2022
-ms.locfileid: "9740328"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780410"
 ---
 # <a name="get-started-with-master-planning"></a>Erste Schritte mit der Produktprogrammplanung
 
@@ -31,7 +31,7 @@ Die Hauptplanung in Supply Chain Management wird von einem externen Dienst namen
 
 ## <a name="availability"></a>Verfügbarkeit
 
-Die Planungsoptimierung ist derzeit in den folgenden Azure-Gebieten verfügbar: Vereinigte Staaten, Kanada, Brasilien, Europa, Frankreich, Vereinigtes Königreich, Australien, Asien-Pazifik, Japan und Indien. Wenn Sie versuchen, das Add-In aus einer anderen geografischen Region zu installieren, zeigt LCS die Meldung an, dass diese geografische Region nicht unterstützt wird. Weitere Informationen zu Azure-Geografien und den zugehörigen Regionen finden Sie unter [Azure-Geografien](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
+Die Planungsoptimierung ist derzeit in den folgenden Azure-Gebieten verfügbar: Vereinigte Staaten, Kanada, Brasilien, Europa, Frankreich, Vereinigtes Königreich, Norwegen, Schweiz, Australien, Asien-Pazifik, Japan und Indien. Wenn Sie versuchen, das Add-In aus einer anderen geografischen Region zu installieren, zeigt LCS die Meldung an, dass diese geografische Region nicht unterstützt wird. Weitere Informationen zu Azure-Geografien und den zugehörigen Regionen finden Sie unter [Azure-Geografien](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
 
 Beachten Sie, dass Planungsoptimierung keine lokalen Bereitstellungen von Dynamics 365 Supply Chain Management unterstützt.
 

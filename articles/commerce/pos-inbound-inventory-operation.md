@@ -2,26 +2,19 @@
 title: Eingehender Bestandsvorgang in POS
 description: Dieser Artikel beschreibt die Möglichkeiten des POS-Eingangsbestandsvorgangs (POS).
 author: hhainesms
-ms.date: 09/17/2020
+ms.date: 11/16/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: hhaines
-ms.search.validFrom: ''
-ms.dyn365.ops.version: 10.0.9
-ms.custom: ''
-ms.assetid: ''
-ms.search.industry: Retail
-ms.search.form: ''
-ms.openlocfilehash: 3099f03ba2da8a367953ad0d25ee884e41ff9deb
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: 7999c8409c71c7ccf9c1d44bd86ddca6f5e8f6ff
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9288351"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785017"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Eingehender Bestandsvorgang in POS
 
@@ -31,6 +24,11 @@ In Microsoft Dynamics 365 Commerce Version 10.0.10 und höher ersetzen Ein- und 
 
 > [!NOTE]
 > In der Commerce-Version 10.0.10 und später werden alle neuen Funktionen in der POS-Anwendung, die sich auf den Empfang von Filialbeständen gegen Bestellungen und Transportaufträge beziehen, zum **Eingangsvorgang** POS-Vorgang hinzugefügt. Wenn Sie derzeit den Kommissionier- und Empfangsvorgang in der POS-Anwendung verwenden, empfehlen wir Ihnen, eine Strategie für den Übergang von diesem Vorgang zu den neuen Eingangs- und Ausgangsvorgängen zu entwickeln. Obwohl der Kommissionier- und Wareneingangsvorgang nicht aus dem Produkt entfernt wird, werden ab Version 10.0.9 keine weiteren Investitionen in das Produkt getätigt, weder aus funktionaler noch aus leistungsbezogener Sicht.
+
+Das folgende Video bietet einen Überblick und eine Demo der Store-Bestandsgeschäftsprozesse und -Funktionen in Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bMSx]
 
 ## <a name="prerequisite-configure-an-asynchronous-document-framework"></a>Voraussetzung: Konfigurieren Sie ein asynchrones Dokumenten-Framework.
 

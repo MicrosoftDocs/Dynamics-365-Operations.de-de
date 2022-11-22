@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: d24e117b21e291dba1e41d9fa15187b84ff795cf
-ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
+ms.openlocfilehash: bfc1c2021387ed35e6ccb513167e896eddef2eaf
+ms.sourcegitcommit: ea79bf014bbf495ac8e28db29502c8bd85a75f32
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "9752719"
+ms.lasthandoff: 11/11/2022
+ms.locfileid: "9759599"
 ---
 # <a name="set-up-advanced-bank-reconciliation-import-by-using-electronic-reporting"></a>Erweiterten Bankabstimmungsimport mithilfe der elektronischen Berichterstellung einrichten
 
@@ -37,6 +37,9 @@ Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszü
 5. Suchen Sie in der Konfigurationsliste nach **Auszugsmodell für erweiterte Bankabstimmung \> ABR BAI2-Format**.
 6. Wählen Sie das **BAI2**-Format aus.
 7. Wählen Sie im Inforegister **Versionen** die neueste Version, und wählen Sie dann **Importieren** aus.
+
+>[!NOTE]
+>Das **Kontoauszugsmodell von BAI2** wird zu einem späteren Zeitpunkt verworfen. 
 
 ## <a name="set-up-the-bank-statement-format"></a>Bankauszugsformat einrichten
 

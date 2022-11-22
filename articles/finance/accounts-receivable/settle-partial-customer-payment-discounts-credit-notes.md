@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 14564
 ms.assetid: d9984cef-ddcf-46bd-816d-c01b8cc5cf48
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a5ecf69c83805834c01c03d0af9b7b8c5310920
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 44f64b9b9cd4fa65d17ba30fb87a688411becd5a
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725092"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780493"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Eine teilweise Debitorenzahlung, bei der Rechnungsrabatte auf Debitorengutschriften vorhanden sind, ausgleichen
 
@@ -33,22 +33,22 @@ Fabrikam ermöglicht Debitoren, Skonti auf Teilzahlungen und auf Gutschriften. E
 ## <a name="invoice-and-credit-note"></a>Rechnung und Gutschrift
 Debitor 4035 enthält eine Rechnung über 1.000,00 und eine Gutschrift für 100,00. Jedes Dokument hat einen 1-Prozent-Rabatt, wenn es in 14 Tagen beglichen wird. Auf der Seite **Debitorenbuchungen** können Sie diese Information anzeigen.
 
-| Beleg    | Transaktionstyp | Datum      | Rechnung  | Geschuldeter Betrag in Buchungswährung | Gutschriftsbetrag in Buchungswährung | Gesamtbetrag  | Währung |
+| Beleg    | Transaktionstyp | Datum      | Rechnung  | Geschuldeter Betrag in Buchungswährung | Gutschriftsbetrag in Buchungswährung | Saldo  | Währung |
 |------------|------------------|-----------|----------|--------------------------------------|---------------------------------------|----------|----------|
-| FTI-10050  | Rechnung          | 6/28/2015 | 10050    | 1.000,00                             |                                       | 1.000,00 | USD      |
-| CCRN-10050 | Gutschrift      | 6/28/2015 | CR-10050 |                                      | 100,00                                | -100,00  | USD      |
+| FTI-10050  | Rechnung          | 28.06.2020 | 10050    | 1,000.00                             |                                       | 1,000.00 | USD      |
+| CCRN-10050 | Gutschrift      | 28.06.2020 | CR-10050 |                                      | 100.00                                | -100,00  | USD      |
 
 ## <a name="settle-a-credit-note-with-an-invoice"></a>Eine Gutschrift mit einer Rechnung ausgleichen
 Über die Seite **Debitorenbuchungen** öffnen Sie die Seite **Bankbuchungen**. Arnie kann die Seite **Buchungen ausgleichen** verwendet werden, um die Rechnung und Gutschrift auszugleichen. Als Teil des Ausgleichsprozesses zeigt Arnie die Skontodatumsangaben der Beträge an. Arnie markiert die zwei Dokumente und klickt anschließend auf **Buchen**, um die Buchungen auszugleichen. Es gibt einen Rabatt von -1,00 in der Gutschrift, da Fabrikam Rabatte für Gutschriften zulässt.
 
 | Markieren     | Skonto verwenden | Beleg    | Konto | Datum      | Fälligkeitsdatum  | Rechnung  | Betrag in Buchungswährung | Währung | Auszugleichender Betrag |
 |----------|-------------------|------------|---------|-----------|-----------|----------|--------------------------------|----------|------------------|
-| Ausgewählt | Normal            | FTI-10050  | 4035    | 6/28/2015 | 7/28/2015 | 10050    | 1.000,00                       | USD      | 990,00           |
-| Ausgewählt | Normal            | CCRN-10050 | 4035    | 6/28/2015 | 7/28/2015 | CR-10050 | -100,00                        | USD      | -99,00           |
+| Ausgewählt | Normal            | FTI-10050  | 4035    | 28.06.2020 | 28.07.2020 | 10050    | 1,000.00                       | USD      | 990.00           |
+| Ausgewählt | Normal            | CCRN-10050 | 4035    | 28.06.2020 | 28.07.2020 | CR-10050 | -100,00                        | USD      | -99,00           |
 
 Rabattinformationen werden am unteren Rand der Seite **Buchungen ausgleichen** angezeigt.
 
-- **Skontodatum**: 7.12.2015 
+- **Skontodatum**: 12.07.2020 
 - **Skontobetrag**: -1.00     
 - **Skonto verwenden**: Normal    
 - **Verwendetes Skonto**: 0.00      

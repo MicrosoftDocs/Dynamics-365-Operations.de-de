@@ -2,24 +2,19 @@
 title: Überblick über Bewertungen und Prüfungen
 description: Dieser Artikel behandelt Bewertungen und Prüfungen in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 10/01/2019
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: gmohanv
+ms.author: josaw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.assetid: ''
-ms.search.industry: ''
-ms.openlocfilehash: 612a3ca480049febac352ed9215ec9de83bbecf6
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 1f0d3ed5d95ad49cb09cf1f89d0f4c8c07620b92
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9268999"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785134"
 ---
 # <a name="ratings-and-reviews-overview"></a>Überblick über Bewertungen und Prüfungen
 
@@ -43,9 +38,14 @@ Die Bewertungs- und Prüfungslösung bietet Widgets, die Bewertungszusammenfassu
 
 Die Bewertungs- und Überprüfungslösung bietet auch eine BI-Vorlage (Business Intelligence), die eine Reihe von Metriken enthält, um Einblicke in Bewertungen und Überprüfungen zu gewähren. Bewertungs- und Prüfungsdaten können zur weiteren Analyse exportiert werden.
 
+Das folgende Video bietet einen Überblick von Bewertungs- und Prüfungs-Funktionen in Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5c2wS]
+
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Abonnieren zum Verwenden von Bewertungen und Prüfungen](opt-in-ratings-reviews.md)
+[Nutzung von Bewertungen und Prüfungen aktivieren](opt-in-ratings-reviews.md)
 
 [Bewertungen und Prüfungen verwalten](manage-reviews.md)
 

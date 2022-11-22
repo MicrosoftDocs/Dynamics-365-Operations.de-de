@@ -2,23 +2,23 @@
 title: Importieren der Daten einer Tochtergesellschaft aus Dateien
 description: In diesem Artikel wird erläutert, wie Sie Daten von externen Systemen so vorbereiten, dass sie in Microsoft Dynamics 365 Finance importiert werden können.
 author: jinniew
-ms.date: 10/09/2020
+ms.date: 10/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 6886e2ee79ee9e4ccc067dc4f661c1eea646cfa6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 494f6396d5e6fab6fef9404ad473566b02b1b9ab
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846769"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780095"
 ---
 # <a name="import-subsidiary-data-from-files"></a>Importieren der Daten einer Tochtergesellschaft aus Dateien
 
@@ -32,27 +32,27 @@ In diesem Artikel wird erläutert, wie Sie Daten von externen Systemen so vorber
 3. Exportieren Sie die Daten in eine Datei, indem Sie die Schritte im Verfahren „Datenimport / -Export“ in [Übersicht über Datenimport- und -exportaufgaben](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) ausführen. Mit diesem Verfahren können Sie Daten aus einer anderen Dynamics 365 Finance-Instanz oder von Dynamics 365 Business Central konsolidieren. Wenn Sie Daten aus externen Systemen importieren, müssen die Daten das in [Exportieren von Daten von Tochtergesellschaften in Dateien](export-subsidiary-data-to-file.md) beschriebene Format haben.
 4. Wechseln Sie zu **Konsolidierungen \> Mit Import konsolidieren**. Geben Sie auf der Seite **Mit Import konsolidieren** auf der Registerkarte **Kriterien** die Details des Bereichts und/oder des Imports ein, indem Sie die folgenden Felder festlegen.
 
-    | Feld                                 | Wert für den Bericht | Wert für den Import |
-    |---------------------------------------|----------------------|----------------------|
-    | Beschreibung                           | Nicht zutreffend | Geben Sie eine Beschreibung zur Bestimmung des Imports ein. |
-    | Hauptkonto                          | Definieren Sie den Kontenbereich, den der Bericht enthalten soll. Wenn Sie keinen Bereich definieren, werden alle Konten einbezogen. | Definieren Sie den Kontenbereich, den der Import enthalten soll. Wenn Sie keinen Bereich definieren, werden alle Konten einbezogen. |
-    | Konsolidierungsperiode                  | Definieren Sie den zu konsolidierenden Datumsbereich. | Definieren Sie den zu konsolidierenden Datumsbereich. |
-    | Istbeträge einbeziehen                | Setzen Sie diese Option auf **Ja**, um die Istwerte einzuschließen. | Setzen Sie diese Option auf **Ja**, um die Istwerte einzuschließen. |
-    | Budgetbeträge einbeziehen                | Setzen Sie diese Option auf **Ja**, um Budgetbeträge in Konsolidierungen einzuschließen. | Setzen Sie diese Option auf **Ja**, um Budgetbeträge in Konsolidierungen einzuschließen. |
-    | Guthaben während der Konsolidierung neu erstellen | Setzen Sie diese Option auf **Ja**, wenn der Wiederherstellungsprozess den Saldo und die neuen Datensätze vollständig löschen und den Saldo von Anfang an neu erstellen soll. | Setzen Sie diese Option auf **Ja**, wenn der Wiederherstellungsprozess den Saldo und die neuen Datensätze vollständig löschen und den Saldo von Anfang an neu erstellen soll. |
-    | Budgetmodelle                         | Nicht zutreffend | Wenn Sie den Import von Budgetbeträgen ausgewählt haben, geben Sie die zu konsolidierenden Budgetmodelle ein. |
-    | Budgetkurstyp                      | Nicht zutreffend | Geben Sie den Typ des Budget-Wechselkurses ein. |
+| Feld                                 | Wert für den Bericht | Wert für den Import |
+|---------------------------------------|----------------------|----------------------|
+| **Beschreibung**                      | Nicht zutreffend | Geben Sie eine Beschreibung zur Bestimmung des Imports ein. |
+| **Hauptkonto**    | Definieren Sie den Kontenbereich, den der Bericht enthalten soll. Wenn Sie keinen Bereich definieren, werden alle Konten einbezogen. | Definieren Sie den Kontenbereich, den der Import enthalten soll. Wenn Sie keinen Bereich definieren, werden alle Konten einbezogen. |
+    | **Konsolidierungsperiode**                  | Definieren Sie den zu konsolidierenden Datumsbereich. | Definieren Sie den zu konsolidierenden Datumsbereich. |
+    | **Istbeträge einbeziehen**                | Setzen Sie diese Option auf **Ja**, um die Istwerte einzuschließen. | Setzen Sie diese Option auf **Ja**, um die Istwerte einzuschließen. |
+| **Budgetbeträge einbeziehen** | Setzen Sie diese Option auf **Ja**, um Budgetbeträge in Konsolidierungen einzuschließen. | Setzen Sie diese Option auf **Ja**, um Budgetbeträge in Konsolidierungen einzuschließen. |
+| **Guthaben während der Konsolidierung neu erstellen** | Setzen Sie diese Option auf **Ja**, wenn der Wiederherstellungsprozess den Saldo und die neuen Datensätze vollständig löschen und den Saldo von Anfang an neu erstellen soll. | Setzen Sie diese Option auf **Ja**, wenn der Wiederherstellungsprozess den Saldo und die neuen Datensätze vollständig löschen und den Saldo von Anfang an neu erstellen soll. |
+| **Budgetmodelle**                         | Nicht zutreffend | Wenn Sie den Import von Budgetbeträgen ausgewählt haben, geben Sie die zu konsolidierenden Budgetmodelle ein. |
+    | **Budgetkurstyp**                      | Nicht zutreffend | Geben Sie den Typ des Budget-Wechselkurses ein. |
 
 6. Wenn Sie unterschiedliche Buchhaltungswährungen haben, verwenden Sie die Felder auf der **Währungsumrechnung**-Registerkarte, um die Umrechnung zu konfigurieren, die während der Konsolidierung durchgeführt wird.
 
     | Feld                      | Beschreibung |
     |----------------------------|-------------|
-    | Juristische Quellperson        | Wählen Sie die juristische Person aus, von der Sie importieren. |
-    | Buchhaltungswährung der Quellen | Diese Standardwährung ist die Währung, die der juristischen Quellperson zugeordnet ist, die Sie im **Juristische Person der Quelle**-Feld ausgewählt haben. |
-    | Von- und Bis-Konten       | Definieren Sie den Bereich der aus der juristischen Quellperson zu importierenden Konten. |
-    | Wechselkurstyp         | Wählen Sie den Typ des Wechselkurses aus. Wechselkurstypen werden beim Erstellen eines Hauptkontos zugewiesen. Weitere Informationen finden Sie unter [Erstellen eines Hauptkontos](tasks/create-main-account.md). |
-    | Anwenden des Wechselkurses vom   | Geben Sie ein Datum ein, um den an diesem Datum gültigen Wechselkurs anzuwenden. Alternativ können Sie den Wert eingeben, der als Wechselkurs verwendet werden soll. |
-    | Kurs              | Der Standardwert hängt vom Typ des Wechselkurses ab, den Sie im Feld **Wechselkurstyp** ausgewählt haben. Wenn Sie einen benutzerdefinierten Wechselkurs eingegeben haben, können Sie einen Kurs definieren. |
+ | **Juristische Quellperson**        | Wählen Sie die juristische Person aus, von der Sie importieren. |
+ | **Buchhaltungswährung der Quellen** | Diese Standardwährung ist die Währung, die der juristischen Quellperson zugeordnet ist, die Sie im **Juristische Person der Quelle**-Feld ausgewählt haben. |
+ | **Von** und **Bis Konten**       | Definieren Sie den Bereich der aus der juristischen Quellperson zu importierenden Konten. |
+    | **Wechselkurstyp**         | Wählen Sie den Typ des Wechselkurses aus. Wechselkurstypen werden beim Erstellen eines Hauptkontos zugewiesen. Weitere Informationen finden Sie unter [Erstellen eines Hauptkontos](tasks/create-main-account.md). |
+| **Anwenden des Wechselkurses vom**   | Geben Sie ein Datum ein, um den an diesem Datum gültigen Wechselkurs anzuwenden. Alternativ können Sie den Wert eingeben, der als Wechselkurs verwendet werden soll. |
+| **Kurs**  | Der Standardwert hängt vom Typ des Wechselkurses ab, den Sie im Feld **Wechselkurstyp** ausgewählt haben. Wenn Sie einen benutzerdefinierten Wechselkurs eingegeben haben, können Sie einen Kurs definieren. |
 
 7. Stellen Sie die **Im Hintergrund ausführen**-Option auf **Ja**, damit der Importvorgang im Hintergrund ausgeführt werden kann.
 8. Stellen Sie die **Stapelverarbeitung**-Option auf **Ja**, um die Konsolidierung zu einem bestimmten Zeitpunkt als Stapelaufgabe auszuführen. Um die Konsolidierung sofort auszuführen, wählen Sie **OK**. 

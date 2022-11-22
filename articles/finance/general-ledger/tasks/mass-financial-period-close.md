@@ -2,7 +2,7 @@
 title: Massen-Finanzperiodenabschluss
 description: Dieser Artikel zeigt, wie Sie einen Zeitraum zurückstellen oder dauerhaft schließen können, oder mehr als eine juristische Person auf einmal.
 author: aprilolson
-ms.date: 08/16/2019
+ms.date: 11/16/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 18e2418777e4f8a5f10b946d7cdc217e5e264318
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8a85d512842b27f2d74507be16a8f2819f483e0d
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872440"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779809"
 ---
 # <a name="mass-financial-period-close"></a>Massen-Finanzperiodenabschluss
 
@@ -26,7 +26,11 @@ ms.locfileid: "8872440"
 
 Dieser Artikel zeigt, wie Sie einen Zeitraum zurückstellen oder dauerhaft schließen können, oder mehr als eine juristische Person auf einmal. Darüber hinaus zeigt die Aufgabe, wie die Benutzergruppenbuchun auf bestimmte Module beschränkt wird.
 
-1. Gehen Sie im Navigationsbereich zu **Hauptbuch > Periodenabschluss > Sachkonto-Kalender**. Beachten Sie, dass die Liste der angezeigten juristischen Personen vom auf der Seite ausgewählten Steuerkalender abhängig ist. Nur juristischen Personen, die den ausgewählten Steuerkalender verwenden, werden angezeigt.
+1. Gehen Sie im Navigationsbereich zu **Hauptbuch > Periodenabschluss > Sachkonto-Kalender**. 
+
+>[!NOTE]
+> Die Liste der angezeigten juristischen Personen ist vom auf der Seite ausgewählten Steuerkalender abhängig. Nur juristischen Personen, die den ausgewählten Steuerkalender verwenden, werden angezeigt.
+
 2. Wählen Sie **Bearbeiten** aus.
 3. Wählen Sie den Zeitraum aus, für den Sie den Status ändern möchten.
 4. Wählen Sie die juristischen Personen aus, für den Sie den Status aktualisieren möchten. Sie können alle Rechtspersonen schnell auswählen, indem Sie das Häkchen oben links im Raster markieren.  

@@ -2,7 +2,7 @@
 title: Sachkonto-Zuordnungserfassung verarbeiten
 description: In diesem Artikel wird erläutert, wie Sie in Dynamics 365 Finance eine Zuteilungsanforderung bearbeiten.
 author: aprilolson
-ms.date: 07/26/2019
+ms.date: 11/15/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b86f8f5d090d624e812d9e7e6c0bc0212e5e9716
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1f22b5042e0e3726afcb1061852fdbd8de770c61
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902428"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779391"
 ---
 # <a name="process-ledger-allocation-journal"></a>Sachkonto-Zuordnungserfassung verarbeiten
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Artikel wird erläutert, wie Sie eine Zuordnungsanforderung bearbeiten. Mithilfe der Seite "Zuordnungsanforderung verarbeiten" können Sie eine Zuordnungserfassung erstellen, die vor der Buchung im Hauptbuch geprüft und genehmigt oder direkt im Hauptbuch gebucht werden kann. Vor der Erstellung einer Zuordnungserfassung muss mindesten eine Sachkontozuordnungsregel erstellt werden. Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
+In diesem Artikel wird erläutert, wie Sie eine Zuordnungsanforderung bearbeiten. Mithilfe der Seite **Zuordnungsanforderung verarbeiten** können Sie eine Zuordnungserfassung erstellen, die vor der Buchung im Hauptbuch geprüft und genehmigt oder direkt im Hauptbuch gebucht werden kann. Vor der Erstellung einer Zuordnungserfassung muss mindesten eine Sachkontozuordnungsregel erstellt werden. Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
 
 1. Gehen Sie im Navigationsbereich zu **Hauptbuch > Zuteilungen > Prozessverrechnungsanforderung**.
 2. Wählen Sie im Feld **Regel** den gewünschten Datensatz im Dropdown-Menü aus.
@@ -33,8 +33,8 @@ In diesem Artikel wird erläutert, wie Sie eine Zuordnungsanforderung bearbeiten
     - Das **Als Datum** ist sehr wichtig, wenn das Ledger die Datenquelle für die Regel ist. Dieses Datum steuert, welche Sachkonto für die Zuweisung genutzt wird.  
     - Im Feld **Nullquelle** wählen Sie **Stop**. Dadurch wird der Zuordnungsprozess gestoppt und eine Meldung angezeigt, die besagt, dass ein Betrag von Null ausgewählt wurde.  
 
-4. Wählen Sie im Feld **Vorschlagsoptionen** **Nur Vorschlag**. Wählen Sie **Nur Vorschlag**, um das Ergebnis in Allokationsbüchern zu überprüfen und optional zu genehmigen, bevor Sie die Allokation ins Hauptbuch buchen.  
-5. Geben Sie im Feld "Datum für Sachkontobuchung" ein Datum ein.
+4. Wählen Sie im Feld **Vorschlagsoptionen** **Nur Vorschlag**. Wählen Sie **Nur Vorschlag**, um das Ergebnis in **Allokationsbüchern** zu überprüfen und optional zu genehmigen, bevor Sie die Allokation ins Hauptbuch buchen.  
+5. Geben Sie im Feld **Datum für Sachkontobuchung** ein Datum ein.
 6. Wählen Sie **OK**.
 7. Gehen Sie im Navigationsbereich zu **Module > Hauptbuch > Zuordnungen > Zuordnungen > Zuordnungsjournale**.
 8. Wählen Sie **Positionen** aus.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 6faf71ec5d14584034f9107c33ccce1cd1d393c7
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 03b0989d40882c3910b35744715c36babdcc3470
+ms.sourcegitcommit: e02bd317e96faf6182e70fb50b126868a94d9d06
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220331"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9757220"
 ---
 # <a name="saved-views"></a>Gespeicherte Ansichten
 
@@ -107,7 +107,7 @@ Möchten Sie eine neue Ansicht (mithilfe der Aktivität **Speichern unter**) ers
 
 Das Dialogfeld **Verwalten Sie meine Ansichten** bietet grundlegende Verwaltungsfunktionen für Ihre persönlichen Ansichten und die Reihenfolge in der Ansichts-Auswahl. Um diese Seite zu öffnen, wählen Sie den Ansichtsnamen, um das Ansichtsauswahl-Dropdownmenü zu öffnen, wählen Sie **Weiter** und anschließend **Verwalten meiner Ansichten** aus.
 
-**Version 10.0.21 oder später:** Wenn die Funktion **Verbesserte Unterstützung juristischer Entitäten für gespeicherte Ansichten** eingeschaltet ist, zeigt der Abschnitt **Meine Ansichten** der Dialogbox **Meine Ansichten verwalten** die verfügbaren Ansichten für die Seite in Abschnitten an. Alle Ansichten, die spezifisch für die aktuelle juristische Entität sind, werden in einem eigenen Abschnitt angezeigt. Der Abschnitt **Globale Ansichten** wird immer angezeigt, so dass Sie die Ansichten verwalten können, die für die Seite in allen juristischen Entitäten verfügbar sind. 
+Wenn die Funktion **Verbesserte Unterstützung juristischer Entitäten für gespeicherte Ansichten** eingeschaltet ist, zeigt der Abschnitt **Meine Ansichten** der Dialogbox **Meine Ansichten verwalten** die verfügbaren Ansichten für die Seite in Abschnitten an. Alle Ansichten, die spezifisch für die aktuelle juristische Entität sind, werden in einem eigenen Abschnitt angezeigt. Der Abschnitt **Globale Ansichten** wird immer angezeigt, so dass Sie die Ansichten verwalten können, die für die Seite in allen juristischen Entitäten verfügbar sind. 
 
 Für eine Liste der verfügbaren Ansichten für diese Seite sind die folgenen Aktivitäten verfügbar.
 
@@ -138,9 +138,9 @@ Führen Sie folgende Schritte aus, um eine Ansicht zu veröffentlichen.
 
 1. Erstellen und Speichern einer persönlichen Kopie der Ansicht, die veröffentlicht werden soll. 
 2. Mit dieser Ansicht, die derzeit geladen ist, wählen Sie den Ansichtsnamen aus, um das Ansichtsauswahl-Dropdownmenü zu öffnen. 
-3. Wählen Sie die Schaltfläche **Mehr** und wählen Sie dann **Veröffentlichen** aus. Das Feld Veröffentlichen wird geöffnet.
+3. Wählen Sie die Schaltfläche **Mehr** und wählen Sie dann **Veröffentlichen** aus. Das Feld **Veröffentlichen** wird geöffnet.
 4. Geben Sie einen Namen für die Ansicht ein. Der Name, den Sie eingeben, ist Name, den Benutzer, die diese Ansicht erhalten, in der Ansichts-Auswahl finden. Die Namen von veröffentlichten Ansichten für eine Seite müssen eindeutig sein. Es sind keine Duplikat-Namen zulässig, auch wenn die Liste der Rollen oder juristischen Personen, auf die sie angewendet werden, sich unterscheiden.
-5. **Update 10.0.17 oder höher:** Wenn die Funktion **(Vorschau) Übersetzungsunterstützung für Organisationsansichten** aktiviert ist, können Sie Übersetzungen für Ihren Ansichtsnamen in so vielen Sprachen hinzufügen, wie Ihre Organisation benötigt, indem Sie die Schaltfläche **Übersetzungen** neben dem Feld **Name** auswählen. Der Ansichtsname wird den Benutzern dann in ihrer aktuellen Sprache angezeigt. Sie können auch die Standardsprache für die Übersetzung festlegen, die Benutzern angezeigt wird, die Sprachen verwenden, für die keine Übersetzung definiert ist.
+5. Wenn die Funktion **Übersetzungsunterstützung für Organisationsansichten** aktiviert ist, können Sie Übersetzungen für Ihren Ansichtsnamen in so vielen Sprachen hinzufügen, wie Ihre Organisation benötigt, indem Sie die Schaltfläche **Übersetzungen** neben dem Feld **Name** auswählen. Der Ansichtsname wird den Benutzern dann in ihrer aktuellen Sprache angezeigt. Sie können auch die Standardsprache für die Übersetzung festlegen, die Benutzern angezeigt wird, die Sprachen verwenden, für die keine Übersetzung definiert ist.
 5. Optional: Geben Sie eine Beschreibung für die Ansicht ein, damit Benutzer, die diese Ansicht erhalten, ihren Zweck besser verstehen können. 
 6. Legen Sie fest, ob die Ansicht als Standardansicht für die ausgewählten Benutzer veröffentlicht werden soll. Wenn eine Ansicht zur Standardansicht gemacht wird, wird sie beim nächsten Öffnen der Zielseite angezeigt. Die einzelne globale Standardansicht jedes Zielbenutzers wird geändert. Benutzer können jedoch ihre Standardansicht nach dem Veröffentlichen weiterhin ändern.
 
@@ -150,9 +150,10 @@ Führen Sie folgende Schritte aus, um eine Ansicht zu veröffentlichen.
     > - Wenn Sie eine Ansicht als Standardansicht für einige oder alle juristischen Entitäten veröffentlichen, tritt das folgende Verhalten auf:
     >
     >    - Wenn nur die Basisfunktion **Gespeicherte Ansichten** eingeschaltet ist, wird die einzelne, globale Standardansicht für jeden anvisierten Benutzer geändert. 
-    >    - **Version 10.0.21 oder später:** Wenn die Funktion **Verbesserte Unterstützung von juristischen Entitäten für gespeicherte Ansichten** eingeschaltet ist und Sie die Ansicht für eine Untergruppe von juristischen Entitäten veröffentlichen, wird die Standardansicht für diese juristischen Entitäten für jeden gezielten Benutzer geändert.
+    >    - Wenn die Funktion **Verbesserte Unterstützung von juristischen Entitäten für gespeicherte Ansichten** eingeschaltet ist und Sie die Ansicht für eine Untergruppe von juristischen Entitäten veröffentlichen, wird die Standardansicht für diese juristischen Entitäten für jeden gezielten Benutzer geändert.
     >
     > - Wenn ein Benutzer Rollen hat, in denen mehrere Ansichten als Standardansicht veröffentlicht werden, wird die zuletzt veröffentlichte Ansicht als Standardansicht des Benutzers verwendet. 
+    > - Das Veröffentlichen funktioniert nicht für Rollenzuweisungen, die mithilfe von AAD-Gruppen vorgenommen wurden. 
 
 8. Fügen Sie die Sicherheitsrollen hinzu, die den Benutzer entsprechen, auf die diese Ansicht ausgerichtet ist. 
 9. Bestimmen Sie, ob Sie die Ansicht in den untergeordneten Rollen jeder ausgewählten Sicherheitsrolle veröffentlichen möchten. Wenn Sie dies tun, aktivieren Sie das Kontrollkästchen **Untergeordnete Rollen einschließen** in der Zeile für die entsprechenden Sicherheitsrollen. Beachten Sie, dass dieses Kontrollkästchen für Rollen ohne untergeordnete Rollen nicht verfügbar ist.
@@ -162,7 +163,7 @@ Führen Sie folgende Schritte aus, um eine Ansicht zu veröffentlichen.
     > Beachten Sie das folgende Verhalten, wenn Sie eine Ansicht für eine bestimmte juristische Entität veröffentlichen, aber diese Ansicht nicht als Standardansicht veröffentlichen:
     >
     > - Wenn nur die Basisfunktion **Gespeicherte Ansichten** eingeschaltet ist, zeigt die Ansichtsauswahl des Benutzers für die Seite die Ansicht zunächst nur für die angegebenen juristischen Entitäten an. Nachdem die Ansicht jedoch zum ersten Mal geladen wurde, zeigt der Ansichts-Selektor für die Seite diese immer an, unabhängig von der juristischen Entität.
-    > - **Version 10.0.21 oder später:** Wenn die Funktion **Verbesserte Unterstützung von juristischen Entitäten für gespeicherte Ansichten** eingeschaltet ist, zeigt der Ansichtsselektor die Ansicht immer nur für die angegebenen juristischen Entitäten an.
+    > - Wenn die Funktion **Verbesserte Unterstützung von juristischen Entitäten für gespeicherte Ansichten** eingeschaltet ist, zeigt der Ansichtsselektor die Ansicht immer nur für die angegebenen juristischen Entitäten an.
 
 11. Wählen Sie **Veröffentlichen** aus.
 
@@ -259,7 +260,7 @@ Bei Seiten mit Auswahlmöglichkeiten für große Ansichten (sowohl Personalisier
 Wenn Sie eine Ansicht für eine bestimmte juristische Entität veröffentlichen, aber diese Ansicht nicht als Standardansicht veröffentlichen, tritt folgendes Verhalten auf:
 
 - Wenn nur die Basisfunktion **Gespeicherte Ansichten** eingeschaltet ist, zeigt die Ansichtsauswahl des Benutzers für die Seite die Ansicht zunächst nur für die angegebenen juristischen Entitäten an. Nachdem die Ansicht jedoch zum ersten Mal geladen wurde, zeigt der Ansichts-Selektor für die Seite diese immer an, unabhängig von der juristischen Entität. Dieses Verhalten tritt auf, weil Benutzer ihre eigene persönliche Kopie der veröffentlichten Ansicht erhalten, wenn diese geladen wird, und persönliche Ansichten global sind.
-- **Version 10.0.21 oder später:** Wenn die Funktion **Verbesserte Unterstützung von juristischen Entitäten für gespeicherte Ansichten** eingeschaltet ist, zeigt der Ansichtsselektor die Ansicht immer nur für die angegebenen juristischen Entitäten an. Dieses Verhalten tritt auf, weil die Funktion ermöglicht, dass Ansichten (einschließlich persönlicher Ansichten) mit bestimmten juristischen Entitäten verknüpft werden können.
+- Wenn die Funktion **Verbesserte Unterstützung von juristischen Entitäten für gespeicherte Ansichten** eingeschaltet ist, zeigt der Ansichtsselektor die Ansicht immer nur für die angegebenen juristischen Entitäten an. Dieses Verhalten tritt auf, weil die Funktion ermöglicht, dass Ansichten (einschließlich persönlicher Ansichten) mit bestimmten juristischen Entitäten verknüpft werden können.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

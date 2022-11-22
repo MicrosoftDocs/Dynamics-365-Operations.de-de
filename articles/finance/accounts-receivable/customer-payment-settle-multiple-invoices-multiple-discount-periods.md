@@ -2,25 +2,25 @@
 title: Eine Zahlung zum Ausgleichen von Rechnungen verwenden, die sich über mehrere Rabattperioden erstrecken
 description: Dieser Artikel zeigt, wie mehrere Rechnungen bezahlt werden, wenn jede einzelne Rechnung zum Abzug eines Skontos berechtigt ist. Die Szenarien in diesem Artikel zeigen auf, wie Skonti je nach Zeitpunkt der Zahlung variieren.
 author: ShivamPandey-msft
-ms.date: 10/26/2017
+ms.date: 11/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 14511
 ms.assetid: 3e42ccb5-b9d7-4a70-8db9-4206d10fd433
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e6035973abea9dacd4b6d4d8bf2fd3c7d6b10fb0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6bf321a5b0511295f2500f10cdffa9ff6f043bff
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872643"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780544"
 ---
 # <a name="use-one-payment-to-settle-invoices-that-span-multiple-discount-periods"></a>Eine Zahlung zum Ausgleichen von Rechnungen verwenden, die sich über mehrere Rabattperioden erstrecken
 
@@ -44,11 +44,11 @@ Wenn Arnie eine Zahlungserfassung erstellt, um diese Rechnungen am 29. Juni voll
 -   Die Zahlung der Rechnung FTI-10041 beträgt 990,00. Ein Skonto von 1 Prozent oder 10,00 wird in Anspruch genommen.
 -   Die Zahlung der Rechnung FTI-10042 beträgt 980,00. Ein Skonto von 2 Prozent oder 20,00 wird in Anspruch genommen.
 
-| Markieren                     | Skonto verwenden | Beleg   | Konto | Datum      | Fälligkeitsdatum  | Rechnung | Geschuldeter Betrag in Buchungswährung | Gutschriftsbetrag in Buchungswährung | Währung | Auszugleichender Betrag |
-|--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
-| Ausgewählt                 | Normal            | FTI-10040 | 4032    | 5/15/2015 | 6/15/2015 | 10040   | 1.000,00                             |                                       | USD      | 1.000,00         |
-| Ausgewählt                 | Normal            | FTI-10041 | 4032    | 6/25/2015 | 7/25/2015 | 10041   | 1.000,00                             |                                       | USD      | 990,00           |
-| Ausgewählt und hervorgehoben | Normal            | FTI-10042 | 4032    | 6/25/2015 | 7/25/2015 | 10042   | 1.000,00                             |                                       | USD      | 980,00           |
+| Markieren | Skonto verwenden | Beleg   | Konto | Datum   | Fälligkeitsdatum  | Rechnung | Geschuldeter Betrag in Buchungswährung | Gutschriftsbetrag in Buchungswährung | Währung | Auszugleichender Betrag |
+|------|----------|-----------|---------|-----------|-----------|---------|---------------------|---------------------|----------|------------------|
+| Ausgewählt     | Normal      | FTI-10040 | 4032    | 15.05.2020 | 15.06.2020 | 10040   | 1,000.00  |                    | USD      | 1,000.00         |
+| Ausgewählt     | Normal      | FTI-10041 | 4032    | 25.06.2020 | 25.07.2020 | 10041   | 1,000.00  |                    | USD      | 990.00           |
+| Ausgewählt und hervorgehoben | Normal      | FTI-10042 | 4032    | 25.06.2020 | 25.07.2020 | 10042   | 1,000.00    |              | USD      | 980.00           |
 
 Nachdem die Zahlung gebucht wurde, ist der Debitorensaldo 0,00.
 
@@ -60,19 +60,19 @@ Wenn Arnie eine Zahlungserfassung erstellt, um diese Rechnungen am 1. Juli volls
 -   Die Zahlung der Rechnung FTI-10042 beträgt 990,00. Ein Skonto von 1 Prozent oder 10,00 wird in Anspruch genommen. Obwohl der 1. Juli nach der Periode ist, für die der 2-Prozent Rabatt gilt, liegt er immer noch in der Periode, für die der 1-Prozent-Rabatt gilt.
 
 | Markieren                     | Skonto verwenden | Beleg   | Konto | Datum      | Fälligkeitsdatum  | Rechnung | Geschuldeter Betrag in Buchungswährung | Gutschriftsbetrag in Buchungswährung | Währung | Auszugleichender Betrag |
-|--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
-| Ausgewählt                 | Normal            | FTI-10040 | 4032    | 5/15/2015 | 6/15/2015 | 10040   | 1.000,00                             |                                       | USD      | 1.000,00         |
-| Ausgewählt                 | Normal            | FTI-10041 | 4032    | 6/25/2015 | 7/25/2015 | 10041   | 1.000,00                             |                                       | USD      | 990,00           |
-| Ausgewählt und hervorgehoben | Normal            | FTI-10042 | 4032    | 6/25/2015 | 7/25/2015 | 10042   | 1.000,00                             |                                       | USD      | 990,00           |
+|----------|---------|-----------|---------|-----------|-----------|---------|--------------------|------------------|----------|------------------|
+| Ausgewählt         | Normal            | FTI-10040 | 4032    | 15.05.2020 | 15.06.2020 | 10040   | 1,000.00         |                | USD      | 1,000.00         |
+| Ausgewählt                 | Normal            | FTI-10041 | 4032    | 25.06.2020 | 25.07.2020 | 10041   | 1,000.00  |               | USD      | 990.00           |
+| Ausgewählt und hervorgehoben | Normal            | FTI-10042 | 4032    | 25.06.2020 | 25.07.2020 | 10042   | 1,000.00  |             | USD      | 990.00           |
 
 ## <a name="partial-settlement-on-june-29"></a>Teilausgleich am 29. Juni
 Debitor 4032 kann einen Teilbetrag, wie etwa die Hälfte jeder Rechnung, bezahlen. Arnie erstellt eine Zahlung für Debitor 4032 und öffnet anschließend die Seite **Buchungen ausgleichen**. Auf der Seite **Buchungen ausgleichen** markiert Arnie alle drei Rechnungspositionen für den Ausgleich. Für jede Position gibt Arnie den auszugleichenden Betrag auf Grundlage der Anweisungen ein, die dem Debitor bereitgestellt werden. Wenn Arnie eine Position auswählt, sieht Arnie den Rabattbetrag für diese Position und den Skontobetrag, der veranschlagt wird. Da der Debitor die Hälfte der Rechnung bezahlt, sieht Arnie, dass der Wert im Feld **Skontobetrag** für FTI-10042 **20,00** betragt, aber der Wert im Feld **In Anspruch genommener Skonto** beträgt **10,00**. Der Zahlungsbetrag ist 1,485.00.
 
-| Markieren                     | Skonto verwenden | Beleg   | Konto | Datum      | Fälligkeitsdatum  | Rechnung | Geschuldeter Betrag in Buchungswährung | Gutschriftsbetrag in Buchungswährung | Währung | Auszugleichender Betrag |
-|--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
-| Ausgewählt                 | Normal            | FTI-10040 | 4032    | 5/15/2015 | 6/15/2015 | 10040   | 1.000,00                             |                                       | USD      | 500,00           |
-| Ausgewählt                 | Normal            | FTI-10041 | 4032    | 6/25/2015 | 7/25/2015 | 10041   | 1.000,00                             |                                       | USD      | 495,00           |
-| Ausgewählt und hervorgehoben | Normal            | FTI-10042 | 4032    | 6/25/2015 | 7/25/2015 | 10042   | 1.000,00                             |                                       | USD      | 490,00           |
+| Markieren   | Skonto verwenden | Beleg   | Konto | Datum      | Fälligkeitsdatum  | Rechnung | Geschuldeter Betrag in Buchungswährung | Gutschriftsbetrag in Buchungswährung | Währung | Auszugleichender Betrag |
+|-------------|-------------------|-----------|---------|-----------|-----------|---------|-----------|------------------|----------|------------------|
+| Ausgewählt   | Normal       | FTI-10040 | 4032    | 15.05.2020 | 15.06.2020 | 10040   | 1,000.00        |               | USD      | 500.00           |
+| Ausgewählt                 | Normal            | FTI-10041 | 4032    | 25.06.2020 | 25.07.2020 | 10041   | 1,000.00     |     | USD      | 495,00           |
+| Ausgewählt und hervorgehoben | Normal            | FTI-10042 | 4032    | 25.06.2020 | 25.07.2020 | 10042   | 1,000.00     |         | USD      | 490,00           |
 
 Arnie kann auch manuell den Zahlungsbetrag von 1.485,00 eingeben, bevor die Seite **Bankbuchungen** geöffnet wird. Wenn Arnie manuell den Zahlungsbetrag eingeben und dann alle drei Buchungen markiert hat, doch den Wert im Feld **Auszugleichenden Betrag** nicht für jede Buchung anpasst, erhält Arnie beim Schließen der Seite folgende Nachricht:
 
@@ -86,13 +86,13 @@ Wenn Arnie will, dass der Zahlungsbetrag nur 1.485,00 ist, klickt Arnie auf **Ne
 
 Auf der Seite **Debitorenbuchungen** zeigt Arnie diese Transaktion an.
 
-| Beleg    | Transaktionstyp | Datum      | Rechnung | Geschuldeter Betrag in Buchungswährung | Gutschriftsbetrag in Buchungswährung | Gesamtbetrag  | Währung |
+| Beleg    | Transaktionstyp | Datum      | Rechnung | Geschuldeter Betrag in Buchungswährung | Gutschriftsbetrag in Buchungswährung | Saldo  | Währung |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
-| FTI-10040  | Rechnung          | 5/15/2015 | 10040   | 1.000,00                             |                                       | 0,00     | USD      |
-| FTI-10041  | Rechnung          | 6/25/2015 | 10041   | 1.000,00                             |                                       | 1.000,00 | USD      |
-| FTI-10042  | Rechnung          | 6/25/2015 | 10042   | 1.000,00                             |                                       | 505,10   | USD      |
-| ARP-10040  | Zahlung          | 6/29/2015 |         |                                      | 1.485,00                              | 0,00     | USD      |
-| DISC-10040 | Skonto    | 6/29/2015 |         |                                      | 9,90                                  | 0,00     | USD      |
+| FTI-10040  | Rechnung          | 15.05.2020 | 10040   | 1,000.00                             |                                       | 0,00     | USD      |
+| FTI-10041  | Rechnung          | 25.06.2020 | 10041   | 1,000.00                             |                                       | 1,000.00 | USD      |
+| FTI-10042  | Rechnung          | 25.06.2020 | 10042   | 1,000.00                             |                                       | 505,10   | USD      |
+| ARP-10040  | Zahlung          | 29.06.2020 |         |                                      | 1.485,00                              | 0,00     | USD      |
+| DISC-10040 | Skonto    | 29.06.2020 |         |                                      | 9,90                                  | 0,00     | USD      |
 
 
 

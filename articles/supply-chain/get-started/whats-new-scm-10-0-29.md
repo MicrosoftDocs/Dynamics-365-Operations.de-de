@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: d12932f35b3b451577d38948f60bc3a73c10e2a0
-ms.sourcegitcommit: 86c0562ce1ecdf7937125c0f5a6771f178b459e7
+ms.openlocfilehash: 8f6ba18096cffe907c339ad525c99535bc5ee568
+ms.sourcegitcommit: 7745c4bd3ab3aace4b4cb814eaf0cfdbae4a0cbd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "9714832"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9784690"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10029-october-2022"></a>Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.29. (Oktober 2022)
 
@@ -33,7 +33,7 @@ Die folgende Tabelle listet die Funktionen auf, die in dieser Version enthalten 
 
 | Funktionsbereich | Funktion | Mehr erfahren | Aktiviert von |
 |---|---|---|---|
-| Bestand und Logistik | [Zuordnen und Reservierung für WMS-Artikel in Inventory Visibility](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/allocate-reserve-whs-items-inventory-visibility) | Bald verfügbar | Standardmäßig aktiviert |
+| Bestand und Logistik | [Zuordnen und Reservierung für WMS-Artikel in Inventory Visibility](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/allocate-reserve-whs-items-inventory-visibility) | [Inventory Visibility-Unterstützung für WMS-Artikel](../inventory/inventory-visibility-whs-support.md) | Standardmäßig aktiviert |
 | Bestand und Logistik | [Laden Sie optimierte Bestandslisten vorab](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/query-inventory-visibility-summary-entity) | [Die Inventory Visibility-App verwenden](../inventory/inventory-visibility-power-platform.md) | Aktiviert durch Servicekonfiguration |
 | Automatisierung der Lieferungen zur Auftragsfertigung | [Automatisierung der Lieferungen zur Auftragsfertigung](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-to-order-supply-automation) | [Automatisierung der Lieferungen zur Auftragsfertigung](../master-planning/make-to-order-supply-automation.md) | Funktionsverwaltung:<br>*Automatisierung der Lieferungen zur Auftragsfertigung* |
 | Planung | [Zeigen Sie detaillierte Einblicke für DDMRP an und wenden Sie sie an](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/view-apply-detailed-insights-ddmrp) | [Bedarfsgesteuerte Planung im Überblick](../master-planning/planning-optimization/ddmrp-overview.md) | Funktionsverwaltung:<br>*(Vorschauversion) DDMRP für Planungsoptimierung* |

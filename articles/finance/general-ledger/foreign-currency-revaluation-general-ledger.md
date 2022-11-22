@@ -2,25 +2,25 @@
 title: Neubewertung der Fremdwährung für das Sachkonto
 description: 'Dieser Artikel enthält einen Überblick über die folgenden Elemente der Neubewertung von Fremdwährungen im Hauptbuch: Einrichtung, Ausführung des Prozesses, Berechnung für den Prozess und, sofern erforderlich, Stornierung der Neubewertungsbuchungen.'
 author: kweekley
-ms.date: 06/20/2017
+ms.date: 11/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CurrencyLedgerGainLossAccount
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 62153
 ms.assetid: 842e8561-560f-4cc6-8668-70cca60b1ba3
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e0f4184237537464998b2bc1a6ab02561d9d291
-ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
+ms.openlocfilehash: 96ae50e339c63687a4c8114d3c965123fd5e37ab
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "9752802"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779987"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Neubewertung der Fremdwährung für das Sachkonto
 
@@ -38,27 +38,27 @@ Wird der Neubewertungsprozess ausgeführt, wird der Saldo für jedes Hauptkonto,
 ## <a name="prepare-to-run-foreign-currency-revaluation"></a>Vorbereitungen, um die Neubewertung der Fremdwährung auszuführen
 Bevor Sie den Neubewertungsprozess ausführen können, sind folgende Einstellungen erforderlich.
 
--   Auf der Seite **Hauptkonto**:
--   Wenn das Hauptkonto im Hauptbuch neu bewertet werden soll, wählen Sie **Neubewertung der Fremdwährung** aus. Wenn das Hauptkonto nicht neu bewertet wird (zum Beispiel für Debitor und Kreditor, wenn Sie in untergeordneten Sachkonten neu bewertet werden) deaktivieren Sie die Option.
--   Wenn das Hauptkonto für eine Neubewertung markiert wird, geben Sie **Wechselkurstyp** ein. Dieser Wechselkurstyp wird für die Neubewertung des Hauptkontos verwendet. Ein separates Feld **Rechnungslegungswechselkurstyp** ist für die Finanzberichterstellung verfügbar. Die zwei Felder werden nicht als synchron betrachtet und lassen es zu, dass verschiedene Wechselkurstypen für die Neubewertung und Finanzberichte verwendet werden.
+Auf der Seite **Hauptkonto**:
+ - Wenn das Hauptkonto im Hauptbuch neu bewertet werden soll, wählen Sie **Neubewertung der Fremdwährung** aus. Wenn das Hauptkonto nicht neu bewertet wird (zum Beispiel für Debitor und Kreditor, wenn Sie in untergeordneten Sachkonten neu bewertet werden) deaktivieren Sie die Option.
+ - Wenn das Hauptkonto für eine Neubewertung markiert wird, geben Sie **Wechselkurstyp** ein. Dieser Wechselkurstyp wird für die Neubewertung des Hauptkontos verwendet. Ein separates Feld **Rechnungslegungswechselkurstyp** ist für die Finanzberichterstellung verfügbar. Die zwei Felder werden nicht als synchron betrachtet und lassen es zu, dass verschiedene Wechselkurstypen für die Neubewertung und Finanzberichte verwendet werden.
 
--   Auf der Seite **Sachkonto**:
--   Geben Sie den **Wechselkurstyp** an. Wenn der Wechselkurstyp nicht im Hauptkonto definiert ist, wird dieser Wechselkurstyp für die Neubewertung der Fremdwährung verwendet.
--   Definieren Sie die Konten für realisierten Gewinn, realisierten Verlust, nicht realisierten Gewinn und den nicht realisierten Verlust für die Neubewertung der Währung an. Konten für realisierte Gewinne und Verluste werden verwendet, wenn Debitoren- und Kreditoren-Ausgleichstransaktionen und realisierte Gewinne und Verluste für die Neubewertung offener Transaktionen und Hauptbuch-Hauptkonten verwendet werden.
+Auf der Seite **Sachkonto**:
+ - Geben Sie den **Wechselkurstyp** an. Wenn der Wechselkurstyp nicht im Hauptkonto definiert ist, wird dieser Wechselkurstyp für die Neubewertung der Fremdwährung verwendet.
+ - Definieren Sie die Konten für realisierten Gewinn, realisierten Verlust, nicht realisierten Gewinn und den nicht realisierten Verlust für die Neubewertung der Währung an. Konten für realisierte Gewinne und Verluste werden verwendet, wenn Debitoren- und Kreditoren-Ausgleichstransaktionen und realisierte Gewinne und Verluste für die Neubewertung offener Transaktionen und Hauptbuch-Hauptkonten verwendet werden.
 
--   Auf der Seite **Währungsneubewertungskonten**:
--   Wählen Sie unterschiedliche Währungsneubewertungskonten für jede Währung und jedes Unternehmen aus. Wenn keine Konten definiert werden, werden die Konten der **Sachkonto**-Seite verwendet.
+Auf der Seite **Währungsneubewertungskonten**:
+ - Wählen Sie unterschiedliche Währungsneubewertungskonten für jede Währung und jedes Unternehmen aus. Wenn keine Konten definiert werden, werden die Konten der **Sachkonto**-Seite verwendet.
 
 ## <a name="process-foreign-currency-revaluation"></a>Eine Neubewertung der Fremdwährung verarbeiten
 Nachdem die Einstellung abgeschlossen ist, können Sie die Seite **Neubewertung der Fremdwährung** verwenden, um die Transaktionen und Salden der Hauptkonten neu zu bewerten. Sie können den Prozess in die Echtzeit ausführen oder ihn planen, damit er als Stapel ausgeführt wird. 
 
 Auf der Seite **Neubewertung der Fremdwährung** werden die Neubewertungsprozesses jedes Verlaufs angezeigt, einschließlich Datum, als der Prozess ausgeführt wurde, welche Kriterien definiert wurden, ein Link zum Beleg, der für die Neubewertung erstellt wurde und ein Datensatz, wenn eine frühere Neubewertung storniert wurde. Um den Neubewertungsprozess auszuführen, klicken Sie auf die Schaltfläche **Neubewertung der Fremdwährung**. 
 
-Die Werte **Von Datum** und **Bis Datum** definieren das Datumsintervall für die Berechnung des Fremdwährungssaldos, der neu bewertet wird. Wenn Sie GuV-Konten neu bewerten, wird die Summe aller Transaktionen, die im Datumsintervall auftreten, neu bewertet. Wenn Sie die Bilanzkonten neu bewerten, wird das Von-Datum ignoriert. Stattdessen wird der neu zu bewertende Saldo bestimmt, indem die Zeitspanne vom Datum zu Beginn des Geschäftsjahres bis zum Enddatum genommen wird. 
+Die Werte **Von Datum** und **Bis Datum** definieren das Datumsintervall für die Berechnung des Fremdwährungssaldos, der neu bewertet wird. Wenn Sie GuV-Konten neu bewerten, wird die Summe aller Transaktionen, die im Datumsintervall auftreten, neu bewertet. Wenn Sie die Bilanzkonten neu bewerten, wird das **Von-Datum** ignoriert. Stattdessen wird der neu zu bewertende Saldo bestimmt, indem die Zeitspanne vom Datum zu Beginn des Geschäftsjahres bis **zum Enddatum** genommen wird. 
 
 Das **Kursdatum** kann verwendet werden, um das Datum zu definieren, für das der Wechselkurs Standard sein soll. So können Sie die Salden zwischen den Datumsbereich aus vom 1. Januar bis zum 31. Januar neu bewertet werden, oder können den Wechselkurs, der für den 1. Februar definiert wird. 
 
-Wählen Sie, welche Hauptkonten neu bewertet werden sollen: Alle, Bilanz oder Gewinn und Verlust. Nur Hauptkonten, die für eine Neubewertung markiert werden, (auf der Hauptkontoseite) werden neu bewertet. Wenn Sie die Hauptkonten weiter einschränken möchten, verwenden Sie die **Datensätze enthalten** Registerkarte, um einen Bereich von Hauptkonten oder einzelner Hauptkonten zu definieren. 
+Wählen Sie, welche Hauptkonten neu bewertet werden sollen: Alle, Bilanz oder Gewinn und Verlust. Nur Hauptkonten, die für eine Neubewertung markiert werden, (auf der **Hauptkonto** Seite) werden neu bewertet. Wenn Sie die Hauptkonten weiter einschränken möchten, verwenden Sie die **Datensätze enthalten** Registerkarte, um einen Bereich von Hauptkonten oder einzelner Hauptkonten zu definieren. 
 
 Die Neubewertung kann für eine oder mehrere juristischen Personen ausgeführt werden. Die Suche zeigt nur die juristischen Personen, auf die Sie Zugriff haben. Wählen Sie die juristischen Personen aus, für den Sie den Neubewertungsprozess durchführen möchten. 
 
@@ -68,7 +68,7 @@ Setzen Sie **Vorschau vor der Buchung** auf **Ja** wenn Sie das Ergebnis der Hau
 
 Wenn Sie Anpassungen ausschließen möchten, die mit **Berichtsjournal für Währungsanpassungen** aus dem Neubewertungsprozess gebucht wurden, stellen Sie **Berichtswährungsanpassungen ausschließen** auf **Ja** ein. Standardmäßig werden Berichtswährungsanpassungen in die Neubewertung einbezogen. 
 
-Nachdem der Neubewertung der Fremdwährung abgeschlossen ist, wird der Datensatz erstellt, um den Serviceverlauf ausgeführtem von jedem zu verfolgen.  Ein separater Datensatz wird für jede juristische Person erstellt und Buchungsebene.
+Nachdem der Neubewertung der Fremdwährung abgeschlossen ist, wird der Datensatz erstellt, um den Serviceverlauf ausgeführtem von jedem zu verfolgen. Ein separater Datensatz wird für jede juristische Person erstellt und Buchungsebene.
 
 ## <a name="calculate-unrealized-gainloss"></a>Berechnen von unrealisierten Gewinnen/Verlusten
 Die Buchungen des unrealisierten Gewinns/Verlusts erfolgen in der Hauptbuchneubewertung und im Neubewertungsprozess von Debitoren und Kreditoren unterschiedlich. Im Modul "Debitoren" und "Kreditoren" wird die vorherige Neubewertung abgeschlossen (vorausgesetzte, die Buchung ist noch nicht ausgeglichen) und eine neue Neubewertungsbuchung wird für den unrealisierten Gewinn/Verlust basierend auf dem neuen Wechselkurs erstellt. Dies ist erforderlich, weil jede einzelne Buchung in "Debitoren" und "Kreditoren" neu bewertet werden. Im Hauptbuch wird die vorherige Neubewertung nicht storniert. Stattdessen wird eine Abschreibungsbuchung für das Delta zwischen dem Saldo des Hauptkontos, einschließlich aller früheren Neubewertungsbeträge und dem neuen Wert basierend auf dem Wechselkurs für das Datum oder den Wechselkurs erstellt. 
@@ -82,8 +82,8 @@ Die Buchungen des unrealisierten Gewinns/Verlusts erfolgen in der Hauptbuchneube
 Das Hauptkonto wird am 31. Januar neu bewertet.  Der unrealisierte Gewinn/der Verlust wird wie folgt berechnet.
 
 | Aktueller Saldo in Buchungswährung | Aktueller Saldo in der Buchhaltungswährung | Wechselkurs für Neubewertung | Neuer Buchhaltungswährungsbetrag | Unrealisierter Gewinn/Verlust    |
-|---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833.33 USD (500 x 1.666667)        | 166.67 Verlust (833.33 – 1000) |
+|--------------------|---------------------------|----------------------------------|------------------------------------|-----------------------------|
+| 500 EUR            | 1000 USD                  | 166.6667                         | 833.33 USD (500 x 1.666667)        | 166.67 Verlust (833.33 – 1000) |
 
 Der nächste Buchhaltungseintrag wird erstellt.
 
@@ -95,8 +95,8 @@ Der nächste Buchhaltungseintrag wird erstellt.
 Keine neuen Buchungen werden für den Monat Februar gebucht.  Das Hauptkonto wird am 28. Februar neu bewertet.
 
 | Aktueller Saldo in Buchungswährung | Aktueller Saldo in der Buchhaltungswährung | Wechselkurs für Neubewertung | Neuer Buchhaltungswährungsbetrag | Unrealisierter Gewinn/Verlust    |
-|---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| 500 EUR                                     | 833.33 USD (1000 - 166.67)                 | 250.0000                         | 1250 USD (500 x 2.5)               | 416.67 Gewinn (1250 – 833.33) |
+|---------------------------------------|-----------------------------------|-------------------------------|--------------------|-----------------------------|
+| 500 EUR                 | 833.33 USD (1000 - 166.67)       | 250.0000              | 1250 USD (500 x 2.5)               | 416.67 Gewinn (1250 – 833.33) |
 
 Der nächste Buchhaltungseintrag wird erstellt.
 

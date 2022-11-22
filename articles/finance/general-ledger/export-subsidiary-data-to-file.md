@@ -2,23 +2,23 @@
 title: Daten einer Tochtergesellschaft in Dateien exportieren
 description: In diesem Artikel wird erläutert, wie Sie den Export von Daten aus Microsoft Dynamics 365 Finance vorbereiten und sie anschließend in eine konsolidierte juristische Person importieren.
 author: jinniew
-ms.date: 10/09/2020
+ms.date: 11/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 7c5334e206d28a5ae1c8097db5356cd1057b7180
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 30d69f9a2813621df410a29568644f264392fb49
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876152"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779960"
 ---
 # <a name="export-subsidiary-data-to-files"></a>Daten einer Tochtergesellschaft in Dateien exportieren
 
@@ -32,14 +32,14 @@ Verwenden Sie die **Exportieren**-Seite (**Systemverwaltung \> Arbeitsbereiche \
 
     | Feld                             | Beschreibung |
     |-----------------------------------|-------|
-    | Hauptkonto                      | Geben Sie die zu konsolidierenden Konten an. Lassen Sie dieses Feld leer, um alle Konten einzuschließen. |
-    | Konsolidierungskonto verwenden         | Wenn Sie Konsolidierungskonten angegeben haben, setzen Sie diese Option auf **Ja**. |
-    | Konsolidierungskonto auswählen aus | Wählen Sie entweder **Hauptkonto** oder **Konsolidierungskontengruppe** aus. |
-    | Konsolidierungskontogruppe       | Wählen Sie eine Konsolidierungskontengruppe für das ausgewählte Konsolidierungskonto aus. |
-    | Konsolidierungsperiode              | Geben Sie einen „Von – Bis“–Datumsbereich für die Konsolidierung an. |
-    | Istbeträge einbeziehen            | Setzen Sie diese Option auf **Ja**, um tatsächliche Beträge einzuschließen. |
-    | Budgetbeträge einbeziehen            | Setzen Sie diese Option auf **Ja**, um Budgetbeträge in Konsolidierungen einzuschließen. |
-    | Budgetmodelle                     | Geben Sie das einzuschließende Budgetmodell an. |
+    | **Hauptkonto**                      | Geben Sie die zu konsolidierenden Konten an. Lassen Sie dieses Feld leer, um alle Konten einzuschließen. |
+    | **Konsolidierungskonto verwenden**         | Wenn Sie Konsolidierungskonten angegeben haben, setzen Sie diese Option auf **Ja**. |
+    | **Konsolidierungskonto auswählen aus** | Wählen Sie entweder **Hauptkonto** oder **Konsolidierungskontengruppe** aus. |
+    | **Konsolidierungskontogruppe**       | Wählen Sie eine Konsolidierungskontengruppe für das ausgewählte Konsolidierungskonto aus. |
+    | **Konsolidierungsperiode**              | Geben Sie einen „Von – Bis“–Datumsbereich für die Konsolidierung an. |
+    | **Istbeträge einbeziehen**            | Setzen Sie diese Option auf **Ja**, um tatsächliche Beträge einzuschließen. |
+    | **Budgetbeträge einbeziehen**            | Setzen Sie diese Option auf **Ja**, um Budgetbeträge in Konsolidierungen einzuschließen. |
+    | **Budgetmodelle**                     | Geben Sie das einzuschließende Budgetmodell an. |
 
 3. Geben Sie auf der Registerkarte **Finanzdimensionen** die Details der Konsolidierung an:
 

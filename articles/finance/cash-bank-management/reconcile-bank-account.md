@@ -2,24 +2,24 @@
 title: Bankkonto abstimmen
 description: In diesem Artikel wird beschrieben, wie ein Bankkonto abgestimmt wird.
 author: angelad116
-ms.date: 07/01/2019
+ms.date: 11/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d36ff753d368bbbe6944aa5ae5010541ee92156d
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 576dcd320600f4741a43bfeee53198637bffce15
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151250"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779526"
 ---
 # <a name="reconcile-a-bank-account"></a>Bankkonto abstimmen
 
@@ -29,27 +29,27 @@ Wenn Sie einen Bankauszug erhalten, sollten Sie Bankbuchungen der juristischen P
 
 Ein Bankauszug kann nicht mit einem Bankkonto abgestimmt werden, wenn eine der per Scheck oder Einzahlungsbeleg erfolgten Zahlungen, die in dem Auszug aufgeführt sind, aktuell den Status **Storno ausstehend** hat. Nach der Buchung oder Ablehnung einer Scheckrückbuchung oder einer Bankeinzahlungsbeleg-Stornierung durch einen Prüfer lautet der Status nicht mehr **Storno ausstehend**, und das Bankkonto kann abgestimmt werden.
 
-1.  Gehen Sie zu **Bargeld- und Bankverwaltung** \> **Bankkonten** \> **Bankkonten**. Wählen Sie das Bankkonto aus, das mit dem Bankauszug abzustimmen ist, und wählen Sie **Abstimmen** > **Kontoabstimmung** aus.
+1. Gehen Sie zu **Bargeld- und Bankverwaltung** \> **Bankkonten** \> **Bankkonten**. Wählen Sie das Bankkonto aus, das mit dem Bankauszug abzustimmen ist, und wählen Sie **Abstimmen** > **Kontoabstimmung** aus.
 
-2.  Geben Sie Informationen in die Felder **Datum des Bankauszugs** und **Bankauszug** ein. Im Feld **Endsaldo** können Sie den Saldo des Bankkontos eingeben, so wie dieser auf dem Bankauszug angezeigt wird.
+2. Geben Sie Informationen in die Felder **Datum des Bankauszugs** und **Bankauszug** ein. Im Feld **Endsaldo** können Sie den Saldo des Bankkontos eingeben, so wie dieser auf dem Bankauszug angezeigt wird.
 
-3.  Wählen Sie **Buchungen**, um die Seite **Kontoabstimmung** zu öffnen.
+3. Wählen Sie **Buchungen**, um die Seite **Kontoabstimmung** zu öffnen.
 
-4.  Aktivieren Sie für jede im Bankauszug vorhandene Buchung das Kontrollkästchen **Verrechnet**, sofern der Betrag in Dynamics 365 Finance dem Betrag auf dem Bankauszug entspricht. Sie können auch den Wert im Feld **Bankbuchungsart** eingeben oder ändern. Dieser Feldwert ist für die Bankbuchungsstatistik sowie für einige andere Berichte relevant.
+4. Aktivieren Sie für jede im Bankauszug vorhandene Buchung das Kontrollkästchen **Verrechnet**, sofern der Betrag in Dynamics 365 Finance dem Betrag auf dem Bankauszug entspricht. Sie können auch den Wert im Feld **Bankbuchungsart** eingeben oder ändern. Dieser Feldwert ist für die Bankbuchungsstatistik sowie für einige andere Berichte relevant.
     
 
-    > [!NOTE]
-    > <P>Aktivieren Sie das Kontrollkästchen <STRONG>Verrechnet</STRONG> nicht für Buchungen, die nicht auf dem Bankauszug enthalten sind. Diese Buchungen werden so lange auf dieser Seite angezeigt, bis sie mit einem künftigen Bankauszug abgestimmt wurden.</P>
-    > <P>Das Kontrollkästchen <STRONG>Verrechnet</STRONG> ist nicht verfügbar, wenn die Buchung den Status <STRONG>Storno ausstehend</STRONG> besitzt. Buchungen können diesen Status haben, wenn Finance so eingerichtet ist, dass Stornierungen vor dem Buchen erst zwecks Genehmigung weitergeleitet werden müssen. Nach der Buchung oder Ablehnung der Rückbuchung oder Stornierung durch einen Prüfer lautet der Status nicht mehr <STRONG>Storno ausstehend</STRONG>, und der Bankauszug kann mit dem Bankkonto abgestimmt werden.</P>
+>[!NOTE]
+>Aktivieren Sie das Kontrollkästchen **Verrechnet** nicht für Buchungen, die nicht auf dem Bankauszug enthalten sind. Diese Buchungen werden so lange auf dieser Seite angezeigt, bis sie mit einem künftigen Bankauszug abgestimmt wurden.
+>Das Kontrollkästchen **Verrechnet** ist nicht verfügbar, wenn die Buchung den Status **Storno ausstehend** besitzt. Buchungen können diesen Status haben, wenn Finance so eingerichtet ist, dass Stornierungen vor dem Buchen erst zwecks Genehmigung weitergeleitet werden müssen. Nach der Buchung oder Ablehnung der Rückbuchung oder Stornierung durch einen Prüfer lautet der Status nicht mehr **Storno ausstehend**, und der Bankauszug kann mit dem Bankkonto abgestimmt werden.
 
-    
-    Um das Kontrollkästchen **Verrechnet** für ein Intervall mit Schecks auszuwählen, die alle im Kontoauszug angezeigt werden, wählen Sie **Scheckintervall markieren** aus, und geben Sie anschließend das Intervall an.
+
+Um das Kontrollkästchen **Verrechnet** für ein Intervall mit Schecks auszuwählen, die alle im Kontoauszug angezeigt werden, wählen Sie **Scheckintervall markieren** aus, und geben Sie anschließend das Intervall an.
 
 5.  Wenn der Betrag für eine Bankkontobuchung nicht dem Buchungsbetrag auf dem Bankauszug entspricht, geben Sie den Korrekturbetrag in das Feld **Korrekturbetrag** ein.
     
 
-    > [!NOTE]
-    > <P>Ist der Finanzzeitraum für die zu korrigierende Buchung bereits abgeschlossen, steht das Feld <STRONG>Korrekturbetrag</STRONG> nicht zur Verfügung. Erstellen Sie stattdessen eine Position, die ein Buchungsdatum hat, das in einem offenen Finanzzeitraum für die Korrektur liegt. In diesem Fall müssen Sie die Finanzdimensionen, die bei der ursprünglichen Buchung verwendet wurden, und auch das Gegenhauptkonto hinzufügen.</P>
+> [!NOTE]
+> Ist der Finanzzeitraum für die zu korrigierende Buchung bereits abgeschlossen, steht das Feld **Korrekturbetrag** nicht zur Verfügung. Erstellen Sie stattdessen eine Position, die ein Buchungsdatum hat, das in einem offenen Finanzzeitraum für die Korrektur liegt. In diesem Fall müssen Sie die Finanzdimensionen, die bei der ursprünglichen Buchung verwendet wurden, und auch das Gegenhauptkonto hinzufügen.
 
 
 

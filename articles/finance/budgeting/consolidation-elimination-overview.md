@@ -2,13 +2,13 @@
 title: Konsolidierungs- und Löschungsüberblick
 description: Dieser Artikel enthält allgemeine Informationen zum Konsolidierungs- und Beseitigungsprozess. Er enthält Antworten auf mehrere häufig gestellten Fragen.
 author: panolte
-ms.date: 01/11/2018
+ms.date: 11/11/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerConsolidate
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom:
 - "13151"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd7647df49883f0e3b6cbb2d21b19ca2acb2f065
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 757c7634fc929ead018d1ddcca4cc223c1a95638
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871390"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779906"
 ---
 # <a name="consolidation-and-elimination-overview"></a>Konsolidierungs- und Löschungsüberblick
 
@@ -46,49 +46,38 @@ Löschungen können auf mehrere Arten gemeldet werden:
 Es gibt viele Konsolidierungsszenarien, und mit jeder Methode können die Szenarien auf verschiedene Weise behandelt werden.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
-1. Ich ziehe es vor, Löschungen in einer Datenbank zu buchen. Welcher Optionen habe ich?
+Ich ziehe es vor, Löschungen in einer Datenbank zu buchen. Welcher Optionen habe ich?
+ - Sie haben mehrere Optionen. Sie können die Option **Online konsolidieren** verwenden und Löschungen während des Prozesses oder als Vorschlag einschließen. Die Transaktionen werden im Konsolidierungsunternehmen gebucht. Alternativ können Sie über ein gesondertes Unternehmen verfügen, in dem Sie die Löschungen manuell erstellen und das sie dann in der Finanzberichterstellung oder im Konsolidierungsprozess verwenden.
 
-Sie haben mehrere Optionen. Sie können die Option **Online konsolidieren** verwenden und Löschungen während des Prozesses oder als Vorschlag einschließen. Die Transaktionen werden im Konsolidierungsunternehmen gebucht. Alternativ können Sie über ein gesondertes Unternehmen verfügen, in dem Sie die Löschungen manuell erstellen und das sie dann in der Finanzberichterstellung oder im Konsolidierungsprozess verwenden.
+Wir benötigen unsere konsolidierten Ergebnisse in mehreren Berichtswährungen.
+ - Die Option **Finanzberichterstellung** hat unbegrenzte Berichtswährungen. Die Daten werden während der Berichterstellung basierend auf dem Wechselkurstyp sowie der Umrechnungsmethode übersetzt, die im Hauptkonto festgelegt werden. Da die Option **Online konsolidieren** allerdings nur über eine Berichtswährung verfügt, muss für jede Berichtswährung ein konsolidiertes Unternehmen erforderlich, wenn Sie diese Option verwenden. Die Option **Finanzberichterstellung** ist die empfohlene Methode.
 
-2.  Wir benötigen unsere konsolidierten Ergebnisse in mehreren Berichtswährungen.
+Ich möchte für jedes Unternehmen Details auf Transaktionsebene sehen.
+ - Die Option **Finanzberichterstellung** ist die Lösung, da Detail auf Transaktionsebene für so viele Unternehmen angezeigt werden kann, wie in der Berichtsbaumstruktur-Definition enthalten sind.
 
-Die Option **Finanzberichterstellung** hat unbegrenzte Berichtswährungen. Die Daten werden während der Berichterstellung basierend auf dem Wechselkurstyp sowie der Umrechnungsmethode übersetzt, die im Hauptkonto festgelegt werden. Da die Option **Online konsolidieren** allerdings nur über eine Berichtswährung verfügt, muss für jede Berichtswährung ein konsolidiertes Unternehmen erforderlich, wenn Sie diese Option verwenden. Die Option **Finanzberichterstellung** ist die empfohlene Methode.
+Wir verwenden Budgetplanung oder Budgetsteuerung, und sie muss konsolidiert werden.
+ - Die Option **Finanzberichterstellung** ist die Lösung, um alle Budgetplanungs- oder Budgetsteuerungsdaten zu konsolidieren.
 
-3. Ich möchte für jedes Unternehmen Details auf Transaktionsebene sehen.
+Wir haben Tochtergesellschaften weltweit, und wir haben mehrere Kontenpläne. Was ist die beste Methode für das Konsolidieren unserer Daten?
+- Sie haben mehrere Optionen, wenn Sie mehrere Kontenpläne behandeln müssen. Sie können die Option **Online konsolidieren** verwenden, und dann auswählen, entweder das Konsolidierungskonto zu verwenden, das im Hauptkonto definiert ist, oder einer Konsolidierungskontengruppe. Sie können auch die Option **Finanzberichterstellung** verwenden, mehrere Links zu den Finanzdimensionen in der Zeilendefinition einbeziehen und die Konten zuordnen.
 
-Die Option **Finanzberichterstellung** ist die Lösung, da Detail auf Transaktionsebene für so viele Unternehmen angezeigt werden kann, wie in der Berichtsbaumstruktur-Definition enthalten sind.
+Wir benötigen mehrere Konsolidierungsebenen. Das bedeutet, wir konsolidieren zunächst unsere europäischen Tochtergesellschaften in das britischen Pfund (GBP). Dann übersetzen wir den konsolidierten Betrag dieser Daten in US-Dollar. Wie erreichen wir das?
+- Wenn mehrere Konsolidierungsebenen erforderlich sind und verschiedene Währungen in jeder Ebene verwendet werden, müssen Sie die Option **Online konsolidieren** verwenden. Mehrere Konsolidierungsunternehmen müssen erstellt werden, die sich in ihren Buchhaltungs- und Berichtswährungen unterscheiden. Die Konsolidierung muss dann mehrmals ausgeführt werden. Die Option **Finanzberichterstellung** übersetzt immer aus der Buchhaltungswährung jedes Quellunternehmens in die ausgewählte Währung.
 
-4. Wir verwenden Budgetplanung oder Budgetsteuerung, und sie muss konsolidiert werden.
+Es haben Tochtergesellschaften mit einem anderen System. Wie können wir sie konsolidieren?
+- Verwenden Sie die Option **Mit Import konsolidieren**, um Salden in ein Konsolidierungsunternehmen zu bringen.
 
-Die Option **Finanzberichterstellung** ist die Lösung, um alle Budgetplanungs- oder Budgetsteuerungsdaten zu konsolidieren.
+Einige unserer Tochtergesellschaften sind kein vollständiges Eigentum. Was ist die beste Methode, um sie zu konsolidieren?
+- Sie haben mehrere Optionen für Tochtergesellschaften mit teilweisem Eigentum. Wenn Sie die Option **Finanzberichterstellung** verwenden, können Sie eine Berichtsbaumstruktur-Definition und den Besitz definieren. Sie können auch eine berechnete Zeile oder Spalte verwenden, um den teilweise besessenen Betrag darzustellen. Sie können die Minderheitsbeteiligung auch als eigene Zeile in einem Bericht anzeigen. Sie können auch die **Online konsolidieren** Option verwenden. Die **Juristische Personen**-Registerkarte enthält eine **Besitz**-Spalte, in der Sie den Prozentsatz definieren können, der dem übergeordneten Unternehmen angehört.
 
-5. Wir haben Tochtergesellschaften weltweit, und wir haben mehrere Kontenpläne. Was ist die beste Methode für das Konsolidieren unserer Daten?
+Unsere Organisation muss Konsolidierungen nach Unternehmenseinheit anzeigen oder möchte die Organisationshierarchien verwenden.
+- Die Option **Finanzberichterstellung** ist die Lösung. Organisationshierarchien mit juristischen Personen oder Finanzdimensionen können in der Finanzberichterstellung gemeldet werden. Sie können auch eigene mehrstufige Hierarchien erstellen, indem Sie eine Berichtsbaumstruktur-Definition verwenden, die eine Kombination von juristischen Personen und Dimensionswerten aufweist.
 
-Sie haben mehrere Optionen, wenn Sie mehrere Kontenpläne behandeln müssen. Sie können die Option **Online konsolidieren** verwenden, und dann auswählen, entweder das Konsolidierungskonto zu verwenden, das im Hauptkonto definiert ist, oder einer Konsolidierungskontengruppe. Sie können auch die Option **Finanzberichterstellung** verwenden, mehrere Links zu den Finanzdimensionen in der Zeilendefinition einbeziehen und die Konten zuordnen.
+Wir haben mehrere Instanzen des Systems.
+- Wenn Sie die Option **Unternehmenssalden exportieren** verwenden, um von einer Instanz zu exportieren, und anschließend die Option **Mit Import konsolidieren** auf der anderen Instanz verwenden, können Sie die Daten konsolidieren.
 
-6. Wir benötigen mehrere Konsolidierungsebenen. Das bedeutet, wir konsolidieren zunächst unsere europäischen Tochtergesellschaften in das britischen Pfund (GBP). Dann übersetzen wir den konsolidierten Betrag dieser Daten in US-Dollar. Wie erreichen wir das?
-
-Wenn mehrere Konsolidierungsebenen erforderlich sind und verschiedene Währungen in jeder Ebene verwendet werden, müssen Sie die Option **Online konsolidieren** verwenden. Mehrere Konsolidierungsunternehmen müssen erstellt werden, die sich in ihren Buchhaltungs- und Berichtswährungen unterscheiden. Die Konsolidierung muss dann mehrmals ausgeführt werden. Die Option **Finanzberichterstellung** übersetzt immer aus der Buchhaltungswährung jedes Quellunternehmens in die ausgewählte Währung.
-
-7. Es haben Tochtergesellschaften mit einem anderen System. Wie können wir sie konsolidieren?
-
-Verwenden Sie die Option **Mit Import konsolidieren**, um Salden in ein Konsolidierungsunternehmen zu bringen.
-
-8. Einige unserer Tochtergesellschaften sind kein vollständiges Eigentum. Was ist die beste Methode, um sie zu konsolidieren?
-
-Sie haben mehrere Optionen für Tochtergesellschaften mit teilweisem Eigentum. Wenn Sie die Option **Finanzberichterstellung** verwenden, können Sie eine Berichtsbaumstruktur-Definition und den Besitz definieren. Sie können auch eine berechnete Zeile oder Spalte verwenden, um den teilweise besessenen Betrag darzustellen. Sie können die Minderheitsbeteiligung auch als eigene Zeile in einem Bericht anzeigen. Sie können auch die **Online konsolidieren** Option verwenden. Die **Juristische Personen**-Registerkarte enthält eine **Besitz**-Spalte, in der Sie den Prozentsatz definieren können, der dem übergeordneten Unternehmen angehört.
-
-9. Unsere Organisation muss Konsolidierungen nach Unternehmenseinheit anzeigen oder möchte die Organisationshierarchien verwenden.
-
-Die Option **Finanzberichterstellung** ist die Lösung. Organisationshierarchien mit juristischen Personen oder Finanzdimensionen können in der Finanzberichterstellung gemeldet werden. Sie können auch eigene mehrstufige Hierarchien erstellen, indem Sie eine Berichtsbaumstruktur-Definition verwenden, die eine Kombination von juristischen Personen und Dimensionswerten aufweist.
-
-10. Wir haben mehrere Instanzen des Systems.
-
-Wenn Sie die Option **Unternehmenssalden exportieren** verwenden, um von einer Instanz zu exportieren, und anschließend die Option **Mit Import konsolidieren** auf der anderen Instanz verwenden, können Sie die Daten konsolidieren.
-
-11. Kann ich im **ENTWURF**-Status mit meinem Budget eine Konsolidierung durchführen? 
-            
-Es ist nicht möglich, Ihre Budgets im Konsolidierungsunternehmen zu verarbeiten oder abzuschließen. Wir empfehlen die Verwendung von Financial Reporting zur Konsolidierung von Budgetentwürfen.
+Kann ich im **ENTWURF**-Status mit meinem Budget eine Konsolidierung durchführen? 
+- Es ist nicht möglich, Ihre Budgets im Konsolidierungsunternehmen zu verarbeiten oder abzuschließen. Wir empfehlen die Verwendung von Financial Reporting zur Konsolidierung von Budgetentwürfen.
 
 Weitere Informationen finden Sie unter [Neubewertung der Währung in einem Konsolidierungsunternehmen](../general-ledger/currency-revaluation-consolidation-company.md).
 

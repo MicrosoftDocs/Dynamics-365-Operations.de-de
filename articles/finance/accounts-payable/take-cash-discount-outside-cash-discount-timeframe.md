@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1abf6722348b57594509e90ca0defc07783a112b
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: 26b1eb5e542acf7496d1a0cf7196716a5de75e4e
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715882"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780532"
 ---
 # <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Ein Skonto außerhalb der Skontoperiode in Anspruch nehmen
 
@@ -37,13 +37,13 @@ April markiert die Rechnung zur Zahlung. Kein Skonto wird genommen, da die Zahlu
 
 | Markieren     | Skonto verwenden | Beleg   | Konto | Skontodatum | Fälligkeitsdatum  | Rechnung | Betrag in Buchungswährung | Währung | Auszugleichender Betrag |
 |----------|-------------------|-----------|---------|--------------------|-----------|---------|--------------------------------|----------|------------------|
-| Ausgewählt | Immer            | Inv-10030 | 3052    | 6/28/2015          | 7/12/2015 | 10030   | -2,000,00                      | USD      | -1.980,00        |
+| Ausgewählt | Immer            | Inv-10030 | 3052    | 28.06.2020          | 12.07.2020 | 10030   | -2,000,00                      | USD      | -1.980,00        |
 
 Rabattinformationen werden am unteren Rand der Seite **Buchungen ausgleichen** angezeigt.
 
 | Feld                        | Wert     |
 |------------------------------|-----------|
-| Skontodatum           | 7/12/2015 |
+| Skontodatum           | 12.07.2020 |
 | Skontobetrag         | -20,00    |
 | Skonto verwenden            | Immer    |
 | Verwendetes Skonto          | 0,00      |
@@ -52,16 +52,16 @@ Rabattinformationen werden am unteren Rand der Seite **Buchungen ausgleichen** a
 ## <a name="date-to-use-for-calculating-discounts--selected-date"></a>Für die Berechnung von Rabatten zu verwendendes Datum = Ausgewähltes Datum
 Wenn sowohl die Rechnung als auch die Zahlung gebucht wurden, kann das Skonto immer noch in Anspruch genommen werden, wenn die Transaktionen auf der Seite **Transaktionen ausgleichen** ausgeglichen werden. April ändert den Wert im Feld **Für die Berechnung von Rabatten zu verwendendes Datum** auf **Ausgewähltes Datum**. Sie gibt das Datum 28. Juni ein, das in der Skontoperiode für die Rechnung liegt. Dieses Datum wird verwendet, um ein Skonto für die Buchung zu berechnen. Auf der Seite **Offene Transaktionen ausgleichen** sieht April, dass standardmäßig der vollständige Rabatt von 20,00 angezeigt wird. Die Rechnungsposition zeigt, dass der auszugleichende Betrag 1.980,00 ist.
 
-| Markieren                     | Skonto verwenden | Beleg   | Konto | Skontodatum | Fälligkeitsdatum  | Rechnung | Betrag in Buchungswährung | Währung | Auszugleichender Betrag |
-|--------------------------|-------------------|-----------|---------|--------------------|-----------|---------|--------------------------------|----------|------------------|
-| Ausgewählt und hervorgehoben | Normal            | Inv-10030 | 3052    | 6/28/2015          | 7/12/2015 | 10030   | -2,000,00                      | USD      | -1.980,00        |
-| Ausgewählt                 | Normal            | APP-10030 | 3052    | 7/15/2015          | 7/15/2015 |         | 500,00                         | USD      | 500,00           |
+| Markieren          | Skonto verwenden | Beleg   | Konto | Skontodatum | Fälligkeitsdatum  | Rechnung | Betrag in Buchungswährung | Währung | Auszugleichender Betrag |
+|--------------|-------------------|-----------|---------|--------------------|-----------|---------|--------------------------------|----------|------------------|
+| Ausgewählt und hervorgehoben | Normal    | Inv-10030 | 3052    | 28.06.2020         | 12.07.2020 | 10030   | -2,000,00                      | USD      | -1.980,00        |
+| Ausgewählt                 | Normal    | APP-10030 | 3052    | 15.07.2020          | 15.07.2020 |         | 500.00                         | USD      | 500.00           |
 
 Rabattinformationen werden am unteren Rand der Seite **Offene Buchungen ausgleichen** angezeigt. Der angewendete Rabattbetrag ist 20,00, da der auszugleichende Betrag für die Rechnung der Standardbetrag ist, 1.980,00.
 
 | Feld                        | Wert     |
 |------------------------------|-----------|
-| Skontodatum           | 7/12/2015 |
+| Skontodatum           | 12.07.2020 |
 | Skontobetrag         | -20,00    |
 | Skonto verwenden            | Normal    |
 | Verwendetes Skonto          | 0,00      |
@@ -71,14 +71,14 @@ April aktualisiert den Wert im Feld **Auszugleichender Betrag** auf **500,00**. 
 
 | Markieren                     | Skonto verwenden | Beleg   | Konto | Datum      | Fälligkeitsdatum  | Rechnung | Betrag in Buchungswährung | Währung | Auszugleichender Betrag |
 |--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Ausgewählt und hervorgehoben | Normal            | Inv-10030 | 3052    | 6/28/2015 | 7/12/2015 | 10030   | 2.000,00                       | USD      | -500,00          |
-| Ausgewählt                 | Normal            | APP-10030 | 3052    | 7/15/2015 | 7/15/2015 |         | 500,00                         | USD      | 500,00           |
+| Ausgewählt und hervorgehoben | Normal            | Inv-10030 | 3052    | 28.06.2020 | 12.07.2020 | 10030   | 2,000.00                       | USD      | -500,00          |
+| Ausgewählt                 | Normal            | APP-10030 | 3052    | 15.07.2020 | 15.07.2020 |         | 500.00                         | USD      | 500.00           |
 
 Rabattinformationen werden am unteren Rand der Seite **Offene Buchungen ausgleichen** angezeigt. Der Wert im Feld **Anzuwendender Skontobetrag** ist **5,05**, da der auszugleichende Betrag für die Rechnung zu dem Zahlungsbetrag 500,00 geändert wurde.
 
 | Feld                        | Wert     |
 |------------------------------|-----------|
-| Skontodatum           | 7/12/2015 |
+| Skontodatum           | 12.07.2020 |
 | Skontobetrag         | -20,00    |
 | Skonto verwenden            | Normal    |
 | Verwendetes Skonto          | 0,00      |

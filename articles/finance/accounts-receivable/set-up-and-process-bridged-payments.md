@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f0609e333fb16ba189b6a971f88fbb5bf900fec
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bb563008f156e1bfa6e4e9a705e9170342719ce7
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887976"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775167"
 ---
 # <a name="set-up-and-process-bridged-payments"></a>Transferzahlungen einrichten und verarbeiten
 
 [!include [banner](../includes/banner.md)]
 
-Eine Transferzahlung ist eine Zahlung, die in zwei Schritten in das Hauptbuch gebucht wird. Normalerweise wird dieser Ansatz verwendet, wenn die Zahlungsmethode auf **Bank** festgelegt ist, und Sie Transaktionen erst dann auf das Bankkonto buchen müssen, wenn die Transaktion von der Bank freigegeben wurde. Sie können sie jedoch auch für ein Sachkonto verwenden. In diesem Fall verschiebt das System den Betrag bei der Verarbeitung der Transferbuchung von einem Hauptkonto auf ein anderes Hauptkonto.
+Eine Transferzahlung ist eine Zahlung, die in zwei Schritten in das Hauptbuch gebucht wird. Normalerweise wird dieser Ansatz verwendet, wenn die Zahlungsmethode auf **Bank** festgelegt ist, und Sie Transaktionen erst dann auf das Bankkonto buchen müssen, wenn die Transaktion von der Bank freigegeben wurde. Sie können sie jedoch auch für ein Sachkonto verwenden. In diesem Fall wird der Betrag bei der Verarbeitung der Transferbuchung von einem Hauptkonto auf ein anderes Hauptkonto verschoben.
 
 Sie können Transferzahlungen entweder aus der Kreditorenbuchhaltung oder aus der Debitorenbuchhaltung erstellen. Obwohl in diesem Artikel erläutert wird, wie Transferbuchungen für Debitorenkonten konfiguriert werden, sind die Schritte für Kreditorentransaktionen ähnlich.
 

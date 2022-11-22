@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8a3f1463821a43af0d8d5f15225944b080414e4c
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: debf8ca47666252633e67e2592acd5a4e4122403
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109917"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778688"
 ---
 # <a name="record-vendor-invoice-and-match-against-received-quantity"></a>Eingang von Kreditorenrechnungen erfassen und mit dem Wareneingang abgleichen
 
@@ -32,7 +32,7 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet. Die Kreditorenleit
 
 
 ## <a name="create-a-purchase-order"></a>Eine Bestellung erstellen
-1. Wechseln Sie zu "Alle Bestellungen".
+1. Wechseln Sie zu **Alle Bestellungen**.
 2. Klicken Sie auf **Neu**.
 3. Klicken Sie im Feld **Kreditorenkonto** auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
 4. Geben Sie im Feld **Lieferantenkonto** einen Wert ein.

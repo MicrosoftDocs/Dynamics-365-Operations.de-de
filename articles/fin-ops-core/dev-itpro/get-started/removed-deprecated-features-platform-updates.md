@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b2eec4dd71baef54877b4139a331288bf37f4960
-ms.sourcegitcommit: e4b6521337dfff3515f70086b0125d4c23308c71
+ms.openlocfilehash: 7d74efe7aa4f3a30c116253d647b9d7bec3b508d
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9262297"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785098"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Entfernte oder veraltete Plattformfunktionen
 
@@ -51,7 +51,7 @@ Im Rahmen des Arbeitsaufwandes für [One Dynamics One Platform](/dynamics365-rel
 | Serviceanforderungen | Nein | Ja | Ja: [Self-Service-Bereitstellungen](../deployment/infrastructure-stack.md) |
 | SharePoint-Integration | Ja | Ja | Nein |
 | Konfigurations- und Datenmanager | Nein | Ja | Nein |
-| Prozessdatenpakete | Nein | Ja | Ja: Datenimport/-export-Framework (DIXF) |
+| Prozessdatenpakete | Nein | Ja | Ja: [Datenimport/-export-Framework (DIXF)](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job) |
 | Umgebung aktualisieren | Nein | Ja | Ja: [One Version](../lifecycle-services/oneversion-overview.md) Service-Updates sind verfügbar. |
 | Infrastrukturkalkulator | Ja | Nein | Nein |
 | Lizenzdimensionierung | Ja | Nein | Nein |
@@ -71,10 +71,10 @@ Im Rahmen des Arbeitsaufwandes für [One Dynamics One Platform](/dynamics365-rel
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Wir entfernen die folgende Liste von Verschlüsselungssammlungen, um unseren aktuellen Sicherheitsprotokollen zu entsprechen.<br><br>TLS_RSA_WITH_AES_256_GCM_SHA384<br>TLS_RSA_WITH_AES_128_GCM_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA256<br>TLS_RSA_WITH_AES_128_CBC_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA<br>TLS_RSA_WITH_AES_256_CBC_SHA  |
-| **Ersetzt durch eine andere Funktion?**   | Ab dem 30. November 2022 können Kunden nur noch unsere  [Standard-Verschlüsselungssammlungen](/power-platform/admin/server-cipher-tls-requirements) verwenden. Diese Änderung wirkt sich auf Ihre Clients und Server aus, die mit unseren Servern kommunizieren, z. B. kann sie sich auf Ihre Integrationen von Drittanbietern auswirken, die sich nicht an unsere Standard-Verschlüsselungssammlungen halten. |
+| **Ersetzt durch eine andere Funktion?**   | Ab dem 31. Januar 2023 können Kunden nur noch unsere  [Standard-Verschlüsselungssammlungen](/power-platform/admin/server-cipher-tls-requirements) verwenden. Diese Änderung wirkt sich auf Ihre Clients und Server aus, die mit unseren Servern kommunizieren, z. B. kann sie sich auf Ihre Integrationen von Drittanbietern auswirken, die sich nicht an unsere Standard-Verschlüsselungssammlungen halten. |
 | **Betroffene Produktbereiche**         | Finanz- und Betriebs-Apps |
 | **Bereitstellungsoption**              | Cloud-Bereitstellungen |
-| **Status**                         | Veraltet. Kunden müssen ihre Server vor dem 30. November 2022 aktualisieren. Weitere Informationen zum Konfigurieren der TLS-Cipher-Suite-Reihenfolge finden Sie unter  [Transport Layer Security (TLS) verwalten](/windows-server/security/tls/manage-tls).  |
+| **Status**                         | Veraltet. Kunden müssen ihre Server vor dem 31. Januar 2023 aktualisieren. Weitere Informationen zum Konfigurieren der TLS-Cipher-Suite-Reihenfolge finden Sie unter  [Transport Layer Security (TLS) verwalten](/windows-server/security/tls/manage-tls).  |
 
 
 ## <a name="feature-deprecation-effective-june-2022"></a>Veraltete Funktion ab Juni 2022

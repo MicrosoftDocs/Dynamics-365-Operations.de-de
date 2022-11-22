@@ -2,25 +2,25 @@
 title: Jahresabschluss
 description: In diesem Artikel werden die erforderlichen Einstellungen und die Schritte für den Jahresabschlussprozess im Hauptbuch beschrieben.
 author: kweekley
-ms.date: 12/06/2021
+ms.date: 11/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerClosingSheet
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 032c572ec7b29bb6b2823ddde0c4fa76e5f8fcf1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7e1c7722b560246fb597f0b7f91a70afecf69e22
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883212"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779742"
 ---
 # <a name="year-end-close"></a>Jahresabschluss
 
@@ -62,7 +62,7 @@ Auf der **Einrichtung der Vorlage für den Jahresabschluss** Seite:
 
 ## <a name="define-year-end-close-templates"></a>Definieren von Jahresabschlussvorlagen
 
-Nachdem das System konfiguriert wurde, kann der Jahresabschlussprozess ausgeführt werden. Auf der Seite **Jahresabschlussvorlage einrichte** kann eine Vorlage für die Gruppe von juristischen Personen, für die der Jahresabschlussprozess durchgeführt wird, definiert werden. Die Vorlage wird bei jedem Jahresabschluss wiederverwendet, kann jedoch bei Änderungen in Ihrer Organisation geändert werden.
+Nachdem die Konfiguration abgeschlossen wurde, kann der Jahresabschlussprozess ausgeführt werden. Auf der Seite **Jahresabschlussvorlage einrichte** kann eine Vorlage für die Gruppe von juristischen Personen, für die der Jahresabschlussprozess durchgeführt wird, definiert werden. Die Vorlage wird bei jedem Jahresabschluss wiederverwendet, kann jedoch bei Änderungen in Ihrer Organisation geändert werden.
 
 Definieren Sie zunächst das Feld **Gruppennamen**, und wählen Sie dann den Steuerkalender. Anhand des Gruppennamens sollte die enthaltene Gruppe von juristischen Personen identifiziert werden können. Beachten Sie beim Festlegen der Gruppen juristischer Personen, dass juristische Personen nur dann in dieselbe Gruppe aufgenommen werden können, wenn für sie derselbe Steuerkalender ausgewählt ist. Beispielsweise können die Vorlagen basierend auf der Geografie eingerichtet werden mit separaten Gruppen für juristische Personen aus Nordamerika, juristische Personen aus Europa, dem Nahen Osten und Afrika (EMEA) und juristische Personen aus Asien.
 

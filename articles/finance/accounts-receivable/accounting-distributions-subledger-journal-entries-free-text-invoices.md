@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 3141
 ms.assetid: fecd17a2-d7b4-4a20-ac81-eb71abbfa9d1
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e2b6d75034c06704cad4cbc800ce3311ef5330e
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: f5120c4e75e821776201d5add2d498feb94d0297
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712285"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778410"
 ---
 # <a name="accounting-distributions-and-subledger-entries-for-free-text-invoices"></a>Buchhaltungsverteilungen und Journaleinträge für Freitextrechnungen
 
@@ -30,9 +30,9 @@ Mithilfe von Buchhaltungsverteilungen wird definiert, wie ein Betrag kalkuliert 
 
 ## <a name="accounting-distributions"></a>Buchhaltungsverteilungen
 
-Sie können die folgenden Schaltflächen auf der Seite "Freitextrechnung" verwenden, um die Buchhaltungsverteilungen für jeden Betrag auf der Freitextrechnung anzuzeigen und eventuell zu ändern.
+Sie können die folgenden Schaltflächen auf der Seite **Freitextrechnung** verwenden, um die Buchhaltungsverteilungen für jeden Betrag auf der Freitextrechnung anzuzeigen und eventuell zu ändern.
 
--   **Beträge verteilen**– Dient zum Anzeigen und Ändern der Buchhaltungsverteilungen für eine einzelne Position und alle untergeordneten Positionen wie Steuern oder Belastungen. Sie können auch die Buchhaltungsverteilungen für die untergeordnete Position direkt von der Seite "Mehrwertsteuerbuchungen" oder der Seite "Belastungsbuchungen" aus anzeigen und ändern.
+-   **Beträge verteilen**– Dient zum Anzeigen und Ändern der Buchhaltungsverteilungen für eine einzelne Position und alle untergeordneten Positionen wie Steuern oder Belastungen. Sie können die buchhalterischen Verteilungen für die untergeordnete Zeile auch direkt über die Seite **Mehrwertsteuer-Transaktionen** oder die Seite **Belastungen-Transaktionen** einsehen und ändern.
     -   Ändern Sie Kopfzeilenbeträge von Freitextrechnungen wie Zuschläge oder Währungsrundungsbeträge.
     -   Ändern von Freitextrechnungpositionsbeträgen.
 -   **Verteilungen anzeigen** – Dient zum Anzeigen der Buchhaltungsverteilungen für alle Positionen im Dokument. Sie können die Buchhaltungsverteilungen in dieser Ansicht nicht ändern.
@@ -62,7 +62,7 @@ Wenn Sie eine Freitextrechnung eingeben, wird jeder Betrag wie folgt verteilt.
 <li>Wenn das Hauptkonto ein Zuordnungskonto ist, verwenden Sie den Standardwert der Zuweisungskontodefinition.</li>
 <li>Wenn das Hauptkonto kein Zuweisungskonto ist, verwenden Sie die Standardvorlage für Finanzdimensionen in der Freitextrechnungsposition.</li>
 <li>Verwenden Sie die standardmäßigen Finanzdimensionswerte in der Freitextrechnungsposition.</li>
-<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Sachkonto auf der Seite "Kontenplan".</li>
+<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Sachkonto auf der Seite „Kontenplan“.</li>
 </ol></td>
 </tr>
 <tr class="even">
@@ -84,43 +84,43 @@ Wenn Sie eine Freitextrechnung eingeben, wird jeder Betrag wie folgt verteilt.
 <td>Das Sachkonto in der Freitextrechnungsposition</td>
 <td><ol>
 <li>Verwenden Sie die standardmäßigen Finanzdimensionswerte in der Freitextrechnungsposition.</li>
-<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Sachkonto auf der Seite "Kontenplan".</li>
+<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Sachkonto auf der Seite „Kontenplan“.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Rabattbetrag der Freitextrechnung</td>
-<td>Das Feld "Hauptkonto für Debitorenrabatte" auf der Skonti Seite.</td>
+<td>Das Feld „Hauptkonto für Debitorenrabatte“ auf der Skonti Seite.</td>
 <td><ol>
 <li>Wenn das Hauptkonto ein Zuordnungskonto ist, verwenden Sie den Standardwert der Zuweisungskontodefinition.</li>
 <li>Wenn das Hauptkonto kein Zuweisungskonto ist, verwenden Sie die Standardvorlage für Finanzdimensionen in der Freitextrechnungsposition.</li>
 <li>Verwenden Sie die standardmäßigen Finanzdimensionswerte in der Freitextrechnungsposition.</li>
-<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Sachkonto auf der Seite "Kontenplan".</li>
+<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Sachkonto auf der Seite „Kontenplan“.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Mehrwertsteuerbetrag der Freitextrechnung</td>
-<td>Das Feld Mehrwertsteuer in der Sachkontobuchungsgruppenseite.</td>
+<td>Das Feld Mehrwertsteuer auf der Sachkontobuchungsgruppenseite.</td>
 <td><ol>
 <li>Verwenden Sie die Finanzdimensionen, die im Freitextrechnungspositionsbetrag oder den Verteilungen für den Positionsbetrag der Zuschläge definiert sind.</li>
 <li>Verwenden Sie die standardmäßigen Finanzdimensionswerte in der Freitextrechnungsposition.</li>
-<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Sachkonto auf der Seite "Kontenplan".</li>
+<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Sachkonto auf der Seite „Kontenplan“.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Positionsbetrag der Zuschläge der Freitextrechnung</td>
-<td>Das Habenkontofeld in der Belastungscodeseite.</td>
+<td>Das Habenkontofeld auf der Belastungscodeseite.</td>
 <td><ol>
 <li>Wenn das Hauptkonto ein Zuordnungskonto ist, verwenden Sie den Standardwert der Zuweisungskontodefinition.</li>
 <li>Wenn das Hauptkonto kein Zuweisungskonto ist, verwenden Sie die Standardvorlage für Finanzdimensionen in der Freitextrechnungsposition.</li>
 <li>Verwenden Sie die standardmäßigen Finanzdimensionswerte in der Freitextrechnungsposition.</li>
-<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Sachkonto auf der Seite "Kontenplan".</li>
+<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Sachkonto auf der Seite „Kontenplan“.</li>
 </ol></td>
 </tr>
 </tbody>
 </table>
 
 ## <a name="distributing-taxes"></a>Verteilen von Steuern
-Buchhaltungsverteilungen für Steuern können erst erstellt werden, nachdem Steuern berechnet wurden. Zum Berechnen der Mehrwertsteuer müssen Sie auf der Seite "Freitextrechnung" eine der folgenden Aufgaben ausführen:
+Buchhaltungsverteilungen für Steuern können erst erstellt werden, nachdem Steuern berechnet wurden. Zum Berechnen der Mehrwertsteuer müssen Sie auf der Seite **Freitextrechnung** eine der folgenden Aufgaben ausführen:
 -   Zeigen Sie den Mehrwertsteuercode an.
 -   Zeigen Sie die Rechnungssumme an.
 -   Zeigen Sie den Cashflow an.

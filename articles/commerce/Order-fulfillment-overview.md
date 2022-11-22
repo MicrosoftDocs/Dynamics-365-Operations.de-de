@@ -1,35 +1,37 @@
 ---
 title: Filialauftragserfüllung
-description: Dieser Artikel enthält eine Übersicht über die Filialauftragserfüllung.
+description: Dieser Artikel enthält eine Übersicht über die Filialauftragserfüllung in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 10/30/2017
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RetailStoreTable, RetailTillLayout
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2017-10-30
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 23f0b6ff8ec105da04b4b2416d8f6864c70c92fc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bf338c6d0b6a237cad2974d36c23238029fe9b38
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854977"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785071"
 ---
 # <a name="store-order-fulfillment"></a>Filialauftragserfüllung
 
 [!include [banner](includes/banner.md)]
+
+Dieser Artikel enthält eine Übersicht über die Filialauftragserfüllung in Microsoft Dynamics 365 Commerce.
 
 Viele Einzelhändler möchten die Auftragserfüllung optimieren, indem Sie es Filialen ermöglichen, Aufträge zu erfüllen. Durch Auftragserfüllung auf Filialebene können zu große Lagerbestände für eine bestimmte Filiale vermieden werden. Sie kann auch aus logistischer Sicht in bestimmten Fällen erforderlich sein, wenn eine Filiale zusätzliche Kapazitäten besitzt oder sich in einer geringeren Versandentfernung zum Debitoren befindet. Um dieser Anforderung zu entsprechen, ist ein vereinheitlichter Auftragserfüllungsarbeitsgang in der Verkaufsstelle verfügbar.
 
 Bei Aufträgen für die Erfüllung in einer bestimmten Filiale ist der Lagerort der Filiale in der Kopfzeile oder den Positionen des Auftrags festgelegt.
 
 Der Auftragserfüllungsarbeitsgang in der Verkaufsstelle enthält einen einzelnen Arbeitsbereich in der Verkaufsstelle, der verwendet werden kann, um Aufträge zu verarbeiten. Dies umfasst alles von der Annahme des Auftrags bis zur Markierung als versendet oder zum Initiieren der Filialabholung.
+
+Das folgende Video bietet einen Überblick und eine Demo der Store-Fulfillment-Funktionen in Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bRXE]
 
 ## <a name="access-unified-order-fulfillment-in-the-point-of-sale"></a>Auf vereinheitlichte Auftragserfüllung in der Verkaufsstelle zugreifen
 

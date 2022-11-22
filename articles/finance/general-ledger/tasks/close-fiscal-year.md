@@ -2,7 +2,7 @@
 title: Geschäftsjahr abschließen
 description: Dieses Verfahren führt Sie durch den Jahresabschlussprozess, der Salden in ein neues Geschäftsjahr übertragen.
 author: aprilolson
-ms.date: 07/11/2019
+ms.date: 11/11/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8eb36cb856d191d64561060e7de4a1f9fd947882
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 4d52e6789a96defaf1d0132fe97fc183a05af207
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717473"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779799"
 ---
 # <a name="close-the-fiscal-year"></a>Geschäftsjahr abschließen
 
@@ -40,7 +40,7 @@ Bei **Ja** werden zwei Buchungen erstellt. Ein Beleg wird im abgeschlossenen Ges
 
 5. Wählen Sie **Ja** oder **Nein** für die Option **Geschäftsjahresstatus auf dauerhaft abgeschlossen festlegen** aus.
 
-Bei **Ja** wird der Geschäftsjahrsstatus auf „Dauerhaft geschlossen“ festgelegt. Da ein dauerhaft geschlossenes Jahr nicht erneut geöffnet werden kann, sollten Sie diese Option auf **Nein** festlegen.  
+Bei **Ja** wird der Geschäftsjahrsstatus auf **Dauerhaft geschlossen** festgelegt. Da ein dauerhaft geschlossenes Jahr nicht erneut geöffnet werden kann, sollten Sie diese Option auf **Nein** festlegen.  
 
 6. Wählen Sie **Ja** oder **Nein** für die Option zur **manuellen Eingabe einer Belegnummer im Rahmen des Jahresabschlussprozesses** aus.
 

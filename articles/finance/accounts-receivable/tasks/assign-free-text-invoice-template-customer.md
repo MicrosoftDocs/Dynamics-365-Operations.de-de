@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustTable, CustRecurrenceInvoice
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1e8330e26f1450dac27bb837bb56f8bbffefc9bc
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 49074c11659ae30fd2decdb93b4721441edff2c5
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712201"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780525"
 ---
 # <a name="assign-a-free-text-invoice-template-to-a-customer"></a>Einem Debitor eine Freitextrechnungsvorlage zuweisen
 
@@ -36,15 +36,16 @@ In dieser Aufgabe wird dargestellt, wie Sie eine Freitextrechnungsvorlage zu ein
 8. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 9. Geben Sie im Feld **Startdatum der Fakturierung** das Datum ein, an dem die erste Rechnung generiert wird.
 10. Geben Sie im Abschnitt **Ende der Serie** ein wiederkehrendes Enddatum ein.  
-    * Wählen Sie eine der folgenden Optionen: Kein Enddatum – Es werden so lange Rechnungen generiert, bis die Vorlage aus dem Debitorenkonto entfernt wird.
-    * Enddatum der Fakturierung – Wählen Sie diese Option aus, und geben Sie das letzte Datum ein, an dem eine Rechnung generiert werden kann.  
+    Wählen Sie eine der folgenden Optionen: 
+    - **Kein Enddatum** – Es werden so lange Rechnungen generiert, bis die Vorlage aus dem Debitorenkonto entfernt wird.
+    - **Enddatum der Fakturierung** – Wählen Sie diese Option aus, und geben Sie das letzte Datum ein, an dem eine Rechnung generiert werden kann.  
 11. Geben Sie im Feld **Maximaler kumulativer Betrag** den maximalen kumulativen Betrag ein, nach dem die Rechnungsgenerierung stoppt. Geben Sie den maximalen kumulativen Betrag ein, der unter Verwendung der ausgewählten Vorlage erreicht werden kann. Beispiel: Wenn Sie in dieses Feld den Wert 1.000,00 eingeben und monatlich eine Rechnung über jeweils 100,00 Einheiten generieren, wird nach der zehnten Rechnung keine weitere Rechnung mehr generiert.  
 12. Im Abschnitt **Serienrechnungen generieren mithilfe der Standardwerte aus** wählen Sie entweder die Freitextrechnungsvorlage oder das Debitorenkonto aus. Wählen Sie aus, ob die Standardwerte für Sprache, Buchungsprofil, Mehrwertsteuergruppe, Artikel-Mehrwertsteuergruppe, Listencode, Land/Region zur Lieferadresse, Währung, Zahlungsbedingungen, Zahlungsmethode, Zahlungsspezifikation, Zahlungsplan, Skonto, Finanzdimensionen und Giro-Überweisungsbeleg anhand der Freitext-Rechnungsvorlage oder des Debitorenkontos bestimmt werden.  
 13. Im Feld **Wiederholungsmuster** wählen Sie das Wiederholungsmuster aus.
-    + Täglich – Wählen Sie diese Option aus, und geben Sie im Feld "Pro" die Anzahl von Tagen ein. Beispiel: Wenn Sie 15 eingeben, wird für diesen Debitor alle 15 Tage eine Rechnung generiert.
-    + Wöchentlich – Wählen Sie diese Option aus, und geben Sie im Feld "Pro" die Anzahl von Wochen ein. Beispiel: Wenn Sie 2 eingeben, wird für diesen Debitor alle zwei Wochen eine Rechnung generiert.
-    + Monatlich – Wählen Sie diese Option aus, und geben Sie im Feld "Pro" die Anzahl von Monaten ein. Beispiel: Wenn Sie 6 eingeben, wird für diesen Debitor alle sechs Monate eine Rechnung generiert.
-    + Jährlich – Wählen Sie diese Option aus, und geben Sie im Feld "Pro" die Anzahl von Jahren ein. Beispiel: Wenn Sie 2 eingeben, wird für diesen Debitor alle zwei Jahre eine Rechnung generiert.  
+    - **Täglich** – Wählen Sie diese Option aus, und geben Sie im Feld „Pro“ die Anzahl von Tagen ein. Beispiel: Wenn Sie 15 eingeben, wird für diesen Debitor alle 15 Tage eine Rechnung generiert.
+    - **Wöchentlich** – Wählen Sie diese Option aus, und geben Sie im Feld „Pro“ die Anzahl von Wochen ein. Beispiel: Wenn Sie 2 eingeben, wird für diesen Debitor alle zwei Wochen eine Rechnung generiert.
+    - **Monatlich** – Wählen Sie diese Option aus, und geben Sie im Feld „Pro“ die Anzahl von Monaten ein. Beispiel: Wenn Sie 6 eingeben, wird für diesen Debitor alle sechs Monate eine Rechnung generiert.
+    - **Jährlich** – Wählen Sie diese Option aus, und geben Sie im Feld „Pro“ die Anzahl von Jahren ein. Beispiel: Wenn Sie 2 eingeben, wird für diesen Debitor alle zwei Jahre eine Rechnung generiert.  
 14. Geben Sie im Feld **Pro** eine Zahl ein.
 
 
