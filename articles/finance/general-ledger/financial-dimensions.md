@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9b07831ab789b570963ff5f425f149ba5a564a38
-ms.sourcegitcommit: e700528679a821237e644b3e21058c36ae1323c3
+ms.openlocfilehash: adfa2c1164550e32b07da25de0d96aa82430b980
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "9680357"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799625"
 ---
 # <a name="financial-dimensions"></a>Finanzdimensionen
 
@@ -31,7 +31,7 @@ Mithilfe der Seite **Finanzdimensionen** können Sie Finanzdimensionen erstellen
 
 Nachdem Sie die Finanzdimensionen erstellt haben, weisen Sie jeder Finanzdimension auf der Seite **Finanzdimensionswerte** weitere Eigenschaften zu.
 
-Sie können Finanzdimensionen verwenden, um juristische Personen darzustellen. Sie müssen in Dynamics 365 Finance keine juristischen Personen erstellen. Allerdings wurden Finanzdimensionen nicht für  die betrieblichen oder geschäftlichen Anforderungen von juristischen Personen entworfen. Die Interunit-Buchhaltungsfunktionen in Finance sind nur für die Buchhaltungseinträge vorgesehen, die durch die einzelnen Buchung erstellt werden.
+Sie können Finanzdimensionen verwenden, um juristische Personen darzustellen. Sie müssen in Dynamics 365 Finance keine juristischen Personen erstellen. Allerdings wurden Finanzdimensionen nicht für die betrieblichen oder geschäftlichen Anforderungen von juristischen Personen entworfen. Die Interunit-Buchhaltungsfunktionen in Finance sind nur für die Buchhaltungseinträge vorgesehen, die durch die einzelnen Buchung erstellt werden.
 
 Bevor Sie Finanzdimensionen als juristische Personen einrichten, prüfen Sie Ihre Geschäftsprozesse in den folgenden Bereichen, um zu bestimmen, ob diese Einstellung für Ihre Organisation sinnvoll ist:
 
@@ -47,7 +47,7 @@ Im Folgenden finden Sie einige der Beschränkungen:
 
 ## <a name="custom-dimensions"></a>Benutzerdefinierte Dimensionen
 
-Um eine benutzerdefinierte Finanzdimension zu erstellen, wählen Sie im Feld **Werte verwenden ab**" die Option **Benutzerdefinierte Dimension** aus.
+Um eine benutzerdefinierte Finanzdimension zu erstellen, wählen Sie im Feld **Werte verwenden ab** die Option **Benutzerdefinierte Dimension** aus.
 
 Sie können auch eine Kontenmaske angeben. Sie beschränkt die Menge und die Art von Informationen, die für Dimensionswerte eingegeben werden können. Sie können Zeichen eingeben, die dieselben bleiben für jeden Dimensionswert, wie Buchstaben oder einen Bindestrich (-). Sie können auch Nummernzeichen (\#) und kaufmännische Und-Zeichen (&) als Platzhalter für Buchstaben und Zahlen eingeben, die sich jedes Mal ändern, wenn ein Dimensionswert erstellt wird. Verwenden Sie ein Nummernzeichen (\#) als Platzhalter für eine Zahl und ein kaufmännisches Und-Zeichen (&) als Platzhalter für einen Buchstaben. Das Feld für die Formatmaske ist nur verfügbar, wenn Sie **Benutzerdefinierte Dimension** im Feld **Werte nutzen** auswählen.
 
@@ -108,7 +108,7 @@ Sie können abgeleitete Dimensionswerte auf der Dimensionsseite einrichten.
 
 2. Fügen Sie die Segmente hinzu, die berechnet werden sollen. Jedes Segment wird als Spalte angezeigt.
 
-Geben Sie die Dimension an, die von der Dimension in der ersten Spalte berechnet werden sollen. Um beispielsweise die Kostenstelle als die Dimension zu verwenden, von der die Abteilung und die elektronische Adresse abgeleitete werden, geben Sie Kostenstelle 10, Abteilung 20 und elektronische Adresse 30 ein. Wenn Sie Kostenstelle 10 in einem Rahmen-Datensatz oder in einer Transaktionsseite erfassen, werden Abteilung 20 und elektronische Adresse 30  standardmäßig eingegeben.
+Geben Sie die Dimension an, die von der Dimension in der ersten Spalte berechnet werden sollen. Um beispielsweise die Kostenstelle als die Dimension zu verwenden, von der die Abteilung und die elektronische Adresse abgeleitete werden, geben Sie Kostenstelle 10, Abteilung 20 und elektronische Adresse 30 ein. Wenn Sie Kostenstelle 10 in einem Rahmen-Datensatz oder in einer Transaktionsseite erfassen, werden Abteilung 20 und elektronische Adresse 30 standardmäßig eingegeben.
 
 ### <a name="overriding-existing-values-with-derived-dimensions"></a>Vorhandene Dimensionswerte mit abgeleiteten Werten ersetzen
  
@@ -136,6 +136,12 @@ Sie können Dimensionssegmente und die abgeleiteten Werte einrichten, indem Sie 
 - Die abgeleiteten Dimensionswertentität ermöglicht es Ihnen, die Werte zu importieren, die für jede treibende Dimension berechnet werden sollen.
 
 Wenn Sie eine Entität verwenden, um Daten zu importieren, wenn diese Dimensionen Entität importiert wird, werden die abgeleiteten Dimensionsregeln beim Import verwendet, es sei denn, die Entität überschreibt diese Dimensionen explizit.
+
+## <a name="financial-dimension-service"></a>Finanzdimensionsdienst
+
+Das Add-In für den Finanzdimensionsdienst ist in Ihrer Microsoft Dynamics Lifecycle Services-Umgebung verfügbar. Es bietet eine verbesserte Leistung, wenn Sie das Datenverwaltungs-Framework verwenden, um ein Journal mit einer großen Anzahl von Zeilen zu importieren. Um den Dienst zu verwenden, müssen Sie ihn auf der Seite **Parameter für Finanzdimensionsdienst** aktivieren. Derzeit funktioniert der Dienst nur bei importierten Journals mit 500 oder mehr Zeilen. Darüber hinaus kann es derzeit nur allgemeine Buchungen verarbeiten, bei denen der Kontotyp **Sachkonto** in den Erfassungspositionen festgelegt ist. Andere Kontotypen in Erfassungspositionen, wie **Debitor**, **Kreditor** und **Bank**, werden derzeit nicht unterstützt. Dieser Dienst wird nicht aufgerufen, wenn abgeleitete Dimensionen im System eingerichtet werden.
+
+Der Finanzdimensionsdienst bietet eine verbesserte Leistung, wenn Journale importiert werden, indem ein neuer Dienst verwendet wird, der parallel zum Datenimport ausgeführt wird. Es wird nur für die Hauptkonto- und Finanzdimensionsdaten im Journal ausgeführt und generiert die Dimensionskombinationen, die im Sachkonto-Zeichenfolgenfeld in den Erfassungspositionen angegeben sind. Die Verarbeitung wandelt diese Zeichenfolge in den strukturierten Datenspeicher um, den das Finanzdimensions-Framework im Rest des Produkts für Prüfung, zusammenfassende Berichte und Abfragen verwendet. Weitere Informationen zum zusammenfassenden Berichten von Finanzdimensionsdaten finden Sie unter [Finanzdimensionssätze](financial-dimension-sets.md).
 
 Weitere Informationen finden Sie in folgenden Themen:
 

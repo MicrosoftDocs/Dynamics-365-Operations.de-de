@@ -2,7 +2,7 @@
 title: Einrichtung der Parameter für das Kreditmanagement
 description: In diesem Artikel werden die Optionen beschrieben, mit denen Sie das Kreditmanagement konfigurieren können, um die Anforderungen Ihres Unternehmens zu erfüllen.
 author: JodiChristiansen
-ms.date: 12/10/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2ac5e0ba8c9279fc5f04a80d4444b11850e72d3c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8955518e7b5c0200d3827c1c22b7d150a09be244
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876353"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799544"
 ---
 # <a name="credit-management-parameters-setup"></a>Einrichtung der Parameter für das Kreditmanagement
 
@@ -46,7 +46,7 @@ Es gibt vier Inforegister im Abschnitt **Kredit**, in denen Sie die Parameter ä
 
 Sie können den Zeitpunkt festlegen, zu dem Kundenaufträge auf Kreditprobleme geprüft werden. Das Inforegister **Kreditmanagement-Checkpoint** identifiziert die Belegbuchungsprozesse, die die Verarbeitung von Kreditverwaltungsregeln umfassen. Sie können die Kreditregeln auch überprüfen, während Sie entweder eine Pro-forma-Buchung oder eine vollständige Buchung des Kundenauftrags durchführen. Aktivieren Sie die Kontrollkästchen, um die Buchungsprozesse zu definieren, bei denen ein Auftrag zurückgestellt werden soll, wenn nach der Verarbeitung der Sperrregeln für das Kreditmanagement ein Problem festgestellt wird.
 
-Sie können auch die Anzahl der Kulanztage festlegen, bevor die Kreditregeln erneut überprüft werden. Obwohl Sie festlegen können, dass die Kreditverwaltungsregeln beim Buchen überprüft werden, werden die Regeln für die angegebene Anzahl von Kulanztagen nicht überprüft. Beispielsweise bestätigen Sie einen Kundenauftrag am ersten Tag und geben zwei Kulanztage für den Bestätigungsschritt an. In diesem Fall werden die Kreditregeln beim nächsten Buchungsschritt (z. B. Erstellung eines Lieferscheins oder Fakturierung der Bestellung) erst am 4. Tag überprüft. Am oder nach dem vierten Tag werden die Regeln beim Buchen erneut überprüft, und die Anzahl der Kulanztage wird auf den Wert geändert, der für den nächsten Buchungsprüfpunkt angegeben ist.
+Sie können auch die Anzahl der Kulanztage festlegen, bevor die Kreditregeln erneut überprüft werden. Obwohl Sie festlegen können, dass die Kreditverwaltungsregeln beim Buchen überprüft werden, werden die Regeln für die angegebene Anzahl von Kulanztagen nicht überprüft. Beispielsweise bestätigen Sie einen Kundenauftrag am ersten Tag und geben zwei Kulanztage für den Bestätigungsschritt ein. In diesem Fall werden die Kreditregeln beim nächsten Buchungsschritt (z. B. Erstellung eines Lieferscheins oder Fakturierung der Bestellung) erst am vierten Tag überprüft. Am oder nach dem vierten Tag werden die Regeln beim Buchen erneut überprüft, und die Anzahl der Kulanztage wird auf den Wert geändert, der für den nächsten Buchungsprüfpunkt angegeben ist.
 
 Wenn Sie die Anzahl der Kulanztage nicht angeben, werden die Kreditregeln bei jedem Buchungsschritt überprüft, der für die Ausführung der Kreditverwaltungsregeln eingerichtet wurde. Wenn Sie den Kundenauftrag ohne Buchung freigeben und dann denselben Auftragsverarbeitungsschritt erneut ausführen, werden die Kreditregeln erneut überprüft. Beispielsweise wird eine Bestellung nach einer Bestätigung zurückgestellt und Sie geben sie entweder mit oder ohne Buchung frei. In diesem Fall wird die Bestellung erneut zurückgestellt, wenn Sie sie erneut bestätigen. Verwenden Sie Kulanztage, wenn die Bestellung mit dem nächsten Verarbeitungsschritt fortgesetzt werden soll, ohne dass sie erneut zurückgestellt wird.
 
@@ -73,7 +73,7 @@ Mehrere Kreditmanagementstatistiken sind in der Infobox **Statistiken zum Kunden
 
 - Im Kreditmanagement wird das Kundenkreditlimit in der Währung des Kunden angezeigt. Sie müssen den Wechselkurstyp für das Kreditlimit in der Währung des Kunden definieren. Wählen Sie im Feld **Kreditlimit-Wechselkursart** die Art des Wechselkurses aus, mit dem das primäre Kreditlimit in das Kreditlimit des Debitors konvertiert werden soll.
 - Stellen Sie die Option **Manuelle Bearbeitung von Kreditlimits zulassen** auf **Nein**, um zu verhindern, dass Benutzer Kreditlimits auf der Seite **Debitor** bearbeiten. Wenn diese Option auf **Nein** gesetzt ist, können Änderungen am Kreditlimit eines Debitors nur durch die Buchung von Transaktionen zur Anpassung des Kreditlimits vorgenommen werden.
-- Stellen Sie die **Inventarreservierungen umgehen** Option auf **Ja**, um Bestandsreservierungen zu ignorieren, wenn die Kreditmanagement-Sperrregeln überprüft werden. In diesem Fall prüft das System vollständige Zeilenmengen und aktiviert Kulanzfristen für Prüfpunkte, unabhängig von der Bestandsreservierungsmenge.
+- Stellen Sie die **Inventarreservierungen umgehen** Option auf **Ja**, um Bestandsreservierungen zu ignorieren, wenn die Kreditmanagement-Sperrregeln überprüft werden. In diesem Fall werden die Mengen überprüft und aktiviert Kulanzfristen für Toleranzperioden werden aktiviert, unabhängig von der Bestandsreservierungsmenge.
 - Wenn das Kreditmanagement aktiviert ist, wird die Einstellung der **Meldung bei Überschreitung des Kreditlimits** Feld verwendet, um nur Freitextrechnungen zu verarbeiten. Obwohl Kundenaufträgen weiterhin Nachrichten hinzugefügt werden, wenn Kunden ihr Kreditlimit überschritten haben, blockieren diese Nachrichten nicht die Bestätigung, das Drucken von Kommissionierlisten und Lieferscheinen oder das Buchen von Rechnungen.
 
     Die Kreditverwaltung ist standardmäßig aktiviert, Sie können sie jedoch deaktivieren. Wenn sie aktiviert ist, verwenden Sie die Sperrregeln und Prüfpunkte des Kreditmanagements, um zu erkennen, wann Kunden ihr Kreditlimit überschritten haben. Wenn es deaktiviert ist, werden die Nachrichten, die den Kundenaufträgen hinzugefügt werden, basierend auf der Einstellung des Felds **Meldung bei Überschreitung des Kreditlimits** Ihnen dabei helfen, zu erkennen, wann Kunden ihr Kreditlimit überschritten haben.

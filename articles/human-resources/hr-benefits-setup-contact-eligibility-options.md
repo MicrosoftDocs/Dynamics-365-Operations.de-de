@@ -2,7 +2,7 @@
 title: Berechtigungsoptionen für persönliche Kontakte konfigurieren
 description: Dieser Artikel erklärt, wie Sie die Berechtigungsoptionen für persönliche Kontakte in Microsoft Dynamics 365 Human Resources konfigurieren.
 author: twheeloc
-ms.date: 08/24/2021
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 251a12b0da364744f1d8c84324099708a2f816a1
-ms.sourcegitcommit: 1717ff6af1879c6f3a8360936c42ecf55f86acd0
+ms.openlocfilehash: e3e393002901f31c035a54bd8036ed20ecdf9e00
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2022
-ms.locfileid: "9749281"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803883"
 ---
 # <a name="configure-personal-contact-eligibility-options"></a>Berechtigungsoptionen für persönliche Kontakte konfigurieren
 
@@ -43,9 +43,10 @@ In diesem Artikel erfahren Sie, wie Sie Typen für persönliche Kontakte für di
    | **Berechtigungscode für Kontakt** | Der Systemcode, der die persönliche Berechtigungsoption am besten beschreibt. Sie haben folgende Auswahlmöglichkeiten: <ul><li>Beziehung</li><li>Student</li><li>Überschüssige abhängige Person</li><li>Überaltertes, deaktiviertes abhängiges Objekt</li></ul> |
    | **Status** | Der Status der Berechtigungsoption. Wenn der Status für eine Berechtigungsoption auf inaktiv gesetzt ist, können Sie diese Berechtigungsoption für persönliche Kontakte nicht auswählen. |
    | **Beziehung** | Gibt die Beziehung zwischen dem persönlichen Kontakt und dem Mitarbeiter an. Dieses Feld ist nur aktiv, wenn der Kontaktberechtigungscode auf „Beziehung“ gesetzt ist. |
-   | **Alter** | Das minimale Alter eines berechtigten persönlichen Kontakts für den Vorteilsplan. Dieses Feld ist nur aktiv, wenn Sie eine Beziehung auswählen. Dieses Alter wird mit dem berechneten Alter des persönlichen Kontakts verglichen. Das berechnete Alter ist: (Dispositionsdatum – Geburtsdatum des persönlichen Kontakts / 365). Diese Zahl ist immer eine ganze Zahl. |
+   | **Alter** |Gibt das maximale Alter eines berechtigten persönlichen Kontakts für den Vorteilsplan an. Dieses Feld ist nur aktiv, wenn Sie eine Beziehung auswählen. Dieses Alter wird mit dem berechneten Alter des persönlichen Kontakts verglichen. Das berechnete Alter ist: (Dispositionsdatum – Geburtsdatum des persönlichen Kontakts / 365). Diese Zahl ist immer eine ganze Zahl.
+Bei der Option für die Berechtigung **volljähriger abhängiger privater Kontakte** ist das Alter in diesem Feld das Mindestalter. Beispiel: Wenn das Alter in der Option **Volljähriger abhängige Person** auf 18 festgelegt ist, werden die als abhängigen Personen von der Berechtigungsoption erfasst, die als volljährige abhängige Person gekennzeichnet und 18 Jahre oder älter sind.  |
 
-4. Wählen Sie **Speichern**. 
+4. Wählen Sie **Speichern** aus. 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

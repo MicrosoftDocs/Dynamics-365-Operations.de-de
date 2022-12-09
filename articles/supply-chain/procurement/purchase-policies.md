@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1268e619d27a2e400c76bfa45fb932997ec88483
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 56d8f11d1bb53ef580e33ea43c84369c9e7fc0cc
+ms.sourcegitcommit: 0f33f7b7d34d4f9c31ae0faf06a7a5c04b0195a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675990"
+ms.lasthandoff: 11/24/2022
+ms.locfileid: "9804899"
 ---
 # <a name="purchasing-policies-overview"></a>Überblick über die Einkaufsrichtlinien
 
@@ -114,7 +114,7 @@ Die Anforderungszweckregel ist eine optionale Regel, die den Typ des Anforderung
 
 ### <a name="replenishment-category-access-policy-rule"></a>Richtlinienregel für Auffüllungskategoriezugriff
 
-Die Richtlinienregel für Auffüllungskategoriezugriff ist eine optionale Regel, die die Produkte bestimmt, die verfügbar sind, um Anforderungsbedarf für eine bestimmte juristische Person zu erfüllen, wenn der Anforderungszweck **Auffüllung** ist.
+Die Richtlinienregel für den Wiederbeschaffungskategoriezugriff ist eine optionale Regel, die die Produkte bestimmt, die verfügbar sind, um Anforderungsbedarf für eine bestimmte juristische Person zu erfüllen, wenn der Anforderungszweck **Wiederbeschaffung** ist.
 
 ### <a name="replenishment-control-rule"></a>Regel für die Auffüllungssteuerung
 

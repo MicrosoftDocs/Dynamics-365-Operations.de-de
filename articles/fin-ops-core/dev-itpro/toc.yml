@@ -348,7 +348,7 @@
                       href: deployment/troubleshoot-newinfrastructure.md
                     - name: Häufig gestellte Fragen zu geplanten Wartungsarbeiten in Self-Service-Umgebungen
                       href: deployment/plannedmaintenance-selfservice.md
-                    - name: Business Continuity & Disaster Recovery
+                    - name: Business Continuity &amp; Disaster Recovery
                       href: sysadmin/business-continuity-disaster-recovery.md
                 - name: Den Onboardingprozess von Azure Resource Manager abschließen
                   href: deployment/arm-onboarding.md
@@ -1046,9 +1046,11 @@
               href: lifecycle-services/querycookbook.md
             - name: Abgelaufene Abonnements und Datenlöschung
               href: lifecycle-services/expired-subscription-data-deletion.md
-            - name: Microsoft Dynamics 365 – Translation Service
+            - name: "Microsoft Dynamics\_365 Translation Service"
               items:
-                - name: Dynamics 365 Translation Service – Übersicht
+                - name: Neuerungen in Dynamics Translation Service
+                  href: lifecycle-services/dts-announcements.md
+                - name: "Überblick über Dynamics\_365 Translation Service"
                   href: lifecycle-services/translation-service-overview.md
                 - name: Übersetzen von Benutzeroberflächendateien
                   href: lifecycle-services/use-translation-service.md

@@ -1,26 +1,21 @@
 ---
 title: Verteilte Auftragsverwaltung (DOM)
-description: In diesem Artikel wird die Funktion der verteilten Auftragsverwaltung (Distributed Order Management, DOM) in Dynamics 365 Commerce beschrieben.
+description: In diesem Artikel wird die Funktion der verteilten Auftragsverwaltung (Distributed Order Management, DOM) in Microsoft Dynamics 365 Commerce beschrieben.
 author: josaw1
-ms.date: 02/08/2022
+ms.date: 11/16/2022
 ms.topic: index-page
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: a18441c44869e0e95cf79e35045dd7eacca7e43d
-ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
+ms.openlocfilehash: cfb89544580141ed397d27886f51fd0f1ac138d2
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9764178"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785179"
 ---
 # <a name="distributed-order-management-dom"></a>Verteilte Auftragsverwaltung (DOM)
 
@@ -34,9 +29,14 @@ DOM verwendet Mixed Integer Programming (MIP) und prädiktive Analysemodelle, um
 
 Die folgende Abbildung zeigt den Lebenszyklus eines Auftrags in einem System für die verteilte Auftragsverwaltung.
 
-![Lebenszyklus eines Auftrags im Kontext einer verteilten Auftragsverwaltung (Distributed Order Management, DOM).](./media/flow.png "Lebenszyklus eines Auftrags im DOM-Kontext")
+![Lebenszyklus eines Auftrags bei der verteilten Auftragsverwaltung (DOM)](./media/flow.png "Lebenszyklus eines Auftrags im DOM-Kontext")
 
-## <a name="set-up-dom"></a>Verteilte Auftragsverwaltung einrichten
+Das folgende Video bietet einen Überblick über die DOM-Funktionen in Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bRYl]
+
+## <a name="set-up-dom"></a>DOM einrichten
 
 1. Gehen Sie zu **Systemadministration \> Einrichten \> Lizenzkonfiguration**.
 2. Erweitern Sie auf der Registerkarte **Konfigurationsschlüssel** den Knoten **Handel**, aktivieren Sie anschließend das Kontrollkästchen **Verteilte Auftragsverwaltung**.

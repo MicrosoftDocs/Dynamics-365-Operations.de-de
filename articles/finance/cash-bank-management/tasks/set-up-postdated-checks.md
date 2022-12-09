@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e7172dd56113de23d841fe59ed9785471e90ed1f
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: a5ef9aa6b67eb630713dd1f15b2ae49c358edae9
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779608"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804181"
 ---
 # <a name="set-up-postdated-checks"></a>Einrichten von vordatierten Schecks
 
@@ -35,7 +35,7 @@ Die Rolle dieser Prozedur ist "Finanzverwalter". Für diese Prozedur wird das De
 1. Wechseln Sie zu **Kasse und Bankverwaltung > Einstellungen > Parameter für Kasse- und Bankverwaltung**.
 2. Klicken Sie auf die Registerkarte **Vordatierte Schecks**.
 3. Aktivieren bzw. deaktivieren Sie das Kontrollkästchen **Vordatierte Schecks aktivieren**.
-4. Aktivieren bzw. deaktivieren Sie das Kontrollkästchen **Beitragsjournaleinträge für der vordatierten Schecks buchen**.
+4. Aktivieren bzw. deaktivieren Sie das Kontrollkästchen **Erfassungseinträge für vordatierte Schecks buchen**.
 5. Geben Sie im Feld **Verrechnungskonto** die gewünschten Werte an.
 6. Geben Sie im Feld **Verrechnungskonto für erhaltene Schecks** die gewünschten Werte an.
 7. In der **allgemeinen Erfassung für das Vorbereiten des Eintrags** felds, geben Sie einen Wert ein.

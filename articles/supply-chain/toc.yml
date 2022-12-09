@@ -1929,9 +1929,11 @@
                   href: master-planning/planning-optimization/ddmrp-planning.md
                 - name: Visuelle und kollaborative Ausführung
                   href: master-planning/planning-optimization/ddmrp-visual-and-collaborative-execution.md
+                - name: Häufig gestellte Fragen zu DDMRP
+                  href: master-planning/planning-optimization/ddmrp-faqs.md
             - name: Veraltetes Planungsmodul
               items:
-                - name: Veraltetes Planungsmodul – Übersicht
+                - name: Übersicht über das veraltete Planungsmodul
                   href: master-planning/deprecated-master-planning-overview.md
                 - name: Migration zur Planungsoptimierung für Produktprogrammplanung
                   href: master-planning/new-master-planning-engine.md

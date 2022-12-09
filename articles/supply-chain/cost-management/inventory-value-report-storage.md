@@ -2,21 +2,21 @@
 title: Lagerwertberichte
 description: Dieser Artikel beschreibt, wie man Lagerwertberichte einrichtet, generiert und verwendet. Diese Berichte enthalten Details zu den physischen und finanziellen Mengen und Beträgen Ihrer Bestände.
 author: JennySong-SH
-ms.date: 08/05/2022
+ms.date: 11/28/2022
 ms.topic: article
-ms.search.form: InventValueProcess, InventValueReportSetup
+ms.search.form: InventValueProcess, InventValueReportSetup, InventValueExecutionHistory, DataManagementWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f97b5bd228c6f769438d50bb27950b8d8fbda3e8
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 6b21f6a7856526863914aac73d50e5c3a70605e8
+ms.sourcegitcommit: 5f8f042f3f7c3aee1a7303652ea66e40d34216e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334924"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9806405"
 ---
 # <a name="inventory-value-reports"></a>Lagerwertberichte
 
@@ -111,7 +111,7 @@ Verwenden Sie die Seite **Lagerwertberichte**, um den Inhalt einzurichten, der i
         - **Arbeit**: Die Spalte zeigt den `WorkCenterID`-Feldwert für den entsprechenden Arbeitsdatensatz an.
         - **Indirekte Kosten**: Die Spalte zeigt den `CodeID`-Feldwert für den entsprechenden Kostendatensatz an.
 
-        Wenn die Option **Ansicht** auf *Nein* sowohl für das Feld **Ressourcen-ID** als auch das Feld **Ressourcengruppe** gesetzt ist, wird nur ein Gesamtbestandswert angezeigt, der auf den von Ihnen ausgewählten Bestandsdimensionen basiert.
+        Wenn die Option **Ansicht** auf *Nein* sowohl für das Feld **Ressourcen-ID** als auch das Feld **Ressourcengruppe** gesetzt ist, wird nur ein Gesamtlagerwert angezeigt, der auf den von Ihnen ausgewählten Bestandsdimensionen basiert.
 
     - **Ressourcengruppe**: Stellen Sie die Option **Ansicht** auf *Ja*, um eine Spalte anzuzeigen, die die Ressourcengruppe für jede Zeile identifiziert. Setzen Sie die Option **Gesamt** auf *Ja*, um auch Summen einzubeziehen. Je nach Art des Artikels, der in jeder Zeile aufgeführt ist, zeigt die Spalte eine der folgenden Arten von Informationen an:
 
@@ -119,7 +119,7 @@ Verwenden Sie die Seite **Lagerwertberichte**, um den Inhalt einzurichten, der i
         - **Arbeit**: Die Spalte zeigt den `WorkcenterGroup`-Feldwert für den entsprechenden Arbeitsdatensatz an.
         - **Indirekte Kosten**: Die Spalte zeigt den `CostGroup`-Feldwert für den entsprechenden Kostendatensatz an. (Der `CostGroupType`-Wert muss *Indirekt* sein.)
 
-        Wenn die Option **Ansicht** auf *Nein* sowohl für das Feld **Ressourcen-ID** als auch das Feld **Ressourcengruppe** gesetzt ist, wird nur ein Gesamtbestandswert angezeigt, der auf den von Ihnen ausgewählten Bestandsdimensionen basiert.
+        Wenn die Option **Ansicht** auf *Nein* sowohl für das Feld **Ressourcen-ID** als auch das Feld **Ressourcengruppe** gesetzt ist, wird nur ein Gesamtlagerwert angezeigt, der auf den von Ihnen ausgewählten Bestandsdimensionen basiert.
 
 1. Legen Sie auf dem Inforegister **Zeilen** die folgenden Felder fest: Mit diesen Feldern können Sie dem Bericht entsprechende RIF-bezogene Unterabschnitte hinzufügen oder entfernen.
 
@@ -129,7 +129,7 @@ Verwenden Sie die Seite **Lagerwertberichte**, um den Inhalt einzurichten, der i
     - **Direktes Outsourcing**: Setzen Sie diese Option auf *Ja*, um direktes Outsourcing von RIF zu zeigen. Diese Informationen sind für Fremdarbeit hilfreich.
     - **Detailebene**: Wählen Sie eine Ansichtsoption für den Bericht:
 
-        - *Buchungen*: Zeigen Sie alle relevanten Buchungen im Bericht an. Beachten Sie, dass beim Anzeigen von Berichten mit einem großen Buchungsvolumen möglicherweise Leistungsprobleme auftreten können. Wenn Sie diese Ansichtsoption nutzen möchten, empfehlen wir Ihnen daher, den Bericht **Lagerwert-Berichtsspeicher** zu verwenden.
+        - *Buchungen*: Zeigen Sie alle relevanten Buchungen im Bericht an. Beim Anzeigen von Berichten mit einem großen Buchungsvolumen können möglicherweise Leistungsprobleme auftreten. Wenn Sie diese Ansichtsoption nutzen möchten, empfehlen wir Ihnen daher, den Bericht **Lagerwert-Berichtsspeicher** zu verwenden.
         - *Summen*: Ansicht des Gesamtergebnisses.
 
     - **Anfangssaldo einbeziehen**: Setzen Sie diese Option auf *Ja*, um den Anfangssaldo anzuzeigen. Diese Option ist nur verfügbar, wenn das Feld **Detailebene** auf *Buchungen* gesetzt wird.
@@ -172,7 +172,7 @@ Nachdem Sie einen Bericht erstellt haben, können Sie ihn jederzeit mit den folg
     - Verwenden Sie das Feld **Filter**, um den Bericht nach einem beliebigen Wert in einer der mehreren verfügbaren Spalten zu filtern.
     - Verwenden Sie das Ansichtsmenü (über dem Feld **Filter**), um Ihre bevorzugten Kombinationen von Sortier- und Filteroptionen zu speichern und zu laden.
 
-## <a name="export-an-inventory-value-report-storage-report"></a>Einen Lagerwert-Berichtsspeicher-Bericht exportieren
+## <a name="export-an-inventory-value-report-storage-report"></a><a name="export-stored-report"></a>Einen Lagerwert-Berichtsspeicher-Bericht exportieren
 
 Jeder Bericht, den Sie generieren, wird in der Datenentität **Lagerwert**. Sie können die Standarddatenverwaltungsfunktionen des Supply Chain Management verwenden, um Daten aus dieser Entität in jedes unterstützte Datenformat, einschließlich CSV oder Excel, zu exportieren.
 
@@ -180,7 +180,7 @@ Das folgende Beispiel zeigt, wie Sie einen **Lagerwertbericht-Berichtsspeicher**
 
 1. Wechseln Sie zu **Systemverwaltung \> Arbeitsbereiche \> Datenverwaltung**.
 1. Im Abschnitt **Import/Export** wählen Sie die Kachel **Export** aus.
-1. Auf der angezeigten Seite **Export** richten Sie den Exportauftrag ein. Geben Sie zunächst einen Gruppennamen für den Auftrag ein.
+1. Richten Sie auf der angezeigten Seite **Export** den Exportauftrag ein. Geben Sie zunächst einen Gruppennamen für den Auftrag ein.
 1. Im Abschnitt **Ausgewählte Entitäten** wählen Sie **Entität hinzufügen**.
 1. Im angezeigten Dialogfeld legen Sie die folgenden Felder fest:
 
@@ -203,6 +203,34 @@ Das folgende Beispiel zeigt, wie Sie einen **Lagerwertbericht-Berichtsspeicher**
 1. Die Seite **Ausführungszusammenfassung** wird geöffnet, auf der Sie den Status Ihres Exportauftrags und eine Liste der exportierten Entitäten sehen können. Wählen Sie im Abschnitt **Verarbeitungsstatus der Entität** die Entität **Lagerwert** aus der Liste, und wählen Sie dann **Datei herunterladen**, um die von dieser Entität exportierten Daten herunterzuladen.
 
 Weitere Informationen über die Verwendung der Datenverwaltung für den Datenexport finden Sie unter [Übersicht über Datenimport- und -exportjobs](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+
+## <a name="delete-stored-inventory-value-reports"></a>Gespeicherte Lagerwertberichte löschen
+
+Wenn die Anzahl der gespeicherten Lagerwertberichte zunimmt, nehmen sie möglicherweise irgendwann zu viel Platz in Ihrer Datenbank ein. Dies kann die Systemleistung beeinträchtigen und höhere Kosten für die Datenspeicherung verursachen. Daher müssen Sie die Berichte wahrscheinlich von Zeit zu Zeit bereinigen, indem Sie ältere Berichte löschen.
+
+> [!IMPORTANT]
+> Bevor Sie einen Ihrer zuvor erstellten Lagerwertberichte löschen, sollten Sie unbedingt zuerst [die Berichte exportieren](#export-stored-report) und extern speichern, da Sie sie später möglicherweise nicht erneut generieren können. Diese Einschränkung besteht, weil das System beim Generieren eines Lagerwertberichts von heute an rückwärts arbeitet und alle Bestandstransaktionsdatensätze in umgekehrter Reihenfolge verarbeitet. Wenn Sie versuchen, beim Generieren eines Berichts zu weit zurückzugehen, kann das Volumen der zu verarbeitenden Transaktionen schließlich so groß werden, dass eine Zeitüberschreitung im System auftritt, bevor es die Generierung des Berichts abschließen kann. Wie weit sie für die Generierung neuer Berichte in die Vergangenheit zurückgehen können, hängt von der Anzahl der Bestandstransaktionen ab, die Sie in Ihrem System für die relevante Zeitspanne haben.
+
+### <a name="delete-one-report-at-a-time"></a>Einen Bericht nach dem anderen löschen
+
+Erledigen Sie diese Schritte, um jeweils einen gespeicherten Bericht zu löschen.
+
+1. [Exportieren Sie den Bericht](#export-stored-report), den Sie löschen möchten, und speichern Sie ihn an einem externen Ort, um später darauf zurückgreifen zu können.
+1. Gehen Sie zu **Kostenmanagement \> Anfragen und Berichte \> Lagerbericht zum Bestandswert**.
+1. Wählen Sie im Listenbereich den Bericht aus, den Sie löschen möchten.
+1. Wählen Sie im Aktivitätsbereich **Löschen**.
+1. Eine Warnmeldung erinnert Sie daran, erstellte Berichte zu sichern. Wählen Sie **Ja** aus, wenn Sie mit dem Löschen fortfahren möchten.
+
+### <a name="delete-several-reports-at-the-same-time"></a>Mehrere Berichte gleichzeitig löschen
+
+Erledigen Sie diese Schritte, um mehrere gespeicherte Berichte gleichzeitig zu löschen.
+
+1. [Exportieren Sie alle Berichte](#export-stored-report), die Sie löschen möchten, und speichern Sie sie an einem externen Ort, um später darauf zurückgreifen zu können.
+1. Wechseln Sie zu **Kostenverwaltung \> Bestandsbuchhaltung \> Bereinigen \> Datenbereinigung Lagerwertbericht**.
+1. Wählen Sie im Dialogfeld **Datenbereinigung Lagerwertberichts** im Feld **Vorherigen ausgeführten Lagerwertbericht löschen** das Datum aus, vor dem alle Lagerwertberichte gelöscht werden sollen.
+1. Im Inforegister **Einzuschließende Datensätze** können Sie weitere Filterbedingungen einrichten, um die Anzahl der Berichte einzuschränken, die gelöscht werden. Wählen Sie **Filter**, um einen Standard-Abfrage-Editor anzuzeigen, in dem Sie die Eigenschaften der zu löschenden Berichte festlegen können.
+1. Im Inforegister **Im Hintergrund ausführen** können Sie festlegen, wie, wann und wie oft die Berichte gelöscht werden sollen. Die Felder funktionieren genauso wie bei anderen Arten von [Hintergrund-Jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) im Supply Chain Management. In der Regel führen Sie diesen Einzelvorgang jedoch jedes Mal manuell aus, wenn er erforderlich ist.
+1. Wählen Sie **OK**, um die spezifischen Berichte zu löschen.
 
 ## <a name="generate-a-standard-inventory-value-report"></a>Einen Standardlagerwertbericht generieren
 

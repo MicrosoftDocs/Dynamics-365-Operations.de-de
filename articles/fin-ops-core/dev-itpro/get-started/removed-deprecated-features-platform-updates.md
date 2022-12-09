@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7d74efe7aa4f3a30c116253d647b9d7bec3b508d
-ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
+ms.openlocfilehash: 6283e07b87dc169d3cbaa71a371839ab9b2d6150
+ms.sourcegitcommit: ee13b854cbd52a3aa33e2449a296aed775862594
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2022
-ms.locfileid: "9785098"
+ms.lasthandoff: 11/21/2022
+ms.locfileid: "9799035"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Entfernte oder veraltete Plattformfunktionen
 
@@ -71,10 +71,10 @@ Im Rahmen des Arbeitsaufwandes für [One Dynamics One Platform](/dynamics365-rel
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Wir entfernen die folgende Liste von Verschlüsselungssammlungen, um unseren aktuellen Sicherheitsprotokollen zu entsprechen.<br><br>TLS_RSA_WITH_AES_256_GCM_SHA384<br>TLS_RSA_WITH_AES_128_GCM_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA256<br>TLS_RSA_WITH_AES_128_CBC_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA<br>TLS_RSA_WITH_AES_256_CBC_SHA  |
-| **Ersetzt durch eine andere Funktion?**   | Ab dem 31. Januar 2023 können Kunden nur noch unsere  [Standard-Verschlüsselungssammlungen](/power-platform/admin/server-cipher-tls-requirements) verwenden. Diese Änderung wirkt sich auf Ihre Clients und Server aus, die mit unseren Servern kommunizieren, z. B. kann sie sich auf Ihre Integrationen von Drittanbietern auswirken, die sich nicht an unsere Standard-Verschlüsselungssammlungen halten. |
+| **Ersetzt durch eine andere Funktion?**   | Ab Januar 2023 können Kunden nur noch unsere  [Standard-Verschlüsselungssammlungen](/power-platform/admin/server-cipher-tls-requirements) verwenden. Diese Änderung wirkt sich auf Ihre Clients und Server aus, die mit unseren Servern kommunizieren, z. B. kann sie sich auf Ihre Integrationen von Drittanbietern auswirken, die sich nicht an unsere Standard-Verschlüsselungssammlungen halten. |
 | **Betroffene Produktbereiche**         | Finanz- und Betriebs-Apps |
 | **Bereitstellungsoption**              | Cloud-Bereitstellungen |
-| **Status**                         | Veraltet. Kunden müssen ihre Server vor dem 31. Januar 2023 aktualisieren. Weitere Informationen zum Konfigurieren der TLS-Cipher-Suite-Reihenfolge finden Sie unter  [Transport Layer Security (TLS) verwalten](/windows-server/security/tls/manage-tls).  |
+| **Status**                         | Veraltet. Kunden müssen ihre Server vor dem Januar 2023 aktualisieren. Weitere Informationen zum Konfigurieren der TLS-Cipher-Suite-Reihenfolge finden Sie unter  [Transport Layer Security (TLS) verwalten](/windows-server/security/tls/manage-tls).  |
 
 
 ## <a name="feature-deprecation-effective-june-2022"></a>Veraltete Funktion ab Juni 2022
@@ -248,7 +248,7 @@ Im Rahmen des Arbeitsaufwandes für [One Dynamics One Platform](/dynamics365-rel
 ## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>Plattform-Updates für die Version 10.0.17 von Finanz- und Betriebs-Apps
 
 
-### <a name="visual-studio-2015"></a>Visual Studio2015
+### <a name="visual-studio-2015"></a>Visual Studio 2015
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|

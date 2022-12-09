@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2022-09-30
-ms.openlocfilehash: d713cc0e9537ae20ffddee6e77779a16e74bd779
-ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
+ms.openlocfilehash: 58f2ab1f913d3629de7971c8eeb2d1821161e44f
+ms.sourcegitcommit: 29d9a7573bdac004726da88a9d7b2cc9c383e9ca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "9725636"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9788511"
 ---
 # <a name="store-commerce-app-capabilities"></a>Leistungsspektrum der Store Commerce-App
 
@@ -41,7 +41,7 @@ Dieser Artikel bietet eine Übersicht über die Fähigkeiten der Store Commerce-
 
 | Fähigkeit | Description | Dokumentation | Ergänzende Inhalte |
 |---|---|---|---|
-| Mehrere Formfaktoren | Die Store Commerce-App wird auf mehreren Geräteformfaktoren wie PCs, Tablets und mobilen Geräten unterstützt. Die dynamische Benutzeroberfläche (UI) ermöglicht eine automatische Größenänderung des Layouts und die Anpassung an die Bildschirmgröße. | [Visuelle Konfigurationen](pos-screen-layouts.md) | |
+| Mehrere Formfaktoren | Die Store Commerce-App wird auf mehreren Geräteformfaktoren wie PCs, Tablets und mobilen Geräten unterstützt. Die dynamische Benutzeroberfläche (UI) ermöglicht eine automatische Größenänderung des Layouts und die Anpassung an die Bildschirmgröße. | [Visuelle Konfigurationen](pos-screen-layouts.md) |  |
 | Plattformübergreifend | Die Store Commerce-App wird auf Web-, Windows-, iOS- und Android-Plattformen unterstützt. | [Plattformen](dev-itpro/hybridapp.md) | |
 | Branding | Mit dem Bildschirm-Designer können Sie Bildschirmlayouts an Ihre Geschäftsanforderungen anpassen. Darüber hinaus können Designs, Layouts, Farben und Bilder basierend auf Mitarbeiterrollen erstellt und dann im Interesse der Markenkonsistenz und Benutzerfreundlichkeit von allen Benutzern gemeinsam genutzt werden. | [Visuelle Konfigurationen](pos-screen-layouts.md) | [-Video](https://www.youtube.com/watch?v=ldqCw2wf5fY) |
 | Topologie | Je nach der Netzwerkverfügbarkeit werden verschiedene In-Store-Topologien unterstützt. | <p>[Topologie](dev-itpro/retail-modern-pos-architecture.md)</p><p>[Infografik](dev-itpro/retail-in-store-topology.md)</p> | |
@@ -77,7 +77,7 @@ Dieser Artikel bietet eine Übersicht über die Fähigkeiten der Store Commerce-
 | Produktsuche | Suchen Sie Produkte nach Namen und verfeinern Sie die Suche anhand von Produktattributen wie Marke, Preis und Material. Diese Funktion wird von der Azure Cognitive Search unterstützt. | [Cloudbasierte Suche](cloud-powered-search-overview.md) | |
 | Seite Produktdetails | Umfangreiche Produktdetailseiten können Bilder, eine Beschreibung, Produktattribute und empfohlene Produkte enthalten. Empfehlungen werden vom Dienst „Empfehlungen“ unterstützt. | | |
 | Produktvergleich | Vergleichen Sie mehrere Produkte und helfen Sie Kunden, eines auszuwählen und einer Transaktion hinzuzufügen. | | |
-| Endloses Regal | Suchen Sie ganz einfach in anderen Geschäften nach Beständen und erstellen Sie Aufträge. | [Bestandsuche](pos-inventory-lookup-operation.md) | [Fachvortrag](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
+| Endloses Regal | Suchen Sie ganz einfach in anderen Geschäften nach Beständen und erstellen Sie Aufträge. | [Bestandsuche](pos-inventory-lookup-operation.md) | <p>[Fachvortrag](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[-Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
 | Empfehlungen | Nutzen Sie den Empfehlungen-Dienst für das Upselling und Cross-Selling von Produkten. Dieser Dienst verwendet eine patentierte Technologie, um Empfehlungen basierend auf Kauftrends und Merkmalen vorzuschlagen, wie neu eingetroffene Produkte, ähnlich aussehende Produkte und Bestseller. Diese Empfehlungen sind auf den Produktdetailseiten, der Seite **Details zum Debitor** und der Seite **Transaktionen** verfügbar. | [Empfehlungen](product-recommendations.md) | [Fachvortrag](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/unlock-the-power-of-dynamics-365-commerce-recommendations-march-2-2021) |
 
 ## <a name="customer-relationship"></a>Kundenbeziehung
@@ -88,12 +88,12 @@ Dieser Artikel bietet eine Übersicht über die Fähigkeiten der Store Commerce-
 | Debitorattribute | Das Framework für Debitorattribute ermöglicht die Erfassung zusätzlicher kundenbezogener Daten basierend auf Geschäftsanforderungen. | [Attribute](dev-itpro/customer-attributes.md) | |
 | Seite „Details zum Debitor“ | Eine reichhaltige Seite „Details zum Debitor“ bietet eine Omnichannel-Ansicht der Interaktionen des Debitors über alle Kanäle hinweg. Diese Interaktionen umfassen Einkäufe, Wunschlisten und Treuepunkte. | | |
 | Cloudbasierte Debitorensuche | Suchen Sie Kunden nach Name, Telefonnummer, E-Mail-Adresse, Kundenkarte, Adresse usw. | [Cloudbasierte Suche](pos-search-improvements.md#customer-search) | |
-| Treue und Prämien | Debitoren können an Treueprogrammen teilnehmen und kanalübergreifend Treuepunkte sammeln und einlösen. | [Kundentreue](set-up-customer-loyalty-program.md) | |
-| Kundenaktionen | Verwalten Sie wichtige Kunden mithilfe eines Kundenbuchs und verfolgen Sie Aktivitäten und Notizen im Kundenprofil. Mit der Dynamics 365 Customer Insights-Integration erhalten die Mitarbeiter der Filialen Hinweise auf die nächstbeste Aktion für jeden Kunden. | [Kundenaktionen](clienteling-overview.md#activities-and-notes) | |
+| Treue und Prämien | Debitoren können an Treueprogrammen teilnehmen und kanalübergreifend Treuepunkte sammeln und einlösen. | [Kundentreue](set-up-customer-loyalty-program.md) | [-Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5c2wW) |
+| Kundenaktionen | Verwalten Sie wichtige Kunden mithilfe eines Kundenbuchs und verfolgen Sie Aktivitäten und Notizen im Kundenprofil. Mit der Dynamics 365 Customer Insights-Integration erhalten die Mitarbeiter der Filialen Hinweise auf die nächstbeste Aktion für jeden Kunden. | [Kundenaktionen](clienteling-overview.md#activities-and-notes) | [-Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSP) |
 
 ## <a name="pricing-and-discounts"></a>Preise und Rabatte
 
-| Fähigkeit | Description | Dokumentation | Ergänzende Inhalte |
+| Funktionen | Description | Dokumentation | Ergänzende Inhalte |
 |---|---|---|---|
 | Handelsvereinbarungen | Preismanager können Handelsvereinbarungen verwenden, um Sonderpreise zu definieren, die auf langfristigen Vereinbarungen mit bestimmten Debitoren basieren. | [Preisgestaltung](price-management.md)| [-Video](https://www.youtube.com/watch?v=r2VD8IxHesM) |
 | Verkaufsverträge | Preismanager können Verkaufsvereinbarungen verwenden, um vertragsbasierte Preise in gewerblichen Business-to-Business-(B2B-)-Szenarien zu definieren. | [Preisgestaltung](price-management.md) | |
@@ -132,25 +132,25 @@ Dieser Artikel bietet eine Übersicht über die Fähigkeiten der Store Commerce-
 | Auftragsattribute | Das Framework für Auftragsattribute ermöglicht die Erfassung auftragsbezogener Informationen basierend auf Geschäftsanforderungen. | [Attribute](dev-itpro/order-attributes.md) | |
 | Direktlieferung | Artikel können für die direkte Lieferung durch einen Anbieter an eine Debitorenadresse markiert werden. Eine Direktlieferung wird auch als Dropshipping bezeichnet. | [Direktlieferung](/dynamics365/supply-chain/sales-marketing/tasks/ship-orders-direct-deliveries) | |
 | Angebot | Filialmitarbeiter können Angebote für Debitoren erstellen und einen Sonderpreis, manuelle Rabatte und ein Angebotsgültigkeitsdatum angeben. | [Angebot](/dynamics365/supply-chain/sales-marketing/tasks/create-edit-sales-quotations) | |
-| Auftragserfüllung | Geschäfte können Bestellungen kommissionieren, verpacken und versenden. Den versandfertigen Paketen kann ein Lieferschein beigefügt werden. | [Auftragserfüllung](order-fulfillment-overview.md) | [Fachvortrag](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/unlock-the-power-of-dynamics-365-commerce-supporting-buy-online-pickup-in-store-curbside-with-dynamics-365-commerce-pos-february-3-2021) |
-| Verteilte Auftragsverwaltung | Die Store Commerce-App unterstützt eine intelligente Optimierung der Auftragserfüllung, bei der Geschäftsstrategien basierend auf der Art des Geschäfts, der Art des Debitors, des Ursprungs eines Auftrags und der Liefermethode eines Auftrags konfiguriert werden können. | [DOM](dom.md) | |
+| Auftragserfüllung | Geschäfte können Bestellungen kommissionieren, verpacken und versenden. Den versandfertigen Paketen kann ein Lieferschein beigefügt werden. | [Auftragserfüllung](order-fulfillment-overview.md) | <p>[Fachvortrag](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/unlock-the-power-of-dynamics-365-commerce-supporting-buy-online-pickup-in-store-curbside-with-dynamics-365-commerce-pos-february-3-2021)</p> <p>[-Video](https://www.microsoft.com/videoplayer/embed/RE5bRXE)</p>|
+| Verteilte Auftragsverwaltung | Die Store Commerce-App unterstützt eine intelligente Optimierung der Auftragserfüllung, bei der Geschäftsstrategien basierend auf der Art des Geschäfts, der Art des Debitors, des Ursprungs eines Auftrags und der Liefermethode eines Auftrags konfiguriert werden können. | [DOM](dom.md) | [-Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bRYl)|
 
 ## <a name="inventory-management"></a>Lagerverwaltung
 
-| Fähigkeit | Description | Dokumentation | Ergänzende Inhalte |
+| Funktionen | Description | Dokumentation | Ergänzende Inhalte |
 |---|---|---|---|
 | Käuferübertragung | Optimieren Sie die Verteilung des verfügbaren Bestands von einem Verteilerzentrum auf mehrere Filialen oder Lagerorte. | [Käuferübertragung](tasks/set-up-rules-parameters-cross-docking-buyers-push.md) | [Fachvortrag](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
 | Crossdocking | Optimieren Sie die Verteilung des Bestands bei eingehenden Aufträgen auf mehrere Filialen oder Lagerorte. | [Crossdocking](tasks/set-up-rules-parameters-cross-docking-buyers-push.md) | [Fachvortrag](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Eingehender Bestand | Nehmen Sie Bestände von einem Anbieter über eine Bestellung oder von einem anderen Lagerort über einen Umlagerungsauftrag entgegen. Erstellen Sie eine eingehende Bestellung oder eine Aufforderung für einen Umlagerungsauftrag. | [Zugang](pos-inbound-inventory-operation.md) | [Fachvortrag](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Ausgehender Bestand | Versenden Sie Bestand über einen Umlagerungsauftrag an einen anderen Lagerort und erstellen Sie eine Anforderung für einen ausgehenden Umlagerungsauftrag. | [Ausgehend](pos-outbound-inventory-operation.md) | [Fachvortrag](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Bestandsuche | Überprüfen Sie den Lagerbestand auf Produkte in allen Filialen und Lagerorten und prüfen Sie den ATP-Bestand (verfügbar für Zusage) für zukünftige Daten. | [Bestandsuche](pos-inventory-lookup-operation.md) | [Fachvortrag](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Lagerregulierung | Passen Sie im Lagerort eines Geschäfts ein- oder ausgehenden Bestand an, um bestimmte Geschäftsanforderungen zu erfüllen, ohne einen Verkauf, eine Quittung oder eine erneute Zählung zu verwenden. | [Lagerregulierung](work-with-store-inventory.md) | [Fachvortrag](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Bestandsmengen | Zählen Sie den physischen Bestand und passen Sie den im Buchhaltungssystem erfassten Bestand entsprechend an. | [Inventur](work-with-store-inventory.md) | [Fachvortrag](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Bestandsbewegungen | Verschieben Sie Bestände zwischen Standorten in einem Geschäft. | [Bewegung](work-with-store-inventory.md) | [Fachvortrag](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
+| Eingehender Bestand | Nehmen Sie Bestände von einem Anbieter über eine Bestellung oder von einem anderen Lagerort über einen Umlagerungsauftrag entgegen. Erstellen Sie eine eingehende Bestellung oder eine Aufforderung für einen Umlagerungsauftrag. | [Zugang](pos-inbound-inventory-operation.md) | <p>[Fachvortrag](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p>  <p>[-Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p>|
+| Ausgehender Bestand | Versenden Sie Bestand über einen Umlagerungsauftrag an einen anderen Lagerort und erstellen Sie eine Anforderung für einen ausgehenden Umlagerungsauftrag. | [Ausgehend](pos-outbound-inventory-operation.md) | <p>[Fachvortrag](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p>  <p>[-Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
+| Bestandsuche | Überprüfen Sie den Lagerbestand auf Produkte in allen Filialen und Lagerorten und prüfen Sie den ATP-Bestand (verfügbar für Zusage) für zukünftige Daten. | [Bestandsuche](pos-inventory-lookup-operation.md) | <p>[Fachvortrag](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[-Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
+| Lagerregulierung | Passen Sie im Lagerort eines Geschäfts ein- oder ausgehenden Bestand an, um bestimmte Geschäftsanforderungen zu erfüllen, ohne einen Verkauf, eine Quittung oder eine erneute Zählung zu verwenden. | [Lagerregulierung](work-with-store-inventory.md) | <p>[Fachvortrag](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[-Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p>|
+| Bestandsmengen | Zählen Sie den physischen Bestand und passen Sie den im Buchhaltungssystem erfassten Bestand entsprechend an. | [Inventur](work-with-store-inventory.md) | <p>[Fachvortrag](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[-Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)<p> |
+| Bestandsbewegungen | Verschieben Sie Bestände zwischen Standorten in einem Geschäft. | [Bewegung](work-with-store-inventory.md) | <p>[Fachvortrag](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[-Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
 
 ## <a name="financials"></a>Finanzdaten
 
-| Fähigkeit | Description | Dokumentation | Ergänzende Inhalte |
+| Funktionen | Description | Dokumentation | Ergänzende Inhalte |
 |---|---|---|---|
 | Zahlungsmanagement | Die Store Commerce-App unterstützt die Verwaltung von Bargeld und anderen festgelegten Zahlungsmitteln im Geschäft. Darüber hinaus kann die Schichtabstimmung im Geschäft für erweiterte Funktionen zur Bargeldverwaltung aktiviert werden. | [Bargeld](cash-mgmt.md) | |
 | Finanzaufstellungen und -abstimmungen | Bar- und Buchungsvorgängen für ein Geschäft werden in Commerce headquarters durch die Aufstellungsbuchungsprozesse erfasst. | [Aufstellungen](retail-statements.md) | |

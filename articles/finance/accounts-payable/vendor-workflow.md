@@ -2,7 +2,7 @@
 title: Lieferantenworkflow
 description: Ändern Sie Kreditordatendaten und Nutzen Sie zur Genehmigung Workflow.
 author: sunfzam
-ms.date: 08/24/2018
+ms.date: 11/21/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 1801e3d90bbf80c59bb62329acc593d2c66a179c
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: cfc255265df48e4a47aee4f13016356fb4775aa7
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735666"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799463"
 ---
 # <a name="vendor-workflow"></a>Lieferantenworkflow
 
@@ -38,7 +38,7 @@ Die Funktion Workflow kann erst nach der Aktivierung verwendet werden.
     - **Weisen Sie Änderungen zurück** – Änderungen können vorgenommen nicht auf dem Kreditorendatensatz vorgenommen werden. Der Import schlägt für die Felder fehl, die für Importe Workflow aktiviert werden.
     - **Änderungsvorschläge erstellen** – Alle Felder werden mit Ausnahme der Felder geändert, die für den Workflow aktiviert werden. Die neuen Werte für diese Felder werden an den Kreditor hinzugefügt, da vorgeschlagene Änderungen und der Workflow automatisch gestartet werden.
 
-4. In der Liste mit Kreditorenfeldern aktivieren Sie das Kästchen **Aktivieren** für jedes aus, das genehmigt werden muss, damit die Änderungen vorgenommen werden können.
+4. Aktivieren Sie in der Liste mit Kreditorenfeldern das Kästchen **Aktivieren** für jedes, das genehmigt werden muss, damit die Änderungen vorgenommen werden können.
 5. Wechseln Sie zu **Kreditoren \> Einstellung \> Kreditorenworkflows**.
 6. Wählen Sie **Neu** aus.
 7. Wählen Sie **Workflow zu vorgeschlagenen Lieferantenänderungen**. 
@@ -53,7 +53,7 @@ Immer wenn Sie ein Feld ändern, das für den Workflow aktiviert ist, wird diese
 Nachdem Sie mindestens eine vorgeschlagene Änderung haben, werden zwei zusätzliche Registerkarten im Aktivitätsbereich: **Vorgeschlagene Änderungen** und **Workflow** angezeigt.
 
 1. Wählen Sie **Vorgeschlagene Änderungen**, um die Seite **Vorgeschlagene Änderungen** zu öffnen und die Änderungen zu prüfen.
-2. Wählen Sie **Workflow\>Übermitteln, um die Änderungen für den Workflow zu ändern**.
+2. Wählen Sie **Workflow \> Übermitteln, um die Änderungen für den Workflow zu ändern**.
 
     Der Status auf der Seite ändert sich in **Änderungen mit ausstehender Genehmigung**.
 

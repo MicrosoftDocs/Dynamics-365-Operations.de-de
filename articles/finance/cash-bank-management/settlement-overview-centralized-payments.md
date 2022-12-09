@@ -2,7 +2,7 @@
 title: Ausgleichsüberblick für zentralisierte Zahlungen
 description: In diesem Artikel wird der Ausgleich von zentralisierten Zahlungen für Microsoft Dynamics 365 Finance beschrieben.
 author: angelad116
-ms.date: 08/02/2018
+ms.date: 11/22/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef71520df5cdae192355e512238d03c1f21b901f
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 42c359edbe49af151ac76c9873c0d429bbe1ca12
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151161"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804225"
 ---
 # <a name="settlement-overview-for-centralized-payments"></a>Ausgleichsüberblick für zentralisierte Zahlungen
 
@@ -84,11 +84,11 @@ Skonti, die im Zuge des unternehmensübergreifenden Ausgleichs generiert wurden,
 
 Toleranzen für Über-/Unterzahlung oder für Centdifferenzen werden auf Basis der juristischen Person für die Zahlung (bei Überzahlungen) sowie auf Basis der juristischen Person für die Rechnung (bei Unterzahlungen) ermittelt. Das Buchungskonto, das verwendet wird, hängt von der Einstellung im Feld **Skontoverwaltung** auf der Seite **Debitorenparameter** für Debitoren und dem Feld **Skontoverwaltung** für **Kreditorenparameter** für Kreditoren ab.
 
--   Ist die Einstellung für die Skontoverwaltung auf "Spezifisch" festgelegt, oder ist die Einstellung auf "Nicht spezifisch" festgelegt, und der entsprechende Skontobetrag wird auf eine andere juristische Person aus der Überzahlung gebucht, wird das automatisch ausgewählte Konto für Debitorenskonto, Lieferantenskonto oder Centdifferenz in Buchhaltungswährung verwendet. Sie können diese Konten auf der Seite **Konten für automatische Buchungen** definieren.
--   Ist die Einstellung für die Skontoverwaltung auf "Nicht spezifisch" festgelegt, und die Buchung des Skontobetrags erfolgt auf die gleiche juristische Person wie die Buchung der Überzahlung (die juristischen Personen für Zahlung und Rechnung sind also identisch), wird das Skontokonto angepasst. Beispiel: Wird eine Rechnung in Höhe von 100,00 EUR mit einem Skonto von 3,00 EUR mit einer Zahlung von 98,00 EUR ausgeglichen, erfolgt eine Regulierung des Skontokontos um 1,00 EUR. Der Nettoskonto beträgt 2,00 EUR.
--   Ist die Einstellung für die Skontoverwaltung auf "Nicht spezifisch" festgelegt, wird der Skonto auf die gleiche juristische Person gebucht wie die Überzahlung, und die Über- oder Unterzahlung wird mit mehreren Rechnungen mit Skonto ausgeglichen, erfolgt eine Regulierung des Skontokontos für die letzte Rechnung.
+-   Wenn die Skontoverwaltung auf **Spezifisch** eingestellt ist oder die Einstellung **Nicht spezifisch** lautet und das entsprechende Skonto aus einer Überzahlung auf eine andere juristische Person gebucht wird, wird das automatische Konto für das Debitorenskonto, Kreditorenskonto oder der Centdifferenz in der Buchhaltungswährung verwendet. Sie können diese Konten auf der Seite **Konten für automatische Buchungen** definieren.
+-   Ist die Einstellung für die Skontoverwaltung auf **Nicht spezifisch** festgelegt, und die Buchung des Skontobetrags erfolgt auf die gleiche juristische Person wie die Buchung der Überzahlung (die juristischen Personen für Zahlung und Rechnung sind also identisch), wird das Skontokonto angepasst. Beispiel: Wird eine Rechnung in Höhe von 100,00 EUR mit einem Skonto von 3,00 EUR mit einer Zahlung von 98,00 EUR ausgeglichen, erfolgt eine Regulierung des Skontokontos um 1,00 EUR. Der Nettoskonto beträgt 2,00 EUR.
+-   Ist die Einstellung für die Skontoverwaltung auf **Nicht spezifisch** festgelegt, wird der Skonto auf die gleiche juristische Person gebucht wie die Überzahlung, und die Über- oder Unterzahlung wird mit mehreren Rechnungen mit Skonto ausgeglichen, erfolgt eine Regulierung des Skontokontos für die letzte Rechnung.
 
-Wenn die Skontoverwaltung "Nicht spezifisch" ist, gelten die Zahlungsausgleichsregeln nur in den folgenden Situationen:
+Wenn die Skontoverwaltung **Nicht spezifisch** ist, gelten die Zahlungsausgleichsregeln nur in den folgenden Situationen:
 -   Eine Überzahlung liegt vor.
 -   Die Überzahlung wird mit mindestens einer Rechnung mit Skonto ausgeglichen.
 -   Der Skonto wird auf die gleiche juristische Person gebucht wie die Überzahlung.

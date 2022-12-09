@@ -14,12 +14,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 576dcd320600f4741a43bfeee53198637bffce15
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 12de50f26127c54c2f82ace43487de10e7125aea
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779526"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804209"
 ---
 # <a name="reconcile-a-bank-account"></a>Bankkonto abstimmen
 
@@ -57,13 +57,13 @@ Um das Kontrollkästchen **Verrechnet** für ein Intervall mit Schecks auszuwäh
 
 7.  Während die Buchungen im Bankauszug als **Verrechnet** markiert sind, nähert sich der Betrag im Feld **Nicht abgestimmt**, das bei Änderungen fortlaufend neu berechnet wird, dem Wert Null. Wenn der Wert Null erreicht ist, wählen Sie **Konto ausgleichen** aus, um die Abstimmung und die Buchungen und Korrekturen, die Sie erstellt haben, zu buchen.
     
-    Nach der Buchung der Abstimmung können die einbezogenen Buchungen nicht mehr überarbeitet oder korrigiert werden, und sie werden auch nicht mehr für künftige Kontoabstimmungen angezeigt.
+    Nach der Buchung der Abstimmung können die einbezogenen Buchungen nicht mehr überarbeitet oder korrigiert werden und sie werden auch nicht mehr für künftige Kontoabstimmungen angezeigt.
 
 8.  Verwenden Sie zur Anzeige von Bankbuchungen, die noch nicht abgestimmt wurden, den Bericht **Nicht abgestimmte Bankbuchungen**. Um den Bankauszug für ein Bankkonto anzuzeigen, verwenden Sie den Bericht **Bankauszug**.
 
 ## <a name="cancel-bank-statement-reconciliation"></a>Bankauszugsabstimmung stornieren 
 
-Die Funktion „Bankauszugsabstimmung stornieren“ ermöglicht es Ihnen, den Vorgang der Bankauszugsabstimmung zu stornieren. Um diese Funktion zu verwenden, aktivieren Sie die Funktion **Bankauszugsabstimmung stornieren** im Arbeitsbereich **Funktionsverwaltung**. Sie müssen zudem den Parameter **Bankauszugsbearbeitung zulassen** aktivieren. Wechseln Sie hierzu zu **Bargeld- und Bankverwaltung > Einstellungen > Bargeld- und Bankverwaltungsparameter > Bankabstimmung**.
+Die Funktion **Bankauszugsabstimmung stornieren** ermöglicht es Ihnen, den Vorgang der Bankauszugsabstimmung zu stornieren. Um diese Funktion zu verwenden, aktivieren Sie die Funktion **Bankauszugsabstimmung stornieren** im Arbeitsbereich **Funktionsverwaltung**. Sie müssen zudem den Parameter **Bankauszugsbearbeitung zulassen** aktivieren. Wechseln Sie hierzu zu **Bargeld- und Bankverwaltung > Einstellungen > Bargeld- und Bankverwaltungsparameter > Bankabstimmung**.
  
 Bankauszugsabstimmungen können nur in der chronologischen Reihenfolge storniert werden, in der sie eingegeben wurden. Wenn eine Bankauszugsabstimmung storniert wird, werden neue Buchungen und Korrekturen storniert und alle weiteren Buchungen werden als nicht abgestimmt markiert.
  

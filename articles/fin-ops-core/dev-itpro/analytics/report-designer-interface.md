@@ -1,8 +1,8 @@
 ---
 title: Berichts-Designer-Schnittstelle
-description: Dieser Artikel erläutert das Navigieren durch den Berichtsdesigner und wie Sie die verschiedenen Optionen Ihren Bedürfnissen entsprechend verwenden.
+description: Dieser Artikel erläutert das Navigieren durch den Report Designer und wie Sie die verschiedenen Optionen Ihren Bedürfnissen entsprechend verwenden.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,20 +15,20 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 59041
 ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
 ms.search.form: FinancialReports
-ms.openlocfilehash: 3bc3ddb9f04f7f6f2a63b2ecccfe04fbaf2eadfc
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 25d913e6f5d4c95dceda1291a2c33abe37348574
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9274726"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802741"
 ---
 # <a name="report-designer-interface"></a>Berichts-Designer-Schnittstelle
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel erläutert das Navigieren durch den Berichtsdesigner und wie Sie die verschiedenen Optionen Ihren Bedürfnissen entsprechend verwenden.
+Dieser Artikel erläutert das Navigieren durch den Report Designer und wie Sie die verschiedenen Optionen Ihren Bedürfnissen entsprechend verwenden.
 
-## <a name="report-designer-menu-commands"></a>Berichts-Designer-Menübefehle
+## <a name="report-designer-menu-commands"></a>Report Designer Menübefehle
 
 Die folgenden Tabellen beschreiben die Menübefehle und Optionen, die Sie verwenden können, wenn Sie Finanzberichte entwerfen. Einige Menübefehle und Optionen sind nur in bestimmten Umständen verfügbar. Beispielsweise sind die Befehle zum Höherstufen und Tieferstufen von Berichtseinheiten nur verfügbar, wenn Sie eine Berichtsbaumstruktur-Definition bearbeiten.
 
@@ -39,8 +39,8 @@ Das **Datei**-Menü ist für alle Benutzer verfügbar und umfasst die folgenden 
 | Befehl                           | Beschreibung |
 |-----------------------------------|-------------|
 | Neu                               | Erstellen Sie eine neue Berichtsdefinition, eine Zeilendefinition, eine Spaltendefinition, eine Berichtsbaumstruktur-Definition, eine Berichtsgruppendefinition oder einen Ordner. Zusätzliche Optionen sind je nach Ihrer Benutzerrolle verfügbar. |
-| Geöffnet                              | Öffnen Sie eine vorhandene Zeilendefinition, eine Spaltendefinition, eine Berichtsbaumstruktur-Definition oder eine Berichtsdefinition. |
-| Schließen                             | Schließen Sie den aktuellen Baustein. |
+| Geöffnet                              | Öffnen Sie eine vorhandene Zeilendefinition, Spaltendefinition, Berichtsbaumstruktur-Definition oder Berichtsdefinition. |
+| Abschluss                             | Schließen Sie den aktuellen Baustein. |
 | Alle schließen                         | Schließen Sie alle Bausteine. |
 | Speichern                              | Speichern Sie die aktuelle Zeilendefinition, Spaltendefinition, Berichtsbaumstruktur-Definition oder Berichtsdefinition. |
 | Speichern unter                           | Speichern Sie die aktuelle Zeilendefinition, Spaltendefinition, Berichtsbaumstruktur-Definition oder Berichtsdefinition unter einem neuen Namen. |
@@ -50,7 +50,7 @@ Das **Datei**-Menü ist für alle Benutzer verfügbar und umfasst die folgenden 
 | Letzte Berichtsdefinitionen         | Hier wird eine Liste mit Berichten angezeigt, die vor kurzem erstellt oder geändert wurden. Sie können dann einen Bericht in der Liste auswählen. |
 | Letzte Zeilendefinitionen            | Hier wird eine Liste mit Zeilendefinitionen angezeigt, die vor kurzem erstellt oder geändert wurden. Sie können dann eine Zeilendefinition in der Liste auswählen. |
 | Letzte Spaltendefinitionen         | Hier wird eine Liste mit Spaltendefinitionen angezeigt, die vor kurzem erstellt oder geändert wurden. Sie können dann eine Spaltendefinition in der Liste auswählen. |
-| Aktuelle Berichtsbaumstruktur-Definitionen | Hier wird eine Liste mit Berichtsbaumstruktur-Definitionen angezeigt, die vor kurzem erstellt oder geändert wurden. Sie können dann eine Berichtsbaumstruktur-Definition in der Liste auswählen. |
+| Aktuelle Berichtsbaumstrukturdefinitionen | Hier wird eine Liste mit Berichtsbaumstruktur-Definitionen angezeigt, die vor kurzem erstellt oder geändert wurden. Sie können dann eine Berichtsbaumstruktur-Definition in der Liste auswählen. |
 | Beenden                              | Beenden Sie den Berichts-Designer. |
 
 ### <a name="edit-menu"></a>Menü „Bearbeiten“
@@ -89,14 +89,14 @@ Das Menü **Ansicht** ist für alle Benutzer verfügbar und umfasst die folgende
 |-----------------|------------------------------------------------------------------------|
 | Navigationsbereich | Dient zum Ein- oder Ausblenden des Navigationsbereichs.                                      |
 | Symbolleisten        | Dient zum Auswählen der Symbolleisten, die sichtbar sein sollen.                                  |
-| Statusleiste      | Dient zum Anzeigen oder Ausblenden der Statusinformationen im **Berichts-Designer**-Fenster. |
+| Statusleiste      | Dient zum Anzeigen oder Ausblenden der Statusinformationen im Fenster **Report Designer**. |
 | Willkommensseite    | Hiermit wird die Seite **Willkommen** geöffnet.                                             |
 
 ### <a name="format-menu"></a>Menü „Format“
 
 Das Menü **Formatieren** ist für Benutzer mit der **Designer**-Rolle oder der **Administrator**-Rolle verfügbar. Dieses Menü enthält die folgenden Befehle.
 
-| Befehl               | Beschreibung |
+| Befehl               | Description |
 |-----------------------|-------------|
 | Formatvorlagen und Formatierung | Öffnen Sie das Dialogfeld **Formate und Formatierung**, in dem Sie das Format für Text in Zeilendefinitionen und in den Spaltendefinitionen erstellen und ändern können. Dieser Befehl ist in einer Zeilen- oder Spaltendefinition verfügbar. |
 | Spaltenbreite          | Öffnen Sie das Dialogfeld **Spaltenbreite**, in dem Sie die Breite der ausgewählten Spalte festlegen können. Dieser Befehl ist in einer Zeilendefinition, Spaltendefinition oder Berichtsbaumstruktur-Definition verfügbar. |
@@ -110,7 +110,7 @@ Das Menü **Unternehmen** ist für Benutzer mit der **Designer**-Rolle oder der 
 | Befehl               | Beschreibung                                                                                                            |
 |-----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Unternehmen             | Öffnen Sie das Dialogfeld **Unternehmen**, in dem Sie Unternehmen erstellen und ändern können.                                          |
-| Bausteingruppen | Öffnen Sie das Dialogfeld **Baustein-Gruppen**, in dem Sie Baustein-Gruppen erstellen, ändern, importieren und exportieren können. |
+| Bausteingruppen | Öffnen Sie das Dialogfeld **Bausteingruppen**, in dem Sie Bausteingruppen erstellen, ändern, importieren und exportieren können. |
 
 ### <a name="go-menu"></a>Menü „Gehe zu“
 
@@ -162,7 +162,7 @@ Das Menü **Hilfe** ist für alle Benutzer verfügbar und umfasst die folgenden 
 | Hilfe    | Öffnen der Artikel-Seite für die Finanzberichterstellung. |
 |         |                                                                          |
 
-## <a name="report-designer-toolbar-buttons"></a>Symbolleistenschaltflächen des Bericht-Designers
+## <a name="report-designer-toolbar-buttons"></a>Symbolleistenschaltflächen des Report Designers
 Die folgenden Tabellen beschreiben die Schaltflächen der Symbolleiste, die Sie verwenden können, wenn Sie Berichte entwerfen. Einige Symbolleistenschaltflächen stehen nur in bestimmten Situationen zur Verfügung. Beispielsweise sind die Schaltflächen zum Höherstufen und Tieferstufen von Berichtseinheiten nur verfügbar, wenn Sie eine Berichtsbaumstruktur-Definition bearbeiten.
 
 ### <a name="standard-toolbar"></a>Standardsymbolleiste
@@ -194,18 +194,18 @@ Die Standardsymbolleiste bietet schnellen Zugriff auf Datei- und Bearbeitungsbef
 
 Die Formatierungssymbolleiste bietet einfachen Zugriff auf Formatbefehle. Diese Symbolleiste enthält die folgenden Schaltflächen.
 
-| Knopf                                                                                                       | Beschreibung                                             |
-|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [![Schaltfläche „Schriftschnitt“.](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Wenden Sie den ausgewählten Schriftschnitt auf den aktuellen Text an.      |
-| [![Schaltfläche „Schriftart“.](./media/fonttype.png)](./media/fonttype.png)                                                 | Legen Sie für den aktuellen Text die ausgewählte Schriftart fest.              |
-| [![Schaltfläche „Schriftgröße“.](./media/fontsize.png)](./media/fontsize.png)                                            | Legen Sie für den aktuellen Text den ausgewählten Schriftgrad fest. |
-| [![Schaltfläche „Fett“.](./media/boldc130389.png)](./media/boldc130389.png)                                           | Formatieren Sie den aktuellen Text fett.                             |
-| [![Schaltfläche „Kursiv“.](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Formatieren Sie den aktuellen Text kursiv.                           |
-| [![Schaltfläche „Unterstreichen“.](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Unterstreichen Sie den aktuellen Text.                             |
-| [![Schaltfläche „Einrückung verringern“.](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Verringern Sie den Einzug des aktuellen Textes.                |
-| [![Schaltfläche „Einrückung vergrößern“.](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Vergrößern Sie den Einzug des aktuellen Textes.                |
-| [![Schaltfläche „Hintergrundfarbe“.](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Ändern Sie die Hintergrundfarbe der aktuellen Zelle        |
-| [![Schaltfläche „Schriftfarbe“.](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Ändern Sie die Farbe des aktuellen Texts.                   |
+| Knopf                                                                                                       | Beschreibung                                           |
+|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| [![Schaltfläche „Schriftschnitt“.](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Wenden Sie den ausgewählten Schriftschnitt auf den aktuellen Text an.   |
+| [![Schaltfläche „Schriftart“.](./media/fonttype.png)](./media/fonttype.png)                                                 | Legen Sie für den aktuellen Text die ausgewählte Schriftart fest.           |
+| [![Schaltfläche „Schriftgröße“.](./media/fontsize.png)](./media/fontsize.png)                                            | Legen Sie für den aktuellen Text den ausgewählten Schriftgrad (in Punkten) fest. |
+| [![Schaltfläche „Fett“.](./media/boldc130389.png)](./media/boldc130389.png)                                           | Formatieren Sie den aktuellen Text fett.                          |
+| [![Schaltfläche „Kursiv“.](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Formatieren Sie den aktuellen Text kursiv.                        |
+| [![Schaltfläche „Unterstreichen“.](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Unterstreichen Sie den aktuellen Text.                          |
+| [![Schaltfläche „Einrückung verringern“.](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Verringern Sie den Einzug des aktuellen Textes.             |
+| [![Schaltfläche „Einrückung vergrößern“.](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Vergrößern Sie den Einzug des aktuellen Textes.             |
+| [![Schaltfläche „Hintergrundfarbe“.](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Ändern Sie die Hintergrundfarbe der aktuellen Zelle     |
+| [![Schaltfläche „Schriftfarbe“.](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Ändern Sie die Farbe des aktuellen Texts.                |
 
 ### <a name="report-designer-toolbar"></a>Symbolleisten des Bericht-Designers
 
@@ -213,9 +213,9 @@ Die Berichtsdesigner-Symbolleiste bietet Schnellzugriff auf Befehle für das Nav
 
 | Knopf                                                                                              | Beschreibung |
 |-----------------------------------------------------------------------------------------------------|-------------|
-| [![Schaltfläche „Berichtsdefinition“.](./media/reportc130389.png)](./media/reportc130389.png)                 | Hier wird die Berichtsdefinition angezeigt, die im Menü **Fenster** aufgeführt ist. |
-| [![Schaltfläche „Zeilendefinition“.](./media/rowc130389.png)](./media/rowc130389.png)                          | Zeigen Sie die Zeilendefinition an, die der aktiven Berichtsdefinition zugewiesen ist. |
-| [![Schaltfläche „Spaltendefinition“.](./media/columnc130389.png)](./media/columnc130389.png)                 | Zeigen Sie die Spaltendefinition an, die der aktiven Berichtsdefinition zugewiesen ist. |
+| [![Schaltfläche „Berichtsdefinition“.](./media/reportc130389.png)](./media/reportc130389.png)            | Hier wird die Berichtsdefinition angezeigt, die im Menü **Fenster** aufgeführt ist. |
+| [![Schaltfläche „Zeilendefinition“.](./media/rowc130389.png)](./media/rowc130389.png)             | Zeigen Sie die Zeilendefinition an, die der aktiven Berichtsdefinition zugewiesen ist. |
+| [![Schaltfläche „Spaltendefinition“.](./media/columnc130389.png)](./media/columnc130389.png)  | Zeigen Sie die Spaltendefinition an, die der aktiven Berichtsdefinition zugewiesen ist. |
 | [![Schaltfläche „Berichtsbaumstruktur-Definition“.](./media/treec130389.png)](./media/treec130389.png)             | Zeigen Sie die Berichtsbaumstruktur-Definition an, die der aktiven Berichtsdefinition zugewiesen ist. |
 | [![Report-Viewer-Schaltfläche.](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Starten Sie den Berichts-Viewer mit der aktuellen Version des generierten Berichts. Diese Schaltfläche ist in einer Berichtsdefinition verfügbar, nachdem mindestens ein Bericht generiert wurde. |
 | [![Schaltfläche „Bericht generieren“.](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Generieren Sie einen Bericht aus der aktiven Berichtsdefinition. Diese Schaltfläche ist in einer Berichtsdefinition verfügbar. |

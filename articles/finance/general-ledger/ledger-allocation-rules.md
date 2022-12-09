@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5fbcee713625c597080d1d63ba0ffc70f088799
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0691c65e6a499f713952070811cefaa7a213af7b
+ms.sourcegitcommit: c364f50ea0ad50bac5c30724b6ce301d9574b653
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901283"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9787552"
 ---
 # <a name="ledger-allocation-rules"></a>Sachkonto-Zuordnungsregeln
 
@@ -28,7 +28,7 @@ ms.locfileid: "8901283"
 
 Dieser Artikel enthält Informationen zu Sachkonto-Zuordnungsregeln. Er beschreibt die verschiedenen Komponenten dieser Zuordnungsregeln und der Zuordnungsmethoden, die für sie verwendet werden können.
 
-Sachkonto-Zuordnungsregeln werden verwendet, um Zuordnungserfassungen und Kontoeinträge für die Zuordnung von Sachkontosalden oder -festen Beträgen automatisch zu berechnen und zu generieren. Zuordnungsmethoden können variabel oder fest sein. Folgende Zuordnungsmethoden können für Sachkontozuordnungsregeln verwendet werden:
+Sachkonto-Zuordnungsregeln werden verwendet, um Zuordnungserfassungen und Kontoeinträge für die Zuordnung von Sachkontosalden oder -festen Beträgen automatisch zu berechnen und zu generieren. Zuordnungsmethoden können variabel oder fest sein. Die Zuordnung basiert auf dem Wert der Transaktionswährung. Beispielsweise werden Gewinn-/Verlustbuchungen in Fremdwährungen gebucht, um die Buchungs- und Berichtswährungsbeträge anzupassen. Diese Einträge unterliegen keinen Zuordnungsregeln, da ihr Transaktionswährungswert 0,00 beträgt. Folgende Zuordnungsmethoden können für Sachkontozuordnungsregeln verwendet werden:
 
 -   **Basis** - Diese variable Methode wird verwendet, wenn die Verteilung vom tatsächlichen Sachkontensaldo abhängt (auf Grundlage von Filterkriterien). Beispielsweise können Werbeausgaben eines Unternehmens zum Umsatz der einzelnen Abteilungen und dem Gesamtumsatz aller Abteilungen zugeordnet werden.
 -   **Fester Prozentsatz** und **Festes Gewicht** – Für diese Methoden werden der Prozentsatz oder das Gewicht direkt für die Regel definiert. Beispielsweise können Werbekosten zugewiesen werden, damit Abteilung A 70 Prozent der Werbeausgaben zugeordnet werden und Abteilung B 30 Prozent zugeordnet werden.

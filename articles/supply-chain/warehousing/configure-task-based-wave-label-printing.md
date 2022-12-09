@@ -2,7 +2,7 @@
 title: Planen des Wellenetikettendrucks während der Welle
 description: Dieser Artikel beschreibt, wie Sie die Funktionalität für aufgabenbasierten Wellenetikettendruck festlegen und verwenden.
 author: perlynne
-ms.date: 06/09/2021
+ms.date: 12/02/2022
 ms.topic: article
 ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: ac2bc4cce42bada43334b82301d716414cd6d654
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e788e5a9206e46ada6490d4a0196c7ea8ca6af15
+ms.sourcegitcommit: 04e42c495d018e457fb3b038cadc4fe75ecbba12
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889456"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "9822361"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Planen des Wellenetikettendrucks während der Welle
 
@@ -32,7 +32,6 @@ Wenn Sie die Funktion *Aufgabenbasierter Wellenetikettendruck* verwenden, erstel
 
 Um die Funktionen zu verwenden, die in diesem Artikel beschrieben werden, müssen sie für Ihr System eingeschaltet werden. Verwenden Sie den Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um die Funktionen in der folgenden Reihenfolge zu aktivieren:
 
-1. *Wellenetikettendruck* – Diese Funktion ist erforderlich, um das Wellenprozessverfahren für den Wellenetikettendruck zu aktivieren.
 1. *Organisationsweite Arbeitssperrung* – Diese Funktion ist sowohl für die manuelle als auch für die automatische Konfiguration der geplanten Arbeitserstellung erforderlich. (Ab Supply Chain Management Version 10.0.21 ist diese Funktion obligatorisch, daher ist sie standardmäßig aktiviert und kann nicht wieder deaktiviert werden.)
 1. *Aufgabenbasierter Wellenetikettendruck* – Diese Funktion ist erforderlich, um den Wellenetikettendruck in einen separaten Transaktionsbereich abzuspalten.
 

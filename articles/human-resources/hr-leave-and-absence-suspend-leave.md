@@ -1,8 +1,8 @@
 ---
-title: Urlaub aussetzen
-description: Sie können den Urlaub für einen Mitarbeiter in Dynamics 365 Human Resources aussetzen.
+title: Beurlaubung aussetzen
+description: Sie können in Dynamics 365 Human Resources eine Beurlaubung für einen Mitarbeiter aussetzen.
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,22 +14,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 93b530aeef6fd14b56ac846e3bb0ad4080d67587
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9c8262fb34175f6f9326d6be82c922b2170fc5a7
+ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895901"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9805259"
 ---
 # <a name="suspend-leave"></a>Urlaub aussetzen
 
 >[!Important]
 >Die in diesem Artikel beschriebene Funktionalität ist derzeit für Kunden der eigenständigen Version von Dynamics 365 Human Resources verfügbar. Einige oder die gesamten Funktionen werden in einem zukünftigen Release der Finance-Infrastruktur nach Finance-Version 10.0.26 verfügbar sein.
 
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Sie können den Urlaub für einen Mitarbeiter aussetzen, um zu verhindern, dass Urlaubsrückstellungen für ausgewählte Urlaubstypen verarbeitet werden. 
+Sie können eine Beurlaubung für einen Mitarbeiter aussetzen, um zu verhindern, dass Urlaubsrückstellungen für ausgewählte Urlaubstypen verarbeitet werden.
 
 ## <a name="suspend-leave-and-absence-for-an-employee"></a>Abwesenheit und Urlaub für einen Mitarbeiter aussetzen
 
@@ -44,6 +43,9 @@ Sie können den Urlaub für einen Mitarbeiter aussetzen, um zu verhindern, dass 
 5. Optional können Sie einen **Kommentar** für die Aussetzung hinzufügen. 
 
 Wenn Rückstellungen bearbeitet werden, während der Urlaub des Mitarbeiters ausgesetzt ist, werden keine Rückstellungen für die Arten des suspendierten Urlaubs gebildet.
+
+> [!NOTE]
+> Urlaubsanträge setzen Anträge auf arbeitsfreie Zeit aus. Anträge auf arbeitsfreie Zeit setzen jedoch keine Urlaubsanträge aus.
 
 ## <a name="see-also"></a>Siehe auch
 

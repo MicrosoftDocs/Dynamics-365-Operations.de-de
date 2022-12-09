@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6c3e9323c2011f7ca6ceb9926575d661c5269e22
-ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
+ms.openlocfilehash: 1c125369a5b2134759bf3650175276acf42b69e0
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "9135538"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802822"
 ---
 # <a name="modify-row-definition-cells"></a>Ändern von Zeilendefinitionszellen
 
@@ -51,12 +51,12 @@ Die folgenden Beispiele sind gültige Zeilencodes:
 
 ### <a name="change-a-row-code-in-a-row-definition"></a>Ändern eines Zeilencodes in einer Zeilendefinition
 
-1. Klicken Sie im Berichts-Designer auf die **Zeilendefinitionen** und öffnen dann die Zeilendefinition, um sie zu ändern.
+1. Klicken Sie im Report Designer auf die **Zeilendefinitionen** und öffnen dann die Zeilendefinition, um sie zu ändern.
 2. Geben Sie in der entsprechenden Zeile den neuen Wert in der Spalte **Zeilencode** ein.
 
 ### <a name="reset-numeric-row-codes"></a>Numerische Zeilencodes zurücksetzen
 
-1. Im Berichts-Designer klicken Sie auf die **Zeilendefinitionen** und öffnen dann die Zeilendefinition, um sie zu ändern.
+1. Klicken Sie im Report Designer auf die **Zeilendefinitionen** und öffnen dann die Zeilendefinition, um sie zu ändern.
 2. Klicken Sie im Menü **Bearbeiten** auf **Zeilen neu nummerieren**.
 3. Geben Sie im Dialogfeld **Zeilen neu nummerieren** neue Werte für den Anfangszeilencode und das Zeilencodeinkrement an. Sie können die numerische Zeilencodes auf die äquidistante Werte zurücksetzen. Der Berichtsdesigner nummeriert jedoch nur Zeilencodes neu, die mit Zahlen beginnen (beispielsweise 130 oder 246). Es nummeriert keine Zeilencodes neu, die mit Buchstaben beginnen (beispielsweise INCOME\_93 oder TP0693).
 
@@ -71,19 +71,19 @@ Die Beschreibungszelle enthält die Beschreibung der Finanzdaten in der Zeile de
 
 ### <a name="add-the-description-for-a-line-on-a-report"></a>Hinzufügen der Beschreibung für eine Zeile in einem Bericht
 
-1. Im Berichts-Designer klicken Sie auf die **Zeilendefinitionen** und öffnen dann die Zeilendefinition, um sie zu ändern.
+1. Klicken Sie im Report Designer auf die **Zeilendefinitionen** und öffnen dann die Zeilendefinition, um sie zu ändern.
 2. Wählen Sie die Zelle **Beschreibung** aus, und geben Sie dann den Namen der Berichtszeile ein.
 3. Übernehmen Sie die Formatierung.
 
 ### <a name="add-additional-text-from-a-reporting-tree-in-the-description"></a>Hinzufügen von zusätzlichem Text aus einer Berichtsbaumstruktur in der Beschreibung
 
-1. Im Berichts-Designer klicken Sie auf die **Zeilendefinitionen** und öffnen dann die Zeilendefinition, um sie zu ändern.
+1. Klicken Sie im Report Designer auf die **Zeilendefinitionen** und öffnen dann die Zeilendefinition, um sie zu ändern.
 2. Geben Sie den Code des zusätzlichen Textes und einen beliebigen anderen Text in der entsprechenden Zelle **Beschreibung** ein.
 3. Übernehmen Sie die Formatierung.
 
 ### <a name="limit-the-additional-text-to-a-specific-reporting-unit"></a>Einschränken des zusätzlichen Texts auf eine bestimmte Berichtseinheit
 
-1. Im Berichts-Designer klicken Sie auf die **Zeilendefinitionen** und öffnen dann die Zeilendefinition, um sie zu ändern.
+1. Klicken Sie im Report Designer auf die **Zeilendefinitionen** und öffnen dann die Zeilendefinition, um sie zu ändern.
 2. Suchen Sie die Zeile, in der zusätzlicher Text erstellt werden soll, und doppelklicken Sie auf die Zelle in der Spalte **Verwandte Formeln/Zeilen/Einheiten**.
 3. Wählen Sie im Dialogfeld **Auswahl der Berichtseinheit** im Feld **Berichtsstruktur** eine Berichtsbaumstruktur aus.
 4. Erweitern oder reduzieren Sie die Berichtsbaumstruktur im Feld **Berichtseinheit für Einschränkung auswählen** , und wählen Sie dann eine Berichtseinheit aus.
@@ -96,14 +96,14 @@ Die Zelle **Formatcode** bietet eine Auswahl von vorformatierten Auswahlmöglich
 
 ### <a name="add-a-format-code-to-a-report-row"></a>Hinzufügen eines Formatcodes zu einer Berichtszeile
 
-1. Im Berichts-Designer klicken Sie auf die **Zeilendefinitionen** und wählen dann eine Zeilendefinition, um sie zu ändern.
+1. Gehen Sie im Report Designer auf die **Zeilendefinitionen** und wählen Sie dann eine Zeilendefinition, um sie zu ändern.
 2. Doppelklicken Sie auf die Zelle **Formatcode**.
 3. Wählen Sie in der Liste einen Formatcode aus. In der folgenden Tabelle finden Sie die Formatcodes und ihre Aktionen.
 
-    | Formatcode                   | Interpretation des Formatcodes | Aktion |
+    | Formatcode                   | Interpretation des Formatcodes | Aktivität |
     |-------------------------------|-----------------------------------|--------|
     | (Keine)                        |                                   | Löscht die **Formatcode**-Zelle. |
-    | TOT                           | Summe                             | Kennzeichnet eine Zeile, die mathematische Operatoren in der Spalte **Verwandte Formeln/Zeilen/Einheiten** verwendet. Summen enthalten einfache Operatoren, wie **+** oder **-**. |
+    | TOT                           | Gesamt                             | Kennzeichnet eine Zeile, die mathematische Operatoren in der Spalte **Verwandte Formeln/Zeilen/Einheiten** verwendet. Summen enthalten einfache Operatoren, wie **+** oder **-**. |
     | CAL                           | Herstellkostenkalkulation                       | Kennzeichnet eine Zeile, die mathematische Operatoren in der Spalte **Verwandte Formeln/Zeilen/Einheiten** verwendet. Berechnungen enthalten komplexe Operatoren, wie **+**, **-**, **\**_, _*/** sowie die Anweisungen **IF/THEN/ELSE**. |
     | DES                           | Beschreibung                       | Kennzeichnet eine Überschriftposition oder eine leere Position in einem Bericht. |
     | LKS RCHTS ZEN                   | Links Rechts Zentriert                 | Richtet den Zeilenbeschreibungstext auf der Berichtsseite aus, unabhängig von seiner Position in der Spaltendefinition. |
@@ -149,7 +149,7 @@ Beim Erstellen einer Zeilengesamtergebnis-Formel müssen Sie Zeilencodes verwend
 
 ### <a name="create-a-row-total"></a>Erstellen eines Zeilengesamtergebnisses
 
-1. Klicken Sie im Berichts-Designer auf **Zeilendefinitionen**, und öffnen Sie dann die zu ändernde Zeilendefinition.
+1. Klicken Sie im Report Designer auf die **Zeilendefinitionen** und öffnen dann die Zeilendefinition, um sie zu ändern.
 2. Doppelklicken Sie auf die Zelle **Formatcode** in der Zeilendefinition, und wählen Sie **TOT** aus.
 3. Geben Sie in die Zelle **Verwandte Formeln/Zeilen/Einheiten** die Summenformel ein.
 
@@ -160,9 +160,9 @@ In der Spalte **Formatcode** in einer Zeilendefinition wird Formatierung mit den
 > [!NOTE]
 > Sie können das Drucken von detaillierten Betragszeilen auch verhindern, indem Sie die Option zum Anzeigen von Zeilen ohne Beträge deaktivieren. Diese Option befindet sich auf der Registerkarte **Einstellungen** der Berichtsdefinition. Standardmäßig werden Buchungsdetailkonten mit einem Nullsaldo oder ohne Zeitraumaktivität in Berichten unterdrückt. Um diese Transaktionsdetailkonten anzuzeigen, aktivieren Sie das Kontrollkästchen **Zeilen ohne Beträge anzeigen** auf der Registerkarte **Einstellungen** der Berichtsdefinition.
 
-### <a name="relate-a-format-row-to-an-amount-row"></a>Zuordnen einer Formatzeile zu einer Betragszeile
+### <a name="relate-a-format-row-to-an-amount-row"></a>Verbinden einer Formatzeile mit einer Betragszeile
 
-1. Im Berichts-Designer klicken Sie auf die **Zeilendefinitionen** und wählen dann eine Zeilendefinition, um sie zu ändern.
+1. Gehen Sie im Report Designer auf die **Zeilendefinitionen** und wählen Sie dann eine Zeilendefinition, um sie zu ändern.
 2. Geben Sie in der Formatierungszeile in der Zelle **Verwandte Formeln/Zeilen/Einheiten** den Zeilencode der Betragszeile ein, die unterdrückt werden soll.
 
     > [!NOTE]
@@ -192,13 +192,13 @@ In einer Spaltendefinition kennzeichnet der **KALK**-Spaltentyp eine Spalte, die
 
 ### <a name="select-the-base-row-in-a-row-definition-for-a-column-calculation"></a>Auswählen der Basiszeile in einer Zeilendefinition für eine Spaltenberechnung
 
-1. Klicken Sie im Berichts-Designer auf **Spaltendefinitionen**, und öffnen Sie anschließend die Spaltendefinition für eine Einkommensaufstellung.
+1. Gehen Sie im Report Designer auf **Spaltendefinitionen** und öffnen Sie anschließend die Spaltendefinition für eine Einkommensaufstellung.
 2. Fügen Sie der Spaltendefinition eine neue Spalte hinzu, und legen Sie den Spaltentyp auf **CALC** fest.
 3. Geben Sie in der **Formel**-Zelle der neuen Spalte die Formel **X/BASEROW** ein, wobei **X** der **FD**-Spaltentyp ist, von dem ein Prozentsatz angezeigt wird.
 4. Doppelklicken Sie auf die Zelle **Format/Währungsaußerkraftsetzung**.
-5. Wählen Sie im Dialogfeld **Formataußerkraftsetzung** in der Liste die **Formatkategorie** die Option **Prozentsatz** aus, und klicken Sie anschließend auf **OK**.
+5. Wählen Sie im Dialogfeld **Formataußerkraftsetzung** in der Liste die **Formatkategorie** die Option **Prozentsatz** aus und klicken Sie anschließend auf **OK**.
 6. Klicken Sie im Menü **Datei** auf **Speichern unter**, um die Spaltendefinition unter einem neuen Namen zu speichern. Fügen Sie dem aktuellen Dateinamen **CBR** an (beispielsweise **CUR\_YTD\_CBR**). Diese Spaltendefinition ist Ihre Basiszeilen-Spaltendefinition.
-7. Klicken Sie im Berichts-Designer auf **Zeilendefinitionen**, und öffnen Sie anschließend die Zeilendefinition, die durch die Basiszeilenberechnung geändert werden soll.
+7. Gehen Sie im Report Designer auf **Zeilendefinitionen** und öffnen Sie anschließend die Zeilendefinition, die durch die Basiszeilenberechnung geändert werden soll.
 8. Fügen Sie eine neue Zeile über der Zeile ein, in der die Basiszeilenberechnung starten soll.
 9. Doppelklicken Sie auf die Zelle **Formatcode** der Zeilendefinition, und wählen Sie dann **CBR** aus.
 10. Geben Sie in Zelle **Verwandte Formeln/Zeilen/Einheiten** die Zeilencodenummer für die Basiszeile ein.
@@ -227,7 +227,7 @@ Mit Sortiercodes werden Konten oder Werte sortiert, ein Istwert- oder Budgetvari
 
 ### <a name="select-a-sorting-code"></a>Auswählen eines Sortiercodes
 
-1. Im Berichts-Designer klicken Sie auf die **Zeilendefinitionen** und öffnen dann die Zeilendefinition, um sie zu ändern.
+1. Klicken Sie im Report Designer auf die **Zeilendefinitionen** und öffnen dann die Zeilendefinition, um sie zu ändern.
 2. Doppelklicken Sie auf die Zelle **Formatcode**, und wählen Sie dann einen Sortiercode aus.
 3. Geben Sie in der Zelle **Verwandte Formeln/Zeilen/Einheiten** den Bereich der Zeilencodes an, die sortiert werden sollen. Geben Sie zur Angabe eines Bereichs den ersten Zeilencode, einen Doppelpunkt (:), und dann den letzten Zeilencode ein. Geben Sie z. B. **160:490** ein, um anzugeben, dass der Bereich von Zeile 160 bis Zeile 490 reicht.
 4. Geben Sie in der Zelle **Spalteneinschränkung** den Buchstaben der Berichtsspalte ein, der zum Sortieren verwendet werden soll.
@@ -239,24 +239,24 @@ Mit Sortiercodes werden Konten oder Werte sortiert, ein Istwert- oder Budgetvari
 
 Im folgenden Beispiel werden die Werte in Spalte "D" des Berichts in aufsteigender Reihenfolge für Zeilen 160 bis 490 sortiert. Zusätzlich werden die absoluten Werte in Spalte "G" des Berichts in absteigender Reihenfolge für Zeilen 610 bis 940 sortiert.
 
-| Zeilencode | Beschreibung                                         | Formatcode | Verwandte Formeln/Zeilen/Einheiten | Standardsaldo | Spalteneinschränkung | Verknüpfen mit Finanzdimensionen |
-|----------|-----------------------------------------------------|-------------|-----------------------------|----------------|--------------------|------------------------------|
-| 100      | Sortiert nach monatlicher Abweichung in aufsteigender Reihenfolge       | BESCHR         |                             |                |                    |                              |
-| 130      |                                                     | SORT        | 160:490                     |                | D                  |                              |
-| 160      | Verkauf                                               |             |                             | C              |                    | 4100                         |
-| 190      | Retouren                                       |             |                             |                |                    | 4110                         |
-|          | ...                                                 |             |                             |                |                    |                              |
-| 490      | Zinsertrag                                     |             |                             | C              |                    | 7000                         |
-| 520      |                                                     | BESCHR         |                             |                |                    |                              |
-| 550      | Sortiert nach der absoluten Abweichung für Jahr bis dato in absteigender Reihenfolge | BESCHR         |                             |                |                    |                              |
-| 580      |                                                     | AABSTSORT   | 610:940                     |                | G                  |                              |
-| 610      | Vertrieb                                               |             |                             | k              |                    | 4100                         |
-| 640      | Retouren                                       |             |                             |                |                    | 4110                         |
-|          | ...                                                 |             |                             |                |                    |                              |
-| 940      | Zinsertrag                                     |             |                             | k              |                    | 7000                         |
+| Zeilencode | Description                             | Formatcode | Verwandte Formeln/Zeilen/Einheiten | Standardsaldo | Spalteneinschränkung | Verknüpfung mit Finanzdimensionen |
+|----------|-----------------------------------------|-------------|-----------------------------|----------------|--------------------|------------------------------|
+| 100      | Sortiert nach monatlicher Abweichung in aufsteigender Reihenfolge       | BESCHR         |                |                |                    |                              |
+| 130      |                                        | SORT        | 160:490                     |                | D                  |                              |
+| 160      | Verkauf                                   |             |                             | C              |                    | 4100                         |
+| 190      | Retouren                        |             |                             |                |                    | 4110                         |
+|          | ...                             |             |                             |                |                    |                              |
+| 490      | Zinsertrag              |             |                             | C              |                    | 7000                         |
+| 520      |                                     | BESCHR         |                             |                |                    |                              |
+| 550      | Sortiert nach der absoluten Abweichung für Jahr bis dato in absteigender Reihenfolge | BESCHR         |             |                |                    |                              |
+| 580      |                              | AABSTSORT   | 610:940                     |                | G                  |                              |
+| 610      | Vertrieb                     |             |                             | k              |                    | 4100                         |
+| 640      | Retouren                |             |                             |                |                    | 4110                         |
+|          | ...                       |             |                             |                |                    |                              |
+| 940      | Zinsertrag               |             |                             | k              |                    | 7000                         |
 
 
-## <a name="specify-a-format-override-cell"></a>Angeben einer Formataußerkraftsetzungszelle an
+## <a name="specify-a-format-override-cell"></a>Eine Formataußerkraftsetzungszelle angeben
 Die Zelle **Formataußerkraftsetzung** gibt die Formatierung an, die für die Zeile verwendet wird, wenn der Bericht gedruckt wird. Diese Formatierung setzt die Formatierung außer Kraft, die in der Spaltendefinition und in der Berichtsdefinition angegeben ist. Standardmäßig handelt es sich bei der in diesen Definitionen angegebenen Formatierung um die Währung. Wird in dem Bericht die Anzahl der Anlagen (z. B. der Gebäude) in einer Zeile und deren Geldwert in einer anderen Zeile aufgelistet, können Sie die Währungsformatierung außer Kraft setzen und für die Zeile, in der die Anzahl der Gebäude angegeben wird, eine numerische Formatierung eingeben. Sie geben diese Informationen im Dialogfeld **Formataußerkraftsetzung** an. Die verfügbaren Optionen sind von der ausgewählten Formatkategorie abhängig. Der **Beispiel**-Bereich des Dialogfelds zeigt Beispielsformate an. Die verfügbaren Formatkategorien lauten wie folgt:
 
 - Währungsformatierung
@@ -266,7 +266,7 @@ Die Zelle **Formataußerkraftsetzung** gibt die Formatierung an, die für die Ze
 
 ### <a name="override-cell-formatting"></a>Außerkraftsetzen der Zellenformatierung
 
-1. Öffnen Sie im Berichts-Designer die zu bearbeitende Zeilendefinition.
+1. Öffnen Sie im Report Designer die zu bearbeitende Zeilendefinition.
 2. Doppelklicken Sie in der Zeile, deren Format außer Kraft gesetzt werden soll, auf die Zelle in der Spalte **Formataußerkraftsetzung**.
 3. Wählen Sie im Dialogfeld **Formataußerkraftsetzung** die Formatierungsoptionen aus, die für diese Zeile im Bericht verwendet werden sollen.
 4. Klicken Sie auf **OK**.
@@ -327,9 +327,9 @@ Der Typ sollte den positiven und den negativen Wert darstellen. Gewöhnlich wird
 | 0,00 %;(0,00 %)                  | 123456,00 % | (123456,00%) | 0,00%   |
 
 ## <a name="specify-a-normal-balance-cell"></a>Normale Saldozelle angeben
-Die Zelle **Normaler Saldo** in einer Zellendefinition steuert das Vorzeichen der Beträge in einer Zeile. Um das Vorzeichen einer Zeile umzukehren, oder wenn der normale Saldo eines Kontos ein Habenposten ist, geben ein **C** in die Zelle **Normales Saldo** für diese Zeile ein. Report-Design kehrt das Vorzeichen für alle Habenbilanzkonten in dieser Zeile um. Wenn der Berichtsdesigner diese Konten konvertiert, entfernt er das Soll-/Habenmerkmal aus allen Beträgen und vereinfacht so das Addieren insgesamt. Um beispielsweise den Nettogewinn zu berechnen, ziehen Sie die Ausgaben vom Gewinn ab. In der Regel werden addierte und berechnete Zeilen nicht durch einen **C**-Code beeinflusst. Allerdings kehrt das **XCR**-Drucksteuerelement in der Spaltendefinition das Vorzeichen jeder Zeile mit einem **C** in der Spalte **Normaler Saldo** um. Diese Formatierung ist besonders wichtig, wenn Sie alle ungünstigen Abweichungen als negative Beträge anzeigen möchten. Wenn eine summierte oder berechnete Zahl das falsche Vorzeichen besitzt, geben Sie ein **C** in der Zelle **Normaler Saldo** für die Zeile ein, um das Vorzeichen umzukehren.
+Die Zelle **Normaler Saldo** in einer Zellendefinition steuert das Vorzeichen der Beträge in einer Zeile. Um das Vorzeichen einer Zeile umzukehren oder wenn der normale Saldo eines Kontos ein Habenposten ist, geben Sie **C** in die Zelle **Normales Saldo** für diese Zeile ein. Report-Design kehrt das Vorzeichen für alle Habenbilanzkonten in dieser Zeile um. Wenn der Report Designer diese Konten konvertiert, entfernt er das Soll-/Habenmerkmal aus allen Beträgen und vereinfacht so das Addieren insgesamt. Um beispielsweise den Nettogewinn zu berechnen, ziehen Sie die Ausgaben vom Gewinn ab. In der Regel werden addierte und berechnete Zeilen nicht durch einen **C**-Code beeinflusst. Allerdings kehrt das **XCR**-Drucksteuerelement in der Spaltendefinition das Vorzeichen jeder Zeile mit einem **C** in der Spalte **Normaler Saldo** um. Diese Formatierung ist besonders wichtig, wenn Sie alle ungünstigen Abweichungen als negative Beträge anzeigen möchten. Wenn eine addierte oder berechnete Zahl das falsche Vorzeichen besitzt, geben Sie ein **C** in der Zelle **Normaler Saldo** für die Zeile ein, um das Vorzeichen umzukehren.
 
-## <a name="specify-a-row-modifier-cell"></a>Angeben einer Zeilenmodifizierer-Zelle
+## <a name="specify-a-row-modifier-cell"></a>Eine Zeilenmodifizierer-Zelle angeben
 Der Inhalt der Zelle **Zeilenmodifizierer** in einer Zeilendefinition setzt die Geschäftsjahre, Perioden und weitere Informationen, die in der Spaltendefinition für diese Zeile angegeben sind, außer Kraft. Der ausgewählte Modifizierer gilt für jedes Konto in der Zeile. Sie können jede Zeile mit einem oder mehreren der folgenden Modifizierertypen ändern:
 
 - Kontomodifizierer
@@ -338,8 +338,8 @@ Der Inhalt der Zelle **Zeilenmodifizierer** in einer Zeilendefinition setzt die 
 
 ### <a name="override-a-column-definition"></a>Spaltendefinition außer Kraft setzen
 
-1. Öffnen Sie im Berichts-Designer die zu bearbeitende Zeilendefinition.
-2. Doppelklicken in der Zeile, in der Sie die Spaltendefinition außer Kraft setzen möchten, auf die Zelle **Zeilenmodifizierer**.
+1. Öffnen Sie im Report Designer die zu bearbeitende Zeilendefinition.
+2. Doppelklicken Sie in der Zeile, in der Sie die Spaltendefinition außer Kraft setzen möchten, auf die Zelle **Zeilenmodifizierer**.
 3. Wählen Sie im Dialogfeld **Zeilenmodifizierer** eine Option im Feld **Kontomodifizierer** aus. Eine Beschreibung der Optionen finden Sie unter "Kontomodifizierer".
 4. Wählen Sie im Feld **Buchcodemodifizierer** den Buchcode aus, der für die Zeile verwendet werden soll.
 5. Gehen Sie unter **Attribute** folgendermaßen vor, um einen Eintrag für jedes Attribut hinzuzufügen, das im Zeilencode eingeschlossen sein soll:
@@ -383,10 +383,10 @@ Sie können eine Zeile auf einen vorhandenen Buchcode einschränken. Die Spalten
 Einige Kontoführungssysteme unterstützen Konto- und Buchungsattribute in den Finanzdaten. Diese Attribute funktionieren wie virtuelle Kontosegmente und können zusätzliche Informationen zu Konto oder Buchung enthalten. Diese zusätzlichen Informationen könnten Kontokennungen, Chargenkennungen, Postleitzahlen oder andere Attribute sein. Wenn Ihr Kontoführungssystem Attribute unterstützt, können Sie Kontoattribute oder Buchungsattribute als Zeilenmodifizierer in der Zeilendefinition verwenden. Informationen über das Außerkraftsetzen von Zeileninformationen finden Sie im Bereich "Spaltendefinition außer Kraft setzen" weiter oben in diesem Artikel.
 
 ## <a name="specify-a-link-to-financial-dimensions-cell"></a>Zelle „Verknüpfung mit Finanzdimensionen“ angeben
-Die Zelle **Mit Finanzdimensionen verknüpfen** enthält Verknüpfungen zu den Finanzdaten, die in jeder Zeile eines Berichts einbezogen werden sollen. Diese Zelle enthält Dimensionswerte. Um das Dialogfeld **Dimensionen** zu öffnen, doppelklicken Sie auf die Zelle **Mit Finanzdimensionen verknüpfen**.
+Die Zelle **Verknüpfung mit Finanzdimensionen** enthält Verknüpfungen zu den Finanzdaten, die in jeder Zeile eines Berichts einbezogen werden sollen. Diese Zelle enthält Dimensionswerte. Um das Dialogfeld **Dimensionen** zu öffnen, doppelklicken Sie auf die Zelle **Verknüpfung mit Finanzdimensionen**.
 
 > [!NOTE]
-> Berichts-Designer kann keine Konten, Dimensionen oder Felder aus dem Microsoft Dynamics ERP-System auswählen, die eines der folgenden reservierten Zeichen enthalten: &, \*, \[, \], {, oder }. Wenn Sie Informationen für eine Zeile angeben möchten, die bereits in der Zeilendefinition enthalten ist, fügen Sie die Informationen in der Zelle **Verknüpfen mit Finanzdimensionen** hinzu. Um neue Zeilen hinzuzufügen, die mit Finanzdaten verknüpfen, verwenden Sie das Dialogfeld **Zeilen einfügen aus**, um neue Zeilen in der Berichtsdefinition zu erstellen. Die Spaltenüberschrift ändert sich, je nachdem, wie die Spalte konfiguriert wird (siehe folgende Tabelle).
+> Report Designer kann jedoch keine Konten, Dimensionen oder Felder aus dem Microsoft Dynamics 365 Finance System auswählen, die eines der folgenden reservierten Zeichen enthalten: &, \*, \[, \], {, oder }. Wenn Sie Informationen für eine Zeile angeben möchten, die bereits in der Zeilendefinition enthalten ist, fügen Sie die Informationen in der Zelle **Verknüpfung mit Finanzdimensionen** hinzu. Um neue Zeilen hinzuzufügen, die mit Finanzdaten verknüpfen, verwenden Sie das Dialogfeld **Zeilen einfügen aus**, um neue Zeilen in der Berichtsdefinition zu erstellen. Die Spaltenüberschrift ändert sich, je nachdem, wie die Spalte konfiguriert wird (siehe folgende Tabelle).
 
 | Ausgewählter Linktyp       | Beschreibung in der Linkspalte |
 |----------------------------------|----------------------------------------------------|
@@ -395,8 +395,8 @@ Die Zelle **Mit Finanzdimensionen verknüpfen** enthält Verknüpfungen zu den F
 
 ### <a name="specify-a-dimension-or-range"></a>Angeben einer Dimension oder eines Bereichs
 
-1. Im Berichts-Designer öffnen Sie die zu ändernde Zeilendefinition.
-2. Doppelklicken Sie auf eine Zelle in der Spalte **Verknüpfen mit Finanzdimensionen**.
+1. Öffnen Sie im Report Designer die zu bearbeitende Zeilendefinition.
+2. Doppelklicken Sie auf eine Zelle in der Spalte **Verknüpfung mit Finanzdimensionen**.
 3. Doppelklicken Sie im Dialogfeld **Dimensionen** auf eine Zelle unter dem Dimensionsnamen.
 4. Wählen Sie im Dialogfeld für die Dimension **Einzelwert oder Bereich** aus.
 5. Geben Sie im Feld **Von** die Anfangsdimension ein oder klicken Sie auf ![Durchsuchen](media/browse.gif "Durchsuchen"), um nach verfügbaren Dimensionen zu suchen. Um einen Bereich von Dimensionen eingeben, geben Sie die Enddimension im Feld **Bis** ein.
@@ -408,7 +408,7 @@ Standardmäßig druckt der Berichtsdesigner keine Zeile aus, die nicht ein entsp
 
 ### <a name="modify-zero-balance-settings"></a>Bearbeiten von Nullsaldoeinstellungen
 
-1. Öffnen Sie die zu ändernde Berichtsdefinition im Berichts-Designer.
+1. Öffnen Sie die zu ändernde Berichtsdefinitionen im Report Designer.
 2. Wählen Sie auf der Registerkarte **Einstellungen** unter **Andere Formatierung** Optionen für die Zeilendefinition aus, die in der Berichtsdefinition verwendet wird.
 3. Klicken Sie im Menü **Datei** auf **Speichern**, um Ihre Änderungen zu speichern.
 
@@ -423,32 +423,32 @@ Wenn Sie einen natürlichen Segmentwert im Dialogfeld **Dimensionen** eingeben, 
 Sie können einen Bereich von Segment- oder Dimensionswerten angeben. Der Vorteil bei der Angabe eines Bereichs ist, dass Sie die Zeilendefinition nicht jedes Mal aktualisieren müssen, wenn ein neuer Segmentwert oder ein Dimensionswert den Finanzdaten hinzugefügt wird. Beispielsweise holt der Bereich **+Account=\[6100:6900\]** die Werte aus den Konten 6100 bis 6900 in den Zeilenbetrag. Wenn ein Bereich ein Platzhalterzeichen (?) umfasst, wertet der Berichtsdesigner den Bereich nicht auf einer Zeichen-pro-Zeichenbasis aus. Stattdessen werden die unteren und oberen Grenzen des Bereichs bestimmt, und dann werden die Endwerte und alle Werte dazwischen eingeschlossen.
 
 > [!NOTE]
-> Berichts-Designer kann keine Konten, Dimensionen oder Felder aus dem Microsoft Dynamics ERP-System auswählen, die eines der folgenden reservierten Zeichen enthalten: &, \*, \[, \], {, oder }. Sie können nur dann ein kaufmännisches Und-Zeichen (&) hinzufügen, wenn Sie Zeilendefinitionen automatisch mithilfe des Dialogfelds **Zeilen aus Dimensionen einfügen** erstellen.
+> Report Designer kann jedoch keine Konten, Dimensionen oder Felder aus dem Microsoft Dynamics 365 Finance System auswählen, die eines der folgenden reservierten Zeichen enthalten: &, \*, \[, \], {, oder }. Sie können nur dann ein kaufmännisches Und-Zeichen (&) hinzufügen, wenn Sie Zeilendefinitionen automatisch mithilfe des Dialogfelds **Zeilen aus Dimensionen einfügen** erstellen.
 
 ### <a name="multiple-segment-or-multiple-dimension-ranges"></a>Bereiche mit mehreren Segmenten oder Dimensionen
 
 Wenn Sie einen Bereich eingeben, indem Sie Kombinationen mehrerer Dimensionswerte verwenden, wird der Bereichsvergleich ..\\financial-dimensions\\dimension-by-dimension durchgeführt. Der Bereichsvergleich kann weder auf Basis von Zeichen-nach-Zeichen noch auf Teilesegmentbasis ausgeführt werden. Beispielsweise umfasst der Bereich **+Konto=\[5000:6000\], Abteilung=\[1000:2000\], Kostenstelle=\[00\]** nur die Konten, die mit jedem Segment übereinstimmen. In diesem Szenario müssen sich die erste Dimension im Bereich von 5000 bis 6000 befinden, muss die andere Dimension im Bereich von 1000 bis 2000 befinden, und die letzte Dimension muss 00 sein. Beispielsweise **+Konto=\[5100\], Abteilung=\[1100\], Kostencenter=\[01\]** ist nicht im Bericht enthalten, da das letzte Segment außerhalb des angegebenen Bereich befindet. Wenn ein Segmentwert Leerzeichen umfasst, schließen Sie diesen Wert in eckige Klammern ein (\[ \]). Folgende Werte sind für ein vier Zeichen langes Segment gültig: **\[ 234\], \[123 \], \[1 34\]**. Dimensionswerte sollen in eckige Klammern eingeschlossen werden (\[ \]), und der Berichtsdesigner fügt diese Klammern für Sie hinzu. Wann enthält ein Bereich mit mehreren Segmenten oder Dimensionen Platzhalterzeichen (? oder \*). Stattdessen werden die unteren und oberen Grenzen des Bereichs bestimmt, und dann werden die Endwerte und alle Werte dazwischen eingeschlossen. Bei einem großen Bereich, wie dem Gesamtbereich der Konten von 40000 bis 99999, sollten Sie ein gültiges Startkonto und Endkonto angeben, wann immer möglich.
 
 > [!NOTE] 
-> Berichts-Designer kann keine Konten, Dimensionen oder Felder aus dem Microsoft Dynamics ERP-System auswählen, die eines der folgenden reservierten Zeichen enthalten: &, \*, \[, \], {, oder }. Sie können nur dann ein kaufmännisches Und-Zeichen (&) hinzufügen, wenn Sie Zeilendefinitionen automatisch mithilfe des Dialogfelds **Zeilen aus Dimensionen einfügen** erstellen.
+> Report Designer kann jedoch keine Konten, Dimensionen oder Felder aus dem Microsoft Dynamics 365 Finance System auswählen, die eines der folgenden reservierten Zeichen enthalten: &, \*, \[, \], {, oder }. Sie können nur dann ein kaufmännisches Und-Zeichen (&) hinzufügen, wenn Sie Zeilendefinitionen automatisch mithilfe des Dialogfelds **Zeilen aus Dimensionen einfügen** erstellen.
 
 ## <a name="add-or-subtract-from-other-accounts-in-a-row-definition"></a>Addieren oder Subtrahieren von anderen Konten in einer Zeilendefinition
 Um die Geldbeträge in einem Konto zu den Geldbeträgen in einem anderen Konto zu addieren oder davon zu subtrahieren, können Sie das Pluszeichen (+) und das Minuszeichen (-) in der Zelle **Mit Finanzdimensionen verknüpfen** verwenden. Die folgende Tabelle zeigt die zulässigen Formate für Additions- und Subtraktionslinks zu Finanzdaten.
 
-| Arbeitsgang                                                                               | Verwenden Sie dieses Format                                                                                              |
-|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| Addieren Sie zwei vollständig qualifizierte Konten.                                                       | +Division=\[000\], Konto=\[1205\], Abteilung=\[00\]+Division=\[100\], Konto=\[1205\], Abteilung=\[00\] |
-| Addieren Sie zwei Segmentwerte.                                                                 | +Konto=\[1205\]+Konto=\[1210\]                                                                           |
-| Addieren Sie Segmentwerte, die Platzhalterzeichen enthalten.                                    | +Konto=\[120?+Konto=\[11??\]                                                                             |
-| Addieren Sie einen Bereich von zwei vollständig qualifizierte Konten.                                                | +Division=\[000:100\], Konto=\[1205\], Abteilung=\[00\]                                                   |
-| Addieren Sie einen Bereich von Segmentwerten.                                                          | +Konto=\[1200:1205\]                                                                                       |
-| Addieren Sie einen Bereich von Segmentwerten, die Platzhalterzeichen enthalten.                         | +Konto=\[120?:130?\]                                                                                       |
+| Arbeitsgang                                            | Verwenden Sie dieses Format                                                                                              |
+|----------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| Addieren Sie zwei vollständig qualifizierte Konten.      | +Division=\[000\], Konto=\[1205\], Abteilung=\[00\]+Division=\[100\], Konto=\[1205\], Abteilung=\[00\] |
+| Addieren Sie zwei Segmentwerte.                    | +Konto=\[1205\]+Konto=\[1210\]                                                                           |
+| Addieren Sie Segmentwerte, die Platzhalterzeichen enthalten.  | +Konto=\[120?+Konto=\[11??\]                                                                     |
+| Addieren Sie einen Bereich von zwei vollständig qualifizierte Konten.              | +Division=\[000:100\], Konto=\[1205\], Abteilung=\[00\]                                           |
+| Addieren Sie einen Bereich von Segmentwerten.                | +Konto=\[1200:1205\]                                                                                       |
+| Addieren Sie einen Bereich von Segmentwerten, die Platzhalterzeichen enthalten.         | +Konto=\[120?:130?\]                                                           |
 | Subtrahieren Sie ein vollqualifiziertes Konto von einem anderen vollqualifizierten Konto.              | +Division=\[000\], Konto=\[1205\], Abteilung=\[00\]-Division=\[100\], Konto=\[1205\], Abteilung=\[00\] |
-| Subrahieren Sie einen Segmentwert von einem anderen Segmentwert.                                  | +Konto=\[1205\]-Konto=\[1210\]                                                                           |
-| Subtrahieren Sie einen Segmentwert, der ein Platzhalterzeichen enthält, von einem anderen Segmentwert. | +Konto=\[1200\]+Konto=\[11??\]                                                                           |
-| Subtrahieren Sie einen Bereich zweier vollständig qualifizierter Konten.                                           | -Division=\[000:100\], Konto=\[1200:1205\], Abteilung=\[00:01\]                                           |
-| Subtrahieren Sie einen Bereich von Segmentwerten.                                                     | -Konto=\[1200:1205\]                                                                                       |
-| Subtrahieren Sie einen Bereich von Segmentwerten, die Platzhalterzeichen enthalten.                    | -Konto=\[120?:130?\]                                                                                       |
+| Subrahieren Sie einen Segmentwert von einem anderen Segmentwert.          | +Konto=\[1205\]-Konto=\[1210\]                                                               |
+| Subtrahieren Sie einen Segmentwert, der ein Platzhalterzeichen enthält, von einem anderen Segmentwert. | +Konto=\[1200\]+Konto=\[11??\]                                        |
+| Subtrahieren Sie einen Bereich zweier vollständig qualifizierter Konten.                               | -Division=\[000:100\], Konto=\[1200:1205\], Abteilung=\[00:01\]                   |
+| Subtrahieren Sie einen Bereich von Segmentwerten.                   | -Konto=\[1200:1205\]                                                                                       |
+| Subtrahieren Sie einen Bereich von Segmentwerten, die Platzhalterzeichen enthalten.                    | -Konto=\[120?:130?\]                                               |
 
 Zwar können Sie die Konten direkt ändern, Sie können aber auch das Dialogfeld **Dimensionen** verwenden, um die korrekte Formatierung auf Ihre Finanzdatenverknüpfungen anzuwenden. Jeder der Werte kann ein Platzhalterzeichen einschließen (? oder \*). Berichts-Designer kann jedoch keine Konten, Dimensionen oder Felder aus dem Microsoft Dynamics ERP-System auswählen, die eines der folgenden reservierten Zeichen enthalten: &, \*, \[, \], {, oder }.
 
@@ -457,11 +457,11 @@ Zwar können Sie die Konten direkt ändern, Sie können aber auch das Dialogfeld
 
 ### <a name="add-or-subtract-accounts-from-other-accounts"></a>Addieren oder subtrahieren von Konten aus anderen Konten
 
-1. Im Berichts-Designer öffnen Sie die zu ändernde Zeilendefinition.
-2. Doppelklicken Sie in der entsprechenden Zeile auf die Zelle in der Spalte **Mit Finanzdimensionen verknüpfen**.
+1. Öffnen Sie im Report Designer die zu bearbeitende Zeilendefinition.
+2. Doppelklicken Sie in der entsprechenden Zeile auf die Zelle in der Spalte **Verknüpfung mit Finanzdimensionen**.
 3. Führen Sie in der ersten Zeile des **Dimensionen**-Dialogfelds, folgende Schritte aus:
 
-    1. Wählen Sie im ersten Feld alle Dimensionen (Standard) aus, oder klicken Sie auf das Dialogfeld **Dimensionssätze verwalten**, in dem Sie einen Satz erstellen, ändern, kopieren oder löschen können.
+    1. Wählen Sie im ersten Feld alle Dimensionen (Standard) aus oder klicken Sie auf das Dialogfeld **Dimensionssätze verwalten**, in dem Sie einen Satz erstellen, ändern, kopieren oder löschen können.
     2. Doppelklicken Sie auf die Zelle **Operator +/-**, und wählen Sie den Plus- (**+**) oder Minus- (**-**) Operator aus, der für einen oder mehrere Dimensionswerte oder -sätze in der Zeile gilt.
     3. Doppelklicken Sie in der entsprechenden Dimensionswertspalte auf die Zelle, um das Dialogfeld **Dimensionen** zu öffnen, und wählen Sie aus, ob dieser Dimensionswert für einen Einzelwert oder einen Bereich, ein Dimensionswertsatz oder Summenkonten gilt. Beschreibungen der Felder im Dialogfeld **Dimensionen** finden Sie im Abschnitt "Beschreibung des Dialogfelds "Dimension".
     4. Geben Sie Segmentwerte in der Spalte **Von** und **Bis** ein.
@@ -471,22 +471,22 @@ Zwar können Sie die Konten direkt ändern, Sie können aber auch das Dialogfeld
 > [!NOTE]
 > Der Operator gilt für alle Dimensionen in der Zeile.
 
-## <a name="description-of-the-dimensions-dialog-box"></a>Beschreibung des Dialogfelds "Dimensionen".
+## <a name="description-of-the-dimensions-dialog-box"></a>Beschreibung des Dialogfelds „Dimensionen“
 In der folgenden Tabelle werden die Felder im Dialogfeld **Dimensionen** beschrieben.
 
 | Element                | Beschreibung |
 |---------------------|-------------|
 | Einzeln oder Bereich | Geben Sie im Feld **Von** den Namen eines Kontos ein oder klicken Sie auf die Schaltfläche **Durchsuchen** ![Durchsuchen](media/browse.gif "Durchsuchen"), um das Konto zu suchen. Um einen Bereich auswählen, geben Sie einen Wert in das Feld **Bis** ein, oder wählen Sie einen Wert aus. |
-| Dimensionswertsatz | Geben Sie im Feld **Name** den Namen eines Dimensionswertsatzes ein. Um einen Satz, zu erstellen, zu ändern, zu kopieren oder zu löschen, klicken Sie auf **Dimensionswertsätze verwalten**. Das **Formel**-Feld wird mit der Formel aus der Zelle **Mit Finanzdimensionen verknüpfen** für diesen Dimensionswertsatz aufgefüllt, der in der Zeilendefinition festgelegt ist. |
-| Summe Konten   | Geben Sie im Feld **Name** eine Dimension der Summenkonten ein oder suchen Sie danach. Das **Formel**-Feld wird mit der Formel in der Zelle **Mit Finanzdimensionen verknüpfen** für diesen Summenkonto aufgefüllt, das in der Berichtsdefinition festgelegt ist. |
+| Dimensionswertsatz | Geben Sie im Feld **Name** den Namen eines Dimensionswertsatzes ein. Um einen Satz, zu erstellen, zu ändern, zu kopieren oder zu löschen, klicken Sie auf **Dimensionswertsätze verwalten**. Das **Formel**-Feld wird mit der Formel aus der Zelle **Verknüpfung mit Finanzdimensionen** für diesen Dimensionswertsatz aufgefüllt, der in der Zeilendefinition festgelegt ist. |
+| Summe Konten   | Geben Sie im Feld **Name** eine Dimension der Summenkonten ein oder suchen Sie danach. Das **Formel**-Feld wird mit der Formel in der Zelle **Verknüpfung mit Finanzdimensionen** für diesen Summenkonto aufgefüllt, das in der Berichtsdefinition festgelegt ist. |
 
 ## <a name="add-dimension-value-sets-in-a-row-definition"></a>Hinzufügen von Dimensionswertsätzen zu einer Zeilendefinition
 Ein Dimensionswertsatz ist eine benannte Gruppe von Dimensionswerten. Ein Dimensionswertsatz kann nur Werte in einer einzelnen Dimension enthalten, aber Sie können einen Dimensionswertsatz in mehreren Zeilendefinitionen, Spaltendefinitionen, Berichtsbaumstruktur-Definitionen und Berichtsdefinitionen verwenden. Sie können Dimensionswertsätze auch in einer Berichtsdefinition kombinieren. Wenn eine Änderung an den Finanzdaten eine Änderung des Dimensionswertsatzes erforderlich macht, können Sie die Dimensionswertsatz-Definition aktualisieren. Diese Aktualisierung wird dann auf alle Bereiche angewendet, in denen der Dimensionswertsatz verwendet wird. Wenn Sie beispielsweise häufig einen Wertebereich mit einem Link zu den Finanzdaten angeben, z. B. die Werte von 5100 bis einschließlich 5600, können Sie diesen Bereich einem Kontensatz namens „Verkauf“ zuweisen. Nach dem Erstellen eines Dimensionswertsatzes können Sie diesen als Finanzdatenlink auswählen. Weiteres Beispiel: Wenn der Wertebereich von 5100 bis 5600 dem Segment „Verkauf“ und 4175 dem Segment „Rabatte“ zugewiesen ist, können Sie den Gesamtumsatz ermitteln, indem Sie „Rabatte“ von „Verkauf“ subtrahieren. Dieser Vorgang wird angegeben als **(5100:5600)-4175**.
 
 ### <a name="create-a-set-of-dimension-values"></a>Erstellen eines Satzes von Dimensionswerten
 
-1. Öffnen Sie im Berichts-Designer die zu ändernde Zeilen-, Spalten- oder Baumstrukturdefinition.
-2. Klicken Sie im Menü **Bearbeiten** auf **Dimensionswertsätze verwalten**.
+1. Öffnen Sie im Report Designer die zu ändernde Zeilen-, Spalten- oder Baumstrukturdefinition.
+2. Gehen Sie im Menü **Bearbeiten** auf **Dimensionswertsätze verwalten**.
 3. Wählen Sie im Dialogfeld **Dimensionswertsätze verwalten** im Feld **Dimension** den Typ des Dimensionswertsatzes aus, der erstellt werden soll, und klicken Sie anschließend auf **Neu**.
 4. Geben Sie in Dialogfeld **Neu** einen Namen und eine Beschreibung für den Satz ein.
 5. Doppelklicken Sie in der Spalte **Von** auf eine Zelle.
@@ -497,8 +497,8 @@ Ein Dimensionswertsatz ist eine benannte Gruppe von Dimensionswerten. Ein Dimens
 
 ### <a name="update-a-set-of-dimension-values"></a>Aktualisieren eines Dimensionswertsatzes
 
-1. Öffnen Sie im Berichts-Designer die zu ändernde Zeilen-, Spalten- oder Berichtsbaumstruktur-Definition.
-2. Klicken Sie im Menü **Bearbeiten** auf **Dimensionswertsätze verwalten**.
+1. Öffnen Sie im Report Designer die zu ändernde Zeilen-, Spalten- oder Baumstrukturdefinition.
+2. Gehen Sie im Menü **Bearbeiten** auf **Dimensionswertsätze verwalten**.
 3. Wählen Sie im Dialogfeld **Dimensionswertsätze verwalten** im Feld **Dimension** den Dimensionstyp aus.
 4. Wählen Sie in der Liste den Dimensionswertsatz aus, der aktualisiert werden soll, und klicken Sie anschließend auf **Ändern**.
 5. Ändern Sie im Dialogfeld **Ändern** die Formelwerte, die im Satz enthalten sein sollen.
@@ -511,16 +511,16 @@ Ein Dimensionswertsatz ist eine benannte Gruppe von Dimensionswerten. Ein Dimens
 
 ### <a name="copy-a-dimension-set"></a>Kopieren eines Dimensionssatzes
 
-1. Öffnen Sie im Berichts-Designer die zu ändernde Zeilen-, Spalten- oder Berichtsbaumstruktur-Definition.
-2. Klicken Sie im Menü **Bearbeiten** auf **Dimensionswertsätze verwalten**.
+1. Öffnen Sie im Report Designer die zu ändernde Zeilen-, Spalten- oder Baumstrukturdefinition.
+2. Gehen Sie im Menü **Bearbeiten** auf **Dimensionswertsätze verwalten**.
 3. Wählen Sie im Dialogfeld **Dimensionswertsätze verwalten** im Feld **Dimension** den Dimensionstyp aus.
-4. Wählen Sie in der Liste den zu kopierenden Satz aus, und klicken Sie anschließend auf **Speichern unter**.
+4. Wählen Sie in der Liste den zu kopierenden Satz aus und klicken Sie anschließend auf **Speichern unter**.
 5. Geben Sie einen Namen neuen für den kopierten Satz ein, und klicken Sie auf **OK**.
 
 ### <a name="delete-a-dimension-set"></a>Löschen eines Dimensionssatzes
 
-1. Öffnen Sie im Berichts-Designer die zu ändernde Zeilen-, Spalten- oder Berichtsbaumstruktur-Definition.
-2. Klicken Sie im Menü **Bearbeiten** auf **Dimensionswertsätze verwalten**.
+1. Öffnen Sie im Report Designer die zu ändernde Zeilen-, Spalten- oder Baumstrukturdefinition.
+2. Gehen Sie im Menü **Bearbeiten** auf **Dimensionswertsätze verwalten**.
 3. Wählen Sie im Dialogfeld **Dimensionswertsätze verwalten** im Feld **Dimension** den Dimensionstyp aus.
 4. Wählen Sie den zu löschenden Satz aus, und klicken Sie auf **Löschen**. Klicken Sie auf **Ja**, um den Dimensionswertsatz dauerhaft zu löschen.
 

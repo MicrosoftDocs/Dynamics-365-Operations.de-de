@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a202dac3880717e9498212ca34570101188f48ce
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: b26d2ec261720499fc309a5fb850de2cb796bd8b
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725204"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802606"
 ---
 # <a name="trial-balance-financial-reports"></a>Zwischenbilanzfinanzberichte
 
@@ -32,8 +32,8 @@ In diesem Artikel werden die Standardberichte für Zwischenbilanzen beschrieben.
 
 Drei Zwischenbilanzberichte sind in der Finanzberichterstellung verfügbar.
 
-| Standardbericht                                 | Funktionsweise                                                                                                                                                                                        |
-|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Standardbericht                                 | Funktionsweise                                                                            |
+|------------------------------------------------|--------------------------------------------------------------------------------------|
 | Ausführliche Zwischenbilanz – Standard               | Enthält Saldoinformationen für alle Konten und schließt Soll- und Habensalden und deren Nettowert zusammen mit dem Transaktionsdatum, dem Beleg und der Erfassungsbeschreibung ein.                  |
 | Zusammengefasste Zwischenbilanz – Standard                | Enthält Saldoinformationen für alle Konten und schließt Eröffnungs- und Abschlusssalden sowie Soll- und Habensalden, zusammen mit ihrem Nettounterschied ein.                                        |
 | Jährlich zusammengefasste Zwischenbilanz – Standard | Enthält Saldoinformationen für alle Konten und schließt Eröffnungs- und Abschlusssalden sowie Soll- und Habensalden, zusammen mit ihrem Nettounterschied für das aktuelle Jahr und das vergangene Jahr ein. |
@@ -54,8 +54,8 @@ Die Zwischenbilanzfinanzberichte verwenden die folgenden Bausteine.
 
 Die Zeilendefinition, Zwischenbilanz – Standard, enthält eine einzelne Zeile, die alle Hauptkonten übernimmt. Daher kann jeder Benutzer den Bericht erstellen, ohne Änderungen vorzunehmen zu müssen. Wenn Sie den Bericht anzeigen, führen Sie einen Drilldown der Einzelzeile durch, um Details zu jedem Konto zu sehen. Sie können die Zeilendefinition ändern, sodass sie weitere Details umfasst. Um die Zeilendefinition "Zwischenbilanz - Standard" zu ändern, sodass sie Zeilen für alle Konten umfasst, führen Sie die folgenden Schritte aus.
 
-1.  Klicken Sie auf **Bearbeiten** und dann auf **Zeilen aus Dimensionen einfügen**. Mit dem Befehl **Zeilen aus Dimensionen einfügen** können Sie die Dimensionen auswählen, die Sie in Ihrer Zeile haben möchten. Für diese Zeilendefinition werden Sie **Hauptkonto** verwenden.
-2.  Stellen Sie sicher, dass das **Hauptkonto** alle kaufmännischen Und-Zeichen (&) enthält, und klicken Sie auf **OK**.
+1.  Gehen Sie auf **Bearbeiten** und dann auf **Zeilen aus Dimensionen einfügen**. Mit dem Befehl **Zeilen aus Dimensionen einfügen** können Sie die Dimensionen auswählen, die Sie in Ihrer Zeile haben möchten. Für diese Zeilendefinition verwenden Sie **Hauptkonto**.
+2.  Stellen Sie sicher, dass das **Hauptkonto** alle kaufmännischen Und-Zeichen (&) enthält, und gehen Sie auf **OK**.
 
 Die Zeilendefinition enthält nun alle Hauptkonten für Ihres juristische Standardperson.
 

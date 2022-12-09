@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1afc8aec18c61b1ce488472adf540e47540eaa17
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: d7c4e98481bc3607d3dce68a6b6cb0478524442f
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715523"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804154"
 ---
 # <a name="cash-discounts-for-overpayments"></a>Skonti für Überzahlungen
 
@@ -53,7 +53,9 @@ Der Debitor übermittelt eine Zahlung für 95,00 innerhalb des Skontoabzinsungsz
 | Zahlung       | -95,00 | 0,00    |
 | Skonto | -10,50 | 0,00    |
 
-Die folgenden Buchhaltungseinträge werden zur Zahlung und dem Ausgleich generiert. **Zahlung**
+Die folgenden Buchhaltungseinträge werden zur Zahlung und dem Ausgleich generiert.
+
+**Zahlung**
 
 | Konto             | Sollbetrag | Habenbetrag |
 |---------------------|--------------|---------------|
@@ -85,7 +87,9 @@ Der Debitor übermittelt eine Zahlung für 95,00 innerhalb des Skontoabzinsungsz
 | Zahlung       | -95,00 | -0,50   |
 | Skonto | -10,50 | 0,00    |
 
-Der Überzahlungsbetrag von 0,50 verbleibt als offener Saldo auf der Zahlung und kann mit einer anderen Rechnung ausgeglichen werden. Die folgenden Buchhaltungseinträge werden zur Zahlung und dem Ausgleich generiert. **Zahlung**
+Der Überzahlungsbetrag von 0,50 verbleibt als offener Saldo auf der Zahlung und kann mit einer anderen Rechnung ausgeglichen werden. Die folgenden Buchhaltungseinträge werden zur Zahlung und dem Ausgleich generiert. 
+
+**Zahlung**
 
 | Konto             | Sollbetrag | Habenbetrag |
 |---------------------|--------------|---------------|
@@ -118,7 +122,9 @@ Der Debitor übermittelt eine Zahlung für 95,00 innerhalb des Skontoabzinsungsd
 | Zahlung       | -95,00 | -0,00   |
 | Skonto | -10,00 | 0,00    |
 
-Der Skontobetrag wird von 10,50 auf 10,00 verringert. Die Zahlung und die Rechnung gelten als ausgeglichen. **Zahlung**
+Der Skontobetrag wird von 10,50 auf 10,00 verringert. Die Zahlung und die Rechnung gelten als ausgeglichen. 
+
+**Zahlung**
 
 | Konto             | Sollbetrag | Habenbetrag |
 |---------------------|--------------|---------------|

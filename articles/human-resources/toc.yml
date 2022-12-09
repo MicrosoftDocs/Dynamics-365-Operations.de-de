@@ -568,11 +568,13 @@
               href: hr-leave-and-absence-accrue.md
             - name: Urlaub aussetzen
               href: hr-leave-and-absence-suspend-leave.md
-            - name: Beurlaubungsanforderung
+            - name: Beurlaubungsantrag
               href: hr-employee-self-service-request-leave-of-absence.md
-            - name: Mitarbeiter-Sonderurlaub verwalten
+            - name: Unbefristete Beurlaubung erstellen
+              href: hr-create-open-leave-absence.md
+            - name: Mitarbeitersonderurlaub verwalten
               href: hr-leave-and-absence-manage-employee-leave.md
-            - name: Analyse für Urlaub und Abwesenheit anzeigen
+            - name: Analyse zu Urlaub und Abwesenheit anzeigen
               href: hr-leave-and-absence-analytics.md
             - name: Urlaubs- und Abwesenheitsanforderungen verwalten
               href: hr-employee-self-service-manage-requests.md

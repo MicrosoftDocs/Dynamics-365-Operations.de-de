@@ -2,32 +2,33 @@
 title: Store Commerce-App für mobile Plattformen
 description: Dieser Artikel beschreibt die ersten Schritte mit der Store Commerce-App von Microsoft Dynamics 365 Commerce für Android und iOS.
 author: stuharg
-ms.date: 10/07/2022
+ms.date: 11/30/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2018-10-29
-ms.openlocfilehash: 1f07a130629863ebd9d036378436cf360e90ac26
-ms.sourcegitcommit: 98231ff810f41f9fcdc6b536d87e453028aa6db8
+ms.openlocfilehash: dc952698a2a3301aff312e8310c58cbbb9cfe290
+ms.sourcegitcommit: 2804b05214c87f76457608b5db072582ff339852
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "9642339"
+ms.lasthandoff: 12/01/2022
+ms.locfileid: "9815782"
 ---
 # <a name="store-commerce-app-for-mobile-platforms"></a>Store Commerce-App für mobile Plattformen
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Dieser Artikel beschreibt die ersten Schritte mit den Store Commerce-Apps von Microsoft Dynamics 365 Commerce für Android und iOS.
 
-Die mobilen Dynamics 365 Commerce-Apps für Android und iOS machen den Prozess der Bereitstellung voll ausgestatteter mobiler Verkaufsstellengeräte (POS-Geräte) für Ihre Einzelhandelsumgebung unkompliziert und einfach. Die mobilen Apps von Store Commerce bieten alle Funktionen und Vorteile der [Store Commerce-App für Windows](store-commerce.md) auf Telefon- und Tablet-Formfaktoren. Die mobilen Store Commerce-Apps können direkt aus den Apple- und Google Play-App-Stores installiert werden und erfordern nicht, dass ein Entwickler ein neues Anwendungspaket erstellt, um sie bereitzustellen oder zu aktualisieren. 
+Die mobilen Dynamics 365 Commerce-Apps für Android und iOS machen den Prozess der Bereitstellung voll ausgestatteter mobiler Verkaufsstellengeräte (POS-Geräte) für Ihre Einzelhandelsumgebung unkompliziert und einfach. Die mobilen Apps von Store Commerce bieten fast alle Funktionen und Vorteile der [Store Commerce-App für Windows](store-commerce.md) und funktionieren gut auf zahlreichen iOS- und Android-Smartphones und -Tablets. Die mobilen Store Commerce-Apps können direkt aus den Apple- und Google Play-App-Stores installiert werden und können bereitgestellt oder aktualisiert werden, ohne dass ein Entwickler ein neues Anwendungspaket erstellen muss. 
 
 Die mobilen Store Commerce-Apps behalten die volle Funktionsparität mit aktuellen Retail-Hybrid-Apps bei. Darüber hinaus umfasst Store Commerce für iOS Unterstützung für eine dedizierte Hardwarestation, sodass iOS-Geräte mit vernetzten Zahlungsterminals, Belegdruckern und Kassenschubladen kommunizieren können, ohne dass eine gemeinsam genutzte Hardwarestation bereitgestellt werden muss. 
 
 > [!IMPORTANT]
-> Die Store Commerce-Apps für Windows, Android und iOS sind die nächste Generation von POS-Anwendungen für Dynamics 365 Commerce. Die aktuelle Modern POS (MPOS)-Anwendung und die [Retail-Hybrid-Apps](hybridapp.md) für Mobilgeräte werden im Oktober 2023 eingestellt. Microsoft empfiehlt, dass Sie Store Commerce oder Cloud POS (CPOS) für alle neuen POS-Bereitstellungen verwenden. Bestehende Kunden sollten eine Migration von der Retail-Hybrid-App zu Store Commerce planen. Weitere Informationen zum Zeitplan der Einstellung für MPOS und die Retail-Hybrid-Apps finden Sie unter [Modernisierung des Technologie-Stacks für Dynamics 365 Commerce im Geschäft](https://www.microsoft.com/download/details.aspx?id=103896). 
+> Die Store Commerce-Apps für Windows, Android und iOS sind die nächste Generation von POS-Anwendungen für Dynamics 365 Commerce. Die Store Commerce-Apps bieten zahlreiche Verbesserungen gegenüber ihren Vorgängern, behalten aber die volle Funktions- und Featureparität. MPOS und die Android und iOS Retail POS-Hybrid-Apps sind ab Ende 2023 veraltet und Microsoft empfiehlt, dass Sie für alle neuen POS-Bereitstellungen Store Commerce oder Cloud POS (CPOS) verwenden. Bestehende Kunden sollten eine Migration von den Retail-Hybrid-Apps zu Store Commerce planen. Weitere Informationen finden Sie unter [Modern POS zu Store Commerce migrieren](pos-extension/migrate-mpos-store-commerce.md). 
 
 ## <a name="app-architecture"></a>App-Architektur
 
@@ -51,7 +52,7 @@ Die mobilen Store Commerce-Apps erfordern Dynamics 365 Commerce, insbesondere Co
 Sie können die mobilen Apps von Store Commerce direkt aus dem Google Play Store oder dem Apple App Store installieren. 
 
 - [Store Commerce-App für Android](https://aka.ms/storecommerceandroid)
-- Store Commerce-App für iOS (bald verfügbar)
+- [Store Commerce-App für iOS](https://aka.ms/storecommerceios)
 
 Die Android-App-Pakete (.apk) und die Apple-App-Pakete (.ipa) können auch aus der Bibliothek für freigegebene Anlagen in Microsoft Dynamics Lifecycle Services heruntergeladen werden. 
 

@@ -2,7 +2,7 @@
 title: Berichtskomponente im Berichts-Designer organisieren
 description: Dieser Artikel erläutert, wie vorhandene Berichte, Bausteine und Objekte im Berichts-Designer organisiert werden.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a6abad01232d05e94321d0d568d2e801d92875ae
-ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
+ms.openlocfilehash: a94a88114072792243026e441e6c5a62ee80fc56
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "9135878"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802687"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Organisieren von Berichtskomponenten im Berichtsdesigner
 
@@ -28,16 +28,16 @@ ms.locfileid: "9135878"
 
 Nachdem Sie Bausteine und generierte Berichte entworfen haben, ist es hilfreich, diese Objekte zu organisieren, sodass sie vom Benutzer leichter gefunden werden können. Dieser Artikel erläutert, wie vorhandene Berichte, Bausteine und Objekte im Berichts-Designer organisiert werden.
 
-Sie können Ordner, Berichte, Bausteine und andere Objekte im Berichtsdesigner umbenennen, um Ihre Dateien besser zu organisieren. Je nach Art des Objekts, das Sie umbenennen, müssen Sie möglicherweise Zuordnungen für das Objekt aktualisieren.
+Sie können Ordner, Berichte, Bausteine und andere Objekte im Report Designer umbenennen, um Ihre Dateien besser zu organisieren. Je nach Art des Objekts, das Sie umbenennen, müssen Sie möglicherweise Zuordnungen für das Objekt aktualisieren.
 
-## <a name="rename-a-folder-or-building-block-in-report-designer"></a>Umbenennen eines Ordner oder Bausteins im Berichts-Designer
-Im Berichts-Designer können Sie Ordner, Berichtsdefinitionen, Zeilendefinitionen, Spaltendefinitionen und Berichtsbaumstruktur-Definitionen umbenennen.
+## <a name="rename-a-folder-or-building-block-in-report-designer"></a>Umbenennen eines Ordner oder Bausteins im Report Designer
+Im Report Designer können Sie Ordner, Berichtsdefinitionen, Zeilendefinitionen, Spaltendefinitionen und Berichtsbaumstruktur-Definitionen umbenennen.
 
-### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Umbenennen eines Ordners oder Bausteins im Berichts-Designer
+### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Umbenennen eines Ordner oder Bausteins im Report Designer
 
-1. Suchen Sie im Berichts-Designer im Navigationsbereich nach dem umzubenennenden Ordner oder Objekt.
+1. Suchen Sie im Report Designer im Navigationsbereich nach dem umzubenennenden Ordner oder Objekt.
 2. Klicken Sie mit der rechten Maustaste auf den Ordner oder das Objekt, und klicken Sie dann auf **Umbenennen**. Das Feld **Name** im Navigationsbereich ist nun verfügbar.
-3. Geben Sie einen neuen Namen ein, und drücken Sie die Eingabetaste.
+3. Geben Sie einen neuen Namen ein, und drücken Sie die **Eingabetaste**.
 4. Wenn der Baustein eine Zeilendefinition, eine Spaltendefinition oder eine Berichtstruktur-Definition ist, müssen Sie weitere Bausteine, die dem Artikel zugeordnet sind, aktualisieren. Klicken Sie mit der rechten Maustaste auf den Baustein, den Sie in Schritt 3 umbenannt haben, wählen Sie **Zuordnungen**, und wählen Sie dann den Artikel in der Liste, um ihn zu aktualisieren.
 5. Wiederholen Sie Schritt 4, bis alle zugeordneten Artikel aktualisiert wurden.
 
@@ -46,42 +46,42 @@ Sie können Berichtsdefinitionen gruppieren, um mehrere Berichte gleichzeitig zu
 
 ### <a name="create-a-report-group"></a>Erstellen einer Berichtsgruppe
 
-1. Klicken Sie im Navigationsbereich des Berichts-Designers auf **Berichtsgruppen**.
-2. Klicken Sie im Menü **Datei** auf **Neu** &gt; **Berichtsgruppe**, um eine neue Berichtsgruppe im Viewer-Fenster öffnen. Klicken Sie alternativ auf die Schaltfläche **Berichtsgruppe** ![Berichtsgruppe](media/report-group.gif "Berichtsgruppe") auf der Symbolleiste.
-3. Klicken Sie auf die Registerkarte **Gruppen-Bericht**. Um die Informationen zu den einzelnen Berichtsdefinitionen für die Generierung dieses Berichts zu überschreiben, aktivieren Sie das Kontrollkästchen **Überschreiben von Unternehmen**, Details und Datumseinstellungen von einzelnen Berichtsdefinitionen. Die Felder Unternehmensname, Detailebene, vorläufige Einstellungen und Datumsinformationen werden automatisch ausgefüllt, aber Sie können Aktualisierungen vornehmen.
+1. Klicken Sie im Navigationsbereich des Report Designers auf **Berichtsgruppen**.
+2. Klicken Sie im Menü **Datei** auf **Neu** &gt; **Berichtsgruppendefinition**, um eine neue Berichtsgruppe im Viewer-Fenster öffnen. Klicken Sie alternativ auf die Schaltfläche **Berichtsgruppe** ![Berichtsgruppe.](media/report-group.gif "Berichtsgruppe") auf der Symbolleiste.
+3. Klicken Sie auf die Registerkarte **Berichtsgruppe**. Um die Informationen zu den einzelnen Berichtsdefinitionen für die Generierung dieses Berichts zu überschreiben, aktivieren Sie das Kontrollkästchen **Überschreiben von Unternehmen, Details und Datumseinstellungen von einzelnen Berichtsdefinitionen**. Die Felder Unternehmensname, Detailebene, vorläufige Einstellungen und Datumsinformationen werden automatisch ausgefüllt, aber Sie können Aktualisierungen vornehmen.
 4. Um mehrere Berichte zu generieren, die die Berichtswährung anzeigen, aktivieren Sie das Kontrollkästchen **Alle Berichtswährungen einschließen**. Es sind mehrere Ansichten verfügbar, wenn Sie den Bericht anzeigen und auf die Schaltfläche **Währung** im Web-Viewer klicken.
 5. Klicken Sie im Feld **Berichte in Gruppe** auf **Hinzufügen**, um die Berichte zu wählen, die in die Berichtsgruppe einbezogen werden sollen. Um mehrere Berichte im Dialogfeld **Hinzufügen** auszuwählen, halten Sie STRG-Taste gedrückt, während Sie Berichte auswählen. Wenn Sie die Berichtsauswahl abgeschlossen haben, klicken Sie auf **OK**.
 6. Klicken Sie auf **Datei** &gt; **Speichern**, um die neue Berichtsgruppe zu speichern.
 
 ### <a name="modify-a-report-group"></a>Ändern einer Berichtsgruppe
 
-1. Klicken Sie im Navigationsbereich des Berichts-Designers auf **Berichtsgruppen**.
+1. Klicken Sie im Navigationsbereich des Report Designers auf **Berichtsgruppen**.
 2. Doppelklicken Sie auf die zu ändernde Berichtsgruppe.
 3. Nehmen Sie auf der Registerkarte **Berichtsgruppe** die gewünschten Änderungen vor.
 4. Klicken Sie im Menü **Datei** auf **Speichern**, um die geänderte Berichtsgruppe zu speichern. Alternativ klicken Sie auf die Schaltfläche **Speichern** ![Speichern](media/save.gif "Speichern") auf der Symbolleiste.
 
-> [Hinweis] Wenn Sie geplant haben, Berichte in Zeitabständen zu erstellen, können Sie diese Einstellungen überschreiben und einen Bericht sofort generieren.
+> [NOTE] Wenn Sie einen Zeitplan für die Berichtserstellung haben, können Sie diese Einstellungen überschreiben und einen Bericht sofort generieren.
 
 ### <a name="generate-a-report-group-report"></a>Generieren eines Berichtsgruppenberichts
 
-1. Klicken Sie im Navigationsbereich des Berichts-Designers auf **Berichtsgruppen**.
+1. Klicken Sie im Navigationsbereich des Report Designers auf **Berichtsgruppen**.
 2. Öffnen Sie die zu generierende Berichtsgruppe.
 3. Klicken Sie auf die Schaltfläche **Bericht generieren** ![Bericht generieren](media/generate-report.gif "Bericht generieren"), um Berichte zu generieren.
 
 ### <a name="delete-a-report-group"></a>Löschen einer Berichtsgruppe
 
-1. Klicken Sie im Navigationsbereich des Berichts-Designers auf **Berichtsgruppen**.
+1. Klicken Sie im Navigationsbereich des Report Designers auf **Berichtsgruppen**.
 2. Zum Löschen klicken Sie im Navigationsbereich mit der rechten Maustaste auf die Berichtsgruppe, und wählen Sie dann **Löschen** aus.
 3. Wenn eine Bestätigungsmeldung angezeigt wird, klicken Sie auf **Ja**.
 
-## <a name="report-group-tab-controls"></a>Berichtsgruppen-Registerkartensteuerelement
+## <a name="report-group-tab-controls"></a>Berichtsgruppen-Registerkartensteuerelemente
 In der folgenden Tabelle werden die Steuerelemente der Registerkarte **Berichtsgruppen** beschrieben.
 
 <table>
 <thead>
 <tr>
 <th>Steuerung</th>
-<th>Beschreibung</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -113,7 +113,7 @@ In der folgenden Tabelle werden die Steuerelemente der Registerkarte **Berichtsg
 </tr>
 <tr>
 <td>Alle Berichtswährungen einschließen</td>
-<td>Alle zusätzlichen Berichtswährungen, die in Ihrem Microsoft Dynamics ERP-System konfiguriert sind, werden hier aufgeführt. Wählen Sie dieses Kontrollkästchen aus, um zusätzliche Berichte in den angegebenen Währungen zu generieren. Sie können dann im Web-Viewer angezeigt werden, indem Sie auf die Schaltfläche <strong>Währung</strong> klicken und eine Währung auswählen.</td>
+<td>Alle zusätzlichen Berichtswährungen, die in Ihrem Microsoft Dynamics 365 Finance konfiguriert sind, werden hier aufgeführt. Wählen Sie dieses Kontrollkästchen aus, um zusätzliche Berichte in den angegebenen Währungen zu generieren. Sie können dann im Web-Viewer angezeigt werden, indem Sie auf die Schaltfläche <strong>Währung</strong> klicken und eine Währung auswählen.</td>
 </tr>
 <tr>
 <td>Nicht mit Berichtsdefinition gespeicherte Datumsinformationen</td>

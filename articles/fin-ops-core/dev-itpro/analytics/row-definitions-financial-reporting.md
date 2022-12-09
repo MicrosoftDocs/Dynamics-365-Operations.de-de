@@ -2,7 +2,7 @@
 title: Zeilendefinitionen im Finanzberichtdesigner
 description: Eine Zeilendefinition ist eine Berichtkomponente oder ein Baustein, die den Inhalt jeder Zeile eines Finanzberichts angibt.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 1611
 ms.custom: 68873
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
 ms.search.form: FinancialReports
-ms.openlocfilehash: 1481d95bc7a02294b499e07308df2d26a3ab0e3a
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 3325f76f991ea6d2a1b6131f299460e529d63d38
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9274692"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802444"
 ---
 # <a name="row-definitions-in-financial-report-designer"></a>Zeilendefinitionen im Finanzberichtdesigner
 
@@ -30,18 +30,18 @@ Eine Zeilendefinition ist eine Berichtkomponente oder ein Baustein, die den Inha
 
 ## <a name="create-a-row-definition"></a>Erstellen einer Zeilendefinition
 
-1. Klicken Sie im Berichts-Designer im Navigationsbereich auf **Zeilendefinitionen** .
-2. Wählen Sie im Menü **Datei** die Option **Neu**, und klicken Sie dann auf **Zeilendefinitionen**. Weitere Informationen zum Inhalt jeder Zelle finden Sie unter [Zeilendefinitionszellen ändern](modify-row-definition-cells-financial-reporting.md).
+1. Klicken Sie im Report Designer im Navigationsbereich auf **Zeilendefinitionen**.
+2. Wählen Sie im Menü **Datei** die Option **Neu**, und klicken Sie dann auf **Zeilendefinition**. Weitere Informationen zum Inhalt jeder Zelle finden Sie unter [Zeilendefinitionszellen ändern](modify-row-definition-cells-financial-reporting.md).
 
 ## <a name="open-a-row-definition"></a>Öffnen Sie eine Zeilendefinition.
-1. Klicken Sie im Berichts-Designer im Navigationsbereich auf **Zeilendefinitionen** .
+1. Klicken Sie im Report Designer im Navigationsbereich auf **Zeilendefinitionen**.
 2. Doppelklicken Sie auf den Namen der Zeilendefinition.
 3. Um alle Bausteine anzuzeigen, die der Zeilendefinition zugeordnet sind, klicken Sie mit der rechten Maustaste auf die Zeilendefinition, und wählen Sie dann **Zuordnungen** aus.
 
 ## <a name="contents-of-a-row-definition"></a>Inhalt einer Zeilendefinition
 Eine Zeilendefinition kann bis zu 20,000 Finanzdimensionszeilen und die folgenden Informationen enthalten:
 
-- Beschreibender Text, der dem Bericht Bedeutung verleiht, indem Abschnittsüberschriften, Positionen und Leerzeichen hinzugefügt werden, wie z. B. **Bargeld** oder **Gesamtumsatz**
+- Beschreibender Text, der dem Bericht Bedeutung verleiht, indem Abschnittsüberschriften, Positionen und Leerzeichen hinzugefügt werden, wie z. B. **Bargeld** oder **Gesamtumsatz**
 - Links zu Finanzdaten, die Dimensionswerte in Microsoft Dynamics 365 Finance enthalten können
 
     > [!NOTE]
@@ -71,8 +71,8 @@ Eine Dimension stellt eine Schnittstelle von Daten und Werten dar. Sie können D
 
 Um Dimensionen einer Zeilendefinition hinzuzufügen, führen Sie die folgenden Schritte aus.
 
-1. Klicken Sie im Berichts-Designer auf die **Zeilendefinitionen** und öffnen dann die Zeilendefinition, um sie zu ändern.
-2. Klicken Sie im Menü **Bearbeiten** auf **Zeilen aus Dimensionen einfügen**...
+1. Klicken Sie im Report Designer auf die **Zeilendefinitionen** und öffnen dann die Zeilendefinition, um sie zu ändern.
+2. Klicken Sie im Menü **Bearbeiten** auf **Zeilen aus Dimensionen einfügen**.
 3. Wählen Sie im Dialogfeld **Zeilen aus Dimensionen einfügen** in der Zeile **Dimensionen** die Zelle aus, damit die Dimension der Zeilendefinition übertragen werden kann, und klicken Sie anschließend auf **Alle &&&**.
 4. Um die Zeilendefinition auf einen bestimmten Bereich von Dimensionswerten einzuschränken, geben Sie den Dimensionsstartwert in der Zelle **Dimensionsbereichsanfang** ein, und geben Sie dann den Enddimensionswert in der Zelle **Dimensionssbereichsende** ein. Wenn Sie alle Werte für die ausgewählte Dimension einschließen möchten, lassen Sie diese Zellen leer.
 
@@ -94,7 +94,7 @@ Wenn Sie eine Bilanz haben, in der die Beträge gerundet werden, sind die Summen
 
 Um Rundung in einer Bilanz anzupassen, führen Sie die folgenden Schritte aus.
 
-1. Im Berichts-Designer klicken Sie auf die **Zeilendefinitionen** und öffnen dann die Zeilendefinition, um sie zu ändern.
+1. Klicken Sie im Report Designer auf die **Zeilendefinitionen** und öffnen dann die Zeilendefinition, um sie zu ändern.
 2. Klicken Sie im Menü **Bearbeiten** auf **Rundungsausgleich**.
 3. Im Dialogfeld **Rundungsregulierungen** können Sie die folgenden Werte eingeben:
 
@@ -124,8 +124,8 @@ Sie können Schriftarten für Ihren Bericht erstellen und ändern. Sie können d
 <td><strong>Erstellen eines Schriftschnitts</strong></td>
 <td>
 <ol>
-<li>Im Berichts-Designer im Menü <strong>Format</strong> klicken Sie auf <strong>Formate und Formatierung</strong>.</li>
-<li>Klicken Sie im Dialogfeld <strong>Formatvorlagen und Formatierung</strong> auf <strong>Neu</strong>, und geben Sie einen eindeutigen Namen für den neuen Stil ein.</li>
+<li>Im Report Designer im Menü <strong>Format</strong> klicken Sie auf <strong>Formate und Formatierung</strong>.</li>
+<li>Gehen Sie im Dialogfeld <strong>Formatvorlagen und Formatierung</strong> auf <strong>Neu</strong>, und geben Sie einen eindeutigen Namen für den neuen Stil ein.</li>
 <li>Wählen Sie die gewünschten Schriftoptionen aus, und klicken Sie dann auf <strong>OK</strong>.</li>
 </ol>
 </td>
@@ -134,8 +134,8 @@ Sie können Schriftarten für Ihren Bericht erstellen und ändern. Sie können d
 <td><strong>Ändern eines Schriftschnitts</strong></td>
 <td>
 <ol>
-<li>Im Berichts-Designer im Menü <strong>Format</strong> klicken Sie auf <strong>Formate und Formatierung</strong>.</li>
-<li>Wählen Sie im Dialogfeld <strong>Formatvorlagen und Formatierung</strong> eine zu ändernde Formatvorlage aus, und klicken Sie dann auf <strong>Ändern</strong>.</li>
+<li>Im Report Designer im Menü <strong>Format</strong> klicken Sie auf <strong>Formate und Formatierung</strong>.</li>
+<li>Wählen Sie im Dialogfeld <strong>Formatvorlagen und Formatierung</strong> eine zu ändernde Formatvorlage aus, und gehen Sie dann auf <strong>Ändern</strong>.</li>
 <li>Wählen Sie die gewünschten Schriftoptionen aus, und klicken Sie dann auf <strong>OK</strong>.</li>
 </ol>
 </td>
@@ -144,7 +144,7 @@ Sie können Schriftarten für Ihren Bericht erstellen und ändern. Sie können d
 <td><strong>Anwenden eines Schriftschnitts</strong></td>
 <td>
 <ol>
-<li>Wählen Sie im Berichts-Designer eine oder mehrere Zellen in einer Definition, einer Spaltendefinition oder in den Kopf- und Fußzeilen aus.</li>
+<li>Wählen Sie im Report Designer eine oder mehrere Zellen in einer Definition, einer Spaltendefinition oder in den Kopf- und Fußzeilen aus.</li>
 <li>Wählen Sie auf der Symbolleiste in der Liste <strong>Formatvorlage</strong> einen Schriftschnitt aus.</li>
 </ol>
 </td>
@@ -156,9 +156,9 @@ Sie können Schriftarten für Ihren Bericht erstellen und ändern. Sie können d
 
 Die Formatierung, die in der Zeilendefinition angegeben wird, überschreibt jede Formatierung, die in der Spaltendefinition und der Berichtsdefinition angegeben ist. Sie können das Textformat mit den Steuerelementen auf der Formatierungssymbolleiste ändern. Diese Steuerelemente sind Microsoft Windows-Standardsteuerelemente.
 
-1. Öffnen Sie im Berichts-Designer die zu bearbeitende Zeilendefinition.
+1. Öffnen Sie im Report Designer die zu bearbeitende Zeilendefinition.
 2. Wählen Sie die Zellen aus, die formatiert werden sollen. Um mehrere Zellen auszuwählen, halten Sie die STRG-Taste gedrückt, während Sie die Zelle auswählen.
-3. Klicken Sie auf die Symbolleistenschaltfläche des Formats, das übernommen werden soll. Um beispielsweise eine Zeile einzurücken, wählen Sie die Zeile aus und klicken Sie anschließend auf **Einrückung erhöhen** ![Einrückung erhöhen](media/indent.gif "Einzug vergrößern") auf der Symbolleiste.
+3. Klicken Sie auf die Symbolleistenschaltfläche des Formats, das übernommen werden soll. Um beispielsweise eine Zeile einzurücken, wählen Sie die Zeile aus und klicken Sie anschließend auf **Einrückung erhöhen** ![Einrückung erhöhen.](media/indent.gif "Einzug vergrößern") auf der Symbolleiste.
 
 ### <a name="adjust-columns-while-you-design-reports"></a>Anpassen der Spalten, während des Berichtentwurfs
 
@@ -166,19 +166,19 @@ Um die Ansicht der Spalten, an denen Sie in der Zeilendefinition arbeiten, zu ve
 
 ### <a name="change-the-width-of-a-column-in-the-view-pane"></a>Ändern der Breite einer Spalte im Ansichtsbereich
 
-1. Im Berichts-Designer öffnen Sie die zu ändernde Zeilendefinition.
+1. Öffnen Sie im Report Designer die zu bearbeitende Zeilendefinition.
 2. Wählen Sie im Menü **Format** die Option **Spaltenbreite**.
-3. Geben Sie im Dialogfeld **Spaltenbreite** einen Wert ein, und klicken Sie anschließend auf **OK**. Alternativ können Sie die rechte Begrenzung einer Spaltenüberschriftszelle ziehen, um die Spaltenbreite zu ändern.
+3. Geben Sie im Dialogfeld **Spaltenbreite** einen Wert ein, und gehen Sie anschließend auf **OK**. Alternativ können Sie die rechte Begrenzung einer Spaltenüberschriftszelle ziehen, um die Spaltenbreite zu ändern.
 
 ### <a name="hide-columns-in-the-view-pane"></a>Ausblenden von Spalten im Ansichtsbereich
 
-1. Im Berichts-Designer öffnen Sie die zu ändernde Zeilendefinition.
+1. Öffnen Sie im Report Designer die zu bearbeitende Zeilendefinition.
 2. Wählen Sie die Spalte oder Spalten aus, die Sie minimieren möchten.
 3. Klicken Sie mit der rechten Maustaste, und klicken Sie dann auf **Ausblenden**.
 
 ### <a name="show-all-hidden-columns-in-the-view-pane"></a>Anzeigen aller ausgeblendeten Spalten im Ansichtsbereich
 
-1. Im Berichts-Designer öffnen Sie die zu ändernde Zeilendefinition.
+1. Öffnen Sie im Report Designer die zu bearbeitende Zeilendefinition.
 2. Klicken Sie mit der rechten Maustaste auf die minimierte Spalte, die Sie anzeigen möchten, und klicken Sie anschließend auf **Einblenden**.
 
 

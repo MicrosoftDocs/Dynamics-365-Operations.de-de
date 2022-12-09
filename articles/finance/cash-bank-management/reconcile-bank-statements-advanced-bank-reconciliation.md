@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e1d7fc58ad71365275d5e82a277554bee99c43a
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 8e613bc97a41b62e81ebfbcb8c08e33a60603648
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151343"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803909"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Bankauszüge mithilfe der erweiterten Bankabstimmung abstimmen
 
@@ -37,7 +37,10 @@ Sie können einen Bankauszug hochladen, der Informationen für entweder ein einz
 -   Um eine einzelne Bankauszugsdatei für ein einzelnes Konto zu importieren, legen Sie die Option **Bankauszug für mehrere Bankkonten in allen juristischen Personen importieren** auf **Nein** fest, und wählen Sie das Bankkonto aus, dem der Auszug zugeordnet ist. Klicken Sie auf **Durchsuchen**, um die zugeordneten Bankauszugdatei auszuwählen. Klicken Sie dann auf **Hochladen**.
 -   Um eine einzelne Bankauszugsdatei für mehrere Konten zu importieren, legen Sie die Option **Bankauszug für mehrere Bankkonten in allen juristischen Personen importieren** auf **Ja** fest. Klicken Sie auf **Durchsuchen**, um die zugeordneten Bankauszugdatei auszuwählen. Klicken Sie dann auf **Hochladen**.
 
-Wenn Bankauszüge in der elektronischen Datei mithilfe der identifizierenden Felder keinem Bankkonto zugeordnet werden können oder mehreren Bankkonten zugeordnet sind, werden sie nicht importiert. Allerdings können andere Auszüge in der Datei noch importiert werden. Der Benutzer erhält dann eine Nachricht, die besagt, dass der Import von Bankauszügen für bestimmte Bankkonten nicht erfolgreich war. Beachten Sie, dass der Benutzer, der die Bankauszugsdatei importiert, Zugriff auf eine juristische Person haben muss, um Auszüge für die Bankkonten dieser juristischen Person zu importieren. 
+Wenn Bankauszüge in der elektronischen Datei mithilfe der identifizierenden Felder keinem Bankkonto zugeordnet werden können oder mehreren Bankkonten zugeordnet sind, werden sie nicht importiert. Allerdings können andere Auszüge in der Datei noch importiert werden. Der Benutzer erhält dann eine Nachricht, die besagt, dass der Import von Bankauszügen für bestimmte Bankkonten nicht erfolgreich war. 
+
+>[!Note] 
+>Der Benutzer, der die Bankauszugsdatei importiert, muss Zugriff auf eine juristische Person haben, um Auszüge für die Bankkonten dieser juristischen Person zu importieren. 
 
 Sie können mit einer ZIP-Datei mehrere Auszugsdateien in Finance in einem einzigen Prozess hochladen. Um mehrere Bankauszugsdateien für mehrere Konten zu importieren, fassen Sie alle Bankauszugsdateien in einer Zip-Datei zusammen. Im Dialogfeld **Bankauszüge importieren** legen Sie die Option **Bankauszug für mehrere Bankkonten in allen juristischen Personen importieren** auf **Ja** fest. Klicken Sie auf **Durchsuchen**, um die Zip-Datei mit den zugeordneten Bankauszugdateien auszuwählen. Klicken Sie dann auf **Hochladen**. Beim Importprozess wird die ZIP-Datei erkannt und jeder Auszug hochgeladen, der in ihr enthalten ist, unabhängig von der juristischen Person des Bankkontos.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f07748c2dc41f6411add1d54589652baa7fc3fbb
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 95a79b3c391c15099aee0a8d34419e1cf48fafbc
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779437"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803990"
 ---
 # <a name="import-letter-of-credit"></a>Importkreditbrief importieren
 
@@ -42,7 +42,10 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 10. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 11. Geben Sie ein Datum in das Feld **Abschlussstichtag** ein.
 12. Geben Sie im Feld **Lieferdatum** ein Datum ein.
-    * Hinweis: Das Feld **Bankdokumenttyp** sollte **Kreditbrief** sein.  
+
+>[!Note] 
+>Das Feld **Bankdokumenttyp** sollte **Kreditbrief** lauten.  
+
 13. Klicken Sie auf **OK**.
 14. Geben Sie im Feld **Artikelnummer** einen Wert ein, oder wählen Sie einen Wert aus.
 15. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
@@ -79,7 +82,7 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 43. Klicken Sie auf **Speichern**.
 44. Klicken Sie im Aktionsbereich auf **Einkauf**.
 45. Klicken Sie auf **Bestätigen**.
-    * Ergänzen Sie den Kreditbrief aufgrund der Preisänderung je Einheit.  
+    * Ergänzen Sie den Kreditbrief aufgrund der Änderung des Einzelpreises.  
 46. Klicken Sie im Aktivitätsbereich auf **Verwalten**.
 47. Klicken Sie **Kreditbrief/Importinkasso**.
     * Ergänzen Sie den Kreditbrief aufgrund der Preisänderung je Bestelleinheit.  
@@ -97,7 +100,7 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 1. Klicken Sie im Aktionsbereich auf **Empfangen**.
 2. Klicken Sie auf **Produktzugang**.
 3. Geben Sie im Feld **PurchParmTable_Num** einen Wert ein.
-    * Wählen Sie den Liefernummer aus, der mit Bezug auf den Kreditbrief erstellt wird.  
+    * Wählen Sie die **Liefernummer** aus, die mit Verweis auf den Kreditbrief erstellt wird.  
 4. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 5. Geben Sie im Feld **Produktzugangsdatum** ein Datum ein.
 6. Klicken Sie auf **OK**.
@@ -108,7 +111,7 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 1. Wechseln Sie zu **Bargeld- und Bankverwaltung > Kreditbrief > Importkreditbrief und Importinkasso**.
 2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 3. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-    * Überprüfen Sie den Importkreditbriefstatus.     
+    * Überprüfen Sie den **Importkreditbriefstatus**.     
 4. Schließen Sie die Seite.
 5. Schließen Sie die Seite.
 
@@ -152,7 +155,7 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 6. Geben Sie ein Datum in das Feld **Datum** ein.
 7. Geben Sie im Feld **Konto** die gewünschten Werte an.
 8. Klicken Sie auf **Transaktionen ausgleichen**.
-9. Erweitern Sie den Abschnitt "Summen".
+9. Erweitern Sie den Abschnitt **Summen**.
 10. Wählen Sie im Feld **Anzeigen** eine Option aus.
     * Überprüfen Sie, ob die Felder **Bankdokumentnummer** und **Liefernummer** aktualisiert wurden.  
 11. Wählen Sie das Kontrollkästchen **Markieren** aus.
@@ -167,12 +170,12 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 1. Wechseln Sie zu **Bargeld- und Bankverwaltung > Kreditbrief > Importkreditbrief und Importinkasso**.
 2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 3. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-    * Überprüfen Sie den Importkreditbriefstatus.   
+    * Überprüfen Sie den **Importkreditbriefstatus**.   
 4. Schließen Sie die Seite.
 
 ## <a name="verify-the-bank-facility-limit-and-utilization-report"></a>Überprüfen Sie das Bankfazilitätslimit und den Auslastungsbericht.
 1. Wechseln Sie zu **Bargeld und Bankverwaltung > Abfragen und Berichte > Kreditbrief oder Garantie > Bankfazilitäten und Auslastungsbericht**.
-2. Erweitern Sie den Abschnitt "Einzuschließende Datensätze".
+2. Erweitern Sie den Abschnitt **Einzuschließende Datensätze**.
 3. Klicken Sie auf **Filter**.
     * Definieren Sie das Feld **Kriterien** über das erforderliche Bankkonto.  
 4. Geben Sie im Feld **Kriterien** einen Wert ein, oder wählen Sie einen Wert aus.

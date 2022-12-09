@@ -2,7 +2,7 @@
 title: Debitoren-Buchungsprofile
 description: Dieser Artikel umfasst Debitorenbuchungsprofile, die zum Steuern von Debitorenbuchungen auf das Hauptbuch dienen.
 author: JodiChristiansen
-ms.date: 12/22/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0563040590eefab57706b183281c47a82e46076
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 04cf5b8656bccde974fb1adfdf830080e2f52436
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891694"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799571"
 ---
 # <a name="customer-posting-profiles"></a>Debitoren-Buchungsprofile
 
@@ -58,51 +58,51 @@ Wenn alle Debitorenbuchungen das gleiche Buchungsprofil besitzen sollen, richten
 </thead>
 <tbody>
 <tr>
-<td>Buchungsprofil</td>
+<td><strong>Buchungsprofil</strong></td>
 <td>Hier können Sie einen Code für das Buchungsprofil eingeben. Sie können beispielsweise zwei Buchungsprofile erstellen, um ein Konto für Debitorensaldos in der Landeswährung und ein weiteres Konto für Debitorensaldos in einer Fremdwährung zu erhalten. Das erste Konto können Sie dann mit "Landeswährung", das zweite mit "Fremdwährung" benennen.</td>
 </tr>
 <tr>
-<td>Description</td>
+<td><strong>Beschreibung</strong></td>
 <td>Geben Sie eine Beschreibung des Buchungsprofils ein. Es wird nur verwendet, um das Buchungsprofil besser zu identifizieren, wenn Sie es auf dieser Seite anzeigen.</td>
 </tr>
 <tr>
-<td>Kontocode</td>
+<td><strong>Kontocode</strong></td>
 <td>Geben Sie an, ob sich das Buchungsprofil für einen einzelnen Debitor, für eine Debitorengruppe oder für alle Debitoren gelten soll:
 <ul>
 <li><b>Tabelle</b> – Das Buchungsprofil gilt für einen einzelnen Debitor. Wählen Sie das Debitorenkonto im Feld <b>Konto-/Gruppennummer</b> aus.</li>
 <li><b>Gruppe</b> – Das Buchungsprofil gilt für eine Debitorengruppe. Wählen Sie das Debitorengruppe im Feld <b>Konto-/Gruppennummer</b> aus.</li>
-<li><b>Alle</b> – Das Buchungsprofil gilt für alle Debitoren. Lassen Sie das<b>Konto-/Gruppennummer</b> Feld leer.</li>
+<li><b>Alle</b> – Das Buchungsprofil gilt für alle Debitoren. Lassen Sie das <b>Konto-/Gruppennummer</b> Feld leer.</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td>Konto-/Gruppennummer</td>
+<td><strong>Konto-/Gruppennummer</strong></td>
 <td>Wurde im Feld <b>Kontocode</b> die Option <b>Tabelle</b> ausgewählt, wählen Sie die Kontonummer des Debitors aus, der dem Buchungsprofil zugeordnet ist. Wurde <b>Grupe</b> ausgewählt, wählen Sie die Debitorengruppe aus. Wenn <b>Alle</b> ausgewählt wurden, lassen Sie das Feld leer.</td>
 </tr>
 <tr>
-<td>Sammelkonto</td>
+<td><strong>Sammelkonto</strong></td>
 <td>Wählen Sie das Hauptkonto aus, das als Debitorenhandelskonto für die Debitoren verwendet werden soll, die dem Buchungsprofil zugeordnet sind. Dieses Konto ist das Konto für die <b>Debitorensaldo</b> Buchungsart.</td>
 </tr>
 <tr>
-<td>Liquiditätskonto für Zahlungen</td>
-<td>Wählen Sie das Liquiditätssachkonto aus, das für Cashflowplanungen verwendet wird. Dieses Feld wird nur angezeigt, wenn Cashflow-Planungen aktiviert werden.</td>
+<td><strong>Liquiditätskonto für Zahlungen</strong></td>
+<td>Wählen Sie das <strong>Liquiditätssachkonto</strong> aus, das für Cashflow-Planungen verwendet wird. Dieses Feld wird nur angezeigt, wenn Cashflow-Planungen aktiviert werden.</td>
 </tr>
 <tr>
-<td>Mehrwertsteuervorauszahlungen</td>
+<td><strong>Mehrwertsteuervorauszahlungen</strong></td>
 <td><p>Wählen Sie das Konto für die Mehrwertsteuer auf eingegangene Vorauszahlungen aus.</p>
 <p><strong>Hinweis</strong>: Geben Sie auf der Seite <b>Debitorenkontenparameter</b> das Buchungsprofil an, das verwendet werden soll, wenn eine Zahlung als Vorauszahlung markiert ist.</p>
 </td>
 </tr>
 <tr>
-<td>Konto für Diskontverbindlichkeiten</td>
+<td><strong>Konto für Diskontverbindlichkeiten</strong></td>
 <td>Wählen Sie das Sachkonto für Diskontverbindlichkeiten aus.</td>
 </tr>
 <tr>
-<td>Mahnschreibensequenz</td>
+<td><strong>Mahnschreibensequenz</strong></td>
 <td>Wählen Sie die Kennung der Mahnschreibensequenz aus, die für Debitoren mit dem Buchungsprofil verwendet werden soll.</td>
 </tr>
 <tr>
-<td>Zinscode</td>
+<td><strong>Zinscode</strong></td>
 <td>Wählen Sie den Zinscode aus, der bei der Zinsberechnung für Debitoren mit dem Buchungsprofil verwendet werden soll.</td>
 </tr>
 </tbody>
@@ -110,7 +110,7 @@ Wenn alle Debitorenbuchungen das gleiche Buchungsprofil besitzen sollen, richten
 
 ## <a name="posting-examples"></a>Buchungsbeispiele
 
-Die folgende Tabelle zeigt Beispiele für die Standardbuchungsarten mit beispielhaften Hauptkonten und Beschreibungen. Die Spalte **Soll/Haben** gibt an, ob die Transaktion in der Regel Soll oder Haben oder in einigen Fällen beides gebucht werden kann. Die Spalte **Clearingkonto** gibt an, dass es sich bei der Buchungsart um ein Verrechnungskonto handelt. Dies bedeutet, dass der auf diesem Konto gebuchte Betrag automatisch storniert wird, wenn eine spätere Transaktion gebucht wird. 
+Die folgende Tabelle zeigt Beispiele für die Standardbuchungsarten mit beispielhaften Hauptkonten und Beschreibungen. Die Spalte **Soll/Haben** gibt an, ob die Transaktion in der Regel Soll oder Haben oder in einigen Fällen beides buchen kann. Die Spalte **Clearingkonto** gibt an, dass es sich bei der Buchungsart um ein Verrechnungskonto handelt. Dies bedeutet, dass der auf diesem Konto gebuchte Betrag automatisch storniert wird, wenn eine spätere Transaktion gebucht wird. 
 
 | Buchungstyp | Hauptkontobeispiel | Hauptkonto-Namenbeispiel | Kontenart | Soll/Haben | Clearingkonto | Description |
 |--------------|----------------------|---------------------------|--------------|--------------|------------------|-------------|

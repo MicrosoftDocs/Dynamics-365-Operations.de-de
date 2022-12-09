@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62f828b93075c134778da280243c0875edf99300
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: 1d123a341a471dd37fcc33e0025ce5e98235a27f
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715828"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804262"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Vorauszahlungsrechnungen im Vergleich zu Vorauszahlungen
 
@@ -65,12 +65,13 @@ Auf der Registerkarte **Bestellung** der Seite **Lagerbuchung** (**Lagerverwaltu
 
 Das Gegenkonto für die Verbindlichkeiten aus Lieferungen und Leistungen ist im Profil **Kreditorenbuchung** definiert. Klicken Sie auf **Kreditorenkonten \>Einrichtung \> Kreditorenkontenparameter \>Registerkarte „Sachkonto und Mehrwertsteuer“ \> Buchungsprofil mit Vorauszahlung für Kreditorenrechnung**, um das Standardbuchungsprofil zu definieren.
 
-Die **Vorauszahlungsantragsrichtlinie** gibt an, ob das System automatisch abgerechnete Vorauszahlungsrechnungen auf die manuell erstellte endgültige Rechnung anwendet. Rechnungen, die mit einer Datenentität erstellt wurden, beziehen sich nicht auf die **Vorauszahlungsantragsrichtlinie**. Sie müssen abgerechnete Vorauszahlungsrechnungen manuell auf Rechnungen anwenden, die mit einer Datenentität erstellt wurden. Gehen Sie zu **Kreditorenkonten \>Einrichtung \> Kreditorenkontenparameter \> Registerkarte „Sachkonto und Mehrwertsteuer“ \> Vorauszahlungsantragsrichtlinie**, um die Richtlinie zu definieren. Wenn das Feld **Vorauszahlungsantragsrichtlinie** auf **Automatisch** gesetzt ist, wird die Vorauszahlungsrechnung automatisch für die Begleichung mit der Schlussrechnung markiert. Wenn das Feld auf **Benachrichtigung** eingestellt ist, wird ein visueller Hinweis angezeigt, dass eine Vorauszahlungsrechnung für die Anwendung verfügbar ist, wenn die endgültige Rechnung erstellt wird.
+Die **Vorauszahlungsantragsrichtlinie** gibt an, ob abgerechnete Vorauszahlungsrechnungen automatisch auf die manuell erstellte endgültige Rechnung anwendet werden. Rechnungen, die mit einer Datenentität erstellt wurden, beziehen sich nicht auf die **Vorauszahlungsantragsrichtlinie**. Sie müssen abgerechnete Vorauszahlungsrechnungen manuell auf Rechnungen anwenden, die mit einer Datenentität erstellt wurden. Gehen Sie zu **Kreditorenkonten \>Einrichtung \> Kreditorenkontenparameter \> Registerkarte „Sachkonto und Mehrwertsteuer“ \> Vorauszahlungsantragsrichtlinie**, um die Richtlinie zu definieren. Wenn das Feld **Vorauszahlungsantragsrichtlinie** auf **Automatisch** gesetzt ist, wird die Vorauszahlungsrechnung automatisch für die Begleichung mit der Schlussrechnung markiert. Wenn das Feld auf **Benachrichtigung** eingestellt ist, wird ein visueller Hinweis angezeigt, dass eine Vorauszahlungsrechnung für die Anwendung verfügbar ist, wenn die endgültige Rechnung erstellt wird.
 
 ## <a name="create-a-purchase-order-that-contains-prepayment-invoice-information"></a>Erstellen einer Bestellung, die Informationen zur Vorauszahlungsrechnung enthält
 Wenn ein Lieferant Ihnen mitteilt, dass für Waren und Dienstleistungen, die in einer Bestellung enthalten sind, eine Vorauszahlung erforderlich ist, müssen Sie den Vorauszahlungswert für die zugehörige Bestellung definieren. Gehen Sie zu **Kreditorenkonten \> Allgemein \> Bestellungen \> Alle Bestellungen** und finden Sie die Bestellung des Lieferanten. Wählen Sie im Aktivitätsbereich die Registerkarte **Kauf** und dann **Vorauszahlung** aus. Geben Sie Informationen zur Vorauszahlung ein, einschließlich einer Beschreibung, der Höhe der Vorauszahlung, ob es sich um einen festen Betrag oder einen Prozentsatz handelt, sowie einer Kennung für die Vorauszahlungskategorie. 
 
-Beachten Sie, dass mehrere Vorauszahlungsdefinitionen in einer Bestellung nicht zulässig sind. Wenn Sie mehrere Vorauszahlungen für eine Bestellung zulassen müssen, buchen Sie die Zahlungen über die Zahlungserfassung anstelle einer Vorauszahlungsrechnung.
+> [!Note] 
+> In einer Bestellung sind keine mehrere Vorauszahlungsdefinitionen zulässig. Wenn Sie mehrere Vorauszahlungen für eine Bestellung zulassen müssen, buchen Sie die Zahlungen über die Zahlungserfassung anstelle einer Vorauszahlungsrechnung.
 
 Die Vorauszahlung kann aus der Bestellung entfernt werden, es sei denn, Sie haben bereits eine Zahlung mit der gebuchten Vorauszahlungsrechnung verrechnet oder die Standardrechnung gebucht. Wählen Sie **Kreditorenkonten \> Allgemein \> Bestellungen \> Alle Bestellungen** aus und finden Sie die Bestellung des Lieferanten, um eine Vorauszahlungsinformation aus der Bestellung zu entfernen. Wählen Sie im Aktivitätsbereich die Registerkarte **Kauf** und dann **Vorauszahlung entfernen** aus.
 

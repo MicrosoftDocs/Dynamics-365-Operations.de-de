@@ -2,7 +2,7 @@
 title: Kreditoren-Buchungsprofile
 description: Händlerbuchungsprofile steuern die Buchung von Händlertransaktionen im Hauptbuch.
 author: abruer
-ms.date: 06/12/2019
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 24691
 ms.assetid: 18def866-7655-4f0b-b299-eec83098d23a
 ms.search.form: VendPosting
-ms.openlocfilehash: 922612e536164c7985f0be107f67ad8bbaef7898
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 09f27ef510f38c10fc265b682a492ba5872b6d3e
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9272977"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799598"
 ---
 # <a name="vendor-posting-profiles"></a>Kreditoren-Buchungsprofile
 
@@ -69,7 +69,7 @@ Wenn alle Kreditorenbuchungen das gleiche Buchungsprofil besitzen sollen, richte
 <ul>
 <li><strong>Tabelle</strong> – Das Buchungsprofil gilt für einen einzelnen Kreditor. Wählen Sie das Kreditorenkonto im Feld <strong>Konto-/Gruppennummer</strong> aus.</li>
 <li><strong>Gruppe</strong> – Das Buchungsprofil gilt für eine Kreditorengruppe. Wählen Sie das Kreditorengruppe im Feld <strong>Konto-/Gruppennummer</strong> aus.</li>
-<li><strong>Alle</strong> – Das Buchungsprofil gilt für alle Kreditoren. Lassen Sie das<strong>Konto-/Gruppennummer</strong> Feld leer.</li>
+<li><strong>Alle</strong> – Das Buchungsprofil gilt für alle Kreditoren. Lassen Sie das <strong>Konto-/Gruppennummer</strong> Feld leer.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -84,7 +84,7 @@ Wenn alle Kreditorenbuchungen das gleiche Buchungsprofil besitzen sollen, richte
 </tr>
 <tr class="even">
 <td><strong>Konto ausgleichen</strong></td>
-<td>Wählen Sie das Liquiditätssachkonto aus, das für Cashflowplanungen verwendet wird. Dieses Feld ist nur verfügbar wenn Cashflowplanungen aktiviert sind.</td>
+<td>Wählen Sie das Liquiditätssachkonto aus, das für Cashflowplanungen verwendet wird. Dieses Feld ist nur verfügbar wenn Cashflow-Planungen aktiviert sind.</td>
 </tr>
 <tr class="odd">
 <td><strong>Mehrwertsteuervorauszahlungen</strong></td>
@@ -94,7 +94,7 @@ Wenn alle Kreditorenbuchungen das gleiche Buchungsprofil besitzen sollen, richte
 </tr>
 <tr class="even">
 <td><strong>Wareneingang</strong></td>
-<td>Wählen Sie das Sachkonto aus, auf das Informationen zu nicht genehmigten Kreditorenrechnungen gebucht werden. Die Informationen werden in der Rechnungsbucherfassung erfasst. Ein Benutzer gibt z. B. grundlegende Informationen zu Kreditorenrechnungen ein, wenn diese im Rechnungsbuch eingehen. Beim Buchen des Rechnungsbuchs erfolgen die Buchungen auf dem Konto, das hier und im Feld <strong>Gegenkonto</strong> eingegeben wird. Wenn die Rechnungen genehmigt werden, wird die Verbindlichkeit aus dem Eingangskonto in das Sammelkonto des Kreditors übertragen.</td>
+<td>Wählen Sie das Sachkonto aus, auf das Informationen zu nicht genehmigten Kreditorenrechnungen gebucht werden. Die Informationen werden in der <strong>Rechnungsbucherfassung</strong> erfasst. Ein Benutzer gibt z. B. grundlegende Informationen zu Kreditorenrechnungen ein, wenn diese im Rechnungsbuch eingehen. Beim Buchen des Rechnungsbuchs erfolgen die Buchungen auf dem Konto, das hier und im Feld <strong>Gegenkonto</strong> eingegeben wird. Wenn die Rechnungen genehmigt werden, wird die Verbindlichkeit aus dem Eingangskonto in das Sammelkonto des Kreditors übertragen.</td>
 </tr>
 <tr class="odd">
 <td><strong>Gegenkonto</strong></td>
@@ -110,10 +110,10 @@ Hier können Sie für Buchungen mit dem ausgewählten Buchungsprofil angeben, ob
 
 Geben Sie die folgenden Werte an, um das Buchungsprofil einzurichten
 
-| Feld          | Beschreibung                                                                                                                                                                                                    |
-|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Feld          | Beschreibung             |
+|----------------|--------------------------------------------------------------------------|
 | **Ausgleich** | Aktivieren Sie diese Option, um den automatischen Ausgleich von Buchungen mit diesem Buchungsprofil zu aktivieren. Ist diese Option deaktiviert, müssen die Buchungen manuell mithilfe der Seite **Offene Buchungen ausgleichen** ausgeglichen werden. |
-| **Stornieren**     | Aktivieren Sie diese Option, wenn Sie in der Lage sein möchten, Buchungen mit diesem Buchungsprofil zu stornieren.                                                                                                               |
+| **Stornieren**     | Aktivieren Sie diese Option, wenn Sie in der Lage sein möchten, Buchungen mit diesem Buchungsprofil zu stornieren.                              |
 | **Schließen**      | Wählen Sie ein Buchungsprofil aus, das geändert werden soll, wenn Buchungen mit diesem Buchungsprofil abgeschlossen werden. Eine Buchung gilt als abgeschlossen, wenn sie vollständig ausgeglichen wurde.                                       |
 
 

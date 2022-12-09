@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 58e509a819e5cda650fddab8dd0c4d55d5148db1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d89d3e77d096f5908207ac53f4e9022f686ac5f3
+ms.sourcegitcommit: 5f8f042f3f7c3aee1a7303652ea66e40d34216e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872267"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9806374"
 ---
 # <a name="recruiting-request"></a>Personalbeschaffungsanforderung
 
@@ -68,7 +68,7 @@ Beschreibt einen Personalbeschaffungsantrag für eine Stelle.
     "_mshr_fk_jobtype_id_value": "Guid",
     "_mshr_fk_compensationlevel_id_value": "Guid",
     "mshr_hcmrecruitingrequestentityid": "Guid",
-    "_mshr_fk_recruitingrequestlocation_id_value": “Guid”
+    "_mshr_fk_recruitingrequestlocation_id_value": "Guid"
 }
 ```
 
@@ -87,7 +87,7 @@ Beschreibt einen Personalbeschaffungsantrag für eine Stelle.
 | **Status**<br>mshr_status<br>*RecruitingRequestStatus* Optionssatz | Lesen/Schreiben<br>Erforderlich<br> | Gibt den Status des Personalbeschaffungsantrags an. |
 | **Beschreibung**<br>mshr_description<br>*Zeichenfolge* | Lesen/Schreiben<br>Erforderlich | Beschreibt die Anfrage. |
 | **Personalbeschaffungsantragsstandort-Kennung**<br>mshr_recruitingrequestlocationid<br>*Zeichenfolge* | Lesen/Schreiben<br>Optional | Der vom Benutzer lesbare eindeutige Bezeichner des mit dieser Anforderung verknüpften Stellenstandorts. |
-| **Wert der Personalbeschaffungsstandort-Kennung**<br>_mshr_fk_recruitinglocation_id_value<br>*GUID* | Schreibgeschützt<br>Optional<br>Fremdschlüssel: mshr_hcmrecruitingrequestlocationentityid der Entität mshr_hcmrecruitingrequestlocationentity | Vom System generierter GUID-Wert zur Identifizierung des Personalbeschaffungsstandorts, der für diesen Antrag ausgewählt wurde. |
+| **Wert der Personalbeschaffungsstandort-Kennung**<br>_mshr_fk_recruitingrequestlocation_id_value<br>*GUID* | Schreibgeschützt<br>Optional<br>Fremdschlüssel: mshr_hcmrecruitingrequestlocationentityid der Entität mshr_hcmrecruitingrequestlocationentity | Vom System generierter GUID-Wert zur Identifizierung des Personalbeschaffungsstandorts, der für diesen Antrag ausgewählt wurde. |
 | **Kommentare**<br>mshr_comments<br>*Zeichenfolge* | Lesen/Schreiben<br>Optional | Kommentare zum Antrag zur Verwendung durch Personalchefs und Personalvermittler. |
 | **Einzelvorgangskennung**<br>mshr_jobid<br>*Zeichenfolge* | Einmal schreiben<br>Erforderlich |   Der vom Benutzer lesbare eindeutige Bezeichner der Stelle, die für allen mit dieser Anforderung verknüpften Positionen freigegeben wird. |
 | **Stellenkennungswert**<br>_mshr_fk_job_id_value<br>*GUID* | Schreibgeschützt<br>Erforderlich<br>Fremdschlüssel: mshr_hcmjobentityid der Entität mshr_hcmjobentity | Der vom System generierte eindeutige Bezeichner der Stelle, die für allen mit diesem Personalbeschaffungsantrag verknüpften Positionen freigegeben wird. |

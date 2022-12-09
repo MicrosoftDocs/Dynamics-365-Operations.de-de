@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 30d3cc0bbd97cd006f12d06cda64ee63cb42252e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b0c454745bc02a101514d44a20bd47dad0c548d5
+ms.sourcegitcommit: 2804b05214c87f76457608b5db072582ff339852
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902515"
+ms.lasthandoff: 12/01/2022
+ms.locfileid: "9815682"
 ---
 # <a name="awareness-between-ledger-settlement-and-year-end-close"></a>Unterschied zwischen Sachkontoausgleich und Jahresendabschluss
 
@@ -48,7 +48,7 @@ Um die neuen Erweiterungen zu unterstützen, wurden Änderungen an der Sachkonto
 
 Aufgrund der Änderungen in der Funktionalität und im Datenmodell ist es wichtig, dass Sie die folgenden Punkte berücksichtigen, bevor Sie die Funktion aktivieren:
 
-- Da nur abgerechnete Buchungen in die Eröffnungsbilanz übernommen werden, müssen Sie Buchungen aus dem aktuellen Geschäftsjahr abrechnen, die mit Buchungen des vorherigen Geschäftsjahres abgerechnet wurden. Die Buchungen müssen mit Buchungen innerhalb des laufenden Geschäftsjahres verrechnet werden. Dies kann durch eine Korrekturbuchung im laufenden Geschäftsjahr erfolgen. Die Anpassung macht die zusammengefassten Anfangssalden rückgängig und verrechnet sie mit der detaillierten Buchung, die zur Begleichung der Hauptbucheinträge im laufenden Jahr erforderlich sind. 
+- Da nur abgerechnete Buchungen in den Anfangssaldo übernommen werden, müssen Sie Buchungen aus dem aktuellen Geschäftsjahr abrechnen, die mit Buchungen des vorherigen Geschäftsjahres abgerechnet wurden. Die Buchungen müssen mit Buchungen innerhalb des laufenden Geschäftsjahres verrechnet werden. Dies kann durch eine Korrekturbuchung im laufenden Geschäftsjahr erfolgen. Die Anpassung macht die zusammengefassten Anfangssalden rückgängig und verrechnet sie mit der detaillierten Buchung, die zur Begleichung der Hauptbucheinträge im laufenden Jahr erforderlich sind. 
 
   > [!IMPORTANT]
   > Geschieht dies nicht, erhalten Sie den Fehler **Nicht mehr ausgeglichen**, wenn Sie den Jahresabschluss für das aktuelle Geschäftsjahr ausführen. Wenn es nicht möglich ist, die Sachkontobuchungen mit demselben Geschäftsjahr zu stornieren und neu abzurechnen, aktivieren Sie diese Funktion erst nach Abschluss des Jahresabschlusses. Aktivieren Sie die Funktion sofort nach Abschluss des Jahresabschlusses und bevor neue Sachkontobuchungen im nächsten Geschäftsjahr abgerechnet werden. 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 4298d7114e0237072c242e83e51951a922e34e5a
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: e8f80aa4cc0a7248506e0725881b8f575a0c7ff4
+ms.sourcegitcommit: 29d9a7573bdac004726da88a9d7b2cc9c383e9ca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9780511"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9788539"
 ---
 # <a name="create-a-free-text-invoice"></a>Freitextrechnung erstellen
 
@@ -69,6 +69,8 @@ In diesem Artikel wird erläutert, wie Freitextrechnungen erstellt werden. Für 
     * Sie können die Zeit des Rechnungsdruckes zu ändern. Wählen sie **Aktuell** um jede Rechnung zu drucken, wenn diese aktualisiert wird Wählen Sie **Später**, um alle Rechnungen zu drucken, die aktualisiert wurden.
     * Um zu ändern wie die Kreditlimite geprüft wird, bevor die Rechnung gebucht wird, ändern Sie den Wert im Feld **Kreditlimit-Typ**.
     * Sie können auswählen, dass die Freitext-Rechnungsbuchung gestoppt wird, wenn ein Fehler auf der **Aktualisierungen**-Registerkarte auf der **Debitorenparameter**-Seite (**Debitoren > Einrichtung > Debitorenparameter**) auftritt. Wähen Sie **Ja** für den Parameter **Buchung von Freitext-Rechnungen beim ersten Fehler stoppen**, um die Buchung von Freitextrechnungen zu stoppen, wenn ein Fehler auftritt. Wenn in einem Batch gebucht wird, stoppt ein Fehler den Buchungsprozess und der Batchstatus wird auf **Fehler** gesetzt. Wenn diese Option nicht ausgewählt ist, überspringt der Buchungsprozess eine Rechnung mit einem Buchungsfehler und bucht weitere Rechnungen weiter. Wenn Sie in einem Batch buchen, verhindert ein Buchungsfehler nicht, dass andere Rechnungen gebucht werden. Der Batchstatus lautet **Beendet**. Ein detaillierter Buchungsprozessbericht steht zur Überprüfung im Batchauftragsverlauf zur Verfügung.
+    * In Microsoft Dynamics 365 Finance 10.0.30 verbessert das Feature **Verbesserung für Freitextrechnungsbuchung bei Summenberechnung** die Buchungsleistung durch eine effizientere Ausführung. Wenn dieses Feature aktiviert ist, speichert die Buchung die berechneten Summen, anstatt die Summen während des Buchungsprozesses mehrmals neu zu berechnen. 
+    * In Microsoft Dynamics 365 Finance 10.0.31 verbessert das Feature **Verbesserung des Stapelbuchungsprozesses für Freitextrechnung** die Buchungsleistung durch eine effizientere Ausführung. Wenn diese Funktion aktiviert ist, verwendet die Buchung ein Muster, das die Workload der Stapelbuchung über eine feste Anzahl von Threads selbst steuert, anstatt eine feste Anzahl von Dokumenten über eine unbegrenzte Anzahl von Threads zuzuweisen.
     * Aktivieren Sie diese Option auf **Ja**, um die Rechnung zu drucken.
     * Aktivieren Sie diese Option auf **Ja**, um die Rechnung zu buchen. Sie können die Rechnung ohne Buchen drucken.
 

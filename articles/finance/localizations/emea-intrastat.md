@@ -1,8 +1,8 @@
 ---
 title: Intrastat – Übersicht
 description: Dieser Artikel enthält Informationen zur Intrastat-Berichterstattung für den Warenhandel und in einigen Fällen Dienstleistungen unter Ländern/Regionen der Europäischen Union (EU).
-author: EvgenyPopovMBS
-ms.date: 01/13/2021
+author: mrolecki
+ms.date: 11/30/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,15 +13,15 @@ ms.custom:
 - "28581"
 - intro-internal
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-ms.author: epopov
+ms.author: mrolecki
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9360f97506ac7bdf67bb2f1b296f01b6ed49b39f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 762de8a098c61bc0d717c038d6ca0ff6d649bff3
+ms.sourcegitcommit: 2804b05214c87f76457608b5db072582ff339852
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894779"
+ms.lasthandoff: 12/01/2022
+ms.locfileid: "9815710"
 ---
 # <a name="intrastat-overview"></a>Intrastat – Übersicht
 
@@ -387,6 +387,28 @@ In diesem Beispiel muss ein Unternehmen in Deutschland 10 Wareneinheiten von ein
 5. Überprüfen Sie die Registerkarte **Allgemein** für die Bestellung. Beachten Sie, dass die Felder **Anzahl zusätzlicher Einheiten** und **Zusätzliche Einheit** im **Einheit**-Abschnitt automatisch festgelegt werden.
 
    ![Bestellungsdetails auf der Registerkarte „Allgemein“ der Intrastat-Seite](media/intrastat_overview_6.png)
+   
+## <a name="list-of-countryregion-specific-articles"></a>Liste länder-/regionsspezifischer Artikel
+Die folgende Tabelle listet die verfügbaren länder-/regionsspezifischen Intrastat-Artikel auf.
+
+| Land          | Verknüpfen      |
+|------------------|-----------|
+| Österreich          |[Intrastat (Österreich)](emea-aut-intrastat.md)| 
+| Belgien          |[Intrastat (Belgien)](emea-bel-intrastat.md)|
+| Tschechische Republik   |[Intrastat (Tschechische Republik)](emea-cze-intrastat.md)|
+| Dänemark          |[Intrastat (Dänemark)](emea-dnk-intrastat.md)|
+| Estland          |[Intrastat (Estland)](emea-est-intrastat.md)|
+| Finnland          |[Intrastat (Finnland)](emea-fin-intrastat.md)|
+| Frankreich           |[Französisch Intrastat](emea-fra-intrastat.md)|
+| Deutschland          |[Deutsche Intrastat](emea-deu-intrastat.md)|
+| Ungarn          |[Intrastat (Ungarn)](emea-hun-intrastat.md)|
+| Italien            |[Italienische Intrastat](emea-ita-intrastat.md)|
+| Lettland           |[Intrastat (Lettland)](emea-lva-intrastat.md)|
+| Litauen        |[Intrastat (Litauen)](emea-ltu-intrastat.md)|
+| Niederlande      |[Intrastat (Niederlande)](emea-nl-intrastat.md)|
+| Polen           |[Intrastat (Polen)](emea-pol-intrastat.md)|
+| Spanien            |[Intrastat (Spanien)](emea-esp-intrastat.md)|
+| Schweden           |[Intrastat (Schweden)](emea-swe-intrastat.md)|
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

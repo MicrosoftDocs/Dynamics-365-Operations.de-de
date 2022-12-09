@@ -2,7 +2,7 @@
 title: Finanzberichte anzeigen
 description: Dieser Artikel beschreibt, wie Finanzberichte in Microsoft Dynamics 365 Finance angezeigt und durchsucht werden. Er enthält Informationen zu den verschiedenen Optionen, die Sie auf Finanzberichte anwenden können, um das Erscheinungsbild und die Daten, die die Berichte enthalten, zu ändern.
 author: kweekley
-ms.date: 03/25/2019
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d4b28add4406b2248a2ce842072e577ecd760cd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0f932bbef2543e4894c65b9a04c1ef66f1b3ab8e
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907891"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802390"
 ---
 # <a name="view-financial-reports"></a>Finanzberichte anzeigen
 
@@ -31,7 +31,7 @@ Dieser Artikel beschreibt, wie Finanzberichte angezeigt und durchsucht werden. E
 ## <a name="financial-reporting-overview"></a>Überblick über die Finanzberichterstellung
 
 ## <a name="open-a-financial-report"></a>Öffnen eines Finanzberichts
-Um einen Bericht zu öffnen, wählen Sie den Berichtsnamen aus. Wenn ein Bericht zum ersten Mal geöffnet wird, wird er automatisch für den vorherigen Monat generiert. Wenn Sie beispielsweise einen Bericht zum ersten Mal im August 2015 öffnen, wird der Bericht zum 31. Juli 2015 generiert. Nach dem Öffnen eines Berichts können Sie ihn durchsuchen, indem Sie Detailinformationen bestimmter Daten anzeigen und Berichtsoptionen ändern.
+Um einen Bericht zu öffnen, wählen Sie den Berichtsnamen aus. Wenn ein Bericht zum ersten Mal geöffnet wird, wird er automatisch für den vorherigen Monat generiert. Wenn Sie beispielsweise einen Bericht zum ersten Mal im August 2020 öffnen, wird der Bericht zum 31. Juli 2020 generiert. Nach dem Öffnen eines Berichts können Sie ihn durchsuchen, indem Sie Detailinformationen bestimmter Daten anzeigen und Berichtsoptionen ändern.
 
 ## <a name="drill-down-on-a-financial-report"></a>Anzeigen von Detailinformationen zu einem Finanzbericht
 Finanzberichte können mehrere Detailebenen enthalten. Die Finanzebene ist die erste Ebene, die Sie sehen, wenn Sie einen Finanzbericht öffnen. Um zur Kontoebene zu wechseln, wählen Sie die Daten aus, für die Sie Details anzeigen möchten. Um beispielsweise die Kontodetails für Verkäufe anzuzeigen, wählen Sie die Verkaufsdaten aus, die Sie untersuchen möchten. Von der Kontoebene aus können Sie über die Anzeige von Details die Transaktionen anzeigen, die den Kontosaldo bilden. Es gibt zwei Möglichkeiten, um Transaktionen anzuzeigen: Berichtsbuchungen und Belegbuchungen.
@@ -46,12 +46,12 @@ Sie können Attributs- und Dimensionsfilter anwenden oder das Budgetszenario in 
 
 -   Um Attributfilter auf einen Bericht anzuwenden, wählen Sie **Einen Attributfilter hinzufügen** aus. Wählen Sie das Attribut aus, geben Sie den Attributwert ein, und klicken Sie auf **OK**. Wenn Sie beispielsweise das Attribut **Kontokategorie** auswählen, geben Sie **VERKAUF** als Attributwert ein. Um einen Attributfilter zu entfernen, klicken Sie auf **Löschen**.
 -   Um Dimensionsfilter auf einen Bericht anzuwenden, wählen Sie **Dimensionsfilter hinzufügen** aus. Wählen Sie die Dimension aus, und geben Sie anschließend entweder die Dimensionskennung ein oder wählen Sie die Dimension aus der Liste aus. Um einen Dimensionsfilter zu entfernen, klicken Sie auf **Löschen**.
--   Um das Szenario in einem Bericht vom Typ **Istwert im Vergleich zu Budget** zu ändern, wählen Sie ein neues Szenario aus, und klicken Sie anschließend auf **OK**. Wenn das ausgewählte Szenario für ein anderes Geschäftsjahr ist, werden keine Ergebnisse zurückgegeben. Wenn beispielsweise ein Bericht für FY2015 generiert wird und das aktuelle Szenario für FY2015 ist und das neue ausgewählte Szenario für FY2016 ist, werden keine Ergebnisse zurückgegeben. Wenn ein neues Szenario für einen anderen Geschäftsjahres benötigt wird, generieren Sie eine neue Version des Berichts für das Geschäftsjahr, das dem Szenario zugeordnet ist.
+-   Um das Szenario in einem Bericht vom Typ **Istwert im Vergleich zu Budget** zu ändern, wählen Sie ein neues Szenario aus, und klicken Sie anschließend auf **OK**. Wenn das ausgewählte Szenario für ein anderes Geschäftsjahr ist, werden keine Ergebnisse zurückgegeben. Wenn beispielsweise ein Bericht für FY2015 generiert wird und das aktuelle Szenario für FY2020 ist und das neue ausgewählte Szenario für FY2016 ist, werden keine Ergebnisse zurückgegeben. Wenn ein neues Szenario für einen anderen Geschäftsjahres benötigt wird, generieren Sie eine neue Version des Berichts für das Geschäftsjahr, das dem Szenario zugeordnet ist.
 
 Wenn Sie auf **OK** klicken, werden alle Optionen, die Sie ausgewählt haben, auf den Bericht angewendet. Wenn Sie die ausgewählten Optionen doch nicht anwenden möchten, klicken Sie auf **Abbrechen**.
 
 ## <a name="update-a-financial-report"></a>Aktualisieren eines Finanzberichts
-Sie können einen Finanzbericht aktualisieren, sodass die aktuellen Daten für die Periode und das Jahr angezeigt werden, für die der Bericht generiert wurde. Wenn Sie beispielsweise einen Finanzbericht aktualisieren, der für Oktober 2015 generiert wurde, spiegelt der Bericht alle neuen Transaktionen wider, die für Oktober 2015 gebucht wurden. Um einen Finanzbericht zu aktualisieren, klicken Sie im Aktivitätsbereich auf **Aktualisieren**. Ein aktualisierter Bericht steht nur für die Person zur Verfügung, die ihn aktualisiert hat. Damit andere Personen dieselben Daten anzeigen können, muss der Bericht veröffentlicht werden.
+Sie können einen Finanzbericht aktualisieren, sodass die aktuellen Daten für die Periode und das Jahr angezeigt werden, für die der Bericht generiert wurde. Wenn Sie beispielsweise einen Finanzbericht aktualisieren, der für Oktober 2020 generiert wurde, spiegelt der Bericht alle neuen Transaktionen wider, die für Oktober 2020 gebucht wurden. Um einen Finanzbericht zu aktualisieren, klicken Sie im Aktivitätsbereich auf **Aktualisieren**. Ein aktualisierter Bericht steht nur für die Person zur Verfügung, die ihn aktualisiert hat. Damit andere Personen dieselben Daten anzeigen können, muss der Bericht veröffentlicht werden.
 
 ## <a name="publish-a-financial-report"></a>Veröffentlichen eines Finanzberichts
 Nachdem Sie einen Finanzbericht aktualisiert haben, können Sie ihn veröffentlichen. Andere Personen in der Organisation können ihn dann anzeigen. Um einen Bericht zu veröffentlichen, klicken Sie im Aktivitätsbereich auf **Veröffentlichen**.

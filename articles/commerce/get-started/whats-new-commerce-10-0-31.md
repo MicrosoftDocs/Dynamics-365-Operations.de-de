@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-10-01
 ms.dyn365.ops.version: 10.0.31
-ms.openlocfilehash: 05ccd9794ffeba6a09d6fec0a57ffad2b59707ad
-ms.sourcegitcommit: 87e75aa6af2c3280316d7d73eafa14a52353a5e4
+ms.openlocfilehash: ed4325095163415d05a56128cb1f0334440fe0e5
+ms.sourcegitcommit: c364f50ea0ad50bac5c30724b6ce301d9574b653
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "9709858"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9787525"
 ---
 # <a name="preview-of-dynamics-365-commerce-10031-february-2023"></a>Vorschau auf Dynamics 365 Commerce 10.0.31 (Februar 2023)
 
@@ -38,6 +38,7 @@ Die folgende Tabelle listet die Funktionen auf, die in dieser Version enthalten 
 | Zahlungen | [Apple Pay mit Dynamics 365 Payment Connector for Adyen aktivieren](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-apple-pay-dynamics-365-payment-connector-adyen)  | E-Commerce-Kunden können Apple Pay auf Einkaufswagen- und Kassenseiten nutzen, wenn sie unterstützte Geräte oder Browser verwenden. | Opt-in für Entwickler |
 | Zahlungen  |  Commerce hat die Funktionalität hinzugefügt, die Interaktion der Benutzer mit wiederkehrenden Zahlungstoken in der gesamten Benutzeroberfläche Commerce headquarters einzuschränken. Formulare für Zahlungen, wie z.B. die Seite **Call-Center Verkaufsauftrag**, zeigen nicht mehr den zuvor verwendeten Zahlungstoken eines Kunden zur Verwendung in einer neuen Transaktion an. Den Benutzern des Call-Centers oder Commerce headquarters wird bei der Verarbeitung einer Zahlung für eine neue Transaktion nur noch eine bestimmte „Karte in der Datei“ angezeigt, die in den Bildschirm **Kundenzahlungen** von Commerce eingegeben wurde oder mit der ein Kunde bei der Zahlung über einen Verkaufsauftrag einverstanden war. | [Verwendung von Zahlungstoken einschränken](../dev-itpro/limit-token-usage.md)  |  Funktionsverwaltung<p>*Verwendung des Zahlungstoken auf Kontext „Auftrag“ beschränken*  |
 | POS | [Erstellen von Bestellungen am POS](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/create-purchase-orders-pos)  |  Der eingehende Bestand-Vorgang in der Point of Sale (POS) App wurde verbessert, um Benutzern das Erstellen, Bearbeiten und Bestätigen von Kaufaufträgen zu erlauben. |  Funktionsverwaltung<p>*Möglichkeit zum Erstellen von Bestellanforderungen am POS*   |
+| Zusätzliche Sprachen verfügbar | Es sind vier zusätzliche Sprachen verfügbar | Dem Benutzer stehen in der Liste der bevorzugten Sprachen vier neue Sprachen zur Auswahl: Koreanisch, Portugiesisch (Portugal), Vietnamesisch und Chinesisch (traditionell). Um diese Option auszuwählen, gehen Sie auf **Benutzeroptionen \> Einstellungen \> Einstellung von Sprache und Land/Region**. | Lokalisierte Einstellungen |  
 
 
 

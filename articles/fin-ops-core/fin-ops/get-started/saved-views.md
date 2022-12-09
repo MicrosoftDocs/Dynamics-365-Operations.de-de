@@ -2,7 +2,7 @@
 title: Gespeicherte Ansichten
 description: In diesem Artikel wird beschrieben, wie Sie die gespeicherten Ansichtsfunktionen verwenden.
 author: jasongre
-ms.date: 07/26/2022
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 03b0989d40882c3910b35744715c36babdcc3470
-ms.sourcegitcommit: e02bd317e96faf6182e70fb50b126868a94d9d06
+ms.openlocfilehash: 571a4f403da0d20256f788c791cab273827c91b5
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "9757220"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799490"
 ---
 # <a name="saved-views"></a>Gespeicherte Ansichten
 
@@ -55,7 +55,7 @@ Es gibt zwei Größenvarianten der Ansichts-Auswahl:
  
 Wenn Sie den Ansichtsnamen auswählen, wird die Ansichtsauswahl geöffnet und zeigt die Liste der verfügbaren Ansichten für diese Seite an.
 
-**Version 10.0.21 oder höher:** Wenn die Funktion **Verbesserte Unterstützung juristischer Entitäten für gespeicherte Ansichten** eingeschaltet ist, zeigt der Ansichten-Selektor die verfügbaren Ansichten in zwei Abschnitten an. Der erste Abschnitt zeigt alle Ansichten, die spezifisch für die aktuelle juristische Entität sind, und der zweite zeigt Ansichten, die für alle juristischen Entitäten verfügbar sind. Der erste Abschnitt ist nur sichtbar, wenn es für die Seite juristische Entitäten-spezifische Ansichten gibt.
+Wenn die Funktion **Verbesserte Unterstützung juristischer Personen für gespeicherte Ansichten** eingeschaltet ist, zeigt die Ansichtsauswahl die verfügbaren Ansichten in zwei Abschnitten an. Der erste Abschnitt zeigt alle Ansichten, die spezifisch für die aktuelle juristische Entität sind, und der zweite zeigt Ansichten, die für alle juristischen Entitäten verfügbar sind. Der erste Abschnitt ist nur sichtbar, wenn es für die Seite juristische Entitäten-spezifische Ansichten gibt.
 
 - **Standardansicht** – Die Ansicht **Standard** ist die einsatzbereite Ansicht der Seite, auf der keine Personalisierungen angewendet werden.
 - **Persönliche Ansichten** – Die Ansichten ohne Vorhängeschlösser stellen Ihre persönlichen Ansichten dar. Dies sind Ansichten, die Sie entweder erstellt haben oder die IHnen ein Administrator zugewiesen hat.
@@ -81,7 +81,7 @@ Wenn Sie die diese Änderungen speichern möchten, führen Sie die folgenden Sch
     1. Wählen Sie **Speichern unter**. 
     2. Geben Sie im Bereich **Ansicht speichern unter** einen Namen und optional eine Beschreibung für die Ansicht ein.
     3. Wenn diese Ansicht Ihre Standardansicht sein soll, wählen Sie **Als Standard speichern**. Weitere Informationen über Standardansichten finden Sie im folgenden Abschnitt [Ändern der Standardansicht](#changing-the-default-view). 
-    4. **Version 10.0.21 oder später:** Wenn die Funktion **Verbesserte Unterstützung für juristische Entitäten bei gespeicherten Ansichten** eingeschaltet ist, können Sie auswählen, ob diese Ansicht für alle juristischen Entitäten oder nur für eine Teilmenge von ihnen verfügbar sein soll.
+    4. Wenn das Feature **Verbesserte Unterstützung für juristische Entitäten bei gespeicherten Ansichten** eingeschaltet ist, können Sie auswählen, ob diese Ansicht für alle juristischen Entitäten oder nur für eine Teilmenge von ihnen verfügbar sein soll.
     5. Wählen Sie **Speichern** aus.
 
 ## <a name="changing-the-default-view"></a>Die Standardansicht ändern
@@ -90,7 +90,7 @@ Die Standardansicht ist die Ansicht, die das System beim ersten Öffnen der Seit
 
 > [!NOTE]
 > - In der Basisfunktion **Gespeicherte Ansichten** gibt es eine einzige, globale Standardansicht für alle juristischen Entitäten. Wenn Sie die Standardansicht ändern, wird diese Ansicht standardmäßig geöffnet, unabhängig von der juristischen Person, in der Sie sich gerade befinden.
-> - **Version 10.0.21 oder später:** Wenn die Funktion **Verbesserte Unterstützung für juristische Entitäten für gespeicherte Ansichten** eingeschaltet ist, kann jede juristische Entität ihre eigene Standardansicht pro Seite haben.
+> - Wenn die Funktion **Verbesserte Unterstützung für juristische Personen für gespeicherte Ansichten** eingeschaltet ist, kann jede juristische Personen ihre eigene Standardansicht pro Seite haben.
 
 Um die Standardansicht für eine Seite zu ändern, führen Sie die folgenden Schritte aus:
 
@@ -101,7 +101,7 @@ Um die Standardansicht für eine Seite zu ändern, führen Sie die folgenden Sch
 Möchten Sie eine neue Ansicht (mithilfe der Aktivität **Speichern unter**) erstellen, können Sie diese neue Ansicht zur Standardansicht machen, indem Sie die Option **Als Standard festsetzen** festlegen, bevor Sie die Ansicht speichern.
 
 > [!WARNING]
-> In einigen Fällen wird die Abfrage, die mit der Standardansicht verbunden ist, nicht ausgeführt, wenn Sie eine Seite zum ersten Mal öffnen. Wenn Sie also beispielsweise über eine Kachel die Seite öffnen, wird die Abfrage der Kachel unabhängig von der Abfrage, die der Standardansicht zugeordnet ist, ausgeführt. Wenn Sie außerdem eine Seite öffnen, die eine **Standardansicht** hat, die bereits eine definierte Abfrage hat, wird die ursprüngliche Abfrage anstelle der Abfrage der Standardansicht ausgeführt. In diesem Fall erhalten Sie beim Laden der Ansicht eine Informationsnachricht. Wenn Sie die Ansicht wechseln, nachdem die Seite geladen wurde, sollte die Ansichtsabfrage wie erwartet ausgeführt werden können. In Version 10.0.10 und höher enthält die Informationsnachricht, die Sie erhalten, eine eingebettete Aktion, mit der Sie die Abfrage der Standardansicht direkt laden können.
+> In einigen Fällen wird die Abfrage, die mit der Standardansicht verbunden ist, nicht ausgeführt, wenn Sie eine Seite zum ersten Mal öffnen. Wenn Sie also beispielsweise über eine Kachel die Seite öffnen, wird die Abfrage der Kachel unabhängig von der Abfrage, die der Standardansicht zugeordnet ist, ausgeführt. Wenn Sie außerdem eine Seite öffnen, die eine **Standardansicht** hat, die bereits eine definierte Abfrage hat, wird die ursprüngliche Abfrage anstelle der Abfrage der Standardansicht ausgeführt. In diesem Fall erhalten Sie eine informatorische Meldung, wenn die Ansicht mit einer eingebetteten Aktivität geladen wird, mit der Sie die Abfrage der Standardabsicht direkt laden können. Wenn Sie die Ansicht wechseln, nachdem die Seite geladen wurde, sollte die Ansichtsabfrage wie erwartet ausgeführt werden können. 
 
 ## <a name="managing-personal-views"></a>Verwalten von persönlichen Ansichten
 

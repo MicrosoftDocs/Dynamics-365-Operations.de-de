@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 151991b399a30087c484262706e414e4e294bf7f
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: 86020d9088d8135c83716128a77090608536a78f
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715424"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804017"
 ---
 # <a name="create-checks-that-have-blank-status"></a>Erstellen von Blankoschecks
 
@@ -35,7 +35,7 @@ Auf der Seite **Schecks** führen Sie Verwaltungsaufgaben für Schecks aus. Sie 
 
 Um die Seite **Schecks** zu öffnen, navigieren Sie zu **Bargeld- und Bankverwaltung \> Bankkonten \> Bankkonten** und wählen dann im Aktivitätsbereich auf der Registerkarte **Zahlungen verwalten** in der Gruppe **Zugehörige Informationen** die Option **Schecks** aus. Alternativ können Sie auch **Bargeld- und Bankverwaltung \> Abfragen und Berichte \> Schecks** verwenden.
 
-Um anschließend Schecks mit dem Status **Leer** zu erstellen, wählen Sie im Aktivitätsbereich **Blankoschecks erstellen** aus. Während das System Blankoschecks erstellt, wird das zugehörige Bankkonto vorübergehend deaktiviert. Dieses Verhalten verringert das Risiko, dass gleichzeitig Zahlungen und Blankoschecks erstellt werden. Wenn die Verarbeitung abgeschlossen ist, wird das zugehörige Bankkonto wieder aktiviert.
+Zur Anfertigung von Schecks mit dem Status **Leer** wählen Sie im Aktivitätsbereich die Option **Blankoschecks erstellen** aus. Während des Erstellvorgangs wird das zugehörige Bankkonto vorübergehend deaktiviert. Dieses Verhalten verringert das Risiko, dass gleichzeitig Zahlungen und Blankoschecks erstellt werden. Wenn die Verarbeitung abgeschlossen ist, wird das zugehörige Bankkonto wieder aktiviert.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1011,7 +1011,23 @@
                 - name: URL-Umleitungen in Massen hochladen
                   href: upload-bulk-redirects.md
                 - name: B2C-Mandanten in Commerce einrichten
-                  href: set-up-B2C-tenant.md
+                  items:
+                    - name: B2C-Mandanten einrichten
+                      href: set-up-B2C-tenant.md
+                    - name: Azure AD-B2C-Mandanten erstellen oder Verknüpfung zu diesem einrichten
+                      href: create-link-aad-b2c-tenant.md
+                    - name: B2C-Anwendung erstellen
+                      href: create-b2c-app.md
+                    - name: Richtlinien für Benutzerflows erstellen
+                      href: create-user-flow-policies.md
+                    - name: Anbieter sozialer Identität hinzufügen
+                      href: add-social-identity-providers.md
+                    - name: Commerce Headquarters mit Azure AD-B2C-Angaben aktualisieren
+                      href: update-hq-aad-b2c-info.md
+                    - name: B2C-Mandanten in Site Builder konfigurieren
+                      href: config-b2c-tenant-site-builder.md
+                    - name: Zusätzliche B2C-Informationen
+                      href: additional-b2c-info.md
                 - name: Benutzerdefinierte Seiten für Benutzeranmeldungen einrichten
                   href: custom-pages-user-logins.md
                 - name: Automatische Verknüpfung von Identitätsdatensätzen mit Kundenkonten aktivieren
@@ -1570,6 +1586,8 @@
               items:
                 - name: Im Zusammenhang mit Saudi-Arabien QR-Codes generieren und auf Belege drucken
                   href: localizations/emea-sau-qr-code.md
+                - name: Vereinfachte elektronische Rechnungen für Saudi-Arabien erstellen und einreichen
+                  href: localizations/emea-sau-simplified-e-invoices.md
             - name: Schweden
               items:
                 - name: Kassenfunktionen
@@ -2986,13 +3004,13 @@
               items:
                 - name: Zahlungstyp muss ein Kreditkartenfehler sein
                   href: troubleshoot/payment-type-credit-card-error.md
-                - name: Steuern auf Onlinebestellungen sind falsch berechnet
+                - name: Steuern auf Onlinebestellungen werden falsch berechnet
                   href: troubleshoot/tax-miscalculated-online-order.md
-                - name: Fehler bei der Auftragssynchronisierung im Zusammenhang mit dem Standardzahlungsservice
+                - name: Probleme mit der asynchronen Auftragssynchronisierung
                   href: troubleshoot/synchronization-error.md
             - name: Zahlungsverarbeitung
               items:
-                - name: Rückerstattung bei Rücklieferung wird abgelehnt
+                - name: Rückerstattung bei Retoure wird abgelehnt
                   href: troubleshoot/refund-declined.md
                 - name: Erstattungsfähige Gebühren werden basierend auf der zurückgegebenen Menge falsch berechnet
                   href: troubleshoot/refund-miscalculated-partial-return.md

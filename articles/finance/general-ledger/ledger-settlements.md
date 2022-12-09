@@ -2,7 +2,7 @@
 title: Sachkontoausgleiche
 description: In diesem Artikel wird erläutert, wie die Sachkontoausgleichseite verwendet wird, um Sachkontobuchungen und Stornierungs-Ausgleiche auszugleichen.
 author: kweekley
-ms.date: 01/31/2022
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 39fd6c6677565a4b1e9a9bf6f43a4c630cb5e07b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6357629f83873437eb62a4839fafd8efd98fffc1
+ms.sourcegitcommit: 9041fa6e00ecbdf1a1880659d9bdfff4d888f20e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902486"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9800630"
 ---
 # <a name="ledger-settlements"></a>Sachkontoausgleiche
 
@@ -33,7 +33,7 @@ Abgerechnete Transaktionen können von Abfragen und Berichten ausgeschlossen wer
 
 ## <a name="ledger-settlement-features"></a>Funktionen der Sachkontoabrechnung
 In Microsoft Dynamics 365 Finance Version 10.0.21 wurde die Option **Erweiterte Hauptbuchabrechnung aktivieren** von der Seite **Hauptbuchparameter** entfernt. Die erweiterte Abrechnung von Sachkonten ist jetzt immer aktiviert.
-In Finance Version 10.0.25 wurde die Funktion **Wissen zwischen Sachkontoabrechnung und Jahresabschluss** eingeführt. Diese Funktion ändert die grundlegende Funktionalität sowohl der Sachkontoabrechnung als auch des Jahresabschlusses des Hauptbuchs. Bevor Sie diese Funktion im Arbeitsbereich **Funktionsverwaltung** aktivieren, siehe, [Abgleich zwischen Sachkonto und Jahresabschluss](awareness-between-ledger-settlement-year-end-close.md).
+In Finance Version 10.0.25 wurde die Funktion **Wissen zwischen Sachkontoabrechnung und Jahresabschluss** eingeführt. Diese Funktion ändert die grundlegende Funktionalität sowohl der Sachkontoabrechnung als auch des Jahresabschlusses des Hauptbuchs. Bevor Sie diese Funktion im Arbeitsbereich **Funktionsverwaltung** aktivieren, siehe [Abgleich zwischen Sachkonto und Jahresabschluss](awareness-between-ledger-settlement-year-end-close.md).
 
 ## <a name="set-up-ledger-settlement"></a>Sachkontoabrechnung festlegen
 Sie müssen die Hauptkonten auswählen, für die Sie die Sachkontenabrechnung durchführen möchten. Es gibt zwei Möglichkeiten, diese Hauptkonten auszuwählen.
@@ -60,7 +60,7 @@ Um Sachkontobuchungen auszugleichen, folgen Sie diesen Schritten.
     - Ändern Sie die Buchungsebene nach Bedarf. Sie können keine Transaktionen abrechnen, die sich in verschiedenen Buchungsebenen befinden.
     - Um das Hauptkonto und die Dimensionen separat anzuzeigen, wählen Sie ein Finanzdimensionen-Set.
 
-3. Wählen Sie **Buchungen anzeigen**, um alle Buchungen anzuzeigen, die mit den Filtern und den  Kontenlisten übereinstimmen, die Sie festgelegt haben, als Sie die Kontenplanliste im vorherigen Abschnitt eingerichtet haben.
+3. Wählen Sie **Buchungen anzeigen**, um alle Buchungen anzuzeigen, die mit den Filtern und den Kontenlisten übereinstimmen, die Sie festgelegt haben, als Sie die Kontenplanliste im vorherigen Abschnitt eingerichtet haben.
 
     - Wenn Sie Filter- oder Dimensionseinstellungen ändern, müssen Sie **Buchungen anzeigen** wieder aktivieren.
     - Um die Transaktionen nach einem einzelnen Hauptkonto zu filtern, verwenden Sie den Filter im Feld **Sachkonto**. Wir raten Ihnen davon ab, Sachkonten für Transaktionen abzurechnen, die auf verschiedene Hauptkonten gebucht werden.
@@ -75,7 +75,7 @@ Um Sachkontobuchungen auszugleichen, folgen Sie diesen Schritten.
 ## <a name="make-transactions-easier-to-find"></a>Suchen Sie Transkaktionen einfacher
 Die Seite **Sachkontoabrechnungen** enthält Funktionalitäten, die es Ihnen erleichtern, die Transaktionen anzuzeigen, die Sie für die Abrechnung benötigen.
 
-- Verwenden Sie den Filter **Markiert**, um Transaktionen danach zu filtern, ob das Kontrollkästchen **Markiert** für sie aktiviert ist.
+- Verwenden Sie den Filter **Markiert**, um Transaktionen danach zu filtern, ob für sie das Kontrollkästchen **Markiert** aktiviert ist.
 - Verwenden Sie den Filter **Status**, um Transaktionen nach ihrem Status zu filtern.
 - Wählen Sie **Sortieren nach absolutem Betrag**, um die Beträge nach absolutem Wert zu sortieren. Auf diese Weise können Sie Belastungen und Gutschriften, die denselben Betrag haben, gruppieren.
 
@@ -90,7 +90,12 @@ Sie können einen Ausgleich stornieren, die versehentlich vorgenommen wurde.
     > [!IMPORTANT]
     > Alle Transaktionen, die die gleiche Abrechnungs-ID haben, werden storniert, auch wenn sie nicht markiert sind. Zum Beispiel wurden vier Zeilen markiert und abgerechnet. Alle vier Zeilen haben die gleiche Abwicklungs-ID. Wenn Sie eine dieser vier Zeilen markieren und dann **Markierte Transaktionen stornieren** wählen, werden alle vier Zeilen storniert.
 
+## <a name="unmark-for-selected-users"></a>Markierung bei ausgewählten Benutzern aufheben
+Wählen Sie **Markierung bei ausgewählten Benutzern aufheben**, um die Markierung von im Sachkonto abgerechneten Transaktionen für alle juristischen Personen nach Benutzer-ID aufzuheben. Dies ermöglicht beispielsweise einem Buchhaltungs-Manager, die Markierung von Transaktionen für einen Benutzer, der vor Abschluss des Abschlusses in den Urlaub gegangen ist, oder für einen Benutzer, der die Organisation verlassen hat, aufzuheben. Mit dieser Aktion können diese Transaktionen zum Ausgleich durch einen anderen Benutzer markiert werden.
 
+
+## <a name="unmark-all-transactions"></a>Markierung aller Transaktionen aufheben
+Wählen Sie **Markierung aller Transaktionen aufheben**, um die Markierung für alle im Sachkonto abgerechneten Transaktionen für alle Benutzer und juristischen Personen aufzuheben. Diese Aktion steht mit der Administratorrolle zur Verfügung.
 
 
 

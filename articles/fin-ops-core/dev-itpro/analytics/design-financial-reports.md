@@ -2,7 +2,7 @@
 title: Finanzberichte entwerfen und verwalten
 description: Dieser Artikel enthält Übungen, die Sie durch die Anzeige und Erstellung von Finanzberichten für Microsoft Dynamics 365 Finance führen.
 author: jcart1106
-ms.date: 10/02/2019
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
 ms.search.form: FinancialReportingSetup
-ms.openlocfilehash: b6709f90065c91c55a489f101da430db33355a75
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 92474e7b99af7d83b2089b6652558630c60824c1
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9273424"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799517"
 ---
 # <a name="view-and-design-financial-reports"></a>Finanzberichte anzeigen und entwerfen
 
@@ -51,30 +51,30 @@ In dieser Übung generieren und untersuchen Sie einen vorhandenen Standardberich
     > [!NOTE]
     > Sie werden aufgefordert, den Ein-Klick-Berichts-Designer herunterzuladen und sich anzumelden. Verwenden Sie die Anmeldeinformationen, um sich anzumelden. Melden Sie sich mit Ihren Anmeldeinformationen an.
 
-7. Ändern Sie das Basisjahr auf 2012, und wählen Sie **Generieren** aus. Wenn ein Bericht im Berichts-Designer generiert wird, wird er in einer neuen Browserregisterkarte geöffnet. Sie können den Bericht in der neuen Browserregisterkarte oder in Ihrer ursprünglichen Browserregisterkarte anzeigen und den Bericht dort öffnen, indem Sie ihn aus der Liste **Finanzberichte** auswählen.
+7. Ändern Sie das Basisjahr auf 2021, und wählen Sie **Generieren** aus. Wenn ein Bericht im Berichts-Designer generiert wird, wird er in einer neuen Browserregisterkarte geöffnet. Sie können den Bericht in der neuen Browserregisterkarte oder in Ihrer ursprünglichen Browserregisterkarte anzeigen und den Bericht dort öffnen, indem Sie ihn aus der Liste **Finanzberichte** auswählen.
 8. Wählen Sie im geöffneten Bericht einen der Beträge zur Anzeige der Kontodetails für den Bericht aus.
 9. Sobald die Kontodetails angezeigt werden, wählen Sie ein Konto mit Daten aus und rufen Sie die **Berichtbuchungs-Drillstufe** auf. Auf der Berichtsbuchungsstufe können Sie die Eigenschaften (Attribute) anzeigen, die im Entwurf dieses Berichts enthalten sind. Je nach Transaktion und Konto werden möglicherweise einige oder alle Attribute angezeigt.
 10. Schließen Sie die Berichtbuchungsstufe.
-11. Wählen Sie das gleiche oder ein anderes Konto aus, und **öffnen Sie Belegbuchungen**. Belegbuchungen werden nach Perioden-, Jahres- und Konto- + Dimensionskombination des ausgewählten Kontos gefiltert. Aus den Belegbuchungen können Sie auswählen, andere Informationen zur Transaktion zu untersuchen.
-12. Schließen Sie die Belegbuchungen. Innerhalb eines Finanzberichts können Sie angeben, die Daten entweder für eine andere Periode und Jahr oder mit verschiedenen übernommenen Attributen und Dimensionen anzuzeigen. Dies erfolgt, indem **Berichtsoptionen** verwendet werden.
+11. Wählen Sie das gleiche oder ein anderes Konto aus, und **öffnen Sie Belegbuchungen**. Belegbuchungen werden nach Perioden-, Jahres- und Konto- + Dimensionskombination des ausgewählten Kontos gefiltert. Sie können sich in den **Belegbuchungen** entscheiden, andere Informationen zur Transaktion zu untersuchen.
+12. Schließen Sie die **Belegbuchungen**. Innerhalb eines Finanzberichts können Sie angeben, die Daten entweder für eine andere Periode und Jahr oder mit verschiedenen übernommenen Attributen und Dimensionen anzuzeigen. Dies erfolgt, indem **Berichtsoptionen** verwendet werden.
 13. Wählen Sie **Berichtsoptionen** aus.
 14. Wählen Sie **Dimensionsfilter hinzufügen** und **Unternehmenseinheit** aus.
-15. Geben Sie "001" in das Feld ein, und wählen Sie **OK** aus. Der Bericht zeigt nun nur die Daten für die 001 Unternehmenseinheit an. Dies ist eine personalisierte Ansicht des Berichts und nicht für Andere verfügbar.
+15. Geben Sie **001** in das Feld ein und wählen Sie **OK** aus. Der Bericht zeigt nun nur die Daten für die 001 Unternehmenseinheit an. Dies ist eine personalisierte Ansicht des Berichts und nicht für Andere verfügbar.
 16. Schließen Sie den gefilterten Bericht. Finanzberichte können in jeder Währung angezeigt werden, die der Anwendung hinzugefügt wurden.
 17. Wählen Sie **Währung** dann **EUR** aus. Der Berichts wird nun in Euro angezeigt. Alle Währungscodes oder Währungssymbole, die im Berichtsdesign enthalten sind, werden nun in der übernommenen Währung angezeigt. Wenn kein Währungssymbol für eine Währung definiert wird, wird das Währungssymbol nicht angezeigt.
 18. Schließen Sie den Bericht **Hauptbuchdetail**.
 19. Schließen Sie den **Berichts-Designer**.
 
 ## <a name="exercise-2-add-additional-account-properties-to-a-report-design"></a>Übung 2: Hinzufügen weiterer Kontoeeigenschaften zu einem Berichtsdesign
-In dieser Übung ändern Sie einen vorhandenen Standardbericht. Sie werden Zeilendefinition aktualisieren, um alle Konten einzubeziehen und die Spaltendefinition aktualisieren, um Kontoattribute einzubeziehen. Sobald die Aktualisierungen abgeschlossen sind, generieren Sie den neu erstellten Bericht und untersuchen ihn. Wir beginnen mit der Finanzberichtsliste.
+In dieser Übung ändern Sie einen vorhandenen Standardbericht. Sie werden Zeilendefinition aktualisieren, um alle Konten einzubeziehen und die Spaltendefinition aktualisieren, um Kontoattribute einzubeziehen. Sobald die Aktualisierungen abgeschlossen sind, generieren Sie den neu erstellten Bericht und untersuchen ihn. Wir beginnen mit der Liste **Finanzberichte**.
 
-1. Wechseln Sie zu **Finanzberichte** unter "Abfragen und Berichte" im Hauptbuch.
+1. Wechseln Sie zu **Finanzberichte** unter **Abfragen und Berichte** im Hauptbuch.
 2. Wählen Sie die Zeile für den Bericht namens **Zusammenfassende Zwischenbilanz - Standard Spaltentypen** aus.
 3. Wählen Sie **Bearbeiten** aus. **Zusammenfassende Zwischenbilanz - Standard** wird im Berichts-Designer geöffnet.
-4. Wählen Sie **Datei** anschließend **Speichern unter** aus, und nennen Sie den Bericht "Ausführliche Zwischenbilanz mit Attributen".
+4. Wählen Sie **Datei**, anschließend **Speichern unter** aus und nennen Sie den Bericht **Ausführliche Zwischenbilanz mit Attributen**.
 
     > [!NOTE]
-    > Wenn ein neuer Bericht im Berichts-Designer erstellt wird, wird die Finanzberichtsliste aktualisiert.
+    > Wenn ein neuer Bericht im Report Designer erstellt wird, wird die Liste **Finanzbericht** aktualisiert.
 
 5. Wählen Sie aus der Berichtsdefinition heraus das Zeilendefinitionssymbol aus, um zu die **Zwischenbilanz - Standardzeilendefinition** zu öffnen.
 6. Speichern Sie die Zeilendefinition als **Ausführliche Zwischenbilanz mit Attributen**.
@@ -107,7 +107,7 @@ In dieser Übung ändern Sie einen vorhandenen Standardbericht. Sie werden Zeile
 26. Schließen Sie den **Berichts-Designer**.
 
 ## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Übung 3: Einen mehrdimensionalen Bericht mithilfe einer Berichtsbaumstruktur erstellen
-In dieser Übung ändern Sie einen vorhandenen Standardbericht. Sie werden eine Berichtsbaumstruktur erstellen und zu einer Berichtsdefinition hinzufügen, um eine Kostenstelle/Divisionseinkommensaufstellung zu erzeugen. «»Sobald die Aktualisierungen abgeschlossen sind, generieren Sie die Kostenstelle/Divisionseinkommensaufstellung und untersuchen den Bericht unter Verwendung der Berichtsbaumstruktur. Wir beginnen mit der Finanzberichtsliste.
+In dieser Übung ändern Sie einen vorhandenen Standardbericht. Sie werden eine Berichtsbaumstruktur erstellen und zu einer Berichtsdefinition hinzufügen, um eine **Kostenstelle/Divisionseinkommensaufstellung** zu erzeugen. Sobald die Aktualisierungen abgeschlossen sind, generieren Sie die **Kostenstelle/Divisionseinkommensaufstellung** und untersuchen den Bericht unter Verwendung der Berichtsbaumstruktur. Wir beginnen mit der Liste **Finanzberichte**.
 
 1. Wechseln Sie zu **Finanzberichte** unter "Abfragen und Berichte" im Hauptbuch.
 2. Wählen Sie die Zeile für den Bericht namens **Einkommensaufstellung - Standard** aus.
@@ -116,8 +116,8 @@ In dieser Übung ändern Sie einen vorhandenen Standardbericht. Sie werden eine 
 5. Klicken Sie im Menü **Bearbeiten** auf **Berichtseinheiten aus Dimensionen einfügen**.
 6. Deaktivieren Sie die Kontrollkästchen für alle Dimensionen außer **Kostenstelle**.
 7. Klicken Sie auf das Feld **Ausgangsdimension** für die Kostenstellendimension, geben Sie **007** ein, und drücken Sie dann die TAB-Taste. Geben Sie im Feld **Zieldimension** **018** ein.
-8. **Speichern** Sie die resultierende Struktur mit dem Namen **Kostenstellen nach Division.** Nachdem die Berichtsbaumstruktur erstellt wurde, ändern Sie die Berichtsbaumstruktur, um drei neue Rollupeinheiten einzubeziehen: Marketing, Arbeitsgänge und Einzelhandel.
-9. Klicken Sie im Menü **Fenster** auf **Kostenstellen nach Division**. (Wenn die Berichtsbaumstruktur geschlossen wurde, wählen Sie sie in den Berichtsbaumstruktur-Definitionen im Navigationsbereich aus.)
+8. **Speichern** Sie die resultierende Struktur mit dem Namen **Kostenstellen nach Division**. Nachdem die Berichtsbaumstruktur erstellt wurde, ändern Sie die Berichtsbaumstruktur, um drei neue Rollupeinheiten einzubeziehen: Marketing, Arbeitsgänge und Einzelhandel.
+9. Klicken Sie im Menü **Fenster** auf **Kostenstellen nach Division**. (Wenn die Berichtsbaumstruktur geschlossen wurde, wählen Sie sie in den **Berichtsbaumstruktur-Definitionen** im Navigationsbereich aus.)
 10. Klicken Sie auf Einheit Nummer zwei **Messen**, und klicken Sie auf das Symbol **Berichtseinheit einfügen**.
 11. Doppelklicken Sie auf die Entitätsspalte auf der leeren Zeile, und wählen Sie **USMF** aus.
 12. Geben Sie in den Spalten B und C **Marketing** ein.
@@ -131,13 +131,13 @@ In dieser Übung ändern Sie einen vorhandenen Standardbericht. Sie werden eine 
 20. Wählen Sie **Berichtseinheit tieferstufen** aus. Beachten Sie, dass die Einheit nun als untergeordnete Einheit von **Marketing** anzeigt wird.
 21. Klicken Sie auf Einheit vier, **Marketing-Kampagne**, und führen Sie einen Rechtsklick durch.
 22. Wählen Sie **Berichtseinheit tieferstufen** aus.
-23. Klicken Sie auf **Servicearbeitsgänge** in der grafischen Anzeige. Drücken und halten Sie die linke Maustaste, wenn Sie die Einheit zu **Arbeitsgänge** ziehen. Lassen Sie die linke Maus los, um die Einheit im Rollup "Arbeitsgänge" abzulegen. Wiederholen Sie diesen Vorgang für **Produktion, Qualitätskontrolle, Logistik, Beschaffung und Verwaltung**.
-24. Machen Sie aus **Outlet**, **Super**, **Kaufhaus** und **Online** untergeordnete Elemente von **Einzelhandel**, indem Sie sie entweder tieferstufen oder per Drag & Drop verschieben.
+23. Klicken Sie auf **Servicearbeitsgänge** in der grafischen Anzeige. Drücken und halten Sie die linke Maustaste, wenn Sie die Einheit zu **Arbeitsgänge** ziehen. Lassen Sie die linke Maus los, um die Einheit im Rollup "Arbeitsgänge" abzulegen. Wiederholen Sie diesen Vorgang für **Produktion**, **Qualitätskontrolle**, **Logistik**, **Beschaffung** und **Verwaltung**.
+24. Machen Sie aus **Outlet**, **Super**, **Kaufhaus** und **Online** untergeordnete Elemente von **Einzelhandel**, indem Sie sie entweder tieferstufen oder per Drag & Drop verschieben.
 25. Speichern Sie die sich ergebende Neuorganisation. Nachdem die Berichterstellungsstruktur erstellt und organisiert wurde, kann sie der Berichtsdefinition hinzugefügt werden.
 26. Wählen im Menü **Fenster** die Option **Einkommensaufstellung - Standard** aus, um die Berichtsdefinition zu öffnen.
 27. Klicken Sie auf den **Strukturtyp**-Dropdownpfeil, und wählen Sie **Berichtserstellungstruktur** aus.
 28. Klicken Sie auf den Struktur-Dropdownpfeil, und wählen Sie **Kostenstellen nach Division** aus.
-29. Ändern Sie das Basisjahr zu **2012**. **Speichern** Sie die Änderungen, und **Generieren** Sie den Bericht. Nachdem der Bericht fertig generiert und geöffnet wurde, können Sie den Bericht untersuchen.
+29. Ändern Sie das Basisjahr zu **2021**. **Speichern** Sie die Änderungen, und **Generieren** Sie den Bericht. Nachdem der Bericht fertig generiert und geöffnet wurde, können Sie den Bericht untersuchen.
 30. Wählen Sie das Dropdownmenü **Berichtserstellungsstruktur** aus, um die Berichtseinheiten anzuzeigen. Sie können in einer Zeile des Berichts auch einen Drilldown ausführen, um alle Salden für alle Einheiten der Berichtserstellungsstruktur anzuzeigen.
 31. Schließen Sie **Einkommensaufstellung - Standard**.
 32. Schließen Sie den **Berichts-Designer**.
@@ -145,11 +145,11 @@ In dieser Übung ändern Sie einen vorhandenen Standardbericht. Sie werden eine 
 ## <a name="exercise-4-create-a-consolidated-report-using-an-organization-hierarchy"></a>Übung 4: Einen konsolidierten Bericht mithilfe einer Organisationshierarchie erstellen
 In dieser Übung ändern Sie einen vorhandenen Standardbericht. Sie werden eine Organisationshierarchie in der Berichtsdefinition hinzufügen, um eine konsolidierte Einkommensaufstellung und eine Bilanz zu erzeugen. Sobald die Aktualisierungen abgeschlossen sind, generieren Sie die konsolidierten Bericht und untersuchen den Bericht unter Verwendung der Berichtsbaumstruktur. Wir beginnen mit der Finanzberichtsliste.
 
-1. Wechseln Sie zu **Finanzberichte** unter "Abfragen und Berichte" im Hauptbuch.
+1. Wechseln Sie zu **Finanzberichte** unter **Abfragen und Berichte** im Hauptbuch.
 2. Wählen Sie die Zeile für den Bericht namens **Bilanz und Einkommensaufstellung parallel - Standard** aus.
 3. Wählen Sie **Bearbeiten** aus. **Bilanz und Einkommensaufstellung parallel - Standard** wird im Bericht-Designer geöffnet.
 4. Wählen Sie **Datei** &gt; **Speichern unter** aus und benennen Sie den Bericht **Konsolidierte Bilanz und Einkommensaufstellung paralle**.
-5. Ändern Sie das Basisjahr zu 2012.
+5. Ändern Sie das Basisjahr zu 2021.
 6. Klicken Sie auf den Strukturtyp-Dropdownpfeil, und wählen Sie **Organisationshierarchien** aus.
 7. Klicken Sie auf den Strukturtyp-Dropdownpfeil, und wählen Sie **Contoso Holdings** aus.
 8. Speichern Sie die Änderungen und generieren Sie den Bericht. Wenn Sie dazu aufgefordert werden, wählen Sie alle Berichtseinheiten aus. Nachdem der Bericht fertig generiert und geöffnet wurde, können Sie den Bericht untersuchen.
@@ -162,16 +162,16 @@ In dieser Übung ändern Sie einen vorhandenen Standardbericht. Sie werden eine 
 15. Schließen Sie den **Berichts-Designer**.
 
 ## <a name="exercise-5-create-a-side-by-side-departmental-report"></a>Übung 5: Einen parallelen Abteilungsbericht erstellen
-In dieser Übung erstellen Sie einen neuen Bericht. Der Bericht ist eine parallele Einkommensaufstellung der Abteilungen. Sie verwenden eine vorhandene Zeilendefinition, erstellen aber eine neue Berichtsdefinition und eine neue Spaltendefinition, die Dimensionsfilter verwenden. Wir beginnen mit der Finanzberichtsliste.
+In dieser Übung erstellen Sie einen neuen Bericht. Der Bericht ist eine parallele Einkommensaufstellung der Abteilungen. Sie verwenden eine vorhandene Zeilendefinition, erstellen aber eine neue Berichtsdefinition und eine neue Spaltendefinition, die Dimensionsfilter verwenden. Wir beginnen mit der Liste **Finanzberichte**.
 
-1. Wechseln Sie zu **Finanzberichte** unter "Abfragen und Berichte" im Hauptbuch.
+1. Wechseln Sie zu **Finanzberichte** unter **Abfragen und Berichte** im Hauptbuch.
 2. Wählen Sie **Neu** aus. Der Berichts-Designer wird mit einer leeren offenen Berichtsdefinition geöffnet. Ihre erste Aufgabe ist das Erstellen der Spaltendefinition.
 3. Erstellen Sie eine neue Spaltendefinition, indem Sie auf **Datei** anschließend auf **Neu** und dann auf **Spaltendefinition** klicken.
 4. Wählen Sie in **Spalte A** **DESC** als Spaltentyp aus.
 5. Wählen Sie in **Spalte B** **FD** als Spaltentyp aus.
 6. Doppelklicken Sie auf das Feld **Dimensionsfilter**.
 7. Doppelklicken Sie im Fenster **Dimension** auf die Spalte **Abteilung**.
-8. Klicken Sie im Bereich "Einzel" oder "Bereich" des Dialogfelds, auf die Schaltfläche mit **...**, damit das Feld **Von** eine Liste der Abteilungen anzeigt.
+8. Gehen Sie im Abschnitt **Einzeln oder Bereich** des Dialogfelds auf die **Auslassungspunkte**, damit das Feld **Von** eine Liste der Abteilungen anzeigt.
 9. Wählen Sie Abteilung **022**, **Vertrieb und Marketing** aus, und klicken Sie dann auf **OK**.
 10. Wiederholen Sie die Schritte 5 bis 8 für die Abteilungen 23-25.
 11. Geben Sie auf der Zeile **Überschrift 2** für jede FD-Spalte die folgenden Abteilungsbeschreibungen ein:
@@ -185,7 +185,7 @@ In dieser Übung erstellen Sie einen neuen Bericht. Der Bericht ist eine paralle
 13. Wählen im Menü **Fenster** die Option **Neue Berichtsdefinition** aus, um die Berichtsdefinition zu öffnen.
 14. Wählen Sie **Einkommensaufstellung - Standard** als die Zeilendefinition und **Parallele Abteilungen** als die Spaltendefinition aus.
 15. Speichern Sie die Berichtsdefinition als **Parallele Einkommensaufstellung der Abteilungen**.
-16. Ändern Sie das Basisjahr zu **2012**.
+16. Ändern Sie das Basisjahr zu **2021**.
 17. Ändern Sie die Detailebene auf **Finanz, Konto und Transaktion**.
 18. **Speichern** Sie Ihre Änderungen und **generieren** Sie. Nachdem der Bericht fertig generiert und geöffnet wurde, können Sie den Bericht untersuchen.
 

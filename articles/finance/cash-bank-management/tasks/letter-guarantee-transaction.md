@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 30e21c11b067f6def127f3eab026d7255ab1ca29
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 786aecf69bae3d07ac80a55b4dc835dd8129bd59
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779933"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803963"
 ---
 # <a name="letter-of-guarantee-transaction"></a>Bankgarantiebuchung
 
@@ -43,7 +43,7 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 1. Wechseln Sie zu **Debitoren > Aufträge > Alle Aufträge**.
 2. Klicken Sie auf **Neu**.
 3. Geben Sie im Feld **Debitorenkonto** einen Wert ein oder wählen Sie einen Wert aus.
-4. Erweitern Sie den Abschnitt "Allgemein".
+4. Erweitern Sie den Abschnitt **Allgemein**.
 5. Geben Sie im Feld **Standort** einen Wert ein, oder wählen Sie einen Wert aus.
 6. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 7. Geben Sie im Feld **Lagerort** einen Wert ein, oder wählen Sie einen Wert aus.
@@ -52,9 +52,12 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 10. Klicken Sie auf **OK**.
 11. Geben Sie im Feld **Artikelnummer** einen Wert ein, oder wählen Sie einen Wert aus.
 12. Geben Sie im Feld **Einzelpreis** eine Zahl ein.
-13. Erweitern Sie den Abschnitt "Positionsdetails".
-14. Klicken Sie auf die Registerkarte "Lieferung".
-    * Hinweis: Wählen Sie "Lieferdatumskontrolle = keine"  
+13. Erweitern Sie den Abschnitt **Positionsdetails**.
+14. Klicken Sie auf die Registerkarte **Lieferung**.
+
+>[!Note] 
+>Wählen Sie **Lieferdatumskontrolle** = **keine**  
+
 15. Geben Sie im Feld **Angefordertes Lieferdatum** ein Datum ein.
 16. Geben Sie im Feld **Bestätigtes Versanddatum** ein Datum ein.
 
@@ -83,7 +86,7 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 2. Geben Sie im Feld **Banknummer** einen Wert ein.
     * Überprüfen Sie die Werte in den berechneten **Gewinnspannen-** und **Ausgaben** Feldern.  
 3. Klicken Sie auf **OK**.
-4. Erweitern Sie den Abschnitt "Aktionen".
+4. Erweitern Sie den Abschnitt **Aktionen**.
     * Überprüfen Sie den "Von Bank empfangen" Datensatz.  
 5. Klicken Sie, um dem Link im Feld **Lfd. Nummer** zu folgen.
 6. Klicken Sie auf **Positionen**.
@@ -102,7 +105,7 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 9. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 10. Klicken Sie auf **An Begünstigten übergeben**, um das Dialogfeld zu öffnen.
 11. Klicken Sie auf **OK**.
-12. Erweitern Sie den Abschnitt "Aktionen".
+12. Erweitern Sie den Abschnitt **Aktionen**.
     * Überprüfen Sie den "An Begünstigten übergeben" Datensatz.  
 
 ## <a name="process-letter-of-guarantee_increase-value"></a>letter of guarantee_Increase value verarbeiten
@@ -118,7 +121,7 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 10. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 11. Klicken Sie zum Öffnen des Dropdown-Dialogfelds auf **Wert erhöhen**.
 12. Klicken Sie auf **OK**.
-13. Erweitern Sie den Abschnitt "Aktionen".
+13. Erweitern Sie den Abschnitt **Aktionen**.
     * Überprüfen Sie den "Wert erhöhen" Datensatz.  
 14. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 15. Klicken Sie, um dem Link im Feld **Lfd. Nummer** zu folgen.
@@ -137,7 +140,7 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 9. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 10. Klicken Sie zum Öffnen des Dropdown-Dialogfelds auf **Liquidieren**.
 11. Klicken Sie auf **OK**.
-12. Erweitern Sie den Abschnitt "Aktionen".
+12. Erweitern Sie den Abschnitt **Aktionen**.
     * Überprüfen Sie den "Liquidieren" Datensatz.  
 13. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 14. Klicken Sie, um dem Link im Feld **Lfd. Nummer** zu folgen.
