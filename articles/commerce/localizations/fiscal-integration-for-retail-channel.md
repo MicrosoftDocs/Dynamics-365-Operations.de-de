@@ -2,19 +2,19 @@
 title: Übersicht über die Fiskalintegration für Commerce-Kanäle
 description: Dieser Artikel bietet einen Überblick der Steuerintegrationsfunktionen, die in Dynamics 365 Commerce verfügbar sind.
 author: EvgenyPopovMBS
-ms.date: 10/04/2022
+ms.date: 12/06/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 1812405db3c1e58eaf7cd1df3896f786e7bf026f
-ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
+ms.openlocfilehash: 3f1b555a016a56cc41ab397e3708f20482f25f09
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "9631235"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831857"
 ---
 # <a name="fiscal-integration-overview-for-commerce-channels"></a>Übersicht über die Fiskalintegration für Commerce-Kanäle
 
@@ -134,7 +134,7 @@ Wenn die Integritätsprüfung fehlschlägt, wird im POS das Integritätsprüfung
 - **Abbrechen** – Wenn der Mitarbeiter diese Schaltfläche auswählt, bricht der POS die letzte Aktion ab (beispielsweise wird ein Artikel der neuen Transaktlion nicht hinzugefügt).
 
 > [!NOTE]
-> Die Gesundheitsprüfung wird nur ausgeführt, wenn der aktuelle Vorgang eine Fiskalregistrierung erfordert und wenn der Parameter **Fortsetzen bei Fehler** für den aktuellen Schritt des Fiskalregistrierungsprozesses deaktiviert ist. Weitere Informationen finden Sie unter [Fehlerbehandlungseinstellungen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+> Die Integritätsprüfung wird nur ausgeführt, wenn der aktuelle Arbeitsgang eine Steuererfassung erfordert und wenn der Parameter **Bei Fehler fortsetzen** für den aktuellen Schritt des steuerlichen Anmeldeprozesses deaktiviert wird. Weitere Informationen finden Sie unter [Fehlerbehandlungseinstellungen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 ## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Speichern der Steuerantwort in der Steuertransaktion
 
@@ -172,19 +172,17 @@ Die folgenden Beispiele für die Fiskalintegration sind derzeit im Commerce SDK 
 - [Beispiel zur Integration der Kontrolleinheit für Schweden](./emea-swe-fi-sample.md)
 - [Integrationsbeispiel für Steuererfassungsdienst für Deutschland](./emea-deu-fi-sample.md)
 - [Beispiel für Belegdruckerintegration für Russland](./rus-fpi-sample.md)
+- [Digitale Signaturbeispiel für Norwegen](./emea-nor-cash-registers.md)
 
 Die folgende Fiskalintegrationsfunktionalität wird auch durch die Verwendung des Fiskalintegrations-Frameworks implementiert, ist aber "out of the box" verfügbar und ist nicht im Commerce SDK enthalten:
 
 - [Fiskalische Registrierung für Brasilien](./latam-bra-commerce-localization.md#fiscal-registration-for-brazil)
 - [Digitale Signatur für Frankreich](./emea-fra-cash-registers.md)
 
-Die folgende Fiskalintegrationsfunktionalität ist ebenfalls im Commerce SDK verfügbar, nutzt aber derzeit nicht das Fiskalintegrations-Framework. Die Migration dieser Funktionen in das Steuerintegrationsframework ist für spätere Aktualisierungen geplant.
-
-- [Digitale Signatur für Norwegen](./emea-nor-cash-registers.md)
-
 Die folgende, im Commerce SDK verfügbare Funktionalität zur Fiskalintegration nutzt nicht das Fiskalintegrations-Framework und wird in späteren Updates außer Betrieb genommen:
 
 - [Beispiel zur Integration der Kontrolleinheit für Schweden (veraltet)](./retail-sdk-control-unit-sample.md)
 - [Digitale Signatur für Frankreich (veraltet)](./emea-fra-deployment.md)
+- [Digitale Signatur für Norwegen (veraltet)](./emea-nor-loc-deployment-guidelines.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

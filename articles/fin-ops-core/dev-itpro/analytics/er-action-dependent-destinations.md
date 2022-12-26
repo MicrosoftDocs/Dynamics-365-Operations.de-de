@@ -2,7 +2,7 @@
 title: Aktivitätsabhängige EB-Ziele konfigurieren
 description: In diesem Artikel wird erläutert, wie für ein EB-Format (elektronische Berichterstellung), das zum Generieren ausgehender Dokumente konfiguriert wird, aktivitätsabhängige Ziele konfiguriert werden.
 author: kfend
-ms.date: 02/09/2021
+ms.date: 12/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,24 +15,24 @@ ms.dyn365.ops.version: 10.0.17
 ms.custom: 97423
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.form: ERSolutionTable, ERFormatDestinationTable
-ms.openlocfilehash: babd123e4c8007e3adc545bb92a2dc83bab93f4e
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 80a432a431891c02e4bf5c71cfe2bd9642c41c75
+ms.sourcegitcommit: e9000d0716f7fa45175b03477c533a9df2bfe96d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286246"
+ms.lasthandoff: 12/13/2022
+ms.locfileid: "9843796"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Aktivitätsabhängige EB-Ziele konfigurieren
 
 [!include [banner](../includes/banner.md)]
 
-Sie können [Ziele](electronic-reporting-destinations.md) für jede Ausgabekomponente (Ordner oder Datei) einer [Konfiguration](general-electronic-reporting.md#Configuration) für das Format für die [elektronische Berichterstellung (EB)](general-electronic-reporting.md) konfigurieren, die zum Generieren eines ausgehenden Dokuments verwendet wird. Benutzer, die ein Eb-Format dieses Typs ausführen und über entsprechende Zugriffsrechte verfügen, können die konfigurierten Zieleinstellungen zur Laufzeit auch ändern.
+Sie können [Ziele](electronic-reporting-destinations.md) für jede Ausgabekomponenten (Ordner oder Datei) für das Format für die [Elektronische Berichterstellung (EB)](general-electronic-reporting.md) [Konfiguration](general-electronic-reporting.md#Configuration) konfigurieren, die zum Generieren eines ausgehenden Dokuments verwendet wird. Benutzer, die ein Eb-Format dieses Typs ausführen und über entsprechende Zugriffsrechte verfügen, können die konfigurierten Zieleinstellungen zur Laufzeit auch ändern.
 
 In Microsoft Dynamics 365 Finance **Version 10.0.17 und höher** kann ein EB-Format ausgeführt werden durch [Bereitstellung](er-apis-app10-0-17.md) eines Aktionscodes, den die Benutzer durch Ausführen dieses EB-Formats ausführen. Zum Beispiel im Modul **Debitoren** können Sie in den Einstellungen für die Druckverwaltung ein EB-Format auswählen, das ein bestimmtes Geschäftsdokument generiert, z. B. eine Freitextrechnung. Sie können dann **Ansicht** auswählen, um eine Vorschau der Rechnung anzuzeigen, oder **Drucken**, um es an einen Drucker zu senden. Wenn zur Laufzeit eine Benutzeraktion für das laufende EB-Format übergeben wird, können Sie verschiedene EB-Ziele für verschiedene Benutzeraktionen konfigurieren. In diesem Artikel wird erläutert, wie EB-Ziele für diese Art von EB-Format konfiguriert werden.
 
 ## <a name="make-action-dependent-er-destinations-available"></a>Aktivitätsabhängige EB-Ziele verfügbar machen
 
-Um aktivitätsabhängige EB-Ziele in der aktuellen Finance-Instanz zu konfigurieren und die [neue](er-apis-app10-0-17.md) EB-API zu konfigurieren, öffnen Sie den Arbeitsbereich [Funktionsverwaltung](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace), und aktivieren Sie die Funktion **Bestimmte EB-Ziele konfigurieren, die für verschiedene PM-Aktivitäten verwendet werden sollen**. Um konfigurierte EB-Ziele für [spezifische](#reports-list-wave1) Berichte zur Laufzeit zu verwenden, aktivieren Sie die Funktion **Ausgabe von PM-Berichten basierend auf EB-Zielen weiterleiten, die für Benutzeraktionen spezifisch sind (Zyklus 1)**.
+Um aktivitätsabhängige EB-Ziele in der aktuellen Finance-Instanz zu konfigurieren und die [neue](er-apis-app10-0-17.md) EB-API zu konfigurieren, öffnen Sie den Arbeitsbereich [Funktionsverwaltung](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace), und aktivieren Sie die Funktion **Bestimmte EB-Ziele konfigurieren, die für verschiedene PM-Aktivitäten verwendet werden sollen**. Um konfigurierte EB-Ziele für Berichte zur Laufzeit zu verwenden, aktivieren Sie die Funktion **Ausgabe von PM-Berichten basierend auf EB-Zielen weiterleiten, die für Benutzeraktionen spezifisch sind (Zyklus 1)** feature.
 
 ## <a name="configure-action-dependent-er-destinations"></a>Aktivitätsabhängige EB-Ziele konfigurieren
 
@@ -89,6 +89,51 @@ Die folgende Abbildung zeigt ein Beispiel für das Dialogfeld **Ziele für elekt
 > [!NOTE]
 > Wenn Sie EB-Ziele für mehrere Komponenten des laufenden EB-Formats konfiguriert haben, wird für jede konfigurierte Komponente des EB-Formats eine separate Option angeboten.
 
+Wenn mehrere ER-Formate als Berichtsvorlagen für das ausgewählte Dokument in Frage kommen, werden alle ER-Ziele für alle zutreffenden ER-Berichtsvorlagen im Dialogfeld angezeigt und stehen zur manuellen Anpassung zur Laufzeit zur Verfügung.
+
+Wenn keine [SQL Server Reporting Services (SSRS)](SSRS-report.md) Berichtsvorlagen auf das ausgewählte Dokument anwendbar sind, wird die Standardauswahl der Druckverwaltungsziele dynamisch ausgeblendet.
+
+Ab Finance-Version **10.0.31**, können Sie die zugewiesenen ER-Destinationen zur Laufzeit für die folgenden Geschäftsbelege manuell ändern:
+
+- Debitorenkontoauszug
+- Zinsrechnung
+- Mahnung
+- Zahlungsavis für Debitors
+- Zahlungsavis des Kreditors
+
+Um die Funktion zum Ändern der ER-Ziele in Runtime zu ändern, aktivieren Sie die Funktion **Anpassung der ER-Ziele zur Laufzeit erlauben** im [Funktionsverwaltung](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) Arbeitsbereich.
+
+> [!IMPORTANT]
+> Für die Berichte **Zahlungsavis für Debitors** und **Zahlungsavis des Kreditors** ist die Möglichkeit zum manuellen Ändern von ER-Zielen nur verfügbar, wenn der **ForcePrintJobSettings** Flight ist aktiviert.
+
+[![ER-Ziele zur Laufzeit anpassen.](./media/ERdestinaiotnChangeUI.jpg)](./media/ERdestinaiotnChangeUI.jpg)
+
+> [!NOTE]
+> Wenn die Option **Druckverwaltungsziel verwenden** auf **Ja** eingestellt ist, verwendet das System die standardmäßig konfigurierten ER-Ziele für spezifische ER-Berichte. Alle manuellen Änderungen, die im Dialogfeld vorgenommen werden, werden ignoriert. Setzen Sie die Option **Druckverwaltungsziel verwenden** auf **Nein**, um Dokumente an die im Dialogfeld definierten ER-Ziele zu verarbeiten Box unmittelbar bevor Sie die Berichte ausführen.
+
+Die folgenden Geschäftsdokumente setzen keine explizite Benutzerauswahl einer Aktion voraus, wenn sie ausgeführt werden:
+
+- Debitorenkontoauszug
+- Zinsrechnung
+- Mahnung
+- Zahlungsavis für Debitors
+- Zahlungsavis des Kreditors
+
+Die folgende Logik wird verwendet, um zu bestimmen, welche Aktion verwendet wird, während die vorherigen Berichte verarbeitet werden:
+
+- Wenn der **ForcePrintJobSettings** Flight aktiviert ist:
+
+    - Wenn die Option **Druckverwaltungsziel verwenden** auf **Ja** eingestellt ist, wird die Option **Drucken** Aktion wird verwendet.
+    - Wenn die Option **Druckverwaltungsziel verwenden** auf **Nein** eingestellt ist, wird die Option **Ansicht** Aktion wird verwendet.
+
+- Wenn der **ForcePrintJobSettings** Flight nicht aktiviert ist:
+
+    - Wenn die Option **Druckverwaltungsziel verwenden** auf **Ja** eingestellt ist, wird die Aktion **Drucken** für die Berichte **Zahlungsavis für Debitors** und **Zahlungsavis des Kreditors** verwendet.
+    - Wenn die Option **Druckverwaltungsziel verwenden** auf **Nein** eingestellt ist, wird immer die standardmäßige SSRS-Berichtsvorlage für die Berichte **Zahlungsavis für Debitors** und **Zahlungsavis des Kreditors**, unabhängig von konfigurierten ER-Einstellungen.
+    - Die Aktion **Drucken** wird immer für die Berichte **Debitorenkontoauszug**, **Zinsrechnung**, und **Mahnung** verwendet.
+
+Für die vorstehende Logik können die Aktionen **Drucken** oder **Anzeigen** verwendet werden, um aktionsabhängige ER-Berichtsziele zu konfigurieren. Zur Laufzeit werden im Dialogfeld nur EB-Ziele gefiltert, die für eine bestimmte Aktion konfiguriert sind.
+
 ## <a name="verify-the-provided-user-action"></a>Überprüfen der angegebenen Benutzeraktion
 
 Sie können überprüfen, welche Benutzeraktion, falls vorhanden, für das ausgeführte EB-Format bereitgestellt wird, wenn Sie eine bestimmte Benutzeraktion ausführen. Diese Überprüfung ist wichtig, wenn Sie aktivitätsabhängige EB-Ziele konfigurieren müssen, aber nicht sicher sind, welcher Benutzeraktionscode, falls vorhanden, bereitgestellt wird. Wenn Sie z. B. anfangen, eine Freitextrechnung zu buchen und die Option **Rechnung drucken** im Dialogfeld **Freitextrechnung buchen** auf **Ja** setzen, können Sie die Option **Druckverwaltungsziel verwenden** auf **Ja** oder **Nein** setzen.
@@ -105,23 +150,9 @@ Befolgen Sie diese Schritte, um den bereitgestellten Benutzeraktionscode zu übe
 
     ![Protokollprotokollseite für elektronische Berichterstellung, die Informationen zum Benutzeraktionscode enthält, der für die gefilterte Ausführung eines EB-Formats bereitgestellt wurde.](./media/er-destination-action-dependent-03.png)
 
-## <a name=""></a><a name="reports-list-wave1">Liste der Geschäftsdokumente (Zyklus 1)</a>
-
-Die folgende Liste von Geschäftsdokumenten wird von der Funktion **Ausgabe von PM-Berichten basierend auf EB-Zielen weiterleiten, die für Benutzeraktionen spezifisch sind (Zyklus 1)** gesteuert:
-
-- Debitorenrechnung (Freitextrechnung)
-- Debitorenrechnung (Verkaufsrechnung)
-- Bestellung
-- Einkaufsabfrage für Bestellung
-- Auftragsbestätigung
-- Mahnung
-- Zinsrechnung
-- Zahlungsavis des Kreditors
-- Angebotsanforderung
-
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Überblick über die elektronische Berichterstellung (ER)](general-electronic-reporting.md)
+[Übersicht über die elektronische Berichterstellung (EB)](general-electronic-reporting.md)
 
 [Zielorte für elektronische Berichterstellung (ER)](electronic-reporting-destinations.md)
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 56e445dcf471fd20695824d5e47cd15f39c022ce
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1b2f5f56e757e89339c12fd41c59848b4c987a2f
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846856"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831832"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Finanzielle Konsolidierungen und Währungsumrechnung – Übersicht
 
@@ -64,7 +64,7 @@ Nachfolgend sind einige der Konsolidierungsszenarien, die Onlinesupporte konsoli
 - Konsolidierungen, die mehrere Berichtswährungen bedingen
 
 ## <a name="legal-entity-setup"></a>Einrichten von juristischen Personen
-Vor dem Beginn einer Konsolidierung muss die juristische Person eingerichtet werden. Sie können Konsolidierungen beliebig oft ausführen, die Sie benötigen, und sämtliche Daten werden aus der Buchhaltungswährung des Quellunternehmens übersetzt, die in der Währung des Konsolidierungsunternehmens definiert wird. Daher muss für die nachfolgende Organisationsstruktur, wenn Sie alle nordamerikanischen Unternehmen in US-Dollar (USD) und anschließend in Euro (EUR) übersetzen müssen, die Währung des übergeordneten Unternehmens, müssen Sie mindestens zwei Konsolidierungsunternehmen haben.
+Vor dem Beginn einer Konsolidierung muss die juristische Person eingerichtet werden. Sie können Konsolidierungen beliebig oft ausführen, die Sie benötigen, und sämtliche Daten werden aus der Buchhaltungswährung oder Bereichtswährung des Quellunternehmens übersetzt, die in der Währung des Konsolidierungsunternehmens definiert wird. Daher muss für die nachfolgende Organisationsstruktur, wenn Sie alle nordamerikanischen Unternehmen in US-Dollar (USD) und anschließend in Euro (EUR) übersetzen müssen, die Währung des übergeordneten Unternehmens, müssen Sie mindestens zwei Konsolidierungsunternehmen haben.
 
 ![Organisationsstruktur.](./media/organizational-structure.png "Unternehmensstruktur")
 

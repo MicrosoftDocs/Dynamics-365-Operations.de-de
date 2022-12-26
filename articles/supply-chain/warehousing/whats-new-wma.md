@@ -10,18 +10,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 21abbffe6b16217a0d2e20f662faa080420da12e
-ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
+ms.openlocfilehash: 61d3ebc85d3c3d20bb17acd7364adc04cd2f3f94
+ms.sourcegitcommit: e9000d0716f7fa45175b03477c533a9df2bfe96d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9764238"
+ms.lasthandoff: 12/13/2022
+ms.locfileid: "9843679"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Neuerungen oder Änderungen in der mobilen Warehouse Management-App
 
 [!include [banner](../includes/banner.md)]
 
 Dieser Artikel listet neue Funktionen, Korrekturen, Verbesserungen und bekannte Probleme für jede freigegebene Version der Warehouse Management Mobile-App für Microsoft Dynamics 365 Supply Chain Management auf.
+
+## <a name="version-20390"></a>Version 2.0.39.0
+
+Diese Version führt die folgenden neuen Funktionen, Korrekturen und Verbesserungen ein:
+- Erhöhte Stabilität. 
+- Die Felder der **Benutzerdefiniert** Seite werden nicht mehr automatisch basierend auf ihren Prioritäts- und Unterprioritätseinstellungen sortiert.  
+- Die App verwendet jetzt die Prioritäts- und Unterprioritätseinstellungen für jedes Feld, um das primäre Feld für eine Seite zu identifizieren. Das primäre Feld wird im Schrittkopf angezeigt. 
+- Es wurde ein Problem behoben, bei dem die Bildschirmtastatur auf Android nicht ausgeblendet wurde..
+- Es wurde ein Problem behoben, bei dem der Zahlendreher beim Öffnen im *Bewegung* Flow einen falschen korrekten Wert anzeigte.. 
+- Es wurde ein Problem behoben, bei dem der Wert des schreibgeschützten Zahlendrehfelds nicht korrekt zentriert war. 
+- Es wurde ein Problem behoben, bei dem Webseiten nicht von der Seite **Über** geöffnet wurden. 
+- Das Farbdesign *Auto* nimmt jetzt sein Standardaussehen (hell oder dunkel) an, basierend auf dem globalen Design, das im Betriebssystem des Mobilgeräts festgelegt ist.
 
 ## <a name="version-20370"></a>Version 2.0.37.0
 

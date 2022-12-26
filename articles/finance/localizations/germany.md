@@ -12,12 +12,12 @@ ms.search.region: Germany
 ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8e97ad43bc855d427be519f767dd0b05d8f859d4
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 06d89cbf9df853d6e243678897b08b744e801d6c
+ms.sourcegitcommit: 6c05bcd27e6ee72f01cb66e2cfd1e929e0365830
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9283422"
+ms.lasthandoff: 12/16/2022
+ms.locfileid: "9854064"
 ---
 # <a name="germany-overview"></a>Informationen zu Deutschland
 
@@ -39,7 +39,7 @@ Dieser Artikel enthält Informationen und Verknüpfungen zu den Ressourcen, die 
 -   [Umsatzsteuererklärung für Deutschland](emea-deu-vat-declaration-germany.md)
 
 ## <a name="electronic-transmission-of-vat-declaration-elster"></a>Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)
-Diese Funktion ist veraltet. Weitere Informationen finden Sie unter [Entfernte und außer Betrieb genommene Funktionen](../get-started/removed-deprecated-features-finance.md#elster-declaration-for-germany-design-based-on-reporting-codes). Weitere Informationen zur Mehrwertsteuererklärung finden Sie unter [Mehrwertsteuererklärung (Deutschland)](emea-deu-vat-declaration-germany.md)
+Diese Funktion ist veraltet. Weitere Informationen finden Sie unter [Entfernte und außer Betrieb genommene Funktionen](../get-started/removed-deprecated-features-finance.md#elster-declaration-for-germany-design-based-on-reporting-codes-electronic-tax-declaration-log-menu-item-and-page-electronic-tax-declaration-setup-menu-item-and-page-german-report-layout-taxreport_de-ssrs-format). Weitere Informationen zur Mehrwertsteuererklärung finden Sie unter [Mehrwertsteuererklärung (Deutschland)](emea-deu-vat-declaration-germany.md)
 - [Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)](tasks/de-00003-electronic-transmission-elster.md)
 - [ELSTER-Steuererklärung für Deutschland](emea-de-vat-declaration.md)
 

@@ -2,7 +2,7 @@
 title: Dynamics 365 Human Resources Kundenmigration auf die Finanzen und Betriebsinfrastruktur
 description: Dieser Artikel beschreibt die Kundenmigration von Microsoft Dynamics 365 Human Resources auf die Finanz- und Betriebsinfrastruktur.
 author: twheeloc
-ms.date: 10/25/2022
+ms.date: 12/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4df9a68ea0128378224bf77bd66423fd2e13fa55
-ms.sourcegitcommit: e5b290bac7e8f468167caa1a5607aac6eac9aaea
+ms.openlocfilehash: ab9680c2d1caa08c15aed325f4153aac6eae63c3
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2022
-ms.locfileid: "9760361"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831719"
 ---
 # <a name="dynamics-365-human-resources-customer-migration"></a>Dynamics 365 Human Resources Kundenmigration
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Die Kundenmigration ist eine Migration per Lift & Shift (verschieben) einer Kundendatenbank in die Finanz- und Betriebsinfrastruktur. Dafür werden automatisierte Migrationstools verwendet. Das Ergebnis ist eine neue Finanz- und Betriebsumgebung, die die Human Resources-Datenbank des Debitors verwendet.
+Die Kundenmigration ist eine Migration per Lift und Shift (verschieben) einer Kundendatenbank in die Finanz- und Betriebsinfrastruktur. Dafür werden automatisierte Migrationstools verwendet. Das Ergebnis ist eine neue Finanz- und Betriebsumgebung, die die Human Resources-Datenbank des Debitors verwendet.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -43,7 +43,7 @@ Die Kundenmigration ist eine Migration per Lift & Shift (verschieben) einer Kun
  - Kopieren Sie die vorhandene Dataverse-Umgebung, die mit der eigenständigen Human Resources-App verknüpft ist, in die Umgebung, die Sie im vorherigen Schritt erstellt haben.
 
 > [!NOTE]
-> Stellen Sie beim Hinzufügen einer Datenbank sicher, dass die Option **Dynamics 365-Apps aktivieren** auf **Ja** gestellt ist. Ausführliche Informationen finden Sie unter [Vorbereiten einer Power Platform Umgebung](hr-cust-migration.md#prepare-a-power-platform-environment)
+> Stellen Sie beim Hinzufügen einer Datenbank sicher, dass die Option **Dynamics 365-Apps aktivieren** auf **Ja** gestellt ist. Ausführliche Informationen finden Sie unter [Vorbereiten einer Power Platform Umgebung](hr-cust-migration.md#prepare-a-power-platform-environment).
 
 ### <a name="dataverse-capacity"></a>Dataverse-Kapazität
 
@@ -67,7 +67,7 @@ Gehen Sie folgendermaßen vor, um ein neues Projekt zu erstellen.
 7. Aktivieren Sie das Kontrollkästchen, um den allgemeinen Geschäftsbedingungen zuzustimmen
 8. Wählen Sie **Erstellen** aus.
 
-Nachdem Sie ein neues Lifecycle Services-Projekt erstellt haben, gehen Sie wie folgt vor, um es einzurichten und zu konfigurieren.
+Nachdem Sie ein neues Lifecycle Services-Projekt erstellt haben, gehen Sie wie folgt vor, um das Projekt einzurichten und zu konfigurieren.
 
 1. Wählen Sie **Projekt-Onboarding**, um das Projekt-Onboarding abzuschließen. Weitere Informationen finden Sie unter [Projekt-Einführung](../fin-ops-core/dev-itpro/lifecycle-services/project-onboarding.md).
 
@@ -158,6 +158,7 @@ Nachdem Sie die Migration und Überprüfung einer Sandbox-Umgebung abgeschlossen
 
 - Der Dauerauftragskalkulator sollte vervollständigt sein.
 - Die [Bewertung der Bereitschaft](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md) für die Liveschaltung sollte abgeschlossen werden.
+- Der Benutzer, der die Produktionsmigration in Lifecycle Services initiiert, sollte eine Systemadministratorrolle auf der Power Platform haben. 
 
 #### <a name="migrate-the-production-environment"></a>Die Produktionsumgebung migrieren
 

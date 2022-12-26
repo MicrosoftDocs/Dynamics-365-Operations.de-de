@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 096f441d39dde0f322ed117ab35a6a4641a38a93
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 6d14bba13dbf701a8c27c10ac2d318b071092bc1
+ms.sourcegitcommit: 77ffeccffff28fbb6ff576864d7abddd412cdab6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405464"
+ms.lasthandoff: 12/15/2022
+ms.locfileid: "9852377"
 ---
 # <a name="grid-capabilities"></a>Rasterfunktionen
 
@@ -225,6 +225,7 @@ In diesem Abschnitt wird eine Liste bekannter Probleme für die neue Rastersteue
 ### <a name="open-issues"></a>Bekannte Probleme
 - Nach dem Aktivieren der Funktion **Neue Rastersteuerung** werden einige Seiten weiterhin die vorhandene Rastersteuerung verwenden. Dies geschieht in den folgenden Situationen:
  
+    - [Gelöst] Problem 762533: Unerwarteter Client-Fehler beim Auswählen einer Zeile in einer Kartenliste.
     - [Behoben] Auf der Seite gibt es eine Kartenliste, die in mehreren Spalten gerendert ist.
         - Diese Art von Kartenliste wird ab Version 10.0.30 von dem **Neuen Rastersteuerelement** unterstützt. Alle Verwendungen von forceLegacyGrid() für diesen Zweck können entfernt werden. 
     - [Behoben] Auf der Seite gibt es eine gruppierte Kartenliste.

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 516b2b6091fa620b21eebba25f56ff55aa282ffc
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: 25d13aa26565e5753b87c843b43cf46f8276b642
+ms.sourcegitcommit: 6c05bcd27e6ee72f01cb66e2cfd1e929e0365830
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9643793"
+ms.lasthandoff: 12/16/2022
+ms.locfileid: "9854078"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Finance
 
@@ -124,11 +124,10 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet: Ab dem 1. Dezember 2022 planen wir, das elektronische Berichtsformat (EB) **MwSt.-Erklärung (AT)** unter **Mehrwertsteuererklärungsmodell** nicht mehr zu unterstützen. Stattdessen werden im Modell **Steuererklärung** die neuen Formate **Umsatzsteuererklärung XML (AT)** und **Umsatzsteuererklärung Excel (AT)** eingeführt. |
 
-### <a name="elster-declaration-for-germany-design-based-on-reporting-codes"></a>ELSTER-Erklärung für Deutschland (Design basierend auf Erklärungscodes)
+### <a name="elster-declaration-for-germany-design-based-on-reporting-codes-electronic-tax-declaration-log-menu-item-and-page-electronic-tax-declaration-setup-menu-item-and-page-german-report-layout-taxreport_de-ssrs-format"></a>ELSTER Erklärung für Deutschland (Design basierend auf Berichtscodes), \"Elektronisches Steuererklärungprotokoll\" Menüartikel und Seite, \"Elektronische Steuererklärungseinstellung\" Menüelement und Seite, Deutsches Berichtlayout (TaxReport_DE) SSRS-Format
 
 [MwSt.-Abrechnung](../localizations/emea-de-vat-declaration.md)</br>
 [Einrichtung der elektronischen Steuererklärung für Deutschland](../../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md)</br>
-[Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)](../localizations/tasks/de-00003-electronic-transmission-elster.md)
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
@@ -136,9 +135,9 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 | **Ersetzt durch eine andere Funktion?**   | Ja |
 | **Betroffene Produktbereiche**         | Bewerbung |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Veraltet: Ab dem 1. Dezember 2022 planen wir, die elektronischen Berichtsformate (EB) **Elster (DE)** und **Elster-Modell** nicht mehr zu unterstützen. Stattdessen werden im Modell **Steuererklärung** die neuen Formate **Umsatzsteuererklärung XML (DE)** und **Umsatzsteuererklärung Excel (DE)** eingeführt. |
+| **Status**                         | Veraltet: Ab dem 1. Dezember 2022 planen wir, die elektronischen Berichtsformate (EB) **Elster (DE)** Elektronisches Berichtsformat (ER) und **Elster-Modell** nicht mehr zu unterstützen. Stattdessen werden im Modell **Steuererklärung** die neuen ER-Formate **Umsatzsteuererklärung XML (DE)** und **Umsatzsteuererklärung Excel (DE)** eingeführt. Wir werden auch die **Steuer** \> **Erklärungen** \> **Umsatzsteuer** \> **Elektronisches Steuererklärungsprotokoll** MEnüelement und Seite, die **Steuer** \> **Einstellung** \> **Umsatzsteuer** \> **Einrichtung der elektronischen Steuererklärung** Menüelement und Seite **Steuer** \> **Einstellung** \> **Umsatzsteuer** \> **Elektronische Steuerbescheinigungen** und Seite und das deutsche Berichtslayout (TaxReport\_DE) SQL Server Reporting Services (SSRS) Format nicht mehr unterstützen. Der Prozess der Umsatzsteuermeldung in Deutschland wird durch die [Elektronische Nachrichtenfunktion](../general-ledger/electronic-messaging.md) unterstützt. Weitere Informationen unter [Mehrwertsteuererklärung Deutschland](../localizations/emea-deu-vat-declaration-germany.md). |
 
-### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes"></a>OB-Meldung für die Niederlande (Design basierend auf Erklärungscodes)
+### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes-electronic-ob-declaration-menu-item-and-page-dutch-report-layout-taxreport_nl-ssrs-format"></a>GEBH-Erklärung für die Niederlande (Design basierend auf Meldecodes), \"Elektronische GEBH-Erklärung\" Menüpunkt und Seite, niederländisches Berichtslayout (TaxReport_NL) SSRS-Format
 
 [OB-Meldung](../localizations/emea-nl-vat-declaration.md)
 
@@ -148,7 +147,7 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 | **Ersetzt durch eine andere Funktion?**   | Ja |
 | **Betroffene Produktbereiche**         | Bewerbung |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Veraltet: Ab dem 1. Dezember 2022 planen wir, die elektronischen Berichtsformate (EB) **OB-Meldung (NL)** und **OB-Meldungsmodell** nicht mehr zu unterstützen. Stattdessen werden im Modell **Steuererklärung** die neuen Formate **Umsatzsteuererklärung XML (NL)** und **Umsatzsteuererklärung Excel (NL)** eingeführt. |
+| **Status**                         | Veraltet: Ab dem 1. Dezember 2022 planen wir, die elektronischen Berichtsformate (EB) **OB-Meldung (NL)** Elektronisches Berichtsformat (ER) und **OB-Meldungsmodell** nicht mehr zu unterstützen. Stattdessen werden im Modell **Steuererklärung** die neuen ER-Formate **Umsatzsteuererklärung XML (NL)** und **Umsatzsteuererklärung Excel (NL)** eingeführt. Wir werden auch das Menü **Steuer** \> **Erklärungen** \> **Umsatzsteuer** \> **Elektronische OB-Erklärung** nicht mehr unterstützen Element und Seite und das niederländische Berichtslayout (TaxReport_NL) SSRS-Format. Der Prozess der Umsatzsteuermeldung in den Niederlanden wird durch die [Elektronische Nachrichtenfunktion](../general-ledger/electronic-messaging.md) unterstützt. Weitere Informationen unter [Mehrwertsteuererklärung für Niederlanden](../localizations/emea-nl-vat-declaration-netherlands.md). |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Entfernte oder veraltete Funktionen in Finance Release 10.0.20
 

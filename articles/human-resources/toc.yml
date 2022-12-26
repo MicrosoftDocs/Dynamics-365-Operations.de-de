@@ -32,6 +32,8 @@
                   href: ./get-started/whats-new-changed-10.0.28.md
                 - name: Neuerungen in Dynamics 365 Human Resources (eigenständig)
                   items:
+                    - name: Archive der Neuerungen in Dynamics 365 Human Resources (eigenständig) Dezember 2022
+                      href: hr-whats-new-2022-12-12.md
                     - name: Archive der Neuerungen in Dynamics 365 Human Resources (eigenständig) 2021
                       href: hr-admin-whats-new.md
                     - name: "29.\_November\_2021"
@@ -110,6 +112,8 @@
                   href: hr-admin-integration-common-data-service-virtual-entities.md
                 - name: Virtuelle Human Resources-Tabellen – Häufig gestellte Fragen
                   href: hr-admin-virtual-entity-faq.md
+                - name: Dataverse-Integration konfigurieren
+                  href: hr-dataverse-integration.md
                 - name: Integration mit Finance konfigurieren
                   href: hr-admin-integration-finance.md
                 - name: Integration mit Dayforce konfigurieren
@@ -530,7 +534,7 @@
                       href: ../human-resources/hr-personnel-set-up-positions.md
                     - name: Kandidaten mittels Personalbeschaffung einstellen
                       href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
-                    - name: Bestehende Mitarbeiter mittels Personalbeschaffung einstellen
+                    - name: Bestehenden Mitarbeiter mittels Personalbeschaffung einstellen
                       href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
                     - name: Hilfsmittel zur Kandidatenauswahl ermitteln und bereitstellen
                       href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md

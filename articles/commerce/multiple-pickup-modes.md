@@ -2,7 +2,7 @@
 title: Mehrere Lieferarten zur Abholung für Kundenaufträge
 description: In diesem Artikel wird die Funktionalität in Microsoft Dynamics 365 Commerce erklärt, mit der Sie Kundenaufträge für die Abholung in einem Ladengeschäft erstellen können.
 author: hhainesms
-ms.date: 06/07/2021
+ms.date: 12/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,29 +12,29 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 555ae3900bd7f9c66366f19a6eb2f12503898c93
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e4d8883b3dc1c4a0e12bcb00b6441f76d73da92e
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858907"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831583"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Mehrere Lieferarten zur Abholung für Kundenaufträge
 
 [!include [banner](includes/banner.md)]
 
 
-In Microsoft Dynamics 365 Commerce Version 10.0.16 und höher können Organisationen mehrere Lieferarten definieren, zwischen denen Käufer oder Vertriebsmitarbeiter wählen können, wenn sie einen Auftrag erstellen, der in einem Ladengeschäft abgeholt wird. Auf diese Weise können Organisationen ihren Kunden mehrere Abholoptionen anbieten. Beispielsweise bieten viele Einzelhändler ihren Kunden jetzt die Wahl zwischen Abholung im Geschäft oder Abholung am Straßenrand für ihre Aufträge an. Commerce unterstützt die Konfiguration dieser verschiedenen Abhollieferarten. Benutzer können sie dann nutzen, wenn sie Kundenaufträge in irgendeinem unterstützten Commerce-Kanal (E-Commerce, Callcenter oder Geschäft) erstellen.
+In Microsoft Dynamics 365 Commerce können Organisationen mehrere Lieferarten definieren, zwischen denen Käufer oder Vertriebsmitarbeiter wählen können, wenn sie einen Auftrag erstellen, der in einem Ladengeschäft abgeholt wird. Auf diese Weise können Organisationen ihren Kunden mehrere Abholoptionen anbieten. Beispielsweise bieten viele Einzelhändler ihren Kunden jetzt die Wahl zwischen Abholung im Geschäft oder Abholung am Straßenrand für ihre Aufträge an. Commerce unterstützt die Konfiguration dieser verschiedenen Abhollieferarten. Benutzer können sie dann nutzen, wenn sie Kundenaufträge in irgendeinem unterstützten Commerce-Kanal (E-Commerce, Callcenter oder Geschäft) erstellen.
 
 ## <a name="enable-and-configure-pickup-delivery-modes"></a>Abhollieferarten aktivieren und konfigurieren
 
-Um diese Funktionalität zu nutzen, aktivieren Sie die Funktion **Unterstützung für mehrere Abhollieferarten** im Arbeitsbereich **Funktionsverwaltung** in der Commerce-Zentralverwaltung. Nachdem Sie die Funktion aktiviert haben, ist eine zusätzliche Konfiguration erforderlich.
+Die Funktion **Unterstützung für mehrere Abhollieferarten** im Arbeitsbereich **Funktionsverwaltung** in Commerce headquarters wurde verpflichtend gemacht und sollte in der Umgebung aktiviert werden.
 
-In Commerce Version 10.0.15 und früheren Versionen können Organisationen nur eine Lieferart als festgelegte Abhollieferart definieren. Diese Definition erfolgt auf der Seite **Commerce-Parameter**. In Version 10.0.16 und höher wird bei Aktivierung der Funktion **Unterstützung für mehrere Abhollieferarten** die zuvor auf der Seite **Commerce-Parameter** definierte Lieferart automatisch in die neue Konfiguration für Abhollieferarten kopiert.
+Wenn Sie zuvor auf der Seite **Commerce-Parameter** einen Abhol-Liefermodus definiert haben, wird dieser Modus in der aktuellen Konfiguration für Abhol-Liefermodi angezeigt.
 
 ![Abhollieferarten auf der Seite „Commerce-Parameter“.](media/multiplepickupparameter.png)
 
-Nachdem Sie die Funktion **Unterstützung für mehrere Abhollieferarten** aktivieren, können Sie mehrere Abhollieferarten im Raster **Abhollieferart** im Inforegister **Lieferarten** auf der Registerkarte **Kundenaufträge** auf der Seite **Commerce-Parameter** definieren.
+Sie können im Raster **Abholart der Lieferung** unter **Commerce-Parameter** > **Kundenbestellungen** mehrere Abhol-Liefermodi definieren Tab > **Lieferarten** FastTab.  
 
 Die Felder **Lieferart durchführen** und **Elektronische Lieferart** und die Option **Nur Spediteurartoptionen für Lieferaufträge anzeigen** wurden zu diesem Inforegister verlegt.
 
@@ -47,8 +47,6 @@ Nachdem Sie die zusätzlichen Abhollieferarten definiert haben, fügen Sie diese
 > [!NOTE]
 > Abgesehen von der vorhandenen Abhollieferart, die in das Raster **Abhollieferart** kopiert wird, wenn Sie die Fu‭nktion **Unterstützung für mehrere Abhollieferarten** aktivieren, sollten Sie für jede zusätzliche Abhollieferartkonfiguration, die Sie erstellen, neue Lieferarten konfigurieren. Wenn Sie dem Raster **Abhollieferart** Lieferarten hinzufügen, überprüft Commerce, ob irgendwelche aktiven offenen Verkaufspositionen sie bereits verwenden. Wenn irgendwelche offenen Verkaufspositionen gefunden werden, erhalten Sie eine Fehlermeldung. Lieferarten gelten erst als Abhollieferarten, wenn alle offenen Verkaufspositionen, die sie verwenden, geschlossen wurden (entweder fakturiert oder storniert).
 
-> [!IMPORTANT]
-> Nachdem Sie mehr als eine Abhollieferart auf der Seite **Commerce-Parameter** definiert haben, wird die Funktion **Unterstützung für mehrere Abhollieferarten** obligatorisch und kann nicht mehr deaktiviert werden. Wenn Sie die Funktion deaktivieren müssen, entfernen Sie alle Abhollieferarten aus dem Raster **Abhollieferart** mit Ausnahme von einer. Wenn nur eine Abhollieferart definiert ist, gilt die Funktion nicht mehr als obligatorisch und kann deaktiviert werden.
 
 ### <a name="e-commerce-site-configurations"></a>E-Commerce-Websitekonfigurationen
 

@@ -2,23 +2,23 @@
 title: Neubewertung der Fremdwährung der Bank
 description: In diesem Artikel erhalten Sie einen Überblick über den Prozess der Neubewertung der Fremdwährung – Bank. Es umfasst Informationen zum Setup, dem Ausführen des Prozesses, der Berechnung für den Prozess und von Rückbuchungen von Neubewertungsbuchungen.
 author: angelad116
-ms.date: 05/16/2019
+ms.date: 12/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BankCurrencyRevalHistory
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 8efec304e745332c332030b33363403869870532
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 2d5e8a36d3b4d44c9ad0454db94164adebf80997
+ms.sourcegitcommit: 69d7dd6a2d0dc7f2661c7d1f61e8874c7bde1448
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151430"
+ms.lasthandoff: 12/19/2022
+ms.locfileid: "9887258"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Neubewertung der Fremdwährung der Bank
 
@@ -39,17 +39,8 @@ Bevor Sie den Neubewertungsprozess ausführen können, sind folgende Einstellung
 - Geben Sie auf der **Sachkonto**-Seite den Wechselkurstyp an. Wenn ein Wechselkurstyp nicht für das Hauptkonto definiert ist, wird dieser Wechselkurstyp während der Neubewertung der Fremdwährung verwendet.
 - Geben Sie auf der **Sachkonto**-Seite die Konten für realisierten Gewinn, realisierten Verlust, nicht realisierten Gewinn und den nicht realisierten Verlust für die Neubewertung der Währung an. Konten für realisierte Gewinne und realisierte Verluste werden verwendet, wenn Debitor- und Kreditorbuchungen ausgeglichen werden. Konten für unrealisierten Gewinn und unrealisierten Verlust werden verwendet, um offene Buchungen und Hauptbuch-Hauptkonten neu zu bewerten.
 - Auf der Seite **Währungsneubewertungskonten** wählen Sie verschiedene Währungsneubewertungskonten für jede Währung und jedes Unternehmen aus. Wenn keine Konten definiert werden, werden die Konten der **Sachkonto**-Seite verwendet.
+- Erstellen Sie auf der Seite **Kassen- und Bankverwaltungsparameter** auf der Registerkarte **Nummernkreise** eine Zahlensequenz für Neubewertung der Fremdwährung.
 
-## <a name="enable-foreign-currency-revaluation"></a>Neubewertung der Fremdwährung aktivieren
-
-Sie müssen die Funktion „Neubewertung der Fremdwährung – Bank” aktivieren, bevor Sie Neubewertungen der Fremdwährung verarbeiten können.
-
-1. Wechseln Sie zu **Bargeld- und Bankverwaltung \> Einstellungen \> Parameter für die Bargeld- und Bankverwaltung**.
-2. Legen Sie auf der Registerkarte **Allgemein** unter **Neubewertung der Fremdwährung** die Option **Bankneubewertung aktivieren** auf **Ja** fest, um die Funktion für die aktuelle juristische Person zu aktivieren. 
-3. Auf der Registerkarte **Nummernkreise** fügen Sie einen Nummernkreis für die Neubewertung der Fremdwährung hinzu.
-4. Aktualisieren Sie den Browser, um **Neubewertung der Fremdwährung** im Abschnitt **Periodische Aufgaben** auf der Bereichsseite anzuzeigen.
-
-Sie müssen die Funktion für jede juristische Person aktivieren, die die Neubewertung der Fremdwährung verwendet. Wenn Sie der Rolle Systemadministrator oder Funktionsrolle zugewiesen werden, können Sie diesen Schritt entfernen, indem Sie die Funktion **Aktivieren der Bankneubewertung ohne einen Parameter** im Arbeitsbereich **Funktionsverwaltung** aktivieren.
 
 > [!NOTE]
 > Wenn Ihre juristische Person einen russischen, polnischen oder ungarischen Länder-/Regionscode verwendet, können Sie bereits „Neubewertung der Fremdwährung – Bank” vornehmen. Sie können die Neubewertung der Fremdwährung nicht verwenden, die von anderen Ländern oder Regionen verwendet wird.

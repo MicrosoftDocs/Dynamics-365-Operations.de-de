@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 522e4d4e26b04b5ca1dd317e433c5a20ff3cb12e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c173057b8e1357790e780469c5806afb857be62a
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893264"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838316"
 ---
 # <a name="national-motor-freight-classification-nmfc-codes"></a>National Motor Freight Classification (NMFC)-Codes
 
@@ -57,7 +57,7 @@ Führen Sie diese Schritte aus, um einen NMFC-Code zu erstellen.
 
 Das folgende Beispiel zeigt, wie Sie zwei verschiedene NMFC-Codes festlegen, die Sie mit verschiedenen Produkten verwenden können.
 
-1. Gehen Sie zu **Lagerortverwaltung \> Einrichten \> Bestand \> NMFC-Codes**.
+1. Gehen Sie zu **Warehouse Management \> Setup \> Inventar \> NMFC-Codes** oder **Transportverwaltung \> Einrichten \> Transportstandards \> NMFC-Codes**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 1. Legen Sie die folgenden Werte für die neue Position fest:
 

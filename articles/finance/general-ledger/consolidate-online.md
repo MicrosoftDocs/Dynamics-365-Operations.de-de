@@ -2,7 +2,7 @@
 title: Online Finanzkonsolidierungen
 description: In diesem Artikel werden die Online-Finanzkonsolidierungen im Hauptbuch behandelt.
 author: aprilolson
-ms.date: 07/09/2018
+ms.date: 12/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: f6c489156ca869e02ba6387c3464cc1e1a248d9f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5843ac78adf32e738d9882c7f4e9e04a79200700
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8848548"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838278"
 ---
 # <a name="online-financial-consolidations"></a>Online Finanzkonsolidierungen
 
@@ -45,6 +45,19 @@ Hier ist eine Erläuterung der Konfiguration in dieser Registerlarte:
 - **Konsolidierungsperiode** – Verwenden Sie die Felder in diesem Abschnitt, um die Konsolidierungsperiode zu definieren.
 
     - **Von** und **Bis** – Geben Sie einen Datumsbereich für die Konsolidierung an. Wenn Sie dieses Feld leer lassen, wird die Konsolidierung für alle Perioden im Sachkontokalender verarbeitet, die für das Unternehmen definiert sind. Dieses Feld sollte nicht unausgefüllt bleiben.
+    - **Konsolidierungsbetrag auswählen von** – Verwenden Sie dieses Feld, um anzugeben, ob die Beträge in Buchhaltungswährung oder die Beträge in Berichtswährung von den Quellunternehmen verwendet werden, um die Beträge in Buchhaltungswährung des Konsolidierungsunternehmens zu aktualisieren.
+
+        - Wählen Sie **Buchhaltungswährung** um die Buchhaltungswährungsbeträge aus dem Quellunternehmen zu verwenden, um die Buchhaltungswährungsbeträge im Konsolidierungsunternehmen zu verwenden. Wenn dieser Wert ausgewählt ist, verwenden Sie das Feld **Konsolidierte Buchhaltungswährung**, um festzulegen, wie die Buchhaltungswährungen in der Konsolidierungsgesellschaft berechnet werden.
+        - Wählen Sie **Berichtswährung** um die Berichtswährungsbeträge aus dem Quellunternehmen zu verwenden, um die Buchhaltungswährungsbeträge im Konsolidierungsunternehmen zu berechnen.
+
+            - Wenn die Berichtswährung vom Quellunternehmen der Buchhaltungswährung des Konsolidierungsunternehmens entspricht, werden die Berichtswährungsbeträge aus dem Quellunternehmen ind Konsolidierungsunternehmen kopiert.
+            - Wenn die Berichtswährung des Quellunternehmens von der Buchhaltungswährung des Konsolidierungsunternehmens abweicht, werden die Werte mithilfe der Wechselkursinformationen umgerechnet, die auf der Registerkarte **Währungsumrechnung** dieser definiert sind Seite zur Berechnung der Konsolidierungsunternehmenswerte.
+
+    - **Buchungswährung konsolidieren** – Dieses Feld ist nur verfügbar, wenn das Feld **Konsolidierungsbetrag auswählen aus** auf **Buchhaltungswährung** eingestellt ist. Verwenden Sie es, um anzugeben, ob die Beträge in Buchhaltungswährung von den Quellfirmen durch Wechselkurse umgerechnet oder in die Konsolidierungsfirma kopiert werden. Wählen Sie **Währungsumrechnung verwenden**, um die Wechselkursinformationen zu verwenden, die auf der Registerkarte **CWährungsumrechnung** definiert sind, um die Konsolidierungsbuchhaltung zu berechnen Salden. Wählen Sie **Betrag in Buchhaltungswährung verwenden** um die Buchhaltungswährungsbeträge aus dem Quellunternehmen zum Konsolidierungsunternehmen zu kopieren.
+
+        - Wenn die Buchhaltungswährung vom Quellunternehmen der Buchhaltungswährung des Konsolidierungsunternehmens entspricht, werden die Währungsbeträge aus dem Quellunternehmen ind Konsolidierungsunternehmen kopiert.
+        - Wenn die Buchhaltungswährung des Quellunternehmens von der Buchhaltungswährung des Konsolidierungsunternehmens abweicht, werden die Werte mithilfe der Wechselkursinformationen umgerechnet, die auf der Registerkarte **Währungsumrechnung** dieser definiert zur Berechnung der Konsolidierungsunternehmenswerte.
+
     - **Istbeträge einbeziehen** – Legen Sie diese Option auf **Ja** fest, um die tatsächlichen Daten konsolidieren zu können.
     - **Budgetbeträge einbeziehen** – Legen Sie diese Option auf **Ja** fest, um Daten aus dem Budgetregister zu konsolidieren.
     - **Erstellen Sie Salden für die Konsolidierung neu** – Es empfiehlt sich nicht, dass Sie Option auf **Ja** festlegen. Stattdessen erstellen Sie Salden als separater Stapelverarbeitungsauftrag.
@@ -80,9 +93,9 @@ Auf der Registerkarte **Löschung** haben Sie drei Optionen zum Verarbeiten von 
 Weitere Informationen zur Löschung finden Sie unter [Löschungsrichtlinien](./elimination-rules.md)
 
 ## <a name="currency-translation"></a>Währungsumrechnung
-Auf der Registerkarte **Währungsumrechnung** definieren Sie die juristische Person, das Konto und den Wechselkurstyp und den Wechselkurs. Drei Optionen stehen im Feld **Wechselkurs übernehme** zur Verfügung:
+Auf der Registerkarte **Währungsumrechnung** definieren Sie die juristische Person, das Konto und den Wechselkurstyp und den Wechselkurs. Wenn das Konsolidierungsunternehmen anderen Hauptkonten als das Quellunternehmen zugeordnet ist, muss das Hauptkonto des Konsolidierungsunternehmens in den Feldern **Von Datum** und **Bis Datum** nicht die Hauptkonten des Quellunternehmens. Für jede Zeile der juristischen Person und Hauptkonten sind im Feld **Wechselkurs anwenden von** drei Optionen verfügbar:
 
-- **Konsolidierungsdatum** – Das Datum der Konsolidierung wird verwendet, um den Wechselkurs zu erhalten. Der Kurs der Entität entspricht der Spot- oder Monatendkurs. Sie sehen eine Vorschau des Satzes, aber Sie können ihn nicht bearbeiten.
+- **Konsolidierungsdatum** – Das Datum, das im Feld **Konsolidierungszeitraum bis** auf der Registerkarte **Kriterien** für die Konsolidierung werden zum Abrufen des Wechselskures verwendet. Der Kurs der Entität entspricht der Spot- oder Monatendkurs. Sie sehen eine Vorschau des Satzes, aber Sie können ihn nicht bearbeiten.
 - **Buchungsdatum** – Das Datum jeder Buchung wird verwendet, um einen Wechselkurs auszuwählen. Diese Option ist für Anlagen häufig und wird oft als historischer Satz bezeichnet. Sie können eine Vorschau des Satzes nicht finden, da es viele Sätze für die verschiedenen Buchungen im Kontenbereich gibt.
 - **Benutzerdefinierter Satz** – Wenn Sie diese Option aktivieren, können Sie den Wechselkurs eingeben, den Sie wünschen. Diese Option kann für durchschnittliche Wechselkurse hilfreich sein oder wenn Sie mit einem festen Wechselkurs konsolidieren.
 

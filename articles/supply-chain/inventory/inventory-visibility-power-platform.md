@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9886ddbf0b072283cffd73d4bfdc20835ccb3b7c
-ms.sourcegitcommit: 49f8973f0e121eac563876d50bfff00c55344360
+ms.openlocfilehash: 0a4e436cc1af6b71049f75fb66bdfb89ca38df9f
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9762699"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831773"
 ---
 # <a name="use-the-inventory-visibility-app"></a>Die Inventory Visibility-App verwenden
 
@@ -106,7 +106,7 @@ Um die Seite **Bestandszusammenfassung** zu aktivieren und die Synchronisierungs
 
 1. Öffnen Sie die Seite **Konfiguration**.
 1. Öffnen Sie die Registerkarte **Funktionsverwaltung und -einstellungen**.
-1. Stellen Sie den Umschalter für die Funktion **OnHandMostSpecificBackgroundService** auf *Ja*.
+1. Stellen Sie den Umschalter für die Funktion *OnHandMostSpecificBackgroundService* auf *Ja*.
 1. Wenn die Funktion aktiviert ist, wird der Abschnitt **Dienstkonfiguration** verfügbar und enthält eine Zeile zum Konfigurieren der Funktion **OnHandMostSpecificBackgroundService**. Mit dieser Einstellung können Sie die Häufigkeit auswählen, mit der Bestandszusammenfassungsdaten synchronisiert werden. Verwenden Sie die **Hoch**- und **Runter**-Schaltflächen in der Spalte **Wert**, um die Zeit zwischen den Synchronisierungen zu ändern (die bis zu 5 Minuten betragen kann). Wählen Sie dann **Speichern** aus.
 
     ![Die Einstellung OnHandMostSpecificBackgroundService](media/inventory-visibility-ohms-freq.png "Die OnHandMostSpecificBackgroundService Einstellung")
@@ -125,10 +125,10 @@ Supply Chain Management speichert eine Vielzahl von Informationen über Ihren ak
 
 Die Seite **Zusammenfassung der Inventory Visibility vorladen** bietet eine Ansicht für die Entität *Ergebnisse der vorgeladenen Indexabfrage*. Im Gegensatz zur Entität *Bestandsübersicht* bietet die Entität *Bestandsindexabfrage Ergebnisse vorladen* eine Bestandsliste für Produkte zusammen mit ausgewählten Dimensionen. Inventory Visibility synchronisiert die vorgeladenen Zusammenfassungsdaten alle 15 Minuten.
 
-Um die Daten auf der Registerkarte **Zusammenfassung der Inventory Visibility vorladen** anzuzeigen, müssen Sie die Funktion *OnHandIndexQueryPreloadBackgroundService* auf der Registerkarte **Funktionsverwaltung** der Seite **Konfiguration** aktivieren und dann **Konfiguration aktualisieren** wählen (siehe auch [Inventory Visibility konfigurieren](inventory-visibility-configuration.md)).
+Um Daten auf der Registerkarte **Bestandsanzeigeübericht vorladen** müssen Sie die Funktion *OnHandIndexQueryPreloadBackgroundService* aktivieren und konfigurieren. Siehe [Vorgeladene Bestandsanfragen aktivieren und konfigurieren](inventory-visibility-configuration.md#query-preload-configuration) für Anweisungen.
 
 > [!NOTE]
-> Wie bei der Funktion *OnhandMostSpecificBackgroudService* verfolgt die Funktion *OnHandIndexQueryPreloadBackgroundService* nur Änderungen im Lagerbestand, die aufgetreten sind, nachdem Sie die Funktion eingeschaltet haben. Daten für Produkte, die sich seit dem Aktivieren des Features nicht geändert haben, werden nicht aus dem Inventarservice-Cache mit der Dataverse-Umgebung synchronisiert. Wenn auf der Seite **Bestandszusammenfassung** nicht alle erwarteten Bestandsinformationen angezeigt werden, wechseln Sie zu **Lagerverwaltung > Regelmäßige Aufgaben > Integration** der Bestandssichtbarkeit, deaktivieren Sie den Stapelverarbeitungsauftrag und aktivieren Sie ihn erneut. Damit wird der erste Push durchgeführt und alle Daten werden in den nächsten 15 Minuten mit der Entität *On-Hand Index Query Preload Results* synchronisiert. Wenn Sie diese Funktion verwenden möchten, empfehlen wir Ihnen, sie zu aktivieren, bevor Sie manuelle Änderungen vornehmen und den Batchauftrag **Integration der Bestandssichtbarkeit** aktivieren.
+> Wie bei der Funktion *OnHandMostSpecificBackgroundService* verfolgt die Funktion *OnHandIndexQueryPreloadBackgroundService* nur Änderungen im Lagerbestand, die aufgetreten sind, nachdem Sie die Funktion eingeschaltet haben. Daten für Produkte, die sich seit dem Aktivieren des Features nicht geändert haben, werden nicht aus dem Inventarservice-Cache mit der Dataverse-Umgebung synchronisiert. Wenn auf der Seite **Bestandszusammenfassung** nicht alle erwarteten Bestandsinformationen angezeigt werden, wechseln Sie zu **Lagerverwaltung > Regelmäßige Aufgaben > Integration** der Bestandssichtbarkeit, deaktivieren Sie den Stapelverarbeitungsauftrag und aktivieren Sie ihn erneut. Damit wird der erste Push durchgeführt und alle Daten werden in den nächsten 15 Minuten mit der Entität *On-Hand Index Query Preload Results* synchronisiert. Wenn Sie diese Funktion verwenden möchten, empfehlen wir Ihnen, sie zu aktivieren, bevor Sie manuelle Änderungen vornehmen und den Batchauftrag **Integration der Bestandssichtbarkeit** aktivieren.
 
 ## <a name="filter-and-browse-the-inventory-summaries"></a><a name="additional-tip-for-viewing-data"></a>Filtern und durchsuchen Sie die Zusammenfassungen des Bestands
 

@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: bbb5f3d4c61907243bed404f3ab7bea05c78b1c0
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0e1092c0c5c49c6a99dd441c75f545fc831c0b03
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276453"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831556"
 ---
 # <a name="choose-between-store-commerce-and-cloud-pos"></a>Zwischen Store Commerce und Cloud POS auswählen
 
@@ -71,7 +71,7 @@ Neben einer Plattform und einem Formularfaktor müssen Einzelhändler eine Berei
 |----------------------------|---------------------|-------------------|-------------------|
 | Store Commerce für Windows | Cloud oder RSSU       | Ja               | Ja               |
 | Store Commerce für Android | Cloud oder RSSU       | Nein                | Ja               |
-| Store Commerce für iOS     | Cloud oder RSSU       | Nein                | Nein                |
+| Store Commerce für iOS     | Cloud oder RSSU       | Nein                | Ja               |
 | Cloud POS                  | Cloud oder RSSU       | Nein                | Nein                |
 
 #### <a name="commerce-scale-unit"></a>Commerce Scale Unit
@@ -90,7 +90,7 @@ Einzelhändler müssen auch entscheiden, wie der POS auf Geräte wie Drucker, Ba
 |----------------------------|----------------|---------------------|--------------------|
 | Store Commerce für Windows | Ja            | Ja                 | Ja                |
 | Store Commerce für Android | Nein             | Ja                 | Ja                |
-| Store Commerce für iOS     | Nein             | Nein                  | Ja                |
+| Store Commerce für iOS     | Nein             | Ja                 | Ja                |
 | Cloud POS                  | Nein             | Nein                  | Ja                |
 
 Weitere Informationen dazu, wie die Hardwarestation installiert wird, finden Sie unter [Retail-Hardwarestation-Konfiguration und -Installation](retail-hardware-station-configuration-installation.md).

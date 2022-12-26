@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Release 10.0.11
 ms.custom: ''
 ms.assetid: ''
 ms.search.form: ERSolutionTable, EROperationDesigner
-ms.openlocfilehash: 7509092d353d75cefbbd97393d45c078530a21bd
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 61bc5e3f36bd2ae6e38ed0f511d70a7ae62e045c
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9291353"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9832030"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Debuggen Sie Datenquellen eines ausgeführten EB-Formats, um den Datenfluss und die Transformation zu analysieren
 
@@ -28,7 +28,7 @@ ms.locfileid: "9291353"
 
 [!include[banner](../includes/preview-banner.md)]
 
-Wenn Sie eine elektronische Berichterstellungs-(EB)-Lösung [konfigurieren](tasks/er-format-configuration-2016-11.md), um ausgehende Dokumente zu generieren, definieren Sie Methoden, die verwendet werden, um Daten aus der Anwendung abzurufen und sie in die Ausgabe einzugeben, die generiert wird. Um die Lebenszyklusunterstützung der EB-Lösung effizienter zu gestalten, sollte Ihre Lösung aus einem EB-Datenmodell und deren Zuordnungskomponenten bestehen und auch einem EB-Format und dessen Zuordnungskomponenten bestehen, sodass die Modellzuordnung anwendungsspezifisch ist, wohingegen andere Komponenten anwendungsunabhängig bleiben. Daher beeinflussen möglicherweise mehrere EB-Komponenten den Prozess der Dateneingabe in die generierte Ausgabe.
+Wenn Sie eine elektronische Berichterstellungs-(EB)-Lösung [konfigurieren](tasks/er-format-configuration-2016-11.md), um ausgehende Dokumente zu generieren, definieren Sie Methoden, die verwendet werden, um Daten aus der Anwendung abzurufen und sie in die Ausgabe einzugeben, die generiert wird. Um die Lebenszyklusunterstützung der EB-Lösung effizienter zu gestalten, sollte Ihre Lösung aus einem EB-Datenmodell und deren Zuordnung-Komponenten bestehen und auch einem EB-Format und dessen Zuordnungskomponenten bestehen, sodass die Modellzuordnung anwendungsspezifisch ist, wohingegen andere Komponenten anwendungsunabhängig bleiben. Daher beeinflussen möglicherweise mehrere EB-Komponenten den Prozess der Dateneingabe in die generierte Ausgabe.
 
 Manchmal sehen die Daten der generierten Ausgabe anders aus als die gleichen Daten in der Anwendungsdatenbank. In diesen Fällen möchten Sie bestimmen, welche EB-Komponente für die Datentransformation verantwortlich ist. Die EB-Datenquellendebugger-Funktion reduziert den Zeit- und Kostenaufwand für diese Untersuchung erheblich. Sie können die Ausführung eines EB-Formats unterbrechen und die Datenquellendebugger-Schnittstelle öffnen. Dort können Sie die verfügbaren Datenquellen durchsuchen und eine einzelne Datenquelle für die Ausführung auswählen. Diese manuelle Ausführung simuliert die Ausführung der Datenquelle während der realen Ausführung eines EB-Formats. Das Ergebnis wird auf einer Seite dargestellt, auf der Sie die empfangenen Daten analysieren können.
 

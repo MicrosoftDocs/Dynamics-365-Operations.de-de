@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 915382c14cc9ba89b9d543cfd668a94cecbc0a55
-ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
+ms.openlocfilehash: 2a368535c9644e174d1a2460ac0891c9dc1b1b3f
+ms.sourcegitcommit: 44f0b4ef8d74c86b5c5040be37981e32eb43e1a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9765708"
+ms.lasthandoff: 12/14/2022
+ms.locfileid: "9850022"
 ---
 # <a name="configure-inventory-visibility"></a>Inventory Visibility konfigurieren
 
@@ -32,15 +32,16 @@ Bevor Sie mit Inventory Visibility arbeiten können, müssen Sie die folgende Ko
 - [Partitionskonfiguration](#partition-configuration)
 - [Produktindex-Hierarchie-Konfiguration](#index-configuration)
 - [Reservierungskonfiguration (optional)](#reservation-configuration)
+- [Vorabladen-Konfiguration des Index (optional)](#query-preload-configuration)
 - [Beispiel für die Standardkonfiguration](#default-configuration-sample)
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 Bevor Sie beginnen, installieren Sie das Bestandsanzeige-Add-In und richten es wie in [Bestandsanzeige installieren und einrichten](inventory-visibility-setup.md) beschrieben ein.
 
 ## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>Die Konfigurationsseite der Bestandsanzeige-App
 
-In Power Apps hilft Ihnen die Seite **Konfiguration** der [Bestandsanzeige-App](inventory-visibility-power-platform.md) beim Festlegen der Konfiguration des Lagerbestands und der Softreservierung. Nach der Installation des Add-Ins enthält die Standardkonfiguration den Wert von Microsoft Dynamics 365 Supply Chain Management (die Datenquelle `fno`). Sie können die Standardeinstellungen überprüfen. Zusätzlich können Sie die Konfiguration basierend auf Ihren geschäftlichen Anforderungen und den Bestandsbuchungsanforderungen Ihres externen Systems ändern, um die Art und Weise zu standardisieren, in der Bestandsänderungen in den verschiedenen Systemen gebucht, organisiert und abgefragt werden können. In den verbleibenden Abschnitten dieses Artikels wird erläutert, wie die einzelnen Teile der Seite **Konfiguration** zu verwenden sind.
+In Power Apps hilft Ihnen die Seite **Konfiguration** der [Bestandsanzeige-App](inventory-visibility-power-platform.md) beim Festlegen der Konfiguration des Lagerbestands und der Softreservierung. Nach der Installation des Add-Ins enthält die Standardkonfiguration den Wert von Microsoft Dynamics 365 Supply Chain Management (die Datenquelle `fno`). Sie können die Standardeinstellungen überprüfen. Zusätzlich können Sie die Konfiguration basierend auf Ihren geschäftlichen Anforderungen und den Bestandsbuchungsanforderungen Ihres externen Systems ändern, um die Art und Weise zu standardisieren, in der Bestandsänderungen in verschiedenen Systemen gebucht, organisiert und abgefragt werden können. In den verbleibenden Abschnitten des Artikels wird erläutert, wie die einzelnen Teile der Seite **Konfiguration** zu verwenden sind.
 
 Nachdem die Konfiguration abgeschlossen ist, wählen Sie in der App unbedingt **Konfiguration aktualisieren** aus.
 
@@ -52,10 +53,13 @@ Das Bestandsanzeige-Add-In fügt Ihrer Power Apps-Installation mehrere neue Funk
 |---|---|
 | *OnHandReservation* | Mit dieser Funktion können Sie mithilfe von Inventory Visibility Reservierungen erstellen, Reservierungen verbrauchen und/oder bestimmte Bestandsmengen aufheben. Weitere Informationen finden Sie unter [Reservierungen in Inventory Visibility](inventory-visibility-reservations.md). |
 | *OnHandMostSpecificBackgroundService* | Diese Funktion bietet eine Bestandsübersicht für Produkte zusammen mit allen Dimensionen. Die Bestandsübersicht wird regelmäßig von der Bestandsanzeige synchronisiert. Die standardmäßige Synchronisierungshäufigkeit ist einmal alle 15 Minuten und kann auf bis zu einmal alle 5 Minuten eingestellt werden. Weitere Informationen finden Sie unter [Bestandsübersicht](inventory-visibility-power-platform.md#inventory-summary). |
-| *onHandIndexQueryPreloadBackgroundService* | Diese Funktion ermöglicht das Vorladen von Inventory Visibility Abfragen zum Lagerbestand, um Lagerbestandslisten mit vorgewählten Dimensionen zusammenzustellen. Die Standard-Synchronisierungsfrequenz ist einmal alle 15 Minuten. Weitere Informationen finden Sie unter [Laden Sie eine optimierte verfügbare Abfrage vorab](inventory-visibility-power-platform.md#preload-streamlined-onhand-query). |
+| *OnHandIndexQueryPreloadBackgroundService* | Diese Funktion ruft und speichert regelmäßig eine Reihe von Bestandsübersichtsdaten basierend auf Ihren vorkonfigurierten Dimensionen. Es bietet eine Bestandsübersicht, die nur die Dimensionen enthält, die für Ihr Tagesgeschäft relevant sind, und die mit Artikeln kompatibel ist, die für Lagerverwaltungsprozesse (WMS) aktiviert sind. Weitere Informationen finden Sie unter [Aktivieren und Konfigurieren vorab geladener verfügbarer Abfragen](#query-preload-configuration) und [Vorabladen einer optimierten verfügbaren Abfrage](inventory-visibility-power-platform.md#preload-streamlined-onhand-query). |
 | *OnhandChangeSchedule* | Die optionale Funktion aktiviert die Funktionen Lagerbestandsänderung und Available to Promise (ATP). Weitere Informationen finden Sie unter [Inventory Visibility: verfügbarer Änderungszeitplan und verfügbar für Zusage](inventory-visibility-available-to-promise.md). |
 | *Zuweisung* | Diese optionale Funktion ermöglicht Inventory Visibility, Inventarschutz (Ringfencing) und Überverkaufskontrolle zu bieten. Weitere Informationen finden Sie unter [Bestandszuordnung für Bestandsichtbarkeit](inventory-visibility-allocation.md) |
 | *Lagerortartikel in Bestandsanzeige aktivieren* | Diese optionale Funktion ermöglicht Inventory Visibility, um Artikel zu unterstützen, die für Prozesse der Lagerverwaltung (WMS) aktiviert sind. Weitere Informationen finden Sie unter [Inventory Visibility-Unterstützung für WMS-Artikel](inventory-visibility-whs-support.md). |
+
+> [!IMPORTANT]
+> Wir empfehlen, dass Sie entweder die Funktion *OnHandIndexQueryPreloadBackgroundService* oder die Funktion *OnHandMostSpecificBackgroundService* verwenden, nicht beide. Die Aktivierung beider Funktionen wirkt sich auf die Leistung aus.
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Finden Sie den Dienst-Endpunkt
 
@@ -178,6 +182,15 @@ Wenn die Datenquelle Supply Chain Management ist, müssen Sie die standardmäßi
 1. Melden Sie sich in Ihrer Power Apps-Umgebung an und öffnen Sie **Inventory Visibility**.
 1. Öffnen Sie die Seite **Konfiguration**.
 1. Wählen Sie auf der Registerkarte **Datenquelle** die Datenquelle aus, der physische Maße hinzugefügt werden sollen (z. B. die `ecommerce` Datenquelle). Wählen Sie dann im **Physikalische Maßnahmen** Abschnitt **Hinzufügen**, und geben Sie den Measure-Namen an (z. B. `Returned` wenn Sie zurückgegebene Mengen in dieser Datenquelle in Bestandsanzeige erfassen möchten). Speichern Sie die Änderungen.
+
+### <a name="extended-dimensions"></a>Erweiterte Dimensionen
+
+Kunden, die externe Datenquellen in der Datenquelle verwenden möchten, können die Vorteile der Erweiterbarkeit nutzen, die Dynamics 365 bietet, indem sie [Klassenerweiterungen](../../fin-ops-core/dev-itpro/extensibility/class-extensions.md) für die `InventOnHandChangeEventDimensionSet` und erstellen `InventInventoryDataServiceBatchJobTask` Klassen.
+
+Stellen Sie sicher, dass Sie nach dem Erstellen der Erweiterungen mit der Datenbank synchronisieren, damit die benutzerdefinierten Felder der Tabelle `InventSum` hinzugefügt werden. Sie können dann den Abschnitt Dimensionen weiter oben in diesem Artikel lesen, um Ihre benutzerdefinierten Dimensionen einer der acht erweiterten Dimensionen in `BaseDimensions` im Inventar zuzuordnen.
+
+> [!NOTE] 
+> Weitere Einzelheiten zum Erstellen von Erweiterungen finden Sie auf der [Erweiterbarkeits-Startseite](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md).
 
 ### <a name="calculated-measures"></a>Berechnete Messungen
 
@@ -496,6 +509,30 @@ Eine gültige Sequenz von Dimensionen sollte strikt der Reservierungshierarchie 
 ## <a name="available-to-promise-configuration-optional"></a>Verfügbare Konfiguration zum Versprechen (optional)
 
 Sie können die Inventory Visibility festlegen, um zukünftige Lagerbestandsänderungen zu planen und ATP-Mengen (Available-to-Promise) zu berechnen. ATP ist die Menge eines Elements, die verfügbar ist und einem Kunden in der nächsten Periode zugesagt werden kann. Die Verwendung dieser Berechnung kann Ihre Funktionalitäten bei der Auftragsabwicklung erheblich verbessern. Um diese Funktion zu nutzen, müssen Sie sie auf der Registerkarte **Funktionsverwaltung** aktivieren und dann auf der Registerkarte **ATP Einstellung** festlegen. Weitere Informationen finden Sie unter [Inventory Visibility - Lagerbestände, Änderungszeitpläne und Zusagen](inventory-visibility-available-to-promise.md).
+
+## <a name="turn-on-and-configure-preloaded-on-hand-queries-optional"></a><a name="query-preload-configuration"></a>Vorgeladene Bestandsanfragen aktivieren und konfigurieren (optional)
+
+Bestandsanzeige ruft und speichert regelmäßig eine Reihe von Bestandsübersichtsdaten basierend auf Ihren vorkonfigurierten Dimensionen. Dies bietet folgende Vorteile:
+
+- Eine übersichtlichere Ansicht, die eine Bestandsübersicht speichert, die nur die Dimensionen enthält, die für Ihr Tagesgeschäft relevant sind.
+- Eine Bestandsübersicht, die mit Artikeln kompatibel ist, die für Lagerverwaltungsprozesse (WMS) aktiviert sind.
+
+Siehe [Vorladen einer rationalisierten Abfrage des Lagerbestands](inventory-visibility-power-platform.md#preload-streamlined-onhand-query) für weitere Informationen zum Arbeiten mit dieser Funktion nach der Einrichtung
+
+> [!IMPORTANT]
+> Wir empfehlen, dass Sie entweder die Funktion *OnHandIndexQueryPreloadBackgroundService* oder die Funktion *OnHandMostSpecificBackgroundService* verwenden, nicht beide. Die Aktivierung beider Funktionen wirkt sich auf die Leistung aus.
+
+Um diese Funktion einzurichten, führen Sie folgende Schritte aus.
+
+1. Melden Sie sich bei der Bestandsanzeige-Power App an.
+1. Gehen Sie zu **Konfiguration \> Funktionsverwaltung und Einstellungen**.
+1. Wenn die Funktion *OnHandIndexQueryPreloadBackgroundService* bereits aktiviert ist, empfehlen wir, sie vorerst zu deaktivieren, da der Bereinigungsprozess sehr lange dauern kann. Sie aktivieren sie später in diesem Verfahren erneut.
+1. Öffnen Sie die Registerkarte **Preload-Einstellung** .
+1. Wählen Sie im Abschnitt **Schritt 1: Preload-Speicher bereinigen** die Option **Bereinigen** aus, um die Datenbank zu bereinigen und bereit zu machen, um Ihre neuen Gruppieren-nach-Einstellungen zu akzeptieren.
+1. Geben Sie im Abschnitt **Schritt 2: Gruppieren nach-Werten einrichten** im Feld **Ergebnis gruppieren nach** ein Komma ein -getrennte Liste von Feldnamen, nach denen Sie Ihre Abfrageergebnisse gruppieren können. Sobald Sie Daten in der Preload-Speicherdatenbank haben, können Sie diese Einstellung erst ändern, wenn Sie die Datenbank wie im vorherigen Schritt beschrieben bereinigen.
+1. Gehen Sie zu **Konfiguration \> Funktionsverwaltung und Einstellungen**.
+1. Aktivieren Sie die Funktion *OnHandIndexQueryPreloadBackgroundService*.
+1. Wählen Sie **UKonfiguration aktualisieren** in der oberen rechten Ecke der Seite **Konfiguration**, um die Änderungen zu bestätigen
 
 ## <a name="complete-and-update-the-configuration"></a>Abschließen und Aktualisieren der Konfiguration
 

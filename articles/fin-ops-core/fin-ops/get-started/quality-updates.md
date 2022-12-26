@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: ecfeb3e6c5760b526ade609ee38f83da083b34d2
-ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
+ms.openlocfilehash: 7d8de017c54a13a9935d74d33a57813922c9f823
+ms.sourcegitcommit: 8aee31d6dffabe13969dd5b9de4e0bf95f53e67e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2022
-ms.locfileid: "9805313"
+ms.lasthandoff: 12/19/2022
+ms.locfileid: "9887129"
 ---
 # <a name="proactive-quality-updates"></a>Proaktive Qualitätsupdates
 
@@ -28,16 +28,24 @@ Die Ergebnisse bestätigen diese Prämisse: geringere Vorfallzahlen bei unseren 
 
 ## <a name="what-you-need-to-know"></a>Was Sie wissen müssen
 
-- Proaktive Qualitätsupdates werden monatlich angewendet.
-- Microsoft wendet proaktive Qualitätsupdates auf alle Sandbox-Umgebungen an, in denen ein Dienstupdate ausgeführt wird, das [im Dienst](./public-preview-releases.md#targeted-release-schedule-dates-subject-to-change) war, als die proaktiven Qualitätsupdates erstellt wurden.
-- Ausnahmen für proaktive Qualitätsaktualisierungen werden für Kunden zugelassen, die von der US-amerikanischen Food and Drug Administration (FDA) reguliert werden.
+- Proaktive Qualitätsupdates (PQU) werden monatlich angewendet.
+- Ausnahmen für proaktive Qualitätsaktualisierungen werden nur für Kunden zugelassen, die von der US-amerikanischen Food and Drug Administration (FDA) reguliert werden.
+- Proaktive Qualitätsupdates führen niemals zu einem Downgrade der Umgebung oder einem automatischen Upgrade von einer Service-Update-Version auf eine andere. 
 - Microsoft legt fest, wie proaktive Qualitätsupdates für regulierte Umgebungen und für staatliche und staatliche Cloud-Kunden verwaltet werden.
-- Benachrichtigungen, die sich auf proaktive Qualitätsaktualisierungen beziehen, werden im [Microsoft 365 Nachrichtencenter](https://admin.microsoft.com/AdminPortal/) und auf einem Banner im Microsoft Dynamics Lifecycle Services-Projekt des Kunden veröffentlicht.
+- Benachrichtigungen zu proaktiven Qualitätsaktualisierungen werden im [Microsoft 365 Nachrichtencenter](https://admin.microsoft.com/AdminPortal/) gebucht.
 - Fünf Tage bevor ein proaktives Qualitätsupdate auf eine Umgebung angewendet wird, werden Kunden benachrichtigt, dass das Update durchgeführt wird.
 - Kunden können proaktive Qualitätsupdates nicht stornieren oder verschieben.
 - Proaktive Qualitätsupdates werden während dem regionsspezifischen [geplanten Wartungsfenster](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows) installiert.
 - Qualitätsupdates sind so konzipiert, dass sie ein geringes Risiko von Problemen oder Regressionen aufweisen, und dies wird von Microsoft-Daten unterstützt.
 - Microsoft empfiehlt gezielte Tests für bestimmte Probleme oder bestimmte Hotfixes, die mit einem proaktiven Qualitätsupdate zusammenhängen.
+- ALLE Sandboxes, mit Ausnahme derjenigen, für die aus regulatorischen Gründen eine zeitgebundene Ausnahme gilt, werden bis zum 7. Januar 2023 integriert.
+- Das Produktions-Onboarding für proaktive Qualitätsupdates beginnt am 21. Januar 2023. 
+- Das Produktions-Onboarding beginnt nur für Lifecycle Services-Projekte, die über Sandbox(en) verfügen und bisher proaktive Qualitätsupdates in regelmäßigen Abständen für alle unterstützten Service-Update-Versionen erhalten. Dies gilt nur für Kundenumgebungen, denen aus regulatorischen oder anderen rechtlichen Gründen keine Ausnahmen gewährt wurden.
+- Einen vollständigen Zeitplan proaktiver Qualitätsupdates für Sandbox- und Produktionsumgebungen im Laufe des Jahres 2023 finden Sie unten.
+- Bei jedem Service-Update läuft mindestens ein PQU-Release-Train oder soll beginnen. Sobald Ihre Umgebungen in den PQU-Prozess aufgenommen wurden, erhalten Sie möglicherweise ein vorab geplantes proaktives Qualitätsupdate für alle, wenn Sie zu einem Dienstupdate einer neueren Version wechseln. Bitte überprüfen Sie den Zeitplan, um festzustellen, wann eine PQU für ein Service-Update geplant ist, wenn Sie ein Upgrade auf eine neuere Version des Service-Updates planen. 
+
+> [!Note]
+> Standard-Leistungstest (Tier4), Premium-Leistungstest (Tier5) Sandboxen und Produktionsumgebungen erhalten PQUs am Wochenende. 
 
 ## <a name="focus-on-quality-updates"></a>Schwerpunkt Qualitätsupdates
 
@@ -75,33 +83,22 @@ Vor der Aktivierung der proaktiven Bereitstellung von Qualitätsupdates wird ein
     > Das Microsoft Communications-Team untersucht eine anhaltende Verschlechterung der E-Mail-Tools, die die Zustellung von E-Mail-Benachrichtigungen verhindert. Bitte beobachten Sie die weiter Microsoft 365 Message Center für Onboarding- und Benachrichtigungsnachrichten.
 
 - **Fail Safe via Flighting** - Flighting wird verwendet, um Codeänderungen zu schützen, wo immer dies in einem Qualitätsupdate-Fehlerbehebung möglich ist, oder die bestehende Funktion Flighting zu verwenden, die für die Korrektur relevant ist. Wenn nach einer proaktiven Bereitstellung ein Fallback oder das Ausschalten einer Änderung erforderlich ist, kann dies über das Flighting-System erfolgen, um weitere Fehler zu vermeiden.
-- **Sandbox-Synchronisierungsbezeichnung**: Weniger als 20 Prozent der Kunden haben heute mehrere Sandboxes und halten eine Sandbox bereit, in der die Version mit der Produktion übereinstimmt, um bei der Fehlerbehebung zu helfen. Wenn ein Kunde eine Sandbox verwendet, um eine neuere Version als seine Produktion zu testen, erhält diese Sandbox Qualitätsupdates für die neuere Version.
+- **Sandbox-Synchronisierungskennzeichnung** – Ein gestaffeltes Update auf eine isolierte Sandbox nach Wahl zusammen mit der Produktion wird derzeit nicht unterstützt. Alle Tier-2- und Tier-3-Sandboxes erhalten proaktive Updates mindestens 7 Tage vor der Produktionsumgebung in einem Lifecycle Services-Projekt. Dies gilt wieder nur für Kundenumgebungen, denen aus regulatorischen oder anderen rechtlichen Gründen keine Ausnahmen gewährt wurden.
 
 ## <a name="what-is-the-rollout-roadmap-for-quality-updates"></a>Wie sieht die Rollout-Roadmap für Qualitätsupdates aus?
 
-Die Verteilung von proaktiven Qualitätsupdates für Sandbox-Umgebungen beginnt voraussichtlich Ende September oder Oktober 2022 für Azure Public Cloud-Kunden. Testumgebungen erhalten ab diesem Zeitpunkt auch eine proaktive Updatebereitstellung. Im September wird eine Benachrichtigung an alle Kunden gesendet, um sie über den erwarteten Zeitplan für seine Umgebungen zu informieren. Ausnahmen vom proaktiv aktualisierten Bereitstellungsprozess sind nur für FDA-regulierte Kunden zulässig. Wir arbeiten noch daran, wie regulierte Umgebungen und staatliche Cloud-Kunden verwaltet werden sollen.
+Die Verteilung von proaktiven Qualitätsupdates für Sandbox-Umgebungen begann September 2022 für Azure Public Cloud-Kunden. Bis zum 1. Januar 2023 werden wir das Onboarding von 99 % der Sandboxes für proaktive Qualitätsupdates abschließen.
 
-In den Nächsten sechs Monaten steigern wir schrittweise den Prozentsatz der Sandbox-Umgebungen, die proaktive Updates erhalten, bis alle designierten Umgebungen enthalten sind, und fahren dann mit der Aktualisierung von Produktionsumgebungen fort. Wir überwachen den gesamten Zeitraum, um sicherzustellen, dass der Bereitstellungsprozess nahtlos verläuft und wir unser Ziel von unterbrechungsfreien Nutzlasten erreichen.
+Ausnahmen vom proaktiv aktualisierten Bereitstellungsprozess sind nur für FDA-regulierte Kunden zulässig. Wir arbeiten noch daran, wie regulierte Umgebungen und staatliche Cloud-Kunden verwaltet werden sollen. 
 
-Da Kunden regelmäßig kleinere Nutzlasten erhalten, erwarten wir, dass es einfacher wird, auf dem Laufenden zu bleiben. Wir werden die Häufigkeit der Update-Bereitstellung anpassen, wenn wir den Prozess nachweislich ohne Unterbrechung ausführen können. Dieser Prozess funktioniert für unsere Dataverse-Plattform und -Anwendungen bereits effektiv und liefert die erwarteten Verbesserungen der Servicequalität. Wir möchten den gleichen Schritt nach vorne unbedingt auch für Finanz- und Betriebsanwendungen machen.
+Da Kunden regelmäßig kleinere Nutzlasten erhalten, erwarten wir, dass es einfacher wird, auf dem Laufenden zu bleiben. Wir werden die Häufigkeit der Update-Bereitstellung anpassen, wenn wir den Prozess nachweislich ohne Unterbrechung ausführen können. Dieser Prozess funktioniert für unsere Dataverse-Plattform und -Anwendungen bereits effektiv und liefert die erwarteten Verbesserungen der Servicequalität. Wir machen den gleichen Schritt nach vorne unbedingt auch für Finanz- und Betriebsanwendungen.
+
 
 ## <a name="when-will-quality-updates-start-for-production-environments"></a>Wann beginnen Qualitätsupdates für Produktionsumgebungen?
-Derzeit zielen Qualitätsupdates nur auf Sandboxes ab. Wir werden diesen Bereich mit einem Startdatum für Produktionsumgebungen aktualisieren, sobald wir konkretere Daten und Metriken von proaktiven Updates für Sandboxen haben, um die Bereitschaft für Prod.
+In den ersten Monaten des Jahres 2023, beginnend am 15. Januar, werden wir mit dem Onboarding von Produktionsumgebungen für proaktive Updates beginnen und den Prozentsatz der Produktionsumgebungen, die proaktive Updates erhalten, schrittweise erhöhen. Wir zielen nur auf eine Produktionsumgebung in einem Lifecycle Services-Projekt ab, in der die Sandbox-Umgebungen bereits integriert sind, um proaktive Updates zu erhalten. Vor einem Update werden Kunden mit integrierten Produktionsumgebungen über das Message Center oder das Lifecycle Services-Banner benachrichtigt. Einen vollständigen Zeitplan proaktiver Qualitätsupdates für Sandbox- und Produktionsumgebungen im Laufe des Jahres 2023 finden Sie unten.
 
 ## <a name="what-is-the-schedule-for-sandbox-proactive-quality-updates"></a>Wie sieht der Zeitplan für das Update der proaktiven Sandboxqualität aus?
 Informationen zu den nutzungsschwachen Zeiten für jede Region finden Sie unter [Welche Wartungsfenster sind nach Region geplant?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
-
-### <a name="proactive-quality-update-release-10028"></a>Version des proaktiven Qualitätsupdates: 10.0.28
-**Anwendungsversion: 10.0.1265.89**  
-**Entsprechender aktueller KB-Artikel: 745340**
-
-| Station | Regionen | Abgeschlossener Zeitplan| Kommender Sandbox-Zeitplan
-|---|---|---|---|
-| Station 1 | Kanada, Mitte, Kanada, Osten, Frankreich, Mitte, Indien, Mitte, Norwegen, Osten, Schweiz, Westen | 15. September bis 18. September 2022, 19. September bis 22. September 2022 und 7. Oktober bis 10. Oktober 2022 | 25. Oktober bis 28. Oktober 2022 |
-| Station 2 | Frankreich, Süden, Indien, Süden, Norwegen, Westen, Schweiz, Norden, Südafrika, Norden, Australien Osten, Vereinigtes Königreich, Süden, VAE, Norden, Japan, Osten, Australien, Südosten, Südostasien | 25. September bis 28. September 2022 und 7. Oktober bis 10. Oktober 2022 | 25. Oktober bis 28. Oktober 2022 |
-| Station 3 | Ostasien, Vereinigtes Königreich, Westen, Japan, Westen, Brasilien, Süden, Westeuropa, USA, Osten, VAE, Mitte | 26. September bis 29. September 2022 und 7. Oktober bis 10. Oktober 2022 | 25. Oktober bis 28. Oktober 2022 |
-| Station 4 | Nordeuropa, USA, Mitte, USA, Westen | 28. September bis 1. Oktober 2022 und 7. Oktober bis 10. Oktober 2022 | 25. Oktober bis 28. Oktober 2022 |
-| Station 5 | DoD, Community-Cloud der Regierung, China | Nicht geplant | Nicht geplant |
 
 ### <a name="proactive-quality-update-release-10029"></a><a name="schedule"></a> Version des proaktiven Qualitätsupdates: 10.0.29
 **Anwendungsversion: 10.0.1326.70**  
@@ -109,23 +106,83 @@ Informationen zu den nutzungsschwachen Zeiten für jede Region finden Sie unter 
 
 | Station | Regionen | Abgeschlossener Zeitplan | Kommender Sandbox-Zeitplan|
 |---|---|---|---|
-| Station 1 | Kanada, Mitte, Kanada, Osten, Frankreich, Mitte, Indien, Mitte, Norwegen, Osten, Schweiz, Westen | 14. Oktober bis 17. Oktober 2022, 2. November bis 5. November 2022, 13. November bis 16. November 2022 | 5. Dezember bis 8. Dezember|
-| Station 2 | Frankreich, Süden, Indien, Süden, Norwegen, Westen, Schweiz, Norden, Südafrika, Norden, Australien Osten, Vereinigtes Königreich, Süden, VAE, Norden, Japan, Osten, Australien, Südosten, Südostasien | 15. Oktober bis 18. Oktober 2022, 2. November bis 5. November 2022, 13. November bis 16. November 2022 | 5. Dezember bis 8. Dezember|
-| Station 3 | Ostasien, Vereinigtes Königreich, Westen, Japan, Westen, Brasilien, Süden, Westeuropa, USA, Osten, VAE, Mitte | 16. Oktober bis 19. Oktober 2022, 2. November bis 5. November 2022, 13. November bis 16. November 2022 | 5. Dezember bis 8. Dezember|
-| Station 4 | Nordeuropa, USA, Mitte, USA, Westen | 17. Oktober bis 20. Oktober 2022, 2. November bis 5. November 2022, 15. November bis 18. November 2022 | 5. Dezember bis 8. Dezember|
+| Station 1 | Kanada, Mitte, Kanada, Osten, Frankreich, Mitte, Indien, Mitte, Norwegen, Osten, Schweiz, Westen | 14. Oktober bis 17. Oktober 2022, 2. November bis 5. November 2022, 13. November bis 16. November 2022, 5. Dezember bis 8. Dezember 2022 | 2. Januar bis 5. Januar 2023 |
+| Station 2 | Frankreich, Süden, Indien, Süden, Norwegen, Westen, Schweiz, Norden, Südafrika, Norden, Australien Osten, Vereinigtes Königreich, Süden, VAE, Norden, Japan, Osten, Australien, Südosten, Südostasien | 15. Oktober bis 18. Oktober 2022, 2. November bis 5. November 2022, 13. November bis 16. November 2022, 5. Dezember bis 8. Dezember 2022 | 2. Januar bis 5. Januar 2023 |
+| Station 3 | Ostasien, Vereinigtes Königreich, Westen, Japan, Westen, Brasilien, Süden, Westeuropa, USA, Osten, VAE, Mitte | 16. Oktober bis 19. Oktober 2022, 2. November bis 5. November 2022, 13. November bis 16. November 2022, 5. Dezember bis 8. Dezember 2022 | 2. Januar bis 5. Januar 2023 |
+| Station 4 | Nordeuropa, USA, Mitte, USA, Westen | 17. Oktober bis 20. Oktober 2022, 2. November bis 5. November 2022, 15. November bis 18. November 2022, 5. Dezember bis 8. Dezember 2022 | 2. Januar bis 5. Januar 2023 |
 | Station 5 | DoD, Community-Cloud der Regierung, China | Nicht geplant | Nicht geplant |
 
 ### <a name="proactive-quality-update-release-10030"></a><a name="schedule"></a> Version des proaktiven Qualitätsupdates: 10.0.30
 **App-Version: 10.0.1362.77**
 **Entsprechender aktueller KB-Artikel: 767597**
 
-| Station | Regionen | Kommender Sandbox-Zeitplan |
+| Station | Regionen | Abgeschlossener Zeitplan | Kommender Sandbox-Zeitplan |
+|---|---|---|---|
+| Station 1 | Kanada, Mitte, Kanada, Osten, Frankreich, Mitte, Indien, Mitte, Norwegen, Osten, Schweiz, Westen | 1. Dezember bis 4. Dezember 2022 |  13. Dezember bis 16. Dezember 2022 | 
+| Station 2 | Frankreich, Süden, Indien, Süden, Norwegen, Westen, Schweiz, Norden, Südafrika, Norden, Australien Osten, Vereinigtes Königreich, Süden, VAE, Norden, Japan, Osten, Australien, Südosten, Südostasien | 2. Dezember bis 5. Dezember 2022 |  13. Dezember bis 16. Dezember 2022 | 
+| Station 3 | Ostasien, Vereinigtes Königreich, Westen, Japan, Westen, Brasilien, Süden, Nordeuropa, USA, Osten, VAE, Mitte | 3. Dezember bis 6. Dezember 2022 |  13. Dezember bis 16. Dezember 2022 | 
+| Station 4 | Westeuropa, USA, Mitte, USA, Westen | 4. Dezember bis 7. Dezember 2022 |  13. Dezember bis 16. Dezember 2022 | 
+| Station 5 | DoD, Community-Cloud der Regierung, China | Nicht geplant | Nicht geplant |
+
+### <a name="proactive-quality-update-calendar-year-2023-schedule"></a><a name="schedule"></a> Proaktive Qualitätsaktualisierung Zeitplan für das Kalenderjahr 2023
+
+#### <a name="stations-to-region-mapping"></a><a name="Stations-Regions"></a> Zuordnung von Stationen zu Regionen
+
+| Stationen | Regionen |
+|---|---|
+| Station 1 | TBD |
+| Station 2 | Kanada, Mitte, Kanada, Osten, Frankreich, Mitte, Indien, Mitte, Norwegen, Osten, Schweiz, Westen |
+| Station 3 | Frankreich, Süden, Indien, Süden, Norwegen, Westen, Schweiz, Norden, Südafrika, Norden, Australien Osten, Vereinigtes Königreich, Süden, VAE, Norden, Japan, Osten, Australien, Südosten, Südostasien |
+| Station 4 | Ostasien, Vereinigtes Königreich, Westen, Japan, Westen, Brasilien, Süden, Nordeuropa, USA, Osten, VAE, Mitte |
+| Station 5 | Westeuropa, USA, Mitte, USA, Westen |
+| Station 6 | DoD, Community-Cloud der Regierung, China |
+
+
+> [!IMPORTANT]
+> Dies ist ein Zeitplan auf hohem Niveau für das Jahr 2023. Einen konkreteren Zeitplan finden Sie im folgenden Beispiel für Januar 10.0.30 Release-2. Der genaue Fahrplan und die App-Version werden 7 Tage vor dem Start eines Qualitätsupdatezuges aktualisiert.
+
+> [!Note]
+> Nur die integrierten Produktionsumgebungen erhalten das Update für 10.0.30 Release-2-Train, integrierte Umgebungen erhalten eine explizite Kommunikation.
+
+| Qualitätsupdate trainieren | Freigabe eingestellt | Trainingsdauer |
 |---|---|---|
-| Station 1 | Kanada, Mitte, Kanada, Osten, Frankreich, Mitte, Indien, Mitte, Norwegen, Osten, Schweiz, Westen | 1. Dezember bis 4. Dezember 2022 |
-| Station 2 | Frankreich, Süden, Indien, Süden, Norwegen, Westen, Schweiz, Norden, Südafrika, Norden, Australien Osten, Vereinigtes Königreich, Süden, VAE, Norden, Japan, Osten, Australien, Südosten, Südostasien | 2. Dezember bis 5. Dezember 2022 |
-| Station 3 | Ostasien, Vereinigtes Königreich, Westen, Japan, Westen, Brasilien, Süden, Nordeuropa, USA, Osten, VAE, Mitte | 3. Dezember bis 6. Dezember 2022 |
-| Station 4 | Westeuropa, USA, Mitte, USA, Westen | 4. Dezember bis 7. Dezember 2022 |
-| Station 5 | DoD, Community-Cloud der Regierung, China | Nicht geplant |
+| 10.0.30 Version-2 | 16. Dezember 2022 | 2. Januar bis 29. Januar 2023 |
+| 10.0.30 Version-3 | 13. Januar 2023 | 30. Januar bis 25. Februar 2023 |
+| 10.0.30 Version-4 | 24. Februar 2023 | 6. März bis 8. April 2023 |
+| 10.0.31 Version-1 | 3. Februar 2023 | 13. Februar 2023 bis 18. März 2023|
+| 10.0.31 Version-2 | 3. März 2023 | 13. März bis 15. April 2023|
+| 10.0.31 Version-3 | 14. April 2023 | 24. April 2023 bis 27. Mai 2023|
+| 10.0.32 Version-1 | 31. März 2023 | 10. April 2023 bis 13. Mai 2023|
+| 10.0.32 Version-2 | 28. April 2023 | 8. Mai 2023 bis 10. Juni 2023|
+| 10.0.32 Version-3 | 26. Mai 2023 | 5. Juni 2023 bis 8. Juli 2023|
+| 10.0.33 Version-1 | 28. April 2023 | 8. Mai 2023 bis 10. Juni 2023|
+| 10.0.33 Version-2 | 26. Mai 2023 | 5. Juni 2023 bis 8. Juli 2023|
+| 10.0.33 Version-3 | 14. Juli 2023 | 24. Juli 2023 bis 26. August 2023|
+| 10.0.34 Version-1 | 23. Juni 2023 | 3. Juli 2023 bis 5. August 2023|
+| 10.0.34 Version-2 | 21. Juli 2023 | 31. Juli bis 2. September 2023|
+| 10.0.34 Version-3 | 1. September 2023 | 11. September bis 14. Oktober 2023|
+| 10.0.35 Version-1 | 28. Juli 2023 | 7. August 2023 bis 9. September 2023|
+| 10.0.35 Version-2 | 25. August 2023 | 4. September 2023 bis 7. Oktober 2023|
+| 10.0.35 Version-3 | 20. Oktober 2023 | 30 Oktober 2023 bis 16. Dezember 2023|
+| 10.0.36 Version-1 | 29. September 2023 | 9. Oktober 2023 bis 11. November 2023|
+| 10.0.36 Version-2 | 27. Oktober 2023 | 6. November 2023 bis 16. Dezember 2023|
+| 10.0.36 Version-3 | 12. Januar 2024 | 22. Januar 2023 bis 24. Februar 2024|
+| 10.0.37 Version-1 | 3. November 2023 | 13. November 2023 bis 6. Januar 2024|
+| 10.0.37 Version-2 | 30. Dezember 2023 | 8. Januar 2024 bis 10. Februar 2024|
+| 10.0.37 Version-3 | 27. Januar 2024 | 5. Februar 2024 bis 9. März 2024|
+| 10.0.37 Version-4 | 23. Februar 2024 | 4. März 2024 bis 6. April 2024|
+
+### <a name="proactive-quality-update-upcoming-10030-release-2-train-schedule"></a><a name="schedule"></a> Proaktives Qualitätsupdate in Kürze 10.0.30 Release-2-Zugfahrplan
+**Anwendungsversion: 10.0.1362.99**
+
+| Stationen | Kommender Sandbox-Zeitplan | Anstehender Produktionsplan |
+|---|---|---|
+| Station 1 | NA | NA |
+| Station 2 | 2. Januar bis 5. Januar 2023 | 21. Januar bis 22. Januar 2023 |
+| Station 3 | 3. Januar bis 6. Januar 2023 | 28. Januar bis 29. Januar 2023 |
+| Station 4 | 9. Januar bis 12. Januar 2023 | NA |
+| Station 5 | 16. Januar bis 19. Januar 2023 | NA |
+| Station 6 | NA | NA |
 
 > [!IMPORTANT] 
 > Fünf Tage im Voraus aktualisiert Microsoft den vorhergehenden Zeitplan und sendet eine Benachrichtigung für die Gruppe von Umgebungen, die diese Qualitätsupdates erhalten sollen. Der vorstehende Zeitplan gilt nur für Umgebungen, die über ein bevorstehendes Update benachrichtigt wurden. Informationen zu den nutzungsschwachen Zeiten für jede Region finden Sie unter [Welche Wartungsfenster sind nach Region geplant?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).

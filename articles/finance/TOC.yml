@@ -1168,6 +1168,8 @@
                   href: general-ledger/general-ledger-statement-by-main-account.md
                 - name: Standardprotokolldatei für Steuer (SAF-T) – elektronische Meldung
                   href: general-ledger/standard-audit-file.md
+                - name: Abfrage für Sachkontoausgleich
+                  href: general-ledger/ledger-settlement-inquiry.md
             - name: Abschluss zum Periodenende
               items:
                 - name: Hauptbuch am Periodenende abschließen
@@ -1187,7 +1189,19 @@
                 - name: Sachkontoausgleiche
                   href: general-ledger/ledger-settlements.md
                 - name: Unterschied zwischen Sachkontoausgleich und Jahresendabschluss
-                  href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+                  items:
+                    - name: Unterschied zwischen Sachkontoausgleich und Jahresendabschluss
+                      href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+                    - name: Unterschied zwischen Sachkontoausgleich vor Jahresendabschluss vorbereiten
+                      href: general-ledger/ledger-settle-yec.md
+                    - name: Unterschied zwischen Sachkontoausgleich nach Jahresendabschluss vorbereiten
+                      href: general-ledger/ledger-settle-yec-after.md
+                    - name: Unterschied zwischen der Funktion Sachkontoausgleich und Berichtswährung ist nicht ausgeglichen
+                      href: general-ledger/reporting-currency-yec.md
+                    - name: Unterschied zwischen der Funktion Sachkontoausgleich vor Jahresende über das Abfragefenster
+                      href: general-ledger/ledger-settlement-yec-inquiry-before.md
+                    - name: Unterschied zwischen der Funktion Sachkontoausgleich nach Jahresende über das Abfragefenster
+                      href: general-ledger/ledger-settlement-yec-inquiry-after.md
                 - name: Automatischer Sachkontoausgleich
                   href: general-ledger/auto-settle.md
                 - name: Neubewertung der Fremdwährung für Hauptbuch
@@ -1274,7 +1288,7 @@
               href: general-ledger/balance-sheet-financial-reports.md
             - name: Finanzberichte generieren
               href: ../fin-ops-core/dev-itpro/analytics/generate-financial-report.md?context=/dynamics365/context/finance
-            - name: Finanzbericht „Gewinn- &amp; Verlustrechnung“
+            - name: Finanzbericht „Gewinn- und Verlustrechnung“
               href: general-ledger/income-statement-financial-report.md
             - name: Zwischenbilanz-Finanzberichte
               href: general-ledger/trial-balance-financial-reports.md

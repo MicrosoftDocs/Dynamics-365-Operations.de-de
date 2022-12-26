@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.form: FinancialReports
-ms.openlocfilehash: 66430f81bd3d1efe126dfb29fa9c6a093716f90e
-ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
+ms.openlocfilehash: 180b3c64b9eb506f162071a67b1fa9b728a569ce
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2022
-ms.locfileid: "9802714"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831609"
 ---
 # <a name="financial-report-components"></a>Finanzberichtkomponenten
 
@@ -54,7 +54,7 @@ Verwenden Sie Ordner, um die Bausteine im Berichts-Designer zu organisieren. All
 
 3. Wenn der neue Ordner angezeigt wird, geben Sie den Namen des neuen Ordners ein und drücken die **Eingabetaste**.
 
-## <a name="lock-a-building-block"></a>Einen Baustein sperren
+## <a name="lock-a-building-block"></a> Einen Baustein sperren
 Sie können ein Kennwort erstellen, um einen Baustein zu schützen und zu sperren. Auf diese Wiese wird einer Berichtskomponente eine Sicherheitsstufe hinzugefügt, ohne das gesamte System zu sichern. Ein Passwort kann Bausteininformationen schützen, die für Ihren Berichterstellungsprozess am Monatsende von Bedeutung sind. Ein Benutzer in einer beliebigen Rolle kann einen Baustein sperren. Für andere Benutzer ist der Zugriff auf eine gesperrte Komponente jedoch immer schreibgeschützt. Benutzer können die gesperrte Komponente öffnen, ändern und unter neuem Namen speichern. Ein Benutzer, der die Rolle "Administrator" hat, hat immer Zugriff und kann einen gesperrten Baustein ändern.
 
 1. Öffnen Sie im Report Designer die zu schützende Berichtskomponente, wie eine Zeilendefinition, eine Spaltendefinition, eine Berichtsdefinition oder eine Berichtstruktur-Definition.
@@ -65,7 +65,7 @@ Um einen gesperrten Baustein zu entsperren, öffnen Sie den Baustein, und klicke
 
 ## <a name="building-block-groups"></a>Baustein-Gruppen
 
-Bausteine sind die Zeilendefinitionen, Spaltendefinitionen, Berichtsbaumstruktur-Definitionen und Berichtsdefinitionen, die Sie für einen Bericht erstellen. Bausteingruppen sind Sammlungen der Definitionen und Dimensionssätze.
+Bausteine sind die Zeilendefinitionen, Spaltendefinitionen, Berichtsbaumstruktur-Definitionen und Berichtsdefinitionen, die Sie für einen Bericht erstellen. Bausteingruppen sind Sammlungen der Definitionen und Dimensionswertsätze.
 
 ### <a name="view-a-building-block-group"></a>Anzeigen einer Bausteingruppe
 
@@ -78,26 +78,26 @@ Sie können alle Bausteine anzeigen, die einer Bausteingruppe zugewiesen sind. S
 
 ### <a name="export-a-building-block-group"></a>Exportieren einer Bausteingruppe
 
-Sie können eine Bausteingruppe oder bestimmte Berichtsbausteine innerhalb einer Bausteingruppe exportieren. Sie können die exportierte Bausteingruppe als Sicherung verwenden. Sie können auch die exportierten Daten zwischen Installationen kopieren. Der Berichtsdesigner umfasst die referenzierten Schriftschnitte und Dimensionssätze zusammen mit der Bausteingruppe.
+Sie können eine Bausteingruppe oder bestimmte Berichtsbausteine innerhalb einer Bausteingruppe exportieren. Sie können die exportierte Bausteingruppe als Sicherung verwenden. Sie können auch die exportierten Daten zwischen Installationen kopieren. Der Report Designer umfasst die referenzierten Schriftschnitte und Dimensionswertsätze zusammen mit der Bausteingruppe.
 
 1. Gehen Sie im Report Designer im Menü **Unternehmen** auf **Bausteingruppen**.
 2. Wählen Sie im Dialogfeld **Bausteingruppen** die Bausteingruppe aus, die exportiert werden soll, und gehen Sie dann auf **Exportieren**.
 3. Wählen Sie im Dialogfeld **Exportieren** die Berichtsdefinitionen aus, die exportiert werden soll:
 
     - Um alle Ihre Berichtsdefinitionen und die zugeordneten Bausteine zu exportieren, gehen Sie auf **Alles auswählen**.
-    - Um bestimmte Berichte, Zeilen, Spalten, Strukturen oder Dimensionssätze zu exportieren, klicken Sie auf die entsprechende Registerkarte und wählen die Artikel aus, die exportiert werden sollen. Halten Sie die STRG-Taste gedrückt, um mehrere Artikel in einer Registerkarte auszuwählen.
+    - Um bestimmte Berichte, Zeilen, Spalten, Strukturen oder Dimensionswertsätze zu exportieren, klicken Sie auf die entsprechende Registerkarte und wählen die Artikel aus, die exportiert werden sollen. Halten Sie die STRG-Taste gedrückt, um mehrere Artikel in einer Registerkarte auszuwählen.
 
     > [!NOTE]
-    > Wenn Sie Berichte für den Export auswählen, werden die zugeordneten Zeilen, Spalten, Strukturen und Dimensionssätze ausgewählt.
+    > Wenn Sie Berichte für den Export auswählen, werden die zugeordneten Zeilen, Spalten, Strukturen und Dimensionswertsätze ausgewählt.
 
 4. Wenn Sie die Artikel ausgewählt haben, die Sie exportieren möchten, klicken Sie auf **Exportieren**.
 5. Wählen Sie im Dialogfeld **Speichern unter** einen Speicherort aus, an den die Bausteingruppe exportiert wird.
 6. Geben Sie im Feld **Dateiname** einen Namen für die Datei ein. Der Berichts-Designer fügt automatisch eine .tdbx-Dateinamenerweiterung hinzu.
 7. Klicken Sie auf **Speichern**. Die Bausteingruppe wird an dem Speicherort gespeichert, der von Ihnen angegeben wurde.
 
-### <a name="import-a-building-block-group"></a>Eine Baustein-Gruppe importieren
+### <a name="import-a-building-block-group"></a> Eine Baustein-Gruppe importieren
 
-Sie können eine Bausteingruppe in eine vorhandene Bausteingruppe importieren. Alle importierten Bausteingruppen behalten ihre ursprünglichen Schriftarten und Unternehmensreferenzen bei und enthalten die entsprechenden Dimensionssätze.
+Sie können eine Bausteingruppe in eine vorhandene Bausteingruppe importieren. Alle importierten Bausteingruppen behalten ihre ursprünglichen Schriftarten und Unternehmensreferenzen bei und enthalten die entsprechenden Dimensionswertsätze.
 
 1. Klicken Sie im Report Designer im Menü **Unternehmen** auf **Bausteingruppen**.
 2. Wählen Sie im Dialogfeld **Bausteingruppen** den Baustein aus, in den Sie eine Bausteingruppe importieren möchten, und gehen Sie dann auf **Importieren**.
@@ -105,7 +105,7 @@ Sie können eine Bausteingruppe in eine vorhandene Bausteingruppe importieren. A
 4. Wählen Sie im Dialogfeld **Importieren** die Berichtsdefinitionen aus, die importiert werden soll:
 
     - Um alle Berichtsdefinitionen und die unterstützenden Bausteine zu importieren, klicken Sie auf **Alles auswählen**.
-    - Um bestimmte Berichte, Zeilen, Spalten, Baumstrukturen oder Dimensionssätze zu importieren, wählen Sie die Berichte, Zeilen, Spalten, Baumstrukturen oder Dimensionssätze aus, die importiert werden sollen.
+    - Um bestimmte Berichte, Zeilen, Spalten, Baumstrukturen oder Dimensionswertsätze zu importieren, wählen Sie die Berichte, Zeilen, Spalten, Baumstrukturen oder Dimensionswertsätze aus, die importiert werden sollen.
 
 5. Wenn Sie die Artikel ausgewählt haben, die Sie importieren möchten, klicken Sie auf **Importieren**.
 
